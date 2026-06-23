@@ -62,6 +62,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
@@ -70,7 +71,11 @@ import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomUnit
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
 import com.isaakhanimann.journal.data.substances.classes.Category
+import com.isaakhanimann.journal.data.substances.classes.ClinicalInfo
+import com.isaakhanimann.journal.data.substances.classes.SourceRef
 import com.isaakhanimann.journal.data.substances.classes.SubstanceWithCategories
+import com.isaakhanimann.journal.data.substances.classes.TimeCourse
+import com.isaakhanimann.journal.data.substances.classes.TimeValue
 import com.isaakhanimann.journal.ui.DOSE_DISCLAIMER
 import com.isaakhanimann.journal.ui.FULL_STOMACH_DISCLAIMER
 import com.isaakhanimann.journal.ui.tabs.journal.addingestion.dose.ChasingTheDragonText
@@ -229,6 +234,12 @@ fun SubstanceScreen(
                         }
                     }
                 }
+            }
+            if (substance.clinicalInfo != null) {
+                ClinicalInformationSection(clinicalInfo = substance.clinicalInfo)
+            }
+            if (substance.timeCourse.isNotEmpty()) {
+                TimeCourseSection(timeCourses = substance.timeCourse)
             }
             val roasWithDosesDefined = substance.roas.filter { roa ->
                 val roaDose = roa.roaDose
@@ -541,6 +552,120 @@ fun SubstanceScreen(
             Spacer(modifier = Modifier.height(70.dp))
         }
     }
+}
+
+@Composable
+fun ClinicalInformationSection(clinicalInfo: ClinicalInfo) {
+    SectionWithTitle(title = "Clinical information") {
+        Column(Modifier.padding(horizontal = horizontalPadding)) {
+            ClinicalInfoListRow("ATC code", clinicalInfo.atcCodes)
+            ClinicalInfoListRow("Drug class", clinicalInfo.drugClass)
+            ClinicalInfoListRow("Main indications", clinicalInfo.indications)
+            ClinicalInfoListRow("Contraindications", clinicalInfo.contraindications)
+            ClinicalInfoListRow("Major warnings", clinicalInfo.majorWarnings)
+            ClinicalInfoListRow("Major interactions", clinicalInfo.majorInteractions)
+            ClinicalInfoListRow("Monitoring", clinicalInfo.monitoring)
+            SourceRefs(sourceRefs = clinicalInfo.sourceRefs)
+            VerticalSpace()
+        }
+    }
+}
+
+@Composable
+fun TimeCourseSection(timeCourses: List<TimeCourse>) {
+    SectionWithTitle(title = "Time course") {
+        Column(Modifier.padding(horizontal = horizontalPadding)) {
+            Text(
+                text = "Tmax 表示血浆浓度达峰时间，不一定等于最大临床效果时间。以上信息仅供学习和资料索引，不用于诊断、处方或自行调整药物。",
+                style = MaterialTheme.typography.bodySmall
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            timeCourses.forEachIndexed { index, timeCourse ->
+                Column(modifier = Modifier.padding(vertical = 5.dp)) {
+                    Text(
+                        text = listOfNotNull(
+                            timeCourse.route,
+                            timeCourse.formulation
+                        ).joinToString(" / "),
+                        style = MaterialTheme.typography.titleMedium
+                    )
+                    TimeValueRow("Onset", timeCourse.onset)
+                    TimeValueRow("Tmax", timeCourse.tmax)
+                    TimeValueRow("Peak effect", timeCourse.peakEffect)
+                    TimeValueRow("Duration of action", timeCourse.durationOfAction)
+                    TimeValueRow("Elimination half-life", timeCourse.eliminationHalfLife)
+                    TimeValueRow("Time to steady state", timeCourse.timeToSteadyState)
+                    TimeValueRow("Washout", timeCourse.washout)
+                    ClinicalInfoListRow("Notes", timeCourse.notes)
+                    SourceRefs(sourceRefs = timeCourse.sourceRefs)
+                }
+                if (index < timeCourses.size - 1) {
+                    HorizontalDivider()
+                }
+            }
+            VerticalSpace()
+        }
+    }
+}
+
+@Composable
+private fun ClinicalInfoListRow(label: String, values: List<String>) {
+    if (values.isEmpty()) return
+    InfoLabel(label)
+    if (values.size == 1) {
+        Text(text = values.first())
+    } else {
+        BulletPoints(points = values)
+    }
+    VerticalSpace()
+}
+
+@Composable
+private fun TimeValueRow(label: String, timeValue: TimeValue?) {
+    if (timeValue == null) return
+    InfoLabel(label)
+    Text(text = timeValue.toReadableText())
+    timeValue.basis?.let {
+        Text(text = "Basis: $it", style = MaterialTheme.typography.bodySmall)
+    }
+    timeValue.note?.let {
+        Text(text = it, style = MaterialTheme.typography.bodySmall)
+    }
+    VerticalSpace()
+}
+
+@Composable
+private fun InfoLabel(label: String) {
+    Text(
+        text = label,
+        fontWeight = FontWeight.Bold,
+        style = MaterialTheme.typography.bodyMedium
+    )
+}
+
+@Composable
+private fun SourceRefs(sourceRefs: List<SourceRef>) {
+    if (sourceRefs.isEmpty()) return
+    val uriHandler = LocalUriHandler.current
+    InfoLabel("Sources")
+    sourceRefs.forEach { sourceRef ->
+        TextButton(onClick = { uriHandler.openUri(sourceRef.url) }) {
+            Text("${sourceRef.title} (${sourceRef.sourceType}, accessed ${sourceRef.accessedDate})")
+        }
+    }
+    VerticalSpace()
+}
+
+private fun TimeValue.toReadableText(): String {
+    val minText = min?.toReadableString()
+    val maxText = max?.toReadableString()
+    val valueText = when {
+        minText != null && maxText != null && minText != maxText -> "$minText-$maxText"
+        minText != null -> minText
+        maxText != null -> maxText
+        else -> "not specified"
+    }
+    return "$valueText $unit"
 }
 
 @Composable

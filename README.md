@@ -13,6 +13,74 @@ This is an open source fork that maintains development after the project closed.
 
 Download the latest version from [GitHub releases](https://github.com/huanli233/psychonautwiki-journal-android/releases/latest).
 
+## Clinical Pharmacology Data
+
+The local `app/src/main/res/raw/substances.json` file also supports optional clinical pharmacology fields for cardiovascular and peripheral-circulation medicines. These fields are additive and old PsychonautWiki-style entries remain valid when they do not define them.
+
+New optional fields on a substance:
+
+```json
+{
+  "clinicalInfo": {
+    "atcCodes": ["C08CA01"],
+    "drugClass": ["Calcium channel blocker", "CCB"],
+    "indications": ["Hypertension"],
+    "contraindications": [],
+    "majorWarnings": [],
+    "majorInteractions": [],
+    "monitoring": [],
+    "sourceRefs": [
+      {
+        "title": "DailyMed label",
+        "url": "https://dailymed.nlm.nih.gov/",
+        "sourceType": "regulatory-label",
+        "accessedDate": "2026-06-23"
+      }
+    ]
+  },
+  "timeCourse": [
+    {
+      "route": "oral",
+      "formulation": "tablet",
+      "tmax": {
+        "min": 6,
+        "max": 12,
+        "unit": "h",
+        "basis": "plasma concentration"
+      },
+      "durationOfAction": {
+        "min": 24,
+        "max": null,
+        "unit": "h",
+        "basis": "clinical effect"
+      },
+      "notes": ["Tmax and peak clinical effect may not be identical."],
+      "sourceRefs": []
+    }
+  ]
+}
+```
+
+`timeCourse` is for pharmacokinetic/pharmacodynamic time-course data such as onset, Tmax, peak effect, duration of action, elimination half-life, time to steady state, and washout. Do not mix this with therapeutic drug monitoring, toxic concentration, or treatment-window data.
+
+Medical disclaimer: This information is for educational reference and data indexing only. It is not medical advice and must not be used for diagnosis, prescribing, self-medication, or dose adjustment. Always consult qualified medical professionals and local approved labeling. 本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量。实际用药必须遵循医生医嘱和当地批准说明书。
+
+Recommended sources:
+
+- DailyMed for labels, clinical pharmacology, pharmacokinetics, Tmax, Cmax, AUC, half-life, and steady state.
+- openFDA drug label API for bulk screening and label-section extraction, with final verification against DailyMed or FDA source labels.
+- Drugs@FDA for FDA-approved labels, application numbers, and label history.
+- RxNorm / RxNav for normalized names, brand names, RxCUI, and NDC relationships.
+- PubMed / NCBI E-utilities for reviews and pharmacokinetic literature.
+- ESC, ACC/AHA, Chinese guidelines, Goodman & Gilman, AHFS, Martindale, and clinical pharmacology reviews for context.
+- Laboratory TDM catalogs only for true TDM, therapeutic-window, or toxic-concentration fields; do not mix those values into `timeCourse`.
+
+Cardiovascular example fragments live under `tools/drugdata/`. Rebuild the raw resource with:
+
+```bash
+python tools/drugdata/build_substances_json.py
+```
+
 ## License
 
     This file is part of PsychonautWiki Journal.

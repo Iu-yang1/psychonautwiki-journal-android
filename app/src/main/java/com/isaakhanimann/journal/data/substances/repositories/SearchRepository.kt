@@ -70,29 +70,25 @@ class SearchRepository @Inject constructor(
         return if (searchText.isEmpty()) {
             prefilteredSubstances
         } else {
-            val searchString = searchText.replace(Regex("[- ]"), "")
+            val searchString = searchText.normalizedForSearch()
             // substances whose primary name begins with the search string
             val mainPrefixMatches = prefilteredSubstances.filter { substanceWithCategories ->
-                substanceWithCategories.substance.name.replace(Regex("[- ]"), "").startsWith(
+                substanceWithCategories.substance.name.normalizedForSearch().startsWith(
                     prefix = searchString, ignoreCase = true
                 )
             }
-            // substances with any name beginning with the search string
+            // substances with any searchable field beginning with the search string
             val prefixMatches = prefilteredSubstances.filter { substanceWithCategories ->
-                val allNames =
-                    substanceWithCategories.substance.commonNames + substanceWithCategories.substance.name
-                allNames.any { name ->
-                    name.replace(Regex("[- ]"), "").startsWith(
+                substanceWithCategories.searchableTerms().any { term ->
+                    term.normalizedForSearch().startsWith(
                         prefix = searchString, ignoreCase = true
                     )
                 }
             }
-            // substances containing the search string in any of their names
+            // substances containing the search string in any searchable field
             val matches = prefilteredSubstances.filter { substanceWithCategories ->
-                val allNames =
-                    substanceWithCategories.substance.commonNames + substanceWithCategories.substance.name
-                allNames.any { name ->
-                    name.replace(Regex("[- ]"), "").contains(
+                substanceWithCategories.searchableTerms().any { term ->
+                    term.normalizedForSearch().contains(
                         other = searchString, ignoreCase = true
                     )
                 }
@@ -116,5 +112,20 @@ class SearchRepository @Inject constructor(
         val commonSubstanceMatches =
             prefilteredSubstances.filter { sub -> sub.categories.any { cat -> cat.name == "common" } }
         return (recentlyUsedMatches + commonSubstanceMatches + prefilteredSubstances).distinctBy { it.substance.name }
+    }
+
+    private fun SubstanceWithCategories.searchableTerms(): List<String> {
+        val currentSubstance = substance
+        val clinicalInfo = currentSubstance.clinicalInfo
+        return currentSubstance.commonNames +
+            currentSubstance.name +
+            currentSubstance.categories +
+            categories.map { it.name } +
+            clinicalInfo?.atcCodes.orEmpty() +
+            clinicalInfo?.drugClass.orEmpty()
+    }
+
+    private fun String.normalizedForSearch(): String {
+        return replace(Regex("[- ]"), "")
     }
 }

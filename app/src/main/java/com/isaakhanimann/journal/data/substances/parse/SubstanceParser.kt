@@ -31,11 +31,18 @@ import javax.inject.Singleton
 class SubstanceParser @Inject constructor() : SubstanceParserInterface {
 
     override fun parseSubstanceFile(string: String): SubstanceFile {
-        val wholeFile = JSONObject(string)
-        return SubstanceFile(
-            categories = parseCategories(wholeFile),
-            substances = parseSubstances(wholeFile)
-        )
+        return try {
+            val wholeFile = JSONObject(string)
+            SubstanceFile(
+                categories = parseCategories(wholeFile),
+                substances = parseSubstances(wholeFile)
+            )
+        } catch (e: Exception) {
+            SubstanceFile(
+                categories = emptyList(),
+                substances = emptyList()
+            )
+        }
     }
 
     override fun extractSubstanceString(string: String): String? {
@@ -50,7 +57,7 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
     }
 
     private fun parseCategories(wholeFile: JSONObject): List<Category> {
-        val jsonCategories = wholeFile.getJSONArray("categories")
+        val jsonCategories = wholeFile.getOptionalJSONArray("categories") ?: return emptyList()
         val categories: MutableList<Category> = mutableListOf()
         for (i in 0 until jsonCategories.length()) {
             val jsonCategory = jsonCategories.getOptionalJSONObject(i) ?: continue
@@ -61,7 +68,7 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
     }
 
     private fun parseSubstances(wholeFile: JSONObject): List<Substance> {
-        val jsonSubstances = wholeFile.getJSONArray("substances")
+        val jsonSubstances = wholeFile.getOptionalJSONArray("substances") ?: return emptyList()
         val substances: MutableList<Substance> = mutableListOf()
         for (i in 0 until jsonSubstances.length()) {
             val jsonCategory = jsonSubstances.getOptionalJSONObject(i) ?: continue
@@ -106,6 +113,8 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
         val interactions = parseInteractions(jsonInteractions)
         val jsonRoas = jsonSubstance.getOptionalJSONArray("roas")
         val roas = parseRoas(jsonRoas)
+        val clinicalInfo = parseClinicalInfo(jsonSubstance.getOptionalJSONObject("clinicalInfo"))
+        val timeCourse = parseTimeCourses(jsonSubstance.getOptionalJSONArray("timeCourse"))
         return Substance(
             name = name,
             commonNames = commonNames,
@@ -124,7 +133,108 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             saferUse = saferUse,
             interactions = interactions,
             roas = roas,
+            clinicalInfo = clinicalInfo,
+            timeCourse = timeCourse,
         )
+    }
+
+    private fun parseClinicalInfo(jsonClinicalInfo: JSONObject?): ClinicalInfo? {
+        if (jsonClinicalInfo == null) return null
+        val atcCodes = parseJsonArrayToStringArray(jsonClinicalInfo.getOptionalJSONArray("atcCodes"))
+        val drugClass = parseJsonArrayToStringArray(jsonClinicalInfo.getOptionalJSONArray("drugClass"))
+        val indications = parseJsonArrayToStringArray(jsonClinicalInfo.getOptionalJSONArray("indications"))
+        val contraindications = parseJsonArrayToStringArray(jsonClinicalInfo.getOptionalJSONArray("contraindications"))
+        val majorWarnings = parseJsonArrayToStringArray(jsonClinicalInfo.getOptionalJSONArray("majorWarnings"))
+        val majorInteractions = parseJsonArrayToStringArray(jsonClinicalInfo.getOptionalJSONArray("majorInteractions"))
+        val monitoring = parseJsonArrayToStringArray(jsonClinicalInfo.getOptionalJSONArray("monitoring"))
+        val sourceRefs = parseSourceRefs(jsonClinicalInfo.getOptionalJSONArray("sourceRefs"))
+        val hasAnyContent = listOf(
+            atcCodes,
+            drugClass,
+            indications,
+            contraindications,
+            majorWarnings,
+            majorInteractions,
+            monitoring,
+            sourceRefs
+        ).any { it.isNotEmpty() }
+        if (!hasAnyContent) return null
+        return ClinicalInfo(
+            atcCodes = atcCodes,
+            drugClass = drugClass,
+            indications = indications,
+            contraindications = contraindications,
+            majorWarnings = majorWarnings,
+            majorInteractions = majorInteractions,
+            monitoring = monitoring,
+            sourceRefs = sourceRefs
+        )
+    }
+
+    private fun parseTimeCourses(jsonTimeCourses: JSONArray?): List<TimeCourse> {
+        if (jsonTimeCourses == null) return emptyList()
+        val timeCourses: MutableList<TimeCourse> = mutableListOf()
+        for (i in 0 until jsonTimeCourses.length()) {
+            val jsonTimeCourse = jsonTimeCourses.getOptionalJSONObject(i) ?: continue
+            val route = jsonTimeCourse.getOptionalString("route") ?: continue
+            timeCourses.add(
+                TimeCourse(
+                    route = route,
+                    formulation = jsonTimeCourse.getOptionalString("formulation"),
+                    onset = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("onset")),
+                    tmax = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("tmax")),
+                    peakEffect = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("peakEffect")),
+                    durationOfAction = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("durationOfAction")),
+                    eliminationHalfLife = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("eliminationHalfLife")),
+                    timeToSteadyState = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("timeToSteadyState")),
+                    washout = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("washout")),
+                    notes = parseJsonArrayToStringArray(jsonTimeCourse.getOptionalJSONArray("notes")),
+                    sourceRefs = parseSourceRefs(jsonTimeCourse.getOptionalJSONArray("sourceRefs"))
+                )
+            )
+        }
+        return timeCourses
+    }
+
+    private fun parseTimeValue(jsonTimeValue: JSONObject?): TimeValue? {
+        if (jsonTimeValue == null) return null
+        val unit = jsonTimeValue.getOptionalString("unit") ?: return null
+        val min = jsonTimeValue.getOptionalDouble("min")
+        val max = jsonTimeValue.getOptionalDouble("max")
+        val basis = jsonTimeValue.getOptionalString("basis")
+        val note = jsonTimeValue.getOptionalString("note")
+        return if (min == null && max == null && basis == null && note == null) {
+            null
+        } else {
+            TimeValue(
+                min = min,
+                max = max,
+                unit = unit,
+                basis = basis,
+                note = note
+            )
+        }
+    }
+
+    private fun parseSourceRefs(jsonSourceRefs: JSONArray?): List<SourceRef> {
+        if (jsonSourceRefs == null) return emptyList()
+        val sourceRefs: MutableList<SourceRef> = mutableListOf()
+        for (i in 0 until jsonSourceRefs.length()) {
+            val jsonSourceRef = jsonSourceRefs.getOptionalJSONObject(i) ?: continue
+            val title = jsonSourceRef.getOptionalString("title") ?: continue
+            val url = jsonSourceRef.getOptionalString("url") ?: continue
+            val sourceType = jsonSourceRef.getOptionalString("sourceType") ?: continue
+            val accessedDate = jsonSourceRef.getOptionalString("accessedDate") ?: continue
+            sourceRefs.add(
+                SourceRef(
+                    title = title,
+                    url = url,
+                    sourceType = sourceType,
+                    accessedDate = accessedDate
+                )
+            )
+        }
+        return sourceRefs
     }
 
     private fun parseInteractions(jsonInteractions: JSONObject?): Interactions? {

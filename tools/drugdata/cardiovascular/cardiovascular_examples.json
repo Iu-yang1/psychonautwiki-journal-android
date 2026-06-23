@@ -1,0 +1,305 @@
+{
+  "categories": [
+    {
+      "name": "cardiovascular",
+      "description": "Cardiovascular medicines and reference entries for clinical pharmacology learning.",
+      "color": 4280391411,
+      "url": null
+    },
+    {
+      "name": "antithrombotic",
+      "description": "Medicines that affect thrombosis, coagulation, or platelet function.",
+      "color": 4284513675,
+      "url": null
+    },
+    {
+      "name": "peripheral-circulation",
+      "description": "Medicines relevant to peripheral circulation and vasomotor disorders.",
+      "color": 4284374622,
+      "url": null
+    },
+    {
+      "name": "prescription-medicine",
+      "description": "Prescription medicine reference entries for educational indexing only.",
+      "color": 4287792575,
+      "url": null
+    }
+  ],
+  "substances": [
+    {
+      "name": "Amlodipine",
+      "commonNames": [
+        "Amlodipine",
+        "Norvasc",
+        "氨氯地平",
+        "Amlodipine besylate",
+        "CCB",
+        "Calcium channel blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Amlodipine is a dihydropyridine calcium channel blocker used in hypertension and angina. This entry is for educational reference and data indexing only, not prescribing guidance.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C08CA01"
+        ],
+        "drugClass": [
+          "Dihydropyridine calcium channel blocker",
+          "Calcium channel blocker",
+          "CCB",
+          "Antihypertensive",
+          "Antianginal"
+        ],
+        "indications": [
+          "Hypertension",
+          "Chronic stable angina",
+          "Vasospastic angina"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Symptomatic hypotension may occur in susceptible patients.",
+          "Worsening angina or acute myocardial infarction has been reported after starting or increasing calcium channel blocker therapy, particularly in severe obstructive coronary artery disease."
+        ],
+        "majorInteractions": [
+          "Strong CYP3A inhibitors may increase amlodipine exposure.",
+          "Other antihypertensives may increase blood pressure-lowering effect."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Edema",
+          "Symptoms of hypotension"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed amlodipine besylate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C08CA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 6,
+            "max": 12,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": null,
+            "unit": "h",
+            "basis": "clinical effect",
+            "note": "DailyMed states antihypertensive effectiveness is maintained for at least 24 hours with chronic once-daily oral administration."
+          },
+          "eliminationHalfLife": {
+            "min": 30,
+            "max": 50,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 7,
+            "max": 8,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Tmax and peak clinical effect may not be identical.",
+            "Values vary by formulation, population, hepatic function, renal function, and interacting drugs.",
+            "This entry does not encode clinical dose guidance."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed amlodipine besylate label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "roas": []
+    },
+    {
+      "name": "Nitroglycerin",
+      "commonNames": [
+        "Nitroglycerin",
+        "Glyceryl trinitrate",
+        "GTN",
+        "硝酸甘油",
+        "Nitrostat",
+        "Nitrate"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine"
+      ],
+      "summary": "Nitroglycerin, also known as glyceryl trinitrate, is an organic nitrate vasodilator used for angina-related indications. This entry is for educational reference and data indexing only, not prescribing guidance.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01DA02"
+        ],
+        "drugClass": [
+          "Organic nitrate",
+          "Nitrate",
+          "Vasodilator",
+          "Antianginal"
+        ],
+        "indications": [
+          "Angina pectoris"
+        ],
+        "contraindications": [
+          "Use with PDE-5 inhibitors or soluble guanylate cyclase stimulators is contraindicated in many nitroglycerin labels because severe hypotension may occur."
+        ],
+        "majorWarnings": [
+          "Severe hypotension, particularly with upright posture, may occur.",
+          "Tolerance can develop with continuous nitrate exposure; labels commonly include a nitrate-free interval for transdermal systems."
+        ],
+        "majorInteractions": [
+          "PDE-5 inhibitors and soluble guanylate cyclase stimulators may cause severe hypotension.",
+          "Other vasodilators, alcohol, or antihypertensives may increase hypotensive effects."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Symptoms of hypotension",
+          "Headache",
+          "Angina symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed nitroglycerin sublingual tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01DA02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "sublingual",
+          "formulation": "tablet",
+          "onset": {
+            "min": 1,
+            "max": 3,
+            "unit": "min",
+            "basis": "pharmacodynamic effect"
+          },
+          "peakEffect": {
+            "min": 5,
+            "max": null,
+            "unit": "min",
+            "basis": "pharmacodynamic effect",
+            "note": "Digital plethysmography data in the label reports maximum vasodilatory effect by 5 minutes postdose."
+          },
+          "durationOfAction": {
+            "min": 25,
+            "max": null,
+            "unit": "min",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed states effects persist for at least 25 minutes after administration."
+          },
+          "notes": [
+            "Sublingual nitroglycerin time course reflects pharmacodynamic vasodilatory effect, not a TDM target.",
+            "Tmax is not listed here because this label passage describes effect timing rather than plasma concentration peak."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed nitroglycerin sublingual tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "transdermal",
+          "formulation": "patch",
+          "durationOfAction": {
+            "min": 12,
+            "max": 14,
+            "unit": "h",
+            "basis": "label dosing schedule",
+            "note": "DailyMed describes a daily patch-on period of 12 to 14 hours."
+          },
+          "eliminationHalfLife": {
+            "min": 1,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "After patch removal, plasma concentration declines with a half-life of about an hour."
+          },
+          "timeToSteadyState": {
+            "min": 2,
+            "max": null,
+            "unit": "h",
+            "basis": "plasma concentration",
+            "note": "Steady-state plasma concentrations are reached by about 2 hours after patch application."
+          },
+          "washout": {
+            "min": 10,
+            "max": 12,
+            "unit": "h",
+            "basis": "label dosing schedule",
+            "note": "DailyMed describes a daily patch-off period of 10 to 12 hours to reduce tolerance."
+          },
+          "notes": [
+            "Patch timing is formulation-specific and should not be transferred to sublingual or IV nitroglycerin.",
+            "This entry does not encode clinical dose guidance."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed nitroglycerin transdermal system label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e98a2692-1cb9-4994-98d8-1d8d9ef1a256",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "intravenous",
+          "formulation": "infusion",
+          "notes": [
+            "source needed: add label-verified onset, effect titration timing, and offset for the specific IV formulation before displaying numeric values.",
+            "IV nitroglycerin is included here to validate multiple route/formulation records without inferring values from sublingual or transdermal data."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed nitroglycerin reference search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=nitroglycerin%20injection",
+              "sourceType": "source-needed",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "roas": []
+    }
+  ]
+}

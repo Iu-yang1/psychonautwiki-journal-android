@@ -40,6 +40,8 @@ data class Substance(
     val saferUse: List<String>,
     val interactions: Interactions?,
     val roas: List<Roa>,
+    val clinicalInfo: ClinicalInfo? = null,
+    val timeCourse: List<TimeCourse> = emptyList(),
 ) {
     fun getRoa(route: AdministrationRoute): Roa? {
         return roas.firstOrNull { it.route == route }

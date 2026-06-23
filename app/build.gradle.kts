@@ -70,6 +70,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.material3.adaptive.navigation.suite.android)
     testImplementation(libs.junit)
+    testImplementation("org.json:json:20260522")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
