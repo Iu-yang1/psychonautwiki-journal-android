@@ -25707,7 +25707,10 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
       "isApproved": true,
       "crossTolerances": [],
-      "toxicities": [],
+      "toxicities": [
+        "Systemic lidocaine toxicity can include neurologic symptoms, seizures, hypotension, conduction abnormalities, arrhythmias, and cardiovascular collapse.",
+        "Toxicity risk depends on concentration, infusion timing, hepatic function, acid-base status, and clinical context."
+      ],
       "categories": [
         "cardiovascular",
         "prescription-medicine"
@@ -25729,7 +25732,10 @@
         "majorWarnings": [
           "High systemic concentrations can be associated with neurologic and cardiovascular toxicity."
         ],
-        "majorInteractions": [],
+        "majorInteractions": [
+          "Other sodium channel blockers or antiarrhythmics can have additive cardiac or neurologic toxicity.",
+          "Propranolol and other interacting drugs may reduce lidocaine clearance or increase toxicity risk."
+        ],
         "monitoring": [
           "ECG",
           "Blood pressure",
@@ -25801,6 +25807,20 @@
           }
         ]
       },
+      "interactions": {
+        "dangerous": [
+          "Severe heart block without pacing",
+          "Severe systemic local anesthetic toxicity"
+        ],
+        "unsafe": [
+          "Other sodium channel blockers",
+          "Other antiarrhythmics",
+          "Propranolol",
+          "CYP1A2 inhibitors",
+          "CYP3A4 inhibitors"
+        ],
+        "uncertain": []
+      },
       "roas": []
     },
     {
@@ -25816,7 +25836,10 @@
       "url": "https://www.mayocliniclabs.com/test-catalog/overview/8683",
       "isApproved": true,
       "crossTolerances": [],
-      "toxicities": [],
+      "toxicities": [
+        "Procainamide and NAPA toxicity can include QRS widening, QT prolongation, hypotension, ventricular arrhythmias, torsades de pointes, and lupus-like syndrome.",
+        "Renal impairment can increase NAPA accumulation and changes interpretation."
+      ],
       "categories": [
         "cardiovascular",
         "prescription-medicine"
@@ -25837,7 +25860,10 @@
         "majorWarnings": [
           "Concentration interpretation must be combined with ECG intervals, renal function, symptoms, and co-medications."
         ],
-        "majorInteractions": [],
+        "majorInteractions": [
+          "Other QT-prolonging antiarrhythmics can increase proarrhythmia risk.",
+          "Renal function and drugs affecting conduction or repolarization materially affect interpretation."
+        ],
         "monitoring": [
           "ECG",
           "QRS/QT interval",
@@ -25922,6 +25948,21 @@
           }
         ]
       },
+      "interactions": {
+        "dangerous": [
+          "Other QT-prolonging antiarrhythmics",
+          "Severe conduction disease without pacing"
+        ],
+        "unsafe": [
+          "Sotalol",
+          "Dofetilide",
+          "Amiodarone",
+          "Quinidine",
+          "Potassium-wasting diuretics",
+          "Drugs causing hypomagnesemia"
+        ],
+        "uncertain": []
+      },
       "roas": []
     },
     {
@@ -25935,7 +25976,10 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b33e96a-8336-46c4-aac7-4a6c0039cc80",
       "isApproved": true,
       "crossTolerances": [],
-      "toxicities": [],
+      "toxicities": [
+        "Flecainide toxicity can include QRS widening, PR prolongation, bradycardia, ventricular arrhythmias, heart failure worsening, dizziness, visual disturbance, and cardiac arrest in severe overdose.",
+        "Adverse cardiac events increase when trough concentrations exceed the usual reference range."
+      ],
       "categories": [
         "cardiovascular",
         "prescription-medicine"
@@ -26023,6 +26067,20 @@
           }
         ]
       },
+      "interactions": {
+        "dangerous": [
+          "Structural heart disease contexts where contraindicated by label",
+          "Severe conduction disease without pacing"
+        ],
+        "unsafe": [
+          "Amiodarone",
+          "CYP2D6 inhibitors",
+          "Other sodium channel blockers",
+          "Beta blockers",
+          "Digoxin"
+        ],
+        "uncertain": []
+      },
       "roas": []
     },
     {
@@ -26039,7 +26097,10 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
       "isApproved": true,
       "crossTolerances": [],
-      "toxicities": [],
+      "toxicities": [
+        "Amiodarone can cause pulmonary toxicity, hepatic injury, thyroid dysfunction, ocular toxicity, neurologic toxicity, bradycardia, QT prolongation, and multiple organ-system adverse effects.",
+        "Because of long tissue persistence and active metabolites, adverse effects and interactions may persist after discontinuation."
+      ],
       "categories": [
         "cardiovascular",
         "prescription-medicine"
@@ -26154,6 +26215,25 @@
           }
         ]
       },
+      "interactions": {
+        "dangerous": [
+          "Other QT-prolonging antiarrhythmics",
+          "Severe bradycardia or heart block without pacing"
+        ],
+        "unsafe": [
+          "Warfarin",
+          "Digoxin",
+          "Sotalol",
+          "Dofetilide",
+          "Beta blockers",
+          "Verapamil",
+          "Diltiazem",
+          "CYP3A inhibitors",
+          "Grapefruit juice",
+          "Statins affected by CYP3A4"
+        ],
+        "uncertain": []
+      },
       "roas": []
     },
     {
@@ -26263,7 +26343,10 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
       "isApproved": true,
       "crossTolerances": [],
-      "toxicities": [],
+      "toxicities": [
+        "Beta blocker toxicity can include bradycardia, hypotension, AV block, cardiogenic shock, bronchospasm, hypoglycemia masking, seizures, and cardiac arrest in severe overdose.",
+        "Clinical management of overdose is based on symptoms, ECG, hemodynamics, glucose/electrolytes, and supportive toxicology care rather than routine plasma concentration."
+      ],
       "categories": [
         "cardiovascular",
         "prescription-medicine"
@@ -26399,6 +26482,23 @@
           }
         ]
       },
+      "interactions": {
+        "dangerous": [
+          "Severe bradycardia or heart block without pacing",
+          "Cardiogenic shock"
+        ],
+        "unsafe": [
+          "Verapamil",
+          "Diltiazem",
+          "Digoxin",
+          "Amiodarone",
+          "Other beta blockers",
+          "CYP2D6 inhibitors",
+          "Clonidine withdrawal",
+          "Insulin or oral hypoglycemics"
+        ],
+        "uncertain": []
+      },
       "roas": []
     },
     {
@@ -26531,6 +26631,2858 @@
             "accessedDate": "2026-06-23"
           }
         ]
+      },
+      "roas": []
+    },
+    {
+      "name": "Lisinopril",
+      "commonNames": [
+        "Lisinopril",
+        "Prinivil",
+        "Zestril",
+        "赖诺普利",
+        "ACE inhibitor",
+        "ACEI"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "ACE inhibitors can cause symptomatic hypotension, renal function deterioration, hyperkalemia, angioedema, cough, and fetal toxicity in pregnancy.",
+        "Overdose is expected to mainly cause hypotension; treatment is supportive and clinical."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Lisinopril is an ACE inhibitor used in cardiovascular indications. This entry is for clinical pharmacology learning and data indexing only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09AA03"
+        ],
+        "drugClass": [
+          "ACE inhibitor",
+          "ACEI",
+          "Antihypertensive",
+          "Renin-angiotensin system blocker"
+        ],
+        "indications": [
+          "Hypertension",
+          "Heart failure",
+          "Selected post-myocardial infarction contexts depending on label"
+        ],
+        "contraindications": [
+          "History of ACE inhibitor-associated angioedema",
+          "Concomitant neprilysin inhibitor use or use within 36 hours of sacubitril/valsartan switching",
+          "Pregnancy"
+        ],
+        "majorWarnings": [
+          "Angioedema may occur at any time during ACE inhibitor therapy.",
+          "Renal function and potassium require monitoring in susceptible patients."
+        ],
+        "majorInteractions": [
+          "Potassium supplements or potassium-sparing diuretics may increase hyperkalemia risk.",
+          "NSAIDs may reduce antihypertensive effect and worsen renal function in susceptible patients.",
+          "Lithium toxicity risk may increase."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Renal function",
+          "Serum potassium",
+          "Angioedema symptoms",
+          "Cough or hypotension symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed lisinopril label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09AA03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 7,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Peak serum concentrations occur within about 7 hours after oral administration."
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Label-derived effective half-life with accumulation; terminal phase reflects ACE binding."
+          },
+          "notes": [
+            "Blood pressure response and adverse effects, not plasma concentration, guide routine clinical use.",
+            "Do not use this entry for self-medication or dose adjustment."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed lisinopril label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is usually guided by blood pressure, renal function, potassium, symptoms, and indication-specific follow-up rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Laboratory monitoring here means renal function and electrolytes, not lisinopril plasma TDM."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed lisinopril label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Pregnancy",
+          "Sacubitril / neprilysin inhibitors"
+        ],
+        "unsafe": [
+          "Potassium supplements",
+          "Potassium-sparing diuretics",
+          "NSAIDs",
+          "Lithium",
+          "Aliskiren in diabetes"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Losartan",
+      "commonNames": [
+        "Losartan",
+        "Cozaar",
+        "Losartan potassium",
+        "氯沙坦",
+        "ARB",
+        "Angiotensin receptor blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "ARBs can cause symptomatic hypotension, renal function deterioration, hyperkalemia, and fetal toxicity in pregnancy.",
+        "Overdose is expected to mainly cause hypotension and tachycardia or bradycardia; management is supportive."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Losartan is an angiotensin II receptor blocker. This entry is for clinical pharmacology learning and data indexing only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09CA01"
+        ],
+        "drugClass": [
+          "ARB",
+          "Angiotensin II receptor blocker",
+          "Antihypertensive",
+          "Renin-angiotensin system blocker"
+        ],
+        "indications": [
+          "Hypertension",
+          "Selected renal and cardiovascular risk-reduction contexts depending on label"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "Aliskiren coadministration in patients with diabetes"
+        ],
+        "majorWarnings": [
+          "Renal function and potassium require monitoring in susceptible patients.",
+          "Fetal toxicity warning applies to drugs acting on the renin-angiotensin system."
+        ],
+        "majorInteractions": [
+          "Potassium supplements or potassium-sparing diuretics may increase hyperkalemia risk.",
+          "NSAIDs may worsen renal function and reduce antihypertensive effect.",
+          "Lithium toxicity risk may increase."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Renal function",
+          "Serum potassium",
+          "Symptoms of hypotension"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed losartan potassium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": null,
+            "unit": "h",
+            "basis": "plasma concentration",
+            "note": "Losartan mean peak concentration occurs in about 1 hour; the active metabolite peaks later."
+          },
+          "peakEffect": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "active metabolite plasma concentration",
+            "note": "Principal active metabolite peak concentration occurs about 3 to 4 hours after dosing."
+          },
+          "eliminationHalfLife": {
+            "min": 2,
+            "max": 9,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Losartan half-life is about 2 hours; active metabolite half-life is about 6 to 9 hours."
+          },
+          "notes": [
+            "Tmax and antihypertensive effect timing are not interchangeable.",
+            "Use clinical response and safety monitoring rather than plasma concentration for routine care."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed losartan potassium label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Routine monitoring is based on blood pressure, renal function, potassium, symptoms, and indication-specific endpoints rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Losartan has an active metabolite; plasma concentration is not a routine dosing target."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed losartan potassium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Pregnancy",
+          "Aliskiren in diabetes"
+        ],
+        "unsafe": [
+          "Potassium supplements",
+          "Potassium-sparing diuretics",
+          "NSAIDs",
+          "Lithium"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Quinidine",
+      "commonNames": [
+        "Quinidine",
+        "Quinidine sulfate",
+        "奎尼丁",
+        "Class Ia antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0d6341b-d880-4f0b-8844-bc788c03004a",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Quinidine can cause QT prolongation, torsades de pointes, conduction disturbances, hypotension, cinchonism, thrombocytopenia, and other serious adverse effects.",
+        "Concentration interpretation must be combined with ECG, QRS/QT, symptoms, potassium/magnesium, renal/hepatic function, and interacting drugs."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Quinidine is a Class Ia antiarrhythmic with TDM relevance. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01BA01"
+        ],
+        "drugClass": [
+          "Class Ia antiarrhythmic",
+          "Sodium channel blocker",
+          "QT-prolonging antiarrhythmic"
+        ],
+        "indications": [
+          "Arrhythmia contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can prolong QT interval and cause torsades de pointes.",
+          "Avoid confusing quinidine with quinine."
+        ],
+        "majorInteractions": [
+          "Other QT-prolonging drugs can increase proarrhythmia risk.",
+          "CYP and P-gp interactions may be clinically important."
+        ],
+        "monitoring": [
+          "ECG",
+          "QRS/QT interval",
+          "Potassium",
+          "Magnesium",
+          "Quinidine concentration when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed quinidine sulfate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0d6341b-d880-4f0b-8844-bc788c03004a",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01BA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "sulfate tablet",
+          "notes": [
+            "source needed: add label-verified Tmax, half-life, and formulation-specific duration before displaying numeric values.",
+            "TDM peak/trough sampling times differ by quinidine salt/formulation."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed quinidine sulfate label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0d6341b-d880-4f0b-8844-bc788c03004a",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": true,
+        "monitoringType": "serum or plasma concentration",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "quinidine"
+        ],
+        "specimen": "serum or plasma",
+        "samplingTime": "Peak and trough timing depends on salt/formulation; Mayo catalog describes quinidine sulfate peak about 1.5 hours after dose and trough immediately before the next dose.",
+        "therapeuticRanges": [
+          {
+            "indication": "antiarrhythmic TDM",
+            "range": "2.0-5.0",
+            "unit": "mcg/mL",
+            "note": "Mayo/MLabs laboratory reference range."
+          }
+        ],
+        "criticalValues": [
+          {
+            "threshold": ">=6.0",
+            "unit": "mcg/mL",
+            "note": "MLabs critical value."
+          }
+        ],
+        "interpretationCaveats": [
+          "Interpret with sampling time, ECG, electrolytes, symptoms, organ function, formulation, and interacting drugs.",
+          "Therapeutic ranges are not stand-alone treatment instructions."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Mayo Clinic Laboratories quinidine serum PDF",
+            "url": "https://www.mayocliniclabs.com/test-notifications/attachment.php?id=83725",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "MLabs quinidine",
+            "url": "https://mlabs.umich.edu/tests/quinidine",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Other QT-prolonging antiarrhythmics",
+          "Severe electrolyte abnormalities"
+        ],
+        "unsafe": [
+          "Digoxin",
+          "Warfarin",
+          "CYP3A4 inhibitors",
+          "CYP2D6 substrates",
+          "P-gp substrates",
+          "Macrolide antibiotics",
+          "Azole antifungals"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Disopyramide",
+      "commonNames": [
+        "Disopyramide",
+        "Norpace",
+        "丙吡胺",
+        "Class Ia antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31e79459-107f-4d69-a163-90014f1c4772",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Disopyramide can cause QT prolongation, ventricular arrhythmias, conduction slowing, negative inotropy, heart failure worsening, and anticholinergic adverse effects.",
+        "Use with other negative inotropes or QT-prolonging drugs requires clinical caution."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Disopyramide is a Class Ia antiarrhythmic. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01BA03"
+        ],
+        "drugClass": [
+          "Class Ia antiarrhythmic",
+          "Sodium channel blocker",
+          "QT-prolonging antiarrhythmic",
+          "Negative inotrope"
+        ],
+        "indications": [
+          "Life-threatening ventricular arrhythmia contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can worsen heart failure because of negative inotropic effect.",
+          "QT prolongation and proarrhythmia risk require ECG context."
+        ],
+        "majorInteractions": [
+          "Other QT-prolonging antiarrhythmics and beta blockers can increase cardiac risk.",
+          "Anticholinergic burden can be clinically relevant."
+        ],
+        "monitoring": [
+          "ECG",
+          "QRS/QT interval",
+          "Heart failure symptoms",
+          "Anticholinergic adverse effects",
+          "Renal function"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed disopyramide phosphate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31e79459-107f-4d69-a163-90014f1c4772",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01BA03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BA03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "capsule",
+          "notes": [
+            "source needed: add label-verified Tmax, half-life, and duration for immediate-release and controlled-release formulations separately."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed disopyramide phosphate label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31e79459-107f-4d69-a163-90014f1c4772",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "serum concentration may be used in selected patients; not encoded as a routine range in this pass",
+        "reason": "This pass records the structure and source link but avoids encoding a therapeutic range without a verified laboratory catalog source.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "source needed: add a verified laboratory TDM catalog before displaying therapeutic or toxic ranges.",
+          "Interpret with ECG, QRS/QT, heart failure symptoms, anticholinergic effects, renal function, and interacting drugs."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed disopyramide phosphate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31e79459-107f-4d69-a163-90014f1c4772",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Other QT-prolonging antiarrhythmics",
+          "Decompensated heart failure"
+        ],
+        "unsafe": [
+          "Beta blockers",
+          "Verapamil",
+          "Diltiazem",
+          "Anticholinergic drugs",
+          "Potassium-lowering drugs"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Mexiletine",
+      "commonNames": [
+        "Mexiletine",
+        "Mexitil",
+        "美西律",
+        "Class Ib antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a61a07f6-0b48-4dcd-ad42-5d90f6e69ab1",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Mexiletine can cause neurologic, gastrointestinal, and cardiac adverse effects; toxic concentrations may be associated with hypotension, tremor, and cardiac abnormalities.",
+        "Overdose management is supportive with close monitoring of vital signs and rhythm."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Mexiletine is an oral Class Ib antiarrhythmic related electrophysiologically to lidocaine. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01BB02"
+        ],
+        "drugClass": [
+          "Class Ib antiarrhythmic",
+          "Sodium channel blocker"
+        ],
+        "indications": [
+          "Ventricular arrhythmia contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Cardiac and neurologic toxicity assessment requires clinical and ECG context."
+        ],
+        "majorInteractions": [
+          "CYP1A2/CYP2D6-related interactions may alter exposure.",
+          "Other antiarrhythmics can have additive electrophysiologic effects."
+        ],
+        "monitoring": [
+          "ECG",
+          "Neurologic symptoms",
+          "Gastrointestinal tolerance",
+          "Liver function when clinically indicated",
+          "Serum mexiletine concentration in selected patients"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed mexiletine hydrochloride label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a61a07f6-0b48-4dcd-ad42-5d90f6e69ab1",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01BB02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BB02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "capsule",
+          "notes": [
+            "source needed: add label-verified Tmax and half-life for the selected formulation before displaying numeric time-course values."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed mexiletine hydrochloride label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a61a07f6-0b48-4dcd-ad42-5d90f6e69ab1",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": true,
+        "monitoringType": "serum or plasma concentration in selected patients",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "mexiletine"
+        ],
+        "specimen": "serum or plasma",
+        "samplingTime": "Trough concentrations are most reproducible and should be collected immediately before the next scheduled dose at steady state.",
+        "therapeuticRanges": [
+          {
+            "indication": "antiarrhythmic TDM",
+            "range": "0.5-2.0",
+            "unit": "mcg/mL",
+            "note": "Labcorp and other laboratory catalogs use this trough reference range."
+          }
+        ],
+        "interpretationCaveats": [
+          "Interpret with ECG, neurologic symptoms, hepatic function, dose timing, and interacting drugs.",
+          "Toxicity can occur outside simple concentration thresholds depending on patient context."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Labcorp mexiletine serum or plasma",
+            "url": "https://www.labcorp.com/tests/716076/mexiletine-serum-or-plasma",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "ARUP Laboratories mexiletine serum or plasma",
+            "url": "https://ltd.aruplab.com/Tests/Pub/2011539",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Severe conduction disease without pacing"
+        ],
+        "unsafe": [
+          "Other antiarrhythmics",
+          "CYP1A2 inhibitors or inducers",
+          "CYP2D6 inhibitors",
+          "Theophylline"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Propafenone",
+      "commonNames": [
+        "Propafenone",
+        "Rythmol",
+        "普罗帕酮",
+        "Class Ic antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ecd6452-ccc3-493f-9a4a-69f0fbf67a42",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Propafenone can cause proarrhythmia, conduction slowing, bradycardia, hypotension, heart failure worsening, seizures, and high-grade ventricular arrhythmias in overdose.",
+        "It has beta-blocking properties that may add to other negative chronotropic or inotropic drugs."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Propafenone is a Class Ic antiarrhythmic with sodium-channel blocking and beta-blocking properties. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01BC03"
+        ],
+        "drugClass": [
+          "Class Ic antiarrhythmic",
+          "Sodium channel blocker",
+          "Beta-blocking antiarrhythmic"
+        ],
+        "indications": [
+          "Arrhythmia contexts depending on label"
+        ],
+        "contraindications": [
+          "Heart failure",
+          "Cardiogenic shock",
+          "Conduction disorders without pacemaker",
+          "Known Brugada syndrome",
+          "Bradycardia",
+          "Marked hypotension",
+          "Bronchospastic disorders or severe obstructive pulmonary disease",
+          "Marked electrolyte imbalance"
+        ],
+        "majorWarnings": [
+          "Proarrhythmia and conduction slowing require ECG context.",
+          "CYP2D6 and CYP3A4 interactions can increase exposure and adverse reaction risk."
+        ],
+        "majorInteractions": [
+          "CYP2D6 inhibitors and CYP3A4 inhibitors can increase exposure.",
+          "Propafenone can increase digoxin or warfarin levels.",
+          "Lidocaine may increase CNS adverse effects."
+        ],
+        "monitoring": [
+          "ECG",
+          "QRS/PR interval",
+          "Heart failure symptoms",
+          "CYP2D6/CYP3A4 interacting drugs",
+          "Digoxin or warfarin monitoring if coadministered"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed propafenone hydrochloride label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ecd6452-ccc3-493f-9a4a-69f0fbf67a42",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01BC03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BC03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "extended-release capsule",
+          "tmax": {
+            "min": 3.5,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Peak plasma levels occur approximately 3.5 hours after administration in most individuals."
+          },
+          "notes": [
+            "Propafenone has nonlinear pharmacokinetics and substantial interindividual variability.",
+            "Do not infer clinical effect or safety from Tmax alone."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed propafenone hydrochloride label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ecd6452-ccc3-493f-9a4a-69f0fbf67a42",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is generally monitored by ECG, symptoms, contraindications, organ function, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "CYP2D6 phenotype and CYP3A4/CYP2D6 inhibitors can materially change exposure."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed propafenone hydrochloride label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ecd6452-ccc3-493f-9a4a-69f0fbf67a42",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Heart failure",
+          "Known Brugada syndrome",
+          "Marked electrolyte imbalance"
+        ],
+        "unsafe": [
+          "CYP2D6 inhibitors",
+          "CYP3A4 inhibitors",
+          "Digoxin",
+          "Warfarin",
+          "Lidocaine",
+          "Other antiarrhythmics",
+          "Beta blockers"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Sotalol",
+      "commonNames": [
+        "Sotalol",
+        "Betapace",
+        "索他洛尔",
+        "Class III antiarrhythmic",
+        "Class II antiarrhythmic",
+        "Beta blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c824f6b2-80c5-45a6-a491-4c14c9f5e33d",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Sotalol can cause QT prolongation, torsades de pointes, bradycardia, hypotension, bronchospasm, heart failure, and hypoglycemia.",
+        "Overdose has resulted in death and may involve QT prolongation, torsades de pointes, ventricular tachycardia, bradycardia, asystole, and hypotension."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Sotalol has both beta-blocking Class II and Class III antiarrhythmic properties. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AA07"
+        ],
+        "drugClass": [
+          "Class III antiarrhythmic",
+          "Class II antiarrhythmic",
+          "Nonselective beta blocker",
+          "Potassium channel blocker",
+          "QT-prolonging antiarrhythmic"
+        ],
+        "indications": [
+          "Atrial fibrillation/flutter and ventricular arrhythmia contexts depending on label"
+        ],
+        "contraindications": [
+          "Sinus bradycardia or AV block without pacemaker",
+          "Congenital or acquired long QT syndrome",
+          "Cardiogenic shock or decompensated heart failure",
+          "Serum potassium below label threshold",
+          "Bronchial asthma or bronchospastic conditions",
+          "Baseline QT interval contraindications for AF/AFL labels"
+        ],
+        "majorWarnings": [
+          "QT prolongation and torsades de pointes risk require ECG and renal function context.",
+          "Renal elimination makes dosing interval and accumulation dependent on kidney function."
+        ],
+        "majorInteractions": [
+          "Avoid Class I or Class III antiarrhythmics and other QT-prolonging drugs.",
+          "Digoxin, diltiazem, verapamil, and beta blockers increase bradycardia/hypotension/heart failure risk.",
+          "Aluminum- or magnesium-containing antacids can reduce exposure."
+        ],
+        "monitoring": [
+          "ECG",
+          "QT interval",
+          "Renal function",
+          "Potassium",
+          "Magnesium",
+          "Heart rate",
+          "Blood pressure"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed sotalol hydrochloride label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c824f6b2-80c5-45a6-a491-4c14c9f5e33d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AA07",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AA07",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2.5,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 2,
+            "max": 3,
+            "unit": "day",
+            "basis": "plasma concentration"
+          },
+          "notes": [
+            "QT effect and torsades risk depend on plasma concentration, renal function, electrolytes, dose timing, and interacting drugs.",
+            "Steady-state is reached after about 5 to 6 doses when administered twice daily."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed sotalol hydrochloride label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c824f6b2-80c5-45a6-a491-4c14c9f5e33d",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "serum concentration available in selected contexts, but routine management focuses on ECG/QT and renal function",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "sotalol"
+        ],
+        "specimen": "serum or plasma",
+        "therapeuticRanges": [
+          {
+            "indication": "concentrations producing beta blockade",
+            "range": "500-4000",
+            "unit": "ng/mL",
+            "note": "Mayo/Labcorp reference; toxic range has not been established."
+          }
+        ],
+        "interpretationCaveats": [
+          "This is not a substitute for QT monitoring and renal-function-based clinical decisions.",
+          "Toxic range has not been established in the cited laboratory catalog."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Mayo Clinic Laboratories sotalol serum",
+            "url": "https://www.mayocliniclabs.com/test-catalog/overview/91123",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Labcorp sotalol serum or plasma",
+            "url": "https://www.labcorp.com/tests/808132/sotalol-serum-or-plasma",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Other QT-prolonging antiarrhythmics",
+          "Congenital or acquired long QT syndrome",
+          "Hypokalemia"
+        ],
+        "unsafe": [
+          "Digoxin",
+          "Verapamil",
+          "Diltiazem",
+          "Other beta blockers",
+          "Aluminum or magnesium antacids",
+          "Potassium-wasting diuretics"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Dofetilide",
+      "commonNames": [
+        "Dofetilide",
+        "Tikosyn",
+        "多非利特",
+        "Class III antiarrhythmic",
+        "IKr blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26de5f8c-8cec-46f6-a468-69451758a278",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Dofetilide can cause serious ventricular arrhythmias, primarily torsades de pointes associated with QT prolongation.",
+        "QT prolongation is directly related to plasma concentration; renal impairment and interacting drugs increase risk."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Dofetilide is a Class III antiarrhythmic IKr blocker. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01BD04"
+        ],
+        "drugClass": [
+          "Class III antiarrhythmic",
+          "IKr blocker",
+          "QT-prolonging antiarrhythmic"
+        ],
+        "indications": [
+          "Atrial fibrillation/flutter rhythm-control contexts depending on label"
+        ],
+        "contraindications": [
+          "Congenital or acquired long QT syndrome",
+          "Baseline QT/QTc above label threshold",
+          "Severe renal impairment below label creatinine-clearance threshold",
+          "Verapamil, cimetidine, trimethoprim, ketoconazole, hydrochlorothiazide, and other listed interacting drugs"
+        ],
+        "majorWarnings": [
+          "Initiation requires ECG monitoring in an appropriate facility according to labeling.",
+          "Creatinine clearance and QT monitoring are central because concentration relates to QT prolongation."
+        ],
+        "majorInteractions": [
+          "Renal cation transport inhibitors and hydrochlorothiazide can substantially increase risk.",
+          "Other QT-prolonging drugs can increase proarrhythmia risk."
+        ],
+        "monitoring": [
+          "ECG",
+          "QT interval",
+          "Creatinine clearance",
+          "Potassium",
+          "Magnesium",
+          "Drug interaction screen"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed dofetilide label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26de5f8c-8cec-46f6-a468-69451758a278",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01BD04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "capsule",
+          "tmax": {
+            "min": 2,
+            "max": 3,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 10,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 2,
+            "max": 3,
+            "unit": "day",
+            "basis": "plasma concentration"
+          },
+          "notes": [
+            "Dofetilide QT effect is concentration related.",
+            "Clinical use requires label-specific ECG and renal function procedures; this entry is not dosing guidance."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed dofetilide label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26de5f8c-8cec-46f6-a468-69451758a278",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration; ECG/QT and renal function are central",
+        "reason": "Although plasma concentration relates to QT prolongation, clinical labeling uses creatinine clearance and ECG/QT monitoring rather than routine plasma concentration TDM.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "This entry must not be used to initiate, prescribe, or adjust dofetilide."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed dofetilide label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26de5f8c-8cec-46f6-a468-69451758a278",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Verapamil",
+          "Hydrochlorothiazide",
+          "Trimethoprim",
+          "Ketoconazole",
+          "Cimetidine",
+          "Other QT-prolonging drugs"
+        ],
+        "unsafe": [
+          "Renal cation transport inhibitors",
+          "Potassium-wasting diuretics",
+          "Drugs causing hypokalemia or hypomagnesemia"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Ibutilide",
+      "commonNames": [
+        "Ibutilide",
+        "Corvert",
+        "伊布利特",
+        "Class III antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Ibutilide can induce or worsen ventricular arrhythmias, including torsades de pointes and polymorphic ventricular tachycardia.",
+        "Risk is worsened by QT prolongation, bradycardia, hypokalemia, and other patient factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Ibutilide is an IV Class III antiarrhythmic. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01BD05"
+        ],
+        "drugClass": [
+          "Class III antiarrhythmic",
+          "QT-prolonging antiarrhythmic",
+          "Intravenous rhythm-control medicine"
+        ],
+        "indications": [
+          "Atrial fibrillation/flutter conversion contexts depending on label"
+        ],
+        "contraindications": [
+          "Hypersensitivity to ibutilide or product components"
+        ],
+        "majorWarnings": [
+          "Proarrhythmia may be potentially fatal and requires monitored administration.",
+          "Hypokalemia and baseline QT prolongation increase concern."
+        ],
+        "majorInteractions": [
+          "Other QT-prolonging drugs can increase torsades risk.",
+          "Digoxin toxicity may be masked by supraventricular arrhythmias."
+        ],
+        "monitoring": [
+          "Continuous ECG",
+          "QT interval",
+          "Potassium",
+          "Magnesium",
+          "Readiness to manage torsades de pointes"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed ibutilide fumarate injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01BD05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "intravenous",
+          "formulation": "injection",
+          "notes": [
+            "source needed: add label-verified effect onset, offset, and half-life before displaying numeric time-course values.",
+            "Continuous ECG monitoring is more important than a simple duration estimate."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed ibutilide fumarate injection label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Monitoring focuses on continuous ECG, QT, electrolytes, and immediate arrhythmia management rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed ibutilide fumarate injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Other QT-prolonging antiarrhythmics",
+          "Hypokalemia",
+          "Baseline prolonged QT"
+        ],
+        "unsafe": [
+          "Digoxin toxicity",
+          "Potassium-wasting diuretics",
+          "Drugs causing hypomagnesemia"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Adenosine",
+      "commonNames": [
+        "Adenosine",
+        "Adenocard",
+        "腺苷",
+        "AV nodal blocker",
+        "Supraventricular tachycardia medicine"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48d72391-b3d4-bd97-e063-6294a90a9d6f",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Adenosine can cause transient AV block, bradycardia, flushing, chest discomfort, dyspnea, bronchospasm, hypotension, and rare serious arrhythmias.",
+        "Effects are very short-lived because adenosine is rapidly cleared from blood."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Adenosine is an ultra-short-acting IV AV nodal blocker used in selected supraventricular tachycardia contexts. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01EB10"
+        ],
+        "drugClass": [
+          "AV nodal blocker",
+          "Miscellaneous antiarrhythmic",
+          "Ultra-short-acting antiarrhythmic"
+        ],
+        "indications": [
+          "Paroxysmal supraventricular tachycardia contexts depending on label"
+        ],
+        "contraindications": [
+          "Second- or third-degree AV block without pacemaker",
+          "Sick sinus syndrome without pacemaker",
+          "Known or suspected bronchoconstrictive or bronchospastic lung disease in some labels",
+          "Hypersensitivity"
+        ],
+        "majorWarnings": [
+          "Can cause transient or prolonged AV block, bradycardia, and arrhythmias.",
+          "Bronchospasm can occur in susceptible patients."
+        ],
+        "majorInteractions": [
+          "Dipyridamole can potentiate adenosine effect.",
+          "Methylxanthines such as caffeine or theophylline can antagonize adenosine effect.",
+          "Carbamazepine may increase heart block risk."
+        ],
+        "monitoring": [
+          "Continuous ECG",
+          "Blood pressure",
+          "Respiratory symptoms",
+          "Readiness for resuscitation in monitored clinical setting"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed adenosine injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48d72391-b3d4-bd97-e063-6294a90a9d6f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01EB10",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01EB10",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "intravenous",
+          "formulation": "rapid bolus injection",
+          "onset": {
+            "min": 10,
+            "max": null,
+            "unit": "s",
+            "basis": "clinical effect",
+            "note": "Very rapid onset after IV bolus; exact timing is administration-dependent."
+          },
+          "durationOfAction": {
+            "min": 10,
+            "max": null,
+            "unit": "s",
+            "basis": "pharmacodynamic effect",
+            "note": "Effects are generally very brief because adenosine is rapidly taken up and metabolized."
+          },
+          "eliminationHalfLife": {
+            "min": 10,
+            "max": null,
+            "unit": "s",
+            "basis": "label pharmacokinetics",
+            "note": "Often described as less than 10 seconds."
+          },
+          "notes": [
+            "Adenosine timing is highly route/administration dependent and should not be generalized to oral supplements.",
+            "Continuous ECG and clinical monitoring are central."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed adenosine injection label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48d72391-b3d4-bd97-e063-6294a90a9d6f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not monitored by plasma concentration",
+        "reason": "Adenosine is ultra-short acting and monitored by immediate ECG/clinical response rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed adenosine injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48d72391-b3d4-bd97-e063-6294a90a9d6f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Second- or third-degree AV block without pacemaker",
+          "Sick sinus syndrome without pacemaker"
+        ],
+        "unsafe": [
+          "Dipyridamole",
+          "Theophylline",
+          "Caffeine",
+          "Carbamazepine",
+          "Bronchospastic lung disease"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Clopidogrel",
+      "commonNames": [
+        "Clopidogrel",
+        "Plavix",
+        "氯吡格雷",
+        "P2Y12 inhibitor",
+        "Antiplatelet"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clopidogrel can cause bleeding, including serious and fatal bleeding.",
+        "Effect depends on metabolic activation; CYP2C19 poor metabolizer status can reduce active metabolite formation."
+      ],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "Clopidogrel is an irreversible P2Y12 inhibitor antiplatelet prodrug. This entry is educational reference only and is not antiplatelet management guidance.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AC04"
+        ],
+        "drugClass": [
+          "P2Y12 inhibitor",
+          "Antiplatelet",
+          "Thienopyridine prodrug"
+        ],
+        "indications": [
+          "Reduction of atherothrombotic events in selected cardiovascular contexts depending on label"
+        ],
+        "contraindications": [
+          "Active pathological bleeding",
+          "Hypersensitivity to clopidogrel or product components"
+        ],
+        "majorWarnings": [
+          "Bleeding risk increases with other antithrombotic drugs and bleeding-prone conditions.",
+          "Reduced CYP2C19 function can reduce active metabolite exposure and platelet inhibition."
+        ],
+        "majorInteractions": [
+          "NSAIDs, warfarin, SSRIs, SNRIs, and other antiplatelet agents can increase bleeding risk.",
+          "Opioids can delay and reduce clopidogrel exposure.",
+          "CYP2C19-related interactions can alter active metabolite formation."
+        ],
+        "monitoring": [
+          "Bleeding symptoms",
+          "CBC when clinically indicated",
+          "Medication changes affecting bleeding risk",
+          "Genotype or platelet function testing only in selected contexts"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed clopidogrel label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AC04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "durationOfAction": {
+            "min": 5,
+            "max": null,
+            "unit": "day",
+            "basis": "pharmacodynamic effect",
+            "note": "Platelet inhibition is irreversible for exposed platelets; recovery depends on platelet turnover."
+          },
+          "washout": {
+            "min": 5,
+            "max": null,
+            "unit": "day",
+            "basis": "label pharmacodynamics",
+            "note": "Labels commonly describe platelet aggregation and bleeding time returning toward baseline after about 5 days."
+          },
+          "notes": [
+            "Clopidogrel is a prodrug; active metabolite exposure is not the same as duration of platelet effect.",
+            "Do not use this field to plan surgery or antiplatelet interruption."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed clopidogrel label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clopidogrel response is generally followed clinically; genotype or platelet function testing may be considered only in selected contexts.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "This is antiplatelet effect monitoring, not routine plasma concentration TDM."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed clopidogrel label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Active bleeding"
+        ],
+        "unsafe": [
+          "Warfarin",
+          "NSAIDs",
+          "SSRIs",
+          "SNRIs",
+          "Other antiplatelet agents",
+          "Opioids",
+          "CYP2C19 inhibitors or inducers"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Apixaban",
+      "commonNames": [
+        "Apixaban",
+        "Eliquis",
+        "阿哌沙班",
+        "DOAC",
+        "Direct oral anticoagulant",
+        "Factor Xa inhibitor"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Apixaban can cause serious and fatal bleeding.",
+        "Premature discontinuation can increase thrombotic risk in patients without adequate alternative anticoagulation."
+      ],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "Apixaban is a direct factor Xa inhibitor anticoagulant. This entry separates PK time course from occasional anticoagulant activity testing.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AF02"
+        ],
+        "drugClass": [
+          "Direct oral anticoagulant",
+          "DOAC",
+          "Factor Xa inhibitor",
+          "Antithrombotic"
+        ],
+        "indications": [
+          "Stroke/systemic embolism risk reduction and venous thromboembolism contexts depending on label"
+        ],
+        "contraindications": [
+          "Active pathological bleeding",
+          "Severe hypersensitivity to apixaban"
+        ],
+        "majorWarnings": [
+          "Bleeding risk increases with other anticoagulants, antiplatelets, thrombolytics, SSRIs/SNRIs, and NSAIDs.",
+          "Routine clotting tests are not reliable measures of apixaban exposure at therapeutic dosing."
+        ],
+        "majorInteractions": [
+          "Combined strong CYP3A4 and P-gp inhibitors increase apixaban exposure.",
+          "Combined strong CYP3A4 and P-gp inducers decrease apixaban exposure and may increase thromboembolic risk."
+        ],
+        "monitoring": [
+          "Bleeding symptoms",
+          "Renal function",
+          "Hepatic function when clinically indicated",
+          "CBC when clinically indicated",
+          "Anti-Xa calibrated assays only in selected contexts"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed apixaban/Eliquis label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AF02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "PT/INR/aPTT changes are small and variable at expected therapeutic dosing.",
+            "Anti-Xa testing, when used, is anticoagulant activity/exposure assessment rather than routine TDM."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed apixaban/Eliquis label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration; anti-Xa activity may be used in selected scenarios",
+        "reason": "Routine anticoagulation management usually does not use plasma concentration targets for apixaban.",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "anti-Xa activity calibrated for apixaban"
+        ],
+        "interpretationCaveats": [
+          "This is not routine TDM and depends heavily on assay calibration, timing, indication, renal function, bleeding/thrombotic context, and local policy."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed apixaban/Eliquis label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Active bleeding"
+        ],
+        "unsafe": [
+          "Other anticoagulants",
+          "Antiplatelet agents",
+          "NSAIDs",
+          "SSRIs",
+          "SNRIs",
+          "Strong combined CYP3A4 and P-gp inhibitors",
+          "Strong combined CYP3A4 and P-gp inducers"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Propranolol",
+      "commonNames": [
+        "Propranolol",
+        "Inderal",
+        "普萘洛尔",
+        "Nonselective beta blocker",
+        "Class II antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Nonselective beta blocker toxicity can include severe bradycardia, hypotension, bronchospasm, heart failure, seizures, and cardiac arrest.",
+        "Propranolol overdose can be clinically severe because of beta blockade and membrane-stabilizing effects at high exposure."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Propranolol is a nonselective beta blocker with Class II antiarrhythmic relevance. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AA05"
+        ],
+        "drugClass": [
+          "Nonselective beta blocker",
+          "Class II antiarrhythmic",
+          "Beta blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Angina",
+          "Arrhythmia-related contexts depending on label",
+          "Migraine and tremor contexts depending on label"
+        ],
+        "contraindications": [
+          "Cardiogenic shock",
+          "Sinus bradycardia",
+          "Greater than first-degree heart block",
+          "Bronchial asthma"
+        ],
+        "majorWarnings": [
+          "Abrupt discontinuation may exacerbate angina or precipitate myocardial infarction in susceptible patients.",
+          "Can worsen bronchospasm and heart failure in susceptible patients."
+        ],
+        "majorInteractions": [
+          "Quinidine, amiodarone, propafenone, verapamil, diltiazem, digoxin, and lidocaine interactions may be clinically important.",
+          "CYP2D6, CYP1A2, or CYP2C19 pathway interactions can alter exposure or effect."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "ECG when clinically indicated",
+          "Bronchospasm symptoms",
+          "Hypoglycemia masking in diabetes"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed propranolol hydrochloride label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 4,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "source needed: verify exact Tmax from the selected product label before using as a clinical reference."
+          },
+          "eliminationHalfLife": {
+            "min": 3,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Plasma half-life is not equivalent to duration of beta blockade.",
+            "Routine clinical monitoring uses heart rate, blood pressure, ECG context, symptoms, and interacting drugs."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed propranolol hydrochloride label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is guided by heart rate, blood pressure, ECG/symptoms, bronchospasm risk, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Overdose care is clinical and toxicology-driven; plasma concentration is not a routine therapeutic target."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed propranolol hydrochloride label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Bronchial asthma",
+          "Cardiogenic shock",
+          "Severe bradycardia or heart block"
+        ],
+        "unsafe": [
+          "Verapamil",
+          "Diltiazem",
+          "Digoxin",
+          "Amiodarone",
+          "Propafenone",
+          "Quinidine",
+          "Lidocaine",
+          "Clonidine withdrawal",
+          "Insulin or oral hypoglycemics"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Atenolol",
+      "commonNames": [
+        "Atenolol",
+        "Tenormin",
+        "阿替洛尔",
+        "Beta-1 selective blocker",
+        "Class II antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Beta blocker overdose can cause lethargy, bradycardia, hypotension, bronchospasm, heart failure, hypoglycemia, and conduction disturbances.",
+        "Atenolol is renally eliminated and can be removed by hemodialysis in overdose according to labeling."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Atenolol is a beta-1 selective blocker with Class II antiarrhythmic relevance. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AB03"
+        ],
+        "drugClass": [
+          "Beta-1 selective blocker",
+          "Class II antiarrhythmic",
+          "Beta blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Angina",
+          "Selected post-myocardial infarction contexts depending on label"
+        ],
+        "contraindications": [
+          "Sinus bradycardia",
+          "Heart block greater than first degree",
+          "Cardiogenic shock",
+          "Overt cardiac failure"
+        ],
+        "majorWarnings": [
+          "Beta blockade can precipitate or worsen cardiac failure in susceptible patients.",
+          "Abrupt discontinuation may worsen ischemic heart disease."
+        ],
+        "majorInteractions": [
+          "Calcium channel blockers, disopyramide, amiodarone, catecholamine-depleting drugs, and clonidine withdrawal can be clinically important."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "Renal function",
+          "ECG when clinically indicated",
+          "Hypoglycemia masking in diabetes"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed atenolol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AB03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 6,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Atenolol undergoes little or no hepatic metabolism and is primarily renally eliminated.",
+            "Routine clinical monitoring is not plasma concentration based."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed atenolol label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is monitored by heart rate, blood pressure, renal function, symptoms, and ECG context rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed atenolol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Cardiogenic shock",
+          "Severe bradycardia or heart block"
+        ],
+        "unsafe": [
+          "Verapamil",
+          "Diltiazem",
+          "Disopyramide",
+          "Amiodarone",
+          "Catecholamine-depleting drugs",
+          "Clonidine withdrawal",
+          "Insulin or oral hypoglycemics"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Carvedilol",
+      "commonNames": [
+        "Carvedilol",
+        "Coreg",
+        "卡维地洛",
+        "Alpha beta blocker",
+        "Nonselective beta blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Carvedilol overdose may cause severe hypotension, bradycardia, cardiac insufficiency, cardiogenic shock, cardiac arrest, bronchospasm, vomiting, loss of consciousness, and seizures.",
+        "Alpha-1 blockade contributes to orthostatic hypotension risk."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Carvedilol is a nonselective beta blocker with alpha-1 blocking activity. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AG02"
+        ],
+        "drugClass": [
+          "Alpha/beta blocker",
+          "Nonselective beta blocker",
+          "Beta blocker",
+          "Heart failure medicine",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Heart failure",
+          "Hypertension",
+          "Left ventricular dysfunction after myocardial infarction depending on label"
+        ],
+        "contraindications": [
+          "Bronchial asthma or related bronchospastic conditions",
+          "Second- or third-degree AV block",
+          "Sick sinus syndrome",
+          "Severe bradycardia without pacemaker",
+          "Cardiogenic shock or decompensated heart failure requiring IV inotropes",
+          "Severe hepatic impairment"
+        ],
+        "majorWarnings": [
+          "Can cause hypotension, bradycardia, worsening heart failure, bronchospasm, and masking of hypoglycemia."
+        ],
+        "majorInteractions": [
+          "CYP2D6 inhibitors may increase carvedilol levels.",
+          "Digoxin, amiodarone, verapamil, diltiazem, clonidine, and hypotensive agents may be clinically important."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "Heart failure symptoms",
+          "ECG when clinically indicated",
+          "Glucose effects in diabetes",
+          "Hepatic impairment"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed carvedilol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AG02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AG02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "eliminationHalfLife": {
+            "min": 7,
+            "max": 10,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Food slows absorption and can reduce orthostatic hypotension risk according to labeling.",
+            "source needed: add exact label-verified Tmax for the selected formulation before displaying numeric Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed carvedilol label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is monitored by heart rate, blood pressure, heart failure symptoms, ECG context, and adverse effects rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed carvedilol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Bronchial asthma",
+          "Cardiogenic shock",
+          "Decompensated heart failure requiring IV inotropes"
+        ],
+        "unsafe": [
+          "Digoxin",
+          "Amiodarone",
+          "Verapamil",
+          "Diltiazem",
+          "CYP2D6 inhibitors",
+          "Clonidine withdrawal",
+          "Insulin or oral hypoglycemics"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Esmolol",
+      "commonNames": [
+        "Esmolol",
+        "Brevibloc",
+        "艾司洛尔",
+        "Short acting beta blocker",
+        "Beta-1 selective blocker",
+        "Class II antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Esmolol overdose can cause severe bradycardia, AV block, hypotension, cardiac failure, cardiogenic shock, cardiac arrest, bronchospasm, hyperkalemia, hypoglycemia, seizures, and coma.",
+        "Its short half-life makes continuous clinical and hemodynamic monitoring central to interpretation."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Esmolol is a short-acting IV beta-1 selective blocker used when rapid titration of beta blockade is needed. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AB09"
+        ],
+        "drugClass": [
+          "Short-acting beta blocker",
+          "Beta-1 selective blocker",
+          "Class II antiarrhythmic",
+          "Intravenous rate-control medicine"
+        ],
+        "indications": [
+          "Supraventricular tachycardia and rapid ventricular rate contexts depending on label",
+          "Perioperative or urgent beta blockade contexts depending on label"
+        ],
+        "contraindications": [
+          "Severe sinus bradycardia",
+          "Heart block greater than first degree",
+          "Sick sinus syndrome",
+          "Decompensated heart failure",
+          "Cardiogenic shock",
+          "Close-proximity IV cardiodepressant calcium-channel antagonist use such as verapamil"
+        ],
+        "majorWarnings": [
+          "Can cause severe hypotension, bradycardia, heart block, cardiac failure, and cardiac arrest.",
+          "Requires continuous monitoring in clinical use."
+        ],
+        "majorInteractions": [
+          "Other drugs lowering blood pressure, myocardial contractility, sinus node function, or AV conduction can exaggerate toxicity.",
+          "Digitalis glycosides, verapamil, diltiazem, and other beta blockers are clinically important examples."
+        ],
+        "monitoring": [
+          "Continuous heart rate",
+          "Blood pressure",
+          "ECG",
+          "Signs of heart failure or shock",
+          "Bronchospasm symptoms",
+          "Glucose/electrolytes in selected patients"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed esmolol hydrochloride injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AB09",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB09",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "intravenous",
+          "formulation": "infusion",
+          "onset": {
+            "min": 5,
+            "max": null,
+            "unit": "min",
+            "basis": "label pharmacokinetics",
+            "note": "Steady-state blood levels are obtained within about 5 minutes with an appropriate loading dose."
+          },
+          "eliminationHalfLife": {
+            "min": 9,
+            "max": null,
+            "unit": "min",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 5,
+            "max": null,
+            "unit": "min",
+            "basis": "plasma concentration",
+            "note": "About 30 minutes without a loading dose."
+          },
+          "notes": [
+            "Esmolol is rapidly hydrolyzed by red blood cell esterases.",
+            "Short plasma half-life does not remove the need for continuous hemodynamic monitoring."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed esmolol hydrochloride injection label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Esmolol is titrated and monitored by continuous clinical/hemodynamic response rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed esmolol hydrochloride injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Close-proximity IV verapamil",
+          "Cardiogenic shock",
+          "Decompensated heart failure"
+        ],
+        "unsafe": [
+          "Verapamil",
+          "Diltiazem",
+          "Digoxin",
+          "Other beta blockers",
+          "Clonidine withdrawal",
+          "Drugs that reduce myocardial contractility or AV conduction"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Diltiazem",
+      "commonNames": [
+        "Diltiazem",
+        "Cardizem",
+        "Tiazac",
+        "地尔硫卓",
+        "Non-dihydropyridine calcium channel blocker",
+        "CCB"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Diltiazem can cause bradycardia, AV block, hypotension, worsening heart failure, and clinically significant overdose toxicity.",
+        "Overdose assessment is clinical; blood levels vary widely and are not a routine management target."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Diltiazem is a non-dihydropyridine calcium channel blocker. This entry emphasizes formulation-specific time course, conduction toxicity, and interaction indexing.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C08DB01"
+        ],
+        "drugClass": [
+          "Non-dihydropyridine calcium channel blocker",
+          "Calcium channel blocker",
+          "CCB",
+          "Rate-controlling calcium channel blocker",
+          "Antianginal",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Angina",
+          "Selected rate-control contexts depending on formulation and label"
+        ],
+        "contraindications": [
+          "Sick sinus syndrome without a functioning pacemaker",
+          "Second- or third-degree AV block without a functioning pacemaker",
+          "Hypotension",
+          "Acute myocardial infarction with pulmonary congestion in some labels"
+        ],
+        "majorWarnings": [
+          "Can prolong AV nodal conduction and cause bradycardia or AV block.",
+          "May worsen heart failure in susceptible patients."
+        ],
+        "majorInteractions": [
+          "Beta blockers and digoxin may have additive effects on cardiac conduction.",
+          "Diltiazem is a CYP3A4 substrate and inhibitor; CYP3A4 inhibitors/inducers can affect exposure and interacting substrates.",
+          "Some statins can have increased exposure and myopathy risk with diltiazem."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "ECG or conduction symptoms when clinically indicated",
+          "Heart failure symptoms",
+          "Interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed diltiazem hydrochloride extended-release label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C08DB01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08DB01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "extended-release capsule",
+          "notes": [
+            "Diltiazem time course is formulation-specific; do not reuse values across immediate-release, extended-release, or IV products.",
+            "source needed: add label-verified Tmax and duration for each exact formulation before displaying numeric values.",
+            "Blood pressure, heart rate, ECG, and symptoms are more relevant than routine plasma concentration."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed diltiazem hydrochloride extended-release label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Routine monitoring is based on heart rate, blood pressure, ECG/conduction symptoms, heart failure symptoms, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "DailyMed overdose discussion notes wide variability in blood levels, limiting usefulness in overdose cases."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed diltiazem hydrochloride extended-release label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Severe conduction disease without pacemaker"
+        ],
+        "unsafe": [
+          "Beta blockers",
+          "Digoxin",
+          "Strong CYP3A4 inhibitors",
+          "Strong CYP3A4 inducers",
+          "CYP3A4 statins"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Cilostazol",
+      "commonNames": [
+        "Cilostazol",
+        "Pletal",
+        "西洛他唑",
+        "Peripheral vasodilator",
+        "PDE3 inhibitor",
+        "Antiplatelet"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Cilostazol is contraindicated in heart failure of any severity because other PDE3 inhibitors have decreased survival in heart failure populations.",
+        "Overdose may cause severe headache, diarrhea, hypotension, tachycardia, and possibly cardiac arrhythmias."
+      ],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "Cilostazol is a PDE3 inhibitor with antiplatelet and vasodilator effects used for intermittent claudication. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AC23"
+        ],
+        "drugClass": [
+          "PDE3 inhibitor",
+          "Antiplatelet",
+          "Peripheral vasodilator",
+          "Intermittent claudication medicine"
+        ],
+        "indications": [
+          "Intermittent claudication"
+        ],
+        "contraindications": [
+          "Heart failure of any severity",
+          "Hypersensitivity to cilostazol or product components"
+        ],
+        "majorWarnings": [
+          "Contraindicated in heart failure of any severity.",
+          "Can cause tachycardia, palpitations, hypotension, and other cardiovascular effects."
+        ],
+        "majorInteractions": [
+          "Strong or moderate CYP3A4 inhibitors can increase cilostazol exposure.",
+          "CYP2C19 inhibitors can increase exposure to active metabolites.",
+          "Diltiazem, erythromycin, ketoconazole, grapefruit juice, and omeprazole are examples described in labels."
+        ],
+        "monitoring": [
+          "Walking symptoms",
+          "Bleeding symptoms",
+          "Heart failure history",
+          "Heart rate or palpitations",
+          "Interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed cilostazol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AC23",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC23",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "eliminationHalfLife": {
+            "min": 11,
+            "max": 13,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Apparent elimination half-life for cilostazol and active metabolites."
+          },
+          "notes": [
+            "Symptomatic walking improvement is a repeated-dose clinical outcome and is not equal to plasma Tmax.",
+            "source needed: add exact label-verified Tmax from the selected label before displaying numeric Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed cilostazol label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is usually guided by symptoms, contraindications, bleeding/cardiovascular safety, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "CYP3A4 and CYP2C19 inhibitors can increase exposure, but this is handled through labeling and clinical monitoring rather than routine TDM."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed cilostazol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Heart failure"
+        ],
+        "unsafe": [
+          "Strong CYP3A4 inhibitors",
+          "Moderate CYP3A4 inhibitors",
+          "CYP2C19 inhibitors",
+          "Grapefruit juice",
+          "Omeprazole",
+          "Other antiplatelet or anticoagulant drugs"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Furosemide",
+      "commonNames": [
+        "Furosemide",
+        "Lasix",
+        "呋塞米",
+        "速尿",
+        "Loop diuretic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Excessive furosemide effect can cause profound diuresis with dehydration, hypovolemia, hypotension, electrolyte depletion, hypokalemia, and metabolic alkalosis.",
+        "Ototoxicity risk is clinically important, especially with high exposure, renal impairment, or interacting ototoxic drugs."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Furosemide is a loop diuretic. This entry focuses on time course, toxicity, and interaction indexing, not dosing guidance.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C03CA01"
+        ],
+        "drugClass": [
+          "Loop diuretic",
+          "High-ceiling diuretic"
+        ],
+        "indications": [
+          "Edema",
+          "Hypertension depending on label and clinical context"
+        ],
+        "contraindications": [
+          "Anuria",
+          "Hypersensitivity to furosemide"
+        ],
+        "majorWarnings": [
+          "Can cause profound diuresis with water and electrolyte depletion.",
+          "Ototoxicity risk can increase with aminoglycosides, ethacrynic acid, cisplatin, high doses, or renal impairment."
+        ],
+        "majorInteractions": [
+          "Aminoglycosides, ethacrynic acid, and cisplatin increase ototoxicity/nephrotoxicity concerns.",
+          "NSAIDs may blunt diuretic effect.",
+          "Lithium toxicity risk may increase.",
+          "Hypokalemia can increase digoxin toxicity risk."
+        ],
+        "monitoring": [
+          "Fluid status",
+          "Blood pressure",
+          "Renal function",
+          "Potassium",
+          "Magnesium",
+          "Sodium",
+          "Hearing symptoms when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed furosemide label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03CA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "onset": {
+            "min": 1,
+            "max": null,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "peakEffect": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "durationOfAction": {
+            "min": 6,
+            "max": 8,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "notes": [
+            "Duration of diuretic effect is not the same as plasma half-life.",
+            "Electrolyte and volume status are central to interpretation."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed furosemide label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Furosemide monitoring is based on diuretic response, volume status, blood pressure, renal function, and electrolytes rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Toxicology concentrations are not routine clinical dosing targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed furosemide label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Ethacrynic acid",
+          "Aminoglycoside antibiotics"
+        ],
+        "unsafe": [
+          "Cisplatin",
+          "Lithium",
+          "NSAIDs",
+          "Digoxin",
+          "High-dose salicylates"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Spironolactone",
+      "commonNames": [
+        "Spironolactone",
+        "Aldactone",
+        "螺内酯",
+        "Mineralocorticoid receptor antagonist",
+        "Potassium-sparing diuretic",
+        "MRA"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Spironolactone can cause hyperkalemia, especially with renal impairment or potassium-raising drugs.",
+        "Overdose may cause drowsiness, confusion, rash, nausea, vomiting, dizziness, diarrhea, hyponatremia, or hyperkalemia."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Spironolactone is a mineralocorticoid receptor antagonist and potassium-sparing diuretic. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C03DA01"
+        ],
+        "drugClass": [
+          "Mineralocorticoid receptor antagonist",
+          "MRA",
+          "Potassium-sparing diuretic",
+          "Aldosterone antagonist"
+        ],
+        "indications": [
+          "Heart failure and edema contexts depending on label",
+          "Hypertension",
+          "Primary hyperaldosteronism"
+        ],
+        "contraindications": [
+          "Hyperkalemia",
+          "Addison disease",
+          "Concomitant eplerenone use"
+        ],
+        "majorWarnings": [
+          "Hyperkalemia can be fatal and requires potassium and renal function monitoring."
+        ],
+        "majorInteractions": [
+          "ACE inhibitors, ARBs, aliskiren, potassium supplements, and other potassium-sparing drugs can increase hyperkalemia risk.",
+          "NSAIDs may reduce diuretic/antihypertensive effect and affect renal function.",
+          "Lithium toxicity risk may increase."
+        ],
+        "monitoring": [
+          "Serum potassium",
+          "Renal function",
+          "Blood pressure",
+          "Volume status"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed spironolactone label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03DA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2.6,
+            "max": 4.3,
+            "unit": "h",
+            "basis": "plasma concentration",
+            "note": "Mean Tmax is about 2.6 h for spironolactone and 4.3 h for canrenone."
+          },
+          "eliminationHalfLife": {
+            "min": 1.4,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Parent spironolactone half-life; active metabolites persist longer."
+          },
+          "notes": [
+            "Clinical potassium and diuretic effects depend on active metabolites and physiology, not parent Tmax alone.",
+            "Do not use this record for dose adjustment."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed spironolactone label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Monitoring focuses on potassium, renal function, blood pressure, and volume status rather than plasma spironolactone concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Hyperkalemia risk is a safety monitoring issue, not a plasma concentration TDM range."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed spironolactone label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Eplerenone",
+          "Potassium supplements",
+          "Other potassium-sparing diuretics"
+        ],
+        "unsafe": [
+          "ACE inhibitors",
+          "ARBs",
+          "Aliskiren",
+          "NSAIDs",
+          "Lithium",
+          "Digoxin assays",
+          "Cholestyramine"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Atorvastatin",
+      "commonNames": [
+        "Atorvastatin",
+        "Lipitor",
+        "阿托伐他汀",
+        "Statin",
+        "HMG-CoA reductase inhibitor"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Statins can cause myopathy, rhabdomyolysis, liver enzyme abnormalities, and rare immune-mediated necrotizing myopathy.",
+        "Risk is increased by interacting drugs, higher exposure, renal impairment, older age, and other patient factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Atorvastatin is an HMG-CoA reductase inhibitor used for lipid lowering and cardiovascular risk reduction. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C10AA05"
+        ],
+        "drugClass": [
+          "Statin",
+          "HMG-CoA reductase inhibitor",
+          "Lipid-lowering medicine"
+        ],
+        "indications": [
+          "Hyperlipidemia",
+          "Cardiovascular risk reduction depending on label and guideline context"
+        ],
+        "contraindications": [
+          "Active liver disease or unexplained persistent transaminase elevations",
+          "Pregnancy"
+        ],
+        "majorWarnings": [
+          "Myopathy and rhabdomyolysis risk increases with higher exposure and interacting drugs.",
+          "Liver enzyme abnormalities can occur."
+        ],
+        "majorInteractions": [
+          "Strong CYP3A4 inhibitors can increase atorvastatin exposure.",
+          "Cyclosporine, gemfibrozil, some antivirals, macrolides, azoles, and grapefruit juice can increase myopathy risk."
+        ],
+        "monitoring": [
+          "LDL-C response",
+          "Muscle symptoms",
+          "Creatine kinase when clinically indicated",
+          "Liver enzymes when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed atorvastatin calcium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C10AA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 14,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Plasma elimination half-life is about 14 hours."
+          },
+          "durationOfAction": {
+            "min": 20,
+            "max": 30,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "Half-life of inhibitory activity for HMG-CoA reductase is longer because active metabolites contribute."
+          },
+          "notes": [
+            "LDL-C response evolves over repeated dosing and is not described by a single Tmax.",
+            "Routine clinical follow-up uses lipid response and safety monitoring, not plasma atorvastatin concentration."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed atorvastatin calcium label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Atorvastatin is usually monitored by LDL-C response and safety findings rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Toxicity risk is exposure-related but routine TDM is not standard for atorvastatin."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed atorvastatin calcium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Pregnancy"
+        ],
+        "unsafe": [
+          "Strong CYP3A4 inhibitors",
+          "Cyclosporine",
+          "Gemfibrozil",
+          "Macrolide antibiotics",
+          "Azole antifungals",
+          "Large amounts of grapefruit juice"
+        ],
+        "uncertain": []
       },
       "roas": []
     }

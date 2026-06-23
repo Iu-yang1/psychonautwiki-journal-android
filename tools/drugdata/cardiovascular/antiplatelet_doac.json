@@ -1,0 +1,275 @@
+{
+  "substances": [
+    {
+      "name": "Clopidogrel",
+      "commonNames": [
+        "Clopidogrel",
+        "Plavix",
+        "氯吡格雷",
+        "P2Y12 inhibitor",
+        "Antiplatelet"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clopidogrel can cause bleeding, including serious and fatal bleeding.",
+        "Effect depends on metabolic activation; CYP2C19 poor metabolizer status can reduce active metabolite formation."
+      ],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "Clopidogrel is an irreversible P2Y12 inhibitor antiplatelet prodrug. This entry is educational reference only and is not antiplatelet management guidance.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AC04"
+        ],
+        "drugClass": [
+          "P2Y12 inhibitor",
+          "Antiplatelet",
+          "Thienopyridine prodrug"
+        ],
+        "indications": [
+          "Reduction of atherothrombotic events in selected cardiovascular contexts depending on label"
+        ],
+        "contraindications": [
+          "Active pathological bleeding",
+          "Hypersensitivity to clopidogrel or product components"
+        ],
+        "majorWarnings": [
+          "Bleeding risk increases with other antithrombotic drugs and bleeding-prone conditions.",
+          "Reduced CYP2C19 function can reduce active metabolite exposure and platelet inhibition."
+        ],
+        "majorInteractions": [
+          "NSAIDs, warfarin, SSRIs, SNRIs, and other antiplatelet agents can increase bleeding risk.",
+          "Opioids can delay and reduce clopidogrel exposure.",
+          "CYP2C19-related interactions can alter active metabolite formation."
+        ],
+        "monitoring": [
+          "Bleeding symptoms",
+          "CBC when clinically indicated",
+          "Medication changes affecting bleeding risk",
+          "Genotype or platelet function testing only in selected contexts"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed clopidogrel label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AC04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "durationOfAction": {
+            "min": 5,
+            "max": null,
+            "unit": "day",
+            "basis": "pharmacodynamic effect",
+            "note": "Platelet inhibition is irreversible for exposed platelets; recovery depends on platelet turnover."
+          },
+          "washout": {
+            "min": 5,
+            "max": null,
+            "unit": "day",
+            "basis": "label pharmacodynamics",
+            "note": "Labels commonly describe platelet aggregation and bleeding time returning toward baseline after about 5 days."
+          },
+          "notes": [
+            "Clopidogrel is a prodrug; active metabolite exposure is not the same as duration of platelet effect.",
+            "Do not use this field to plan surgery or antiplatelet interruption."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed clopidogrel label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clopidogrel response is generally followed clinically; genotype or platelet function testing may be considered only in selected contexts.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "This is antiplatelet effect monitoring, not routine plasma concentration TDM."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed clopidogrel label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Active bleeding"
+        ],
+        "unsafe": [
+          "Warfarin",
+          "NSAIDs",
+          "SSRIs",
+          "SNRIs",
+          "Other antiplatelet agents",
+          "Opioids",
+          "CYP2C19 inhibitors or inducers"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Apixaban",
+      "commonNames": [
+        "Apixaban",
+        "Eliquis",
+        "阿哌沙班",
+        "DOAC",
+        "Direct oral anticoagulant",
+        "Factor Xa inhibitor"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Apixaban can cause serious and fatal bleeding.",
+        "Premature discontinuation can increase thrombotic risk in patients without adequate alternative anticoagulation."
+      ],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "Apixaban is a direct factor Xa inhibitor anticoagulant. This entry separates PK time course from occasional anticoagulant activity testing.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AF02"
+        ],
+        "drugClass": [
+          "Direct oral anticoagulant",
+          "DOAC",
+          "Factor Xa inhibitor",
+          "Antithrombotic"
+        ],
+        "indications": [
+          "Stroke/systemic embolism risk reduction and venous thromboembolism contexts depending on label"
+        ],
+        "contraindications": [
+          "Active pathological bleeding",
+          "Severe hypersensitivity to apixaban"
+        ],
+        "majorWarnings": [
+          "Bleeding risk increases with other anticoagulants, antiplatelets, thrombolytics, SSRIs/SNRIs, and NSAIDs.",
+          "Routine clotting tests are not reliable measures of apixaban exposure at therapeutic dosing."
+        ],
+        "majorInteractions": [
+          "Combined strong CYP3A4 and P-gp inhibitors increase apixaban exposure.",
+          "Combined strong CYP3A4 and P-gp inducers decrease apixaban exposure and may increase thromboembolic risk."
+        ],
+        "monitoring": [
+          "Bleeding symptoms",
+          "Renal function",
+          "Hepatic function when clinically indicated",
+          "CBC when clinically indicated",
+          "Anti-Xa calibrated assays only in selected contexts"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed apixaban/Eliquis label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AF02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "PT/INR/aPTT changes are small and variable at expected therapeutic dosing.",
+            "Anti-Xa testing, when used, is anticoagulant activity/exposure assessment rather than routine TDM."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed apixaban/Eliquis label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration; anti-Xa activity may be used in selected scenarios",
+        "reason": "Routine anticoagulation management usually does not use plasma concentration targets for apixaban.",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "anti-Xa activity calibrated for apixaban"
+        ],
+        "interpretationCaveats": [
+          "This is not routine TDM and depends heavily on assay calibration, timing, indication, renal function, bleeding/thrombotic context, and local policy."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed apixaban/Eliquis label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Active bleeding"
+        ],
+        "unsafe": [
+          "Other anticoagulants",
+          "Antiplatelet agents",
+          "NSAIDs",
+          "SSRIs",
+          "SNRIs",
+          "Strong combined CYP3A4 and P-gp inhibitors",
+          "Strong combined CYP3A4 and P-gp inducers"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    }
+  ]
+}

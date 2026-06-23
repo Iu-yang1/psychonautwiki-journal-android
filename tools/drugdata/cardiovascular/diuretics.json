@@ -1,0 +1,283 @@
+{
+  "substances": [
+    {
+      "name": "Furosemide",
+      "commonNames": [
+        "Furosemide",
+        "Lasix",
+        "呋塞米",
+        "速尿",
+        "Loop diuretic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Excessive furosemide effect can cause profound diuresis with dehydration, hypovolemia, hypotension, electrolyte depletion, hypokalemia, and metabolic alkalosis.",
+        "Ototoxicity risk is clinically important, especially with high exposure, renal impairment, or interacting ototoxic drugs."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Furosemide is a loop diuretic. This entry focuses on time course, toxicity, and interaction indexing, not dosing guidance.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C03CA01"
+        ],
+        "drugClass": [
+          "Loop diuretic",
+          "High-ceiling diuretic"
+        ],
+        "indications": [
+          "Edema",
+          "Hypertension depending on label and clinical context"
+        ],
+        "contraindications": [
+          "Anuria",
+          "Hypersensitivity to furosemide"
+        ],
+        "majorWarnings": [
+          "Can cause profound diuresis with water and electrolyte depletion.",
+          "Ototoxicity risk can increase with aminoglycosides, ethacrynic acid, cisplatin, high doses, or renal impairment."
+        ],
+        "majorInteractions": [
+          "Aminoglycosides, ethacrynic acid, and cisplatin increase ototoxicity/nephrotoxicity concerns.",
+          "NSAIDs may blunt diuretic effect.",
+          "Lithium toxicity risk may increase.",
+          "Hypokalemia can increase digoxin toxicity risk."
+        ],
+        "monitoring": [
+          "Fluid status",
+          "Blood pressure",
+          "Renal function",
+          "Potassium",
+          "Magnesium",
+          "Sodium",
+          "Hearing symptoms when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed furosemide label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03CA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "onset": {
+            "min": 1,
+            "max": null,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "peakEffect": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "durationOfAction": {
+            "min": 6,
+            "max": 8,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "notes": [
+            "Duration of diuretic effect is not the same as plasma half-life.",
+            "Electrolyte and volume status are central to interpretation."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed furosemide label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Furosemide monitoring is based on diuretic response, volume status, blood pressure, renal function, and electrolytes rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Toxicology concentrations are not routine clinical dosing targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed furosemide label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Ethacrynic acid",
+          "Aminoglycoside antibiotics"
+        ],
+        "unsafe": [
+          "Cisplatin",
+          "Lithium",
+          "NSAIDs",
+          "Digoxin",
+          "High-dose salicylates"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Spironolactone",
+      "commonNames": [
+        "Spironolactone",
+        "Aldactone",
+        "螺内酯",
+        "Mineralocorticoid receptor antagonist",
+        "Potassium-sparing diuretic",
+        "MRA"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Spironolactone can cause hyperkalemia, especially with renal impairment or potassium-raising drugs.",
+        "Overdose may cause drowsiness, confusion, rash, nausea, vomiting, dizziness, diarrhea, hyponatremia, or hyperkalemia."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Spironolactone is a mineralocorticoid receptor antagonist and potassium-sparing diuretic. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C03DA01"
+        ],
+        "drugClass": [
+          "Mineralocorticoid receptor antagonist",
+          "MRA",
+          "Potassium-sparing diuretic",
+          "Aldosterone antagonist"
+        ],
+        "indications": [
+          "Heart failure and edema contexts depending on label",
+          "Hypertension",
+          "Primary hyperaldosteronism"
+        ],
+        "contraindications": [
+          "Hyperkalemia",
+          "Addison disease",
+          "Concomitant eplerenone use"
+        ],
+        "majorWarnings": [
+          "Hyperkalemia can be fatal and requires potassium and renal function monitoring."
+        ],
+        "majorInteractions": [
+          "ACE inhibitors, ARBs, aliskiren, potassium supplements, and other potassium-sparing drugs can increase hyperkalemia risk.",
+          "NSAIDs may reduce diuretic/antihypertensive effect and affect renal function.",
+          "Lithium toxicity risk may increase."
+        ],
+        "monitoring": [
+          "Serum potassium",
+          "Renal function",
+          "Blood pressure",
+          "Volume status"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed spironolactone label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03DA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2.6,
+            "max": 4.3,
+            "unit": "h",
+            "basis": "plasma concentration",
+            "note": "Mean Tmax is about 2.6 h for spironolactone and 4.3 h for canrenone."
+          },
+          "eliminationHalfLife": {
+            "min": 1.4,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Parent spironolactone half-life; active metabolites persist longer."
+          },
+          "notes": [
+            "Clinical potassium and diuretic effects depend on active metabolites and physiology, not parent Tmax alone.",
+            "Do not use this record for dose adjustment."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed spironolactone label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Monitoring focuses on potassium, renal function, blood pressure, and volume status rather than plasma spironolactone concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Hyperkalemia risk is a safety monitoring issue, not a plasma concentration TDM range."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed spironolactone label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Eplerenone",
+          "Potassium supplements",
+          "Other potassium-sparing diuretics"
+        ],
+        "unsafe": [
+          "ACE inhibitors",
+          "ARBs",
+          "Aliskiren",
+          "NSAIDs",
+          "Lithium",
+          "Digoxin assays",
+          "Cholestyramine"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    }
+  ]
+}

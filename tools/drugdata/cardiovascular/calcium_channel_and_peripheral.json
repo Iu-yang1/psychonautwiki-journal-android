@@ -1,0 +1,261 @@
+{
+  "substances": [
+    {
+      "name": "Diltiazem",
+      "commonNames": [
+        "Diltiazem",
+        "Cardizem",
+        "Tiazac",
+        "地尔硫卓",
+        "Non-dihydropyridine calcium channel blocker",
+        "CCB"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Diltiazem can cause bradycardia, AV block, hypotension, worsening heart failure, and clinically significant overdose toxicity.",
+        "Overdose assessment is clinical; blood levels vary widely and are not a routine management target."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Diltiazem is a non-dihydropyridine calcium channel blocker. This entry emphasizes formulation-specific time course, conduction toxicity, and interaction indexing.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C08DB01"
+        ],
+        "drugClass": [
+          "Non-dihydropyridine calcium channel blocker",
+          "Calcium channel blocker",
+          "CCB",
+          "Rate-controlling calcium channel blocker",
+          "Antianginal",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Angina",
+          "Selected rate-control contexts depending on formulation and label"
+        ],
+        "contraindications": [
+          "Sick sinus syndrome without a functioning pacemaker",
+          "Second- or third-degree AV block without a functioning pacemaker",
+          "Hypotension",
+          "Acute myocardial infarction with pulmonary congestion in some labels"
+        ],
+        "majorWarnings": [
+          "Can prolong AV nodal conduction and cause bradycardia or AV block.",
+          "May worsen heart failure in susceptible patients."
+        ],
+        "majorInteractions": [
+          "Beta blockers and digoxin may have additive effects on cardiac conduction.",
+          "Diltiazem is a CYP3A4 substrate and inhibitor; CYP3A4 inhibitors/inducers can affect exposure and interacting substrates.",
+          "Some statins can have increased exposure and myopathy risk with diltiazem."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "ECG or conduction symptoms when clinically indicated",
+          "Heart failure symptoms",
+          "Interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed diltiazem hydrochloride extended-release label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C08DB01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08DB01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "extended-release capsule",
+          "notes": [
+            "Diltiazem time course is formulation-specific; do not reuse values across immediate-release, extended-release, or IV products.",
+            "source needed: add label-verified Tmax and duration for each exact formulation before displaying numeric values.",
+            "Blood pressure, heart rate, ECG, and symptoms are more relevant than routine plasma concentration."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed diltiazem hydrochloride extended-release label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Routine monitoring is based on heart rate, blood pressure, ECG/conduction symptoms, heart failure symptoms, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "DailyMed overdose discussion notes wide variability in blood levels, limiting usefulness in overdose cases."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed diltiazem hydrochloride extended-release label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Severe conduction disease without pacemaker"
+        ],
+        "unsafe": [
+          "Beta blockers",
+          "Digoxin",
+          "Strong CYP3A4 inhibitors",
+          "Strong CYP3A4 inducers",
+          "CYP3A4 statins"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Cilostazol",
+      "commonNames": [
+        "Cilostazol",
+        "Pletal",
+        "西洛他唑",
+        "Peripheral vasodilator",
+        "PDE3 inhibitor",
+        "Antiplatelet"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Cilostazol is contraindicated in heart failure of any severity because other PDE3 inhibitors have decreased survival in heart failure populations.",
+        "Overdose may cause severe headache, diarrhea, hypotension, tachycardia, and possibly cardiac arrhythmias."
+      ],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "Cilostazol is a PDE3 inhibitor with antiplatelet and vasodilator effects used for intermittent claudication. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AC23"
+        ],
+        "drugClass": [
+          "PDE3 inhibitor",
+          "Antiplatelet",
+          "Peripheral vasodilator",
+          "Intermittent claudication medicine"
+        ],
+        "indications": [
+          "Intermittent claudication"
+        ],
+        "contraindications": [
+          "Heart failure of any severity",
+          "Hypersensitivity to cilostazol or product components"
+        ],
+        "majorWarnings": [
+          "Contraindicated in heart failure of any severity.",
+          "Can cause tachycardia, palpitations, hypotension, and other cardiovascular effects."
+        ],
+        "majorInteractions": [
+          "Strong or moderate CYP3A4 inhibitors can increase cilostazol exposure.",
+          "CYP2C19 inhibitors can increase exposure to active metabolites.",
+          "Diltiazem, erythromycin, ketoconazole, grapefruit juice, and omeprazole are examples described in labels."
+        ],
+        "monitoring": [
+          "Walking symptoms",
+          "Bleeding symptoms",
+          "Heart failure history",
+          "Heart rate or palpitations",
+          "Interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed cilostazol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AC23",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC23",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "eliminationHalfLife": {
+            "min": 11,
+            "max": 13,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Apparent elimination half-life for cilostazol and active metabolites."
+          },
+          "notes": [
+            "Symptomatic walking improvement is a repeated-dose clinical outcome and is not equal to plasma Tmax.",
+            "source needed: add exact label-verified Tmax from the selected label before displaying numeric Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed cilostazol label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is usually guided by symptoms, contraindications, bleeding/cardiovascular safety, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "CYP3A4 and CYP2C19 inhibitors can increase exposure, but this is handled through labeling and clinical monitoring rather than routine TDM."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed cilostazol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Heart failure"
+        ],
+        "unsafe": [
+          "Strong CYP3A4 inhibitors",
+          "Moderate CYP3A4 inhibitors",
+          "CYP2C19 inhibitors",
+          "Grapefruit juice",
+          "Omeprazole",
+          "Other antiplatelet or anticoagulant drugs"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    }
+  ]
+}

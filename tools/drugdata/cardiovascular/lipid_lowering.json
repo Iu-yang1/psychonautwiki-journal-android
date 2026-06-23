@@ -1,0 +1,142 @@
+{
+  "substances": [
+    {
+      "name": "Atorvastatin",
+      "commonNames": [
+        "Atorvastatin",
+        "Lipitor",
+        "阿托伐他汀",
+        "Statin",
+        "HMG-CoA reductase inhibitor"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Statins can cause myopathy, rhabdomyolysis, liver enzyme abnormalities, and rare immune-mediated necrotizing myopathy.",
+        "Risk is increased by interacting drugs, higher exposure, renal impairment, older age, and other patient factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Atorvastatin is an HMG-CoA reductase inhibitor used for lipid lowering and cardiovascular risk reduction. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C10AA05"
+        ],
+        "drugClass": [
+          "Statin",
+          "HMG-CoA reductase inhibitor",
+          "Lipid-lowering medicine"
+        ],
+        "indications": [
+          "Hyperlipidemia",
+          "Cardiovascular risk reduction depending on label and guideline context"
+        ],
+        "contraindications": [
+          "Active liver disease or unexplained persistent transaminase elevations",
+          "Pregnancy"
+        ],
+        "majorWarnings": [
+          "Myopathy and rhabdomyolysis risk increases with higher exposure and interacting drugs.",
+          "Liver enzyme abnormalities can occur."
+        ],
+        "majorInteractions": [
+          "Strong CYP3A4 inhibitors can increase atorvastatin exposure.",
+          "Cyclosporine, gemfibrozil, some antivirals, macrolides, azoles, and grapefruit juice can increase myopathy risk."
+        ],
+        "monitoring": [
+          "LDL-C response",
+          "Muscle symptoms",
+          "Creatine kinase when clinically indicated",
+          "Liver enzymes when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed atorvastatin calcium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C10AA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 14,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Plasma elimination half-life is about 14 hours."
+          },
+          "durationOfAction": {
+            "min": 20,
+            "max": 30,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "Half-life of inhibitory activity for HMG-CoA reductase is longer because active metabolites contribute."
+          },
+          "notes": [
+            "LDL-C response evolves over repeated dosing and is not described by a single Tmax.",
+            "Routine clinical follow-up uses lipid response and safety monitoring, not plasma atorvastatin concentration."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed atorvastatin calcium label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Atorvastatin is usually monitored by LDL-C response and safety findings rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Toxicity risk is exposure-related but routine TDM is not standard for atorvastatin."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed atorvastatin calcium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Pregnancy"
+        ],
+        "unsafe": [
+          "Strong CYP3A4 inhibitors",
+          "Cyclosporine",
+          "Gemfibrozil",
+          "Macrolide antibiotics",
+          "Azole antifungals",
+          "Large amounts of grapefruit juice"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "substances": [
+    {
+      "name": "Lisinopril",
+      "commonNames": [
+        "Lisinopril",
+        "Prinivil",
+        "Zestril",
+        "赖诺普利",
+        "ACE inhibitor",
+        "ACEI"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "ACE inhibitors can cause symptomatic hypotension, renal function deterioration, hyperkalemia, angioedema, cough, and fetal toxicity in pregnancy.",
+        "Overdose is expected to mainly cause hypotension; treatment is supportive and clinical."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Lisinopril is an ACE inhibitor used in cardiovascular indications. This entry is for clinical pharmacology learning and data indexing only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09AA03"
+        ],
+        "drugClass": [
+          "ACE inhibitor",
+          "ACEI",
+          "Antihypertensive",
+          "Renin-angiotensin system blocker"
+        ],
+        "indications": [
+          "Hypertension",
+          "Heart failure",
+          "Selected post-myocardial infarction contexts depending on label"
+        ],
+        "contraindications": [
+          "History of ACE inhibitor-associated angioedema",
+          "Concomitant neprilysin inhibitor use or use within 36 hours of sacubitril/valsartan switching",
+          "Pregnancy"
+        ],
+        "majorWarnings": [
+          "Angioedema may occur at any time during ACE inhibitor therapy.",
+          "Renal function and potassium require monitoring in susceptible patients."
+        ],
+        "majorInteractions": [
+          "Potassium supplements or potassium-sparing diuretics may increase hyperkalemia risk.",
+          "NSAIDs may reduce antihypertensive effect and worsen renal function in susceptible patients.",
+          "Lithium toxicity risk may increase."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Renal function",
+          "Serum potassium",
+          "Angioedema symptoms",
+          "Cough or hypotension symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed lisinopril label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09AA03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 7,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Peak serum concentrations occur within about 7 hours after oral administration."
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": null,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Label-derived effective half-life with accumulation; terminal phase reflects ACE binding."
+          },
+          "notes": [
+            "Blood pressure response and adverse effects, not plasma concentration, guide routine clinical use.",
+            "Do not use this entry for self-medication or dose adjustment."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed lisinopril label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is usually guided by blood pressure, renal function, potassium, symptoms, and indication-specific follow-up rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Laboratory monitoring here means renal function and electrolytes, not lisinopril plasma TDM."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed lisinopril label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Pregnancy",
+          "Sacubitril / neprilysin inhibitors"
+        ],
+        "unsafe": [
+          "Potassium supplements",
+          "Potassium-sparing diuretics",
+          "NSAIDs",
+          "Lithium",
+          "Aliskiren in diabetes"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Losartan",
+      "commonNames": [
+        "Losartan",
+        "Cozaar",
+        "Losartan potassium",
+        "氯沙坦",
+        "ARB",
+        "Angiotensin receptor blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "ARBs can cause symptomatic hypotension, renal function deterioration, hyperkalemia, and fetal toxicity in pregnancy.",
+        "Overdose is expected to mainly cause hypotension and tachycardia or bradycardia; management is supportive."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Losartan is an angiotensin II receptor blocker. This entry is for clinical pharmacology learning and data indexing only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09CA01"
+        ],
+        "drugClass": [
+          "ARB",
+          "Angiotensin II receptor blocker",
+          "Antihypertensive",
+          "Renin-angiotensin system blocker"
+        ],
+        "indications": [
+          "Hypertension",
+          "Selected renal and cardiovascular risk-reduction contexts depending on label"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "Aliskiren coadministration in patients with diabetes"
+        ],
+        "majorWarnings": [
+          "Renal function and potassium require monitoring in susceptible patients.",
+          "Fetal toxicity warning applies to drugs acting on the renin-angiotensin system."
+        ],
+        "majorInteractions": [
+          "Potassium supplements or potassium-sparing diuretics may increase hyperkalemia risk.",
+          "NSAIDs may worsen renal function and reduce antihypertensive effect.",
+          "Lithium toxicity risk may increase."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Renal function",
+          "Serum potassium",
+          "Symptoms of hypotension"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed losartan potassium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": null,
+            "unit": "h",
+            "basis": "plasma concentration",
+            "note": "Losartan mean peak concentration occurs in about 1 hour; the active metabolite peaks later."
+          },
+          "peakEffect": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "active metabolite plasma concentration",
+            "note": "Principal active metabolite peak concentration occurs about 3 to 4 hours after dosing."
+          },
+          "eliminationHalfLife": {
+            "min": 2,
+            "max": 9,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Losartan half-life is about 2 hours; active metabolite half-life is about 6 to 9 hours."
+          },
+          "notes": [
+            "Tmax and antihypertensive effect timing are not interchangeable.",
+            "Use clinical response and safety monitoring rather than plasma concentration for routine care."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed losartan potassium label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Routine monitoring is based on blood pressure, renal function, potassium, symptoms, and indication-specific endpoints rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Losartan has an active metabolite; plasma concentration is not a routine dosing target."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed losartan potassium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Pregnancy",
+          "Aliskiren in diabetes"
+        ],
+        "unsafe": [
+          "Potassium supplements",
+          "Potassium-sparing diuretics",
+          "NSAIDs",
+          "Lithium"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    }
+  ]
+}

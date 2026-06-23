@@ -13,7 +13,10 @@
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
       "isApproved": true,
       "crossTolerances": [],
-      "toxicities": [],
+      "toxicities": [
+        "Beta blocker toxicity can include bradycardia, hypotension, AV block, cardiogenic shock, bronchospasm, hypoglycemia masking, seizures, and cardiac arrest in severe overdose.",
+        "Clinical management of overdose is based on symptoms, ECG, hemodynamics, glucose/electrolytes, and supportive toxicology care rather than routine plasma concentration."
+      ],
       "categories": [
         "cardiovascular",
         "prescription-medicine"
@@ -148,6 +151,575 @@
             "accessedDate": "2026-06-23"
           }
         ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Severe bradycardia or heart block without pacing",
+          "Cardiogenic shock"
+        ],
+        "unsafe": [
+          "Verapamil",
+          "Diltiazem",
+          "Digoxin",
+          "Amiodarone",
+          "Other beta blockers",
+          "CYP2D6 inhibitors",
+          "Clonidine withdrawal",
+          "Insulin or oral hypoglycemics"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Propranolol",
+      "commonNames": [
+        "Propranolol",
+        "Inderal",
+        "普萘洛尔",
+        "Nonselective beta blocker",
+        "Class II antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Nonselective beta blocker toxicity can include severe bradycardia, hypotension, bronchospasm, heart failure, seizures, and cardiac arrest.",
+        "Propranolol overdose can be clinically severe because of beta blockade and membrane-stabilizing effects at high exposure."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Propranolol is a nonselective beta blocker with Class II antiarrhythmic relevance. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AA05"
+        ],
+        "drugClass": [
+          "Nonselective beta blocker",
+          "Class II antiarrhythmic",
+          "Beta blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Angina",
+          "Arrhythmia-related contexts depending on label",
+          "Migraine and tremor contexts depending on label"
+        ],
+        "contraindications": [
+          "Cardiogenic shock",
+          "Sinus bradycardia",
+          "Greater than first-degree heart block",
+          "Bronchial asthma"
+        ],
+        "majorWarnings": [
+          "Abrupt discontinuation may exacerbate angina or precipitate myocardial infarction in susceptible patients.",
+          "Can worsen bronchospasm and heart failure in susceptible patients."
+        ],
+        "majorInteractions": [
+          "Quinidine, amiodarone, propafenone, verapamil, diltiazem, digoxin, and lidocaine interactions may be clinically important.",
+          "CYP2D6, CYP1A2, or CYP2C19 pathway interactions can alter exposure or effect."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "ECG when clinically indicated",
+          "Bronchospasm symptoms",
+          "Hypoglycemia masking in diabetes"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed propranolol hydrochloride label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 4,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "source needed: verify exact Tmax from the selected product label before using as a clinical reference."
+          },
+          "eliminationHalfLife": {
+            "min": 3,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Plasma half-life is not equivalent to duration of beta blockade.",
+            "Routine clinical monitoring uses heart rate, blood pressure, ECG context, symptoms, and interacting drugs."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed propranolol hydrochloride label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is guided by heart rate, blood pressure, ECG/symptoms, bronchospasm risk, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Overdose care is clinical and toxicology-driven; plasma concentration is not a routine therapeutic target."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed propranolol hydrochloride label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Bronchial asthma",
+          "Cardiogenic shock",
+          "Severe bradycardia or heart block"
+        ],
+        "unsafe": [
+          "Verapamil",
+          "Diltiazem",
+          "Digoxin",
+          "Amiodarone",
+          "Propafenone",
+          "Quinidine",
+          "Lidocaine",
+          "Clonidine withdrawal",
+          "Insulin or oral hypoglycemics"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Atenolol",
+      "commonNames": [
+        "Atenolol",
+        "Tenormin",
+        "阿替洛尔",
+        "Beta-1 selective blocker",
+        "Class II antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Beta blocker overdose can cause lethargy, bradycardia, hypotension, bronchospasm, heart failure, hypoglycemia, and conduction disturbances.",
+        "Atenolol is renally eliminated and can be removed by hemodialysis in overdose according to labeling."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Atenolol is a beta-1 selective blocker with Class II antiarrhythmic relevance. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AB03"
+        ],
+        "drugClass": [
+          "Beta-1 selective blocker",
+          "Class II antiarrhythmic",
+          "Beta blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Angina",
+          "Selected post-myocardial infarction contexts depending on label"
+        ],
+        "contraindications": [
+          "Sinus bradycardia",
+          "Heart block greater than first degree",
+          "Cardiogenic shock",
+          "Overt cardiac failure"
+        ],
+        "majorWarnings": [
+          "Beta blockade can precipitate or worsen cardiac failure in susceptible patients.",
+          "Abrupt discontinuation may worsen ischemic heart disease."
+        ],
+        "majorInteractions": [
+          "Calcium channel blockers, disopyramide, amiodarone, catecholamine-depleting drugs, and clonidine withdrawal can be clinically important."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "Renal function",
+          "ECG when clinically indicated",
+          "Hypoglycemia masking in diabetes"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed atenolol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AB03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 6,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Atenolol undergoes little or no hepatic metabolism and is primarily renally eliminated.",
+            "Routine clinical monitoring is not plasma concentration based."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed atenolol label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is monitored by heart rate, blood pressure, renal function, symptoms, and ECG context rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed atenolol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Cardiogenic shock",
+          "Severe bradycardia or heart block"
+        ],
+        "unsafe": [
+          "Verapamil",
+          "Diltiazem",
+          "Disopyramide",
+          "Amiodarone",
+          "Catecholamine-depleting drugs",
+          "Clonidine withdrawal",
+          "Insulin or oral hypoglycemics"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Carvedilol",
+      "commonNames": [
+        "Carvedilol",
+        "Coreg",
+        "卡维地洛",
+        "Alpha beta blocker",
+        "Nonselective beta blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Carvedilol overdose may cause severe hypotension, bradycardia, cardiac insufficiency, cardiogenic shock, cardiac arrest, bronchospasm, vomiting, loss of consciousness, and seizures.",
+        "Alpha-1 blockade contributes to orthostatic hypotension risk."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Carvedilol is a nonselective beta blocker with alpha-1 blocking activity. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AG02"
+        ],
+        "drugClass": [
+          "Alpha/beta blocker",
+          "Nonselective beta blocker",
+          "Beta blocker",
+          "Heart failure medicine",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Heart failure",
+          "Hypertension",
+          "Left ventricular dysfunction after myocardial infarction depending on label"
+        ],
+        "contraindications": [
+          "Bronchial asthma or related bronchospastic conditions",
+          "Second- or third-degree AV block",
+          "Sick sinus syndrome",
+          "Severe bradycardia without pacemaker",
+          "Cardiogenic shock or decompensated heart failure requiring IV inotropes",
+          "Severe hepatic impairment"
+        ],
+        "majorWarnings": [
+          "Can cause hypotension, bradycardia, worsening heart failure, bronchospasm, and masking of hypoglycemia."
+        ],
+        "majorInteractions": [
+          "CYP2D6 inhibitors may increase carvedilol levels.",
+          "Digoxin, amiodarone, verapamil, diltiazem, clonidine, and hypotensive agents may be clinically important."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "Heart failure symptoms",
+          "ECG when clinically indicated",
+          "Glucose effects in diabetes",
+          "Hepatic impairment"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed carvedilol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AG02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AG02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "eliminationHalfLife": {
+            "min": 7,
+            "max": 10,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Food slows absorption and can reduce orthostatic hypotension risk according to labeling.",
+            "source needed: add exact label-verified Tmax for the selected formulation before displaying numeric Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed carvedilol label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is monitored by heart rate, blood pressure, heart failure symptoms, ECG context, and adverse effects rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed carvedilol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Bronchial asthma",
+          "Cardiogenic shock",
+          "Decompensated heart failure requiring IV inotropes"
+        ],
+        "unsafe": [
+          "Digoxin",
+          "Amiodarone",
+          "Verapamil",
+          "Diltiazem",
+          "CYP2D6 inhibitors",
+          "Clonidine withdrawal",
+          "Insulin or oral hypoglycemics"
+        ],
+        "uncertain": []
+      },
+      "roas": []
+    },
+    {
+      "name": "Esmolol",
+      "commonNames": [
+        "Esmolol",
+        "Brevibloc",
+        "艾司洛尔",
+        "Short acting beta blocker",
+        "Beta-1 selective blocker",
+        "Class II antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Esmolol overdose can cause severe bradycardia, AV block, hypotension, cardiac failure, cardiogenic shock, cardiac arrest, bronchospasm, hyperkalemia, hypoglycemia, seizures, and coma.",
+        "Its short half-life makes continuous clinical and hemodynamic monitoring central to interpretation."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Esmolol is a short-acting IV beta-1 selective blocker used when rapid titration of beta blockade is needed. This entry is educational reference only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AB09"
+        ],
+        "drugClass": [
+          "Short-acting beta blocker",
+          "Beta-1 selective blocker",
+          "Class II antiarrhythmic",
+          "Intravenous rate-control medicine"
+        ],
+        "indications": [
+          "Supraventricular tachycardia and rapid ventricular rate contexts depending on label",
+          "Perioperative or urgent beta blockade contexts depending on label"
+        ],
+        "contraindications": [
+          "Severe sinus bradycardia",
+          "Heart block greater than first degree",
+          "Sick sinus syndrome",
+          "Decompensated heart failure",
+          "Cardiogenic shock",
+          "Close-proximity IV cardiodepressant calcium-channel antagonist use such as verapamil"
+        ],
+        "majorWarnings": [
+          "Can cause severe hypotension, bradycardia, heart block, cardiac failure, and cardiac arrest.",
+          "Requires continuous monitoring in clinical use."
+        ],
+        "majorInteractions": [
+          "Other drugs lowering blood pressure, myocardial contractility, sinus node function, or AV conduction can exaggerate toxicity.",
+          "Digitalis glycosides, verapamil, diltiazem, and other beta blockers are clinically important examples."
+        ],
+        "monitoring": [
+          "Continuous heart rate",
+          "Blood pressure",
+          "ECG",
+          "Signs of heart failure or shock",
+          "Bronchospasm symptoms",
+          "Glucose/electrolytes in selected patients"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed esmolol hydrochloride injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AB09",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB09",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "intravenous",
+          "formulation": "infusion",
+          "onset": {
+            "min": 5,
+            "max": null,
+            "unit": "min",
+            "basis": "label pharmacokinetics",
+            "note": "Steady-state blood levels are obtained within about 5 minutes with an appropriate loading dose."
+          },
+          "eliminationHalfLife": {
+            "min": 9,
+            "max": null,
+            "unit": "min",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 5,
+            "max": null,
+            "unit": "min",
+            "basis": "plasma concentration",
+            "note": "About 30 minutes without a loading dose."
+          },
+          "notes": [
+            "Esmolol is rapidly hydrolyzed by red blood cell esterases.",
+            "Short plasma half-life does not remove the need for continuous hemodynamic monitoring."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed esmolol hydrochloride injection label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Esmolol is titrated and monitored by continuous clinical/hemodynamic response rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed esmolol hydrochloride injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "interactions": {
+        "dangerous": [
+          "Close-proximity IV verapamil",
+          "Cardiogenic shock",
+          "Decompensated heart failure"
+        ],
+        "unsafe": [
+          "Verapamil",
+          "Diltiazem",
+          "Digoxin",
+          "Other beta blockers",
+          "Clonidine withdrawal",
+          "Drugs that reduce myocardial contractility or AV conduction"
+        ],
+        "uncertain": []
       },
       "roas": []
     }
