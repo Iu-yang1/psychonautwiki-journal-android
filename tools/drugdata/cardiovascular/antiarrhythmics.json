@@ -1,0 +1,465 @@
+{
+  "substances": [
+    {
+      "name": "Lidocaine",
+      "commonNames": [
+        "Lidocaine",
+        "Lignocaine",
+        "Xylocaine",
+        "利多卡因",
+        "Class Ib antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Lidocaine is a local anesthetic and Class Ib antiarrhythmic. This entry separates pharmacokinetic/TDM reference data from clinical treatment decisions and is for educational indexing only.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01BB01"
+        ],
+        "drugClass": [
+          "Class Ib antiarrhythmic",
+          "Sodium channel blocker",
+          "Local anesthetic"
+        ],
+        "indications": [
+          "Ventricular arrhythmias"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "High systemic concentrations can be associated with neurologic and cardiovascular toxicity."
+        ],
+        "majorInteractions": [],
+        "monitoring": [
+          "ECG",
+          "Blood pressure",
+          "Neurologic symptoms",
+          "Serum lidocaine concentration when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed lidocaine hydrochloride injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01BB01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BB01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "tdm": {
+        "isRoutinelyMonitored": true,
+        "monitoringType": "serum or plasma concentration when clinically indicated",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "lidocaine"
+        ],
+        "specimen": "serum or plasma",
+        "samplingTime": "Interpret relative to infusion timing, dose changes, organ function, and symptoms.",
+        "therapeuticRanges": [
+          {
+            "indication": "antiarrhythmic monitoring",
+            "range": "1.5-5.0",
+            "unit": "mcg/mL",
+            "note": "Laboratory reference interval; not a prescribing target."
+          }
+        ],
+        "toxicityThresholds": [
+          {
+            "threshold": ">6.0",
+            "unit": "mcg/mL",
+            "note": "DailyMed and laboratory references associate increasing adverse manifestations with concentrations above this range."
+          }
+        ],
+        "criticalValues": [
+          {
+            "threshold": ">6.0",
+            "unit": "mcg/mL",
+            "note": "Reported as a critical value by Mayo-style test catalog."
+          }
+        ],
+        "interpretationCaveats": [
+          "Concentration interpretation must be tied to sampling time and clinical status.",
+          "Toxicity assessment also depends on ECG, neurologic symptoms, acid-base status, hepatic function, and interacting drugs."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Mayo Clinic Laboratories/TestCatalog lidocaine serum",
+            "url": "https://www.testcatalog.org/show/LID",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "DailyMed lidocaine hydrochloride injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "roas": []
+    },
+    {
+      "name": "Procainamide",
+      "commonNames": [
+        "Procainamide",
+        "Pronestyl",
+        "N-acetylprocainamide",
+        "NAPA",
+        "普鲁卡因胺",
+        "Class Ia antiarrhythmic"
+      ],
+      "url": "https://www.mayocliniclabs.com/test-catalog/overview/8683",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Procainamide is a Class Ia antiarrhythmic. TDM entries should account for both procainamide and its active metabolite NAPA.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01BA02"
+        ],
+        "drugClass": [
+          "Class Ia antiarrhythmic",
+          "Sodium channel blocker"
+        ],
+        "indications": [
+          "Arrhythmias"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Concentration interpretation must be combined with ECG intervals, renal function, symptoms, and co-medications."
+        ],
+        "majorInteractions": [],
+        "monitoring": [
+          "ECG",
+          "QRS/QT interval",
+          "Renal function",
+          "Procainamide and NAPA concentrations when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "WHO ATC/DDD Index: C01BA02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BA02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Mayo Clinic Laboratories procainamide and NAPA serum",
+            "url": "https://www.mayocliniclabs.com/test-catalog/overview/8683",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "tdm": {
+        "isRoutinelyMonitored": true,
+        "monitoringType": "serum concentration of procainamide and NAPA",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "procainamide",
+          "N-acetylprocainamide",
+          "NAPA"
+        ],
+        "specimen": "serum",
+        "samplingTime": "Use the laboratory catalog and clinical protocol for peak/trough timing; source-specific timing should be verified before clinical use.",
+        "therapeuticRanges": [
+          {
+            "indication": "procainamide",
+            "range": "4.0-10.0",
+            "unit": "mcg/mL",
+            "note": "Mayo reference interval."
+          },
+          {
+            "indication": "NAPA",
+            "range": "12.0-18.0",
+            "unit": "mcg/mL",
+            "note": "Mayo reference interval."
+          },
+          {
+            "indication": "procainamide plus NAPA",
+            "range": "10.0-30.0",
+            "unit": "mcg/mL",
+            "note": "Labcorp combined reference interval."
+          }
+        ],
+        "criticalValues": [
+          {
+            "threshold": ">12.0",
+            "unit": "mcg/mL",
+            "note": "Procainamide critical value in Mayo catalog."
+          },
+          {
+            "threshold": ">=40.0",
+            "unit": "mcg/mL",
+            "note": "NAPA critical value in Mayo catalog."
+          }
+        ],
+        "interpretationCaveats": [
+          "Procainamide and NAPA must be interpreted together.",
+          "Renal function and timing relative to dosing strongly affect interpretation.",
+          "ECG findings and symptoms are essential; concentration alone is not a treatment algorithm."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Mayo Clinic Laboratories procainamide and NAPA serum",
+            "url": "https://www.mayocliniclabs.com/test-catalog/overview/8683",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Labcorp procainamide serum or plasma",
+            "url": "https://www.labcorp.com/tests/007252/procainamide-serum-or-plasma",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "roas": []
+    },
+    {
+      "name": "Flecainide",
+      "commonNames": [
+        "Flecainide",
+        "Tambocor",
+        "氟卡尼",
+        "Class Ic antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b33e96a-8336-46c4-aac7-4a6c0039cc80",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Flecainide is a Class Ic antiarrhythmic with concentration and ECG monitoring relevance in selected patients.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01BC04"
+        ],
+        "drugClass": [
+          "Class Ic antiarrhythmic",
+          "Sodium channel blocker"
+        ],
+        "indications": [
+          "Selected supraventricular and ventricular arrhythmias"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Proarrhythmia and QRS widening risk require clinical and ECG context."
+        ],
+        "majorInteractions": [
+          "Amiodarone and CYP2D6-related interactions may increase exposure."
+        ],
+        "monitoring": [
+          "ECG",
+          "QRS duration",
+          "Renal function",
+          "Trough flecainide concentration in selected situations"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed flecainide acetate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b33e96a-8336-46c4-aac7-4a6c0039cc80",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01BC04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BC04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "tdm": {
+        "isRoutinelyMonitored": true,
+        "monitoringType": "trough plasma concentration in selected patients",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "flecainide"
+        ],
+        "specimen": "serum or plasma",
+        "samplingTime": "Trough concentration is typically referenced; verify timing with the local laboratory.",
+        "therapeuticRanges": [
+          {
+            "indication": "trough flecainide",
+            "range": "0.2-1.0",
+            "unit": "mcg/mL",
+            "note": "DailyMed and laboratory catalogs describe this trough range."
+          }
+        ],
+        "toxicityThresholds": [
+          {
+            "threshold": ">1.0",
+            "unit": "mcg/mL",
+            "note": "Higher trough concentrations are associated with increased adverse cardiac experiences."
+          }
+        ],
+        "interpretationCaveats": [
+          "DailyMed specifically emphasizes monitoring in severe renal failure, severe hepatic disease, and with concurrent amiodarone.",
+          "Interpret with ECG, QRS duration, renal/hepatic function, dose timing, and symptoms."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed flecainide acetate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b33e96a-8336-46c4-aac7-4a6c0039cc80",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "UT Southwestern/Mayo-style flecainide serum catalog",
+            "url": "https://utsouthwestern.testcatalog.org/show/FLEC",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "roas": []
+    },
+    {
+      "name": "Amiodarone",
+      "commonNames": [
+        "Amiodarone",
+        "Cordarone",
+        "Pacerone",
+        "Desethylamiodarone",
+        "DEA",
+        "胺碘酮",
+        "Class III antiarrhythmic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Amiodarone is a Class III antiarrhythmic. Plasma concentration interpretation is complex and must not be treated as standalone dose guidance.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01BD01"
+        ],
+        "drugClass": [
+          "Class III antiarrhythmic",
+          "Potassium channel blocker",
+          "Multichannel antiarrhythmic"
+        ],
+        "indications": [
+          "Life-threatening recurrent ventricular arrhythmias"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Pulmonary, hepatic, thyroid, ocular, neurologic, and cardiac toxicities require clinical monitoring."
+        ],
+        "majorInteractions": [
+          "Amiodarone has many clinically important drug interactions."
+        ],
+        "monitoring": [
+          "ECG",
+          "Thyroid function",
+          "Liver function",
+          "Pulmonary symptoms/imaging as clinically indicated",
+          "Amiodarone concentration in selected scenarios"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed amiodarone hydrochloride tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01BD01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 3,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Amiodarone pharmacokinetics are complex because of tissue accumulation and active metabolites.",
+            "Do not infer clinical response or dose adjustment from Tmax alone."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed amiodarone hydrochloride tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": true,
+        "monitoringType": "serum or plasma concentration in selected patients",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "amiodarone",
+          "desethylamiodarone"
+        ],
+        "specimen": "serum or plasma",
+        "samplingTime": "Trough sampling is commonly referenced by laboratory catalogs; verify local requirements.",
+        "therapeuticRanges": [
+          {
+            "indication": "amiodarone trough",
+            "range": "0.5-2.0",
+            "unit": "mcg/mL",
+            "note": "Mayo reference interval for trough concentration."
+          }
+        ],
+        "toxicityThresholds": [
+          {
+            "threshold": ">2.5",
+            "unit": "mcg/mL",
+            "note": "Mayo catalog toxic concentration threshold for amiodarone."
+          }
+        ],
+        "interpretationCaveats": [
+          "Desethylamiodarone has similar activity, but the cited catalog does not define a separate therapeutic range.",
+          "Clinical toxicity monitoring remains central; concentration does not replace ECG, thyroid, hepatic, pulmonary, ocular, or symptom monitoring."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Mayo Clinic Laboratories amiodarone serum/plasma catalog PDF",
+            "url": "https://www.mayocliniclabs.com/api/sitecore/testcatalog/TestCatalogSetupPDF?testid=9247",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "DailyMed amiodarone hydrochloride tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

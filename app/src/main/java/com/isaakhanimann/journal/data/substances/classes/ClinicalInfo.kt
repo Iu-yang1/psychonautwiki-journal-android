@@ -57,3 +57,32 @@ data class ClinicalInfo(
     val monitoring: List<String> = emptyList(),
     val sourceRefs: List<SourceRef> = emptyList()
 )
+
+data class TherapeuticRange(
+    val indication: String? = null,
+    val range: String,
+    val unit: String,
+    val note: String? = null
+)
+
+data class ToxicityThreshold(
+    val threshold: String,
+    val unit: String,
+    val note: String? = null
+)
+
+data class TherapeuticDrugMonitoring(
+    val isRoutinelyMonitored: Boolean,
+    val monitoringType: String,
+    val reason: String? = null,
+    val pharmacokineticParametersAvailable: Boolean = false,
+    val analytes: List<String> = emptyList(),
+    val specimen: String? = null,
+    val samplingTime: String? = null,
+    val therapeuticRanges: List<TherapeuticRange> = emptyList(),
+    val toxicityThresholds: List<ToxicityThreshold> = emptyList(),
+    val criticalValues: List<ToxicityThreshold> = emptyList(),
+    val assayMethod: String? = null,
+    val interpretationCaveats: List<String> = emptyList(),
+    val sourceRefs: List<SourceRef> = emptyList()
+)

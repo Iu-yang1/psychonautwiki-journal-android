@@ -74,8 +74,11 @@ import com.isaakhanimann.journal.data.substances.classes.Category
 import com.isaakhanimann.journal.data.substances.classes.ClinicalInfo
 import com.isaakhanimann.journal.data.substances.classes.SourceRef
 import com.isaakhanimann.journal.data.substances.classes.SubstanceWithCategories
+import com.isaakhanimann.journal.data.substances.classes.TherapeuticDrugMonitoring
+import com.isaakhanimann.journal.data.substances.classes.TherapeuticRange
 import com.isaakhanimann.journal.data.substances.classes.TimeCourse
 import com.isaakhanimann.journal.data.substances.classes.TimeValue
+import com.isaakhanimann.journal.data.substances.classes.ToxicityThreshold
 import com.isaakhanimann.journal.ui.DOSE_DISCLAIMER
 import com.isaakhanimann.journal.ui.FULL_STOMACH_DISCLAIMER
 import com.isaakhanimann.journal.ui.tabs.journal.addingestion.dose.ChasingTheDragonText
@@ -240,6 +243,9 @@ fun SubstanceScreen(
             }
             if (substance.timeCourse.isNotEmpty()) {
                 TimeCourseSection(timeCourses = substance.timeCourse)
+            }
+            if (substance.tdm != null) {
+                TherapeuticDrugMonitoringSection(tdm = substance.tdm)
             }
             val roasWithDosesDefined = substance.roas.filter { roa ->
                 val roaDose = roa.roaDose
@@ -609,6 +615,34 @@ fun TimeCourseSection(timeCourses: List<TimeCourse>) {
 }
 
 @Composable
+fun TherapeuticDrugMonitoringSection(tdm: TherapeuticDrugMonitoring) {
+    SectionWithTitle(title = "Therapeutic drug monitoring / TDM") {
+        Column(Modifier.padding(horizontal = horizontalPadding)) {
+            Text(
+                text = "This information is for educational reference and data indexing only. It is not medical advice and must not be used for diagnosis, prescribing, self-medication, or dose adjustment. 本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量。",
+                style = MaterialTheme.typography.bodySmall
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            InfoLabel("Routine monitoring")
+            Text(text = if (tdm.isRoutinelyMonitored) "Yes" else "No")
+            VerticalSpace()
+            ClinicalInfoTextRow("Monitoring type", tdm.monitoringType)
+            ClinicalInfoTextRow("Reason", tdm.reason)
+            ClinicalInfoListRow("Analytes", tdm.analytes)
+            ClinicalInfoTextRow("Specimen", tdm.specimen)
+            ClinicalInfoTextRow("Sampling time", tdm.samplingTime)
+            TherapeuticRangeRows("Therapeutic ranges", tdm.therapeuticRanges)
+            ToxicityThresholdRows("Toxicity thresholds", tdm.toxicityThresholds)
+            ToxicityThresholdRows("Critical values", tdm.criticalValues)
+            ClinicalInfoTextRow("Assay method", tdm.assayMethod)
+            ClinicalInfoListRow("Interpretation caveats", tdm.interpretationCaveats)
+            SourceRefs(sourceRefs = tdm.sourceRefs)
+            VerticalSpace()
+        }
+    }
+}
+
+@Composable
 private fun ClinicalInfoListRow(label: String, values: List<String>) {
     if (values.isEmpty()) return
     InfoLabel(label)
@@ -616,6 +650,40 @@ private fun ClinicalInfoListRow(label: String, values: List<String>) {
         Text(text = values.first())
     } else {
         BulletPoints(points = values)
+    }
+    VerticalSpace()
+}
+
+@Composable
+private fun ClinicalInfoTextRow(label: String, value: String?) {
+    if (value.isNullOrBlank()) return
+    InfoLabel(label)
+    Text(text = value)
+    VerticalSpace()
+}
+
+@Composable
+private fun TherapeuticRangeRows(label: String, ranges: List<TherapeuticRange>) {
+    if (ranges.isEmpty()) return
+    InfoLabel(label)
+    ranges.forEach { range ->
+        Text(text = listOfNotNull(range.indication, "${range.range} ${range.unit}").joinToString(": "))
+        range.note?.let {
+            Text(text = it, style = MaterialTheme.typography.bodySmall)
+        }
+    }
+    VerticalSpace()
+}
+
+@Composable
+private fun ToxicityThresholdRows(label: String, thresholds: List<ToxicityThreshold>) {
+    if (thresholds.isEmpty()) return
+    InfoLabel(label)
+    thresholds.forEach { threshold ->
+        Text(text = "${threshold.threshold} ${threshold.unit}")
+        threshold.note?.let {
+            Text(text = it, style = MaterialTheme.typography.bodySmall)
+        }
     }
     VerticalSpace()
 }

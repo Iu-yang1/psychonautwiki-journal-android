@@ -32,6 +32,7 @@ class SearchViewModel @Inject constructor(
         viewModelScope.launch {
             if (filterName == customChipName) {
                 isShowingCustomSubstancesFlow.emit(isShowingCustomSubstancesFlow.value.not())
+                return@launch
             }
             val filters = filtersFlow.value.toMutableList()
             if (filters.contains(filterName)) {

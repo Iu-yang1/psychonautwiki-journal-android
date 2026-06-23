@@ -1,0 +1,155 @@
+{
+  "substances": [
+    {
+      "name": "Metoprolol",
+      "commonNames": [
+        "Metoprolol",
+        "Lopressor",
+        "Toprol XL",
+        "美托洛尔",
+        "Beta blocker",
+        "Beta-1 selective blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Metoprolol is a beta-1 selective blocker. This entry separates immediate-release and extended-release time-course concepts and marks plasma concentration monitoring as not routine.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AB02"
+        ],
+        "drugClass": [
+          "Beta blocker",
+          "Beta-1 selective blocker",
+          "Antihypertensive",
+          "Antianginal"
+        ],
+        "indications": [
+          "Hypertension",
+          "Angina",
+          "Selected heart failure and arrhythmia contexts depending on formulation and label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Abrupt withdrawal can worsen angina or precipitate cardiac events in susceptible patients.",
+          "Bradycardia, hypotension, heart block, bronchospasm, and masking of hypoglycemia symptoms are clinically relevant safety concerns."
+        ],
+        "majorInteractions": [
+          "CYP2D6 inhibitors can increase metoprolol exposure.",
+          "Other agents that slow heart rate or AV conduction may increase bradycardia or conduction risk."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "Symptoms of bradycardia or hypotension",
+          "ECG when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed metoprolol tartrate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "DailyMed metoprolol succinate extended-release label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=250c2428-c8b0-5156-697a-60cb8a45713c",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AB02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "immediate-release tablet",
+          "onset": {
+            "min": 1,
+            "max": null,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed describes significant beta-blocking effect within 1 hour after oral administration."
+          },
+          "eliminationHalfLife": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Poor CYP2D6 metabolizers may have a longer half-life."
+          },
+          "notes": [
+            "Effect duration is dose-related and formulation-specific.",
+            "Plasma concentration is not the usual clinical monitoring endpoint."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed metoprolol tartrate label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "oral",
+          "formulation": "extended-release tablet",
+          "eliminationHalfLife": {
+            "min": 3,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": null,
+            "unit": "h",
+            "basis": "label formulation profile",
+            "note": "Extended-release products are designed for once-daily beta-blockade; do not infer dose guidance from this field."
+          },
+          "notes": [
+            "Immediate-release and extended-release formulations should not be collapsed into one time-course record.",
+            "Tmax was not encoded here because a label-verified numeric Tmax was not captured in this pass."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed metoprolol succinate extended-release label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=250c2428-c8b0-5156-697a-60cb8a45713c",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is usually guided by heart rate, blood pressure, symptoms, ECG context, organ function, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Toxicology or overdose scenarios may involve drug concentrations, but acute management is primarily clinical.",
+          "CYP2D6 phenotype and inhibitors can alter exposure."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed metoprolol tartrate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

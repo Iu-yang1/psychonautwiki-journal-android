@@ -1,0 +1,98 @@
+{
+  "substances": [
+    {
+      "name": "Warfarin",
+      "commonNames": [
+        "Warfarin",
+        "Coumadin",
+        "Jantoven",
+        "华法林",
+        "INR",
+        "Vitamin K antagonist"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6233f92-0d92-44d0-82cb-bacccb61d970",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "Warfarin is a vitamin K antagonist anticoagulant. Routine clinical monitoring is based on anticoagulant effect such as PT/INR rather than plasma warfarin concentration.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AA03"
+        ],
+        "drugClass": [
+          "Vitamin K antagonist",
+          "Oral anticoagulant",
+          "Antithrombotic"
+        ],
+        "indications": [
+          "Thromboembolism prophylaxis and treatment"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Bleeding risk is linked to anticoagulant effect, patient factors, interacting drugs, and monitoring."
+        ],
+        "majorInteractions": [
+          "Many drugs, foods, and illness states can alter INR response."
+        ],
+        "monitoring": [
+          "INR",
+          "PT",
+          "Bleeding symptoms",
+          "Interacting drugs and diet changes"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed warfarin sodium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6233f92-0d92-44d0-82cb-bacccb61d970",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AA03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AA03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "PT/INR anticoagulant effect monitoring rather than plasma drug concentration",
+        "reason": "Warfarin is routinely adjusted and interpreted by INR response, not by plasma warfarin concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "INR",
+          "prothrombin time"
+        ],
+        "specimen": "blood/plasma coagulation testing",
+        "samplingTime": "Follow anticoagulation clinic protocol and local approved labeling.",
+        "therapeuticRanges": [
+          {
+            "indication": "many common warfarin indications",
+            "range": "INR 2.0-3.0",
+            "unit": "ratio",
+            "note": "DailyMed labels describe this INR range for many indications; some indications require different targets."
+          }
+        ],
+        "interpretationCaveats": [
+          "This is not plasma concentration TDM.",
+          "INR interpretation depends on indication, bleeding/thrombotic risk, timing, interacting drugs, diet, illness, adherence, and local protocol."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed warfarin sodium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6233f92-0d92-44d0-82cb-bacccb61d970",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

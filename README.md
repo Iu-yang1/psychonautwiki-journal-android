@@ -57,11 +57,40 @@ New optional fields on a substance:
       "notes": ["Tmax and peak clinical effect may not be identical."],
       "sourceRefs": []
     }
-  ]
+  ],
+  "tdm": {
+    "isRoutinelyMonitored": true,
+    "monitoringType": "serum concentration",
+    "analytes": ["digoxin"],
+    "specimen": "serum",
+    "samplingTime": "At least 6 hours after the last dose; preferably trough at steady state when clinically feasible.",
+    "therapeuticRanges": [
+      {
+        "indication": "heart failure literature-oriented lower range",
+        "range": "0.5-0.9",
+        "unit": "ng/mL",
+        "note": "Example laboratory reference; local policy may differ."
+      }
+    ],
+    "toxicityThresholds": [
+      {
+        "threshold": ">2.0",
+        "unit": "ng/mL",
+        "note": "Interpret with clinical context."
+      }
+    ],
+    "criticalValues": [],
+    "interpretationCaveats": [
+      "Interpret with sampling time, renal function, electrolytes, ECG, symptoms, and interacting drugs."
+    ],
+    "sourceRefs": []
+  }
 }
 ```
 
 `timeCourse` is for pharmacokinetic/pharmacodynamic time-course data such as onset, Tmax, peak effect, duration of action, elimination half-life, time to steady state, and washout. Do not mix this with therapeutic drug monitoring, toxic concentration, or treatment-window data.
+
+`tdm` is for therapeutic drug monitoring and concentration interpretation. It is intentionally separate from `timeCourse`: PK describes average drug behavior, while TDM describes how a measured patient sample may be interpreted. Non-routine examples, such as amlodipine or metoprolol, should set `isRoutinelyMonitored` to `false` and explain that monitoring is usually based on clinical response or safety labs rather than plasma concentration. Warfarin should be represented as INR/PT effect monitoring, not routine plasma concentration TDM.
 
 Medical disclaimer: This information is for educational reference and data indexing only. It is not medical advice and must not be used for diagnosis, prescribing, self-medication, or dose adjustment. Always consult qualified medical professionals and local approved labeling. 本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量。实际用药必须遵循医生医嘱和当地批准说明书。
 
@@ -75,7 +104,7 @@ Recommended sources:
 - ESC, ACC/AHA, Chinese guidelines, Goodman & Gilman, AHFS, Martindale, and clinical pharmacology reviews for context.
 - Laboratory TDM catalogs only for true TDM, therapeutic-window, or toxic-concentration fields; do not mix those values into `timeCourse`.
 
-Cardiovascular example fragments live under `tools/drugdata/`. Rebuild the default and localized raw resources with:
+Cardiovascular example fragments live under `tools/drugdata/cardiovascular/` and are split by maintenance category, for example `cardiac_glycosides.json`, `antiarrhythmics.json`, `antithrombotics.json`, and `beta_blockers.json`. Rebuild the default and localized raw resources with:
 
 ```bash
 python tools/drugdata/build_substances_json.py

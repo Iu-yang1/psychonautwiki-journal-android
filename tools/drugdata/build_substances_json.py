@@ -19,24 +19,12 @@ def load_json(path: Path) -> dict:
 
 def write_json(path: Path, data: dict) -> None:
     with path.open("w", encoding="utf-8", newline="\n") as file:
-        json.dump(data, file, ensure_ascii=False, separators=(",", ":"))
+        json.dump(data, file, ensure_ascii=False, indent=2)
         file.write("\n")
 
 
 def write_hybrid_json(path: Path, data: dict) -> None:
-    categories_json = json.dumps(
-        {"categories": data.get("categories", [])},
-        ensure_ascii=False,
-        indent=2
-    )
-    substances_json = json.dumps(
-        data.get("substances", []),
-        ensure_ascii=False,
-        separators=(",", ":")
-    )
-    with path.open("w", encoding="utf-8", newline="\n") as file:
-        file.write(categories_json[:-2])
-        file.write(f',"substances":{substances_json}}}\n')
+    write_json(path, data)
 
 
 def upsert_by_name(items: list[dict], incoming: list[dict]) -> list[dict]:

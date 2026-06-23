@@ -117,12 +117,27 @@ class SearchRepository @Inject constructor(
     private fun SubstanceWithCategories.searchableTerms(): List<String> {
         val currentSubstance = substance
         val clinicalInfo = currentSubstance.clinicalInfo
+        val tdm = currentSubstance.tdm
         return currentSubstance.commonNames +
             currentSubstance.name +
             currentSubstance.categories +
             categories.map { it.name } +
             clinicalInfo?.atcCodes.orEmpty() +
-            clinicalInfo?.drugClass.orEmpty()
+            clinicalInfo?.drugClass.orEmpty() +
+            clinicalInfo?.indications.orEmpty() +
+            clinicalInfo?.monitoring.orEmpty() +
+            listOfNotNull(tdm?.monitoringType, tdm?.reason, tdm?.specimen, tdm?.samplingTime, tdm?.assayMethod) +
+            tdm?.analytes.orEmpty() +
+            tdm?.therapeuticRanges.orEmpty().flatMap { range ->
+                listOfNotNull(range.indication, range.range, range.unit, range.note)
+            } +
+            tdm?.toxicityThresholds.orEmpty().flatMap { threshold ->
+                listOfNotNull(threshold.threshold, threshold.unit, threshold.note)
+            } +
+            tdm?.criticalValues.orEmpty().flatMap { threshold ->
+                listOfNotNull(threshold.threshold, threshold.unit, threshold.note)
+            } +
+            tdm?.interpretationCaveats.orEmpty()
     }
 
     private fun String.normalizedForSearch(): String {

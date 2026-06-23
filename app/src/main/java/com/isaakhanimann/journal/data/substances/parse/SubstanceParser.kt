@@ -115,6 +115,7 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
         val roas = parseRoas(jsonRoas)
         val clinicalInfo = parseClinicalInfo(jsonSubstance.getOptionalJSONObject("clinicalInfo"))
         val timeCourse = parseTimeCourses(jsonSubstance.getOptionalJSONArray("timeCourse"))
+        val tdm = parseTherapeuticDrugMonitoring(jsonSubstance.getOptionalJSONObject("tdm"))
         return Substance(
             name = name,
             commonNames = commonNames,
@@ -135,6 +136,7 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             roas = roas,
             clinicalInfo = clinicalInfo,
             timeCourse = timeCourse,
+            tdm = tdm,
         )
     }
 
@@ -194,6 +196,94 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             )
         }
         return timeCourses
+    }
+
+    private fun parseTherapeuticDrugMonitoring(jsonTdm: JSONObject?): TherapeuticDrugMonitoring? {
+        if (jsonTdm == null) return null
+        val isRoutinelyMonitored = jsonTdm.getOptionalBoolean("isRoutinelyMonitored")
+        val monitoringType = jsonTdm.getOptionalString("monitoringType")
+        val reason = jsonTdm.getOptionalString("reason")
+        val pharmacokineticParametersAvailable =
+            jsonTdm.getOptionalBoolean("pharmacokineticParametersAvailable") ?: false
+        val analytes = parseJsonArrayToStringArray(jsonTdm.getOptionalJSONArray("analytes"))
+        val specimen = jsonTdm.getOptionalString("specimen")
+        val samplingTime = jsonTdm.getOptionalString("samplingTime")
+        val therapeuticRanges = parseTherapeuticRanges(jsonTdm.getOptionalJSONArray("therapeuticRanges"))
+        val toxicityThresholds = parseToxicityThresholds(jsonTdm.getOptionalJSONArray("toxicityThresholds"))
+        val criticalValues = parseToxicityThresholds(jsonTdm.getOptionalJSONArray("criticalValues"))
+        val assayMethod = jsonTdm.getOptionalString("assayMethod")
+        val interpretationCaveats =
+            parseJsonArrayToStringArray(jsonTdm.getOptionalJSONArray("interpretationCaveats"))
+        val sourceRefs = parseSourceRefs(jsonTdm.getOptionalJSONArray("sourceRefs"))
+
+        val hasAnyContent = listOf(
+            monitoringType,
+            reason,
+            specimen,
+            samplingTime,
+            assayMethod
+        ).any { it != null } || listOf(
+            analytes,
+            therapeuticRanges,
+            toxicityThresholds,
+            criticalValues,
+            interpretationCaveats,
+            sourceRefs
+        ).any { it.isNotEmpty() } || isRoutinelyMonitored != null || pharmacokineticParametersAvailable
+        if (!hasAnyContent) return null
+
+        return TherapeuticDrugMonitoring(
+            isRoutinelyMonitored = isRoutinelyMonitored ?: false,
+            monitoringType = monitoringType ?: "",
+            reason = reason,
+            pharmacokineticParametersAvailable = pharmacokineticParametersAvailable,
+            analytes = analytes,
+            specimen = specimen,
+            samplingTime = samplingTime,
+            therapeuticRanges = therapeuticRanges,
+            toxicityThresholds = toxicityThresholds,
+            criticalValues = criticalValues,
+            assayMethod = assayMethod,
+            interpretationCaveats = interpretationCaveats,
+            sourceRefs = sourceRefs
+        )
+    }
+
+    private fun parseTherapeuticRanges(jsonRanges: JSONArray?): List<TherapeuticRange> {
+        if (jsonRanges == null) return emptyList()
+        val ranges: MutableList<TherapeuticRange> = mutableListOf()
+        for (i in 0 until jsonRanges.length()) {
+            val jsonRange = jsonRanges.getOptionalJSONObject(i) ?: continue
+            val range = jsonRange.getOptionalString("range") ?: continue
+            val unit = jsonRange.getOptionalString("unit") ?: continue
+            ranges.add(
+                TherapeuticRange(
+                    indication = jsonRange.getOptionalString("indication"),
+                    range = range,
+                    unit = unit,
+                    note = jsonRange.getOptionalString("note")
+                )
+            )
+        }
+        return ranges
+    }
+
+    private fun parseToxicityThresholds(jsonThresholds: JSONArray?): List<ToxicityThreshold> {
+        if (jsonThresholds == null) return emptyList()
+        val thresholds: MutableList<ToxicityThreshold> = mutableListOf()
+        for (i in 0 until jsonThresholds.length()) {
+            val jsonThreshold = jsonThresholds.getOptionalJSONObject(i) ?: continue
+            val threshold = jsonThreshold.getOptionalString("threshold") ?: continue
+            val unit = jsonThreshold.getOptionalString("unit") ?: continue
+            thresholds.add(
+                ToxicityThreshold(
+                    threshold = threshold,
+                    unit = unit,
+                    note = jsonThreshold.getOptionalString("note")
+                )
+            )
+        }
+        return thresholds
     }
 
     private fun parseTimeValue(jsonTimeValue: JSONObject?): TimeValue? {

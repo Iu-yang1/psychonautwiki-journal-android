@@ -1,0 +1,137 @@
+{
+  "substances": [
+    {
+      "name": "Digoxin",
+      "commonNames": [
+        "Digoxin",
+        "Lanoxin",
+        "Digitalis",
+        "Cardiac glycoside",
+        "地高辛",
+        "洋地黄"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ca595f0c-5bf0-4feb-8183-47832ee8c820",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "Digoxin is a cardiac glycoside with a narrow therapeutic index. It is a priority example for separating time-course data from true therapeutic drug monitoring.",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01AA05"
+        ],
+        "drugClass": [
+          "Cardiac glycoside",
+          "Digitalis glycoside",
+          "Positive inotrope"
+        ],
+        "indications": [
+          "Heart failure",
+          "Atrial fibrillation rate control in selected contexts"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Digoxin has a narrow therapeutic index and toxicity can occur at lower concentrations in susceptible patients."
+        ],
+        "majorInteractions": [
+          "Renal function changes, electrolyte abnormalities, and interacting drugs can markedly affect toxicity risk."
+        ],
+        "monitoring": [
+          "Serum digoxin concentration when clinically indicated",
+          "Renal function",
+          "Potassium",
+          "Magnesium",
+          "ECG",
+          "Symptoms of toxicity"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed digoxin tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ca595f0c-5bf0-4feb-8183-47832ee8c820",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01AA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01AA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "tdm": {
+        "isRoutinelyMonitored": true,
+        "monitoringType": "serum concentration",
+        "pharmacokineticParametersAvailable": true,
+        "analytes": [
+          "digoxin"
+        ],
+        "specimen": "serum",
+        "samplingTime": "At least 6 hours after the last dose; trough at steady state is commonly preferred when clinically feasible.",
+        "therapeuticRanges": [
+          {
+            "indication": "heart failure literature-oriented lower range",
+            "range": "0.5-0.9",
+            "unit": "ng/mL",
+            "note": "Labcorp cites this lower heart-failure range; local policy may differ."
+          },
+          {
+            "indication": "general laboratory reference interval",
+            "range": "0.6-1.2",
+            "unit": "ng/mL",
+            "note": "Mayo Clinic Laboratories reference interval."
+          }
+        ],
+        "toxicityThresholds": [
+          {
+            "threshold": ">2.0",
+            "unit": "ng/mL",
+            "note": "DailyMed notes increased toxicity risk above this concentration, without increased benefit."
+          }
+        ],
+        "criticalValues": [
+          {
+            "threshold": ">=4.0",
+            "unit": "ng/mL",
+            "note": "Mayo Clinic Laboratories critical value."
+          }
+        ],
+        "interpretationCaveats": [
+          "Interpret with sampling time, renal function, potassium, magnesium, ECG, symptoms, age, and interacting drugs.",
+          "Serum concentration alone does not rule in or rule out toxicity.",
+          "Do not mix serum concentration ranges with timeCourse duration or Tmax fields."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed digoxin tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ca595f0c-5bf0-4feb-8183-47832ee8c820",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "DailyMed digoxin injection label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6aba2b38-5de0-4813-9775-39d87613893d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Mayo Clinic Laboratories digoxin serum",
+            "url": "https://www.mayocliniclabs.com/test-catalog/overview/8674",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Labcorp digoxin",
+            "url": "https://www.labcorp.com/tests/007385/digoxin",
+            "sourceType": "laboratory-tdm-catalog",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

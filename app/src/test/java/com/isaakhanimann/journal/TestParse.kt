@@ -19,6 +19,7 @@
 package com.isaakhanimann.journal
 
 import com.isaakhanimann.journal.data.substances.parse.SubstanceParser
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -55,5 +56,50 @@ class TestParse {
 }"""
         val result = SubstanceParser().extractSubstanceString(string = text)
         assertTrue(result == "[{\"name\":\"Armodafinil\",\"roas\":[{\"name\":\"oral\"}]}]")
+    }
+
+    @Test
+    fun parseTherapeuticDrugMonitoring() {
+        val text = """
+{
+  "categories": [],
+  "substances": [
+    {
+      "name": "Digoxin",
+      "commonNames": ["地高辛"],
+      "url": "https://example.org",
+      "isApproved": true,
+      "categories": ["cardiovascular"],
+      "tdm": {
+        "isRoutinelyMonitored": true,
+        "monitoringType": "serum concentration",
+        "analytes": ["digoxin"],
+        "specimen": "serum",
+        "therapeuticRanges": [
+          {
+            "indication": "heart failure",
+            "range": "0.5-0.9",
+            "unit": "ng/mL"
+          }
+        ],
+        "toxicityThresholds": [
+          {
+            "threshold": ">2.0",
+            "unit": "ng/mL",
+            "note": "interpret with clinical context"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}"""
+        val result = SubstanceParser().parseSubstanceFile(string = text)
+        val tdm = result.substances.first().tdm
+        assertTrue(tdm?.isRoutinelyMonitored == true)
+        assertEquals("serum concentration", tdm?.monitoringType)
+        assertEquals("digoxin", tdm?.analytes?.first())
+        assertEquals("0.5-0.9", tdm?.therapeuticRanges?.first()?.range)
+        assertEquals(">2.0", tdm?.toxicityThresholds?.first()?.threshold)
     }
 }

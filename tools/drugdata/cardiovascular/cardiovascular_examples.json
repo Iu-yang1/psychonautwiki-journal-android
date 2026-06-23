@@ -134,6 +134,24 @@
           ]
         }
       ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Amlodipine therapy is usually followed by clinical response and safety findings such as blood pressure, edema, and hypotension symptoms rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "PK parameters such as Tmax and half-life belong in timeCourse, not TDM ranges.",
+          "This record does not provide dose adjustment guidance."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed amlodipine besylate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
       "roas": []
     },
     {
@@ -299,6 +317,30 @@
           ]
         }
       ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Nitroglycerin clinical use is guided by symptoms, blood pressure, formulation-specific response, and safety monitoring rather than routine plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Sublingual, transdermal, and IV products have different time-course behavior.",
+          "TDM ranges are not encoded for nitroglycerin in this data pass."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed nitroglycerin sublingual tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "DailyMed nitroglycerin transdermal system label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e98a2692-1cb9-4994-98d8-1d8d9ef1a256",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
       "roas": []
     }
   ]

@@ -50,7 +50,7 @@ import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomSubstance
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
-import com.isaakhanimann.journal.data.substances.repositories.SubstanceRepository
+import com.isaakhanimann.journal.data.substances.repositories.SearchRepository
 import com.isaakhanimann.journal.di.SubstanceResultHolder
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
@@ -60,7 +60,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class SubstancePickerViewModel @Inject constructor(
-    private val substanceRepository: SubstanceRepository,
+    private val searchRepository: SearchRepository,
     private val resultHolder: SubstanceResultHolder,
     experienceRepository: ExperienceRepository
 ) : ViewModel() {
@@ -73,12 +73,12 @@ class SubstancePickerViewModel @Inject constructor(
             initialValue = emptyList()
         )
 
-    val allSubstances: List<String> by lazy {
-        val allSubstances = mutableSetOf<String>()
-        substanceRepository.getAllSubstances().map { it.name }.forEach { substanceName ->
-            allSubstances.add(substanceName)
-        }
-        allSubstances.sorted()
+    fun getMatchingSubstanceNames(searchText: String): List<String> {
+        return searchRepository.getMatchingSubstances(
+            searchText = searchText,
+            filterCategories = emptyList(),
+            recentlyUsedSubstanceNamesSorted = emptyList()
+        ).map { it.substance.name }
     }
 
     fun selectSubstance(substanceName: String) {
@@ -95,12 +95,8 @@ fun SubstancePickerScreen(
     val customSubstances by viewModel.customSubstancesFlow.collectAsState()
     var searchText by remember { mutableStateOf("") }
 
-    val filteredSubstances = remember(searchText, viewModel.allSubstances) {
-        if (searchText.isBlank()) {
-            viewModel.allSubstances
-        } else {
-            viewModel.allSubstances.filter { it.contains(searchText, ignoreCase = true) }
-        }
+    val filteredSubstances = remember(searchText) {
+        viewModel.getMatchingSubstanceNames(searchText)
     }
 
     val filteredCustomSubstances = remember(searchText, customSubstances) {
