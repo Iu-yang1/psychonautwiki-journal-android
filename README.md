@@ -75,7 +75,7 @@ Recommended sources:
 - ESC, ACC/AHA, Chinese guidelines, Goodman & Gilman, AHFS, Martindale, and clinical pharmacology reviews for context.
 - Laboratory TDM catalogs only for true TDM, therapeutic-window, or toxic-concentration fields; do not mix those values into `timeCourse`.
 
-Cardiovascular example fragments live under `tools/drugdata/`. Rebuild the raw resource with:
+Cardiovascular example fragments live under `tools/drugdata/`. Rebuild the default and localized raw resources with:
 
 ```bash
 python tools/drugdata/build_substances_json.py

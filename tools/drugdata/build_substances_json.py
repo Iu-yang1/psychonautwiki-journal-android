@@ -7,6 +7,9 @@ from pathlib import Path
 DEFAULT_BASE = Path("app/src/main/res/raw/substances.json")
 DEFAULT_SOURCE_DIR = Path("tools/drugdata/cardiovascular")
 DEFAULT_OUTPUT = Path("app/src/main/res/raw/substances.json")
+DEFAULT_LOCALIZED_OUTPUTS = [
+    Path("app/src/main/res/raw-zh-rCN/substances.json"),
+]
 
 
 def load_json(path: Path) -> dict:
@@ -18,6 +21,22 @@ def write_json(path: Path, data: dict) -> None:
     with path.open("w", encoding="utf-8", newline="\n") as file:
         json.dump(data, file, ensure_ascii=False, separators=(",", ":"))
         file.write("\n")
+
+
+def write_hybrid_json(path: Path, data: dict) -> None:
+    categories_json = json.dumps(
+        {"categories": data.get("categories", [])},
+        ensure_ascii=False,
+        indent=2
+    )
+    substances_json = json.dumps(
+        data.get("substances", []),
+        ensure_ascii=False,
+        separators=(",", ":")
+    )
+    with path.open("w", encoding="utf-8", newline="\n") as file:
+        file.write(categories_json[:-2])
+        file.write(f',"substances":{substances_json}}}\n')
 
 
 def upsert_by_name(items: list[dict], incoming: list[dict]) -> list[dict]:
@@ -37,7 +56,7 @@ def iter_source_files(source_dir: Path) -> list[Path]:
     return sorted(source_dir.rglob("*.json"))
 
 
-def build(base_path: Path, source_dir: Path, output_path: Path) -> None:
+def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = False) -> None:
     data = load_json(base_path)
     categories = data.get("categories", [])
     substances = data.get("substances", [])
@@ -49,7 +68,17 @@ def build(base_path: Path, source_dir: Path, output_path: Path) -> None:
 
     data["categories"] = categories
     data["substances"] = substances
-    write_json(output_path, data)
+    if hybrid:
+        write_hybrid_json(output_path, data)
+    else:
+        write_json(output_path, data)
+
+
+def build_default_resources(source_dir: Path) -> None:
+    build(DEFAULT_BASE, source_dir, DEFAULT_OUTPUT)
+    for localized_output in DEFAULT_LOCALIZED_OUTPUTS:
+        if localized_output.exists():
+            build(localized_output, source_dir, localized_output, hybrid=True)
 
 
 def main() -> None:
@@ -58,9 +87,12 @@ def main() -> None:
     )
     parser.add_argument("--base", type=Path, default=DEFAULT_BASE)
     parser.add_argument("--source-dir", type=Path, default=DEFAULT_SOURCE_DIR)
-    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-    build(args.base, args.source_dir, args.output)
+    if args.output is None and args.base == DEFAULT_BASE:
+        build_default_resources(args.source_dir)
+    else:
+        build(args.base, args.source_dir, args.output or DEFAULT_OUTPUT)
 
 
 if __name__ == "__main__":
