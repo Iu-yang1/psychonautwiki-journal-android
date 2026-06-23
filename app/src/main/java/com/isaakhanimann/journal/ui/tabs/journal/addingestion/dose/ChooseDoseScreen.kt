@@ -81,6 +81,7 @@ import com.isaakhanimann.journal.ui.DOSE_DISCLAIMER
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.dose.RoaDosePreviewProvider
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.dose.RoaDoseView
 import com.isaakhanimann.journal.ui.theme.horizontalPadding
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun ChooseDoseScreen(
@@ -230,7 +231,17 @@ fun ChooseDoseScreen(
 ) {
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("$substanceName ${administrationRoute.displayText} dose") })
+            TopAppBar(
+                title = {
+                    Text(
+                        stringResource(
+                            R.string.substance_route_dose_title,
+                            substanceName,
+                            administrationRoute.localizedDisplayText()
+                        )
+                    )
+                }
+            )
         },
         floatingActionButton = {
             if (isValidDose) {
@@ -518,7 +529,7 @@ fun ChooseDoseScreen(
                 TextButton(onClick = navigateToSaferSniffingScreen) {
                     Icon(
                         Icons.Outlined.Info,
-                        contentDescription = "Info",
+                        contentDescription = stringResource(R.string.info),
                         modifier = Modifier.size(ButtonDefaults.IconSize),
                     )
                     Spacer(Modifier.size(ButtonDefaults.IconSpacing))
@@ -529,7 +540,7 @@ fun ChooseDoseScreen(
                 TextButton(onClick = { uriHandler.openUri(AdministrationRoute.SAFER_PLUGGING_ARTICLE_URL) }) {
                     Icon(
                         Icons.Outlined.OpenInBrowser,
-                        contentDescription = "Open link"
+                        contentDescription = stringResource(R.string.open_link)
                     )
                     Spacer(Modifier.size(ButtonDefaults.IconSpacing))
                     Text(stringResource(R.string.safer_plugging))
@@ -539,7 +550,7 @@ fun ChooseDoseScreen(
                 TextButton(onClick = navigateToVolumetricDosingScreen) {
                     Icon(
                         Icons.Outlined.Info,
-                        contentDescription = "Info",
+                        contentDescription = stringResource(R.string.info),
                         modifier = Modifier.size(ButtonDefaults.IconSize),
                     )
                     Spacer(Modifier.size(ButtonDefaults.IconSpacing))

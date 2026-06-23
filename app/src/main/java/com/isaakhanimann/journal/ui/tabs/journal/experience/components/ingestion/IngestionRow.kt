@@ -11,18 +11,21 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
+import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomUnit
 import com.isaakhanimann.journal.data.room.experiences.entities.SubstanceColor
 import com.isaakhanimann.journal.data.room.experiences.entities.getSubstanceColor
 import com.isaakhanimann.journal.ui.tabs.journal.experience.components.DotRows
 import com.isaakhanimann.journal.ui.tabs.journal.experience.models.IngestionElement
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun IngestionRow(
@@ -62,7 +65,7 @@ fun IngestionRow(
             val doseText = buildAnnotatedString {
                 append(ingestionWithCompanionAndCustomUnit.doseDescription)
                 withStyle(style = SpanStyle(color = MaterialTheme.colorScheme.onSurfaceVariant)) {
-                    val routeText = " ${ingestion.administrationRoute.displayText.lowercase()}"
+                    val routeText = " ${ingestion.administrationRoute.localizedDisplayText()}"
                     if (actualCustomUnit == null) {
                         append(routeText)
                     } else {
@@ -79,7 +82,11 @@ fun IngestionRow(
                                 } else null
                             }
                         }
-                        val calculatedText = if (calculatedDose != null) " = $calculatedDose" else " = unknown dose"
+                        val calculatedText = if (calculatedDose != null) {
+                            " = $calculatedDose"
+                        } else {
+                            " = ${stringResource(R.string.unknown_dose)}"
+                        }
                         append(calculatedText + routeText)
                     }
                 }

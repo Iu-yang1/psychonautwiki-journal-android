@@ -41,6 +41,7 @@ import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.inset
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.TextMeasurer
 import androidx.compose.ui.text.TextStyle
@@ -53,6 +54,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.toSize
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LifecycleEventEffect
+import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
 import com.isaakhanimann.journal.data.room.experiences.entities.ShulginRatingOption
 import com.isaakhanimann.journal.data.room.experiences.entities.SubstanceColor
@@ -126,6 +128,7 @@ fun AllTimelines(
     modifier: Modifier = Modifier,
 ) {
     val isDarkTheme = isSystemInDarkTheme()
+    val context = LocalContext.current
     val density = LocalDensity.current
     val axisLabelSize = MaterialTheme.typography.labelMedium.fontSize
     val axisLabelTextPaint = remember(density) {
@@ -235,7 +238,10 @@ fun AllTimelines(
                     verticalDistanceFromFinger,
                     textMeasurer,
                     dragTimeTextSize,
-                    timeDisplayOption
+                    timeDisplayOption,
+                    agoText = context.getString(R.string.time_ago_format, "%s"),
+                    inFutureText = context.getString(R.string.time_in_future_format, "%s"),
+                    afterStartText = context.getString(R.string.time_after_start_format, "%s")
                 )
             }
         }
@@ -260,6 +266,9 @@ private fun DrawScope.drawDragPointLineAndTimeLabel(
     textMeasurer: TextMeasurer,
     dragTimeTextSize: TextStyle,
     timeDisplayOption: TimeDisplayOption,
+    agoText: String,
+    inFutureText: String,
+    afterStartText: String,
 ) {
     val horizontallyLimitedDragPoint = Offset(
         x = dragPoint.x.coerceIn(0f, canvasWidth),
@@ -280,7 +289,10 @@ private fun DrawScope.drawDragPointLineAndTimeLabel(
         dragLineColor,
         dragTimeTextSize,
         textColor,
-        timeDisplayOption
+        timeDisplayOption,
+        agoText,
+        inFutureText,
+        afterStartText
     )
 }
 
@@ -296,6 +308,9 @@ private fun DrawScope.drawDragTimeLabelWithBackground(
     dragTimeTextSize: TextStyle,
     textColor: Color,
     timeDisplayOption: TimeDisplayOption,
+    agoText: String,
+    inFutureText: String,
+    afterStartText: String,
 ) {
     val secondsAtDragPoint = horizontallyLimitedDragPoint.x / pixelsPerSec
     val timeAtDragPoint = model.startTime.plusSeconds(secondsAtDragPoint.toLong())
@@ -304,18 +319,21 @@ private fun DrawScope.drawDragTimeLabelWithBackground(
         TimeDisplayOption.RELATIVE_TO_NOW -> {
             val now = Instant.now()
             val isInPast = timeAtDragPoint < now
+            val duration = getDurationText(fromInstant = timeAtDragPoint, toInstant = now)
             if (isInPast) {
-                getDurationText(fromInstant = timeAtDragPoint, toInstant = now) + " ago"
+                agoText.format(duration)
             } else {
-                "in " + getDurationText(fromInstant = timeAtDragPoint, toInstant = now)
+                inFutureText.format(duration)
             }
         }
 
         TimeDisplayOption.RELATIVE_TO_START -> {
-            getDurationText(
-                fromInstant = model.startTime,
-                toInstant = timeAtDragPoint
-            ) + " in"
+            afterStartText.format(
+                getDurationText(
+                    fromInstant = model.startTime,
+                    toInstant = timeAtDragPoint
+                )
+            )
         }
 
         TimeDisplayOption.TIME_BETWEEN -> timeAtDragPoint.getShortTimeText()

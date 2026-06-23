@@ -5,7 +5,9 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
+import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.ui.utils.getShortTimeText
 import com.isaakhanimann.journal.ui.utils.getShortTimeWithWeekdayText
 import com.isaakhanimann.journal.ui.utils.getShortWeekdayText
@@ -61,18 +63,24 @@ fun IngestionTimeOrDurationText(
                         )
                         Text(TIME_RANGE_SEPARATOR_TEXT, style = secondaryTextStyle)
                         Text(
-                            text = getDurationText(
-                                fromInstant = previousTime,
-                                toInstant = endTime
-                            ) + " after previous",
+                            text = stringResource(
+                                R.string.time_after_previous_format,
+                                getDurationText(
+                                    fromInstant = previousTime,
+                                    toInstant = endTime
+                                )
+                            ),
                             style = secondaryTextStyle
                         )
                     } else {
                         Text(
-                            text = getDurationText(
-                                fromInstant = previousTime,
-                                toInstant = time
-                            ) + " after previous",
+                            text = stringResource(
+                                R.string.time_after_previous_format,
+                                getDurationText(
+                                    fromInstant = previousTime,
+                                    toInstant = time
+                                )
+                            ),
                             style = secondaryTextStyle
                         )
                     }
@@ -97,18 +105,24 @@ fun IngestionTimeOrDurationText(
                         )
                         Text(TIME_RANGE_SEPARATOR_TEXT, style = secondaryTextStyle)
                         Text(
-                            text = getDurationText(
-                                fromInstant = startTime,
-                                toInstant = endTime
-                            ) + " after start",
+                            text = stringResource(
+                                R.string.time_after_start_format,
+                                getDurationText(
+                                    fromInstant = startTime,
+                                    toInstant = endTime
+                                )
+                            ),
                             style = secondaryTextStyle
                         )
                     } else {
                         Text(
-                            text = getDurationText(
-                                fromInstant = startTime,
-                                toInstant = time
-                            ) + " after start",
+                            text = stringResource(
+                                R.string.time_after_start_format,
+                                getDurationText(
+                                    fromInstant = startTime,
+                                    toInstant = time
+                                )
+                            ),
                             style = secondaryTextStyle
                         )
                     }
@@ -163,10 +177,15 @@ fun NoteOrRatingTimeOrDurationText(
         }
 
         TimeDisplayOption.RELATIVE_TO_START -> {
-            val durationText = getDurationText(
+            val duration = getDurationText(
                 fromInstant = firstIngestionTime,
                 toInstant = time
-            ) + if (firstIngestionTime < time) " after start" else " before start"
+            )
+            val durationText = if (firstIngestionTime < time) {
+                stringResource(R.string.time_after_start_format, duration)
+            } else {
+                stringResource(R.string.time_before_start_format, duration)
+            }
             Text(
                 text = durationText,
                 style = textStyle

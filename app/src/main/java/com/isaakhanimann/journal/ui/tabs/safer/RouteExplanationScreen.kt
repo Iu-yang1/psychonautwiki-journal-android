@@ -40,10 +40,13 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 import com.isaakhanimann.journal.ui.tabs.search.substance.SectionText
 import com.isaakhanimann.journal.ui.tabs.search.substance.SectionWithTitle
 import com.isaakhanimann.journal.ui.tabs.search.substance.VerticalSpace
@@ -57,12 +60,12 @@ fun RouteExplanationScreen() {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Routes of administration") },
+                title = { Text(stringResource(R.string.routes_of_administration)) },
                 actions = {
                     TextButton(
                         onClick = { uriHandler.openUri(AdministrationRoute.PSYCHONAUT_WIKI_ARTICLE_URL) },
                     ) {
-                        Text("Article")
+                        Text(stringResource(R.string.article))
                     }
                 }
             )
@@ -90,7 +93,7 @@ Determining an optimal route of administration is highly dependent on the substa
                 }
             }
             AdministrationRoute.entries.filter { !it.isInjectionMethod }.forEach {
-                SectionWithTitle(title = it.displayText) {
+                SectionWithTitle(title = it.localizedDisplayText()) {
                     Text(
                         text = it.articleText,
                         textAlign = TextAlign.Left,
@@ -105,16 +108,16 @@ Determining an optimal route of administration is highly dependent on the substa
                         ) {
                             Icon(
                                 Icons.Outlined.OpenInBrowser,
-                                contentDescription = "Open PW article",
+                                contentDescription = stringResource(R.string.open_link),
                             )
                             Spacer(Modifier.size(ButtonDefaults.IconSpacing))
-                            Text("Safer plugging")
+                            Text(stringResource(R.string.safer_plugging))
                         }
                     }
                 }
             }
             AdministrationRoute.entries.filter { it.isInjectionMethod }.forEach {
-                SectionWithTitle(title = it.displayText) {
+                SectionWithTitle(title = it.localizedDisplayText()) {
                     Text(
                         text = it.articleText,
                         textAlign = TextAlign.Left,

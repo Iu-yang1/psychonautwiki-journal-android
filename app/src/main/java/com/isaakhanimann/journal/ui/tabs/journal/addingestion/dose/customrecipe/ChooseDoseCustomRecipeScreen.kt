@@ -45,6 +45,7 @@ import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomUnit
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.dose.RoaDoseView
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun ChooseDoseCustomRecipeScreen(
@@ -183,7 +184,7 @@ fun ChooseDoseCustomRecipeScreenContent(
                                 subcomponentInfos.forEach { info ->
                                     val subcomponent = info.subcomponent
                                     Text(
-                                        text = "â€?${subcomponent.getDoseDescription(customUnits[info.subcomponent.id])} ${subcomponent.originalUnit} ${subcomponent.substanceName}",
+                                        text = "ï¿½?${subcomponent.getDoseDescription(customUnits[info.subcomponent.id])} ${subcomponent.originalUnit} ${subcomponent.substanceName}",
                                         style = MaterialTheme.typography.bodyMedium,
                                         color = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
@@ -210,7 +211,7 @@ fun ChooseDoseCustomRecipeScreenContent(
                         subcomponentInfos.forEach { info ->
                             ElevatedCard(modifier = Modifier.fillMaxWidth()) {
                                 Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                                    val text = "${info.subcomponent.substanceName} (${administrationRoute.displayText})"
+                                    val text = "${info.subcomponent.substanceName} (${administrationRoute.localizedDisplayText()})"
                                     val calculatedDoseText = info.calculatedDose?.let { "%.2f".format(it) } ?: "0.0"
 
                                     Text(

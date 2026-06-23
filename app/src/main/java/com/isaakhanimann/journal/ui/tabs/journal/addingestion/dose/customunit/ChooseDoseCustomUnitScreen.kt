@@ -71,6 +71,7 @@ import com.isaakhanimann.journal.ui.tabs.journal.addingestion.search.suggestion.
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.dose.RoaDosePreviewProvider
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.dose.RoaDoseView
 import com.isaakhanimann.journal.ui.theme.horizontalPadding
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun ChooseDoseCustomUnitScreen(
@@ -235,7 +236,11 @@ fun ChooseDoseCustomUnitScreen(
                     )
                 ) {
                     Text(
-                        text = "${customUnit.substanceName} ${customUnit.administrationRoute.displayText}",
+                        text = stringResource(
+                            R.string.substance_route_label,
+                            customUnit.substanceName,
+                            customUnit.administrationRoute.localizedDisplayText()
+                        ),
                         style = MaterialTheme.typography.titleLarge
                     )
                     if (!doseRemark.isNullOrBlank()) {

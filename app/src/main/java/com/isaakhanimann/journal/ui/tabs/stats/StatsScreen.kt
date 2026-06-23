@@ -48,6 +48,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -58,6 +59,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.ui.YOU
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.toReadableString
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 import com.isaakhanimann.journal.ui.theme.JournalTheme
 
 @Composable
@@ -220,6 +222,8 @@ fun StatsScreen(
 
 @Composable
 private fun StatItemRow(subStat: StatItem, onClick: () -> Unit) {
+    val context = LocalContext.current
+
     ElevatedCard(
         onClick = onClick,
         modifier = Modifier
@@ -290,7 +294,9 @@ private fun StatItemRow(subStat: StatItem, onClick: () -> Unit) {
 
                 if (subStat.routeCounts.isNotEmpty()) {
                     Text(
-                        text = subStat.routeCounts.joinToString { "${it.administrationRoute.displayText.lowercase()} ${it.count}x" },
+                        text = subStat.routeCounts.joinToString {
+                            "${it.administrationRoute.localizedDisplayText(context)} ${it.count}x"
+                        },
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )

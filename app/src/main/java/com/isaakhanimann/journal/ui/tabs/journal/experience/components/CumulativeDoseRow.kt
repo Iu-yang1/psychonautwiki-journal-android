@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
 import com.isaakhanimann.journal.ui.tabs.journal.experience.models.CumulativeDose
 import com.isaakhanimann.journal.ui.tabs.journal.experience.models.CumulativeRouteAndDose
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun CumulativeDoseRow(
@@ -45,7 +46,7 @@ fun CumulativeDoseRow(
                         val text = buildAnnotatedString {
                             append(cumulativeRouteAndDose.doseDescription)
                             withStyle(style = SpanStyle(color = MaterialTheme.colorScheme.onSurfaceVariant)) {
-                                append(" ${cumulativeRouteAndDose.route.displayText.lowercase()}")
+                                append(" ${cumulativeRouteAndDose.route.localizedDisplayText()}")
                             }
                         }
                         Text(text = text, style = MaterialTheme.typography.bodyMedium)

@@ -53,21 +53,22 @@ data class TotalTimeline(
         val heightInPx = normalisedHeight * canvasHeight
         val top = canvasHeight - heightInPx
         val path = Path().apply {
-            val totalMinX = total.minInSeconds * pixelsPerSec
             val totalX = total.interpolateAtValueInSeconds(totalWeight) * pixelsPerSec
             val startX = ingestionTimeRelativeToStartInSeconds * pixelsPerSec
+            val peakX = startX + (totalX / 2f)
+            val endX = startX + totalX
             moveTo(startX, canvasHeight)
             endSmoothLineTo(
                 smoothnessBetween0And1 = percentSmoothness,
                 startX = startX,
-                endX = startX + (totalMinX / 2),
+                endX = peakX,
                 endY = top
             )
             startSmoothLineTo(
                 smoothnessBetween0And1 = percentSmoothness,
-                startX = startX + (totalMinX / 2),
+                startX = peakX,
                 startY = top,
-                endX = startX + totalX,
+                endX = endX,
                 endY = canvasHeight
             )
         }

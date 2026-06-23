@@ -52,6 +52,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun EditCustomRecipeScreen(
@@ -179,7 +180,7 @@ fun EditCustomRecipeScreenContent(
                             .fillMaxWidth()
                             .menuAnchor(ExposedDropdownMenuAnchorType.PrimaryNotEditable),
                         readOnly = true,
-                        value = administrationRoute.displayText,
+                        value = administrationRoute.localizedDisplayText(),
                         onValueChange = {},
                         label = { Text(stringResource(R.string.administration_route)) },
                         trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = isRouteMenuExpanded) },
@@ -191,7 +192,7 @@ fun EditCustomRecipeScreenContent(
                     ) {
                         AdministrationRoute.values().forEach { selectionOption ->
                             DropdownMenuItem(
-                                text = { Text(selectionOption.displayText) },
+                                text = { Text(selectionOption.localizedDisplayText()) },
                                 onClick = {
                                     onAdministrationRouteChange(selectionOption)
                                     isRouteMenuExpanded = false

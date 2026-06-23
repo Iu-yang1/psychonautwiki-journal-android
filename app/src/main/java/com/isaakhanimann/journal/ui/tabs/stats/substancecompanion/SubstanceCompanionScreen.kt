@@ -55,6 +55,7 @@ import com.isaakhanimann.journal.ui.theme.JournalTheme
 import com.isaakhanimann.journal.ui.theme.horizontalPadding
 import com.isaakhanimann.journal.ui.utils.getDateWithWeekdayText
 import com.isaakhanimann.journal.ui.utils.getShortTimeText
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun SubstanceCompanionScreen(
@@ -183,7 +184,7 @@ fun IngestionRowOnSubstanceCompanionScreen(ingestionAndCustomUnit: IngestionsBur
             }
             withStyle(style = SpanStyle(color = if (isSystemInDarkTheme()) Color.Gray else Color.LightGray )) {
                 val routeText =
-                    ingestionAndCustomUnit.ingestion.administrationRoute.displayText.lowercase()
+                    ingestionAndCustomUnit.ingestion.administrationRoute.localizedDisplayText()
                 if (ingestionAndCustomUnit.customUnit == null) {
                     append(" $routeText")
                 }

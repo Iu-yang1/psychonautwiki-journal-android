@@ -83,6 +83,7 @@ import com.isaakhanimann.journal.ui.tabs.journal.addingestion.dose.UnknownDoseDi
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.dose.RoaDosePreviewProvider
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.dose.RoaDoseView
 import com.isaakhanimann.journal.ui.theme.horizontalPadding
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun CustomSubstanceChooseDoseScreen(
@@ -189,7 +190,15 @@ fun CustomSubstanceChooseDoseScreen(
 ) {
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text(administrationRoute.displayText + " " + substanceName + " Dosage") },
+            TopAppBar(title = {
+                Text(
+                    stringResource(
+                        R.string.custom_substance_dosage_title,
+                        administrationRoute.localizedDisplayText(),
+                        substanceName
+                    )
+                )
+            },
                 actions = {
                     var isShowingUnknownDoseDialog by remember { mutableStateOf(false) }
                     IconButton(onClick = { isShowingUnknownDoseDialog = true }) {
@@ -214,10 +223,10 @@ fun CustomSubstanceChooseDoseScreen(
                     icon = {
                         Icon(
                             Icons.AutoMirrored.Filled.NavigateNext,
-                            contentDescription = "Next"
+                            contentDescription = stringResource(R.string.next)
                         )
                     },
-                    text = { Text("Next") },
+                    text = { Text(stringResource(R.string.next)) },
                 )
             }
         }
@@ -350,7 +359,7 @@ fun CustomSubstanceChooseDoseScreen(
                         }
                     }
                     TextButton(onClick = navigateToCreateCustomUnit) {
-                        Text(text = "Create custom unit")
+                        Text(text = stringResource(R.string.create_a_custom_unit))
                     }
                 }
             }
@@ -378,17 +387,17 @@ fun CustomSubstanceChooseDoseScreen(
             }
             if (administrationRoute == AdministrationRoute.INSUFFLATED) {
                 TextButton(onClick = navigateToSaferSniffingScreen) {
-                    Text(text = "Safer sniffing")
+                    Text(text = stringResource(R.string.safer_sniffing))
                 }
             } else if (administrationRoute == AdministrationRoute.RECTAL) {
                 val uriHandler = LocalUriHandler.current
                 TextButton(onClick = { uriHandler.openUri(AdministrationRoute.SAFER_PLUGGING_ARTICLE_URL) }) {
                     Icon(
                         Icons.Outlined.OpenInBrowser,
-                        contentDescription = "Open link"
+                        contentDescription = stringResource(R.string.open_link)
                     )
                     Spacer(Modifier.size(ButtonDefaults.IconSpacing))
-                    Text("Safer plugging")
+                    Text(stringResource(R.string.safer_plugging))
                 }
             }
         }

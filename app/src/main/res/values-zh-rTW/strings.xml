@@ -64,7 +64,7 @@
     <string name="don_t_know_the_dose">不知道劑量？</string>
     <string name="dont_know_the_dose_description">您可以記錄未知劑量。但請注意，使用錯誤劑量的物質可能導致負面體驗，如極度焦慮、不適的身體副作用、住院，或（在極端情況下）死亡。</string>
     <string name="purity">純度</string>
-    <string name="purity_invalid">純度必須在 1% 到 100% 之間</string>
+    <string name="purity_invalid" formatted="false">純度必須在 1% 到 100% 之間</string>
     <string name="impure_dose">非純劑量</string>
     <string name="point_in_time">時間點</string>
     <string name="time_range">時間範圍</string>
@@ -302,14 +302,14 @@
     <string name="ingestion_plural">攝入記錄</string>
     <string name="ingestions_affected_by_edit">%1$s 受此編輯影響</string>
     <string name="no_ingestions_using_unit">尚無攝入記錄使用此單位</string>
-    <string name="cannabis_info_joint">當透過捲菸吸食時，約23%%的THC被吸入。因此，如果您吸食一支含有300毫克THC含量為20%%的大麻的捲菸，您將吸入 300mg * 20/100 * 23/100 = 13.8mg THC。</string>
-    <string name="cannabis_info_bong">當使用水煙筒吸食時，約40%%的THC被吸入。因此，如果您吸食300毫克THC含量為20%%的大麻，您將吸入 300mg * 20/100 * 40/100 = 24mg THC。</string>
-    <string name="cannabis_info_vaporizer">當使用霧化器吸食時，約70%%的THC被吸入。因此，如果您吸食300毫克THC含量為20%%的大麻，您將吸入 300mg * 20/100 * 70/100 = 42mg THC。</string>
+    <string name="cannabis_info_joint" formatted="false">當透過捲菸吸食時，約23%%的THC被吸入。因此，如果您吸食一支含有300毫克THC含量為20%%的大麻的捲菸，您將吸入 300mg * 20/100 * 23/100 = 13.8mg THC。</string>
+    <string name="cannabis_info_bong" formatted="false">當使用水煙筒吸食時，約40%%的THC被吸入。因此，如果您吸食300毫克THC含量為20%%的大麻，您將吸入 300mg * 20/100 * 40/100 = 24mg THC。</string>
+    <string name="cannabis_info_vaporizer" formatted="false">當使用霧化器吸食時，約70%%的THC被吸入。因此，如果您吸食300毫克THC含量為20%%的大麻，您將吸入 300mg * 20/100 * 70/100 = 42mg THC。</string>
     <string name="psilocybin_info_dried">乾燥的古巴光蓋傘約含有1%%的賽洛西賓。</string>
     <string name="psilocybin_info_fresh">新鮮的古巴光蓋傘約含有0.1%%的賽洛西賓。</string>
     <string name="psilocybin_info_research">請研究您所擁有的蘑菇品種，以便估算其賽洛西賓含量。</string>
     <string name="alcohol_info">1毫升乙醇為0.8克。因此，如果您飲用200毫升酒精含量為40%%的烈酒，您將攝入 200ml * 40/100 * 0.8 = 64克 乙醇。</string>
-    <string name="prompt_cannabis_name">例如：捲菸（THC 20%%），水煙筒（THC 15%%），霧化器</string>
+    <string name="prompt_cannabis_name" formatted="false">例如：捲菸（THC 20%%），水煙筒（THC 15%%），霧化器</string>
     <string name="prompt_cannabis_unit">毫克，支，口</string>
     <string name="prompt_cannabis_unit_plural">毫克，支，口</string>
     <string name="prompt_mushrooms_name">蘑菇品種</string>

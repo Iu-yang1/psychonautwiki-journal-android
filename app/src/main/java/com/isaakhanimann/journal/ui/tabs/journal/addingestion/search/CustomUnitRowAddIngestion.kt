@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomUnit
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun CustomUnitRowAddIngestion(
@@ -18,7 +19,7 @@ fun CustomUnitRowAddIngestion(
     ListItem(
         headlineContent = {
             Text(
-                text = "${customUnit.substanceName} ${customUnit.administrationRoute.displayText.lowercase()}, ${customUnit.name}",
+                text = "${customUnit.substanceName} ${customUnit.administrationRoute.localizedDisplayText()}, ${customUnit.name}",
                 style = MaterialTheme.typography.bodyLarge
             )
         },

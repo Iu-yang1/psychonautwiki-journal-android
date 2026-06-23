@@ -53,6 +53,7 @@
     <string name="dose">剂量</string>
     <string name="next">下一步</string>
     <string name="cancel">取消</string>
+    <string name="continue_word">继续</string>
     <string name="safer_sniffing">更安全的鼻吸</string>
     <string name="safer_plugging">更安全的直肠给药</string>
     <string name="volumetric_liquid_dosing">液体容量剂量法</string>
@@ -64,7 +65,7 @@
     <string name="don_t_know_the_dose">不知道剂量？</string>
     <string name="dont_know_the_dose_description">您可以记录未知剂量。但请注意，使用错误剂量的物质可能导致负面体验，如极度焦虑、不适的身体副作用、住院，或（在极端情况下）死亡。</string>
     <string name="purity">纯度</string>
-    <string name="purity_invalid">纯度必须在 1% 到 100% 之间</string>
+    <string name="purity_invalid" formatted="false">纯度必须在 1% 到 100% 之间</string>
     <string name="impure_dose">非纯剂量</string>
     <string name="point_in_time">时间点</string>
     <string name="time_range">时间范围</string>
@@ -177,6 +178,7 @@
     <string name="_7_allergy_tests">7. 过敏测试</string>
     <string name="_7_allergy_tests_content">仅使用微乎其微的剂量（例如，常规剂量的 1/10 到 1/4），并等待数小时，以确认您不会出现不寻常或特异性反应。</string>
     <string name="administration_routes_info">给药途径信息</string>
+    <string name="administration_route_info_content_description">给药途径信息</string>
     <string name="_6_administration_routes">6. 给药途径</string>
     <string name="_6_administration_routes_content">不要共用鼻吸工具（如吸管、纸币、子弹瓶），以避免通过微量血液传播的血源性疾病，如丙型肝炎。注射是最危险的给药途径，强烈建议不要使用。如果您决意要注射，请勿共用注射材料，并参考更安全的注射指南。</string>
     <string name="swiss_combination_checker">瑞士药物组合检测器</string>
@@ -215,7 +217,11 @@
     <string name="no_matching_substance_with_the_tag_found">未找到带有“%1$s”标签的匹配物质</string>
     <string name="no_matching_substance_with_tags_found">未找到带有“%1$s”标签的匹配物质</string>
     <string name="add_route_of_administration">添加给药途径</string>
-    <string name="route">路径</string>
+    <string name="route">给药途径</string>
+    <string name="substance_route_title">%1$s 给药途径</string>
+    <string name="substance_route_dose_title">%1$s %2$s剂量</string>
+    <string name="custom_substance_dosage_title">%1$s %2$s剂量</string>
+    <string name="substance_route_label">%1$s %2$s</string>
     <string name="routes_of_administration">给药途径</string>
     <string name="default_units">默认单位</string>
     <string name="name">名称</string>
@@ -290,6 +296,48 @@
     <string name="duration_offset">消退</string>
     <string name="duration_total">总计</string>
     <string name="duration_afterglow">余晖</string>
+    <string name="duration_after_effects">后续效应</string>
+    <string name="label_yes">是</string>
+    <string name="label_no">否</string>
+    <string name="unknown">未知</string>
+    <string name="unknown_dose">未知剂量</string>
+    <string name="other_dose">其他剂量</string>
+    <string name="not_specified">未指定</string>
+    <string name="basis_label">依据：%1$s</string>
+    <string name="sources">来源</string>
+    <string name="source_ref_format">%1$s（%2$s，访问日期 %3$s）</string>
+    <string name="time_ago_format">%1$s前</string>
+    <string name="time_in_future_format">%1$s后</string>
+    <string name="time_after_previous_format">距上一次 %1$s</string>
+    <string name="time_after_start_format">开始后 %1$s</string>
+    <string name="time_before_start_format">开始前 %1$s</string>
+    <string name="route_oral">口服</string>
+    <string name="route_sublingual">舌下</string>
+    <string name="route_buccal">颊黏膜</string>
+    <string name="route_insufflated">鼻吸</string>
+    <string name="route_rectal">直肠</string>
+    <string name="route_transdermal">经皮</string>
+    <string name="route_subcutaneous">皮下</string>
+    <string name="route_intramuscular">肌内</string>
+    <string name="route_intravenous">静脉</string>
+    <string name="route_smoked">吸烟/燃吸</string>
+    <string name="route_inhaled">吸入</string>
+    <string name="route_desc_oral">吞服</string>
+    <string name="route_desc_sublingual">置于舌下</string>
+    <string name="route_desc_buccal">置于牙龈与脸颊之间</string>
+    <string name="route_desc_insufflated">经鼻吸入</string>
+    <string name="route_desc_rectal">直肠给药</string>
+    <string name="route_desc_transdermal">经皮肤吸收</string>
+    <string name="route_desc_subcutaneous">注射到皮肤与肌肉之间</string>
+    <string name="route_desc_intramuscular">注射到肌肉组织</string>
+    <string name="route_desc_intravenous">注射到静脉</string>
+    <string name="route_desc_smoked">经加热吸入</string>
+    <string name="route_desc_inhaled">不经加热吸入</string>
+    <string name="safer_injection_title">更安全的注射</string>
+    <string name="safer_injection_warning">使用和共用注射器材属于极高风险行为，在非医疗环境中从来不能算是真正安全。</string>
+    <string name="read_safer_injection_guide">阅读更安全的注射指南：</string>
+    <string name="safer_injection_guide">更安全的注射指南</string>
+    <string name="safer_injection_disclaimer">本指南仅用于教育和减害目的，我们强烈不鼓励用户进行此类行为。</string>
     <string name="min">最小</string>
     <string name="max">最大</string>
     <string name="units_placeholder">单位</string>
@@ -302,14 +350,14 @@
     <string name="ingestion_plural">摄入记录</string>
     <string name="ingestions_affected_by_edit">%1$s 受此编辑影响</string>
     <string name="no_ingestions_using_unit">尚无摄入记录使用此单位</string>
-    <string name="cannabis_info_joint">当通过卷烟吸食时，约23%的THC被吸入。因此，如果您吸食一支含有300毫克THC含量为20%的大麻的卷烟，您将吸入 300mg * 20/100 * 23/100 = 13.8mg THC。</string>
-    <string name="cannabis_info_bong">当使用水烟筒吸食时，约40%的THC被吸入。因此，如果您吸食300毫克THC含量为20%的大麻，您将吸入 300mg * 20/100 * 40/100 = 24mg THC。</string>
-    <string name="cannabis_info_vaporizer">当使用雾化器吸食时，约70%的THC被吸入。因此，如果您吸食300毫克THC含量为20%的大麻，您将吸入 300mg * 20/100 * 70/100 = 42mg THC。</string>
+    <string name="cannabis_info_joint" formatted="false">当通过卷烟吸食时，约23%的THC被吸入。因此，如果您吸食一支含有300毫克THC含量为20%的大麻的卷烟，您将吸入 300mg * 20/100 * 23/100 = 13.8mg THC。</string>
+    <string name="cannabis_info_bong" formatted="false">当使用水烟筒吸食时，约40%的THC被吸入。因此，如果您吸食300毫克THC含量为20%的大麻，您将吸入 300mg * 20/100 * 40/100 = 24mg THC。</string>
+    <string name="cannabis_info_vaporizer" formatted="false">当使用雾化器吸食时，约70%的THC被吸入。因此，如果您吸食300毫克THC含量为20%的大麻，您将吸入 300mg * 20/100 * 70/100 = 42mg THC。</string>
     <string name="psilocybin_info_dried">干燥的古巴光盖伞约含有1%的赛洛西宾。</string>
     <string name="psilocybin_info_fresh">新鲜的古巴光盖伞约含有0.1%的赛洛西宾。</string>
     <string name="psilocybin_info_research">请研究您所拥有的蘑菇品种，以便估算其赛洛西宾含量。</string>
     <string name="alcohol_info">1毫升乙醇为0.8克。因此，如果您饮用200毫升酒精含量为40%的烈酒，您将摄入 200ml * 40/100 * 0.8 = 64克 乙醇。</string>
-    <string name="prompt_cannabis_name">例如：卷烟（THC 20%），水烟筒（THC 15%），雾化器</string>
+    <string name="prompt_cannabis_name" formatted="false">例如：卷烟（THC 20%），水烟筒（THC 15%），雾化器</string>
     <string name="prompt_cannabis_unit">毫克，支，口</string>
     <string name="prompt_cannabis_unit_plural">毫克，支，口</string>
     <string name="prompt_mushrooms_name">蘑菇品种</string>

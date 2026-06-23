@@ -50,6 +50,7 @@ import com.isaakhanimann.journal.data.room.experiences.entities.custom.CustomRoa
 import com.isaakhanimann.journal.data.room.experiences.entities.custom.SerializableDurationRange
 import com.isaakhanimann.journal.data.room.experiences.entities.custom.SerializableDurationUnits
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun AddOrEditCustomSubstanceContent(
@@ -94,7 +95,7 @@ fun AddOrEditCustomSubstanceContent(
                 modifier = Modifier.fillMaxWidth()
             )
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                SuggestionChip(onClick = { onUnitsChange("µg") }, label = { Text("µg") })
+                SuggestionChip(onClick = { onUnitsChange("mcg") }, label = { Text("mcg") })
                 SuggestionChip(onClick = { onUnitsChange("mg") }, label = { Text("mg") })
                 SuggestionChip(onClick = { onUnitsChange("g") }, label = { Text("g") })
                 SuggestionChip(onClick = { onUnitsChange("mL") }, label = { Text("mL") })
@@ -164,7 +165,7 @@ private fun RoaInfoEditor(
                     modifier = Modifier.weight(1f)
                 ) {
                     OutlinedTextField(
-                        value = roaInfo.administrationRoute.name.lowercase().replaceFirstChar { it.uppercase() },
+                        value = roaInfo.administrationRoute.localizedDisplayText(),
                         onValueChange = {},
                         readOnly = true,
                         label = { Text(stringResource(R.string.route)) },
@@ -177,7 +178,7 @@ private fun RoaInfoEditor(
                     ) {
                         AdministrationRoute.entries.forEach { route ->
                             DropdownMenuItem(
-                                text = { Text(route.name.lowercase().replaceFirstChar { it.uppercase() }) },
+                                text = { Text(route.localizedDisplayText()) },
                                 onClick = {
                                     onUpdate(roaInfo.copy(administrationRoute = route))
                                     isRoaMenuExpanded = false

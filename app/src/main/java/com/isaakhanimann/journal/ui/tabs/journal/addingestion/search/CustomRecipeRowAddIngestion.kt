@@ -20,6 +20,7 @@ import com.isaakhanimann.journal.data.room.experiences.entities.CustomUnit
 import com.isaakhanimann.journal.data.room.experiences.entities.RecipeSubcomponent
 import com.isaakhanimann.journal.data.room.experiences.relations.CustomRecipeWithSubcomponents
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 
 @Composable
 fun CustomRecipeRowAddIngestion(
@@ -43,7 +44,7 @@ fun CustomRecipeRowAddIngestion(
         supportingContent = {
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Text(
-                    text = recipe.administrationRoute.displayText,
+                    text = recipe.administrationRoute.localizedDisplayText(),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

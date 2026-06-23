@@ -96,6 +96,8 @@ import com.isaakhanimann.journal.ui.theme.JournalTheme
 import com.isaakhanimann.journal.ui.theme.horizontalPadding
 import com.isaakhanimann.journal.ui.theme.verticalPaddingCards
 import com.isaakhanimann.journal.ui.utils.getShortTimeText
+import com.isaakhanimann.journal.ui.utils.localizedClinicalRouteText
+import com.isaakhanimann.journal.ui.utils.localizedDisplayText
 import java.time.LocalDateTime
 import java.time.temporal.ChronoUnit
 import kotlin.math.absoluteValue
@@ -266,7 +268,7 @@ fun SubstanceScreen(
                                 modifier = Modifier.padding(vertical = 5.dp)
                             ) {
                                 Text(
-                                    text = roa.route.displayText,
+                                    text = roa.route.localizedDisplayText(),
                                     style = MaterialTheme.typography.titleMedium
                                 )
                                 if (roa.roaDose == null) {
@@ -439,7 +441,7 @@ fun SubstanceScreen(
                                     RouteColorCircle(roa.route)
                                     Spacer(modifier = Modifier.width(8.dp))
                                     Text(
-                                        text = roa.route.displayText,
+                                        text = roa.route.localizedDisplayText(),
                                         style = MaterialTheme.typography.titleMedium
                                     )
                                 }
@@ -562,15 +564,15 @@ fun SubstanceScreen(
 
 @Composable
 fun ClinicalInformationSection(clinicalInfo: ClinicalInfo) {
-    SectionWithTitle(title = "Clinical information") {
+    SectionWithTitle(title = "临床资料 / Clinical information") {
         Column(Modifier.padding(horizontal = horizontalPadding)) {
-            ClinicalInfoListRow("ATC code", clinicalInfo.atcCodes)
-            ClinicalInfoListRow("Drug class", clinicalInfo.drugClass)
-            ClinicalInfoListRow("Main indications", clinicalInfo.indications)
-            ClinicalInfoListRow("Contraindications", clinicalInfo.contraindications)
-            ClinicalInfoListRow("Major warnings", clinicalInfo.majorWarnings)
-            ClinicalInfoListRow("Major interactions", clinicalInfo.majorInteractions)
-            ClinicalInfoListRow("Monitoring", clinicalInfo.monitoring)
+            ClinicalInfoListRow("ATC 编码 / ATC code", clinicalInfo.atcCodes)
+            ClinicalInfoListRow("药物类别 / Drug class", clinicalInfo.drugClass)
+            ClinicalInfoListRow("主要适应证 / Main indications", clinicalInfo.indications)
+            ClinicalInfoListRow("禁忌证 / Contraindications", clinicalInfo.contraindications)
+            ClinicalInfoListRow("重要警示 / Major warnings", clinicalInfo.majorWarnings)
+            ClinicalInfoListRow("重要相互作用 / Major interactions", clinicalInfo.majorInteractions)
+            ClinicalInfoListRow("监测项目 / Monitoring", clinicalInfo.monitoring)
             SourceRefs(sourceRefs = clinicalInfo.sourceRefs)
             VerticalSpace()
         }
@@ -579,7 +581,7 @@ fun ClinicalInformationSection(clinicalInfo: ClinicalInfo) {
 
 @Composable
 fun TimeCourseSection(timeCourses: List<TimeCourse>) {
-    SectionWithTitle(title = "Time course") {
+    SectionWithTitle(title = "药代 / 药效时间进程") {
         Column(Modifier.padding(horizontal = horizontalPadding)) {
             Text(
                 text = "Tmax 表示血浆浓度达峰时间，不一定等于最大临床效果时间。以上信息仅供学习和资料索引，不用于诊断、处方或自行调整药物。",
@@ -590,19 +592,22 @@ fun TimeCourseSection(timeCourses: List<TimeCourse>) {
                 Column(modifier = Modifier.padding(vertical = 5.dp)) {
                     Text(
                         text = listOfNotNull(
-                            timeCourse.route,
+                            localizedClinicalRouteText(timeCourse.route),
                             timeCourse.formulation
                         ).joinToString(" / "),
                         style = MaterialTheme.typography.titleMedium
                     )
-                    TimeValueRow("Onset", timeCourse.onset)
+                    Spacer(modifier = Modifier.height(6.dp))
+                    TimeCourseChart(timeCourse = timeCourse)
+                    Spacer(modifier = Modifier.height(6.dp))
+                    TimeValueRow("起效时间 / Onset", timeCourse.onset)
                     TimeValueRow("Tmax", timeCourse.tmax)
-                    TimeValueRow("Peak effect", timeCourse.peakEffect)
-                    TimeValueRow("Duration of action", timeCourse.durationOfAction)
-                    TimeValueRow("Elimination half-life", timeCourse.eliminationHalfLife)
-                    TimeValueRow("Time to steady state", timeCourse.timeToSteadyState)
-                    TimeValueRow("Washout", timeCourse.washout)
-                    ClinicalInfoListRow("Notes", timeCourse.notes)
+                    TimeValueRow("药效峰值 / Peak effect", timeCourse.peakEffect)
+                    TimeValueRow("作用持续时间 / Duration of action", timeCourse.durationOfAction)
+                    TimeValueRow("消除半衰期 / Elimination half-life", timeCourse.eliminationHalfLife)
+                    TimeValueRow("稳态时间 / Time to steady state", timeCourse.timeToSteadyState)
+                    TimeValueRow("洗脱时间 / Washout", timeCourse.washout)
+                    ClinicalInfoListRow("备注 / Notes", timeCourse.notes)
                     SourceRefs(sourceRefs = timeCourse.sourceRefs)
                 }
                 if (index < timeCourses.size - 1) {
@@ -616,26 +621,26 @@ fun TimeCourseSection(timeCourses: List<TimeCourse>) {
 
 @Composable
 fun TherapeuticDrugMonitoringSection(tdm: TherapeuticDrugMonitoring) {
-    SectionWithTitle(title = "Therapeutic drug monitoring / TDM") {
+    SectionWithTitle(title = "治疗药物监测 / TDM") {
         Column(Modifier.padding(horizontal = horizontalPadding)) {
             Text(
                 text = "This information is for educational reference and data indexing only. It is not medical advice and must not be used for diagnosis, prescribing, self-medication, or dose adjustment. 本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量。",
                 style = MaterialTheme.typography.bodySmall
             )
             Spacer(modifier = Modifier.height(8.dp))
-            InfoLabel("Routine monitoring")
-            Text(text = if (tdm.isRoutinelyMonitored) "Yes" else "No")
+            InfoLabel("常规监测 / Routine monitoring")
+            Text(text = stringResource(if (tdm.isRoutinelyMonitored) R.string.label_yes else R.string.label_no))
             VerticalSpace()
-            ClinicalInfoTextRow("Monitoring type", tdm.monitoringType)
-            ClinicalInfoTextRow("Reason", tdm.reason)
-            ClinicalInfoListRow("Analytes", tdm.analytes)
-            ClinicalInfoTextRow("Specimen", tdm.specimen)
-            ClinicalInfoTextRow("Sampling time", tdm.samplingTime)
-            TherapeuticRangeRows("Therapeutic ranges", tdm.therapeuticRanges)
-            ToxicityThresholdRows("Toxicity thresholds", tdm.toxicityThresholds)
-            ToxicityThresholdRows("Critical values", tdm.criticalValues)
-            ClinicalInfoTextRow("Assay method", tdm.assayMethod)
-            ClinicalInfoListRow("Interpretation caveats", tdm.interpretationCaveats)
+            ClinicalInfoTextRow("监测类型 / Monitoring type", tdm.monitoringType)
+            ClinicalInfoTextRow("原因 / Reason", tdm.reason)
+            ClinicalInfoListRow("分析物 / Analytes", tdm.analytes)
+            ClinicalInfoTextRow("标本 / Specimen", tdm.specimen)
+            ClinicalInfoTextRow("采样时间 / Sampling time", tdm.samplingTime)
+            TherapeuticRangeRows("治疗范围 / Therapeutic ranges", tdm.therapeuticRanges)
+            ToxicityThresholdRows("中毒阈值 / Toxicity thresholds", tdm.toxicityThresholds)
+            ToxicityThresholdRows("危急值 / Critical values", tdm.criticalValues)
+            ClinicalInfoTextRow("检测方法 / Assay method", tdm.assayMethod)
+            ClinicalInfoListRow("解释注意事项 / Interpretation caveats", tdm.interpretationCaveats)
             SourceRefs(sourceRefs = tdm.sourceRefs)
             VerticalSpace()
         }
@@ -692,9 +697,9 @@ private fun ToxicityThresholdRows(label: String, thresholds: List<ToxicityThresh
 private fun TimeValueRow(label: String, timeValue: TimeValue?) {
     if (timeValue == null) return
     InfoLabel(label)
-    Text(text = timeValue.toReadableText())
+    Text(text = timeValue.toReadableText(stringResource(R.string.not_specified)))
     timeValue.basis?.let {
-        Text(text = "Basis: $it", style = MaterialTheme.typography.bodySmall)
+        Text(text = stringResource(R.string.basis_label, it), style = MaterialTheme.typography.bodySmall)
     }
     timeValue.note?.let {
         Text(text = it, style = MaterialTheme.typography.bodySmall)
@@ -715,23 +720,23 @@ private fun InfoLabel(label: String) {
 private fun SourceRefs(sourceRefs: List<SourceRef>) {
     if (sourceRefs.isEmpty()) return
     val uriHandler = LocalUriHandler.current
-    InfoLabel("Sources")
+    InfoLabel(stringResource(R.string.sources))
     sourceRefs.forEach { sourceRef ->
         TextButton(onClick = { uriHandler.openUri(sourceRef.url) }) {
-            Text("${sourceRef.title} (${sourceRef.sourceType}, accessed ${sourceRef.accessedDate})")
+            Text(stringResource(R.string.source_ref_format, sourceRef.title, sourceRef.sourceType, sourceRef.accessedDate))
         }
     }
     VerticalSpace()
 }
 
-private fun TimeValue.toReadableText(): String {
+private fun TimeValue.toReadableText(notSpecifiedText: String): String {
     val minText = min?.toReadableString()
     val maxText = max?.toReadableString()
     val valueText = when {
         minText != null && maxText != null && minText != maxText -> "$minText-$maxText"
         minText != null -> minText
         maxText != null -> maxText
-        else -> "not specified"
+        else -> notSpecifiedText
     }
     return "$valueText $unit"
 }
