@@ -116,10 +116,12 @@ val customColor = Color.Cyan
 data class CategoryChipModel(
     val chipName: String,
     val color: Color,
-    val isActive: Boolean
+    val isActive: Boolean,
+    val displayName: String = localizedCategoryDisplayName(chipName)
 )
 
 data class CategoryModel(
     val name: String,
-    val color: Color
+    val color: Color,
+    val displayName: String = localizedCategoryDisplayName(name)
 )

@@ -151,7 +151,7 @@ fun SearchScreen(
 
 @Composable
 private fun getNoResultsMessage(activeFilters: List<CategoryChipModel>): String {
-    val activeCategoryNames = activeFilters.filter { it.isActive }.map { it.chipName }
+    val activeCategoryNames = activeFilters.filter { it.isActive }.map { it.displayName }
     return when {
         activeCategoryNames.isEmpty() -> stringResource(R.string.no_matching_substance_found)
         activeCategoryNames.size == 1 -> stringResource(

@@ -145,7 +145,7 @@ fun CategoryChipStatic(categoryModel: CategoryModel) {
         modifier = Modifier
     ) {
         Text(
-            text = categoryModel.name,
+            text = categoryModel.displayName,
             style = MaterialTheme.typography.labelSmall,
             fontWeight = FontWeight.Medium,
             color = textColor,

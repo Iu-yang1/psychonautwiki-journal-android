@@ -88,6 +88,7 @@ import com.isaakhanimann.journal.ui.tabs.journal.addingestion.time.TimePickerBut
 import com.isaakhanimann.journal.ui.tabs.journal.experience.TimelineDisplayOption
 import com.isaakhanimann.journal.ui.tabs.journal.experience.components.TimeDisplayOption
 import com.isaakhanimann.journal.ui.tabs.journal.experience.timeline.AllTimelines
+import com.isaakhanimann.journal.ui.tabs.search.localizedCategoryDisplayName
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.ToleranceSection
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.dose.RoaDoseView
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.duration.RoaDurationView
@@ -795,7 +796,7 @@ fun CategoryChipFromSubstanceScreen(
             .padding(horizontal = 12.dp)
 
     ) {
-        Text(text = category.name)
+        Text(text = localizedCategoryDisplayName(category.name))
         Spacer(modifier = Modifier.width(3.dp))
         Icon(
             imageVector = Icons.Default.ChevronRight,

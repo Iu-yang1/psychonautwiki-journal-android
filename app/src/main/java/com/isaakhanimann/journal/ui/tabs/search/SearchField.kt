@@ -109,7 +109,7 @@ fun SearchField(
                         onDismissRequest = { isExpanded = false },
                     ) {
                         categories.forEach { categoryChipModel ->
-                            DropdownMenuItem(text = { Text(categoryChipModel.chipName) },
+                            DropdownMenuItem(text = { Text(categoryChipModel.displayName) },
                                 onClick = { onFilterTapped(categoryChipModel.chipName) },
                                 leadingIcon = {
                                     if (categoryChipModel.isActive) {

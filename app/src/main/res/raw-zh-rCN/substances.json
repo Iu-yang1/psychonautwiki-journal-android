@@ -29488,6 +29488,1445 @@
         "uncertain": []
       },
       "roas": []
+    },
+    {
+      "name": "Bisoprolol",
+      "commonNames": [
+        "Bisoprolol",
+        "Zebeta",
+        "Concor",
+        "比索洛尔",
+        "β1选择性阻滞剂",
+        "Beta blocker",
+        "Beta-1 selective blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Beta blocker overdose can cause bradycardia, hypotension, AV block, cardiogenic shock, bronchospasm, hypoglycemia masking, seizures, and cardiac arrest.",
+        "Plasma concentrations are not routine clinical monitoring targets; acute toxicity assessment is clinical and ECG/hemodynamic based."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "比索洛尔是 β1 选择性阻滞剂。本条目用于药代/药效时间进程学习和资料索引，不构成处方、诊断或自行调整剂量建议。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AB07"
+        ],
+        "drugClass": [
+          "β受体阻滞剂",
+          "β1选择性阻滞剂",
+          "Beta blocker",
+          "Beta-1 selective blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Selected heart failure and angina contexts depending on local label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Abrupt withdrawal can worsen angina or precipitate cardiac events in susceptible patients.",
+          "Bradycardia, hypotension, heart block, bronchospasm, and masking of hypoglycemia symptoms are clinically relevant safety concerns."
+        ],
+        "majorInteractions": [
+          "Other agents that slow heart rate or AV conduction may increase bradycardia or conduction risk.",
+          "Insulin or oral hypoglycemics may have masked adrenergic symptoms of hypoglycemia."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "Symptoms of bradycardia or hypotension",
+          "ECG when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed bisoprolol fumarate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AB07",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB07",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 9,
+            "max": 12,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 5,
+            "max": 5,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Tmax is a plasma concentration parameter and is not necessarily the time of maximal clinical effect.",
+            "The chart tail uses half-life as a clearance-oriented visual estimate when no explicit duration of action is encoded."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed bisoprolol fumarate label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is usually guided by heart rate, blood pressure, symptoms, ECG context, organ function, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true
+      }
+    },
+    {
+      "name": "Nebivolol",
+      "commonNames": [
+        "Nebivolol",
+        "Bystolic",
+        "Nebilet",
+        "奈必洛尔",
+        "奈比洛尔",
+        "β1选择性阻滞剂",
+        "Beta blocker",
+        "Beta-1 selective blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=07ed02ff-523f-437e-bddc-5c41a4bb0062",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Beta blocker overdose can cause bradycardia, hypotension, AV block, cardiogenic shock, bronchospasm, hypoglycemia masking, seizures, and cardiac arrest.",
+        "CYP2D6 poor metabolizer status or CYP2D6 inhibitors can increase exposure and may change tolerability."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "奈必洛尔是 β1 选择性阻滞剂，并具有一氧化氮相关血管舒张特征。本条目用于药代时间进程学习和资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AB12"
+        ],
+        "drugClass": [
+          "β受体阻滞剂",
+          "β1选择性阻滞剂",
+          "Beta blocker",
+          "Beta-1 selective blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause bradycardia, hypotension, heart block, bronchospasm, and masking of hypoglycemia symptoms.",
+          "Exposure differs by CYP2D6 metabolizer status."
+        ],
+        "majorInteractions": [
+          "CYP2D6 inhibitors can increase nebivolol exposure.",
+          "Other agents that slow heart rate or AV conduction may increase bradycardia or conduction risk."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "Symptoms of bradycardia or hypotension",
+          "Interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed BYSTOLIC label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=07ed02ff-523f-437e-bddc-5c41a4bb0062",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AB12",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB12",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1.5,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": 19,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "DailyMed describes about 12 h in CYP2D6 extensive metabolizers and 19 h in poor metabolizers for active d-nebivolol."
+          },
+          "notes": [
+            "Tmax and half-life vary with CYP2D6 phenotype and interacting drugs.",
+            "Plasma concentration is not a routine clinical monitoring endpoint."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed BYSTOLIC label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=07ed02ff-523f-437e-bddc-5c41a4bb0062",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Monitoring is usually clinical rather than concentration-guided.",
+        "pharmacokineticParametersAvailable": true
+      }
+    },
+    {
+      "name": "Labetalol",
+      "commonNames": [
+        "Labetalol",
+        "Trandate",
+        "Normodyne",
+        "拉贝洛尔",
+        "α/β受体阻滞剂",
+        "Beta blocker",
+        "Alpha and beta blocker"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Overdose can cause excessive beta blockade and alpha blockade with bradycardia, hypotension, heart block, bronchospasm, and shock.",
+        "Clinical management is guided by symptoms, ECG, hemodynamics, and supportive care rather than routine plasma concentration."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "拉贝洛尔兼具 α1 阻滞和 β 阻滞作用。本条目用于学习药代时间进程、血压/心率监测和相互作用索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C07AG01"
+        ],
+        "drugClass": [
+          "α/β受体阻滞剂",
+          "Beta blocker",
+          "Alpha and beta blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause symptomatic hypotension, bradycardia, heart block, bronchospasm, and hepatic injury in rare cases.",
+          "Abrupt withdrawal of beta blockers can worsen ischemic symptoms in susceptible patients."
+        ],
+        "majorInteractions": [
+          "Other agents that lower blood pressure or slow AV conduction can increase hypotension, bradycardia, or conduction risk.",
+          "Insulin or oral hypoglycemics may have masked adrenergic symptoms of hypoglycemia."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Heart rate",
+          "Symptoms of orthostasis",
+          "Liver injury symptoms when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed labetalol hydrochloride tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AG01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AG01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 6,
+            "max": 8,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 3,
+            "max": 3,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Peak plasma level is not the same concept as maximal blood-pressure response.",
+            "Food and hepatic function can affect exposure."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed labetalol hydrochloride tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical response and safety are monitored using blood pressure, heart rate, symptoms, and clinical context.",
+        "pharmacokineticParametersAvailable": true
+      }
+    },
+    {
+      "name": "Enalapril",
+      "commonNames": [
+        "Enalapril",
+        "Vasotec",
+        "依那普利",
+        "ACE inhibitor",
+        "血管紧张素转换酶抑制剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a88902bd-742f-4ea6-b625-cc9df1709efc&type=display",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "ACE inhibitor toxicity or excessive effect can include hypotension, renal function deterioration, hyperkalemia, and angioedema.",
+        "Monitoring is clinical and laboratory based rather than plasma concentration based."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "依那普利是 ACE 抑制剂，口服后转化为活性代谢物 enalaprilat。本条目区分活性代谢物达峰和临床降压监测。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09AA02"
+        ],
+        "drugClass": [
+          "ACE抑制剂",
+          "血管紧张素转换酶抑制剂",
+          "ACE inhibitor",
+          "Antihypertensive",
+          "Renin-angiotensin system medicine"
+        ],
+        "indications": [
+          "Hypertension",
+          "Heart failure and selected left ventricular dysfunction contexts depending on local label"
+        ],
+        "contraindications": [
+          "History of ACE-inhibitor related angioedema",
+          "Pregnancy-related contraindications vary by label and jurisdiction"
+        ],
+        "majorWarnings": [
+          "Can cause angioedema, fetal toxicity, hypotension, renal impairment, and hyperkalemia.",
+          "Renal function and potassium changes are clinically important."
+        ],
+        "majorInteractions": [
+          "Potassium supplements, potassium-sparing diuretics, or salt substitutes can increase hyperkalemia risk.",
+          "NSAIDs may reduce antihypertensive effect and increase renal risk in susceptible patients.",
+          "Dual renin-angiotensin system blockade can increase renal impairment, hypotension, and hyperkalemia risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum creatinine/eGFR",
+          "Serum potassium",
+          "Angioedema symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed enalapril maleate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a88902bd-742f-4ea6-b625-cc9df1709efc&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09AA02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration",
+            "note": "Peak serum concentration of active enalaprilat after oral enalapril."
+          },
+          "eliminationHalfLife": {
+            "min": 11,
+            "max": 11,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Effective half-life for accumulation of enalaprilat after multiple doses."
+          },
+          "notes": [
+            "The encoded Tmax refers to enalaprilat, the active metabolite.",
+            "Renal impairment can increase enalaprilat exposure and delay time to steady state."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed enalapril maleate label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a88902bd-742f-4ea6-b625-cc9df1709efc&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is guided by blood pressure, renal function, potassium, symptoms, and local labeling rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true
+      }
+    },
+    {
+      "name": "Valsartan",
+      "commonNames": [
+        "Valsartan",
+        "Diovan",
+        "缬沙坦",
+        "ARB",
+        "Angiotensin II receptor blocker",
+        "血管紧张素II受体阻滞剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8478a05f-38fd-412d-af49-69a73a787c8f",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Excessive effect or toxicity can include hypotension, renal function deterioration, and hyperkalemia.",
+        "Monitoring is based on blood pressure, renal function, potassium, and symptoms rather than plasma concentration."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "缬沙坦是血管紧张素 II 受体阻滞剂。血药浓度通常不是常规监测目标，资料重点为标签药代参数和临床安全监测。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09CA03"
+        ],
+        "drugClass": [
+          "ARB",
+          "血管紧张素II受体阻滞剂",
+          "Angiotensin II receptor blocker",
+          "Antihypertensive",
+          "Renin-angiotensin system medicine"
+        ],
+        "indications": [
+          "Hypertension",
+          "Heart failure and post-myocardial infarction contexts depending on local label"
+        ],
+        "contraindications": [
+          "Pregnancy-related contraindications vary by label and jurisdiction"
+        ],
+        "majorWarnings": [
+          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia.",
+          "Volume depletion can increase symptomatic hypotension risk."
+        ],
+        "majorInteractions": [
+          "Potassium supplements, potassium-sparing diuretics, or salt substitutes can increase hyperkalemia risk.",
+          "NSAIDs may reduce antihypertensive effect and increase renal risk in susceptible patients.",
+          "Dual renin-angiotensin system blockade can increase renal impairment, hypotension, and hyperkalemia risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum creatinine/eGFR",
+          "Serum potassium",
+          "Symptoms of hypotension"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed valsartan tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8478a05f-38fd-412d-af49-69a73a787c8f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 6,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Tmax is a plasma concentration parameter and does not by itself define antihypertensive duration.",
+            "Exposure can be affected by formulation, food, hepatic function, and interacting drugs."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed valsartan tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8478a05f-38fd-412d-af49-69a73a787c8f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is usually guided by blood pressure, renal function, potassium, symptoms, and local approved labeling.",
+        "pharmacokineticParametersAvailable": true
+      }
+    },
+    {
+      "name": "Verapamil",
+      "commonNames": [
+        "Verapamil",
+        "Calan",
+        "Isoptin",
+        "Verelan",
+        "维拉帕米",
+        "非二氢吡啶类钙通道阻滞剂",
+        "Non-dihydropyridine CCB",
+        "CCB"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f00c1caf-68b6-40c1-a1fa-72d17d2cf44f",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Verapamil toxicity can include bradycardia, AV block, hypotension, hyperglycemia, shock, and severe conduction disturbances.",
+        "Overdose assessment is clinical and ECG/hemodynamic based; plasma concentration is not a routine management target."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "维拉帕米是非二氢吡啶类钙通道阻滞剂，具有传导抑制和负性肌力风险。本条目按普通制剂和缓释制剂区分时间进程。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C08DA01"
+        ],
+        "drugClass": [
+          "钙通道阻滞剂",
+          "非二氢吡啶类钙通道阻滞剂",
+          "Calcium channel blocker",
+          "Non-dihydropyridine calcium channel blocker",
+          "Rate-controlling calcium channel blocker",
+          "Antianginal",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Angina",
+          "Selected arrhythmia or rate-control contexts depending on formulation and label"
+        ],
+        "contraindications": [
+          "Severe hypotension",
+          "Sick sinus syndrome or AV block without a functioning pacemaker in relevant labels",
+          "Severe left ventricular dysfunction in relevant labels"
+        ],
+        "majorWarnings": [
+          "Can prolong AV nodal conduction and cause bradycardia or AV block.",
+          "May worsen heart failure in susceptible patients."
+        ],
+        "majorInteractions": [
+          "Beta blockers and digoxin may have additive effects on cardiac conduction.",
+          "Verapamil is involved in CYP3A4/P-gp interactions and can increase exposure of susceptible substrates.",
+          "Some statins can have increased exposure and myopathy risk with verapamil."
+        ],
+        "monitoring": [
+          "Heart rate",
+          "Blood pressure",
+          "ECG or conduction symptoms when clinically indicated",
+          "Heart failure symptoms",
+          "Interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed verapamil hydrochloride tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f00c1caf-68b6-40c1-a1fa-72d17d2cf44f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "DailyMed verapamil extended-release label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3bee2d26-138c-4641-a217-a38d3d657461",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C08DA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08DA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "immediate-release tablet",
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 2.8,
+            "max": 7.4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Half-life can increase during repeated dosing or titration.",
+            "PR interval effects and blood pressure response are clinical/pharmacodynamic concepts, not identical to Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed verapamil hydrochloride tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f00c1caf-68b6-40c1-a1fa-72d17d2cf44f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "oral",
+          "formulation": "extended-release capsule/tablet",
+          "tmax": {
+            "min": 7,
+            "max": 9,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": 12,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Extended-release verapamil has formulation-specific absorption and should not be collapsed with immediate-release entries."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed verapamil extended-release label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3bee2d26-138c-4641-a217-a38d3d657461",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring usually focuses on heart rate, blood pressure, ECG/conduction, heart failure symptoms, and interactions.",
+        "pharmacokineticParametersAvailable": true
+      }
+    },
+    {
+      "name": "Nifedipine",
+      "commonNames": [
+        "Nifedipine",
+        "Adalat",
+        "Procardia",
+        "硝苯地平",
+        "二氢吡啶类钙通道阻滞剂",
+        "Dihydropyridine CCB",
+        "CCB"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Excessive nifedipine effect or overdose can cause hypotension, reflex tachycardia or bradycardia, shock, and metabolic disturbances.",
+        "Immediate-release and extended-release products have different time-course profiles and should not be treated as interchangeable timeline entries."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "硝苯地平是二氢吡啶类钙通道阻滞剂。普通胶囊和缓释片的吸收/达峰差异明显，本条目分别记录时间进程。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C08CA05"
+        ],
+        "drugClass": [
+          "钙通道阻滞剂",
+          "二氢吡啶类钙通道阻滞剂",
+          "Calcium channel blocker",
+          "Dihydropyridine calcium channel blocker",
+          "Antihypertensive",
+          "Antianginal"
+        ],
+        "indications": [
+          "Hypertension",
+          "Angina depending on formulation and local label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause symptomatic hypotension, edema, flushing, headache, and reflex tachycardia.",
+          "Immediate-release formulations have safety concerns in some cardiovascular contexts; follow local approved labeling."
+        ],
+        "majorInteractions": [
+          "Strong CYP3A inhibitors can increase nifedipine exposure.",
+          "Other antihypertensives can increase blood pressure-lowering effect."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Heart rate",
+          "Edema",
+          "Symptoms of hypotension",
+          "Interacting CYP3A drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed nifedipine capsule label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "DailyMed nifedipine extended-release label",
+            "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C08CA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "immediate-release capsule",
+          "onset": {
+            "min": 10,
+            "max": 10,
+            "unit": "min",
+            "basis": "plasma concentration",
+            "note": "DailyMed describes drug detectable in serum 10 minutes after oral administration."
+          },
+          "tmax": {
+            "min": 0.5,
+            "max": 0.5,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Immediate-release nifedipine has a substantially faster plasma peak than extended-release tablets.",
+            "Do not infer prescribing guidance from this educational timeline."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed nifedipine capsule label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "oral",
+          "formulation": "extended-release tablet",
+          "tmax": {
+            "min": 2.5,
+            "max": 5,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 7,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Labels describe a second small peak or shoulder around 6-12 hours for some extended-release tablets."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed nifedipine extended-release label",
+              "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is usually guided by blood pressure, heart rate, symptoms, edema, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true
+      }
+    },
+    {
+      "name": "Hydrochlorothiazide",
+      "commonNames": [
+        "Hydrochlorothiazide",
+        "HCTZ",
+        "Microzide",
+        "氢氯噻嗪",
+        "噻嗪类利尿剂",
+        "Thiazide diuretic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9416208e-e3fe-4213-a4c1-2ea6ebdc5795&type=display",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity can include volume depletion, hypotension, hypokalemia, hyponatremia, hyperuricemia, and renal function changes.",
+        "Monitoring is laboratory/clinical rather than plasma concentration based."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "氢氯噻嗪是噻嗪类利尿剂。资料重点为利尿药效时间进程、电解质/肾功能监测和相互作用索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C03AA03"
+        ],
+        "drugClass": [
+          "利尿剂",
+          "噻嗪类利尿剂",
+          "Thiazide diuretic",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Edema depending on label and clinical context"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause electrolyte imbalance, volume depletion, renal function changes, and hyperuricemia.",
+          "Photosensitivity and metabolic changes may occur."
+        ],
+        "majorInteractions": [
+          "Lithium toxicity risk may increase with thiazide diuretics.",
+          "Other antihypertensives can increase hypotension risk.",
+          "Drugs affecting potassium can alter hypokalemia or hyperkalemia risk depending on combination."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum sodium",
+          "Serum potassium",
+          "Serum creatinine/eGFR",
+          "Uric acid when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed hydrochlorothiazide label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9416208e-e3fe-4213-a4c1-2ea6ebdc5795&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03AA03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03AA03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet/capsule",
+          "onset": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "tmax": {
+            "min": 1,
+            "max": 5,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "peakEffect": {
+            "min": 4,
+            "max": 4,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed describes activity persisting up to 24 hours."
+          },
+          "eliminationHalfLife": {
+            "min": 6,
+            "max": 15,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Diuretic peak effect and plasma Tmax are related but distinct concepts.",
+            "Electrolyte and renal monitoring are more clinically relevant than routine concentration monitoring."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed hydrochlorothiazide label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9416208e-e3fe-4213-a4c1-2ea6ebdc5795&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring focuses on blood pressure, volume status, renal function, and electrolytes.",
+        "pharmacokineticParametersAvailable": true
+      }
+    },
+    {
+      "name": "Torsemide",
+      "commonNames": [
+        "Torsemide",
+        "Torasemide",
+        "Demadex",
+        "托拉塞米",
+        "袢利尿剂",
+        "Loop diuretic"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f1439b9c-c01c-a6d4-594b-d92b8e0af26e",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity can include dehydration, hypotension, electrolyte depletion, renal function changes, and ototoxicity risk in susceptible contexts.",
+        "Monitoring is clinical and laboratory based rather than plasma concentration based."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "托拉塞米是袢利尿剂。其口服利尿起效、峰效和持续时间在标签中较明确，适合用于时间进程图表示例。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C03CA04"
+        ],
+        "drugClass": [
+          "利尿剂",
+          "袢利尿剂",
+          "Loop diuretic",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Edema associated with heart failure, renal disease, or hepatic disease depending on label",
+          "Hypertension"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause excessive diuresis with dehydration, hypotension, electrolyte depletion, and renal function changes.",
+          "Hepatic disease and renal disease can alter response and safety monitoring needs."
+        ],
+        "majorInteractions": [
+          "Other antihypertensives can increase hypotension risk.",
+          "Drugs affecting electrolytes can alter potassium, sodium, or renal risk.",
+          "Lithium toxicity risk may increase with diuretics."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Volume status",
+          "Serum sodium",
+          "Serum potassium",
+          "Serum creatinine/eGFR",
+          "Weight/edema symptoms when clinically relevant"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed torsemide label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f1439b9c-c01c-a6d4-594b-d92b8e0af26e",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03CA04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "onset": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "peakEffect": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "durationOfAction": {
+            "min": 6,
+            "max": 8,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 3.5,
+            "max": 3.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "The encoded peakEffect and durationOfAction describe diuretic effect, not plasma Tmax.",
+            "Heart failure and hepatic disease can alter clearance and exposure."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed torsemide label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f1439b9c-c01c-a6d4-594b-d92b8e0af26e",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring focuses on diuresis, weight/volume status, blood pressure, renal function, and electrolytes.",
+        "pharmacokineticParametersAvailable": true
+      }
+    },
+    {
+      "name": "Rivaroxaban",
+      "commonNames": [
+        "Rivaroxaban",
+        "Xarelto",
+        "利伐沙班",
+        "DOAC",
+        "Direct oral anticoagulant",
+        "Factor Xa inhibitor",
+        "Xa因子抑制剂",
+        "直接口服抗凝药"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity is bleeding; risk depends on renal/hepatic function, dose context, age, interacting drugs, and invasive procedures.",
+        "Routine plasma concentration monitoring is not typical, but anti-Xa or drug-calibrated assays may be used in selected clinical scenarios depending on local availability."
+      ],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "利伐沙班是直接口服抗凝药和 Xa 因子抑制剂。本条目区分说明书药代参数与抗凝活性/出血风险监测。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AF01"
+        ],
+        "drugClass": [
+          "直接口服抗凝药",
+          "Xa因子抑制剂",
+          "DOAC",
+          "Direct oral anticoagulant",
+          "Factor Xa inhibitor",
+          "Antithrombotic"
+        ],
+        "indications": [
+          "Stroke/systemic embolism risk reduction in selected atrial fibrillation contexts",
+          "Treatment or prevention of venous thromboembolism depending on label",
+          "Selected coronary or peripheral artery disease contexts depending on label"
+        ],
+        "contraindications": [
+          "Active pathological bleeding",
+          "Severe hypersensitivity reactions per label"
+        ],
+        "majorWarnings": [
+          "Bleeding can be serious or fatal.",
+          "Premature discontinuation can increase thrombotic risk in some contexts.",
+          "Spinal/epidural hematoma risk is relevant with neuraxial anesthesia or spinal puncture."
+        ],
+        "majorInteractions": [
+          "Combined P-gp and strong CYP3A inhibitors can increase exposure.",
+          "Combined P-gp and strong CYP3A inducers can decrease exposure.",
+          "Other anticoagulants, antiplatelets, or NSAIDs can increase bleeding risk."
+        ],
+        "monitoring": [
+          "Bleeding symptoms",
+          "Renal function",
+          "Hepatic function",
+          "Concomitant antithrombotic or interacting drugs",
+          "Anti-Xa or drug-calibrated assays only in selected scenarios"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed XARELTO label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AF01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 5,
+            "max": 9,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "DailyMed describes terminal half-life of 5-9 h in healthy young subjects; elderly values may be longer."
+          },
+          "notes": [
+            "This is PK time-course information, not a recommendation for anticoagulation monitoring.",
+            "Anticoagulant activity assays are distinct from routine plasma concentration monitoring."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed XARELTO label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Routine dose adjustment is not based on plasma concentration; selected anti-Xa or drug-calibrated testing may be used in specific clinical scenarios.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Assay interpretation depends on timing after dose, renal/hepatic function, indication, dose context, and local assay calibration.",
+          "This entry is for learning and indexing only, not anticoagulation management."
+        ]
+      }
+    },
+    {
+      "name": "Dabigatran",
+      "commonNames": [
+        "Dabigatran",
+        "Dabigatran etexilate",
+        "Pradaxa",
+        "达比加群",
+        "达比加群酯",
+        "DOAC",
+        "Direct oral anticoagulant",
+        "Direct thrombin inhibitor",
+        "直接凝血酶抑制剂",
+        "直接口服抗凝药"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80637981-d5a7-48cb-b7b2-f50807a8ab20",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity is bleeding; risk depends strongly on renal function, age, interacting drugs, and procedure context.",
+        "Routine plasma concentration monitoring is not typical, but dilute thrombin time, ecarin-based assays, or other coagulation tests may be used in selected scenarios depending on local availability."
+      ],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "达比加群酯是直接口服抗凝药，经转化为达比加群发挥直接凝血酶抑制作用。本条目区分药代时间进程和抗凝检测解释。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AE07"
+        ],
+        "drugClass": [
+          "直接口服抗凝药",
+          "直接凝血酶抑制剂",
+          "DOAC",
+          "Direct oral anticoagulant",
+          "Direct thrombin inhibitor",
+          "Antithrombotic"
+        ],
+        "indications": [
+          "Stroke/systemic embolism risk reduction in selected atrial fibrillation contexts",
+          "Treatment or prevention of venous thromboembolism depending on label"
+        ],
+        "contraindications": [
+          "Active pathological bleeding",
+          "Mechanical prosthetic heart valves in relevant labels",
+          "Severe hypersensitivity reactions per label"
+        ],
+        "majorWarnings": [
+          "Bleeding can be serious or fatal.",
+          "Premature discontinuation can increase thrombotic risk in some contexts.",
+          "Renal function is central to exposure and safety."
+        ],
+        "majorInteractions": [
+          "P-gp inhibitors can increase dabigatran exposure, especially with renal impairment.",
+          "P-gp inducers can reduce exposure.",
+          "Other anticoagulants, antiplatelets, or NSAIDs can increase bleeding risk."
+        ],
+        "monitoring": [
+          "Bleeding symptoms",
+          "Renal function",
+          "Concomitant antithrombotic or interacting drugs",
+          "Specialized coagulation assays only in selected scenarios"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed PRADAXA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80637981-d5a7-48cb-b7b2-f50807a8ab20",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "PRADAXA HCP dosing and administration",
+            "url": "https://pro.boehringer-ingelheim.com/us/products/pradaxa/dosing-administration",
+            "sourceType": "manufacturer-label-support",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AE07",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AE07",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "capsule",
+          "tmax": {
+            "min": 1,
+            "max": 3,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": 17,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Half-life is strongly affected by renal function.",
+            "This is PK time-course information, not anticoagulation management guidance."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed PRADAXA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80637981-d5a7-48cb-b7b2-f50807a8ab20",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "PRADAXA HCP dosing and administration",
+              "url": "https://pro.boehringer-ingelheim.com/us/products/pradaxa/dosing-administration",
+              "sourceType": "manufacturer-label-support",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Routine dose adjustment is not based on plasma concentration; specialized coagulation assays may be used in selected scenarios.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Assay interpretation depends on timing after dose, renal function, indication, dose context, and local assay calibration.",
+          "This entry is for learning and indexing only, not anticoagulation management."
+        ]
+      }
+    },
+    {
+      "name": "Rosuvastatin",
+      "commonNames": [
+        "Rosuvastatin",
+        "Crestor",
+        "瑞舒伐他汀",
+        "Statin",
+        "HMG-CoA reductase inhibitor",
+        "他汀类",
+        "HMG-CoA还原酶抑制剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=94245f53-2892-4209-8c94-c32c87d5b106",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity can include myopathy, rhabdomyolysis, liver enzyme elevations, and renal complications in severe muscle injury.",
+        "Risk is affected by dose context, renal function, interacting drugs, and predisposing factors; plasma concentration is not routine monitoring."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "瑞舒伐他汀是 HMG-CoA 还原酶抑制剂。本条目用于学习药代参数、降脂治疗监测指标和相互作用风险索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C10AA07"
+        ],
+        "drugClass": [
+          "他汀类",
+          "HMG-CoA还原酶抑制剂",
+          "Statin",
+          "HMG-CoA reductase inhibitor",
+          "Lipid-lowering medicine"
+        ],
+        "indications": [
+          "Hyperlipidemia and selected cardiovascular risk-reduction contexts depending on local label"
+        ],
+        "contraindications": [
+          "Active liver disease in relevant labels",
+          "Pregnancy-related contraindications vary by label and jurisdiction"
+        ],
+        "majorWarnings": [
+          "Myopathy and rhabdomyolysis risk can increase with interacting drugs, renal impairment, and other risk factors.",
+          "Liver enzyme abnormalities can occur."
+        ],
+        "majorInteractions": [
+          "Cyclosporine and some antiviral or transporter-inhibiting drugs can increase rosuvastatin exposure.",
+          "Gemfibrozil and other myopathy-risk combinations require caution per label."
+        ],
+        "monitoring": [
+          "LDL-C response",
+          "Muscle symptoms",
+          "Creatine kinase when clinically indicated",
+          "Liver enzymes when clinically indicated",
+          "Renal function in susceptible patients"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed rosuvastatin calcium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=94245f53-2892-4209-8c94-c32c87d5b106",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C10AA07",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA07",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 3,
+            "max": 5,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 19,
+            "max": 19,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "LDL-C lowering is a longer-term pharmacodynamic outcome and should not be equated with plasma Tmax.",
+            "Food and morning/evening administration do not meaningfully change AUC in the cited label."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed rosuvastatin calcium label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=94245f53-2892-4209-8c94-c32c87d5b106",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring focuses on lipid response, adverse muscle symptoms, liver enzymes when indicated, renal context, and interacting drugs.",
+        "pharmacokineticParametersAvailable": true
+      }
     }
   ]
 }

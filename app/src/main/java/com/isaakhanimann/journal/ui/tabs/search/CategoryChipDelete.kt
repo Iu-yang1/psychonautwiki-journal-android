@@ -62,7 +62,7 @@ fun CategoryChipDelete(
             Modifier.size(ButtonDefaults.IconSize)
         )
         Spacer(Modifier.width(3.dp))
-        Text(text = categoryChipModel.chipName, Modifier.padding(bottom = 2.dp))
+        Text(text = categoryChipModel.displayName, Modifier.padding(bottom = 2.dp))
 
     }
 }
