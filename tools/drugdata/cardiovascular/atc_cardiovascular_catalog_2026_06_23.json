@@ -73,7 +73,7 @@
         "C01AA04",
         "ATC-C01"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Digitoxin",
+      "url": "https://experts.arizona.edu/en/publications/clinical-pharmacokinetics-of-digitoxin/",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -102,7 +102,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -114,9 +116,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Digitoxin label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Digitoxin",
-            "sourceType": "source-search",
+            "title": "Clinical Pharmacokinetics of Digitoxin",
+            "url": "https://experts.arizona.edu/en/publications/clinical-pharmacokinetics-of-digitoxin/",
+            "sourceType": "literature-review",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Pharmacokinetics and bioavailability of digitoxin by a specific assay",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/6489430/",
+            "sourceType": "human-pk-study",
             "accessedDate": "2026-06-23"
           },
           {
@@ -131,34 +139,23 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 1,
-            "max": 2,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 5,
-            "max": 14,
-            "unit": "day",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 5,
-            "max": 7,
-            "unit": "day",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "Digitoxin 分布完成约需 4-6 h；临床反应与分布相期间血浆浓度不直接对应。",
+            "半衰期估计受检测方法影响较大，条目使用文献中口服后约 5.8 天的人体 PK 数据。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Digitoxin label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Digitoxin",
-              "sourceType": "source-search",
+              "title": "Clinical Pharmacokinetics of Digitoxin",
+              "url": "https://experts.arizona.edu/en/publications/clinical-pharmacokinetics-of-digitoxin/",
+              "sourceType": "literature-review",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Pharmacokinetics and bioavailability of digitoxin by a specific assay",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/6489430/",
+              "sourceType": "human-pk-study",
               "accessedDate": "2026-06-23"
             },
             {
@@ -167,7 +164,19 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "durationOfAction": {
+            "min": 5,
+            "max": 14,
+            "unit": "day",
+            "basis": "literature estimate"
+          },
+          "eliminationHalfLife": {
+            "min": 5.8,
+            "max": 5.8,
+            "unit": "day",
+            "basis": "human pharmacokinetic study"
+          }
         }
       ],
       "tdm": {
@@ -230,7 +239,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -356,7 +367,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -482,7 +495,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -607,7 +622,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -732,7 +749,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -858,7 +877,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -983,7 +1004,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -1108,7 +1131,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -1204,7 +1229,7 @@
         "C02AC05",
         "ATC-C02"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Moxonidine",
+      "url": "https://www.medicines.org.uk/emc/product/4140/smpc",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -1233,7 +1258,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -1245,9 +1272,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Moxonidine label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Moxonidine",
-            "sourceType": "source-search",
+            "title": "Moxonidine 200 microgram film-coated tablets SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/4140/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Pharmacokinetics of moxonidine after single and repeated daily doses",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/3437071/",
+            "sourceType": "human-pk-study",
             "accessedDate": "2026-06-23"
           },
           {
@@ -1262,34 +1295,22 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 1,
-            "max": 1,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 12,
-            "max": 24,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 2,
-            "max": 3,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "SmPC 提示肾功能不全时暴露和半衰期升高，需按肾功能调整解释。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Moxonidine label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Moxonidine",
-              "sourceType": "source-search",
+              "title": "Moxonidine 200 microgram film-coated tablets SmPC",
+              "url": "https://www.medicines.org.uk/emc/product/4140/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Pharmacokinetics of moxonidine after single and repeated daily doses",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3437071/",
+              "sourceType": "human-pk-study",
               "accessedDate": "2026-06-23"
             },
             {
@@ -1298,7 +1319,25 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 0.5,
+            "max": 3,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 12,
+            "max": 24,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 2.2,
+            "max": 2.8,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -1359,7 +1398,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -1484,7 +1525,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -1609,7 +1652,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -1734,7 +1779,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -1859,7 +1906,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -1984,7 +2033,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -2109,7 +2160,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -2234,7 +2287,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -2359,7 +2414,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -2484,7 +2541,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -2580,7 +2639,7 @@
         "C03AA01",
         "ATC-C03"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bendroflumethiazide",
+      "url": "https://docetp.mpa.se/LMF/Bendroflumetiazid%20Evolan%20tablet%20ENG%20SmPC_09001bee807a0c7b.pdf",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -2609,7 +2668,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -2621,9 +2682,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Bendroflumethiazide label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bendroflumethiazide",
-            "sourceType": "source-search",
+            "title": "Bendroflumethiazide Evolan SmPC",
+            "url": "https://docetp.mpa.se/LMF/Bendroflumetiazid%20Evolan%20tablet%20ENG%20SmPC_09001bee807a0c7b.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Arrow Bendrofluazide New Zealand Data Sheet",
+            "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-23"
           },
           {
@@ -2638,34 +2705,22 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 2,
-            "max": 4,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 12,
-            "max": 24,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 3,
-            "max": 8,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "利尿作用起效和抗高血压作用起效不是同一时间尺度。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Bendroflumethiazide label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bendroflumethiazide",
-              "sourceType": "source-search",
+              "title": "Bendroflumethiazide Evolan SmPC",
+              "url": "https://docetp.mpa.se/LMF/Bendroflumetiazid%20Evolan%20tablet%20ENG%20SmPC_09001bee807a0c7b.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Arrow Bendrofluazide New Zealand Data Sheet",
+              "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             },
             {
@@ -2674,7 +2729,31 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "onset": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "tmax": {
+            "min": 2,
+            "max": 2.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 12,
+            "max": 18,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 3,
+            "max": 8.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -2706,7 +2785,7 @@
         "C03BA10",
         "ATC-C03"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Xipamide",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3905333/",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -2735,7 +2814,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -2747,9 +2828,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Xipamide label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Xipamide",
-            "sourceType": "source-search",
+            "title": "Xipamide. A review of its pharmacodynamic and pharmacokinetic properties",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/3905333/",
+            "sourceType": "literature-review",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Xipamide review summary",
+            "url": "https://www.scilit.com/publications/af44e5f93558fdc1556547ec1e955a51",
+            "sourceType": "literature-index",
             "accessedDate": "2026-06-23"
           },
           {
@@ -2764,34 +2851,22 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 1,
-            "max": 2,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 12,
-            "max": 24,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 6,
-            "max": 8,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "Xipamide 的公开药代资料主要来自综述和较早研究，需按当地产品资料复核。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Xipamide label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Xipamide",
-              "sourceType": "source-search",
+              "title": "Xipamide. A review of its pharmacodynamic and pharmacokinetic properties",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3905333/",
+              "sourceType": "literature-review",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Xipamide review summary",
+              "url": "https://www.scilit.com/publications/af44e5f93558fdc1556547ec1e955a51",
+              "sourceType": "literature-index",
               "accessedDate": "2026-06-23"
             },
             {
@@ -2800,7 +2875,37 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "onset": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "literature estimate"
+          },
+          "peakEffect": {
+            "min": 3,
+            "max": 6,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 5.8,
+            "max": 8.2,
+            "unit": "h",
+            "basis": "literature estimate"
+          }
         }
       ],
       "tdm": {
@@ -2832,7 +2937,7 @@
         "C03DA02",
         "ATC-C03"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Canrenone",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6653638/",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -2861,7 +2966,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -2873,9 +2980,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Canrenone label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Canrenone",
-            "sourceType": "source-search",
+            "title": "Pharmacokinetics of canrenone after oral administration",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/6653638/",
+            "sourceType": "human-pk-study",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Spironolactone/canrenone pharmacokinetic review",
+            "url": "https://pdfs.semanticscholar.org/5a43/a36970f3e3ffbb6e7524d89a3f67d688d96b.pdf",
+            "sourceType": "literature-review",
             "accessedDate": "2026-06-23"
           },
           {
@@ -2890,34 +3003,22 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 2,
-            "max": 4,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 24,
-            "max": 48,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 10,
-            "max": 22,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "Canrenone 作为给药药物和作为螺内酯活性代谢物时，半衰期估计可能不同。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Canrenone label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Canrenone",
-              "sourceType": "source-search",
+              "title": "Pharmacokinetics of canrenone after oral administration",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/6653638/",
+              "sourceType": "human-pk-study",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Spironolactone/canrenone pharmacokinetic review",
+              "url": "https://pdfs.semanticscholar.org/5a43/a36970f3e3ffbb6e7524d89a3f67d688d96b.pdf",
+              "sourceType": "literature-review",
               "accessedDate": "2026-06-23"
             },
             {
@@ -2926,7 +3027,26 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 2,
+            "max": 4.3,
+            "unit": "h",
+            "basis": "literature estimate"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": 48,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 3.9,
+            "max": 22.6,
+            "unit": "h",
+            "basis": "literature estimate",
+            "note": "Direct canrenone and canrenone-as-metabolite estimates differ across studies."
+          }
         }
       ],
       "tdm": {
@@ -2987,7 +3107,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -3112,7 +3234,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -3238,7 +3362,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -3334,7 +3460,7 @@
         "C04AX21",
         "ATC-C04"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Naftidrofuryl",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7766335/",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -3364,7 +3490,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -3376,9 +3504,9 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Naftidrofuryl label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Naftidrofuryl",
-            "sourceType": "source-search",
+            "title": "Naftidrofuryl oxalate BCS/pharmacokinetic discussion",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7766335/",
+            "sourceType": "literature-review",
             "accessedDate": "2026-06-23"
           },
           {
@@ -3393,34 +3521,16 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 2,
-            "max": 3,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 6,
-            "max": 8,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 1,
-            "max": 2,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "公开资料提示制剂间生物利用度差异较大；需按具体 naftidrofuryl oxalate 产品资料复核。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Naftidrofuryl label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Naftidrofuryl",
-              "sourceType": "source-search",
+              "title": "Naftidrofuryl oxalate BCS/pharmacokinetic discussion",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7766335/",
+              "sourceType": "literature-review",
               "accessedDate": "2026-06-23"
             },
             {
@@ -3429,7 +3539,31 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "onset": {
+            "min": 0.8,
+            "max": 1,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "tmax": {
+            "min": 0.5,
+            "max": 1,
+            "unit": "h",
+            "basis": "literature estimate"
+          },
+          "durationOfAction": {
+            "min": 2,
+            "max": 3,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 1.2,
+            "max": 2,
+            "unit": "h",
+            "basis": "literature estimate"
+          }
         }
       ],
       "tdm": {
@@ -3461,7 +3595,7 @@
         "C04AE02",
         "ATC-C04"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicergoline",
+      "url": "https://ec.europa.eu/health/documents/community-register/2013/20130927126534/anx_126534_en.pdf",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -3491,7 +3625,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -3503,9 +3639,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Nicergoline label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicergoline",
-            "sourceType": "source-search",
+            "title": "EMA referral: nicergoline-containing medicines",
+            "url": "https://ec.europa.eu/health/documents/community-register/2013/20130927126534/anx_126534_en.pdf",
+            "sourceType": "regulatory-review",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Nicergoline generic pharmacokinetic summary",
+            "url": "https://www.mims.com/singapore/drug/info/nicergoline?mtype=generic",
+            "sourceType": "clinical-drug-reference",
             "accessedDate": "2026-06-23"
           },
           {
@@ -3520,34 +3662,22 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 1,
-            "max": 1.5,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 8,
-            "max": 12,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 2,
-            "max": 4,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "EMA 曾限制含麦角衍生物药物适应证；本条目仅保留药代索引，不代表推荐使用。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Nicergoline label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicergoline",
-              "sourceType": "source-search",
+              "title": "EMA referral: nicergoline-containing medicines",
+              "url": "https://ec.europa.eu/health/documents/community-register/2013/20130927126534/anx_126534_en.pdf",
+              "sourceType": "regulatory-review",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Nicergoline generic pharmacokinetic summary",
+              "url": "https://www.mims.com/singapore/drug/info/nicergoline?mtype=generic",
+              "sourceType": "clinical-drug-reference",
               "accessedDate": "2026-06-23"
             },
             {
@@ -3556,7 +3686,26 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1.5,
+            "max": 5,
+            "unit": "h",
+            "basis": "clinical-drug-reference",
+            "note": "Parent nicergoline and metabolites have different Tmax estimates."
+          },
+          "durationOfAction": {
+            "min": 8,
+            "max": 12,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 11,
+            "max": 20,
+            "unit": "h",
+            "basis": "clinical-drug-reference"
+          }
         }
       ],
       "tdm": {
@@ -3618,7 +3767,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -3709,13 +3860,14 @@
       "commonNames": [
         "Nicotinyl Alcohol",
         "Nicotinic acid derivative",
+        "Roniacol",
         "烟醇",
         "C04 外周血管扩张剂",
         "烟酸衍生物类外周血管扩张剂",
-        "C04AC01",
+        "C04AC02",
         "ATC-C04"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicotinyl%20Alcohol",
+      "url": "https://drugcentral.org/drugcard/1921",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -3732,7 +3884,7 @@
       "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "clinicalInfo": {
         "atcCodes": [
-          "C04AC01"
+          "C04AC02"
         ],
         "drugClass": [
           "C04 外周血管扩张剂",
@@ -3745,7 +3897,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -3757,14 +3911,20 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Nicotinyl Alcohol label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicotinyl%20Alcohol",
-            "sourceType": "source-search",
+            "title": "DrugCentral: nicotinyl alcohol",
+            "url": "https://drugcentral.org/drugcard/1921",
+            "sourceType": "drug-database",
             "accessedDate": "2026-06-23"
           },
           {
-            "title": "WHO ATC/DDD Index: C04AC01",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C04AC01",
+            "title": "Vasodilator effects of nicotinyl tartrate",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/14066712/",
+            "sourceType": "legacy-literature",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C04AC02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C04AC02",
             "sourceType": "terminology",
             "accessedDate": "2026-06-23"
           }
@@ -3774,43 +3934,38 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 0.5,
-            "max": 2,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
+          "notes": [
+            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "未找到可靠现代人体血浆 Tmax/半衰期标签资料；此条仅按旧文献和药物数据库保留 C04AC02 外周血管扩张药索引。",
+            "不要将此条曲线解释为血浆浓度曲线。"
+          ],
+          "sourceRefs": [
+            {
+              "title": "DrugCentral: nicotinyl alcohol",
+              "url": "https://drugcentral.org/drugcard/1921",
+              "sourceType": "drug-database",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Vasodilator effects of nicotinyl tartrate",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/14066712/",
+              "sourceType": "legacy-literature",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "WHO ATC/DDD Index: C04AC02",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C04AC02",
+              "sourceType": "terminology",
+              "accessedDate": "2026-06-23"
+            }
+          ],
           "durationOfAction": {
             "min": 4,
             "max": 6,
             "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 0.75,
-            "max": 1,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
-          "notes": [
-            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
-          ],
-          "sourceRefs": [
-            {
-              "title": "DailyMed Nicotinyl Alcohol label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicotinyl%20Alcohol",
-              "sourceType": "source-search",
-              "accessedDate": "2026-06-23"
-            },
-            {
-              "title": "WHO ATC/DDD Index: C04AC01",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C04AC01",
-              "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
-            }
-          ]
+            "basis": "literature estimate"
+          }
         }
       ],
       "tdm": {
@@ -3871,7 +4026,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -3996,7 +4153,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -4092,7 +4251,7 @@
         "C05CA04",
         "ATC-C05"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Troxerutin",
+      "url": "https://doi.org/10.1002/rcm.2764",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -4121,7 +4280,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -4133,9 +4294,9 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Troxerutin label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Troxerutin",
-            "sourceType": "source-search",
+            "title": "LC-MS-MS determination of troxerutin in plasma and human PK study",
+            "url": "https://doi.org/10.1002/rcm.2764",
+            "sourceType": "human-pk-study",
             "accessedDate": "2026-06-23"
           },
           {
@@ -4150,34 +4311,16 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 2,
-            "max": 3,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 12,
-            "max": 24,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 8,
-            "max": 12,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "人体 PK 来自小样本健康志愿者研究；不同制剂和适应证需另行复核。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Troxerutin label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Troxerutin",
-              "sourceType": "source-search",
+              "title": "LC-MS-MS determination of troxerutin in plasma and human PK study",
+              "url": "https://doi.org/10.1002/rcm.2764",
+              "sourceType": "human-pk-study",
               "accessedDate": "2026-06-23"
             },
             {
@@ -4186,7 +4329,27 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1.06,
+            "max": 1.82,
+            "unit": "h",
+            "basis": "human pharmacokinetic study",
+            "note": "Mean 1.44 h with SD 0.38 h after 300 mg in healthy volunteers."
+          },
+          "durationOfAction": {
+            "min": 12,
+            "max": 24,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 4.32,
+            "max": 11.56,
+            "unit": "h",
+            "basis": "human pharmacokinetic study",
+            "note": "Mean 7.94 h with SD 3.62 h after 300 mg in healthy volunteers."
+          }
         }
       ],
       "tdm": {
@@ -4218,7 +4381,7 @@
         "C05BX01",
         "ATC-C05"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Calcium%20Dobesilate",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0284576",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -4247,7 +4410,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -4259,9 +4424,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Calcium Dobesilate label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Calcium%20Dobesilate",
-            "sourceType": "source-search",
+            "title": "Calcium dobesilate capsule bioequivalence and PK study",
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0284576",
+            "sourceType": "human-pk-study",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Doxium product information",
+            "url": "https://www.e-lactancia.org/media/papers/Dobesilate-DS-OMPharma2018.pdf",
+            "sourceType": "product-information",
             "accessedDate": "2026-06-23"
           },
           {
@@ -4276,11 +4447,36 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
+          "notes": [
+            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "食物可延迟并降低吸收；不同研究中的 Tmax/t1/2 可能受制剂和进食状态影响。"
+          ],
+          "sourceRefs": [
+            {
+              "title": "Calcium dobesilate capsule bioequivalence and PK study",
+              "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0284576",
+              "sourceType": "human-pk-study",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Doxium product information",
+              "url": "https://www.e-lactancia.org/media/papers/Dobesilate-DS-OMPharma2018.pdf",
+              "sourceType": "product-information",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "WHO ATC/DDD Index: C05BX01",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C05BX01",
+              "sourceType": "terminology",
+              "accessedDate": "2026-06-23"
+            }
+          ],
           "tmax": {
             "min": 6,
             "max": 6,
             "unit": "h",
-            "basis": "plasma concentration"
+            "basis": "human pharmacokinetic study"
           },
           "durationOfAction": {
             "min": 12,
@@ -4292,27 +4488,8 @@
             "min": 5,
             "max": 5,
             "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
-          "notes": [
-            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
-          ],
-          "sourceRefs": [
-            {
-              "title": "DailyMed Calcium Dobesilate label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Calcium%20Dobesilate",
-              "sourceType": "source-search",
-              "accessedDate": "2026-06-23"
-            },
-            {
-              "title": "WHO ATC/DDD Index: C05BX01",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C05BX01",
-              "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
-            }
-          ]
+            "basis": "human pharmacokinetic study"
+          }
         }
       ],
       "tdm": {
@@ -4344,7 +4521,7 @@
         "C05CA01",
         "ATC-C05"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Rutoside",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11151743/",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -4373,7 +4550,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -4385,9 +4564,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Rutoside label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Rutoside",
-            "sourceType": "source-search",
+            "title": "Pharmacokinetics of quercetin from quercetin aglycone and rutin in healthy volunteers",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/11151743/",
+            "sourceType": "human-pk-study",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "DrugBank: Rutin",
+            "url": "https://go.drugbank.com/drugs/DB01698",
+            "sourceType": "drug-database",
             "accessedDate": "2026-06-23"
           },
           {
@@ -4402,34 +4587,23 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 2,
-            "max": 6,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 12,
-            "max": 24,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 8,
-            "max": 12,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "未找到可直接用于处方药标签的 rutoside/rutin 人体半衰期资料；DrugBank 也未列出 half-life。",
+            "此条不能解释为未变化 rutoside 的完整血浆浓度曲线。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Rutoside label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Rutoside",
-              "sourceType": "source-search",
+              "title": "Pharmacokinetics of quercetin from quercetin aglycone and rutin in healthy volunteers",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/11151743/",
+              "sourceType": "human-pk-study",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "DrugBank: Rutin",
+              "url": "https://go.drugbank.com/drugs/DB01698",
+              "sourceType": "drug-database",
               "accessedDate": "2026-06-23"
             },
             {
@@ -4438,7 +4612,20 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 6.5,
+            "max": 6.5,
+            "unit": "h",
+            "basis": "human pharmacokinetic study",
+            "note": "Reported for quercetin exposure after rutin, not unchanged rutoside."
+          },
+          "durationOfAction": {
+            "min": 12,
+            "max": 24,
+            "unit": "h",
+            "basis": "literature estimate"
+          }
         }
       ],
       "tdm": {
@@ -4499,7 +4686,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -4624,7 +4813,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -4749,7 +4940,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -4874,7 +5067,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -4999,7 +5194,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -5124,7 +5321,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -5249,7 +5448,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -5374,7 +5575,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -5499,7 +5702,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -5595,7 +5800,7 @@
         "C08CA13",
         "ATC-C08"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lercanidipine",
+      "url": "https://www.geneesmiddeleninformatiebank.nl/pars/h102333.pdf",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -5624,7 +5829,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -5636,9 +5843,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Lercanidipine label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lercanidipine",
-            "sourceType": "source-search",
+            "title": "Lercanidipine public assessment report",
+            "url": "https://www.geneesmiddeleninformatiebank.nl/pars/h102333.pdf",
+            "sourceType": "regulatory-assessment",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Zanidip product information",
+            "url": "https://medsinfo.com.au/api/documents/Zanidip_PI?format=pdf",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-23"
           },
           {
@@ -5653,34 +5866,22 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 1.5,
-            "max": 3,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 24,
-            "max": 24,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 8,
-            "max": 10,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "半衰期较短但因脂膜结合而有 24 h 抗高血压活性；不要把 Tmax 当作最大降压时间。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Lercanidipine label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lercanidipine",
-              "sourceType": "source-search",
+              "title": "Lercanidipine public assessment report",
+              "url": "https://www.geneesmiddeleninformatiebank.nl/pars/h102333.pdf",
+              "sourceType": "regulatory-assessment",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Zanidip product information",
+              "url": "https://medsinfo.com.au/api/documents/Zanidip_PI?format=pdf",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             },
             {
@@ -5689,7 +5890,25 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1.5,
+            "max": 3,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 5.8,
+            "max": 10,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -5750,7 +5969,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -5875,7 +6096,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -6000,7 +6223,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -6125,7 +6350,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -6250,7 +6477,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -6375,7 +6604,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -6500,7 +6731,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -6625,7 +6858,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -6723,7 +6958,7 @@
         "C09DX04",
         "ATC-C09"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sacubitril/Valsartan",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -6752,7 +6987,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -6764,9 +7001,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Sacubitril/Valsartan label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sacubitril/Valsartan",
-            "sourceType": "source-search",
+            "title": "DailyMed: ENTRESTO sacubitril and valsartan",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "EMA Entresto product information",
+            "url": "https://www.ema.europa.eu/en/documents/product-information/entresto-epar-product-information_en.pdf",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-23"
           },
           {
@@ -6781,34 +7024,22 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 0.5,
-            "max": 2,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 12,
-            "max": 24,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 9,
-            "max": 11,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "半衰期范围同时涵盖 sacubitril、活性代谢物 LBQ657 和 valsartan；具体组分需看说明书。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Sacubitril/Valsartan label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sacubitril/Valsartan",
-              "sourceType": "source-search",
+              "title": "DailyMed: ENTRESTO sacubitril and valsartan",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "EMA Entresto product information",
+              "url": "https://www.ema.europa.eu/en/documents/product-information/entresto-epar-product-information_en.pdf",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             },
             {
@@ -6817,7 +7048,26 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 0.5,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 12,
+            "max": 24,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 1.4,
+            "max": 11.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Sacubitril, LBQ657, and valsartan have different half-lives."
+          }
         }
       ],
       "tdm": {
@@ -6878,7 +7128,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -6974,7 +7226,7 @@
         "C09CA02",
         "ATC-C09"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Eprosartan",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b1dfcac3-ef66-4d3e-9d58-37d3f516eb31",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -7003,7 +7255,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -7015,9 +7269,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Eprosartan label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Eprosartan",
-            "sourceType": "source-search",
+            "title": "DailyMed: TEVETEN HCT eprosartan/hydrochlorothiazide",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b1dfcac3-ef66-4d3e-9d58-37d3f516eb31",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Pharmacokinetics of eprosartan in healthy subjects and special populations",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/10213525/",
+            "sourceType": "literature-review",
             "accessedDate": "2026-06-23"
           },
           {
@@ -7032,11 +7292,36 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
+          "notes": [
+            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "半衰期估计与单次/多次给药和制剂资料来源有关。"
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed: TEVETEN HCT eprosartan/hydrochlorothiazide",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b1dfcac3-ef66-4d3e-9d58-37d3f516eb31",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Pharmacokinetics of eprosartan in healthy subjects and special populations",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/10213525/",
+              "sourceType": "literature-review",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "WHO ATC/DDD Index: C09CA02",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA02",
+              "sourceType": "terminology",
+              "accessedDate": "2026-06-23"
+            }
+          ],
           "tmax": {
             "min": 1,
             "max": 2,
             "unit": "h",
-            "basis": "plasma concentration"
+            "basis": "literature estimate"
           },
           "durationOfAction": {
             "min": 12,
@@ -7046,29 +7331,11 @@
           },
           "eliminationHalfLife": {
             "min": 5,
-            "max": 9,
+            "max": 20,
             "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
-          "notes": [
-            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
-          ],
-          "sourceRefs": [
-            {
-              "title": "DailyMed Eprosartan label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Eprosartan",
-              "sourceType": "source-search",
-              "accessedDate": "2026-06-23"
-            },
-            {
-              "title": "WHO ATC/DDD Index: C09CA02",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA02",
-              "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
-            }
-          ]
+            "basis": "label/literature estimate",
+            "note": "Single-dose oral literature often reports 5-9 h; DailyMed combo label reports about 20 h after multiple 600 mg doses."
+          }
         }
       ],
       "tdm": {
@@ -7129,7 +7396,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -7254,7 +7523,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -7379,7 +7650,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -7504,7 +7777,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -7629,7 +7904,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -7754,7 +8031,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -7879,7 +8158,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -8004,7 +8285,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -8124,7 +8407,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -8244,7 +8529,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -8369,7 +8656,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -8494,7 +8783,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -8620,7 +8911,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -8746,7 +9039,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -8872,7 +9167,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -9000,7 +9297,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -9103,7 +9402,7 @@
         "B01AC05",
         "ATC-B01"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ticlopidine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TICLOPIDINE",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -9133,7 +9432,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -9145,9 +9446,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Ticlopidine label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ticlopidine",
-            "sourceType": "source-search",
+            "title": "DailyMed: Ticlopidine hydrochloride label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TICLOPIDINE",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Canadian product monograph: Ticlopidine hydrochloride tablets",
+            "url": "https://pdf.hres.ca/dpd_pm/00015080.PDF",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-23"
           },
           {
@@ -9162,40 +9469,22 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 2,
-            "max": 2,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "peakEffect": {
-            "min": 3,
-            "max": 5,
-            "unit": "day",
-            "basis": "pharmacodynamic effect"
-          },
-          "durationOfAction": {
-            "min": 5,
-            "max": 10,
-            "unit": "day",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 12,
-            "max": 24,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "抗血小板效应与血小板功能恢复相关，不等同 ticlopidine 血浆半衰期。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Ticlopidine label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ticlopidine",
-              "sourceType": "source-search",
+              "title": "DailyMed: Ticlopidine hydrochloride label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TICLOPIDINE",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Canadian product monograph: Ticlopidine hydrochloride tablets",
+              "url": "https://pdf.hres.ca/dpd_pm/00015080.PDF",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             },
             {
@@ -9204,7 +9493,31 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "peakEffect": {
+            "min": 8,
+            "max": 11,
+            "unit": "day",
+            "basis": "pharmacodynamic effect"
+          },
+          "durationOfAction": {
+            "min": 5,
+            "max": 10,
+            "unit": "day",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 20,
+            "max": 50,
+            "unit": "h",
+            "basis": "literature estimate"
+          }
         }
       ],
       "tdm": {
@@ -9266,7 +9579,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -9392,7 +9707,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -9518,7 +9835,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -9614,7 +9933,7 @@
         "B01AC13",
         "ATC-B01"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Abciximab",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/1997/abcicen110597-lab.pdf",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -9644,7 +9963,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -9656,9 +9977,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Abciximab label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Abciximab",
-            "sourceType": "source-search",
+            "title": "FDA label: ReoPro abciximab",
+            "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/1997/abcicen110597-lab.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Canadian product monograph: ReoPro",
+            "url": "https://pdf.hres.ca/dpd_pm/00042357.PDF",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-23"
           },
           {
@@ -9673,34 +10000,22 @@
         {
           "route": "intravenous",
           "formulation": "bolus/infusion",
-          "onset": {
-            "min": 10,
-            "max": 10,
-            "unit": "min",
-            "basis": "clinical effect"
-          },
-          "durationOfAction": {
-            "min": 24,
-            "max": 48,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 0.5,
-            "max": 0.5,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "血小板功能通常 24-48 h 恢复，但药物可在血小板结合状态下更久存在。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Abciximab label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Abciximab",
-              "sourceType": "source-search",
+              "title": "FDA label: ReoPro abciximab",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/1997/abcicen110597-lab.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Canadian product monograph: ReoPro",
+              "url": "https://pdf.hres.ca/dpd_pm/00042357.PDF",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             },
             {
@@ -9709,7 +10024,26 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "onset": {
+            "min": 10,
+            "max": 10,
+            "unit": "min",
+            "basis": "pharmacodynamic effect"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": 48,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 10,
+            "max": 30,
+            "unit": "min",
+            "basis": "label pharmacokinetics",
+            "note": "Free plasma concentration has an initial phase <10 min and second phase about 30 min."
+          }
         }
       ],
       "tdm": {
@@ -9771,7 +10105,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -9897,7 +10233,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -10023,7 +10361,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -10149,7 +10489,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -10275,7 +10617,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -10371,7 +10715,7 @@
         "B01AC26",
         "ATC-B01"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vorapaxar",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f001f406-8cf1-40a4-bbf5-1775fe020122",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -10401,7 +10745,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -10413,9 +10759,9 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Vorapaxar label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vorapaxar",
-            "sourceType": "source-search",
+            "title": "DailyMed: ZONTIVITY vorapaxar",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f001f406-8cf1-40a4-bbf5-1775fe020122",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-23"
           },
           {
@@ -10430,34 +10776,16 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 1,
-            "max": 2,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 14,
-            "max": 28,
-            "unit": "day",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 5,
-            "max": 13,
-            "unit": "day",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "有效半衰期约 3-4 天，终末半衰期约 8 天；抗血小板效应消退不能简单按 Tmax 判断。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Vorapaxar label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vorapaxar",
-              "sourceType": "source-search",
+              "title": "DailyMed: ZONTIVITY vorapaxar",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f001f406-8cf1-40a4-bbf5-1775fe020122",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             },
             {
@@ -10466,7 +10794,31 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 14,
+            "max": 28,
+            "unit": "day",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 5,
+            "max": 13,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 21,
+            "max": 21,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -10498,7 +10850,7 @@
         "B01AF04",
         "ATC-B01"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Betrixaban",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -10528,7 +10880,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -10540,9 +10894,9 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Betrixaban label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Betrixaban",
-            "sourceType": "source-search",
+            "title": "FDA label: BEVYXXA betrixaban",
+            "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-23"
           },
           {
@@ -10557,34 +10911,16 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
-          "tmax": {
-            "min": 3,
-            "max": 4,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 24,
-            "max": 24,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
-          "eliminationHalfLife": {
-            "min": 19,
-            "max": 27,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "notes": [
             "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "食物可降低暴露；常规用药通常不按血药浓度调整。"
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Betrixaban label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Betrixaban",
-              "sourceType": "source-search",
+              "title": "FDA label: BEVYXXA betrixaban",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             },
             {
@@ -10593,7 +10929,25 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": 72,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 19,
+            "max": 27,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -10625,7 +10979,7 @@
         "B01AA07",
         "ATC-B01"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acenocoumarol",
+      "url": "https://www.medicines.org.uk/emc/product/2058/smpc",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -10655,7 +11009,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -10667,9 +11023,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Acenocoumarol label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acenocoumarol",
-            "sourceType": "source-search",
+            "title": "Sinthrome acenocoumarol SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/2058/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Acenocoumarol pharmacokinetic review",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6785764/",
+            "sourceType": "literature-review",
             "accessedDate": "2026-06-23"
           },
           {
@@ -10684,11 +11046,36 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
+          "notes": [
+            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "维生素 K 拮抗剂主要按 INR 监测，抗凝效应受凝血因子周转影响。"
+          ],
+          "sourceRefs": [
+            {
+              "title": "Sinthrome acenocoumarol SmPC",
+              "url": "https://www.medicines.org.uk/emc/product/2058/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Acenocoumarol pharmacokinetic review",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6785764/",
+              "sourceType": "literature-review",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "WHO ATC/DDD Index: B01AA07",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AA07",
+              "sourceType": "terminology",
+              "accessedDate": "2026-06-23"
+            }
+          ],
           "tmax": {
             "min": 1,
             "max": 3,
             "unit": "h",
-            "basis": "plasma concentration"
+            "basis": "literature estimate"
           },
           "peakEffect": {
             "min": 24,
@@ -10700,33 +11087,14 @@
             "min": 2,
             "max": 4,
             "unit": "day",
-            "basis": "clinical effect"
+            "basis": "pharmacodynamic effect"
           },
           "eliminationHalfLife": {
             "min": 8,
             "max": 11,
             "unit": "h",
             "basis": "label pharmacokinetics"
-          },
-          "notes": [
-            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
-          ],
-          "sourceRefs": [
-            {
-              "title": "DailyMed Acenocoumarol label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acenocoumarol",
-              "sourceType": "source-search",
-              "accessedDate": "2026-06-23"
-            },
-            {
-              "title": "WHO ATC/DDD Index: B01AA07",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AA07",
-              "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
-            }
-          ]
+          }
         }
       ],
       "tdm": {
@@ -10758,7 +11126,7 @@
         "B01AA04",
         "ATC-B01"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Phenprocoumon",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36422567/",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -10788,7 +11156,9 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。",
+          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -10800,9 +11170,15 @@
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Phenprocoumon label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Phenprocoumon",
-            "sourceType": "source-search",
+            "title": "Phenprocoumon pharmacokinetics in emergency situations",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36422567/",
+            "sourceType": "clinical-study",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "Acute Porphyria Drugs: Phenprocoumon",
+            "url": "https://drugsporphyria.net/monograph/677/B01AA04",
+            "sourceType": "clinical-drug-reference",
             "accessedDate": "2026-06-23"
           },
           {
@@ -10817,11 +11193,36 @@
         {
           "route": "oral",
           "formulation": "tablet/capsule",
+          "notes": [
+            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
+            "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+            "维生素 K 拮抗剂主要按 INR 监测；phenprocoumon 半衰期长，停药后效应可持续多日。"
+          ],
+          "sourceRefs": [
+            {
+              "title": "Phenprocoumon pharmacokinetics in emergency situations",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36422567/",
+              "sourceType": "clinical-study",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "Acute Porphyria Drugs: Phenprocoumon",
+              "url": "https://drugsporphyria.net/monograph/677/B01AA04",
+              "sourceType": "clinical-drug-reference",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "WHO ATC/DDD Index: B01AA04",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AA04",
+              "sourceType": "terminology",
+              "accessedDate": "2026-06-23"
+            }
+          ],
           "tmax": {
             "min": 1,
             "max": 3,
             "unit": "h",
-            "basis": "plasma concentration"
+            "basis": "literature estimate"
           },
           "peakEffect": {
             "min": 48,
@@ -10833,33 +11234,14 @@
             "min": 5,
             "max": 14,
             "unit": "day",
-            "basis": "clinical effect"
+            "basis": "pharmacodynamic effect"
           },
           "eliminationHalfLife": {
-            "min": 110,
-            "max": 130,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
-          "notes": [
-            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。",
-            "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
-          ],
-          "sourceRefs": [
-            {
-              "title": "DailyMed Phenprocoumon label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Phenprocoumon",
-              "sourceType": "source-search",
-              "accessedDate": "2026-06-23"
-            },
-            {
-              "title": "WHO ATC/DDD Index: B01AA04",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AA04",
-              "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
-            }
-          ]
+            "min": 5,
+            "max": 9,
+            "unit": "day",
+            "basis": "clinical/literature estimate"
+          }
         }
       ],
       "tdm": {

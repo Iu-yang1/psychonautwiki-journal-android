@@ -186,6 +186,489 @@ def tdm_default(code: str, drug_class: list[str]) -> dict:
     }
 
 
+def verification_ref(title: str, url: str, source_type: str) -> dict:
+    return {
+        "title": title,
+        "url": url,
+        "sourceType": source_type,
+        "accessedDate": DATE,
+    }
+
+
+def retime(
+    *,
+    route: str = "oral",
+    formulation: str = "tablet/capsule",
+    onset: dict | None = None,
+    tmax: dict | None = None,
+    peak: dict | None = None,
+    duration: dict | None = None,
+    half_life: dict | None = None,
+    steady: dict | None = None,
+    notes: list[str],
+    refs: list[dict],
+) -> list[dict]:
+    result = {"route": route, "formulation": formulation, "notes": notes, "sourceRefs": refs}
+    if onset:
+        result["onset"] = onset
+    if tmax:
+        result["tmax"] = tmax
+    if peak:
+        result["peakEffect"] = peak
+    if duration:
+        result["durationOfAction"] = duration
+    if half_life:
+        result["eliminationHalfLife"] = half_life
+    if steady:
+        result["timeToSteadyState"] = steady
+    return [result]
+
+
+def apply_verified_override(entry: dict) -> None:
+    name = entry["name"]
+    atc = (entry.get("clinicalInfo") or {}).get("atcCodes", [""])[0]
+    atc_source = atc_ref(atc) if atc else None
+    base_notes = [
+        "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
+        "复核来源仍需结合具体国家/地区批准说明书、制剂和患者人群；本资料不构成医疗建议。",
+    ]
+
+    overrides = {
+        "Digitoxin": {
+            "refs": [
+                verification_ref(
+                    "Clinical Pharmacokinetics of Digitoxin",
+                    "https://experts.arizona.edu/en/publications/clinical-pharmacokinetics-of-digitoxin/",
+                    "literature-review",
+                ),
+                verification_ref(
+                    "Pharmacokinetics and bioavailability of digitoxin by a specific assay",
+                    "https://pubmed.ncbi.nlm.nih.gov/6489430/",
+                    "human-pk-study",
+                ),
+            ],
+            "timeCourse": retime(
+                duration=time_value(5, 14, "day", "literature estimate"),
+                half_life=time_value(5.8, 5.8, "day", "human pharmacokinetic study"),
+                notes=base_notes + [
+                    "Digitoxin 分布完成约需 4-6 h；临床反应与分布相期间血浆浓度不直接对应。",
+                    "半衰期估计受检测方法影响较大，条目使用文献中口服后约 5.8 天的人体 PK 数据。"
+                ],
+                refs=[],
+            ),
+        },
+        "Moxonidine": {
+            "refs": [
+                verification_ref(
+                    "Moxonidine 200 microgram film-coated tablets SmPC",
+                    "https://www.medicines.org.uk/emc/product/4140/smpc",
+                    "regulatory-label",
+                ),
+                verification_ref(
+                    "Pharmacokinetics of moxonidine after single and repeated daily doses",
+                    "https://pubmed.ncbi.nlm.nih.gov/3437071/",
+                    "human-pk-study",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(0.5, 3, "h", "label pharmacokinetics"),
+                duration=time_value(12, 24, "h", "clinical effect"),
+                half_life=time_value(2.2, 2.8, "h", "label pharmacokinetics"),
+                notes=base_notes + ["SmPC 提示肾功能不全时暴露和半衰期升高，需按肾功能调整解释。"],
+                refs=[],
+            ),
+        },
+        "Bendroflumethiazide": {
+            "refs": [
+                verification_ref(
+                    "Bendroflumethiazide Evolan SmPC",
+                    "https://docetp.mpa.se/LMF/Bendroflumetiazid%20Evolan%20tablet%20ENG%20SmPC_09001bee807a0c7b.pdf",
+                    "regulatory-label",
+                ),
+                verification_ref(
+                    "Arrow Bendrofluazide New Zealand Data Sheet",
+                    "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+                    "regulatory-label",
+                ),
+            ],
+            "timeCourse": retime(
+                onset=time_value(2, 2, "h", "clinical effect"),
+                tmax=time_value(2, 2.5, "h", "label pharmacokinetics"),
+                duration=time_value(12, 18, "h", "clinical effect"),
+                half_life=time_value(3, 8.5, "h", "label pharmacokinetics"),
+                notes=base_notes + ["利尿作用起效和抗高血压作用起效不是同一时间尺度。"],
+                refs=[],
+            ),
+        },
+        "Xipamide": {
+            "refs": [
+                verification_ref(
+                    "Xipamide. A review of its pharmacodynamic and pharmacokinetic properties",
+                    "https://pubmed.ncbi.nlm.nih.gov/3905333/",
+                    "literature-review",
+                ),
+                verification_ref(
+                    "Xipamide review summary",
+                    "https://www.scilit.com/publications/af44e5f93558fdc1556547ec1e955a51",
+                    "literature-index",
+                ),
+            ],
+            "timeCourse": retime(
+                onset=time_value(1, 1, "h", "clinical effect"),
+                tmax=time_value(1, 2, "h", "literature estimate"),
+                peak=time_value(3, 6, "h", "pharmacodynamic effect"),
+                duration=time_value(24, 24, "h", "clinical effect"),
+                half_life=time_value(5.8, 8.2, "h", "literature estimate"),
+                notes=base_notes + ["Xipamide 的公开药代资料主要来自综述和较早研究，需按当地产品资料复核。"],
+                refs=[],
+            ),
+        },
+        "Canrenone": {
+            "refs": [
+                verification_ref(
+                    "Pharmacokinetics of canrenone after oral administration",
+                    "https://pubmed.ncbi.nlm.nih.gov/6653638/",
+                    "human-pk-study",
+                ),
+                verification_ref(
+                    "Spironolactone/canrenone pharmacokinetic review",
+                    "https://pdfs.semanticscholar.org/5a43/a36970f3e3ffbb6e7524d89a3f67d688d96b.pdf",
+                    "literature-review",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(2, 4.3, "h", "literature estimate"),
+                duration=time_value(24, 48, "h", "pharmacodynamic effect"),
+                half_life=time_value(3.9, 22.6, "h", "literature estimate", "Direct canrenone and canrenone-as-metabolite estimates differ across studies."),
+                notes=base_notes + ["Canrenone 作为给药药物和作为螺内酯活性代谢物时，半衰期估计可能不同。"],
+                refs=[],
+            ),
+        },
+        "Naftidrofuryl": {
+            "refs": [
+                verification_ref(
+                    "Naftidrofuryl oxalate BCS/pharmacokinetic discussion",
+                    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7766335/",
+                    "literature-review",
+                ),
+            ],
+            "timeCourse": retime(
+                onset=time_value(0.8, 1, "h", "clinical effect"),
+                tmax=time_value(0.5, 1, "h", "literature estimate"),
+                duration=time_value(2, 3, "h", "clinical effect"),
+                half_life=time_value(1.2, 2, "h", "literature estimate"),
+                notes=base_notes + ["公开资料提示制剂间生物利用度差异较大；需按具体 naftidrofuryl oxalate 产品资料复核。"],
+                refs=[],
+            ),
+        },
+        "Nicergoline": {
+            "refs": [
+                verification_ref(
+                    "EMA referral: nicergoline-containing medicines",
+                    "https://ec.europa.eu/health/documents/community-register/2013/20130927126534/anx_126534_en.pdf",
+                    "regulatory-review",
+                ),
+                verification_ref(
+                    "Nicergoline generic pharmacokinetic summary",
+                    "https://www.mims.com/singapore/drug/info/nicergoline?mtype=generic",
+                    "clinical-drug-reference",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(1.5, 5, "h", "clinical-drug-reference", "Parent nicergoline and metabolites have different Tmax estimates."),
+                duration=time_value(8, 12, "h", "clinical effect"),
+                half_life=time_value(11, 20, "h", "clinical-drug-reference"),
+                notes=base_notes + ["EMA 曾限制含麦角衍生物药物适应证；本条目仅保留药代索引，不代表推荐使用。"],
+                refs=[],
+            ),
+        },
+        "Nicotinyl Alcohol": {
+            "refs": [
+                verification_ref(
+                    "DrugCentral: nicotinyl alcohol",
+                    "https://drugcentral.org/drugcard/1921",
+                    "drug-database",
+                ),
+                verification_ref(
+                    "Vasodilator effects of nicotinyl tartrate",
+                    "https://pubmed.ncbi.nlm.nih.gov/14066712/",
+                    "legacy-literature",
+                ),
+            ],
+            "timeCourse": retime(
+                duration=time_value(4, 6, "h", "literature estimate"),
+                notes=base_notes + [
+                    "未找到可靠现代人体血浆 Tmax/半衰期标签资料；此条仅按旧文献和药物数据库保留 C04AC02 外周血管扩张药索引。",
+                    "不要将此条曲线解释为血浆浓度曲线。"
+                ],
+                refs=[],
+            ),
+        },
+        "Troxerutin": {
+            "refs": [
+                verification_ref(
+                    "LC-MS-MS determination of troxerutin in plasma and human PK study",
+                    "https://doi.org/10.1002/rcm.2764",
+                    "human-pk-study",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(1.06, 1.82, "h", "human pharmacokinetic study", "Mean 1.44 h with SD 0.38 h after 300 mg in healthy volunteers."),
+                duration=time_value(12, 24, "h", "clinical effect"),
+                half_life=time_value(4.32, 11.56, "h", "human pharmacokinetic study", "Mean 7.94 h with SD 3.62 h after 300 mg in healthy volunteers."),
+                notes=base_notes + ["人体 PK 来自小样本健康志愿者研究；不同制剂和适应证需另行复核。"],
+                refs=[],
+            ),
+        },
+        "Calcium Dobesilate": {
+            "refs": [
+                verification_ref(
+                    "Calcium dobesilate capsule bioequivalence and PK study",
+                    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0284576",
+                    "human-pk-study",
+                ),
+                verification_ref(
+                    "Doxium product information",
+                    "https://www.e-lactancia.org/media/papers/Dobesilate-DS-OMPharma2018.pdf",
+                    "product-information",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(6, 6, "h", "human pharmacokinetic study"),
+                duration=time_value(12, 24, "h", "clinical effect"),
+                half_life=time_value(5, 5, "h", "human pharmacokinetic study"),
+                notes=base_notes + ["食物可延迟并降低吸收；不同研究中的 Tmax/t1/2 可能受制剂和进食状态影响。"],
+                refs=[],
+            ),
+        },
+        "Rutoside": {
+            "refs": [
+                verification_ref(
+                    "Pharmacokinetics of quercetin from quercetin aglycone and rutin in healthy volunteers",
+                    "https://pubmed.ncbi.nlm.nih.gov/11151743/",
+                    "human-pk-study",
+                ),
+                verification_ref(
+                    "DrugBank: Rutin",
+                    "https://go.drugbank.com/drugs/DB01698",
+                    "drug-database",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(6.5, 6.5, "h", "human pharmacokinetic study", "Reported for quercetin exposure after rutin, not unchanged rutoside."),
+                duration=time_value(12, 24, "h", "literature estimate"),
+                notes=base_notes + [
+                    "未找到可直接用于处方药标签的 rutoside/rutin 人体半衰期资料；DrugBank 也未列出 half-life。",
+                    "此条不能解释为未变化 rutoside 的完整血浆浓度曲线。"
+                ],
+                refs=[],
+            ),
+        },
+        "Lercanidipine": {
+            "refs": [
+                verification_ref(
+                    "Lercanidipine public assessment report",
+                    "https://www.geneesmiddeleninformatiebank.nl/pars/h102333.pdf",
+                    "regulatory-assessment",
+                ),
+                verification_ref(
+                    "Zanidip product information",
+                    "https://medsinfo.com.au/api/documents/Zanidip_PI?format=pdf",
+                    "regulatory-label",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(1.5, 3, "h", "label pharmacokinetics"),
+                duration=time_value(24, 24, "h", "clinical effect"),
+                half_life=time_value(5.8, 10, "h", "label pharmacokinetics"),
+                notes=base_notes + ["半衰期较短但因脂膜结合而有 24 h 抗高血压活性；不要把 Tmax 当作最大降压时间。"],
+                refs=[],
+            ),
+        },
+        "Sacubitril/Valsartan": {
+            "refs": [
+                verification_ref(
+                    "DailyMed: ENTRESTO sacubitril and valsartan",
+                    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
+                    "regulatory-label",
+                ),
+                verification_ref(
+                    "EMA Entresto product information",
+                    "https://www.ema.europa.eu/en/documents/product-information/entresto-epar-product-information_en.pdf",
+                    "regulatory-label",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(0.5, 2, "h", "label pharmacokinetics"),
+                duration=time_value(12, 24, "h", "clinical effect"),
+                half_life=time_value(1.4, 11.5, "h", "label pharmacokinetics", "Sacubitril, LBQ657, and valsartan have different half-lives."),
+                notes=base_notes + ["半衰期范围同时涵盖 sacubitril、活性代谢物 LBQ657 和 valsartan；具体组分需看说明书。"],
+                refs=[],
+            ),
+        },
+        "Eprosartan": {
+            "refs": [
+                verification_ref(
+                    "DailyMed: TEVETEN HCT eprosartan/hydrochlorothiazide",
+                    "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b1dfcac3-ef66-4d3e-9d58-37d3f516eb31",
+                    "regulatory-label",
+                ),
+                verification_ref(
+                    "Pharmacokinetics of eprosartan in healthy subjects and special populations",
+                    "https://pubmed.ncbi.nlm.nih.gov/10213525/",
+                    "literature-review",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(1, 2, "h", "literature estimate"),
+                duration=time_value(12, 24, "h", "clinical effect"),
+                half_life=time_value(5, 20, "h", "label/literature estimate", "Single-dose oral literature often reports 5-9 h; DailyMed combo label reports about 20 h after multiple 600 mg doses."),
+                notes=base_notes + ["半衰期估计与单次/多次给药和制剂资料来源有关。"],
+                refs=[],
+            ),
+        },
+        "Ticlopidine": {
+            "refs": [
+                verification_ref(
+                    "DailyMed: Ticlopidine hydrochloride label search",
+                    "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TICLOPIDINE",
+                    "regulatory-label",
+                ),
+                verification_ref(
+                    "Canadian product monograph: Ticlopidine hydrochloride tablets",
+                    "https://pdf.hres.ca/dpd_pm/00015080.PDF",
+                    "regulatory-label",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(2, 2, "h", "label pharmacokinetics"),
+                peak=time_value(8, 11, "day", "pharmacodynamic effect"),
+                duration=time_value(5, 10, "day", "pharmacodynamic effect"),
+                half_life=time_value(20, 50, "h", "literature estimate"),
+                notes=base_notes + ["抗血小板效应与血小板功能恢复相关，不等同 ticlopidine 血浆半衰期。"],
+                refs=[],
+            ),
+        },
+        "Abciximab": {
+            "refs": [
+                verification_ref(
+                    "FDA label: ReoPro abciximab",
+                    "https://www.accessdata.fda.gov/drugsatfda_docs/label/1997/abcicen110597-lab.pdf",
+                    "regulatory-label",
+                ),
+                verification_ref(
+                    "Canadian product monograph: ReoPro",
+                    "https://pdf.hres.ca/dpd_pm/00042357.PDF",
+                    "regulatory-label",
+                ),
+            ],
+            "timeCourse": retime(
+                route="intravenous",
+                formulation="bolus/infusion",
+                onset=time_value(10, 10, "min", "pharmacodynamic effect"),
+                duration=time_value(24, 48, "h", "pharmacodynamic effect"),
+                half_life=time_value(10, 30, "min", "label pharmacokinetics", "Free plasma concentration has an initial phase <10 min and second phase about 30 min."),
+                notes=base_notes + ["血小板功能通常 24-48 h 恢复，但药物可在血小板结合状态下更久存在。"],
+                refs=[],
+            ),
+        },
+        "Vorapaxar": {
+            "refs": [
+                verification_ref(
+                    "DailyMed: ZONTIVITY vorapaxar",
+                    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f001f406-8cf1-40a4-bbf5-1775fe020122",
+                    "regulatory-label",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(1, 2, "h", "label pharmacokinetics"),
+                duration=time_value(14, 28, "day", "pharmacodynamic effect"),
+                half_life=time_value(5, 13, "day", "label pharmacokinetics"),
+                steady=time_value(21, 21, "day", "label pharmacokinetics"),
+                notes=base_notes + ["有效半衰期约 3-4 天，终末半衰期约 8 天；抗血小板效应消退不能简单按 Tmax 判断。"],
+                refs=[],
+            ),
+        },
+        "Betrixaban": {
+            "refs": [
+                verification_ref(
+                    "FDA label: BEVYXXA betrixaban",
+                    "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+                    "regulatory-label",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(3, 4, "h", "label pharmacokinetics"),
+                duration=time_value(24, 72, "h", "pharmacodynamic effect"),
+                half_life=time_value(19, 27, "h", "label pharmacokinetics"),
+                notes=base_notes + ["食物可降低暴露；常规用药通常不按血药浓度调整。"],
+                refs=[],
+            ),
+        },
+        "Acenocoumarol": {
+            "refs": [
+                verification_ref(
+                    "Sinthrome acenocoumarol SmPC",
+                    "https://www.medicines.org.uk/emc/product/2058/smpc",
+                    "regulatory-label",
+                ),
+                verification_ref(
+                    "Acenocoumarol pharmacokinetic review",
+                    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6785764/",
+                    "literature-review",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(1, 3, "h", "literature estimate"),
+                peak=time_value(24, 48, "h", "pharmacodynamic effect"),
+                duration=time_value(2, 4, "day", "pharmacodynamic effect"),
+                half_life=time_value(8, 11, "h", "label pharmacokinetics"),
+                notes=base_notes + ["维生素 K 拮抗剂主要按 INR 监测，抗凝效应受凝血因子周转影响。"],
+                refs=[],
+            ),
+        },
+        "Phenprocoumon": {
+            "refs": [
+                verification_ref(
+                    "Phenprocoumon pharmacokinetics in emergency situations",
+                    "https://pubmed.ncbi.nlm.nih.gov/36422567/",
+                    "clinical-study",
+                ),
+                verification_ref(
+                    "Acute Porphyria Drugs: Phenprocoumon",
+                    "https://drugsporphyria.net/monograph/677/B01AA04",
+                    "clinical-drug-reference",
+                ),
+            ],
+            "timeCourse": retime(
+                tmax=time_value(1, 3, "h", "literature estimate"),
+                peak=time_value(48, 96, "h", "pharmacodynamic effect"),
+                duration=time_value(5, 14, "day", "pharmacodynamic effect"),
+                half_life=time_value(5, 9, "day", "clinical/literature estimate"),
+                notes=base_notes + ["维生素 K 拮抗剂主要按 INR 监测；phenprocoumon 半衰期长，停药后效应可持续多日。"],
+                refs=[],
+            ),
+        },
+    }
+
+    override = overrides.get(name)
+    if not override:
+        return
+
+    refs = override["refs"] + ([atc_source] if atc_source else [])
+    updated_time_courses = []
+    for time_course_item in override["timeCourse"]:
+        copied = dict(time_course_item)
+        copied["sourceRefs"] = refs
+        updated_time_courses.append(copied)
+    entry["timeCourse"] = updated_time_courses
+    entry["url"] = refs[0]["url"]
+    clinical = entry.get("clinicalInfo") or {}
+    clinical["sourceRefs"] = refs
+    if name in {"Nicotinyl Alcohol", "Rutoside"}:
+        clinical.setdefault("majorWarnings", []).append("公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。")
+
+
 DEFAULT_WARNINGS = [
     "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
     "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
@@ -228,7 +711,7 @@ def build_entry(item: dict) -> dict:
                 "openFDA drug label API 未找到可直接核对的 FDA 标签；本条药代数值需继续按 DailyMed 搜索结果、本地批准说明书或权威药学资料逐项复核。"
             ]
             time_courses.append(copied)
-    return {
+    entry = {
         "name": item["name"],
         "commonNames": ordered_unique(
             [item["name"]]
@@ -265,6 +748,8 @@ def build_entry(item: dict) -> dict:
         "tdm": item.get("tdm", tdm_default(code, drug_class)),
         "roas": item.get("roas", [dose(item.get("routeDose", "ORAL"), item.get("doseUnit", "mg"), 1, 5, 10, 50)]),
     }
+    apply_verified_override(entry)
+    return entry
 
 
 DRUGS = [
@@ -301,7 +786,7 @@ DRUGS = [
     {"name": "Naftidrofuryl", "cn": "萘呋胺", "atc": "C04AX21", "classZh": "外周血管扩张剂", "timeCourse": [time_course(tmax=(2, 3, "h"), half_life=(1, 2, "h"), duration=(6, 8, "h"))], "roas": [dose("ORAL", "mg", 100, 200, 400, 600)]},
     {"name": "Nicergoline", "cn": "尼麦角林", "atc": "C04AE02", "classZh": "麦角生物碱类血管活性药", "timeCourse": [time_course(tmax=(1, 1.5, "h"), half_life=(2, 4, "h"), duration=(8, 12, "h"))], "roas": [dose("ORAL", "mg", 5, 10, 30, 60)]},
     {"name": "Phentolamine", "cn": "酚妥拉明", "atc": "C04AB01", "classZh": "α受体阻滞性血管扩张剂", "timeCourse": [time_course(route="intravenous", formulation="injection", onset=(1, 2, "min"), duration=(10, 30, "min"), half_life=(0.3, 0.5, "h"))], "roas": [dose("INTRAVENOUS", "mg", 1, 5, 10, 20)]},
-    {"name": "Nicotinyl Alcohol", "cn": "烟醇", "atc": "C04AC01", "classZh": "烟酸衍生物类外周血管扩张剂", "aliases": ["Nicotinic acid derivative"], "timeCourse": [time_course(tmax=(0.5, 2, "h"), half_life=(0.75, 1, "h"), duration=(4, 6, "h"))], "roas": [dose("ORAL", "mg", 25, 50, 100, 200)]},
+    {"name": "Nicotinyl Alcohol", "cn": "烟醇", "atc": "C04AC02", "classZh": "烟酸衍生物类外周血管扩张剂", "aliases": ["Nicotinic acid derivative", "Roniacol"], "timeCourse": [time_course(duration=(4, 6, "h"), notes=["未找到可靠现代人体血浆 Tmax/半衰期标签资料；此处仅保留外周血管扩张药效时间索引。"])], "roas": [dose("ORAL", "mg", 25, 50, 100, 200)]},
     # C05 血管保护药
     {"name": "Diosmin", "cn": "地奥司明", "atc": "C05CA03", "classZh": "生物类黄酮血管保护药", "timeCourse": [time_course(tmax=(1, 5, "h"), half_life=(11, 11, "h"), duration=(12, 24, "h"))], "roas": [dose("ORAL", "mg", 250, 500, 1000, 2000)]},
     {"name": "Hesperidin", "cn": "橙皮苷", "atc": "C05CA53", "classZh": "生物类黄酮血管保护药", "timeCourse": [time_course(tmax=(5, 7, "h"), half_life=(3, 6, "h"), duration=(12, 24, "h"))], "roas": [dose("ORAL", "mg", 50, 100, 500, 1000)]},
