@@ -24,6 +24,16 @@ fun localizedCategoryDisplayName(categoryName: String): String {
         "antithrombotic" -> "抗血栓"
         "peripheral-circulation" -> "外周循环"
         "prescription-medicine" -> "处方药"
+        "atc-b01" -> "B01 抗血栓药"
+        "atc-c01" -> "C01 心脏治疗药"
+        "atc-c02" -> "C02 抗高血压药"
+        "atc-c03" -> "C03 利尿剂"
+        "atc-c04" -> "C04 外周血管扩张剂"
+        "atc-c05" -> "C05 血管保护药"
+        "atc-c07" -> "C07 β受体阻滞剂"
+        "atc-c08" -> "C08 钙通道阻滞剂"
+        "atc-c09" -> "C09 RAS 药物"
+        "atc-c10" -> "C10 调脂药"
         else -> categoryName
     }
 }
