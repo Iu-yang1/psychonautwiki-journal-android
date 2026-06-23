@@ -193,10 +193,15 @@ fun TimeCourseChart(timeCourse: TimeCourse) {
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.Top
         ) {
+            val endPill = listOf(
+                "持续" to timeCourse.durationOfAction,
+                "清除" to timeCourse.washout,
+                "半衰期" to timeCourse.eliminationHalfLife
+            ).firstOrNull { it.second != null }
             TimePill("起效", timeCourse.onset)
             TimePill("Tmax", timeCourse.tmax)
             TimePill("峰效", timeCourse.peakEffect)
-            TimePill("持续", timeCourse.durationOfAction)
+            endPill?.let { TimePill(it.first, it.second) }
         }
     }
 }
@@ -246,15 +251,18 @@ private fun TimeCourse.toChartModel(): TimeCourseChartModel? {
     val onsetEnd = onset?.maxHours() ?: onsetStart
     val durationEnd = durationOfAction?.maxHours() ?: durationOfAction?.minHours()
     val washoutEnd = washout?.maxHours() ?: washout?.minHours()
+    val clearanceEnd = eliminationHalfLife?.maxHours()?.times(5f)
+        ?: eliminationHalfLife?.minHours()?.times(5f)
+    val chartEndCandidate = listOfNotNull(durationEnd, washoutEnd, clearanceEnd).maxOrNull()
     val peak = peakEffect?.midHours()
         ?: tmax?.midHours()
-        ?: if (durationEnd != null) {
-            onsetEnd + ((durationEnd - onsetEnd).coerceAtLeast(0.5f) * 0.35f)
+        ?: if (chartEndCandidate != null) {
+            onsetEnd + ((chartEndCandidate - onsetEnd).coerceAtLeast(0.5f) * 0.25f)
         } else {
             null
         }
         ?: return null
-    val rawEnd = listOfNotNull(durationEnd, washoutEnd, peak * 1.5f).maxOrNull() ?: return null
+    val rawEnd = chartEndCandidate ?: (peak + max(peak * 0.5f, 0.5f))
     val end = max(rawEnd, peak + 0.5f)
     val roundedEnd = max(0.25f, ceil(end * 2f) / 2f)
     return TimeCourseChartModel(

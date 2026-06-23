@@ -13,6 +13,7 @@ import com.isaakhanimann.journal.data.room.experiences.entities.custom.toRoaDura
 import com.isaakhanimann.journal.data.room.experiences.entities.getSubstanceColor
 import com.isaakhanimann.journal.data.room.experiences.relations.IngestionWithCompanionAndCustomUnit
 import com.isaakhanimann.journal.data.substances.classes.Substance
+import com.isaakhanimann.journal.data.substances.classes.derivedRoaDurationForRoute
 import com.isaakhanimann.journal.data.substances.classes.roa.RoaDose
 import com.isaakhanimann.journal.data.substances.classes.roa.RoaDuration
 import com.isaakhanimann.journal.data.substances.repositories.SubstanceRepository
@@ -267,11 +268,13 @@ class ExperienceViewModel @Inject constructor(
                 var roaDuration: RoaDuration? = null
                 var roaDose: RoaDose? = null
 
-                val pureSubstanceRoa = substanceRepo.getSubstance(substanceName)?.getRoa(route)
+                val pureSubstance = substanceRepo.getSubstance(substanceName)
+                val pureSubstanceRoa = pureSubstance?.getRoa(route)
 
-                if (pureSubstanceRoa != null) {
-                    roaDuration = pureSubstanceRoa.roaDuration
-                    roaDose = pureSubstanceRoa.roaDose
+                if (pureSubstance != null) {
+                    roaDuration = pureSubstanceRoa?.roaDuration
+                        ?: pureSubstance.derivedRoaDurationForRoute(route)
+                    roaDose = pureSubstanceRoa?.roaDose
                 } else {
                     val customSubstance = customSubstancesMap[substanceName]
                     val customRoaInfo = customSubstance?.roaInfos?.find { it.administrationRoute == route }
