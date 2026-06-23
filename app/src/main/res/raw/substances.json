@@ -25515,7 +25515,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Nitroglycerin",
@@ -25733,7 +25733,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Lidocaine",
@@ -25872,7 +25872,43 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "timeCourse": [
+        {
+          "route": "intravenous",
+          "formulation": "injection/infusion",
+          "onset": {
+            "min": 45,
+            "max": 90,
+            "unit": "s",
+            "basis": "clinical effect"
+          },
+          "durationOfAction": {
+            "min": 10,
+            "max": 20,
+            "unit": "min",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 1.5,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Antiarrhythmic effect after IV use is rapid; plasma concentration and toxicity interpretation depend on infusion timing and hepatic blood flow.",
+            "Source values should be interpreted with ECG, neurologic symptoms, hepatic function, acid-base status, and interacting drugs."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed lidocaine hydrochloride injection label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Procainamide",
@@ -26034,7 +26070,57 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "timeCourse": [
+        {
+          "route": "intravenous",
+          "formulation": "injection/infusion",
+          "eliminationHalfLife": {
+            "min": 2.5,
+            "max": 5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Procainamide and active metabolite NAPA interpretation depends on renal function, acetylator status, ECG/QRS/QT, dose timing, and infusion context."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed procainamide hydrochloride injection label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=procainamide%20hydrochloride%20injection",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "oral",
+          "formulation": "capsule/tablet",
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 2.5,
+            "max": 5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Oral absorption and active metabolite accumulation vary; use ECG and clinical context rather than concentration alone."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed procainamide label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=procainamide",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Flecainide",
@@ -26164,7 +26250,42 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 6,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": 27,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 3,
+            "max": 5,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "QRS widening, PR prolongation, renal/hepatic function, CYP2D6 context, dose timing, and symptoms are central to interpretation."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed flecainide acetate tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=flecainide%20acetate%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Amiodarone",
@@ -26338,7 +26459,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Warfarin",
@@ -26444,7 +26565,54 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 4,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "onset": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "peakEffect": {
+            "min": 72,
+            "max": 96,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "durationOfAction": {
+            "min": 2,
+            "max": 5,
+            "unit": "day",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 20,
+            "max": 60,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Warfarin clinical monitoring is INR, not routine plasma concentration. Anticoagulant effect reflects vitamin K-dependent clotting factor turnover."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed warfarin sodium tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=warfarin%20sodium%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Metoprolol",
@@ -26627,7 +26795,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Digoxin",
@@ -26782,7 +26950,87 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 3,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "peakEffect": {
+            "min": 2,
+            "max": 6,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 36,
+            "max": 48,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 5,
+            "max": 7,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Serum digoxin concentrations should generally be interpreted at least 6 hours after the last dose and with potassium, renal function, ECG, symptoms, and interacting drugs."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed digoxin tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=digoxin%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "intravenous",
+          "formulation": "injection",
+          "onset": {
+            "min": 5,
+            "max": 30,
+            "unit": "min",
+            "basis": "clinical effect"
+          },
+          "peakEffect": {
+            "min": 1,
+            "max": 4,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 36,
+            "max": 48,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 5,
+            "max": 7,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Intravenous effect timing and serum concentration interpretation still require post-distribution timing and clinical context."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed digoxin injection label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=digoxin%20injection",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Lisinopril",
@@ -26932,7 +27180,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Losartan",
@@ -27084,7 +27332,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Quinidine",
@@ -27152,15 +27400,26 @@
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "sulfate tablet",
+          "formulation": "sulfate tablet/capsule",
+          "tmax": {
+            "min": 1.5,
+            "max": 3,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 6,
+            "max": 8,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
           "notes": [
-            "source needed: add label-verified Tmax, half-life, and formulation-specific duration before displaying numeric values.",
-            "TDM peak/trough sampling times differ by quinidine salt/formulation."
+            "Quinidine time course varies by salt and formulation. Interpret concentrations with ECG/QT, renal/hepatic function, timing, and symptoms."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed quinidine sulfate label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0d6341b-d880-4f0b-8844-bc788c03004a",
+              "title": "DailyMed quinidine sulfate label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=quinidine%20sulfate",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             }
@@ -27237,7 +27496,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Disopyramide",
@@ -27307,13 +27566,25 @@
         {
           "route": "oral",
           "formulation": "capsule",
+          "tmax": {
+            "min": 2,
+            "max": 3,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 6,
+            "max": 8,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
           "notes": [
-            "source needed: add label-verified Tmax, half-life, and duration for immediate-release and controlled-release formulations separately."
+            "Anticholinergic effects, QRS/QT changes, renal function, heart failure symptoms, and timing should guide interpretation."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed disopyramide phosphate label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31e79459-107f-4d69-a163-90014f1c4772",
+              "title": "DailyMed disopyramide phosphate capsule label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=disopyramide%20phosphate%20capsule",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             }
@@ -27364,7 +27635,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Mexiletine",
@@ -27431,13 +27702,25 @@
         {
           "route": "oral",
           "formulation": "capsule",
+          "tmax": {
+            "min": 2,
+            "max": 3,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 10,
+            "max": 12,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
           "notes": [
-            "source needed: add label-verified Tmax and half-life for the selected formulation before displaying numeric time-course values."
+            "Mexiletine is structurally similar to lidocaine but orally active; interpret with ECG, neurologic symptoms, hepatic function, timing, and interacting drugs."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed mexiletine hydrochloride label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a61a07f6-0b48-4dcd-ad42-5d90f6e69ab1",
+              "title": "DailyMed mexiletine hydrochloride capsule label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=mexiletine%20hydrochloride%20capsule",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             }
@@ -27504,7 +27787,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Propafenone",
@@ -27650,7 +27933,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Sotalol",
@@ -27828,7 +28111,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Dofetilide",
@@ -27980,7 +28263,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Ibutilide",
@@ -28051,14 +28334,25 @@
         {
           "route": "intravenous",
           "formulation": "injection",
+          "durationOfAction": {
+            "min": 3,
+            "max": 6,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 2,
+            "max": 12,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
           "notes": [
-            "source needed: add label-verified effect onset, offset, and half-life before displaying numeric time-course values.",
-            "Continuous ECG monitoring is more important than a simple duration estimate."
+            "QT prolongation and torsades risk are pharmacodynamic safety issues requiring ECG monitoring after infusion; effect timing is not simply plasma Tmax."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed ibutilide fumarate injection label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ibutilide%20fumarate%20injection",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             }
@@ -28103,7 +28397,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Adenosine",
@@ -28252,7 +28546,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Clopidogrel",
@@ -28397,7 +28691,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Apixaban",
@@ -28545,7 +28839,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Propranolol",
@@ -28699,7 +28993,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Atenolol",
@@ -28843,7 +29137,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Carvedilol",
@@ -28987,7 +29281,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Esmolol",
@@ -29144,7 +29438,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Diltiazem",
@@ -29225,11 +29519,27 @@
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "extended-release capsule",
+          "formulation": "extended-release capsule/tablet",
+          "tmax": {
+            "min": 10,
+            "max": 14,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 5,
+            "max": 8,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "label formulation profile"
+          },
           "notes": [
-            "Diltiazem time course is formulation-specific; do not reuse values across immediate-release, extended-release, or IV products.",
-            "source needed: add label-verified Tmax and duration for each exact formulation before displaying numeric values.",
-            "Blood pressure, heart rate, ECG, and symptoms are more relevant than routine plasma concentration."
+            "Diltiazem absorption and Tmax are formulation-specific; immediate-release and extended-release records should not be collapsed."
           ],
           "sourceRefs": [
             {
@@ -29283,7 +29593,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Cilostazol",
@@ -29423,7 +29733,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Furosemide",
@@ -29584,7 +29894,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Spironolactone",
@@ -29735,7 +30045,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Atorvastatin",
@@ -29885,7 +30195,7 @@
           }
         }
       ],
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????"
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
     },
     {
       "name": "Bisoprolol",
@@ -29997,7 +30307,7 @@
         "reason": "Clinical use is usually guided by heart rate, blood pressure, symptoms, ECG context, organ function, and interacting drugs rather than plasma concentration.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -30116,7 +30426,7 @@
         "reason": "Monitoring is usually clinical rather than concentration-guided.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -30238,7 +30548,7 @@
         "reason": "Clinical response and safety are monitored using blood pressure, heart rate, symptoms, and clinical context.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -30370,7 +30680,7 @@
         "reason": "Clinical use is guided by blood pressure, renal function, potassium, symptoms, and local labeling rather than plasma concentration.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -30490,7 +30800,7 @@
         "reason": "Clinical use is usually guided by blood pressure, renal function, potassium, symptoms, and local approved labeling.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -30651,7 +30961,7 @@
         "reason": "Clinical monitoring usually focuses on heart rate, blood pressure, ECG/conduction, heart failure symptoms, and interactions.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -30811,7 +31121,7 @@
         "reason": "Clinical use is usually guided by blood pressure, heart rate, symptoms, edema, and interacting drugs rather than plasma concentration.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -30948,7 +31258,7 @@
         "reason": "Clinical monitoring focuses on blood pressure, volume status, renal function, and electrolytes.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -31079,7 +31389,7 @@
         "reason": "Clinical monitoring focuses on diuresis, weight/volume status, blood pressure, renal function, and electrolytes.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -31212,7 +31522,7 @@
           "This entry is for learning and indexing only, not anticoagulation management."
         ]
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -31357,7 +31667,7 @@
           "This entry is for learning and indexing only, not anticoagulation management."
         ]
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -31477,7 +31787,7 @@
         "reason": "Clinical monitoring focuses on lipid response, adverse muscle symptoms, liver enzymes when indicated, renal context, and interacting drugs.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "????????????????light/common/strong/heavy ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
           "name": "ORAL",
@@ -31487,6 +31797,2688 @@
             "commonMin": 10,
             "strongMin": 20,
             "heavyMin": 40
+          }
+        }
+      ]
+    },
+    {
+      "name": "Captopril",
+      "commonNames": [
+        "Captopril",
+        "Capoten",
+        "卡托普利",
+        "ACE抑制剂",
+        "血管紧张素转换酶抑制剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=captopril%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "卡托普利是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09AA01"
+        ],
+        "drugClass": [
+          "ACE抑制剂",
+          "血管紧张素转换酶抑制剂",
+          "ACE inhibitor",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Heart failure contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause hypotension, renal impairment, hyperkalemia, cough, and angioedema.",
+          "Fetal toxicity warnings apply to renin-angiotensin system medicines."
+        ],
+        "majorInteractions": [
+          "Potassium supplements or potassium-sparing diuretics can increase hyperkalemia risk.",
+          "NSAIDs can reduce antihypertensive effect and increase renal risk in susceptible patients."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum creatinine/eGFR",
+          "Serum potassium",
+          "Angioedema symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Captopril label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=captopril%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09AA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 2,
+            "max": 3,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 6,
+            "max": 12,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "notes": [
+            "Food can reduce absorption; clinical blood pressure response is not identical to plasma Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Captopril label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=captopril%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 6.25,
+            "commonMin": 12.5,
+            "strongMin": 25,
+            "heavyMin": 150
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ramipril",
+      "commonNames": [
+        "Ramipril",
+        "Altace",
+        "雷米普利",
+        "ACE抑制剂",
+        "血管紧张素转换酶抑制剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ramipril%20capsule",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "雷米普利是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09AA05"
+        ],
+        "drugClass": [
+          "ACE抑制剂",
+          "血管紧张素转换酶抑制剂",
+          "ACE inhibitor",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Cardiovascular risk-reduction and heart failure contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause hypotension, renal impairment, hyperkalemia, cough, and angioedema.",
+          "Fetal toxicity warnings apply."
+        ],
+        "majorInteractions": [
+          "Potassium-increasing drugs can increase hyperkalemia risk.",
+          "NSAIDs may reduce antihypertensive effect and increase renal risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum creatinine/eGFR",
+          "Serum potassium",
+          "Angioedema symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Ramipril label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ramipril%20capsule",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09AA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "capsule/tablet",
+          "tmax": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Peak ramipril concentrations are rapid; active ramiprilat peaks later."
+          },
+          "peakEffect": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration",
+            "note": "Approximate peak active ramiprilat concentration window."
+          },
+          "eliminationHalfLife": {
+            "min": 13,
+            "max": 17,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Effective half-life for accumulation of ramiprilat after repeated dosing."
+          },
+          "notes": [
+            "Ramipril is a prodrug; active ramiprilat kinetics are more relevant to sustained ACE inhibition."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Ramipril label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ramipril%20capsule",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 1.25,
+            "commonMin": 2.5,
+            "strongMin": 5,
+            "heavyMin": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "Olmesartan",
+      "commonNames": [
+        "Olmesartan",
+        "Benicar",
+        "Olmesartan medoxomil",
+        "奥美沙坦",
+        "ARB",
+        "血管紧张素II受体阻滞剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=olmesartan%20medoxomil%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "奥美沙坦是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09CA08"
+        ],
+        "drugClass": [
+          "ARB",
+          "血管紧张素II受体阻滞剂",
+          "Angiotensin II receptor blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia.",
+          "Sprue-like enteropathy has been reported with olmesartan."
+        ],
+        "majorInteractions": [
+          "Potassium-increasing drugs can increase hyperkalemia risk.",
+          "NSAIDs can reduce antihypertensive effect and increase renal risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum creatinine/eGFR",
+          "Serum potassium",
+          "Severe chronic diarrhea/weight loss symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Olmesartan label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=olmesartan%20medoxomil%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA08",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA08",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 13,
+            "max": 13,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Tmax is a plasma concentration parameter and does not define the full antihypertensive response."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Olmesartan label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=olmesartan%20medoxomil%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 5,
+            "commonMin": 20,
+            "strongMin": 40
+          }
+        }
+      ]
+    },
+    {
+      "name": "Irbesartan",
+      "commonNames": [
+        "Irbesartan",
+        "Avapro",
+        "厄贝沙坦",
+        "ARB",
+        "血管紧张素II受体阻滞剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=irbesartan%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "厄贝沙坦是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09CA04"
+        ],
+        "drugClass": [
+          "ARB",
+          "血管紧张素II受体阻滞剂",
+          "Angiotensin II receptor blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Diabetic nephropathy context depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia."
+        ],
+        "majorInteractions": [
+          "Potassium-increasing drugs can increase hyperkalemia risk.",
+          "NSAIDs can reduce antihypertensive effect and increase renal risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum creatinine/eGFR",
+          "Serum potassium"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Irbesartan label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=irbesartan%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1.5,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 11,
+            "max": 15,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Exposure and response vary; clinical monitoring is blood-pressure and laboratory based."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Irbesartan label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=irbesartan%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 75,
+            "commonMin": 150,
+            "strongMin": 300
+          }
+        }
+      ]
+    },
+    {
+      "name": "Telmisartan",
+      "commonNames": [
+        "Telmisartan",
+        "Micardis",
+        "替米沙坦",
+        "ARB",
+        "血管紧张素II受体阻滞剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=telmisartan%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "替米沙坦是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09CA07"
+        ],
+        "drugClass": [
+          "ARB",
+          "血管紧张素II受体阻滞剂",
+          "Angiotensin II receptor blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Cardiovascular risk-reduction contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia."
+        ],
+        "majorInteractions": [
+          "Potassium-increasing drugs can increase hyperkalemia risk.",
+          "Digoxin exposure can increase in some contexts; monitor when clinically indicated.",
+          "NSAIDs can reduce antihypertensive effect and increase renal risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum creatinine/eGFR",
+          "Serum potassium",
+          "Interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Telmisartan label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=telmisartan%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA07",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA07",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 0.5,
+            "max": 1,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Terminal elimination half-life is greater than 24 hours in labeling."
+          },
+          "notes": [
+            "Long terminal half-life supports a long concentration tail; clinical response is monitored by blood pressure."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Telmisartan label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=telmisartan%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 20,
+            "commonMin": 40,
+            "strongMin": 80
+          }
+        }
+      ]
+    },
+    {
+      "name": "Candesartan",
+      "commonNames": [
+        "Candesartan",
+        "Atacand",
+        "Candesartan cilexetil",
+        "坎地沙坦",
+        "ARB",
+        "血管紧张素II受体阻滞剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=candesartan%20cilexetil%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "坎地沙坦是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C09CA06"
+        ],
+        "drugClass": [
+          "ARB",
+          "血管紧张素II受体阻滞剂",
+          "Angiotensin II receptor blocker",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Heart failure contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia."
+        ],
+        "majorInteractions": [
+          "Potassium-increasing drugs can increase hyperkalemia risk.",
+          "NSAIDs can reduce antihypertensive effect and increase renal risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum creatinine/eGFR",
+          "Serum potassium"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Candesartan label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=candesartan%20cilexetil%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA06",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA06",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 9,
+            "max": 9,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Candesartan cilexetil is a prodrug converted to candesartan during absorption."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Candesartan label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=candesartan%20cilexetil%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 4,
+            "commonMin": 8,
+            "strongMin": 16,
+            "heavyMin": 32
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chlorthalidone",
+      "commonNames": [
+        "Chlorthalidone",
+        "Thalitone",
+        "氯噻酮",
+        "利尿剂",
+        "噻嗪样利尿剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorthalidone%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "氯噻酮是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C03BA04"
+        ],
+        "drugClass": [
+          "利尿剂",
+          "噻嗪样利尿剂",
+          "Thiazide-like diuretic",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Edema contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause electrolyte abnormalities, volume depletion, renal function changes, and hyperuricemia."
+        ],
+        "majorInteractions": [
+          "Lithium toxicity risk may increase with diuretics.",
+          "Other antihypertensives can increase hypotension risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum sodium",
+          "Serum potassium",
+          "Serum creatinine/eGFR",
+          "Uric acid when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Chlorthalidone label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorthalidone%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03BA04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 40,
+            "max": 60,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 48,
+            "max": 72,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "notes": [
+            "Long half-life and duration distinguish chlorthalidone from shorter-acting thiazides."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Chlorthalidone label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorthalidone%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 12.5,
+            "commonMin": 25,
+            "strongMin": 50,
+            "heavyMin": 100
+          }
+        }
+      ]
+    },
+    {
+      "name": "Indapamide",
+      "commonNames": [
+        "Indapamide",
+        "Lozol",
+        "吲达帕胺",
+        "利尿剂",
+        "噻嗪样利尿剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=indapamide%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "吲达帕胺是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C03BA11"
+        ],
+        "drugClass": [
+          "利尿剂",
+          "噻嗪样利尿剂",
+          "Thiazide-like diuretic",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension",
+          "Edema contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause electrolyte abnormalities, volume depletion, renal function changes, and hyperuricemia."
+        ],
+        "majorInteractions": [
+          "Lithium toxicity risk may increase with diuretics.",
+          "Other antihypertensives can increase hypotension risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Serum sodium",
+          "Serum potassium",
+          "Serum creatinine/eGFR",
+          "Uric acid when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Indapamide label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=indapamide%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03BA11",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA11",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 14,
+            "max": 18,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Antihypertensive response is monitored clinically and does not equal plasma Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Indapamide label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=indapamide%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 1.25,
+            "commonMin": 2.5,
+            "strongMin": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bumetanide",
+      "commonNames": [
+        "Bumetanide",
+        "Bumex",
+        "布美他尼",
+        "利尿剂",
+        "袢利尿剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "布美他尼是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C03CA02"
+        ],
+        "drugClass": [
+          "利尿剂",
+          "袢利尿剂",
+          "Loop diuretic"
+        ],
+        "indications": [
+          "Edema contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause excessive diuresis, dehydration, hypotension, electrolyte depletion, renal function changes, and ototoxicity risk."
+        ],
+        "majorInteractions": [
+          "Other diuretics or antihypertensives can increase volume depletion or hypotension risk.",
+          "Lithium toxicity risk may increase with diuretics."
+        ],
+        "monitoring": [
+          "Volume status",
+          "Blood pressure",
+          "Serum sodium",
+          "Serum potassium",
+          "Serum creatinine/eGFR"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Bumetanide label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03CA02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "onset": {
+            "min": 30,
+            "max": 60,
+            "unit": "min",
+            "basis": "pharmacodynamic effect"
+          },
+          "peakEffect": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "durationOfAction": {
+            "min": 4,
+            "max": 6,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 1,
+            "max": 1.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Diuretic effect timing and plasma half-life are related but not identical."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Bumetanide label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "intravenous",
+          "formulation": "injection",
+          "onset": {
+            "min": 2,
+            "max": 3,
+            "unit": "min",
+            "basis": "pharmacodynamic effect"
+          },
+          "durationOfAction": {
+            "min": 2,
+            "max": 3,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 1,
+            "max": 1.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Intravenous onset is rapid; monitor volume status and electrolytes."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Bumetanide label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 0.5,
+            "commonMin": 1,
+            "strongMin": 2,
+            "heavyMin": 10
+          }
+        },
+        {
+          "name": "INTRAVENOUS",
+          "dose": {
+            "units": "mg",
+            "lightMin": 0.5,
+            "commonMin": 1,
+            "strongMin": 2
+          }
+        }
+      ]
+    },
+    {
+      "name": "Eplerenone",
+      "commonNames": [
+        "Eplerenone",
+        "Inspra",
+        "依普利酮",
+        "醛固酮受体拮抗剂",
+        "盐皮质激素受体拮抗剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eplerenone%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "依普利酮是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C03DA04"
+        ],
+        "drugClass": [
+          "醛固酮受体拮抗剂",
+          "盐皮质激素受体拮抗剂",
+          "Mineralocorticoid receptor antagonist",
+          "Potassium-sparing diuretic"
+        ],
+        "indications": [
+          "Hypertension",
+          "Heart failure or post-myocardial infarction contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause hyperkalemia, especially with renal impairment or interacting drugs."
+        ],
+        "majorInteractions": [
+          "Potassium supplements, ACEI/ARB, or other potassium-sparing drugs can increase hyperkalemia risk.",
+          "Strong CYP3A inhibitors can increase eplerenone exposure."
+        ],
+        "monitoring": [
+          "Serum potassium",
+          "Serum creatinine/eGFR",
+          "Blood pressure"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Eplerenone label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eplerenone%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03DA04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1.5,
+            "max": 1.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 4,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 2,
+            "max": 2,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Potassium monitoring is more clinically important than routine concentration monitoring."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Eplerenone label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eplerenone%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 25,
+            "commonMin": 50,
+            "strongMin": 100
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hydralazine",
+      "commonNames": [
+        "Hydralazine",
+        "Apresoline",
+        "肼屈嗪",
+        "直接血管扩张剂",
+        "Peripheral vasodilator"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine"
+      ],
+      "summary": "肼屈嗪是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C02DB02"
+        ],
+        "drugClass": [
+          "直接血管扩张剂",
+          "Peripheral vasodilator",
+          "Direct vasodilator",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Hypertension contexts depending on label",
+          "Heart failure combination contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause hypotension, tachycardia, fluid retention, headache, and lupus-like syndrome."
+        ],
+        "majorInteractions": [
+          "Other antihypertensives can increase hypotension risk.",
+          "Beta blockers or diuretics may be co-used clinically but require monitoring."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Heart rate",
+          "Fluid retention symptoms",
+          "Lupus-like symptoms when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Hydralazine label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C02DB02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02DB02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 3,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Clinical response and tolerability vary with acetylator status and comorbid conditions."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Hydralazine label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "intravenous",
+          "formulation": "injection",
+          "onset": {
+            "min": 5,
+            "max": 20,
+            "unit": "min",
+            "basis": "clinical effect"
+          },
+          "durationOfAction": {
+            "min": 2,
+            "max": 6,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 3,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "IV blood pressure response can be variable; monitor hemodynamics."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Hydralazine label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 10,
+            "commonMin": 25,
+            "strongMin": 50,
+            "heavyMin": 300
+          }
+        },
+        {
+          "name": "INTRAVENOUS",
+          "dose": {
+            "units": "mg",
+            "lightMin": 5,
+            "commonMin": 10,
+            "strongMin": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "Isosorbide Mononitrate",
+      "commonNames": [
+        "Isosorbide Mononitrate",
+        "Isosorbide mononitrate",
+        "Imdur",
+        "单硝酸异山梨酯",
+        "硝酸酯类",
+        "Nitrate"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine"
+      ],
+      "summary": "单硝酸异山梨酯是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01DA14"
+        ],
+        "drugClass": [
+          "硝酸酯类",
+          "Nitrate",
+          "Antianginal"
+        ],
+        "indications": [
+          "Angina prophylaxis contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause headache, hypotension, syncope, and tolerance with continuous nitrate exposure."
+        ],
+        "majorInteractions": [
+          "PDE5 inhibitors and riociguat can cause severe hypotension with nitrates.",
+          "Other vasodilators or antihypertensives can increase hypotension risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Headache",
+          "Dizziness/syncope",
+          "Nitrate-free interval per label"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Isosorbide Mononitrate label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01DA14",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA14",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "immediate-release tablet",
+          "tmax": {
+            "min": 0.5,
+            "max": 1,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 5,
+            "max": 5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 6,
+            "max": 8,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "notes": [
+            "Nitrate tolerance and nitrate-free interval are clinical concepts separate from Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Isosorbide Mononitrate label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "oral",
+          "formulation": "extended-release tablet",
+          "tmax": {
+            "min": 3,
+            "max": 4.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 5,
+            "max": 5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 12,
+            "max": 24,
+            "unit": "h",
+            "basis": "label formulation profile"
+          },
+          "notes": [
+            "Extended-release formulations are designed for longer antianginal coverage."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Isosorbide Mononitrate label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 10,
+            "commonMin": 20,
+            "strongMin": 60,
+            "heavyMin": 120
+          }
+        }
+      ]
+    },
+    {
+      "name": "Isosorbide Dinitrate",
+      "commonNames": [
+        "Isosorbide Dinitrate",
+        "Isordil",
+        "Isosorbide dinitrate",
+        "硝酸异山梨酯",
+        "硝酸酯类",
+        "Nitrate"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine"
+      ],
+      "summary": "硝酸异山梨酯是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01DA08"
+        ],
+        "drugClass": [
+          "硝酸酯类",
+          "Nitrate",
+          "Antianginal"
+        ],
+        "indications": [
+          "Angina treatment or prophylaxis contexts depending on route/formulation and label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause headache, hypotension, syncope, and tolerance with continuous nitrate exposure."
+        ],
+        "majorInteractions": [
+          "PDE5 inhibitors and riociguat can cause severe hypotension with nitrates.",
+          "Other vasodilators or antihypertensives can increase hypotension risk."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Headache",
+          "Dizziness/syncope",
+          "Nitrate-free interval per label"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Isosorbide Dinitrate label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01DA08",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA08",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "sublingual",
+          "formulation": "tablet",
+          "onset": {
+            "min": 2,
+            "max": 5,
+            "unit": "min",
+            "basis": "clinical effect"
+          },
+          "durationOfAction": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Sublingual onset is a clinical effect estimate, not a plasma Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Isosorbide Dinitrate label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 4,
+            "max": 6,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "notes": [
+            "Active metabolites contribute to clinical effect and duration."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Isosorbide Dinitrate label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "SUBLINGUAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 2.5,
+            "commonMin": 5,
+            "strongMin": 10
+          }
+        },
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 5,
+            "commonMin": 10,
+            "strongMin": 40,
+            "heavyMin": 160
+          }
+        }
+      ]
+    },
+    {
+      "name": "Minoxidil",
+      "commonNames": [
+        "Minoxidil",
+        "Loniten",
+        "米诺地尔",
+        "直接血管扩张剂",
+        "Peripheral vasodilator"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=minoxidil%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine"
+      ],
+      "summary": "米诺地尔是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C02DC01"
+        ],
+        "drugClass": [
+          "直接血管扩张剂",
+          "Peripheral vasodilator",
+          "Direct vasodilator",
+          "Antihypertensive"
+        ],
+        "indications": [
+          "Severe hypertension contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause fluid retention, tachycardia, pericardial effusion, and hypertrichosis."
+        ],
+        "majorInteractions": [
+          "Other antihypertensives can increase hypotension risk.",
+          "Diuretics and beta blockers are often relevant in clinical management but require monitoring."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Heart rate",
+          "Fluid retention/weight",
+          "Pericardial symptoms when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Minoxidil label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=minoxidil%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C02DC01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02DC01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": 75,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 4.2,
+            "max": 4.2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Blood-pressure effect persists much longer than plasma half-life; do not equate duration with half-life."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Minoxidil label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=minoxidil%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 2.5,
+            "commonMin": 5,
+            "strongMin": 10,
+            "heavyMin": 100
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pravastatin",
+      "commonNames": [
+        "Pravastatin",
+        "Pravachol",
+        "普伐他汀",
+        "他汀类",
+        "HMG-CoA还原酶抑制剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pravastatin%20sodium%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "普伐他汀是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C10AA03"
+        ],
+        "drugClass": [
+          "他汀类",
+          "HMG-CoA还原酶抑制剂",
+          "Statin",
+          "Lipid-lowering medicine"
+        ],
+        "indications": [
+          "Hyperlipidemia and cardiovascular risk-reduction contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause myopathy/rhabdomyolysis and liver enzyme abnormalities."
+        ],
+        "majorInteractions": [
+          "Other myopathy-risk drugs can increase muscle toxicity risk.",
+          "Some transport inhibitors can increase statin exposure."
+        ],
+        "monitoring": [
+          "LDL-C response",
+          "Muscle symptoms",
+          "Creatine kinase when clinically indicated",
+          "Liver enzymes when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Pravastatin label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pravastatin%20sodium%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C10AA03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 1.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 1.8,
+            "max": 1.8,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "LDL-C reduction is a longer-term pharmacodynamic endpoint and is not equivalent to Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Pravastatin label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pravastatin%20sodium%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 10,
+            "commonMin": 20,
+            "strongMin": 40,
+            "heavyMin": 80
+          }
+        }
+      ]
+    },
+    {
+      "name": "Simvastatin",
+      "commonNames": [
+        "Simvastatin",
+        "Zocor",
+        "辛伐他汀",
+        "他汀类",
+        "HMG-CoA还原酶抑制剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "辛伐他汀是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C10AA01"
+        ],
+        "drugClass": [
+          "他汀类",
+          "HMG-CoA还原酶抑制剂",
+          "Statin",
+          "Lipid-lowering medicine"
+        ],
+        "indications": [
+          "Hyperlipidemia and cardiovascular risk-reduction contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause myopathy/rhabdomyolysis and liver enzyme abnormalities; risk increases with interacting drugs and higher dose contexts."
+        ],
+        "majorInteractions": [
+          "Strong CYP3A inhibitors can markedly increase exposure.",
+          "Gemfibrozil and other myopathy-risk combinations require caution or avoidance per label."
+        ],
+        "monitoring": [
+          "LDL-C response",
+          "Muscle symptoms",
+          "Creatine kinase when clinically indicated",
+          "Liver enzymes when clinically indicated",
+          "Interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Simvastatin label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C10AA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1.3,
+            "max": 2.4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Simvastatin is a lactone prodrug; lipid response is a longer-term endpoint."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Simvastatin label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 5,
+            "commonMin": 10,
+            "strongMin": 20,
+            "heavyMin": 40
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ezetimibe",
+      "commonNames": [
+        "Ezetimibe",
+        "Zetia",
+        "依折麦布",
+        "胆固醇吸收抑制剂",
+        "Cholesterol absorption inhibitor"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ezetimibe%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "依折麦布是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C10AX09"
+        ],
+        "drugClass": [
+          "胆固醇吸收抑制剂",
+          "Cholesterol absorption inhibitor",
+          "Lipid-lowering medicine"
+        ],
+        "indications": [
+          "Hyperlipidemia contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can be associated with liver enzyme abnormalities when combined with statins and rare muscle symptoms."
+        ],
+        "majorInteractions": [
+          "Cyclosporine can increase ezetimibe exposure.",
+          "Bile acid sequestrants can reduce ezetimibe exposure if timing is not separated."
+        ],
+        "monitoring": [
+          "LDL-C response",
+          "Liver enzymes when combined with statins and clinically indicated",
+          "Muscle symptoms when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Ezetimibe label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ezetimibe%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C10AX09",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AX09",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 4,
+            "max": 12,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Approximate Tmax for parent ezetimibe; ezetimibe-glucuronide peaks earlier in labeling."
+          },
+          "eliminationHalfLife": {
+            "min": 22,
+            "max": 22,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Lipid response is a longer-term endpoint and should not be equated with plasma Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Ezetimibe label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ezetimibe%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 10,
+            "commonMin": 10
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ticagrelor",
+      "commonNames": [
+        "Ticagrelor",
+        "Brilinta",
+        "替格瑞洛",
+        "P2Y12抑制剂",
+        "P2Y12 inhibitor"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ticagrelor%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "替格瑞洛是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AC24"
+        ],
+        "drugClass": [
+          "P2Y12抑制剂",
+          "P2Y12 inhibitor",
+          "Antiplatelet",
+          "Antithrombotic"
+        ],
+        "indications": [
+          "Acute coronary syndrome and selected cardiovascular risk contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Bleeding can be serious or fatal; dyspnea and bradyarrhythmia-related events may occur."
+        ],
+        "majorInteractions": [
+          "Strong CYP3A inhibitors can increase ticagrelor exposure.",
+          "Strong CYP3A inducers can reduce exposure.",
+          "Other antithrombotics or NSAIDs can increase bleeding risk."
+        ],
+        "monitoring": [
+          "Bleeding symptoms",
+          "Dyspnea",
+          "Heart rate symptoms when clinically indicated",
+          "Interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Ticagrelor label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ticagrelor%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AC24",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC24",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1.5,
+            "max": 1.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 7,
+            "max": 9,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Approximate half-life for ticagrelor and active metabolite."
+          },
+          "notes": [
+            "Platelet inhibition and bleeding risk are pharmacodynamic outcomes distinct from plasma Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Ticagrelor label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ticagrelor%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 60,
+            "commonMin": 90,
+            "strongMin": 180
+          }
+        }
+      ]
+    },
+    {
+      "name": "Prasugrel",
+      "commonNames": [
+        "Prasugrel",
+        "Effient",
+        "普拉格雷",
+        "P2Y12抑制剂",
+        "P2Y12 inhibitor"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prasugrel%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "普拉格雷是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AC22"
+        ],
+        "drugClass": [
+          "P2Y12抑制剂",
+          "P2Y12 inhibitor",
+          "Antiplatelet",
+          "Antithrombotic"
+        ],
+        "indications": [
+          "Acute coronary syndrome with PCI contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Bleeding can be serious or fatal; risk depends on age, body weight, history of stroke/TIA, procedures, and interacting drugs."
+        ],
+        "majorInteractions": [
+          "Other antithrombotics or NSAIDs can increase bleeding risk.",
+          "CYP interactions are less central than with some alternatives but clinical context matters."
+        ],
+        "monitoring": [
+          "Bleeding symptoms",
+          "Procedure timing",
+          "Concomitant antithrombotic drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Prasugrel label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prasugrel%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AC22",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC22",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 0.5,
+            "max": 0.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Approximate Tmax for active metabolite."
+          },
+          "eliminationHalfLife": {
+            "min": 7,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Approximate half-life for active metabolite."
+          },
+          "notes": [
+            "Platelet inhibition is not the same concept as plasma Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Prasugrel label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prasugrel%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 5,
+            "commonMin": 10,
+            "strongMin": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Edoxaban",
+      "commonNames": [
+        "Edoxaban",
+        "Savaysa",
+        "Lixiana",
+        "依度沙班",
+        "直接口服抗凝药",
+        "Xa因子抑制剂"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=edoxaban%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "依度沙班是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AF03"
+        ],
+        "drugClass": [
+          "直接口服抗凝药",
+          "Xa因子抑制剂",
+          "DOAC",
+          "Factor Xa inhibitor",
+          "Antithrombotic"
+        ],
+        "indications": [
+          "Stroke/systemic embolism risk reduction and venous thromboembolism contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Bleeding can be serious or fatal. Renal function affects exposure and labeled use."
+        ],
+        "majorInteractions": [
+          "P-gp inhibitors can increase exposure in some contexts.",
+          "Other anticoagulants, antiplatelets, or NSAIDs can increase bleeding risk."
+        ],
+        "monitoring": [
+          "Bleeding symptoms",
+          "Renal function",
+          "Concomitant antithrombotics/interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Edoxaban label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=edoxaban%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AF03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 10,
+            "max": 14,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Routine plasma concentration monitoring is not typical; selected anti-Xa/drug-calibrated testing may be used in specific scenarios."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Edoxaban label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=edoxaban%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 15,
+            "commonMin": 30,
+            "strongMin": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Enoxaparin",
+      "commonNames": [
+        "Enoxaparin",
+        "Lovenox",
+        "Enoxaparin sodium",
+        "依诺肝素",
+        "低分子肝素",
+        "Low molecular weight heparin"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enoxaparin%20sodium%20injection",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "antithrombotic",
+        "prescription-medicine"
+      ],
+      "summary": "依诺肝素是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AB05"
+        ],
+        "drugClass": [
+          "低分子肝素",
+          "Low molecular weight heparin",
+          "Anticoagulant",
+          "Antithrombotic"
+        ],
+        "indications": [
+          "Venous thromboembolism treatment/prophylaxis and selected ACS contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Bleeding can be serious or fatal. Renal impairment can increase exposure and bleeding risk."
+        ],
+        "majorInteractions": [
+          "Other anticoagulants, antiplatelets, or NSAIDs can increase bleeding risk.",
+          "Neuraxial anesthesia/spinal puncture can increase spinal hematoma risk."
+        ],
+        "monitoring": [
+          "Bleeding symptoms",
+          "CBC/platelets",
+          "Renal function",
+          "Anti-Xa in selected scenarios",
+          "Procedure timing"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Enoxaparin label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enoxaparin%20sodium%20injection",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AB05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AB05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "subcutaneous",
+          "formulation": "injection",
+          "peakEffect": {
+            "min": 3,
+            "max": 5,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "Peak anti-Xa activity after subcutaneous administration."
+          },
+          "eliminationHalfLife": {
+            "min": 4.5,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Anti-Xa activity is an anticoagulant activity measure, not routine plasma concentration monitoring."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Enoxaparin label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enoxaparin%20sodium%20injection",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "SUBCUTANEOUS",
+          "dose": {
+            "units": "mg",
+            "lightMin": 30,
+            "commonMin": 40,
+            "strongMin": 80,
+            "heavyMin": 150
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ranolazine",
+      "commonNames": [
+        "Ranolazine",
+        "Ranexa",
+        "雷诺嗪",
+        "抗心绞痛药",
+        "Late sodium current inhibitor"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranolazine%20extended-release%20tablet",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Clinically important toxicity depends on indication, dose context, organ function, interacting drugs, and patient-specific risk factors."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "雷诺嗪是心血管相关处方药。本条目用于药代/药效时间进程、监测和相互作用学习索引，不构成医疗建议。",
+      "dosageRemark": "临床参考剂量兼容旧剂量模型显示：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01EB18"
+        ],
+        "drugClass": [
+          "抗心绞痛药",
+          "Late sodium current inhibitor",
+          "Antianginal"
+        ],
+        "indications": [
+          "Chronic angina contexts depending on label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can prolong QT interval; renal/hepatic impairment and interacting drugs affect risk."
+        ],
+        "majorInteractions": [
+          "Strong CYP3A inhibitors can increase exposure and may be contraindicated per label.",
+          "CYP3A inducers can reduce exposure.",
+          "Other QT-prolonging contexts require caution."
+        ],
+        "monitoring": [
+          "Angina symptoms",
+          "ECG/QT when clinically indicated",
+          "Renal function",
+          "Interacting drugs"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Ranolazine label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranolazine%20extended-release%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01EB18",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01EB18",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "extended-release tablet",
+          "tmax": {
+            "min": 2,
+            "max": 5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 7,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 3,
+            "max": 3,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Antianginal response and QT effects are pharmacodynamic outcomes distinct from plasma Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Ranolazine label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranolazine%20extended-release%20tablet",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical monitoring is not usually plasma-concentration guided.",
+        "pharmacokineticParametersAvailable": true
+      },
+      "roas": [
+        {
+          "name": "ORAL",
+          "dose": {
+            "units": "mg",
+            "lightMin": 500,
+            "commonMin": 1000
           }
         }
       ]
