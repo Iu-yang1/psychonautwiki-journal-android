@@ -1,219 +1,57 @@
-Copyright (C) 2022 Isaak Hanimann.
-
-See the end of the file for license conditions.
-
 # PsychonautWiki Journal
 
-PsychonautWiki Journal is an Android app to make recreational drug users safer. The aim is to provide features that are attractive to users as well as useful from a harm-reduction perspective.
+PsychonautWiki Journal is an app to make recreational drug users safer. The aim is to provide features that are attractive to users as well as useful from a harm-reduction perspective.
 This app is built natively with [Jetpack Compose](https://developer.android.com/jetpack/compose).
 
-This is an open source fork that maintains development after the project closed.
+💻 Requirements
+------------
+To try out this app, clone this repository and open the root directory in [Android Studio](https://developer.android.com/studio).
 
-![A presentation of the App](https://github.com/huanli233/psychonautwiki-journal-android/blob/main/metadata/en-US/images/Google%20Pixel%204%20XL%20Presentation.png?raw=true)
+## Cardiovascular data
 
-Download the latest version from [GitHub releases](https://github.com/huanli233/psychonautwiki-journal-android/releases/latest).
+The bundled offline substance database includes cardiovascular reference entries covering:
 
-## Clinical Pharmacology Data
+- cardiac glycosides, antiarrhythmics, antianginal medicines, antihypertensives, heart-failure therapies, and diuretics;
+- antiplatelets, anticoagulants, thrombolytics, and GP IIb/IIIa inhibitors;
+- statins and non-statin lipid-lowering medicines;
+- peripheral-circulation and pulmonary-hypertension medicines.
 
-The local `app/src/main/res/raw/substances.json` file also supports optional clinical pharmacology fields for cardiovascular and peripheral-circulation medicines. These fields are additive and old PsychonautWiki-style entries remain valid when they do not define them.
+Some less commonly used regional products and formulation-specific records still require additional label review.
 
-New optional fields on a substance:
+Clinical entries use these optional fields:
 
-```json
-{
-  "clinicalInfo": {
-    "atcCodes": ["C08CA01"],
-    "drugClass": ["Calcium channel blocker", "CCB"],
-    "indications": ["Hypertension"],
-    "contraindications": [],
-    "majorWarnings": [],
-    "majorInteractions": [],
-    "monitoring": [],
-    "sourceRefs": [
-      {
-        "title": "DailyMed label",
-        "url": "https://dailymed.nlm.nih.gov/",
-        "sourceType": "regulatory-label",
-        "accessedDate": "2026-06-23"
-      }
-    ]
-  },
-  "timeCourse": [
-    {
-      "route": "oral",
-      "formulation": "tablet",
-      "tmax": {
-        "min": 6,
-        "max": 12,
-        "unit": "h",
-        "basis": "plasma concentration"
-      },
-      "durationOfAction": {
-        "min": 24,
-        "max": null,
-        "unit": "h",
-        "basis": "clinical effect"
-      },
-      "notes": ["Tmax and peak clinical effect may not be identical."],
-      "sourceRefs": []
-    }
-  ],
-  "tdm": {
-    "isRoutinelyMonitored": true,
-    "monitoringType": "serum concentration",
-    "analytes": ["digoxin"],
-    "specimen": "serum",
-    "samplingTime": "At least 6 hours after the last dose; preferably trough at steady state when clinically feasible.",
-    "therapeuticRanges": [
-      {
-        "indication": "heart failure literature-oriented lower range",
-        "range": "0.5-0.9",
-        "unit": "ng/mL",
-        "note": "Example laboratory reference; local policy may differ."
-      }
-    ],
-    "toxicityThresholds": [
-      {
-        "threshold": ">2.0",
-        "unit": "ng/mL",
-        "note": "Interpret with clinical context."
-      }
-    ],
-    "criticalValues": [],
-    "interpretationCaveats": [
-      "Interpret with sampling time, renal function, electrolytes, ECG, symptoms, and interacting drugs."
-    ],
-    "sourceRefs": []
-  }
-}
-```
+- `clinicalInfo` for drug class, indications, contraindications, warnings, interactions, routine clinical monitoring, and sources;
+- `timeCourse` for onset, Tmax, peak effect, duration of action, elimination half-life, steady state, washout, notes, and formulation-specific sources;
+- `tdm` for true concentration monitoring or for explaining why clinical, ECG, coagulation, or laboratory markers are used instead;
+- `doseUseReferences` for label-, guideline-, protocol-, or literature-reported regimens;
+- `sourceRefs` for traceable regulatory labels, guidelines, laboratory catalogs, pharmacokinetic studies, and reviews.
 
-`timeCourse` is for pharmacokinetic/pharmacodynamic time-course data such as onset, Tmax, peak effect, duration of action, elimination half-life, time to steady state, and washout. Do not mix this with therapeutic drug monitoring, toxic concentration, or treatment-window data.
+Monitoring is not the same as therapeutic drug monitoring. Blood pressure, heart rate, ECG, INR, aPTT, anti-Xa activity, electrolytes, renal function, liver enzymes, CK, and lipid panels are clinical or laboratory monitoring markers. They must not be represented as routine plasma drug concentrations unless the medicine has a supported TDM use.
 
-`tdm` is for therapeutic drug monitoring and concentration interpretation. It is intentionally separate from `timeCourse`: PK describes average drug behavior, while TDM describes how a measured patient sample may be interpreted. Non-routine examples, such as amlodipine or metoprolol, should set `isRoutinelyMonitored` to `false` and explain that monitoring is usually based on clinical response or safety labs rather than plasma concentration. Warfarin should be represented as INR/PT effect monitoring, not routine plasma concentration TDM.
+`doseUseReferences` is a source index, not a dose recommendation. It must not be used for prescribing, self-medication, or dose adjustment.
 
-Medical disclaimer: This information is for educational reference and data indexing only. It is not medical advice and must not be used for diagnosis, prescribing, self-medication, or dose adjustment. Always consult qualified medical professionals and local approved labeling.
+`timeCourse` is not automatically a clinical-effect curve. Tmax describes peak plasma concentration; peak clinical effect may occur at another time. Duration of action and washout must not be inferred directly from elimination half-life.
 
-本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量。实际用药必须咨询具备资质的医疗专业人员，并遵循当地批准说明书。
+Source priority is:
 
-Recommended sources:
+1. Current DailyMed, FDA, EMA, or official local product labeling.
+2. ACC/AHA, ESC, CHEST, ASH, KDIGO, and other relevant clinical guidelines.
+3. Clinical laboratory catalogs for TDM and coagulation-assay interpretation.
+4. Human pharmacokinetic studies, systematic reviews, and authoritative reviews.
 
-- DailyMed for labels, clinical pharmacology, pharmacokinetics, Tmax, Cmax, AUC, half-life, and steady state.
-- openFDA drug label API for bulk screening and label-section extraction, with final verification against DailyMed or FDA source labels.
-- Drugs@FDA for FDA-approved labels, application numbers, and label history.
-- RxNorm / RxNav for normalized names, brand names, RxCUI, and NDC relationships.
-- PubMed / NCBI E-utilities for reviews and pharmacokinetic literature.
-- ESC, ACC/AHA, Chinese guidelines, Goodman & Gilman, AHFS, Martindale, and clinical pharmacology reviews for context.
-- Laboratory TDM catalogs only for true TDM, therapeutic-window, or toxic-concentration fields; do not mix those values into `timeCourse`.
-
-Cardiovascular example fragments live under `tools/drugdata/cardiovascular/` and are split by maintenance category, for example `cardiac_glycosides.json`, `antiarrhythmics.json`, `antithrombotics.json`, and `beta_blockers.json`.
-
-## Endocrine / HRT data pack
-
-The local Endocrine / HRT data pack contains route- and formulation-specific estradiol entries, conjugated estrogens, ethinylestradiol, estetrol, cyproterone acetate (CPA), antiandrogenic progestins, and other progestogens. Source files live under:
-
-```text
-tools/drugdata/endocrine/
-  estrogens/
-  antiandrogenic_progestins/
-  progestogens/
-```
-
-The module is for education, source indexing, personal-record support, and preparation for possible future HRT trend-model research. It does not provide medical advice, recommend a dose, replace a clinician, predict E2 or testosterone, or adjust treatment.
-
-New optional fields include:
-
-- `endocrineInfo`: hormone class, mechanisms, affected hormones, monitoring labs, assay caveats, safety signals, model roles, and sources.
-- `doseUseReferences`: label, guideline, or literature use references. These are not recommended doses. A `source needed` value means that no numeric regimen has been transcribed into the data pack.
-- `hrtModelInfo`: a future-model compatibility and data-requirement marker only. It does not mean that the current app can predict hormone levels or guide treatment.
-- Extended `timeCourse` flags for depot release, peak/trough windows, injection-interval sensitivity, and assay-timing sensitivity.
-
-Estradiol and testosterone results can be affected by sampling time, route, formulation, injection interval, assay method, SHBG, albumin, liver or kidney function, and interacting medicines. Immunoassays and LC-MS/MS methods may not agree. Ethinylestradiol and conjugated estrogens must not be interpreted as ordinary serum 17beta-estradiol exposure and are marked incompatible with a standard serum E2 model.
-
-Recommended endocrine sources include:
-
-- Endocrine Society 2017 Clinical Practice Guideline.
-- WPATH Standards of Care Version 8.
-- UCSF Transgender Care Guidelines.
-- DailyMed and FDA labels.
-- EMA, MHRA, and UK EMC product information and safety communications.
-- PubMed pharmacokinetic studies.
-- Estradiol assay-accuracy literature comparing LC-MS/MS and immunoassays.
-- CPA testosterone-suppression studies and regulatory meningioma safety communications.
-- Systematic reviews of progestogen use in feminizing hormone therapy.
-
-All generated raw resources use stable base files:
-
-```text
-app/src/main/res/raw/substances_base.json
-app/src/main/res/raw-zh-rCN/substances_base.json
-```
-
-The generator recursively merges JSON data packs under `tools/drugdata/` into the application resources. Output files are never used as their own build input. Rebuild the default and localized raw resources with:
-
-```bash
-python tools/drugdata/build_endocrine_pack.py
-python tools/drugdata/check_endocrine_pack.py
-python tools/drugdata/build_substances_json.py
-```
-
-The base files normally do not need to be regenerated. `tools/drugdata/initialize_substances_base.py` is a migration utility for deliberately rebuilding the base boundary from an existing generated resource.
-
-## Dose use references / Reference regimen bars
-
-`doseUseReferences` is the clinical-medicine dose-use indexing structure used by cardiovascular and Endocrine / HRT entries. It is separate from the original PsychonautWiki `roas.dose` model.
-
-The original `roas.dose` fields and their `light`, `common`, `strong`, and `heavy` labels describe the legacy PsychonautWiki-style recreational dose classification. They must not be used to represent prescription-medicine regimens. All currently managed cardiovascular and Endocrine / HRT entries have been migrated away from `roas.dose`.
-
-`ReferenceRegimenBar` displays ranges reported in labels, guidelines, protocols, or studies. It can distinguish:
-
-- per-dose, daily-total, weekly-total, patch-delivery-rate, infusion-rate, weight-based, body-surface-area-based, and component-dose bases;
-- initial, maintenance, maximum-labeled, study, guideline, label, and protocol ranges;
-- scalar ranges from component-aware combination products.
-
-The bar is not a recommended dose. It must not be used for prescribing, self-medication, dose adjustment, anticoagulant titration, or self-adjustment of hormone therapy. Cardiovascular interpretation can depend on indication, renal function, electrolytes, blood pressure, heart rate, ECG, INR or anti-Xa results, bleeding risk, and interacting drugs. Hormone interpretation can depend on route, formulation, time since the last dose, assay method, SHBG, albumin, liver function, and individual absorption.
-
-Every numeric range must retain `sourceRefs`. When a reliable numeric range is unavailable, use `source needed` and null boundaries rather than inventing a value.
-
-Clinical dose-reference maintenance commands:
-
-```bash
-python tools/drugdata/migrate_clinical_dose_references.py
-python tools/drugdata/review_cardiovascular_schedules.py
-python tools/drugdata/build_substances_json.py
-python tools/drugdata/check_clinical_dose_references.py
-```
-
-`review_cardiovascular_schedules.py` reviews previously unresolved administration
-frequencies against official label dosage sections where available. It records the
-review date and label match in the source data. A normalized schedule remains an
-indexing aid only: indication, formulation, treatment phase, laboratory results,
-organ function, interactions, and the current locally approved label still govern
-clinical interpretation.
-
-## Local release signing
-
-Release signing credentials are loaded from `release/signing.properties` when that
-file exists. The entire `release/` directory is ignored by Git. Use
-`release-signing.properties.example` as the field template, and keep the keystore
-and its passwords outside version control. The same keystore must be preserved for
-future updates signed under the same application ID.
-
-Without the local properties file, Gradle can still build an unsigned release APK.
+All clinical information is provided for education and data indexing. It is not medical advice.
 
 ## License
+```
+Licensed under the GNU GENERAL PUBLIC LICENCE, Version 3.
+You may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-    This file is part of PsychonautWiki Journal.
-    
-    PsychonautWiki Journal is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or (at
-    your option) any later version.
-    
-    PsychonautWiki Journal is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-    
-    You should have received a copy of the GNU General Public License
-    along with PsychonautWiki Journal.  If not, see https://www.gnu.org/licenses/gpl-3.0.en.html.
+    https://www.gnu.org/licenses/gpl-3.0.en.html
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```

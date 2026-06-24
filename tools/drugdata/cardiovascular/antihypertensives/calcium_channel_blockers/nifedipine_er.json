@@ -1,0 +1,184 @@
+{
+  "substances": [
+    {
+      "name": "Nifedipine ER",
+      "commonNames": [
+        "Nifedipine ER",
+        "Nifedipine extended-release",
+        "硝苯地平缓释/控释片",
+        "Adalat CC",
+        "Procardia XL",
+        "DHP CCB",
+        "CCB"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Excessive nifedipine effect or overdose can cause hypotension, reflex tachycardia or bradycardia, shock, and metabolic disturbances.",
+        "Immediate-release and extended-release products have different time-course profiles and should not be treated as interchangeable timeline entries."
+      ],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine",
+        "atc-c08"
+      ],
+      "summary": "硝苯地平缓释/控释制剂的独立临床药理索引；不得套用即释胶囊的时间进程。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C08CA05"
+        ],
+        "drugClass": [
+          "钙通道阻滞剂",
+          "二氢吡啶类钙通道阻滞剂",
+          "Calcium channel blocker",
+          "Dihydropyridine calcium channel blocker",
+          "Antihypertensive",
+          "Antianginal",
+          "C08 钙通道阻滞剂",
+          "Calcium channel blockers",
+          "DHP CCB"
+        ],
+        "indications": [
+          "Hypertension",
+          "Angina depending on formulation and local label"
+        ],
+        "contraindications": [],
+        "majorWarnings": [
+          "Can cause symptomatic hypotension, edema, flushing, headache, and reflex tachycardia.",
+          "Immediate-release formulations have safety concerns in some cardiovascular contexts; follow local approved labeling.",
+          "Immediate-release and extended-release nifedipine must not be treated as interchangeable time courses."
+        ],
+        "majorInteractions": [
+          "Strong CYP3A inhibitors can increase nifedipine exposure.",
+          "Other antihypertensives can increase blood pressure-lowering effect.",
+          "CYP3A inhibitors or inducers may alter exposure; verify the formulation-specific label."
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Heart rate",
+          "Edema",
+          "Symptoms of hypotension",
+          "Interacting CYP3A drugs",
+          "Peripheral edema",
+          "ECG/AV conduction when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed nifedipine capsule label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "DailyMed nifedipine extended-release label",
+            "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C08CA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "extended-release tablet",
+          "tmax": {
+            "min": 2.5,
+            "max": 5,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 7,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Labels describe a second small peak or shoulder around 6-12 hours for some extended-release tablets."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed nifedipine extended-release label",
+              "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "not routinely monitored by plasma concentration",
+        "reason": "Clinical use is usually guided by blood pressure, heart rate, symptoms, edema, and interacting drugs rather than plasma concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed nifedipine extended-release label",
+            "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "roas": [
+        {
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension in the cited extended-release label",
+          "population": "Adults; formulation-specific",
+          "route": "oral",
+          "formulation": "extended-release tablet",
+          "amountText": "30-90 mg total daily across the cited label range",
+          "scheduleText": "Once daily; swallow intact",
+          "ranges": [
+            {
+              "min": 30,
+              "max": 90,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Extended-release label range",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed nifedipine extended-release label",
+              "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed nifedipine extended-release label",
+          "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ]
+    }
+  ]
+}

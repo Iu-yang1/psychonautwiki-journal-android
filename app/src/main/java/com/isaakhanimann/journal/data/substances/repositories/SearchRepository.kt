@@ -124,9 +124,15 @@ class SearchRepository @Inject constructor(
             currentSubstance.name +
             currentSubstance.categories +
             categories.map { it.name } +
+            currentSubstance.sourceRefs.flatMap { source ->
+                listOf(source.title, source.sourceType)
+            } +
             clinicalInfo?.atcCodes.orEmpty() +
             clinicalInfo?.drugClass.orEmpty() +
             clinicalInfo?.indications.orEmpty() +
+            clinicalInfo?.contraindications.orEmpty() +
+            clinicalInfo?.majorWarnings.orEmpty() +
+            clinicalInfo?.majorInteractions.orEmpty() +
             clinicalInfo?.monitoring.orEmpty() +
             listOfNotNull(tdm?.monitoringType, tdm?.reason, tdm?.specimen, tdm?.samplingTime, tdm?.assayMethod) +
             tdm?.analytes.orEmpty() +

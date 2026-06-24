@@ -121,6 +121,7 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
         val doseUseReferences =
             parseDoseUseReferences(jsonSubstance.getOptionalJSONArray("doseUseReferences"))
         val hrtModelInfo = parseHrtModelInfo(jsonSubstance.getOptionalJSONObject("hrtModelInfo"))
+        val sourceRefs = parseSourceRefs(jsonSubstance.getOptionalJSONArray("sourceRefs"))
         return Substance(
             name = name,
             commonNames = commonNames,
@@ -145,6 +146,7 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             endocrineInfo = endocrineInfo,
             doseUseReferences = doseUseReferences,
             hrtModelInfo = hrtModelInfo,
+            sourceRefs = sourceRefs,
         )
     }
 

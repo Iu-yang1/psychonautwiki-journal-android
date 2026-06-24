@@ -1,0 +1,336 @@
+{
+  "substances": [
+    {
+      "name": "Ambrisentan",
+      "commonNames": [
+        "Ambrisentan",
+        "安立生坦",
+        "Letairis",
+        "ERA",
+        "Endothelin receptor antagonist",
+        "PAH"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine",
+        "atc-c02"
+      ],
+      "summary": "安立生坦（Ambrisentan）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C02KX02"
+        ],
+        "drugClass": [
+          "Endothelin receptor antagonist",
+          "Selective ETA receptor antagonist"
+        ],
+        "indications": [
+          "Pulmonary arterial hypertension"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "Idiopathic pulmonary fibrosis",
+          "History of hypersensitivity"
+        ],
+        "majorWarnings": [
+          "Embryo-fetal toxicity",
+          "Fluid retention",
+          "Pulmonary edema in pulmonary veno-occlusive disease",
+          "Decreased sperm counts"
+        ],
+        "majorInteractions": [
+          "Cyclosporine increases exposure"
+        ],
+        "monitoring": [
+          "Pregnancy testing where applicable",
+          "Hemoglobin/hematocrit",
+          "Fluid retention and weight",
+          "Liver symptoms",
+          "Functional class and exercise capacity"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed LETAIRIS label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 15,
+            "max": 15,
+            "unit": "h",
+            "basis": "terminal label pharmacokinetics",
+            "note": "The cited label also describes an effective half-life of about 9 hours."
+          },
+          "notes": [
+            "Clinical response is assessed by PAH status rather than plasma concentration."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed LETAIRIS label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed LETAIRIS label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Adult pulmonary arterial hypertension in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "5-10 mg total daily across the cited titration range",
+          "scheduleText": "Once daily; titration no more often than every 4 weeks",
+          "ranges": [
+            {
+              "min": 5,
+              "max": 5,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "initial",
+              "label": "Initial label dose",
+              "components": []
+            },
+            {
+              "min": 5,
+              "max": 10,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Label range",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed LETAIRIS label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed LETAIRIS label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    },
+    {
+      "name": "Macitentan",
+      "commonNames": [
+        "Macitentan",
+        "马昔腾坦",
+        "Opsumit",
+        "ERA",
+        "Endothelin receptor antagonist",
+        "PAH"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e484a50-55db-4b85-8c57-6cd1b0353abd",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine",
+        "atc-c02"
+      ],
+      "summary": "马昔腾坦（Macitentan）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C02KX04"
+        ],
+        "drugClass": [
+          "Dual endothelin receptor antagonist",
+          "Pulmonary vasodilator"
+        ],
+        "indications": [
+          "Pulmonary arterial hypertension"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "History of hypersensitivity"
+        ],
+        "majorWarnings": [
+          "Embryo-fetal toxicity",
+          "Fluid retention",
+          "Anemia",
+          "Pulmonary edema in pulmonary veno-occlusive disease",
+          "Hepatotoxicity signal"
+        ],
+        "majorInteractions": [
+          "Strong CYP3A4 inducers reduce exposure",
+          "Strong CYP3A4 inhibitors and combined CYP inhibitors may increase exposure"
+        ],
+        "monitoring": [
+          "Pregnancy testing where applicable",
+          "Hemoglobin/hematocrit",
+          "Fluid retention and weight",
+          "Liver enzymes when clinically indicated",
+          "Functional class and exercise capacity"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed OPSUMIT label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e484a50-55db-4b85-8c57-6cd1b0353abd",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 8,
+            "max": 8,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 16,
+            "max": 16,
+            "unit": "h",
+            "basis": "parent drug label pharmacokinetics"
+          },
+          "notes": [
+            "The active metabolite has an approximately 48-hour half-life and contributes materially to activity."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed OPSUMIT label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e484a50-55db-4b85-8c57-6cd1b0353abd",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed OPSUMIT label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e484a50-55db-4b85-8c57-6cd1b0353abd",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Adult pulmonary arterial hypertension in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "10 mg total daily in the cited label",
+          "scheduleText": "Once daily",
+          "ranges": [
+            {
+              "min": 10,
+              "max": 10,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed OPSUMIT label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e484a50-55db-4b85-8c57-6cd1b0353abd",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed OPSUMIT label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e484a50-55db-4b85-8c57-6cd1b0353abd",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    }
+  ]
+}

@@ -61,7 +61,8 @@
           "Antihypertensive",
           "Antianginal",
           "C08 钙通道阻滞剂",
-          "Calcium channel blockers"
+          "Calcium channel blockers",
+          "DHP CCB"
         ],
         "indications": [
           "Hypertension",
@@ -75,25 +76,31 @@
         ],
         "majorInteractions": [
           "Strong CYP3A inhibitors may increase amlodipine exposure.",
-          "Other antihypertensives may increase blood pressure-lowering effect."
+          "Other antihypertensives may increase blood pressure-lowering effect.",
+          "CYP3A inhibitors or inducers may alter exposure; verify the formulation-specific label."
         ],
         "monitoring": [
           "Blood pressure",
           "Edema",
-          "Symptoms of hypotension"
+          "Symptoms of hypotension",
+          "Heart rate",
+          "Peripheral edema",
+          "ECG/AV conduction when clinically indicated"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed amlodipine besylate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C08CA01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -136,7 +143,8 @@
               "title": "DailyMed amlodipine besylate label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -155,7 +163,8 @@
             "title": "DailyMed amlodipine besylate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -204,9 +213,26 @@
               "title": "DailyMed amlodipine besylate label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed amlodipine besylate label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C08CA01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -255,7 +281,9 @@
         ],
         "majorWarnings": [
           "Severe hypotension, particularly with upright posture, may occur.",
-          "Tolerance can develop with continuous nitrate exposure; labels commonly include a nitrate-free interval for transdermal systems."
+          "Tolerance can develop with continuous nitrate exposure; labels commonly include a nitrate-free interval for transdermal systems.",
+          "PDE5 inhibitors and soluble guanylate cyclase stimulators can cause severe hypotension.",
+          "Continuous exposure can produce nitrate tolerance."
         ],
         "majorInteractions": [
           "PDE-5 inhibitors and soluble guanylate cyclase stimulators may cause severe hypotension.",
@@ -265,20 +293,24 @@
           "Blood pressure",
           "Symptoms of hypotension",
           "Headache",
-          "Angina symptoms"
+          "Angina symptoms",
+          "Headache and hypotension symptoms",
+          "Nitrate tolerance and nitrate-free interval where formulation-appropriate"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed nitroglycerin sublingual tablet label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01DA02",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA02",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -308,14 +340,16 @@
           },
           "notes": [
             "Sublingual nitroglycerin time course reflects pharmacodynamic vasodilatory effect, not a TDM target.",
-            "Tmax is not listed here because this label passage describes effect timing rather than plasma concentration peak."
+            "Tmax is not listed here because this label passage describes effect timing rather than plasma concentration peak.",
+            "Onset and duration are route- and formulation-specific."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed nitroglycerin sublingual tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -352,14 +386,16 @@
           },
           "notes": [
             "Patch timing is formulation-specific and should not be transferred to sublingual or IV nitroglycerin.",
-            "This entry does not encode clinical dose guidance."
+            "This entry does not encode clinical dose guidance.",
+            "Onset and duration are route- and formulation-specific."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed nitroglycerin transdermal system label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e98a2692-1cb9-4994-98d8-1d8d9ef1a256",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -367,15 +403,17 @@
           "route": "intravenous",
           "formulation": "infusion",
           "notes": [
-            "source needed: add label-verified onset, effect titration timing, and offset for the specific IV formulation before displaying numeric values.",
-            "IV nitroglycerin is included here to validate multiple route/formulation records without inferring values from sublingual or transdermal data."
+            "The cited source does not encode a single universal value; add label-verified onset, effect titration timing, and offset for the specific IV formulation before displaying numeric values.",
+            "IV nitroglycerin is included here to validate multiple route/formulation records without inferring values from sublingual or transdermal data.",
+            "Onset and duration are route- and formulation-specific."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed nitroglycerin reference search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=nitroglycerin%20injection",
               "sourceType": "source-needed",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "SOURCE_REFERENCE"
             }
           ]
         }
@@ -394,13 +432,15 @@
             "title": "DailyMed nitroglycerin sublingual tablet label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "DailyMed nitroglycerin transdermal system label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e98a2692-1cb9-4994-98d8-1d8d9ef1a256",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -444,7 +484,8 @@
               "title": "DailyMed nitroglycerin sublingual tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -478,7 +519,8 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Nitroglycerin",
@@ -513,12 +555,43 @@
               "title": "DailyMed nitroglycerin reference search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=nitroglycerin%20injection",
               "sourceType": "source-needed",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "SOURCE_REFERENCE"
             }
           ],
           "reviewedLabelMatch": "Nitroglycerin",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed nitroglycerin sublingual tablet label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01DA02",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA02",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "DailyMed nitroglycerin transdermal system label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e98a2692-1cb9-4994-98d8-1d8d9ef1a256",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "DailyMed nitroglycerin reference search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=nitroglycerin%20injection",
+          "sourceType": "source-needed",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "SOURCE_REFERENCE"
         }
       ]
     }

@@ -1,0 +1,651 @@
+{
+  "substances": [
+    {
+      "name": "Epoprostenol",
+      "commonNames": [
+        "Epoprostenol",
+        "依前列醇",
+        "Veletri",
+        "Flolan",
+        "Prostacyclin",
+        "PGI2",
+        "PAH"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df502787-46ec-4dd1-a2c0-be90f6d95a5d",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "antithrombotic",
+        "prescription-medicine",
+        "atc-b01"
+      ],
+      "summary": "依前列醇（Epoprostenol）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AC09"
+        ],
+        "drugClass": [
+          "Prostacyclin",
+          "Pulmonary vasodilator",
+          "Platelet aggregation inhibitor"
+        ],
+        "indications": [
+          "Pulmonary arterial hypertension"
+        ],
+        "contraindications": [
+          "Congestive heart failure due to severe left ventricular systolic dysfunction",
+          "Pulmonary edema during dose ranging"
+        ],
+        "majorWarnings": [
+          "Abrupt withdrawal can cause rebound pulmonary hypertension",
+          "Hypotension",
+          "Bleeding",
+          "Catheter-related infection or delivery-system interruption"
+        ],
+        "majorInteractions": [
+          "Antiplatelet or anticoagulant therapy may increase bleeding risk",
+          "Other vasodilators may increase hypotension"
+        ],
+        "monitoring": [
+          "Continuous infusion integrity",
+          "Blood pressure and heart rate",
+          "PAH symptoms and functional class",
+          "Bleeding",
+          "Central-line infection"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed VELETRI label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df502787-46ec-4dd1-a2c0-be90f6d95a5d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "intravenous",
+          "formulation": "continuous infusion",
+          "onset": {
+            "min": 0,
+            "max": 0.1,
+            "unit": "h",
+            "basis": "pharmacodynamic effect"
+          },
+          "eliminationHalfLife": {
+            "min": 0,
+            "max": 0.1,
+            "unit": "h",
+            "basis": "expected human pharmacokinetics",
+            "note": "Human in-vivo half-life is expected to be no greater than 6 minutes."
+          },
+          "notes": [
+            "Continuous delivery is required; interruption can produce rapid clinical deterioration.",
+            "The concentration curve is governed by infusion delivery and very rapid degradation."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed VELETRI label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df502787-46ec-4dd1-a2c0-be90f6d95a5d",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed VELETRI label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df502787-46ec-4dd1-a2c0-be90f6d95a5d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "PAH continuous-infusion initiation in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "intravenous",
+          "formulation": "continuous infusion",
+          "amountText": "2 ng/kg/min initial infusion rate in the cited label",
+          "scheduleText": "Continuous IV infusion with protocol-driven titration",
+          "ranges": [
+            {
+              "min": 2,
+              "max": 2,
+              "unit": "ng/kg/min",
+              "basis": "weight-based",
+              "frequency": "continuous infusion",
+              "rangeKind": "initial",
+              "label": "Initial label infusion rate",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed VELETRI label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df502787-46ec-4dd1-a2c0-be90f6d95a5d",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed VELETRI label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df502787-46ec-4dd1-a2c0-be90f6d95a5d",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    },
+    {
+      "name": "Iloprost",
+      "commonNames": [
+        "Iloprost",
+        "伊洛前列素",
+        "Ventavis",
+        "Prostacyclin analog",
+        "PGI2 analog",
+        "PAH"
+      ],
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/021779s014lbl.pdf",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "antithrombotic",
+        "prescription-medicine",
+        "atc-b01"
+      ],
+      "summary": "伊洛前列素（Iloprost）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AC11"
+        ],
+        "drugClass": [
+          "Prostacyclin analog",
+          "Inhaled pulmonary vasodilator"
+        ],
+        "indications": [
+          "Pulmonary arterial hypertension"
+        ],
+        "contraindications": [
+          "History of hypersensitivity"
+        ],
+        "majorWarnings": [
+          "Hypotension and syncope",
+          "Pulmonary edema in pulmonary veno-occlusive disease",
+          "Bronchospasm",
+          "Bleeding"
+        ],
+        "majorInteractions": [
+          "Antihypertensives and vasodilators may increase hypotension",
+          "Anticoagulants or antiplatelets may increase bleeding risk"
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Syncope",
+          "Respiratory symptoms and bronchospasm",
+          "Bleeding",
+          "Functional class and exercise capacity"
+        ],
+        "sourceRefs": [
+          {
+            "title": "FDA Ventavis iloprost inhalation label",
+            "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/021779s014lbl.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "inhaled",
+          "formulation": "inhalation solution",
+          "notes": [
+            "Inhaled dosing produces route-specific short pulmonary exposure; the entry intentionally does not infer duration from intravenous half-life."
+          ],
+          "sourceRefs": [
+            {
+              "title": "FDA Ventavis iloprost inhalation label",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/021779s014lbl.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "FDA Ventavis iloprost inhalation label",
+            "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/021779s014lbl.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Adult pulmonary arterial hypertension in the cited inhalation label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "inhaled",
+          "formulation": "inhalation solution",
+          "amountText": "2.5-5 mcg per inhaled dose in the cited label",
+          "scheduleText": "6-9 inhalations during waking hours, at least 2 hours apart",
+          "ranges": [
+            {
+              "min": 2.5,
+              "max": 5,
+              "unit": "mcg",
+              "basis": "per-dose",
+              "frequency": "6-9 times daily",
+              "rangeKind": "label-regimen",
+              "label": "Inhaled label range",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "FDA Ventavis iloprost inhalation label",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/021779s014lbl.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "FDA Ventavis iloprost inhalation label",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/021779s014lbl.pdf",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    },
+    {
+      "name": "Treprostinil",
+      "commonNames": [
+        "Treprostinil",
+        "曲前列尼尔",
+        "Remodulin",
+        "Tyvaso",
+        "Orenitram",
+        "Prostacyclin analog",
+        "PAH"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c80bb38-e8db-4138-9f0d-dbbf9c673185",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "antithrombotic",
+        "prescription-medicine",
+        "atc-b01"
+      ],
+      "summary": "曲前列尼尔（Treprostinil）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AC21"
+        ],
+        "drugClass": [
+          "Prostacyclin analog",
+          "Pulmonary vasodilator"
+        ],
+        "indications": [
+          "Pulmonary arterial hypertension"
+        ],
+        "contraindications": [
+          "Product-specific contraindications depend on route and formulation"
+        ],
+        "majorWarnings": [
+          "Abrupt withdrawal can worsen PAH",
+          "Hypotension",
+          "Bleeding",
+          "Bloodstream infection risk with chronic IV infusion"
+        ],
+        "majorInteractions": [
+          "Anticoagulants may increase bleeding risk",
+          "CYP2C8 inhibitors may increase exposure for applicable formulations"
+        ],
+        "monitoring": [
+          "Infusion-site or central-line complications",
+          "Blood pressure",
+          "Bleeding",
+          "PAH symptoms and functional class",
+          "Hepatic function"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed REMODULIN label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c80bb38-e8db-4138-9f0d-dbbf9c673185",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "subcutaneous or intravenous",
+          "formulation": "continuous infusion",
+          "timeToSteadyState": {
+            "min": 10,
+            "max": 10,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 4,
+            "max": 4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "This time course represents continuous SC/IV Remodulin and must not be applied to inhaled or oral treprostinil formulations."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed REMODULIN label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c80bb38-e8db-4138-9f0d-dbbf9c673185",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed REMODULIN label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c80bb38-e8db-4138-9f0d-dbbf9c673185",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "PAH continuous-infusion initiation in prostacyclin-naive adults",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "subcutaneous or intravenous",
+          "formulation": "continuous infusion",
+          "amountText": "1.25 ng/kg/min initial infusion rate in the cited label",
+          "scheduleText": "Continuous SC or IV infusion with response-guided titration",
+          "ranges": [
+            {
+              "min": 1.25,
+              "max": 1.25,
+              "unit": "ng/kg/min",
+              "basis": "weight-based",
+              "frequency": "continuous infusion",
+              "rangeKind": "initial",
+              "label": "Initial label infusion rate",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed REMODULIN label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c80bb38-e8db-4138-9f0d-dbbf9c673185",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed REMODULIN label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c80bb38-e8db-4138-9f0d-dbbf9c673185",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    },
+    {
+      "name": "Selexipag",
+      "commonNames": [
+        "Selexipag",
+        "司来帕格",
+        "Uptravi",
+        "IP receptor agonist",
+        "PAH"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7a23b87-f892-4e2c-8e2e-ebf841220f90",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "antithrombotic",
+        "prescription-medicine",
+        "atc-b01"
+      ],
+      "summary": "司来帕格（Selexipag）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "B01AC27"
+        ],
+        "drugClass": [
+          "Selective prostacyclin IP receptor agonist",
+          "Pulmonary vasodilator"
+        ],
+        "indications": [
+          "Pulmonary arterial hypertension"
+        ],
+        "contraindications": [
+          "Strong CYP2C8 inhibitors",
+          "History of hypersensitivity"
+        ],
+        "majorWarnings": [
+          "Pulmonary edema in pulmonary veno-occlusive disease",
+          "Dose-limiting prostacyclin-associated adverse effects"
+        ],
+        "majorInteractions": [
+          "Strong CYP2C8 inhibitors are contraindicated",
+          "Moderate CYP2C8 inhibitors require regimen adjustment"
+        ],
+        "monitoring": [
+          "PAH symptoms and functional class",
+          "Blood pressure",
+          "Headache, flushing, jaw pain, gastrointestinal effects",
+          "Hepatic function"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed UPTRAVI label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7a23b87-f892-4e2c-8e2e-ebf841220f90",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1,
+            "max": 3,
+            "unit": "h",
+            "basis": "parent plasma concentration"
+          },
+          "peakEffect": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "active metabolite plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 6.2,
+            "max": 13.5,
+            "unit": "h",
+            "basis": "active metabolite pharmacokinetics"
+          },
+          "notes": [
+            "The active metabolite exposure exceeds parent-drug exposure; parent half-life alone does not represent the pharmacologic time course."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed UPTRAVI label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7a23b87-f892-4e2c-8e2e-ebf841220f90",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed UPTRAVI label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7a23b87-f892-4e2c-8e2e-ebf841220f90",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Adult pulmonary arterial hypertension in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "200-1600 mcg per dose across the cited titration range",
+          "scheduleText": "Twice daily; titration usually at weekly intervals",
+          "ranges": [
+            {
+              "min": 200,
+              "max": 200,
+              "unit": "mcg",
+              "basis": "per-dose",
+              "frequency": "twice daily",
+              "rangeKind": "initial",
+              "label": "Initial label dose",
+              "components": []
+            },
+            {
+              "min": 200,
+              "max": 1600,
+              "unit": "mcg",
+              "basis": "per-dose",
+              "frequency": "twice daily",
+              "rangeKind": "label-regimen",
+              "label": "Label titration range",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed UPTRAVI label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7a23b87-f892-4e2c-8e2e-ebf841220f90",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed UPTRAVI label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7a23b87-f892-4e2c-8e2e-ebf841220f90",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    }
+  ]
+}

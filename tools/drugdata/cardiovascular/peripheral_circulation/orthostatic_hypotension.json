@@ -1,0 +1,337 @@
+{
+  "substances": [
+    {
+      "name": "Midodrine",
+      "commonNames": [
+        "Midodrine",
+        "米多君",
+        "ProAmatine",
+        "Midodrine hydrochloride",
+        "Alpha-1 agonist"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03b54024-2a26-4abe-bd8b-b66bb6781fa7",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine",
+        "atc-c01"
+      ],
+      "summary": "米多君（Midodrine）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01CA17"
+        ],
+        "drugClass": [
+          "Peripheral alpha-1 adrenergic agonist",
+          "Vasopressor"
+        ],
+        "indications": [
+          "Symptomatic orthostatic hypotension"
+        ],
+        "contraindications": [
+          "Severe organic heart disease",
+          "Acute renal disease",
+          "Urinary retention",
+          "Pheochromocytoma",
+          "Thyrotoxicosis",
+          "Persistent excessive supine hypertension"
+        ],
+        "majorWarnings": [
+          "Marked supine hypertension",
+          "Bradycardia",
+          "Urinary retention"
+        ],
+        "majorInteractions": [
+          "Other vasoconstrictors may increase hypertension",
+          "Heart-rate-lowering drugs may increase bradycardia risk"
+        ],
+        "monitoring": [
+          "Supine and standing blood pressure",
+          "Heart rate",
+          "Renal function",
+          "Urinary retention symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed midodrine hydrochloride label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03b54024-2a26-4abe-bd8b-b66bb6781fa7",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "Dosage and Administration; Clinical Pharmacology"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 0.5,
+            "max": 0.5,
+            "unit": "h",
+            "basis": "prodrug plasma concentration"
+          },
+          "peakEffect": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "active metabolite concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "active metabolite pharmacokinetics"
+          },
+          "notes": [
+            "The active metabolite desglymidodrine, not the prodrug alone, drives the pressor response."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed midodrine hydrochloride label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03b54024-2a26-4abe-bd8b-b66bb6781fa7",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "Dosage and Administration; Clinical Pharmacology"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed midodrine hydrochloride label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03b54024-2a26-4abe-bd8b-b66bb6781fa7",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "Dosage and Administration; Clinical Pharmacology"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Symptomatic orthostatic hypotension in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "10 mg per dose in the cited adult label",
+          "scheduleText": "Three times during daytime, approximately 3-4 hours apart; avoid dosing near bedtime",
+          "ranges": [
+            {
+              "min": 10,
+              "max": 10,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "three times daily during waking hours",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed midodrine hydrochloride label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03b54024-2a26-4abe-bd8b-b66bb6781fa7",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "Dosage and Administration; Clinical Pharmacology"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed midodrine hydrochloride label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03b54024-2a26-4abe-bd8b-b66bb6781fa7",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "Dosage and Administration; Clinical Pharmacology"
+        }
+      ],
+      "roas": []
+    },
+    {
+      "name": "Droxidopa",
+      "commonNames": [
+        "Droxidopa",
+        "屈昔多巴",
+        "Northera",
+        "L-threo-DOPS",
+        "Norepinephrine prodrug"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2179f02c-48d7-48eb-8007-5ae43d8d16bc",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine",
+        "atc-c01"
+      ],
+      "summary": "屈昔多巴（Droxidopa）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01CA27"
+        ],
+        "drugClass": [
+          "Norepinephrine prodrug",
+          "Vasopressor"
+        ],
+        "indications": [
+          "Symptomatic neurogenic orthostatic hypotension"
+        ],
+        "contraindications": [
+          "History of hypersensitivity to the product"
+        ],
+        "majorWarnings": [
+          "Supine hypertension",
+          "May exacerbate ischemic heart disease, arrhythmias, or heart failure",
+          "Neuroleptic malignant syndrome-like reactions"
+        ],
+        "majorInteractions": [
+          "Other blood-pressure-raising drugs may increase supine hypertension",
+          "Dopa-decarboxylase inhibitors may alter exposure"
+        ],
+        "monitoring": [
+          "Supine and standing blood pressure",
+          "Head-of-bed elevation",
+          "Heart rate and cardiac symptoms",
+          "Renal function"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed NORTHERA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2179f02c-48d7-48eb-8007-5ae43d8d16bc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5.1 Supine Hypertension; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "capsule",
+          "tmax": {
+            "min": 1,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 2.5,
+            "max": 2.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Clinical pressor response depends on conversion to norepinephrine and is not equivalent to droxidopa plasma concentration alone."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed NORTHERA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2179f02c-48d7-48eb-8007-5ae43d8d16bc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5.1 Supine Hypertension; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed NORTHERA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2179f02c-48d7-48eb-8007-5ae43d8d16bc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5.1 Supine Hypertension; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Symptomatic neurogenic orthostatic hypotension in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "capsule",
+          "amountText": "100-600 mg per dose across the cited titration range",
+          "scheduleText": "Three times daily; last dose at least 3 hours before bedtime",
+          "ranges": [
+            {
+              "min": 100,
+              "max": 100,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "three times daily",
+              "rangeKind": "initial",
+              "label": "Initial label dose",
+              "components": []
+            },
+            {
+              "min": 100,
+              "max": 600,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "three times daily",
+              "rangeKind": "label-regimen",
+              "label": "Label titration range",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed NORTHERA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2179f02c-48d7-48eb-8007-5ae43d8d16bc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5.1 Supine Hypertension; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed NORTHERA label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2179f02c-48d7-48eb-8007-5ae43d8d16bc",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; 5.1 Supine Hypertension; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    }
+  ]
+}

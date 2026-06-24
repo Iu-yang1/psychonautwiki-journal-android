@@ -44,7 +44,9 @@
         "contraindications": [],
         "majorWarnings": [
           "Can cause hypotension, renal impairment, hyperkalemia, cough, and angioedema.",
-          "Fetal toxicity warnings apply to renin-angiotensin system medicines."
+          "Fetal toxicity warnings apply to renin-angiotensin system medicines.",
+          "Hyperkalemia and renal-function worsening can occur.",
+          "Pregnancy exposure can cause fetal toxicity; follow the product boxed warning or local labeling."
         ],
         "majorInteractions": [
           "Potassium supplements or potassium-sparing diuretics can increase hyperkalemia risk.",
@@ -54,20 +56,23 @@
           "Blood pressure",
           "Serum creatinine/eGFR",
           "Serum potassium",
-          "Angioedema symptoms"
+          "Angioedema symptoms",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Captopril label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=captopril%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C09AA01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -101,7 +106,8 @@
               "title": "DailyMed Captopril label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=captopril%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -110,7 +116,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Captopril label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=captopril%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09AA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -148,12 +170,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Captopril",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Captopril label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=captopril%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C09AA01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -201,7 +240,9 @@
         "contraindications": [],
         "majorWarnings": [
           "Can cause hypotension, renal impairment, hyperkalemia, cough, and angioedema.",
-          "Fetal toxicity warnings apply."
+          "Fetal toxicity warnings apply.",
+          "Hyperkalemia and renal-function worsening can occur.",
+          "Pregnancy exposure can cause fetal toxicity; follow the product boxed warning or local labeling."
         ],
         "majorInteractions": [
           "Potassium-increasing drugs can increase hyperkalemia risk.",
@@ -211,20 +252,23 @@
           "Blood pressure",
           "Serum creatinine/eGFR",
           "Serum potassium",
-          "Angioedema symptoms"
+          "Angioedema symptoms",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Ramipril label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ramipril%20capsule",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C09AA05",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA05",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -261,7 +305,8 @@
               "title": "DailyMed Ramipril label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ramipril%20capsule",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -270,7 +315,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Ramipril label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ramipril%20capsule",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09AA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -308,12 +369,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Ramipril",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Ramipril label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ramipril%20capsule",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C09AA05",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA05",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -361,7 +439,9 @@
         "contraindications": [],
         "majorWarnings": [
           "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia.",
-          "Sprue-like enteropathy has been reported with olmesartan."
+          "Sprue-like enteropathy has been reported with olmesartan.",
+          "Hyperkalemia and renal-function worsening can occur.",
+          "Pregnancy exposure can cause fetal toxicity; follow the product boxed warning or local labeling."
         ],
         "majorInteractions": [
           "Potassium-increasing drugs can increase hyperkalemia risk.",
@@ -371,20 +451,23 @@
           "Blood pressure",
           "Serum creatinine/eGFR",
           "Serum potassium",
-          "Severe chronic diarrhea/weight loss symptoms"
+          "Severe chronic diarrhea/weight loss symptoms",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Olmesartan label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=olmesartan%20medoxomil%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C09CA08",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA08",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -412,7 +495,8 @@
               "title": "DailyMed Olmesartan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=olmesartan%20medoxomil%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -421,7 +505,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Olmesartan label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=olmesartan%20medoxomil%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA08",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA08",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -459,12 +559,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Olmesartan",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Olmesartan label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=olmesartan%20medoxomil%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C09CA08",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA08",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -511,7 +628,9 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia."
+          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia.",
+          "Hyperkalemia and renal-function worsening can occur.",
+          "Pregnancy exposure can cause fetal toxicity; follow the product boxed warning or local labeling."
         ],
         "majorInteractions": [
           "Potassium-increasing drugs can increase hyperkalemia risk.",
@@ -520,20 +639,23 @@
         "monitoring": [
           "Blood pressure",
           "Serum creatinine/eGFR",
-          "Serum potassium"
+          "Serum potassium",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Irbesartan label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=irbesartan%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C09CA04",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA04",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -561,7 +683,8 @@
               "title": "DailyMed Irbesartan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=irbesartan%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -570,7 +693,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Irbesartan label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=irbesartan%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -608,12 +747,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Irbesartan",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Irbesartan label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=irbesartan%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C09CA04",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA04",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -660,7 +816,9 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia."
+          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia.",
+          "Hyperkalemia and renal-function worsening can occur.",
+          "Pregnancy exposure can cause fetal toxicity; follow the product boxed warning or local labeling."
         ],
         "majorInteractions": [
           "Potassium-increasing drugs can increase hyperkalemia risk.",
@@ -671,20 +829,23 @@
           "Blood pressure",
           "Serum creatinine/eGFR",
           "Serum potassium",
-          "Interacting drugs"
+          "Interacting drugs",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Telmisartan label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=telmisartan%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C09CA07",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA07",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -713,7 +874,8 @@
               "title": "DailyMed Telmisartan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=telmisartan%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -722,7 +884,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Telmisartan label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=telmisartan%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA07",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA07",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -760,12 +938,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Telmisartan",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Telmisartan label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=telmisartan%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C09CA07",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA07",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -813,7 +1008,9 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia."
+          "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia.",
+          "Hyperkalemia and renal-function worsening can occur.",
+          "Pregnancy exposure can cause fetal toxicity; follow the product boxed warning or local labeling."
         ],
         "majorInteractions": [
           "Potassium-increasing drugs can increase hyperkalemia risk.",
@@ -822,20 +1019,23 @@
         "monitoring": [
           "Blood pressure",
           "Serum creatinine/eGFR",
-          "Serum potassium"
+          "Serum potassium",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Candesartan label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=candesartan%20cilexetil%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C09CA06",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA06",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -863,7 +1063,8 @@
               "title": "DailyMed Candesartan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=candesartan%20cilexetil%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -872,7 +1073,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Candesartan label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=candesartan%20cilexetil%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA06",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA06",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -910,12 +1127,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Candesartan",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Candesartan label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=candesartan%20cilexetil%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C09CA06",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA06",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -962,7 +1196,8 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause electrolyte abnormalities, volume depletion, renal function changes, and hyperuricemia."
+          "Can cause electrolyte abnormalities, volume depletion, renal function changes, and hyperuricemia.",
+          "Dehydration, volume depletion, electrolyte abnormalities, and renal-function worsening can occur."
         ],
         "majorInteractions": [
           "Lithium toxicity risk may increase with diuretics.",
@@ -973,20 +1208,26 @@
           "Serum sodium",
           "Serum potassium",
           "Serum creatinine/eGFR",
-          "Uric acid when clinically indicated"
+          "Uric acid when clinically indicated",
+          "Blood pressure and volume status",
+          "Serum magnesium",
+          "Creatinine/eGFR",
+          "Uric acid and gout symptoms when relevant"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Chlorthalidone label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorthalidone%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C03BA04",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA04",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1020,7 +1261,8 @@
               "title": "DailyMed Chlorthalidone label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorthalidone%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1029,7 +1271,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Chlorthalidone label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorthalidone%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03BA04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -1067,12 +1325,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Chlorthalidone",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Chlorthalidone label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorthalidone%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C03BA04",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA04",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1119,7 +1394,8 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause electrolyte abnormalities, volume depletion, renal function changes, and hyperuricemia."
+          "Can cause electrolyte abnormalities, volume depletion, renal function changes, and hyperuricemia.",
+          "Dehydration, volume depletion, electrolyte abnormalities, and renal-function worsening can occur."
         ],
         "majorInteractions": [
           "Lithium toxicity risk may increase with diuretics.",
@@ -1130,20 +1406,26 @@
           "Serum sodium",
           "Serum potassium",
           "Serum creatinine/eGFR",
-          "Uric acid when clinically indicated"
+          "Uric acid when clinically indicated",
+          "Blood pressure and volume status",
+          "Serum magnesium",
+          "Creatinine/eGFR",
+          "Uric acid and gout symptoms when relevant"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Indapamide label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=indapamide%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C03BA11",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA11",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1171,7 +1453,8 @@
               "title": "DailyMed Indapamide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=indapamide%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1180,7 +1463,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Indapamide label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=indapamide%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03BA11",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA11",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -1218,12 +1517,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Indapamide",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Indapamide label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=indapamide%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C03BA11",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA11",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1268,7 +1584,8 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause excessive diuresis, dehydration, hypotension, electrolyte depletion, renal function changes, and ototoxicity risk."
+          "Can cause excessive diuresis, dehydration, hypotension, electrolyte depletion, renal function changes, and ototoxicity risk.",
+          "Dehydration, volume depletion, electrolyte abnormalities, and renal-function worsening can occur."
         ],
         "majorInteractions": [
           "Other diuretics or antihypertensives can increase volume depletion or hypotension risk.",
@@ -1279,20 +1596,26 @@
           "Blood pressure",
           "Serum sodium",
           "Serum potassium",
-          "Serum creatinine/eGFR"
+          "Serum creatinine/eGFR",
+          "Blood pressure and volume status",
+          "Serum magnesium",
+          "Creatinine/eGFR",
+          "Uric acid and gout symptoms when relevant"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Bumetanide label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C03CA02",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA02",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1332,7 +1655,8 @@
               "title": "DailyMed Bumetanide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -1365,7 +1689,8 @@
               "title": "DailyMed Bumetanide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1374,7 +1699,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Bumetanide label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03CA02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -1415,7 +1756,8 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Bumetanide",
@@ -1452,12 +1794,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Bumetanide",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Bumetanide label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C03CA02",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA02",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1504,7 +1863,8 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause hyperkalemia, especially with renal impairment or interacting drugs."
+          "Can cause hyperkalemia, especially with renal impairment or interacting drugs.",
+          "Hyperkalemia risk is increased by renal impairment and other potassium-raising therapies."
         ],
         "majorInteractions": [
           "Potassium supplements, ACEI/ARB, or other potassium-sparing drugs can increase hyperkalemia risk.",
@@ -1513,20 +1873,23 @@
         "monitoring": [
           "Serum potassium",
           "Serum creatinine/eGFR",
-          "Blood pressure"
+          "Blood pressure",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Eplerenone label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eplerenone%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C03DA04",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA04",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1560,7 +1923,8 @@
               "title": "DailyMed Eplerenone label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eplerenone%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1569,7 +1933,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Eplerenone label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eplerenone%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03DA04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -1607,12 +1987,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Eplerenone",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Eplerenone label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eplerenone%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C03DA04",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA04",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1677,13 +2074,15 @@
             "title": "DailyMed Hydralazine label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C02DB02",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02DB02",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1711,7 +2110,8 @@
               "title": "DailyMed Hydralazine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -1744,7 +2144,8 @@
               "title": "DailyMed Hydralazine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1753,7 +2154,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Hydralazine label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C02DB02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02DB02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -1794,7 +2211,8 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Hydralazine",
@@ -1831,12 +2249,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Hydralazine",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Hydralazine label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C02DB02",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02DB02",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1883,7 +2318,9 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause headache, hypotension, syncope, and tolerance with continuous nitrate exposure."
+          "Can cause headache, hypotension, syncope, and tolerance with continuous nitrate exposure.",
+          "PDE5 inhibitors and soluble guanylate cyclase stimulators can cause severe hypotension.",
+          "Continuous exposure can produce nitrate tolerance."
         ],
         "majorInteractions": [
           "PDE5 inhibitors and riociguat can cause severe hypotension with nitrates.",
@@ -1893,20 +2330,24 @@
           "Blood pressure",
           "Headache",
           "Dizziness/syncope",
-          "Nitrate-free interval per label"
+          "Nitrate-free interval per label",
+          "Headache and hypotension symptoms",
+          "Nitrate tolerance and nitrate-free interval where formulation-appropriate"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Isosorbide Mononitrate label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01DA14",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA14",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1933,14 +2374,16 @@
             "basis": "clinical effect"
           },
           "notes": [
-            "Nitrate tolerance and nitrate-free interval are clinical concepts separate from Tmax."
+            "Nitrate tolerance and nitrate-free interval are clinical concepts separate from Tmax.",
+            "Onset and duration are route- and formulation-specific."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed Isosorbide Mononitrate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -1966,14 +2409,16 @@
             "basis": "label formulation profile"
           },
           "notes": [
-            "Extended-release formulations are designed for longer antianginal coverage."
+            "Extended-release formulations are designed for longer antianginal coverage.",
+            "Onset and duration are route- and formulation-specific."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed Isosorbide Mononitrate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1982,7 +2427,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Isosorbide Mononitrate label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01DA14",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA14",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -2020,7 +2481,8 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "DailyMed Isosorbide Mononitrate label search",
@@ -2028,12 +2490,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Isosorbide Mononitrate",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Isosorbide Mononitrate label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01DA14",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA14",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -2080,7 +2559,9 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause headache, hypotension, syncope, and tolerance with continuous nitrate exposure."
+          "Can cause headache, hypotension, syncope, and tolerance with continuous nitrate exposure.",
+          "PDE5 inhibitors and soluble guanylate cyclase stimulators can cause severe hypotension.",
+          "Continuous exposure can produce nitrate tolerance."
         ],
         "majorInteractions": [
           "PDE5 inhibitors and riociguat can cause severe hypotension with nitrates.",
@@ -2090,20 +2571,24 @@
           "Blood pressure",
           "Headache",
           "Dizziness/syncope",
-          "Nitrate-free interval per label"
+          "Nitrate-free interval per label",
+          "Headache and hypotension symptoms",
+          "Nitrate tolerance and nitrate-free interval where formulation-appropriate"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Isosorbide Dinitrate label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01DA08",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA08",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -2130,14 +2615,16 @@
             "basis": "label pharmacokinetics"
           },
           "notes": [
-            "Sublingual onset is a clinical effect estimate, not a plasma Tmax."
+            "Sublingual onset is a clinical effect estimate, not a plasma Tmax.",
+            "Onset and duration are route- and formulation-specific."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed Isosorbide Dinitrate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -2163,14 +2650,16 @@
             "basis": "clinical effect"
           },
           "notes": [
-            "Active metabolites contribute to clinical effect and duration."
+            "Active metabolites contribute to clinical effect and duration.",
+            "Onset and duration are route- and formulation-specific."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed Isosorbide Dinitrate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -2179,7 +2668,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Isosorbide Dinitrate label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01DA08",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA08",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -2220,7 +2725,8 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Isosorbide Dinitrate",
@@ -2257,12 +2763,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Isosorbide Dinitrate",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Isosorbide Dinitrate label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01DA08",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01DA08",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -2326,13 +2849,15 @@
             "title": "DailyMed Minoxidil label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=minoxidil%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C02DC01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02DC01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -2366,7 +2891,8 @@
               "title": "DailyMed Minoxidil label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=minoxidil%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -2375,7 +2901,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Minoxidil label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=minoxidil%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C02DC01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02DC01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -2413,12 +2955,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Minoxidil",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Minoxidil label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=minoxidil%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C02DC01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02DC01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -2464,7 +3023,9 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause myopathy/rhabdomyolysis and liver enzyme abnormalities."
+          "Can cause myopathy/rhabdomyolysis and liver enzyme abnormalities.",
+          "Myopathy and rhabdomyolysis risk increases with interacting drugs or higher exposure.",
+          "Pregnancy labeling and reproductive context must be checked before use."
         ],
         "majorInteractions": [
           "Other myopathy-risk drugs can increase muscle toxicity risk.",
@@ -2474,20 +3035,24 @@
           "LDL-C response",
           "Muscle symptoms",
           "Creatine kinase when clinically indicated",
-          "Liver enzymes when clinically indicated"
+          "Liver enzymes when clinically indicated",
+          "LDL-C/lipid panel",
+          "Creatine kinase when muscle toxicity is suspected"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Pravastatin label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pravastatin%20sodium%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C10AA03",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA03",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -2508,14 +3073,16 @@
             "basis": "label pharmacokinetics"
           },
           "notes": [
-            "LDL-C reduction is a longer-term pharmacodynamic endpoint and is not equivalent to Tmax."
+            "LDL-C reduction is a longer-term pharmacodynamic endpoint and is not equivalent to Tmax.",
+            "LDL-C response develops over repeated treatment and is distinct from plasma Tmax or elimination half-life."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed Pravastatin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pravastatin%20sodium%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -2524,7 +3091,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Pravastatin label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pravastatin%20sodium%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C10AA03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -2562,12 +3145,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Pravastatin",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Pravastatin label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pravastatin%20sodium%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C10AA03",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA03",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -2613,7 +3213,9 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Can cause myopathy/rhabdomyolysis and liver enzyme abnormalities; risk increases with interacting drugs and higher dose contexts."
+          "Can cause myopathy/rhabdomyolysis and liver enzyme abnormalities; risk increases with interacting drugs and higher dose contexts.",
+          "Myopathy and rhabdomyolysis risk increases with interacting drugs or higher exposure.",
+          "Pregnancy labeling and reproductive context must be checked before use."
         ],
         "majorInteractions": [
           "Strong CYP3A inhibitors can markedly increase exposure.",
@@ -2624,20 +3226,24 @@
           "Muscle symptoms",
           "Creatine kinase when clinically indicated",
           "Liver enzymes when clinically indicated",
-          "Interacting drugs"
+          "Interacting drugs",
+          "LDL-C/lipid panel",
+          "Creatine kinase when muscle toxicity is suspected"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Simvastatin label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C10AA01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -2658,14 +3264,16 @@
             "basis": "label pharmacokinetics"
           },
           "notes": [
-            "Simvastatin is a lactone prodrug; lipid response is a longer-term endpoint."
+            "Simvastatin is a lactone prodrug; lipid response is a longer-term endpoint.",
+            "LDL-C response develops over repeated treatment and is distinct from plasma Tmax or elimination half-life."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed Simvastatin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -2674,7 +3282,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Simvastatin label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C10AA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -2712,12 +3336,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Simvastatin",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Simvastatin label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C10AA01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -2771,20 +3412,25 @@
         "monitoring": [
           "LDL-C response",
           "Liver enzymes when combined with statins and clinically indicated",
-          "Muscle symptoms when clinically indicated"
+          "Muscle symptoms when clinically indicated",
+          "LDL-C and/or triglyceride response",
+          "Liver enzymes when clinically indicated",
+          "Muscle symptoms and CK when clinically indicated"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Ezetimibe label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ezetimibe%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C10AX09",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AX09",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -2806,14 +3452,16 @@
             "basis": "label pharmacokinetics"
           },
           "notes": [
-            "Lipid response is a longer-term endpoint and should not be equated with plasma Tmax."
+            "Lipid response is a longer-term endpoint and should not be equated with plasma Tmax.",
+            "Lipid response time is pharmacodynamic and differs from plasma pharmacokinetics."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed Ezetimibe label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ezetimibe%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -2822,7 +3470,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Ezetimibe label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ezetimibe%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C10AX09",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AX09",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -2860,12 +3524,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Ezetimibe",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Ezetimibe label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ezetimibe%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C10AX09",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AX09",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -2923,20 +3604,25 @@
           "Bleeding symptoms",
           "Dyspnea",
           "Heart rate symptoms when clinically indicated",
-          "Interacting drugs"
+          "Interacting drugs",
+          "Bleeding",
+          "Hemoglobin/hematocrit",
+          "Platelet function testing only in selected contexts"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Ticagrelor label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ticagrelor%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: B01AC24",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC24",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -2958,14 +3644,16 @@
             "note": "Approximate half-life for ticagrelor and active metabolite."
           },
           "notes": [
-            "Platelet inhibition and bleeding risk are pharmacodynamic outcomes distinct from plasma Tmax."
+            "Platelet inhibition and bleeding risk are pharmacodynamic outcomes distinct from plasma Tmax.",
+            "Platelet inhibition and recovery can outlast parent-drug plasma exposure."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed Ticagrelor label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ticagrelor%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -2974,7 +3662,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Ticagrelor label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ticagrelor%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AC24",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC24",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -3012,12 +3716,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Ticagrelor",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Ticagrelor label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ticagrelor%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: B01AC24",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC24",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -3073,20 +3794,25 @@
         "monitoring": [
           "Bleeding symptoms",
           "Procedure timing",
-          "Concomitant antithrombotic drugs"
+          "Concomitant antithrombotic drugs",
+          "Bleeding",
+          "Hemoglobin/hematocrit",
+          "Platelet function testing only in selected contexts"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Prasugrel label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prasugrel%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: B01AC22",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC22",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -3109,14 +3835,16 @@
             "note": "Approximate half-life for active metabolite."
           },
           "notes": [
-            "Platelet inhibition is not the same concept as plasma Tmax."
+            "Platelet inhibition is not the same concept as plasma Tmax.",
+            "Platelet inhibition and recovery can outlast parent-drug plasma exposure."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed Prasugrel label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prasugrel%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -3125,7 +3853,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Prasugrel label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prasugrel%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AC22",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC22",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -3163,12 +3907,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Prasugrel",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Prasugrel label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prasugrel%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: B01AC22",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC22",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -3226,20 +3987,26 @@
         "monitoring": [
           "Bleeding symptoms",
           "Renal function",
-          "Concomitant antithrombotics/interacting drugs"
+          "Concomitant antithrombotics/interacting drugs",
+          "Bleeding",
+          "Hemoglobin/hematocrit",
+          "Creatinine/eGFR",
+          "Liver function when clinically indicated"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Edoxaban label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=edoxaban%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: B01AF03",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF03",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -3260,14 +4027,16 @@
             "basis": "label pharmacokinetics"
           },
           "notes": [
-            "Routine plasma concentration monitoring is not typical; selected anti-Xa/drug-calibrated testing may be used in specific scenarios."
+            "Routine plasma concentration monitoring is not typical; selected anti-Xa/drug-calibrated testing may be used in specific scenarios.",
+            "Anticoagulant effect and laboratory interpretation are assay- and context-dependent."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed Edoxaban label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=edoxaban%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -3276,7 +4045,27 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Edoxaban label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=edoxaban%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AF03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ],
+        "interpretationCaveats": [
+          "Routine plasma concentration monitoring is not standard.",
+          "Drug-specific calibrated anti-Xa or dilute thrombin/ecarin-based assays are reserved for selected clinical scenarios."
+        ]
       },
       "roas": [
         {
@@ -3314,12 +4103,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Edoxaban",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Edoxaban label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=edoxaban%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: B01AF03",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF03",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -3378,20 +4184,26 @@
           "CBC/platelets",
           "Renal function",
           "Anti-Xa in selected scenarios",
-          "Procedure timing"
+          "Procedure timing",
+          "Creatinine/eGFR",
+          "Platelet count",
+          "Bleeding",
+          "Anti-Xa activity in selected patients"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Enoxaparin label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enoxaparin%20sodium%20injection",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: B01AB05",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AB05",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -3420,7 +4232,8 @@
               "title": "DailyMed Enoxaparin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enoxaparin%20sodium%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -3429,7 +4242,26 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Enoxaparin label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enoxaparin%20sodium%20injection",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AB05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AB05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ],
+        "interpretationCaveats": [
+          "Anti-Xa monitoring is reserved for selected populations and must use protocol-specific sampling."
+        ]
       },
       "roas": [
         {
@@ -3467,12 +4299,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Enoxaparin",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Enoxaparin label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enoxaparin%20sodium%20injection",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: B01AB05",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AB05",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -3535,13 +4384,15 @@
             "title": "DailyMed Ranolazine label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranolazine%20extended-release%20tablet",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01EB18",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01EB18",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -3575,7 +4426,8 @@
               "title": "DailyMed Ranolazine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranolazine%20extended-release%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -3584,7 +4436,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring is not usually plasma-concentration guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Ranolazine label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranolazine%20extended-release%20tablet",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C01EB18",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01EB18",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -3622,12 +4490,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Ranolazine",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Ranolazine label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranolazine%20extended-release%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01EB18",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01EB18",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     }

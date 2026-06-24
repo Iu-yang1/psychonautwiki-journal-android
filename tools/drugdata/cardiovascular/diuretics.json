@@ -46,7 +46,8 @@
         ],
         "majorWarnings": [
           "Can cause profound diuresis with water and electrolyte depletion.",
-          "Ototoxicity risk can increase with aminoglycosides, ethacrynic acid, cisplatin, high doses, or renal impairment."
+          "Ototoxicity risk can increase with aminoglycosides, ethacrynic acid, cisplatin, high doses, or renal impairment.",
+          "Dehydration, volume depletion, electrolyte abnormalities, and renal-function worsening can occur."
         ],
         "majorInteractions": [
           "Aminoglycosides, ethacrynic acid, and cisplatin increase ototoxicity/nephrotoxicity concerns.",
@@ -61,20 +62,28 @@
           "Potassium",
           "Magnesium",
           "Sodium",
-          "Hearing symptoms when clinically indicated"
+          "Hearing symptoms when clinically indicated",
+          "Blood pressure and volume status",
+          "Serum potassium",
+          "Serum sodium",
+          "Serum magnesium",
+          "Creatinine/eGFR",
+          "Uric acid and gout symptoms when relevant"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed furosemide label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C03CA01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -109,7 +118,8 @@
               "title": "DailyMed furosemide label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -127,7 +137,8 @@
             "title": "DailyMed furosemide label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -193,9 +204,26 @@
               "title": "DailyMed furosemide label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed furosemide label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C03CA01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -249,7 +277,8 @@
           "Concomitant eplerenone use"
         ],
         "majorWarnings": [
-          "Hyperkalemia can be fatal and requires potassium and renal function monitoring."
+          "Hyperkalemia can be fatal and requires potassium and renal function monitoring.",
+          "Hyperkalemia risk is increased by renal impairment and other potassium-raising therapies."
         ],
         "majorInteractions": [
           "ACE inhibitors, ARBs, aliskiren, potassium supplements, and other potassium-sparing drugs can increase hyperkalemia risk.",
@@ -260,20 +289,23 @@
           "Serum potassium",
           "Renal function",
           "Blood pressure",
-          "Volume status"
+          "Volume status",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed spironolactone label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C03DA01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -304,7 +336,8 @@
               "title": "DailyMed spironolactone label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -322,7 +355,8 @@
             "title": "DailyMed spironolactone label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -379,12 +413,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Spironolactone",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed spironolactone label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C03DA01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     }

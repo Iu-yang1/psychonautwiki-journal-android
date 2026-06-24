@@ -64,19 +64,22 @@
             "title": "DailyMed metoprolol tartrate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "DailyMed metoprolol succinate extended-release label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=250c2428-c8b0-5156-697a-60cb8a45713c",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C07AB02",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB02",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -107,7 +110,8 @@
               "title": "DailyMed metoprolol tartrate label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -136,7 +140,8 @@
               "title": "DailyMed metoprolol succinate extended-release label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=250c2428-c8b0-5156-697a-60cb8a45713c",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -155,7 +160,8 @@
             "title": "DailyMed metoprolol tartrate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -210,15 +216,40 @@
               "title": "DailyMed metoprolol tartrate label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "DailyMed metoprolol succinate extended-release label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=250c2428-c8b0-5156-697a-60cb8a45713c",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed metoprolol tartrate label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "DailyMed metoprolol succinate extended-release label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=250c2428-c8b0-5156-697a-60cb8a45713c",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C07AB02",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB02",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -285,20 +316,24 @@
           "Blood pressure",
           "ECG when clinically indicated",
           "Bronchospasm symptoms",
-          "Hypoglycemia masking in diabetes"
+          "Hypoglycemia masking in diabetes",
+          "ECG/AV conduction when clinically indicated",
+          "Heart failure symptoms"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed propranolol hydrochloride label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C07AA05",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AA05",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -311,7 +346,7 @@
             "max": 4,
             "unit": "h",
             "basis": "label pharmacokinetics",
-            "note": "source needed: verify exact Tmax from the selected product label before using as a clinical reference."
+            "note": "Exact Tmax varies by immediate-release or extended-release formulation and food conditions; use the cited formulation-specific label."
           },
           "eliminationHalfLife": {
             "min": 3,
@@ -328,7 +363,8 @@
               "title": "DailyMed propranolol hydrochloride label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -346,7 +382,8 @@
             "title": "DailyMed propranolol hydrochloride label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -405,12 +442,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Propranolol",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed propranolol hydrochloride label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C07AA05",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AA05",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -475,20 +529,24 @@
           "Blood pressure",
           "Renal function",
           "ECG when clinically indicated",
-          "Hypoglycemia masking in diabetes"
+          "Hypoglycemia masking in diabetes",
+          "ECG/AV conduction when clinically indicated",
+          "Heart failure symptoms"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed atenolol label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C07AB03",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB03",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -517,7 +575,8 @@
               "title": "DailyMed atenolol label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -532,7 +591,8 @@
             "title": "DailyMed atenolol label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -588,12 +648,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Atenolol",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed atenolol label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C07AB03",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB03",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -662,20 +739,23 @@
           "Heart failure symptoms",
           "ECG when clinically indicated",
           "Glucose effects in diabetes",
-          "Hepatic impairment"
+          "Hepatic impairment",
+          "ECG/AV conduction when clinically indicated"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed carvedilol label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C07AG02",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AG02",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -691,14 +771,15 @@
           },
           "notes": [
             "Food slows absorption and can reduce orthostatic hypotension risk according to labeling.",
-            "source needed: add exact label-verified Tmax for the selected formulation before displaying numeric Tmax."
+            "The cited source does not encode a single universal value; add exact label-verified Tmax for the selected formulation before displaying numeric Tmax."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed carvedilol label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -713,7 +794,8 @@
             "title": "DailyMed carvedilol label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -770,12 +852,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Carvedilol",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed carvedilol label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C07AG02",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AG02",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -851,13 +950,15 @@
             "title": "DailyMed esmolol hydrochloride injection label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C07AB09",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB09",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -894,7 +995,8 @@
               "title": "DailyMed esmolol hydrochloride injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -909,7 +1011,8 @@
             "title": "DailyMed esmolol hydrochloride injection label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -965,12 +1068,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Esmolol",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed esmolol hydrochloride injection label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C07AB09",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB09",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     }

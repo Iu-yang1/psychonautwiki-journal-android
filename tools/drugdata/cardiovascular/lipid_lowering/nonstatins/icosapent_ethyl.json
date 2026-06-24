@@ -1,0 +1,160 @@
+{
+  "substances": [
+    {
+      "name": "Icosapent Ethyl",
+      "commonNames": [
+        "Icosapent Ethyl",
+        "二十碳五烯酸乙酯",
+        "Vascepa",
+        "EPA ethyl ester",
+        "Omega-3 fatty acid derivative"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c1a2828-1583-4414-ab22-a60480e8e508",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine",
+        "atc-c10"
+      ],
+      "summary": "二十碳五烯酸乙酯（Icosapent Ethyl）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C10AX06"
+        ],
+        "drugClass": [
+          "Omega-3 fatty acid derivative",
+          "Lipid-modifying agent"
+        ],
+        "indications": [
+          "Cardiovascular risk reduction in selected patients",
+          "Severe hypertriglyceridemia"
+        ],
+        "contraindications": [
+          "History of hypersensitivity"
+        ],
+        "majorWarnings": [
+          "Atrial fibrillation or flutter",
+          "Bleeding",
+          "Potential allergic reactions in patients with fish or shellfish allergy"
+        ],
+        "majorInteractions": [
+          "Antithrombotic agents may increase bleeding risk"
+        ],
+        "monitoring": [
+          "Fasting lipid panel",
+          "Triglycerides",
+          "Bleeding symptoms",
+          "Atrial fibrillation symptoms",
+          "Liver enzymes in hepatic impairment"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed VASCEPA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c1a2828-1583-4414-ab22-a60480e8e508",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "capsule",
+          "tmax": {
+            "min": 5,
+            "max": 5,
+            "unit": "h",
+            "basis": "EPA plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 89,
+            "max": 89,
+            "unit": "h",
+            "basis": "EPA label pharmacokinetics"
+          },
+          "notes": [
+            "Triglyceride and cardiovascular response time differs from EPA plasma pharmacokinetics."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed VASCEPA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c1a2828-1583-4414-ab22-a60480e8e508",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed VASCEPA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c1a2828-1583-4414-ab22-a60480e8e508",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Label cardiovascular-risk or severe-hypertriglyceridemia context",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "capsule",
+          "amountText": "4 g total daily in the cited label",
+          "scheduleText": "Two divided doses with food",
+          "ranges": [
+            {
+              "min": 4,
+              "max": 4,
+              "unit": "g",
+              "basis": "daily-total",
+              "frequency": "twice daily with food",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed VASCEPA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c1a2828-1583-4414-ab22-a60480e8e508",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed VASCEPA label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c1a2828-1583-4414-ab22-a60480e8e508",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    }
+  ]
+}

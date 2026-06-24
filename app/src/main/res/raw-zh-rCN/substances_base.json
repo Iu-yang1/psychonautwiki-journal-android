@@ -25332,7 +25332,8 @@
         "contraindications": [],
         "majorWarnings": [
           "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。"
+          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
+          "Dehydration, volume depletion, electrolyte abnormalities, and renal-function worsening can occur."
         ],
         "majorInteractions": [
           "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
@@ -25340,20 +25341,28 @@
         "monitoring": [
           "适应证相关疗效指标",
           "血压/心率或症状",
-          "肝肾功能、电解质或凝血指标，按药物类别和说明书选择"
+          "肝肾功能、电解质或凝血指标，按药物类别和说明书选择",
+          "Blood pressure and volume status",
+          "Serum potassium",
+          "Serum sodium",
+          "Serum magnesium",
+          "Creatinine/eGFR",
+          "Uric acid and gout symptoms when relevant"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed Acetazolamide label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acetazolamide",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C03BA01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -25388,13 +25397,15 @@
               "title": "DailyMed Acetazolamide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acetazolamide",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "WHO ATC/DDD Index: C03BA01",
               "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA01",
               "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "TERMINOLOGY"
             }
           ]
         }
@@ -25403,7 +25414,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "临床通常按症状、血压/心率、实验室安全性指标或目标指标监测，而不是常规血药浓度。",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Acetazolamide label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acetazolamide",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03BA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -25441,17 +25468,35 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "WHO ATC/DDD Index: C03BA01",
               "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA01",
               "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "TERMINOLOGY"
             }
           ],
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Acetazolamide label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acetazolamide",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C03BA01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -25508,13 +25553,15 @@
             "title": "DailyMed Mannitol label search",
             "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Mannitol",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C03DA05",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA05",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -25549,13 +25596,15 @@
               "title": "DailyMed Mannitol label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Mannitol",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "WHO ATC/DDD Index: C03DA05",
               "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA05",
               "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "TERMINOLOGY"
             }
           ]
         }
@@ -25564,7 +25613,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "临床通常按症状、血压/心率、实验室安全性指标或目标指标监测，而不是常规血药浓度。",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed Mannitol label search",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Mannitol",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03DA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -25602,17 +25667,35 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "WHO ATC/DDD Index: C03DA05",
               "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA05",
               "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "TERMINOLOGY"
             }
           ],
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed Mannitol label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Mannitol",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C03DA05",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA05",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     }

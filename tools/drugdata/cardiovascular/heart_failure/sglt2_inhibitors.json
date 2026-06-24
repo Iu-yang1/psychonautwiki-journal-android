@@ -1,0 +1,327 @@
+{
+  "substances": [
+    {
+      "name": "Dapagliflozin",
+      "commonNames": [
+        "Dapagliflozin",
+        "达格列净",
+        "Farxiga",
+        "Forxiga",
+        "SGLT2 inhibitor",
+        "SGLT2i",
+        "HF"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01f90c94-71cb-4a1f-81ff-8004b850529b",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "达格列净（Dapagliflozin）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "A10BK01"
+        ],
+        "drugClass": [
+          "SGLT2 inhibitor",
+          "Heart failure therapy",
+          "Glucose-lowering agent"
+        ],
+        "indications": [
+          "Heart failure",
+          "Chronic kidney disease",
+          "Type 2 diabetes mellitus"
+        ],
+        "contraindications": [
+          "History of serious hypersensitivity",
+          "Dialysis use is restricted by label"
+        ],
+        "majorWarnings": [
+          "Ketoacidosis",
+          "Volume depletion and hypotension",
+          "Genital mycotic infection",
+          "Urosepsis and pyelonephritis"
+        ],
+        "majorInteractions": [
+          "Diuretics may increase volume-depletion risk",
+          "Insulin or secretagogues may increase hypoglycemia risk"
+        ],
+        "monitoring": [
+          "eGFR/renal function",
+          "Volume status",
+          "Blood pressure",
+          "Symptoms or ketones when ketoacidosis is suspected",
+          "Genital and urinary infection symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed FARXIGA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01f90c94-71cb-4a1f-81ff-8004b850529b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12.9,
+            "max": 12.9,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Heart-failure benefit and volume effects must not be inferred from plasma half-life alone."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed FARXIGA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01f90c94-71cb-4a1f-81ff-8004b850529b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed FARXIGA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01f90c94-71cb-4a1f-81ff-8004b850529b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Heart failure, chronic kidney disease, or other non-glycemic indications in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "10 mg total daily in the cited label",
+          "scheduleText": "Once daily",
+          "ranges": [
+            {
+              "min": 10,
+              "max": 10,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed FARXIGA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01f90c94-71cb-4a1f-81ff-8004b850529b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed FARXIGA label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01f90c94-71cb-4a1f-81ff-8004b850529b",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    },
+    {
+      "name": "Empagliflozin",
+      "commonNames": [
+        "Empagliflozin",
+        "恩格列净",
+        "Jardiance",
+        "SGLT2 inhibitor",
+        "SGLT2i",
+        "HF"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1782b947-4a72-4feb-a488-1469d9af82bd",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "prescription-medicine"
+      ],
+      "summary": "恩格列净（Empagliflozin）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "A10BK03"
+        ],
+        "drugClass": [
+          "SGLT2 inhibitor",
+          "Heart failure therapy",
+          "Glucose-lowering agent"
+        ],
+        "indications": [
+          "Heart failure",
+          "Cardiovascular risk reduction in type 2 diabetes",
+          "Type 2 diabetes mellitus"
+        ],
+        "contraindications": [
+          "History of serious hypersensitivity",
+          "Dialysis"
+        ],
+        "majorWarnings": [
+          "Ketoacidosis",
+          "Volume depletion and hypotension",
+          "Genital mycotic infection",
+          "Urosepsis and pyelonephritis"
+        ],
+        "majorInteractions": [
+          "Diuretics may increase volume-depletion risk",
+          "Insulin or secretagogues may increase hypoglycemia risk"
+        ],
+        "monitoring": [
+          "eGFR/renal function",
+          "Volume status",
+          "Blood pressure",
+          "Symptoms or ketones when ketoacidosis is suspected",
+          "Genital and urinary infection symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed JARDIANCE label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1782b947-4a72-4feb-a488-1469d9af82bd",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1.5,
+            "max": 1.5,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12.4,
+            "max": 12.4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Heart-failure benefit and volume effects must not be inferred from plasma half-life alone."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed JARDIANCE label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1782b947-4a72-4feb-a488-1469d9af82bd",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed JARDIANCE label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1782b947-4a72-4feb-a488-1469d9af82bd",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Heart failure or cardiovascular-risk context in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "10 mg total daily in the cited label",
+          "scheduleText": "Once daily in the morning",
+          "ranges": [
+            {
+              "min": 10,
+              "max": 10,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed JARDIANCE label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1782b947-4a72-4feb-a488-1469d9af82bd",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed JARDIANCE label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1782b947-4a72-4feb-a488-1469d9af82bd",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    }
+  ]
+}

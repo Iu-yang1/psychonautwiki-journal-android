@@ -1,0 +1,497 @@
+{
+  "substances": [
+    {
+      "name": "Sildenafil",
+      "commonNames": [
+        "Sildenafil",
+        "西地那非",
+        "Revatio",
+        "PDE5 inhibitor",
+        "PAH"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb9363e-b28d-4019-8aae-539233dca214",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine"
+      ],
+      "summary": "西地那非（Sildenafil）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G04BE03"
+        ],
+        "drugClass": [
+          "PDE5 inhibitor",
+          "Pulmonary vasodilator"
+        ],
+        "indications": [
+          "Pulmonary arterial hypertension"
+        ],
+        "contraindications": [
+          "Organic nitrates",
+          "Riociguat",
+          "History of hypersensitivity"
+        ],
+        "majorWarnings": [
+          "Hypotension",
+          "Visual or hearing adverse events",
+          "Priapism",
+          "Pulmonary edema in pulmonary veno-occlusive disease"
+        ],
+        "majorInteractions": [
+          "Nitrates and riociguat are contraindicated",
+          "Strong CYP3A inhibitors increase exposure",
+          "Alpha blockers and antihypertensives may increase hypotension"
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Functional class and exercise capacity",
+          "Vision or hearing symptoms",
+          "Signs of pulmonary edema"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed REVATIO label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb9363e-b28d-4019-8aae-539233dca214",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet/oral suspension",
+          "tmax": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 2.9,
+            "max": 4.4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "notes": [
+            "Pulmonary vascular response and adverse effects are not determined by plasma concentration alone."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed REVATIO label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb9363e-b28d-4019-8aae-539233dca214",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed REVATIO label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb9363e-b28d-4019-8aae-539233dca214",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Adult pulmonary arterial hypertension in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "tablet/oral suspension",
+          "amountText": "20 mg per oral dose in the cited adult label",
+          "scheduleText": "Three times daily",
+          "ranges": [
+            {
+              "min": 20,
+              "max": 20,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "three times daily",
+              "rangeKind": "label-regimen",
+              "label": "Adult label regimen",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed REVATIO label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb9363e-b28d-4019-8aae-539233dca214",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed REVATIO label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb9363e-b28d-4019-8aae-539233dca214",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    },
+    {
+      "name": "Tadalafil",
+      "commonNames": [
+        "Tadalafil",
+        "他达拉非",
+        "Adcirca",
+        "PDE5 inhibitor",
+        "PAH"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff61b237-be8e-461b-8114-78c52a8ad0ae",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine"
+      ],
+      "summary": "他达拉非（Tadalafil）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G04BE08"
+        ],
+        "drugClass": [
+          "PDE5 inhibitor",
+          "Pulmonary vasodilator"
+        ],
+        "indications": [
+          "Pulmonary arterial hypertension"
+        ],
+        "contraindications": [
+          "Organic nitrates",
+          "Riociguat",
+          "History of hypersensitivity"
+        ],
+        "majorWarnings": [
+          "Hypotension",
+          "Visual or hearing adverse events",
+          "Priapism",
+          "Pulmonary edema in pulmonary veno-occlusive disease"
+        ],
+        "majorInteractions": [
+          "Nitrates and riociguat are contraindicated",
+          "Strong CYP3A inhibitors increase exposure",
+          "Alpha blockers and antihypertensives may increase hypotension"
+        ],
+        "monitoring": [
+          "Blood pressure",
+          "Functional class and exercise capacity",
+          "Renal and hepatic function",
+          "Vision or hearing symptoms"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed ADCIRCA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff61b237-be8e-461b-8114-78c52a8ad0ae",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 4 Contraindications; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 2,
+            "max": 8,
+            "unit": "h",
+            "basis": "plasma concentration",
+            "note": "Median Tmax is about 4 hours in the cited PAH label."
+          },
+          "eliminationHalfLife": {
+            "min": 35,
+            "max": 35,
+            "unit": "h",
+            "basis": "PAH population pharmacokinetics"
+          },
+          "notes": [
+            "PAH-patient half-life differs from values reported in healthy volunteers."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed ADCIRCA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff61b237-be8e-461b-8114-78c52a8ad0ae",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 4 Contraindications; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed ADCIRCA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff61b237-be8e-461b-8114-78c52a8ad0ae",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; 4 Contraindications; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Adult pulmonary arterial hypertension in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "40 mg total daily in the cited label",
+          "scheduleText": "Once daily; the cited label advises against dividing the daily amount",
+          "ranges": [
+            {
+              "min": 40,
+              "max": 40,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Adult label regimen",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed ADCIRCA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff61b237-be8e-461b-8114-78c52a8ad0ae",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; 4 Contraindications; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed ADCIRCA label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff61b237-be8e-461b-8114-78c52a8ad0ae",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; 4 Contraindications; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    },
+    {
+      "name": "Riociguat",
+      "commonNames": [
+        "Riociguat",
+        "利奥西呱",
+        "Adempas",
+        "sGC stimulator",
+        "PAH",
+        "CTEPH"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b57509a-3d5d-41d4-8fed-1471e26372a3",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine",
+        "atc-c02"
+      ],
+      "summary": "利奥西呱（Riociguat）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C02KX05"
+        ],
+        "drugClass": [
+          "Soluble guanylate cyclase stimulator",
+          "Pulmonary vasodilator"
+        ],
+        "indications": [
+          "Pulmonary arterial hypertension",
+          "Chronic thromboembolic pulmonary hypertension"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "PDE5 inhibitors",
+          "Nitrates or nitric oxide donors",
+          "Selected severe pulmonary hypertension associated with idiopathic interstitial pneumonias"
+        ],
+        "majorWarnings": [
+          "Embryo-fetal toxicity",
+          "Hypotension",
+          "Bleeding",
+          "Pulmonary edema in pulmonary veno-occlusive disease"
+        ],
+        "majorInteractions": [
+          "PDE5 inhibitors and nitrates are contraindicated",
+          "Strong multi-pathway CYP/P-gp/BCRP inhibitors may increase exposure",
+          "Smoking may reduce exposure"
+        ],
+        "monitoring": [
+          "Pregnancy testing where applicable",
+          "Blood pressure",
+          "Bleeding",
+          "Functional class and exercise capacity",
+          "Signs of pulmonary edema"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed ADEMPAS label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b57509a-3d5d-41d4-8fed-1471e26372a3",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "tmax": {
+            "min": 1.5,
+            "max": 1.5,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": 12,
+            "unit": "h",
+            "basis": "PAH patient pharmacokinetics"
+          },
+          "notes": [
+            "Dose titration is blood-pressure and tolerability driven, not concentration guided."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed ADEMPAS label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b57509a-3d5d-41d4-8fed-1471e26372a3",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed ADEMPAS label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b57509a-3d5d-41d4-8fed-1471e26372a3",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Adult PAH or CTEPH in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "0.5-2.5 mg per dose across the cited titration range",
+          "scheduleText": "Three times daily; increases no sooner than every 2 weeks",
+          "ranges": [
+            {
+              "min": 0.5,
+              "max": 1,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "three times daily",
+              "rangeKind": "initial",
+              "label": "Initial label range",
+              "components": []
+            },
+            {
+              "min": 0.5,
+              "max": 2.5,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "three times daily",
+              "rangeKind": "label-regimen",
+              "label": "Label titration range",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed ADEMPAS label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b57509a-3d5d-41d4-8fed-1471e26372a3",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed ADEMPAS label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b57509a-3d5d-41d4-8fed-1471e26372a3",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
+        }
+      ],
+      "roas": []
+    }
+  ]
+}

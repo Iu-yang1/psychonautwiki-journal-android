@@ -59,13 +59,15 @@
             "title": "DailyMed digoxin tablet label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ca595f0c-5bf0-4feb-8183-47832ee8c820",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01AA05",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01AA05",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -116,25 +118,29 @@
             "title": "DailyMed digoxin tablet label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ca595f0c-5bf0-4feb-8183-47832ee8c820",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "DailyMed digoxin injection label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6aba2b38-5de0-4813-9775-39d87613893d",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "Mayo Clinic Laboratories digoxin serum",
             "url": "https://www.mayocliniclabs.com/test-catalog/overview/8674",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           },
           {
             "title": "Labcorp digoxin",
             "url": "https://www.labcorp.com/tests/007385/digoxin",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           }
         ]
       },
@@ -182,7 +188,8 @@
               "title": "DailyMed digoxin tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=digoxin%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -221,7 +228,8 @@
               "title": "DailyMed digoxin injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=digoxin%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -255,9 +263,61 @@
               "title": "DailyMed digoxin tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=digoxin%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed digoxin tablet label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ca595f0c-5bf0-4feb-8183-47832ee8c820",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01AA05",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01AA05",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "DailyMed digoxin injection label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6aba2b38-5de0-4813-9775-39d87613893d",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "Mayo Clinic Laboratories digoxin serum",
+          "url": "https://www.mayocliniclabs.com/test-catalog/overview/8674",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
+        },
+        {
+          "title": "Labcorp digoxin",
+          "url": "https://www.labcorp.com/tests/007385/digoxin",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
+        },
+        {
+          "title": "DailyMed digoxin tablet label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=digoxin%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "DailyMed digoxin injection label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=digoxin%20injection",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ]
     }

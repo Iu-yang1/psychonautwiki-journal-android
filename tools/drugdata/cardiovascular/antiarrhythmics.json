@@ -59,13 +59,15 @@
             "title": "DailyMed lidocaine hydrochloride injection label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01BB01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BB01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -109,13 +111,15 @@
             "title": "Mayo Clinic Laboratories/TestCatalog lidocaine serum",
             "url": "https://www.testcatalog.org/show/LID",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           },
           {
             "title": "DailyMed lidocaine hydrochloride injection label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -169,7 +173,8 @@
               "title": "DailyMed lidocaine hydrochloride injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -205,12 +210,36 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Lidocaine",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed lidocaine hydrochloride injection label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01BB01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BB01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "Mayo Clinic Laboratories/TestCatalog lidocaine serum",
+          "url": "https://www.testcatalog.org/show/LID",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
         }
       ]
     },
@@ -256,7 +285,8 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Concentration interpretation must be combined with ECG intervals, renal function, symptoms, and co-medications."
+          "Concentration interpretation must be combined with ECG intervals, renal function, symptoms, and co-medications.",
+          "QT prolongation and proarrhythmia require ECG and electrolyte assessment."
         ],
         "majorInteractions": [
           "Other QT-prolonging antiarrhythmics can increase proarrhythmia risk.",
@@ -266,20 +296,24 @@
           "ECG",
           "QRS/QT interval",
           "Renal function",
-          "Procainamide and NAPA concentrations when clinically indicated"
+          "Procainamide and NAPA concentrations when clinically indicated",
+          "Heart rate",
+          "PR/QRS/QT intervals as drug-appropriate"
         ],
         "sourceRefs": [
           {
             "title": "WHO ATC/DDD Index: C01BA02",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BA02",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           },
           {
             "title": "Mayo Clinic Laboratories procainamide and NAPA serum",
             "url": "https://www.mayocliniclabs.com/test-catalog/overview/8683",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           }
         ]
       },
@@ -336,13 +370,15 @@
             "title": "Mayo Clinic Laboratories procainamide and NAPA serum",
             "url": "https://www.mayocliniclabs.com/test-catalog/overview/8683",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           },
           {
             "title": "Labcorp procainamide serum or plasma",
             "url": "https://www.labcorp.com/tests/007252/procainamide-serum-or-plasma",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           }
         ]
       },
@@ -387,7 +423,8 @@
               "title": "DailyMed procainamide hydrochloride injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=procainamide%20hydrochloride%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -414,7 +451,8 @@
               "title": "DailyMed procainamide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=procainamide",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -450,7 +488,8 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Procainamide",
@@ -487,12 +526,50 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Procainamide",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "WHO ATC/DDD Index: C01BA02",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BA02",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "Mayo Clinic Laboratories procainamide and NAPA serum",
+          "url": "https://www.mayocliniclabs.com/test-catalog/overview/8683",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
+        },
+        {
+          "title": "Labcorp procainamide serum or plasma",
+          "url": "https://www.labcorp.com/tests/007252/procainamide-serum-or-plasma",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
+        },
+        {
+          "title": "DailyMed procainamide hydrochloride injection label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=procainamide%20hydrochloride%20injection",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "DailyMed procainamide label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=procainamide",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ]
     },
@@ -552,13 +629,15 @@
             "title": "DailyMed flecainide acetate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b33e96a-8336-46c4-aac7-4a6c0039cc80",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01BC04",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BC04",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -595,13 +674,15 @@
             "title": "DailyMed flecainide acetate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b33e96a-8336-46c4-aac7-4a6c0039cc80",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "UT Southwestern/Mayo-style flecainide serum catalog",
             "url": "https://utsouthwestern.testcatalog.org/show/FLEC",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           }
         ]
       },
@@ -654,7 +735,8 @@
               "title": "DailyMed flecainide acetate tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=flecainide%20acetate%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -690,12 +772,43 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Flecainide",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed flecainide acetate label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b33e96a-8336-46c4-aac7-4a6c0039cc80",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01BC04",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BC04",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "UT Southwestern/Mayo-style flecainide serum catalog",
+          "url": "https://utsouthwestern.testcatalog.org/show/FLEC",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
+        },
+        {
+          "title": "DailyMed flecainide acetate tablet label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=flecainide%20acetate%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ]
     },
@@ -743,7 +856,8 @@
         ],
         "contraindications": [],
         "majorWarnings": [
-          "Pulmonary, hepatic, thyroid, ocular, neurologic, and cardiac toxicities require clinical monitoring."
+          "Pulmonary, hepatic, thyroid, ocular, neurologic, and cardiac toxicities require clinical monitoring.",
+          "QT prolongation and proarrhythmia require ECG and electrolyte assessment."
         ],
         "majorInteractions": [
           "Amiodarone has many clinically important drug interactions."
@@ -753,20 +867,27 @@
           "Thyroid function",
           "Liver function",
           "Pulmonary symptoms/imaging as clinically indicated",
-          "Amiodarone concentration in selected scenarios"
+          "Amiodarone concentration in selected scenarios",
+          "Heart rate",
+          "PR/QRS/QT intervals as drug-appropriate",
+          "Liver enzymes",
+          "Pulmonary assessment",
+          "Ophthalmic symptoms"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed amiodarone hydrochloride tablet label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01BD01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -782,14 +903,17 @@
           },
           "notes": [
             "Amiodarone pharmacokinetics are complex because of tissue accumulation and active metabolites.",
-            "Do not infer clinical response or dose adjustment from Tmax alone."
+            "Do not infer clinical response or dose adjustment from Tmax alone.",
+            "Extensive tissue accumulation and a very long, variable terminal half-life prevent interpretation as an ordinary single-dose duration curve.",
+            "Clinical effects and toxicities may persist after discontinuation."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed amiodarone hydrochloride tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -828,13 +952,15 @@
             "title": "Mayo Clinic Laboratories amiodarone serum/plasma catalog PDF",
             "url": "https://www.mayocliniclabs.com/api/sitecore/testcatalog/TestCatalogSetupPDF?testid=9247",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           },
           {
             "title": "DailyMed amiodarone hydrochloride tablet label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -896,7 +1022,8 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Amiodarone",
@@ -933,18 +1060,43 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "WHO ATC/DDD Index: C01BD01",
               "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD01",
               "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "TERMINOLOGY"
             }
           ],
           "reviewedLabelMatch": "Amiodarone",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed amiodarone hydrochloride tablet label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01BD01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "Mayo Clinic Laboratories amiodarone serum/plasma catalog PDF",
+          "url": "https://www.mayocliniclabs.com/api/sitecore/testcatalog/TestCatalogSetupPDF?testid=9247",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
         }
       ]
     },
@@ -990,7 +1142,8 @@
         "contraindications": [],
         "majorWarnings": [
           "Can prolong QT interval and cause torsades de pointes.",
-          "Avoid confusing quinidine with quinine."
+          "Avoid confusing quinidine with quinine.",
+          "QT prolongation and proarrhythmia require ECG and electrolyte assessment."
         ],
         "majorInteractions": [
           "Other QT-prolonging drugs can increase proarrhythmia risk.",
@@ -1001,20 +1154,24 @@
           "QRS/QT interval",
           "Potassium",
           "Magnesium",
-          "Quinidine concentration when clinically indicated"
+          "Quinidine concentration when clinically indicated",
+          "Heart rate",
+          "PR/QRS/QT intervals as drug-appropriate"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed quinidine sulfate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0d6341b-d880-4f0b-8844-bc788c03004a",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01BA01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BA01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1042,7 +1199,8 @@
               "title": "DailyMed quinidine sulfate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=quinidine%20sulfate",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1080,13 +1238,15 @@
             "title": "Mayo Clinic Laboratories quinidine serum PDF",
             "url": "https://www.mayocliniclabs.com/test-notifications/attachment.php?id=83725",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           },
           {
             "title": "MLabs quinidine",
             "url": "https://mlabs.umich.edu/tests/quinidine",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           }
         ]
       },
@@ -1142,12 +1302,50 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Quinidine",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed quinidine sulfate label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0d6341b-d880-4f0b-8844-bc788c03004a",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01BA01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BA01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "Mayo Clinic Laboratories quinidine serum PDF",
+          "url": "https://www.mayocliniclabs.com/test-notifications/attachment.php?id=83725",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
+        },
+        {
+          "title": "MLabs quinidine",
+          "url": "https://mlabs.umich.edu/tests/quinidine",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
+        },
+        {
+          "title": "DailyMed quinidine sulfate label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=quinidine%20sulfate",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ]
     },
@@ -1194,7 +1392,8 @@
         "contraindications": [],
         "majorWarnings": [
           "Can worsen heart failure because of negative inotropic effect.",
-          "QT prolongation and proarrhythmia risk require ECG context."
+          "QT prolongation and proarrhythmia risk require ECG context.",
+          "QT prolongation and proarrhythmia require ECG and electrolyte assessment."
         ],
         "majorInteractions": [
           "Other QT-prolonging antiarrhythmics and beta blockers can increase cardiac risk.",
@@ -1205,20 +1404,24 @@
           "QRS/QT interval",
           "Heart failure symptoms",
           "Anticholinergic adverse effects",
-          "Renal function"
+          "Renal function",
+          "Heart rate",
+          "PR/QRS/QT intervals as drug-appropriate"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed disopyramide phosphate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31e79459-107f-4d69-a163-90014f1c4772",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01BA03",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BA03",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1246,7 +1449,8 @@
               "title": "DailyMed disopyramide phosphate capsule label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=disopyramide%20phosphate%20capsule",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1257,15 +1461,29 @@
         "reason": "This pass records the structure and source link but avoids encoding a therapeutic range without a verified laboratory catalog source.",
         "pharmacokineticParametersAvailable": true,
         "interpretationCaveats": [
-          "source needed: add a verified laboratory TDM catalog before displaying therapeutic or toxic ranges.",
-          "Interpret with ECG, QRS/QT, heart failure symptoms, anticholinergic effects, renal function, and interacting drugs."
+          "Serum disopyramide testing is available in selected contexts; interpret with ECG, renal function, symptoms, and sampling time."
         ],
         "sourceRefs": [
           {
             "title": "DailyMed disopyramide phosphate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31e79459-107f-4d69-a163-90014f1c4772",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "Mayo Clinic Laboratories Critical Values / Semi-Urgent Results List",
+            "url": "https://www.mayocliniclabs.com/-/media/it-mmfiles/Special-Instructions/4/2/A/critical-values-semi-urgent-results-list.pdf",
+            "sourceType": "laboratory-catalog",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "LABORATORY_CATALOG"
+          }
+        ],
+        "criticalValues": [
+          {
+            "threshold": ">=7.0",
+            "unit": "mcg/mL",
+            "note": "Mayo Clinic Laboratories critical-high reporting threshold; this is not a therapeutic target."
           }
         ]
       },
@@ -1319,12 +1537,43 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Disopyramide",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed disopyramide phosphate label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31e79459-107f-4d69-a163-90014f1c4772",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01BA03",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BA03",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "DailyMed disopyramide phosphate capsule label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=disopyramide%20phosphate%20capsule",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "Mayo Clinic Laboratories Critical Values / Semi-Urgent Results List",
+          "url": "https://www.mayocliniclabs.com/-/media/it-mmfiles/Special-Instructions/4/2/A/critical-values-semi-urgent-results-list.pdf",
+          "sourceType": "laboratory-catalog",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "LABORATORY_CATALOG"
         }
       ]
     },
@@ -1379,20 +1628,24 @@
           "Neurologic symptoms",
           "Gastrointestinal tolerance",
           "Liver function when clinically indicated",
-          "Serum mexiletine concentration in selected patients"
+          "Serum mexiletine concentration in selected patients",
+          "Heart rate",
+          "PR/QRS/QT intervals as drug-appropriate"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed mexiletine hydrochloride label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a61a07f6-0b48-4dcd-ad42-5d90f6e69ab1",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01BB02",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BB02",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1420,7 +1673,8 @@
               "title": "DailyMed mexiletine hydrochloride capsule label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=mexiletine%20hydrochloride%20capsule",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1451,13 +1705,15 @@
             "title": "Labcorp mexiletine serum or plasma",
             "url": "https://www.labcorp.com/tests/716076/mexiletine-serum-or-plasma",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           },
           {
             "title": "ARUP Laboratories mexiletine serum or plasma",
             "url": "https://ltd.aruplab.com/Tests/Pub/2011539",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           }
         ]
       },
@@ -1509,12 +1765,50 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Mexiletine",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed mexiletine hydrochloride label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a61a07f6-0b48-4dcd-ad42-5d90f6e69ab1",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01BB02",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BB02",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "Labcorp mexiletine serum or plasma",
+          "url": "https://www.labcorp.com/tests/716076/mexiletine-serum-or-plasma",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
+        },
+        {
+          "title": "ARUP Laboratories mexiletine serum or plasma",
+          "url": "https://ltd.aruplab.com/Tests/Pub/2011539",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
+        },
+        {
+          "title": "DailyMed mexiletine hydrochloride capsule label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=mexiletine%20hydrochloride%20capsule",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ]
     },
@@ -1581,20 +1875,24 @@
           "QRS/PR interval",
           "Heart failure symptoms",
           "CYP2D6/CYP3A4 interacting drugs",
-          "Digoxin or warfarin monitoring if coadministered"
+          "Digoxin or warfarin monitoring if coadministered",
+          "Heart rate",
+          "PR/QRS/QT intervals as drug-appropriate"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed propafenone hydrochloride label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ecd6452-ccc3-493f-9a4a-69f0fbf67a42",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01BC03",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BC03",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1618,7 +1916,8 @@
               "title": "DailyMed propafenone hydrochloride label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ecd6452-ccc3-493f-9a4a-69f0fbf67a42",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1636,7 +1935,8 @@
             "title": "DailyMed propafenone hydrochloride label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ecd6452-ccc3-493f-9a4a-69f0fbf67a42",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -1693,12 +1993,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Propafenone",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed propafenone hydrochloride label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ecd6452-ccc3-493f-9a4a-69f0fbf67a42",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01BC03",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BC03",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1755,7 +2072,9 @@
         ],
         "majorWarnings": [
           "QT prolongation and torsades de pointes risk require ECG and renal function context.",
-          "Renal elimination makes dosing interval and accumulation dependent on kidney function."
+          "Renal elimination makes dosing interval and accumulation dependent on kidney function.",
+          "QT prolongation and proarrhythmia require ECG and electrolyte assessment.",
+          "Renal function determines exposure and label-specific initiation or adjustment requirements."
         ],
         "majorInteractions": [
           "Avoid Class I or Class III antiarrhythmics and other QT-prolonging drugs.",
@@ -1769,20 +2088,26 @@
           "Potassium",
           "Magnesium",
           "Heart rate",
-          "Blood pressure"
+          "Blood pressure",
+          "PR/QRS/QT intervals as drug-appropriate",
+          "Creatinine clearance/eGFR",
+          "Serum potassium",
+          "Serum magnesium"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed sotalol hydrochloride label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c824f6b2-80c5-45a6-a491-4c14c9f5e33d",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C07AA07",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AA07",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1817,7 +2142,8 @@
               "title": "DailyMed sotalol hydrochloride label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c824f6b2-80c5-45a6-a491-4c14c9f5e33d",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1847,13 +2173,15 @@
             "title": "Mayo Clinic Laboratories sotalol serum",
             "url": "https://www.mayocliniclabs.com/test-catalog/overview/91123",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           },
           {
             "title": "Labcorp sotalol serum or plasma",
             "url": "https://www.labcorp.com/tests/808132/sotalol-serum-or-plasma",
             "sourceType": "laboratory-tdm-catalog",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "LABORATORY_CATALOG"
           }
         ]
       },
@@ -1909,12 +2237,43 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Sotalol",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed sotalol hydrochloride label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c824f6b2-80c5-45a6-a491-4c14c9f5e33d",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C07AA07",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AA07",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "Mayo Clinic Laboratories sotalol serum",
+          "url": "https://www.mayocliniclabs.com/test-catalog/overview/91123",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
+        },
+        {
+          "title": "Labcorp sotalol serum or plasma",
+          "url": "https://www.labcorp.com/tests/808132/sotalol-serum-or-plasma",
+          "sourceType": "laboratory-tdm-catalog",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "LABORATORY_CATALOG"
         }
       ]
     },
@@ -1966,7 +2325,9 @@
         ],
         "majorWarnings": [
           "Initiation requires ECG monitoring in an appropriate facility according to labeling.",
-          "Creatinine clearance and QT monitoring are central because concentration relates to QT prolongation."
+          "Creatinine clearance and QT monitoring are central because concentration relates to QT prolongation.",
+          "QT prolongation and proarrhythmia require ECG and electrolyte assessment.",
+          "Renal function determines exposure and label-specific initiation or adjustment requirements."
         ],
         "majorInteractions": [
           "Renal cation transport inhibitors and hydrochlorothiazide can substantially increase risk.",
@@ -1978,20 +2339,27 @@
           "Creatinine clearance",
           "Potassium",
           "Magnesium",
-          "Drug interaction screen"
+          "Drug interaction screen",
+          "Heart rate",
+          "PR/QRS/QT intervals as drug-appropriate",
+          "Creatinine clearance/eGFR",
+          "Serum potassium",
+          "Serum magnesium"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed dofetilide label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26de5f8c-8cec-46f6-a468-69451758a278",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01BD04",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD04",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -2026,7 +2394,8 @@
               "title": "DailyMed dofetilide label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26de5f8c-8cec-46f6-a468-69451758a278",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -2044,7 +2413,8 @@
             "title": "DailyMed dofetilide label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26de5f8c-8cec-46f6-a468-69451758a278",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -2100,12 +2470,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Dofetilide",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed dofetilide label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26de5f8c-8cec-46f6-a468-69451758a278",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01BD04",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD04",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -2153,7 +2540,8 @@
         ],
         "majorWarnings": [
           "Proarrhythmia may be potentially fatal and requires monitored administration.",
-          "Hypokalemia and baseline QT prolongation increase concern."
+          "Hypokalemia and baseline QT prolongation increase concern.",
+          "QT prolongation and proarrhythmia require ECG and electrolyte assessment."
         ],
         "majorInteractions": [
           "Other QT-prolonging drugs can increase torsades risk.",
@@ -2164,20 +2552,25 @@
           "QT interval",
           "Potassium",
           "Magnesium",
-          "Readiness to manage torsades de pointes"
+          "Readiness to manage torsades de pointes",
+          "ECG",
+          "Heart rate",
+          "PR/QRS/QT intervals as drug-appropriate"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed ibutilide fumarate injection label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01BD05",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD05",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -2205,7 +2598,8 @@
               "title": "DailyMed ibutilide fumarate injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ibutilide%20fumarate%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -2220,7 +2614,8 @@
             "title": "DailyMed ibutilide fumarate injection label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -2273,12 +2668,36 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Ibutilide",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed ibutilide fumarate injection label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01BD05",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01BD05",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "DailyMed ibutilide fumarate injection label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ibutilide%20fumarate%20injection",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ]
     },
@@ -2341,20 +2760,25 @@
           "Continuous ECG",
           "Blood pressure",
           "Respiratory symptoms",
-          "Readiness for resuscitation in monitored clinical setting"
+          "Readiness for resuscitation in monitored clinical setting",
+          "ECG",
+          "Heart rate",
+          "PR/QRS/QT intervals as drug-appropriate"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed adenosine injection label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48d72391-b3d4-bd97-e063-6294a90a9d6f",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C01EB10",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01EB10",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -2392,7 +2816,8 @@
               "title": "DailyMed adenosine injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48d72391-b3d4-bd97-e063-6294a90a9d6f",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -2407,7 +2832,8 @@
             "title": "DailyMed adenosine injection label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48d72391-b3d4-bd97-e063-6294a90a9d6f",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -2461,12 +2887,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Adenosine",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed adenosine injection label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48d72391-b3d4-bd97-e063-6294a90a9d6f",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C01EB10",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01EB10",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     }

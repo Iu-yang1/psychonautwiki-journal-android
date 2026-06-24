@@ -47,7 +47,9 @@
         ],
         "majorWarnings": [
           "Myopathy and rhabdomyolysis risk increases with higher exposure and interacting drugs.",
-          "Liver enzyme abnormalities can occur."
+          "Liver enzyme abnormalities can occur.",
+          "Myopathy and rhabdomyolysis risk increases with interacting drugs or higher exposure.",
+          "Pregnancy labeling and reproductive context must be checked before use."
         ],
         "majorInteractions": [
           "Strong CYP3A4 inhibitors can increase atorvastatin exposure.",
@@ -57,20 +59,24 @@
           "LDL-C response",
           "Muscle symptoms",
           "Creatine kinase when clinically indicated",
-          "Liver enzymes when clinically indicated"
+          "Liver enzymes when clinically indicated",
+          "LDL-C/lipid panel",
+          "Creatine kinase when muscle toxicity is suspected"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed atorvastatin calcium label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C10AA05",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA05",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -100,14 +106,16 @@
           },
           "notes": [
             "LDL-C response evolves over repeated dosing and is not described by a single Tmax.",
-            "Routine clinical follow-up uses lipid response and safety monitoring, not plasma atorvastatin concentration."
+            "Routine clinical follow-up uses lipid response and safety monitoring, not plasma atorvastatin concentration.",
+            "LDL-C response develops over repeated treatment and is distinct from plasma Tmax or elimination half-life."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed atorvastatin calcium label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -125,7 +133,8 @@
             "title": "DailyMed atorvastatin calcium label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -177,9 +186,26 @@
               "title": "DailyMed atorvastatin calcium label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed atorvastatin calcium label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C10AA05",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA05",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     }

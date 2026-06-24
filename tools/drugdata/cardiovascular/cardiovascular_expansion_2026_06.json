@@ -58,20 +58,24 @@
           "Heart rate",
           "Blood pressure",
           "Symptoms of bradycardia or hypotension",
-          "ECG when clinically indicated"
+          "ECG when clinically indicated",
+          "ECG/AV conduction when clinically indicated",
+          "Heart failure symptoms"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed bisoprolol fumarate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C07AB07",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB07",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -106,7 +110,8 @@
               "title": "DailyMed bisoprolol fumarate label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -115,7 +120,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical use is usually guided by heart rate, blood pressure, symptoms, ECG context, organ function, and interacting drugs rather than plasma concentration.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed bisoprolol fumarate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AB07",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB07",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -153,12 +174,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Bisoprolol",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed bisoprolol fumarate label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C07AB07",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB07",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -220,20 +258,24 @@
           "Heart rate",
           "Blood pressure",
           "Symptoms of bradycardia or hypotension",
-          "Interacting drugs"
+          "Interacting drugs",
+          "ECG/AV conduction when clinically indicated",
+          "Heart failure symptoms"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed BYSTOLIC label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=07ed02ff-523f-437e-bddc-5c41a4bb0062",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C07AB12",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB12",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -263,7 +305,8 @@
               "title": "DailyMed BYSTOLIC label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=07ed02ff-523f-437e-bddc-5c41a4bb0062",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -272,7 +315,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Monitoring is usually clinical rather than concentration-guided.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed BYSTOLIC label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=07ed02ff-523f-437e-bddc-5c41a4bb0062",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AB12",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB12",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -310,12 +369,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Nebivolol",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed BYSTOLIC label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=07ed02ff-523f-437e-bddc-5c41a4bb0062",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C07AB12",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AB12",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -382,13 +458,15 @@
             "title": "DailyMed labetalol hydrochloride tablet label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C07AG01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AG01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -423,7 +501,8 @@
               "title": "DailyMed labetalol hydrochloride tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -432,7 +511,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical response and safety are monitored using blood pressure, heart rate, symptoms, and clinical context.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed labetalol hydrochloride tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C07AG01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AG01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -473,7 +568,8 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Labetalol",
@@ -510,18 +606,36 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "WHO ATC/DDD Index: C07AG01",
               "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AG01",
               "sourceType": "terminology",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "TERMINOLOGY"
             }
           ],
           "reviewedLabelMatch": "Labetalol",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed labetalol hydrochloride tablet label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C07AG01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AG01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -574,7 +688,9 @@
         ],
         "majorWarnings": [
           "Can cause angioedema, fetal toxicity, hypotension, renal impairment, and hyperkalemia.",
-          "Renal function and potassium changes are clinically important."
+          "Renal function and potassium changes are clinically important.",
+          "Hyperkalemia and renal-function worsening can occur.",
+          "Pregnancy exposure can cause fetal toxicity; follow the product boxed warning or local labeling."
         ],
         "majorInteractions": [
           "Potassium supplements, potassium-sparing diuretics, or salt substitutes can increase hyperkalemia risk.",
@@ -585,20 +701,23 @@
           "Blood pressure",
           "Serum creatinine/eGFR",
           "Serum potassium",
-          "Angioedema symptoms"
+          "Angioedema symptoms",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed enalapril maleate label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a88902bd-742f-4ea6-b625-cc9df1709efc&type=display",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C09AA02",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA02",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -629,7 +748,8 @@
               "title": "DailyMed enalapril maleate label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a88902bd-742f-4ea6-b625-cc9df1709efc&type=display",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -638,7 +758,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical use is guided by blood pressure, renal function, potassium, symptoms, and local labeling rather than plasma concentration.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed enalapril maleate label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a88902bd-742f-4ea6-b625-cc9df1709efc&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09AA02",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA02",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -676,12 +812,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Enalapril",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed enalapril maleate label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a88902bd-742f-4ea6-b625-cc9df1709efc&type=display",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C09AA02",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA02",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -734,7 +887,9 @@
         ],
         "majorWarnings": [
           "Can cause fetal toxicity, hypotension, renal impairment, and hyperkalemia.",
-          "Volume depletion can increase symptomatic hypotension risk."
+          "Volume depletion can increase symptomatic hypotension risk.",
+          "Hyperkalemia and renal-function worsening can occur.",
+          "Pregnancy exposure can cause fetal toxicity; follow the product boxed warning or local labeling."
         ],
         "majorInteractions": [
           "Potassium supplements, potassium-sparing diuretics, or salt substitutes can increase hyperkalemia risk.",
@@ -745,20 +900,23 @@
           "Blood pressure",
           "Serum creatinine/eGFR",
           "Serum potassium",
-          "Symptoms of hypotension"
+          "Symptoms of hypotension",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed valsartan tablet label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8478a05f-38fd-412d-af49-69a73a787c8f",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C09CA03",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA03",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -787,7 +945,8 @@
               "title": "DailyMed valsartan tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8478a05f-38fd-412d-af49-69a73a787c8f",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -796,7 +955,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical use is usually guided by blood pressure, renal function, potassium, symptoms, and local approved labeling.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed valsartan tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8478a05f-38fd-412d-af49-69a73a787c8f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C09CA03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -834,12 +1009,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Valsartan",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed valsartan tablet label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8478a05f-38fd-412d-af49-69a73a787c8f",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C09CA03",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA03",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -885,7 +1077,8 @@
           "Antianginal",
           "Antihypertensive",
           "C08 钙通道阻滞剂",
-          "Calcium channel blockers"
+          "Calcium channel blockers",
+          "non-DHP CCB"
         ],
         "indications": [
           "Hypertension",
@@ -899,38 +1092,46 @@
         ],
         "majorWarnings": [
           "Can prolong AV nodal conduction and cause bradycardia or AV block.",
-          "May worsen heart failure in susceptible patients."
+          "May worsen heart failure in susceptible patients.",
+          "Bradycardia, AV block, and worsening heart failure can occur in susceptible patients."
         ],
         "majorInteractions": [
           "Beta blockers and digoxin may have additive effects on cardiac conduction.",
           "Verapamil is involved in CYP3A4/P-gp interactions and can increase exposure of susceptible substrates.",
-          "Some statins can have increased exposure and myopathy risk with verapamil."
+          "Some statins can have increased exposure and myopathy risk with verapamil.",
+          "CYP3A inhibitors or inducers may alter exposure; verify the formulation-specific label."
         ],
         "monitoring": [
           "Heart rate",
           "Blood pressure",
           "ECG or conduction symptoms when clinically indicated",
           "Heart failure symptoms",
-          "Interacting drugs"
+          "Interacting drugs",
+          "Peripheral edema",
+          "Symptoms of hypotension",
+          "ECG/AV conduction when clinically indicated"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed verapamil hydrochloride tablet label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f00c1caf-68b6-40c1-a1fa-72d17d2cf44f",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "DailyMed verapamil extended-release label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3bee2d26-138c-4641-a217-a38d3d657461",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C08DA01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08DA01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -959,7 +1160,8 @@
               "title": "DailyMed verapamil hydrochloride tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f00c1caf-68b6-40c1-a1fa-72d17d2cf44f",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -986,7 +1188,8 @@
               "title": "DailyMed verapamil extended-release label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3bee2d26-138c-4641-a217-a38d3d657461",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -995,7 +1198,30 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring usually focuses on heart rate, blood pressure, ECG/conduction, heart failure symptoms, and interactions.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed verapamil hydrochloride tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f00c1caf-68b6-40c1-a1fa-72d17d2cf44f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "DailyMed verapamil extended-release label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3bee2d26-138c-4641-a217-a38d3d657461",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C08DA01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08DA01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -1033,7 +1259,8 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "DailyMed verapamil extended-release label",
@@ -1041,12 +1268,36 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Verapamil",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed verapamil hydrochloride tablet label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f00c1caf-68b6-40c1-a1fa-72d17d2cf44f",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "DailyMed verapamil extended-release label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3bee2d26-138c-4641-a217-a38d3d657461",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C08DA01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08DA01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1090,7 +1341,8 @@
           "Antihypertensive",
           "Antianginal",
           "C08 钙通道阻滞剂",
-          "Calcium channel blockers"
+          "Calcium channel blockers",
+          "DHP CCB"
         ],
         "indications": [
           "Hypertension",
@@ -1099,37 +1351,44 @@
         "contraindications": [],
         "majorWarnings": [
           "Can cause symptomatic hypotension, edema, flushing, headache, and reflex tachycardia.",
-          "Immediate-release formulations have safety concerns in some cardiovascular contexts; follow local approved labeling."
+          "Immediate-release formulations have safety concerns in some cardiovascular contexts; follow local approved labeling.",
+          "Immediate-release and extended-release nifedipine must not be treated as interchangeable time courses."
         ],
         "majorInteractions": [
           "Strong CYP3A inhibitors can increase nifedipine exposure.",
-          "Other antihypertensives can increase blood pressure-lowering effect."
+          "Other antihypertensives can increase blood pressure-lowering effect.",
+          "CYP3A inhibitors or inducers may alter exposure; verify the formulation-specific label."
         ],
         "monitoring": [
           "Blood pressure",
           "Heart rate",
           "Edema",
           "Symptoms of hypotension",
-          "Interacting CYP3A drugs"
+          "Interacting CYP3A drugs",
+          "Peripheral edema",
+          "ECG/AV conduction when clinically indicated"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed nifedipine capsule label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "DailyMed nifedipine extended-release label",
             "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C08CA05",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA05",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1165,7 +1424,8 @@
               "title": "DailyMed nifedipine capsule label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         },
@@ -1192,7 +1452,8 @@
               "title": "DailyMed nifedipine extended-release label",
               "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1201,7 +1462,30 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical use is usually guided by blood pressure, heart rate, symptoms, edema, and interacting drugs rather than plasma concentration.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed nifedipine capsule label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "DailyMed nifedipine extended-release label",
+            "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C08CA05",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA05",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -1239,7 +1523,8 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "DailyMed nifedipine extended-release label",
@@ -1247,12 +1532,36 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Nifedipine",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed nifedipine capsule label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "DailyMed nifedipine extended-release label",
+          "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C08CA05",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA05",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1302,7 +1611,8 @@
         "contraindications": [],
         "majorWarnings": [
           "Can cause electrolyte imbalance, volume depletion, renal function changes, and hyperuricemia.",
-          "Photosensitivity and metabolic changes may occur."
+          "Photosensitivity and metabolic changes may occur.",
+          "Dehydration, volume depletion, electrolyte abnormalities, and renal-function worsening can occur."
         ],
         "majorInteractions": [
           "Lithium toxicity risk may increase with thiazide diuretics.",
@@ -1314,20 +1624,26 @@
           "Serum sodium",
           "Serum potassium",
           "Serum creatinine/eGFR",
-          "Uric acid when clinically indicated"
+          "Uric acid when clinically indicated",
+          "Blood pressure and volume status",
+          "Serum magnesium",
+          "Creatinine/eGFR",
+          "Uric acid and gout symptoms when relevant"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed hydrochlorothiazide label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9416208e-e3fe-4213-a4c1-2ea6ebdc5795&type=display",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C03AA03",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03AA03",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1375,7 +1691,8 @@
               "title": "DailyMed hydrochlorothiazide label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9416208e-e3fe-4213-a4c1-2ea6ebdc5795&type=display",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1384,7 +1701,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring focuses on blood pressure, volume status, renal function, and electrolytes.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed hydrochlorothiazide label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9416208e-e3fe-4213-a4c1-2ea6ebdc5795&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03AA03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03AA03",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -1422,12 +1755,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Hydrochlorothiazide",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed hydrochlorothiazide label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9416208e-e3fe-4213-a4c1-2ea6ebdc5795&type=display",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C03AA03",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03AA03",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1477,7 +1827,8 @@
         "contraindications": [],
         "majorWarnings": [
           "Can cause excessive diuresis with dehydration, hypotension, electrolyte depletion, and renal function changes.",
-          "Hepatic disease and renal disease can alter response and safety monitoring needs."
+          "Hepatic disease and renal disease can alter response and safety monitoring needs.",
+          "Dehydration, volume depletion, electrolyte abnormalities, and renal-function worsening can occur."
         ],
         "majorInteractions": [
           "Other antihypertensives can increase hypotension risk.",
@@ -1490,20 +1841,26 @@
           "Serum sodium",
           "Serum potassium",
           "Serum creatinine/eGFR",
-          "Weight/edema symptoms when clinically relevant"
+          "Weight/edema symptoms when clinically relevant",
+          "Blood pressure and volume status",
+          "Serum magnesium",
+          "Creatinine/eGFR",
+          "Uric acid and gout symptoms when relevant"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed torsemide label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f1439b9c-c01c-a6d4-594b-d92b8e0af26e",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C03CA04",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA04",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1544,7 +1901,8 @@
               "title": "DailyMed torsemide label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f1439b9c-c01c-a6d4-594b-d92b8e0af26e",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1553,7 +1911,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring focuses on diuresis, weight/volume status, blood pressure, renal function, and electrolytes.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed torsemide label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f1439b9c-c01c-a6d4-594b-d92b8e0af26e",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C03CA04",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA04",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -1591,12 +1965,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Torsemide",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed torsemide label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f1439b9c-c01c-a6d4-594b-d92b8e0af26e",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C03CA04",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA04",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1668,20 +2059,26 @@
           "Renal function",
           "Hepatic function",
           "Concomitant antithrombotic or interacting drugs",
-          "Anti-Xa or drug-calibrated assays only in selected scenarios"
+          "Anti-Xa or drug-calibrated assays only in selected scenarios",
+          "Bleeding",
+          "Hemoglobin/hematocrit",
+          "Creatinine/eGFR",
+          "Liver function when clinically indicated"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed XARELTO label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: B01AF01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1704,14 +2101,16 @@
           },
           "notes": [
             "This is PK time-course information, not a recommendation for anticoagulation monitoring.",
-            "Anticoagulant activity assays are distinct from routine plasma concentration monitoring."
+            "Anticoagulant activity assays are distinct from routine plasma concentration monitoring.",
+            "Anticoagulant effect and laboratory interpretation are assay- and context-dependent."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed XARELTO label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -1723,7 +2122,25 @@
         "pharmacokineticParametersAvailable": true,
         "interpretationCaveats": [
           "Assay interpretation depends on timing after dose, renal/hepatic function, indication, dose context, and local assay calibration.",
-          "This entry is for learning and indexing only, not anticoagulation management."
+          "This entry is for learning and indexing only, not anticoagulation management.",
+          "Routine plasma concentration monitoring is not standard.",
+          "Drug-specific calibrated anti-Xa or dilute thrombin/ecarin-based assays are reserved for selected clinical scenarios."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed XARELTO label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AF01",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF01",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
         ]
       },
       "roas": [
@@ -1762,12 +2179,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Rivaroxaban",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed XARELTO label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: B01AF01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -1840,26 +2274,33 @@
           "Bleeding symptoms",
           "Renal function",
           "Concomitant antithrombotic or interacting drugs",
-          "Specialized coagulation assays only in selected scenarios"
+          "Specialized coagulation assays only in selected scenarios",
+          "Bleeding",
+          "Hemoglobin/hematocrit",
+          "Creatinine/eGFR",
+          "Liver function when clinically indicated"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed PRADAXA label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80637981-d5a7-48cb-b7b2-f50807a8ab20",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "PRADAXA HCP dosing and administration",
             "url": "https://pro.boehringer-ingelheim.com/us/products/pradaxa/dosing-administration",
             "sourceType": "manufacturer-label-support",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "SOURCE_REFERENCE"
           },
           {
             "title": "WHO ATC/DDD Index: B01AE07",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AE07",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -1881,20 +2322,23 @@
           },
           "notes": [
             "Half-life is strongly affected by renal function.",
-            "This is PK time-course information, not anticoagulation management guidance."
+            "This is PK time-course information, not anticoagulation management guidance.",
+            "Anticoagulant effect and laboratory interpretation are assay- and context-dependent."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed PRADAXA label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80637981-d5a7-48cb-b7b2-f50807a8ab20",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "PRADAXA HCP dosing and administration",
               "url": "https://pro.boehringer-ingelheim.com/us/products/pradaxa/dosing-administration",
               "sourceType": "manufacturer-label-support",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "SOURCE_REFERENCE"
             }
           ]
         }
@@ -1906,7 +2350,32 @@
         "pharmacokineticParametersAvailable": true,
         "interpretationCaveats": [
           "Assay interpretation depends on timing after dose, renal function, indication, dose context, and local assay calibration.",
-          "This entry is for learning and indexing only, not anticoagulation management."
+          "This entry is for learning and indexing only, not anticoagulation management.",
+          "Routine plasma concentration monitoring is not standard.",
+          "Drug-specific calibrated anti-Xa or dilute thrombin/ecarin-based assays are reserved for selected clinical scenarios."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed PRADAXA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80637981-d5a7-48cb-b7b2-f50807a8ab20",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "PRADAXA HCP dosing and administration",
+            "url": "https://pro.boehringer-ingelheim.com/us/products/pradaxa/dosing-administration",
+            "sourceType": "manufacturer-label-support",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "SOURCE_REFERENCE"
+          },
+          {
+            "title": "WHO ATC/DDD Index: B01AE07",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AE07",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
         ]
       },
       "roas": [
@@ -1945,18 +2414,43 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             },
             {
               "title": "PRADAXA HCP dosing and administration",
               "url": "https://pro.boehringer-ingelheim.com/us/products/pradaxa/dosing-administration",
               "sourceType": "manufacturer-label-support",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "SOURCE_REFERENCE"
             }
           ],
           "reviewedLabelMatch": "Dabigatran",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed PRADAXA label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80637981-d5a7-48cb-b7b2-f50807a8ab20",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "PRADAXA HCP dosing and administration",
+          "url": "https://pro.boehringer-ingelheim.com/us/products/pradaxa/dosing-administration",
+          "sourceType": "manufacturer-label-support",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "SOURCE_REFERENCE"
+        },
+        {
+          "title": "WHO ATC/DDD Index: B01AE07",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AE07",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -2010,7 +2504,9 @@
         ],
         "majorWarnings": [
           "Myopathy and rhabdomyolysis risk can increase with interacting drugs, renal impairment, and other risk factors.",
-          "Liver enzyme abnormalities can occur."
+          "Liver enzyme abnormalities can occur.",
+          "Myopathy and rhabdomyolysis risk increases with interacting drugs or higher exposure.",
+          "Pregnancy labeling and reproductive context must be checked before use."
         ],
         "majorInteractions": [
           "Cyclosporine and some antiviral or transporter-inhibiting drugs can increase rosuvastatin exposure.",
@@ -2021,20 +2517,24 @@
           "Muscle symptoms",
           "Creatine kinase when clinically indicated",
           "Liver enzymes when clinically indicated",
-          "Renal function in susceptible patients"
+          "Renal function in susceptible patients",
+          "LDL-C/lipid panel",
+          "Creatine kinase when muscle toxicity is suspected"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed rosuvastatin calcium label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=94245f53-2892-4209-8c94-c32c87d5b106",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C10AA07",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA07",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -2056,14 +2556,16 @@
           },
           "notes": [
             "LDL-C lowering is a longer-term pharmacodynamic outcome and should not be equated with plasma Tmax.",
-            "Food and morning/evening administration do not meaningfully change AUC in the cited label."
+            "Food and morning/evening administration do not meaningfully change AUC in the cited label.",
+            "LDL-C response develops over repeated treatment and is distinct from plasma Tmax or elimination half-life."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed rosuvastatin calcium label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=94245f53-2892-4209-8c94-c32c87d5b106",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -2072,7 +2574,23 @@
         "isRoutinelyMonitored": false,
         "monitoringType": "not routinely monitored by plasma concentration",
         "reason": "Clinical monitoring focuses on lipid response, adverse muscle symptoms, liver enzymes when indicated, renal context, and interacting drugs.",
-        "pharmacokineticParametersAvailable": true
+        "pharmacokineticParametersAvailable": true,
+        "sourceRefs": [
+          {
+            "title": "DailyMed rosuvastatin calcium label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=94245f53-2892-4209-8c94-c32c87d5b106",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "WHO ATC/DDD Index: C10AA07",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA07",
+            "sourceType": "terminology",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
+          }
+        ]
       },
       "roas": [
         {
@@ -2110,12 +2628,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Rosuvastatin",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed rosuvastatin calcium label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=94245f53-2892-4209-8c94-c32c87d5b106",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C10AA07",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10AA07",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     }

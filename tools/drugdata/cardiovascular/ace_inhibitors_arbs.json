@@ -51,7 +51,9 @@
         ],
         "majorWarnings": [
           "Angioedema may occur at any time during ACE inhibitor therapy.",
-          "Renal function and potassium require monitoring in susceptible patients."
+          "Renal function and potassium require monitoring in susceptible patients.",
+          "Hyperkalemia and renal-function worsening can occur.",
+          "Pregnancy exposure can cause fetal toxicity; follow the product boxed warning or local labeling."
         ],
         "majorInteractions": [
           "Potassium supplements or potassium-sparing diuretics may increase hyperkalemia risk.",
@@ -63,20 +65,23 @@
           "Renal function",
           "Serum potassium",
           "Angioedema symptoms",
-          "Cough or hypotension symptoms"
+          "Cough or hypotension symptoms",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed lisinopril label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C09AA03",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA03",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -107,7 +112,8 @@
               "title": "DailyMed lisinopril label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -125,7 +131,8 @@
             "title": "DailyMed lisinopril label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -179,12 +186,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Lisinopril",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed lisinopril label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C09AA03",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09AA03",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -237,7 +261,9 @@
         ],
         "majorWarnings": [
           "Renal function and potassium require monitoring in susceptible patients.",
-          "Fetal toxicity warning applies to drugs acting on the renin-angiotensin system."
+          "Fetal toxicity warning applies to drugs acting on the renin-angiotensin system.",
+          "Hyperkalemia and renal-function worsening can occur.",
+          "Pregnancy exposure can cause fetal toxicity; follow the product boxed warning or local labeling."
         ],
         "majorInteractions": [
           "Potassium supplements or potassium-sparing diuretics may increase hyperkalemia risk.",
@@ -248,20 +274,23 @@
           "Blood pressure",
           "Renal function",
           "Serum potassium",
-          "Symptoms of hypotension"
+          "Symptoms of hypotension",
+          "Creatinine/eGFR"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed losartan potassium label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C09CA01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -299,7 +328,8 @@
               "title": "DailyMed losartan potassium label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -317,7 +347,8 @@
             "title": "DailyMed losartan potassium label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -370,12 +401,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Losartan",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed losartan potassium label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C09CA01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09CA01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     }

@@ -39,7 +39,8 @@
           "Antianginal",
           "Antihypertensive",
           "C08 钙通道阻滞剂",
-          "Calcium channel blockers"
+          "Calcium channel blockers",
+          "non-DHP CCB"
         ],
         "indications": [
           "Hypertension",
@@ -54,32 +55,39 @@
         ],
         "majorWarnings": [
           "Can prolong AV nodal conduction and cause bradycardia or AV block.",
-          "May worsen heart failure in susceptible patients."
+          "May worsen heart failure in susceptible patients.",
+          "Bradycardia, AV block, and worsening heart failure can occur in susceptible patients."
         ],
         "majorInteractions": [
           "Beta blockers and digoxin may have additive effects on cardiac conduction.",
           "Diltiazem is a CYP3A4 substrate and inhibitor; CYP3A4 inhibitors/inducers can affect exposure and interacting substrates.",
-          "Some statins can have increased exposure and myopathy risk with diltiazem."
+          "Some statins can have increased exposure and myopathy risk with diltiazem.",
+          "CYP3A inhibitors or inducers may alter exposure; verify the formulation-specific label."
         ],
         "monitoring": [
           "Heart rate",
           "Blood pressure",
           "ECG or conduction symptoms when clinically indicated",
           "Heart failure symptoms",
-          "Interacting drugs"
+          "Interacting drugs",
+          "Peripheral edema",
+          "Symptoms of hypotension",
+          "ECG/AV conduction when clinically indicated"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed diltiazem hydrochloride extended-release label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: C08DB01",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08DB01",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -113,7 +121,8 @@
               "title": "DailyMed diltiazem hydrochloride extended-release label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -131,7 +140,8 @@
             "title": "DailyMed diltiazem hydrochloride extended-release label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -184,12 +194,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Diltiazem",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed diltiazem hydrochloride extended-release label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: C08DB01",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08DB01",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -243,7 +270,8 @@
         ],
         "majorWarnings": [
           "Contraindicated in heart failure of any severity.",
-          "Can cause tachycardia, palpitations, hypotension, and other cardiovascular effects."
+          "Can cause tachycardia, palpitations, hypotension, and other cardiovascular effects.",
+          "Cilostazol is contraindicated in heart failure of any severity in the cited US labeling."
         ],
         "majorInteractions": [
           "Strong or moderate CYP3A4 inhibitors can increase cilostazol exposure.",
@@ -255,20 +283,28 @@
           "Bleeding symptoms",
           "Heart failure history",
           "Heart rate or palpitations",
-          "Interacting drugs"
+          "Interacting drugs",
+          "Bleeding",
+          "Hemoglobin/hematocrit",
+          "Platelet function testing only in selected contexts",
+          "Blood pressure",
+          "Bleeding symptoms when relevant",
+          "Cardiac symptoms and heart rate"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed cilostazol label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: B01AC23",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC23",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -285,14 +321,16 @@
           },
           "notes": [
             "Symptomatic walking improvement is a repeated-dose clinical outcome and is not equal to plasma Tmax.",
-            "source needed: add exact label-verified Tmax from the selected label before displaying numeric Tmax."
+            "The cited source does not encode a single universal value; add exact label-verified Tmax from the selected label before displaying numeric Tmax.",
+            "Platelet inhibition and recovery can outlast parent-drug plasma exposure."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed cilostazol label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -310,7 +348,8 @@
             "title": "DailyMed cilostazol label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -362,9 +401,26 @@
               "title": "DailyMed cilostazol label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed cilostazol label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: B01AC23",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC23",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     }

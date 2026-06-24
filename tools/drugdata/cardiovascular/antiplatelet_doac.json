@@ -58,20 +58,25 @@
           "Bleeding symptoms",
           "CBC when clinically indicated",
           "Medication changes affecting bleeding risk",
-          "Genotype or platelet function testing only in selected contexts"
+          "Genotype or platelet function testing only in selected contexts",
+          "Bleeding",
+          "Hemoglobin/hematocrit",
+          "Platelet function testing only in selected contexts"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed clopidogrel label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: B01AC04",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC04",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -95,14 +100,16 @@
           },
           "notes": [
             "Clopidogrel is a prodrug; active metabolite exposure is not the same as duration of platelet effect.",
-            "Do not use this field to plan surgery or antiplatelet interruption."
+            "Do not use this field to plan surgery or antiplatelet interruption.",
+            "Platelet inhibition and recovery can outlast parent-drug plasma exposure."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed clopidogrel label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -120,7 +127,8 @@
             "title": "DailyMed clopidogrel label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -175,12 +183,29 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "reviewedLabelMatch": "Clopidogrel",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed clopidogrel label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: B01AC04",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AC04",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     },
@@ -244,20 +269,26 @@
           "Renal function",
           "Hepatic function when clinically indicated",
           "CBC when clinically indicated",
-          "Anti-Xa calibrated assays only in selected contexts"
+          "Anti-Xa calibrated assays only in selected contexts",
+          "Bleeding",
+          "Hemoglobin/hematocrit",
+          "Creatinine/eGFR",
+          "Liver function when clinically indicated"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed apixaban/Eliquis label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: B01AF02",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF02",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -279,14 +310,16 @@
           },
           "notes": [
             "PT/INR/aPTT changes are small and variable at expected therapeutic dosing.",
-            "Anti-Xa testing, when used, is anticoagulant activity/exposure assessment rather than routine TDM."
+            "Anti-Xa testing, when used, is anticoagulant activity/exposure assessment rather than routine TDM.",
+            "Anticoagulant effect and laboratory interpretation are assay- and context-dependent."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed apixaban/Eliquis label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -300,14 +333,17 @@
           "anti-Xa activity calibrated for apixaban"
         ],
         "interpretationCaveats": [
-          "This is not routine TDM and depends heavily on assay calibration, timing, indication, renal function, bleeding/thrombotic context, and local policy."
+          "This is not routine TDM and depends heavily on assay calibration, timing, indication, renal function, bleeding/thrombotic context, and local policy.",
+          "Routine plasma concentration monitoring is not standard.",
+          "Drug-specific calibrated anti-Xa or dilute thrombin/ecarin-based assays are reserved for selected clinical scenarios."
         ],
         "sourceRefs": [
           {
             "title": "DailyMed apixaban/Eliquis label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -360,9 +396,26 @@
               "title": "DailyMed apixaban/Eliquis label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed apixaban/Eliquis label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: B01AF02",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AF02",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
         }
       ]
     }

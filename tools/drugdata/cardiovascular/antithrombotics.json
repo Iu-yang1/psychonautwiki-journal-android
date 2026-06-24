@@ -50,20 +50,25 @@
           "INR",
           "PT",
           "Bleeding symptoms",
-          "Interacting drugs and diet changes"
+          "Interacting drugs and diet changes",
+          "INR/PT",
+          "Bleeding",
+          "Diet, illness, and interacting medicines"
         ],
         "sourceRefs": [
           {
             "title": "DailyMed warfarin sodium label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6233f92-0d92-44d0-82cb-bacccb61d970",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
             "title": "WHO ATC/DDD Index: B01AA03",
             "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AA03",
             "sourceType": "terminology",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
@@ -88,14 +93,16 @@
         ],
         "interpretationCaveats": [
           "This is not plasma concentration TDM.",
-          "INR interpretation depends on indication, bleeding/thrombotic risk, timing, interacting drugs, diet, illness, adherence, and local protocol."
+          "INR interpretation depends on indication, bleeding/thrombotic risk, timing, interacting drugs, diet, illness, adherence, and local protocol.",
+          "Warfarin is adjusted by INR rather than routine plasma drug concentration."
         ],
         "sourceRefs": [
           {
             "title": "DailyMed warfarin sodium label",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6233f92-0d92-44d0-82cb-bacccb61d970",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23"
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
@@ -139,14 +146,16 @@
             "basis": "label pharmacokinetics"
           },
           "notes": [
-            "Warfarin clinical monitoring is INR, not routine plasma concentration. Anticoagulant effect reflects vitamin K-dependent clotting factor turnover."
+            "Warfarin clinical monitoring is INR, not routine plasma concentration. Anticoagulant effect reflects vitamin K-dependent clotting factor turnover.",
+            "Anticoagulant onset and offset depend on clotting-factor turnover, not plasma warfarin concentration alone."
           ],
           "sourceRefs": [
             {
               "title": "DailyMed warfarin sodium tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=warfarin%20sodium%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
         }
@@ -180,9 +189,33 @@
               "title": "DailyMed warfarin sodium tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=warfarin%20sodium%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed warfarin sodium label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6233f92-0d92-44d0-82cb-bacccb61d970",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "WHO ATC/DDD Index: B01AA03",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AA03",
+          "sourceType": "terminology",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "TERMINOLOGY"
+        },
+        {
+          "title": "DailyMed warfarin sodium tablet label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=warfarin%20sodium%20tablet",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-23",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ]
     }

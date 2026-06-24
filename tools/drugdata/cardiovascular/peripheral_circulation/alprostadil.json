@@ -1,0 +1,152 @@
+{
+  "substances": [
+    {
+      "name": "Alprostadil",
+      "commonNames": [
+        "Alprostadil",
+        "前列地尔",
+        "Prostin VR Pediatric",
+        "Prostaglandin E1",
+        "PGE1"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [],
+      "categories": [
+        "cardiovascular",
+        "peripheral-circulation",
+        "prescription-medicine",
+        "atc-c01"
+      ],
+      "summary": "前列地尔（Alprostadil）的临床药理、监测和时间进程资料索引。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "C01EA01"
+        ],
+        "drugClass": [
+          "Prostaglandin E1",
+          "Vasodilator",
+          "Ductus arteriosus patency therapy"
+        ],
+        "indications": [
+          "Temporary maintenance of ductus arteriosus patency in neonates with ductal-dependent congenital heart disease"
+        ],
+        "contraindications": [
+          "No absolute contraindication is listed for the life-preserving neonatal indication; use is protocol and specialist driven"
+        ],
+        "majorWarnings": [
+          "Apnea",
+          "Hypotension",
+          "Fever",
+          "Seizures",
+          "Cortical proliferation of long bones with prolonged infusion"
+        ],
+        "majorInteractions": [
+          "Management is intensive-care protocol driven; consult the full label for concomitant therapy"
+        ],
+        "monitoring": [
+          "Continuous cardiorespiratory monitoring",
+          "Blood pressure",
+          "Respiratory status and apnea",
+          "Blood gases and oxygenation",
+          "Temperature",
+          "Infusion-site and prolonged-therapy complications"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed PROSTIN VR PEDIATRIC label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "Dosage and Administration; Warnings; Clinical Pharmacology"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "intravenous or intra-arterial",
+          "formulation": "continuous infusion",
+          "notes": [
+            "Clinical effect is infusion dependent and assessed by oxygenation, blood pressure, and ductal-dependent circulation rather than plasma concentration."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed PROSTIN VR PEDIATRIC label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "Dosage and Administration; Warnings; Clinical Pharmacology"
+            }
+          ]
+        }
+      ],
+      "tdm": {
+        "isRoutinelyMonitored": false,
+        "monitoringType": "clinical and laboratory monitoring rather than routine plasma concentration",
+        "reason": "Routine management is based on clinical response and safety monitoring rather than plasma drug concentration.",
+        "pharmacokineticParametersAvailable": true,
+        "interpretationCaveats": [
+          "Pharmacokinetic parameters belong in timeCourse and are not therapeutic concentration targets."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed PROSTIN VR PEDIATRIC label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "Dosage and Administration; Warnings; Clinical Pharmacology"
+          }
+        ]
+      },
+      "doseUseReferences": [
+        {
+          "indication": "Neonatal ductal-patency support in the cited label",
+          "population": "Adults unless otherwise specified by the cited label",
+          "route": "intravenous or intra-arterial",
+          "formulation": "continuous infusion",
+          "amountText": "0.05-0.1 mcg/kg/min initial infusion range in the cited label",
+          "scheduleText": "Continuous infusion with reduction to the lowest rate maintaining response",
+          "ranges": [
+            {
+              "min": 0.05,
+              "max": 0.1,
+              "unit": "mcg/kg/min",
+              "basis": "weight-based",
+              "frequency": "continuous infusion",
+              "rangeKind": "initial",
+              "label": "Initial label infusion range",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "sourceRefs": [
+            {
+              "title": "DailyMed PROSTIN VR PEDIATRIC label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "Dosage and Administration; Warnings; Clinical Pharmacology"
+            }
+          ]
+        }
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed PROSTIN VR PEDIATRIC label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=930f8c02-46a8-4cff-a484-660468ab23c3",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "Dosage and Administration; Warnings; Clinical Pharmacology"
+        }
+      ],
+      "roas": []
+    }
+  ]
+}
