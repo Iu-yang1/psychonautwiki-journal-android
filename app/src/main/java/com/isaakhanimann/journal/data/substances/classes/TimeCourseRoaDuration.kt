@@ -22,7 +22,6 @@ import com.isaakhanimann.journal.data.substances.AdministrationRoute
 import com.isaakhanimann.journal.data.substances.classes.roa.DurationRange
 import com.isaakhanimann.journal.data.substances.classes.roa.DurationUnits
 import com.isaakhanimann.journal.data.substances.classes.roa.RoaDuration
-import kotlin.math.max
 import kotlin.math.min
 
 fun Substance.derivedRoaDurationForRoute(route: AdministrationRoute): RoaDuration? {
@@ -34,11 +33,11 @@ private fun TimeCourse.matchesRoute(route: AdministrationRoute): Boolean {
     return normalizedRouteText() in routeAliases.getValue(route) || normalizedRouteText() == routeText
 }
 
-private fun TimeCourse.toRoaDurationForTimeline(): RoaDuration? {
+internal fun TimeCourse.toRoaDurationForTimeline(): RoaDuration? {
     var totalEnd = totalEndHours() ?: return null
-    val onsetEnd = (onset?.toHoursRange()?.mid ?: estimateOnsetHours(totalEnd))
+    val onsetEnd = (onset?.representativeHours() ?: estimateOnsetHours(totalEnd))
         .coerceAtLeast(0f)
-    var peakAt = (peakEffect?.toHoursRange()?.mid ?: tmax?.toHoursRange()?.mid)
+    var peakAt = (peakEffect?.representativeHours() ?: tmax?.representativeHours())
         ?: estimatePeakHours(onsetEnd, totalEnd)
 
     val minPhase = min(0.1f, totalEnd * 0.05f).coerceAtLeast(1f / 60f)
@@ -63,9 +62,9 @@ private fun TimeCourse.toRoaDurationForTimeline(): RoaDuration? {
 }
 
 private fun TimeCourse.totalEndHours(): Float? {
-    val clinicalEnd = durationOfAction?.toHoursRange()?.max
-    val washoutEnd = washout?.toHoursRange()?.max
-    val clearanceEstimate = eliminationHalfLife?.toHoursRange()?.max?.times(5f)
+    val clinicalEnd = durationOfAction?.representativeHours()
+    val washoutEnd = washout?.representativeHours()
+    val clearanceEstimate = eliminationHalfLife?.representativeHours()?.times(5f)
     return listOfNotNull(clinicalEnd, washoutEnd, clearanceEstimate).maxOrNull()
 }
 
@@ -84,35 +83,6 @@ private fun Float.toHourDurationRange(): DurationRange {
         max = safeValue,
         units = DurationUnits.HOURS
     )
-}
-
-private data class HoursRange(
-    val min: Float,
-    val max: Float
-) {
-    val mid: Float = (min + max) / 2f
-}
-
-private fun TimeValue.toHoursRange(): HoursRange? {
-    val minHours = min?.toHours(unit)?.toFloat()
-    val maxHours = (max ?: min)?.toHours(unit)?.toFloat()
-    val low = minHours ?: maxHours ?: return null
-    val high = maxHours ?: low
-    return HoursRange(
-        min = min(low, high),
-        max = max(low, high)
-    )
-}
-
-private fun Double.toHours(unit: String): Double? {
-    return when (unit.lowercase()) {
-        "s", "sec", "second", "seconds" -> this / 3600.0
-        "m", "min", "minute", "minutes" -> this / 60.0
-        "h", "hr", "hour", "hours" -> this
-        "d", "day", "days" -> this * 24.0
-        "wk", "week", "weeks" -> this * 24.0 * 7.0
-        else -> null
-    }
 }
 
 private fun AdministrationRoute.normalizedRouteText(): String = name.lowercase().replace("_", " ")

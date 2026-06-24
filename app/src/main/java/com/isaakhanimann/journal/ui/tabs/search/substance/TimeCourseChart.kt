@@ -47,6 +47,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
 import com.isaakhanimann.journal.data.substances.classes.TimeCourse
 import com.isaakhanimann.journal.data.substances.classes.TimeValue
+import com.isaakhanimann.journal.data.substances.classes.representativeHours
 import com.isaakhanimann.journal.ui.utils.localizedClinicalRouteText
 import kotlin.math.ceil
 import kotlin.math.max
@@ -247,15 +248,15 @@ private data class TimeCourseChartModel(
 }
 
 private fun TimeCourse.toChartModel(): TimeCourseChartModel? {
-    val onsetStart = onset?.minHours() ?: 0f
-    val onsetEnd = onset?.maxHours() ?: onsetStart
-    val durationEnd = durationOfAction?.maxHours() ?: durationOfAction?.minHours()
-    val washoutEnd = washout?.maxHours() ?: washout?.minHours()
-    val clearanceEnd = eliminationHalfLife?.maxHours()?.times(5f)
-        ?: eliminationHalfLife?.minHours()?.times(5f)
+    val representativeOnset = onset?.representativeHours()
+    val onsetStart = representativeOnset ?: 0f
+    val onsetEnd = representativeOnset ?: onsetStart
+    val durationEnd = durationOfAction?.representativeHours()
+    val washoutEnd = washout?.representativeHours()
+    val clearanceEnd = eliminationHalfLife?.representativeHours()?.times(5f)
     val chartEndCandidate = listOfNotNull(durationEnd, washoutEnd, clearanceEnd).maxOrNull()
-    val peak = peakEffect?.midHours()
-        ?: tmax?.midHours()
+    val peak = peakEffect?.representativeHours()
+        ?: tmax?.representativeHours()
         ?: if (chartEndCandidate != null) {
             onsetEnd + ((chartEndCandidate - onsetEnd).coerceAtLeast(0.5f) * 0.25f)
         } else {
@@ -272,32 +273,6 @@ private fun TimeCourse.toChartModel(): TimeCourseChartModel? {
         fallControlHour = (peak + (roundedEnd - peak) * 0.45f).coerceIn(0f, roundedEnd),
         endHour = roundedEnd
     )
-}
-
-private fun TimeValue.minHours(): Float? = min?.toHours(unit)?.toFloat()
-
-private fun TimeValue.maxHours(): Float? = (max ?: min)?.toHours(unit)?.toFloat()
-
-private fun TimeValue.midHours(): Float? {
-    val minValue = min?.toHours(unit)
-    val maxValue = (max ?: min)?.toHours(unit)
-    return when {
-        minValue != null && maxValue != null -> ((minValue + maxValue) / 2.0).toFloat()
-        minValue != null -> minValue.toFloat()
-        maxValue != null -> maxValue.toFloat()
-        else -> null
-    }
-}
-
-private fun Double.toHours(unit: String): Double? {
-    return when (unit.lowercase()) {
-        "s", "sec", "second", "seconds" -> this / 3600.0
-        "m", "min", "minute", "minutes" -> this / 60.0
-        "h", "hr", "hour", "hours" -> this
-        "d", "day", "days" -> this * 24.0
-        "wk", "week", "weeks" -> this * 24.0 * 7.0
-        else -> null
-    }
 }
 
 private fun Float.toAxisLabel(): String {
