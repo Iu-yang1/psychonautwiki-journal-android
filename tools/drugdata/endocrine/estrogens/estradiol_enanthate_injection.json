@@ -177,7 +177,6 @@
           "scheduleText": "Single study dose",
           "sourceType": "human-pk-study",
           "evidenceLevel": "HUMAN_STUDY",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Pharmacokinetic studies of estradiol enanthate in menopausal women",
@@ -185,6 +184,14 @@
               "sourceType": "human-pk-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "MtF.wiki: Estradiol injections",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/injection/estrogen-injection",
+              "sourceType": "community-reference",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language ester and formulation index; guideline and label sources take precedence."
             }
           ],
           "ranges": [
@@ -196,7 +203,6 @@
               "frequency": "single study dose",
               "rangeKind": "study-regimen",
               "label": "PK study regimen",
-              "note": "This is not a standalone-product label regimen; peak/trough and assay timing are interval-sensitive. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -231,8 +237,7 @@
         "caveats": [
           "Peak and trough variation can be large.",
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {

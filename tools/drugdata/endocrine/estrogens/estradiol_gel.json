@@ -196,7 +196,6 @@
           "scheduleText": "Once daily transdermal application",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Estradiol Gel 0.1% label",
@@ -207,11 +206,19 @@
               "labelSection": "12.3 Pharmacokinetics"
             },
             {
-              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
               "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
+            {
+              "title": "MtF.wiki: Estradiol gel",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/gel",
+              "sourceType": "community-reference",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language product and administration index."
             }
           ],
           "ranges": [
@@ -223,7 +230,6 @@
               "frequency": "once daily",
               "rangeKind": "label-regimen",
               "label": "Gel label regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -255,8 +261,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {

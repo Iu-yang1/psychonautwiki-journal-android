@@ -193,16 +193,22 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Female hypoestrogenism in the cited approved label",
+          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
           "population": "Adults; product- and indication-specific",
           "route": "intramuscular",
           "formulation": "oil depot injection",
-          "amountText": "10-20 mg intramuscularly",
-          "scheduleText": "Every 4 weeks in the cited label",
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "amountText": "2-20 mg estradiol valerate per weekly IM or subcutaneous dose across the cited guideline entries",
+          "scheduleText": "Once weekly in the cited guideline",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
           "sourceRefs": [
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
             {
               "title": "DailyMed Estradiol Valerate injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2e5c7559-7420-168d-6272-92bb4d20035d",
@@ -217,18 +223,35 @@
               "sourceType": "human-pk-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "MtF.wiki: Estradiol injections",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/injection/estrogen-injection",
+              "sourceType": "community-reference",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language ester and formulation index; guideline and label sources take precedence."
             }
           ],
           "ranges": [
             {
-              "min": 10,
+              "min": 2,
+              "max": 4,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "once weekly",
+              "rangeKind": "guideline-regimen",
+              "label": "Initial-low through initial range",
+              "components": []
+            },
+            {
+              "min": 20,
               "max": 20,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "every 4 weeks",
-              "rangeKind": "label-regimen",
-              "label": "Injection label regimen",
-              "note": "Peak/trough and assay timing are interval-sensitive. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "frequency": "once weekly",
+              "rangeKind": "guideline-regimen",
+              "label": "Guideline maximum",
               "components": []
             }
           ]
@@ -263,8 +286,7 @@
         "caveats": [
           "Peak and trough variation can be large.",
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {

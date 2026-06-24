@@ -177,7 +177,6 @@
           "scheduleText": "Continuous once-daily administration in the cited SmPC",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Progynova 2 mg tablets SmPC",
@@ -188,11 +187,19 @@
               "labelSection": "5.2 Pharmacokinetic properties"
             },
             {
-              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
               "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
+            {
+              "title": "MtF.wiki: Oral estradiol valerate",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol-valerate",
+              "sourceType": "community-reference",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language formulation index; route-specific evidence remains limited."
             }
           ],
           "ranges": [
@@ -204,7 +211,6 @@
               "frequency": "once daily",
               "rangeKind": "label-regimen",
               "label": "SmPC regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -236,8 +242,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {

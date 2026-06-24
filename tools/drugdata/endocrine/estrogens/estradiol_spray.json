@@ -183,7 +183,6 @@
           "scheduleText": "Once daily application",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Evamist label",
@@ -210,8 +209,8 @@
               "frequency": "once daily",
               "rangeKind": "label-regimen",
               "label": "Metered spray regimen",
-              "note": "Delivered systemic exposure is not equivalent to the amount applied to skin. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "components": [],
+              "note": "Delivered systemic exposure is not equivalent to the amount applied to skin."
             }
           ]
         }
@@ -242,8 +241,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {

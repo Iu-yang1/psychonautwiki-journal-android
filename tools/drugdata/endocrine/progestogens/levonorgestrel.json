@@ -175,7 +175,6 @@
           "scheduleText": "As soon as possible within 72 hours in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed levonorgestrel tablet label",
@@ -202,7 +201,6 @@
               "frequency": "single dose",
               "rangeKind": "label-regimen",
               "label": "Label regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -223,8 +221,7 @@
         ],
         "requiredLabFields": [],
         "caveats": [
-          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
-          "Do not infer a dosing recommendation from this metadata."
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent."
         ],
         "sourceRefs": [
           {

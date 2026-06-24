@@ -184,7 +184,6 @@
           "scheduleText": "One active tablet daily for 24 days followed by 4 placebo tablets",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Zoely SmPC",
@@ -211,7 +210,6 @@
               "frequency": "once daily for 24 active days",
               "rangeKind": "label-regimen",
               "label": "Nomegestrol component",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": [
                 {
                   "substance": "nomegestrol acetate",
@@ -250,8 +248,7 @@
         ],
         "caveats": [
           "Evidence and effect size are product-, indication-, and regimen-dependent.",
-          "Pharmacodynamic suppression is delayed relative to plasma concentration.",
-          "Do not infer dosing recommendations from this compatibility marker."
+          "Pharmacodynamic suppression is delayed relative to plasma concentration."
         ],
         "sourceRefs": [
           {

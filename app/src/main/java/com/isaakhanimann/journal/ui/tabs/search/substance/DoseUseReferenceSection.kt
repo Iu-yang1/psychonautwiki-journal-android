@@ -224,13 +224,17 @@ fun ReferenceRegimenBar(
                 style = MaterialTheme.typography.bodySmall
             )
         }
-        range.note?.let { Text(text = it, style = MaterialTheme.typography.bodySmall) }
+        range.note?.withoutDoseDisclaimerBoilerplate()?.let {
+            Text(text = it, style = MaterialTheme.typography.bodySmall)
+        }
     }
     HorizontalDivider()
     ReferenceLine(stringResource(R.string.dose_reference_amount), amountText)
     scheduleText?.let { ReferenceLine(stringResource(R.string.dose_reference_schedule), it) }
     ReferenceLine(stringResource(R.string.dose_reference_evidence_level), evidenceLevel)
-    note?.let { Text(text = it, style = MaterialTheme.typography.bodySmall) }
+    note?.withoutDoseDisclaimerBoilerplate()?.let {
+        Text(text = it, style = MaterialTheme.typography.bodySmall)
+    }
 }
 
 @Composable
@@ -242,7 +246,9 @@ fun ReferenceRegimenTextOnly(
 ) {
     ReferenceLine(stringResource(R.string.dose_reference_amount), amountText)
     scheduleText?.let { ReferenceLine(stringResource(R.string.dose_reference_schedule), it) }
-    note?.let { Text(text = it, style = MaterialTheme.typography.bodySmall) }
+    note?.withoutDoseDisclaimerBoilerplate()?.let {
+        Text(text = it, style = MaterialTheme.typography.bodySmall)
+    }
     ReferenceSources(sourceRefs = sourceRefs)
 }
 
@@ -269,7 +275,9 @@ private fun ComponentDoseRange(range: DoseRange) {
             style = MaterialTheme.typography.bodySmall
         )
     }
-    range.note?.let { Text(text = it, style = MaterialTheme.typography.bodySmall) }
+    range.note?.withoutDoseDisclaimerBoilerplate()?.let {
+        Text(text = it, style = MaterialTheme.typography.bodySmall)
+    }
 }
 
 @Composable
@@ -364,4 +372,20 @@ private fun DoseComponent.toDisplayText(): String {
 
 private fun Double.readable(): String {
     return if (rem(1.0) == 0.0) toInt().toString() else toString()
+}
+
+private fun String.withoutDoseDisclaimerBoilerplate(): String? {
+    val boilerplate = listOf(
+        "This is a label- or study-reported regimen reference, not a dosing recommendation.",
+        "This is a label- or literature-reported regimen reference, not a dosing recommendation.",
+        "This is a label or literature regimen reference, not a dosing recommendation.",
+        "It must not be used for self-medication or dose adjustment.",
+        "This section must not be used for dose adjustment.",
+        "This is not a dosing recommendation."
+    )
+    var result = this
+    boilerplate.forEach { phrase ->
+        result = result.replace(phrase, "", ignoreCase = true)
+    }
+    return result.trim().trim('.', ' ').takeIf { it.isNotEmpty() }
 }

@@ -183,7 +183,6 @@
           "scheduleText": "Single-dose crossover pharmacokinetic study",
           "sourceType": "human-pk-study",
           "evidenceLevel": "HUMAN_STUDY",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Pharmacokinetics of Sublingual Versus Oral Estradiol in Transgender Women",
@@ -209,8 +208,8 @@
               "frequency": "single study dose",
               "rangeKind": "study-regimen",
               "label": "PK study regimen",
-              "note": "Rapid peak exposure makes sampling time essential. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "components": [],
+              "note": "Rapid peak exposure makes sampling time essential."
             }
           ]
         }
@@ -241,8 +240,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {

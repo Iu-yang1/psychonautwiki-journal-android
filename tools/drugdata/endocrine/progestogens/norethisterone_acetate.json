@@ -175,7 +175,6 @@
           "scheduleText": "Initial 5 mg daily with label-described stepwise increases",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed norethindrone acetate tablet label",
@@ -202,7 +201,6 @@
               "frequency": "daily",
               "rangeKind": "label-regimen",
               "label": "Label titration range",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -223,8 +221,7 @@
         ],
         "requiredLabFields": [],
         "caveats": [
-          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
-          "Do not infer a dosing recommendation from this metadata."
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent."
         ],
         "sourceRefs": [
           {

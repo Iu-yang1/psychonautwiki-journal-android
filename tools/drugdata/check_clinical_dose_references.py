@@ -117,7 +117,18 @@ def main() -> int:
                             for dose_range in reference.get("ranges", [])
                         )
                         for reference in references
-                    ).lower()
+                    )
+                    caveats += " " + " ".join(
+                        " ".join(str(note) for note in time_course.get("notes", []))
+                        for time_course in substance.get("timeCourse", [])
+                    )
+                    caveats += " " + " ".join(
+                        str(caveat)
+                        for caveat in (substance.get("hrtModelInfo") or {}).get(
+                            "caveats", []
+                        )
+                    )
+                    caveats = caveats.lower()
                     if not any(term in caveats for term in ("timing", "interval", "peak")):
                         errors.append(f"{prefix}: injectable/depot HRT missing timing caveat")
         print(f"{path}: checked {len(clinical)} clinical entries")

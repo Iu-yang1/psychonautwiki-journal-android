@@ -175,16 +175,22 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Menopausal vasomotor symptoms or hypoestrogenism in the cited label",
+          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "micronized tablet",
-          "amountText": "1-2 mg estradiol daily",
-          "scheduleText": "Daily; cyclic administration is described for some labeled indications",
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "amountText": "1-8 mg estradiol total daily across the initial-low through maximum UCSF guideline entries",
+          "scheduleText": "Daily; divided twice-daily administration is listed above 2 mg",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
           "sourceRefs": [
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
             {
               "title": "DailyMed Activella label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
@@ -194,23 +200,33 @@
               "labelSection": "12.3 Pharmacokinetics"
             },
             {
-              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-              "sourceType": "clinical-guideline",
+              "title": "MtF.wiki: Estradiol tablets",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol",
+              "sourceType": "community-reference",
               "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE"
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language formulation and route index; numeric regimens require higher-authority corroboration."
             }
           ],
           "ranges": [
             {
               "min": 1,
-              "max": 2,
+              "max": 4,
               "unit": "mg",
               "basis": "daily-total",
               "frequency": "daily",
-              "rangeKind": "label-regimen",
-              "label": "Label regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "rangeKind": "guideline-regimen",
+              "label": "Initial-low through initial range",
+              "components": []
+            },
+            {
+              "min": 8,
+              "max": 8,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "divided twice daily",
+              "rangeKind": "guideline-regimen",
+              "label": "Guideline maximum",
               "components": []
             }
           ]
@@ -242,8 +258,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {

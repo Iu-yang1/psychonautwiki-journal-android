@@ -182,7 +182,6 @@
           "scheduleText": "One active tablet daily for 21 days followed by a 7-day break",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Belara chlormadinone acetate/ethinylestradiol product information",
@@ -202,7 +201,6 @@
               "frequency": "once daily for 21 days",
               "rangeKind": "label-regimen",
               "label": "Chlormadinone component",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": [
                 {
                   "substance": "chlormadinone acetate",
@@ -241,8 +239,7 @@
         ],
         "caveats": [
           "Evidence and effect size are product-, indication-, and regimen-dependent.",
-          "Pharmacodynamic suppression is delayed relative to plasma concentration.",
-          "Do not infer dosing recommendations from this compatibility marker."
+          "Pharmacodynamic suppression is delayed relative to plasma concentration."
         ],
         "sourceRefs": [
           {

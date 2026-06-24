@@ -207,6 +207,21 @@ def main() -> int:
             for concept in ("meningioma", "hepato", "prolactin"):
                 if concept not in safety:
                     errors.append(f"{prefix}: CPA safety missing {concept}")
+            if substance.get("toxicities"):
+                errors.append(f"{prefix}: CPA warning text duplicated in toxicities")
+            if (substance.get("clinicalInfo") or {}).get("majorWarnings"):
+                errors.append(f"{prefix}: CPA warning text duplicated in clinicalInfo")
+            cpa_ranges = [
+                dose_range
+                for reference in substance.get("doseUseReferences", [])
+                for dose_range in reference.get("ranges", [])
+                if dose_range.get("basis") == "daily-total"
+            ]
+            if not any(
+                dose_range.get("min") == 12.5 and dose_range.get("max") == 50
+                for dose_range in cpa_ranges
+            ):
+                errors.append(f"{prefix}: missing 12.5-50 mg daily-total HRT range")
 
     for term in SEARCH_TERMS:
         if not any(

@@ -167,7 +167,6 @@
           "scheduleText": "12-14 consecutive days per month in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed medroxyprogesterone acetate tablet label",
@@ -194,7 +193,6 @@
               "frequency": "12-14 days per month",
               "rangeKind": "label-regimen",
               "label": "Oral label regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -226,8 +224,7 @@
         ],
         "caveats": [
           "Evidence and effect size are product-, indication-, and regimen-dependent.",
-          "Pharmacodynamic suppression is delayed relative to plasma concentration.",
-          "Do not infer dosing recommendations from this compatibility marker."
+          "Pharmacodynamic suppression is delayed relative to plasma concentration."
         ],
         "sourceRefs": [
           {

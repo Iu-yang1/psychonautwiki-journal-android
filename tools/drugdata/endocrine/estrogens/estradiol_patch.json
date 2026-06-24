@@ -189,16 +189,22 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved transdermal estradiol product strengths",
+          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
           "population": "Adults; product- and indication-specific",
           "route": "transdermal",
           "formulation": "continuous-delivery patch",
-          "amountText": "0.025-0.1 mg estradiol delivered per day",
-          "scheduleText": "Product-specific once- or twice-weekly patch replacement",
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "amountText": "50-400 mcg estradiol delivered per day across the cited guideline entries",
+          "scheduleText": "Continuous transdermal delivery; patch replacement frequency is product-specific",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
           "sourceRefs": [
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
             {
               "title": "DailyMed Estradiol Transdermal System label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=396686ba-ab8d-4223-80e7-9c4f7ddb7852",
@@ -208,23 +214,33 @@
               "labelSection": "12.3 Pharmacokinetics"
             },
             {
-              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-              "sourceType": "clinical-guideline",
+              "title": "MtF.wiki: Estradiol patches",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol-patch",
+              "sourceType": "community-reference",
               "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE"
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language product and formulation index."
             }
           ],
           "ranges": [
             {
-              "min": 0.025,
-              "max": 0.1,
-              "unit": "mg/day",
+              "min": 50,
+              "max": 100,
+              "unit": "mcg/day",
               "basis": "patch-delivery-rate",
-              "frequency": "continuous delivery; product-specific replacement interval",
-              "rangeKind": "label-regimen",
-              "label": "Patch delivery range",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "frequency": "continuous delivery",
+              "rangeKind": "guideline-regimen",
+              "label": "Initial-low through initial range",
+              "components": []
+            },
+            {
+              "min": 100,
+              "max": 400,
+              "unit": "mcg/day",
+              "basis": "patch-delivery-rate",
+              "frequency": "continuous delivery",
+              "rangeKind": "guideline-regimen",
+              "label": "Guideline upper range",
               "components": []
             }
           ]
@@ -256,8 +272,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {

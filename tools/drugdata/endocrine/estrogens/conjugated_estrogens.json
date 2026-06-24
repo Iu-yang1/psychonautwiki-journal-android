@@ -169,7 +169,6 @@
           "scheduleText": "Cyclic administration is described in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Premarin label",
@@ -197,8 +196,8 @@
               "frequency": "daily, cyclic regimen",
               "rangeKind": "label-regimen",
               "label": "Label regimen",
-              "note": "This mixture must not be interpreted as ordinary serum estradiol exposure. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "components": [],
+              "note": "This mixture must not be interpreted as ordinary serum estradiol exposure."
             }
           ]
         }

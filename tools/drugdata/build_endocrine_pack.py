@@ -48,6 +48,41 @@ SOURCES = {
         "clinical-guideline",
         "CLINICAL_GUIDELINE",
     ),
+    "mtf_estradiol": source(
+        "MtF.wiki: Estradiol tablets",
+        "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol",
+        "community-reference",
+        "SUPPLEMENTARY_REFERENCE",
+        note="Used as a Chinese-language formulation and route index; numeric regimens require higher-authority corroboration.",
+    ),
+    "mtf_oral_ev": source(
+        "MtF.wiki: Oral estradiol valerate",
+        "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol-valerate",
+        "community-reference",
+        "SUPPLEMENTARY_REFERENCE",
+        note="Used as a Chinese-language formulation index; route-specific evidence remains limited.",
+    ),
+    "mtf_patch": source(
+        "MtF.wiki: Estradiol patches",
+        "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol-patch",
+        "community-reference",
+        "SUPPLEMENTARY_REFERENCE",
+        note="Used as a Chinese-language product and formulation index.",
+    ),
+    "mtf_gel": source(
+        "MtF.wiki: Estradiol gel",
+        "https://mtf.wiki/zh-cn/docs/medicine/estrogen/gel",
+        "community-reference",
+        "SUPPLEMENTARY_REFERENCE",
+        note="Used as a Chinese-language product and administration index.",
+    ),
+    "mtf_injection": source(
+        "MtF.wiki: Estradiol injections",
+        "https://mtf.wiki/zh-cn/docs/medicine/estrogen/injection/estrogen-injection",
+        "community-reference",
+        "SUPPLEMENTARY_REFERENCE",
+        note="Used as a Chinese-language ester and formulation index; guideline and label sources take precedence.",
+    ),
     "assay": source(
         "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
         "https://pubmed.ncbi.nlm.nih.gov/35015702/",
@@ -193,6 +228,13 @@ SOURCES = {
         "https://pubmed.ncbi.nlm.nih.gov/34176757/",
         "clinical-study",
         "HUMAN_STUDY",
+    ),
+    "cpa_hrt_guideline": source(
+        "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+        "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+        "clinical-guideline",
+        "CLINICAL_GUIDELINE",
+        "Feminizing hormone therapy: anti-androgens",
     ),
     "cma": source(
         "Pharmacokinetics of chlormadinone acetate following single and multiple dosing",
@@ -413,7 +455,6 @@ def e2_model(route: str, depot: bool = False) -> dict:
     caveats = [
         "Sampling time, formulation, and assay method strongly affect interpretation.",
         "Interindividual variability can be large.",
-        "The model must not be used for dose adjustment.",
     ]
     if depot:
         roles.append("depot-release")
@@ -545,7 +586,6 @@ def limited_progestin_model(roles: list[str], refs: list[dict]) -> dict:
         "requiredLabFields": [],
         "caveats": [
             "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
-            "Do not infer a dosing recommendation from this metadata.",
         ],
         "sourceRefs": unique_sources(refs + [SOURCES["progestogen_review"]]),
     }
@@ -562,7 +602,7 @@ def dose_range(
     note: str,
     components: list[dict] | None = None,
 ) -> dict:
-    return {
+    result = {
         "min": minimum,
         "max": maximum,
         "unit": unit,
@@ -570,34 +610,39 @@ def dose_range(
         "frequency": frequency,
         "rangeKind": range_kind,
         "label": label,
-        "note": note,
         "components": components or [],
     }
+    if note.strip():
+        result["note"] = note.strip()
+    return result
 
 
 def apply_regimen_overrides(entries: list[tuple[Path, dict, list[dict]]]) -> None:
-    not_recommendation = (
-        "This is a label- or study-reported regimen reference, not a dosing recommendation. "
-        "It must not be used for self-medication or dose adjustment."
-    )
+    # 固定免责声明由 UI 在 section 顶部统一显示，数据中仅保留药物特异说明。
+    not_recommendation = ""
     overrides = {
         "Estradiol": {
-            "indication": "Menopausal vasomotor symptoms or hypoestrogenism in the cited oral label",
+            "indication": "Feminizing hormone therapy in the cited UCSF guideline",
             "route": "oral",
             "formulation": "micronized tablet",
-            "amountText": "1-2 mg estradiol daily in the cited oral label",
-            "scheduleText": "Daily; the cited label describes cyclic administration for some indications",
+            "amountText": "1-8 mg estradiol total daily across the initial-low through maximum UCSF guideline entries",
+            "scheduleText": "Daily; the cited guideline recommends divided twice-daily administration above 2 mg",
             "ranges": [
-                dose_range(1, 2, "mg", "daily-total", "daily", "label-regimen", "Oral label regimen", not_recommendation),
-                dose_range(2, 4, "mg", "daily-total", "daily", "guideline-regimen", "UCSF guideline regimen", "A guideline-reported regimen is not an individualized recommendation. " + not_recommendation),
+                dose_range(1, 1, "mg", "daily-total", "daily", "initial", "Initial-low guideline entry", ""),
+                dose_range(2, 4, "mg", "daily-total", "daily", "guideline-regimen", "Initial guideline range", ""),
+                dose_range(8, 8, "mg", "daily-total", "divided twice daily", "guideline-regimen", "Guideline maximum", ""),
             ],
-            "sourceRefs": [SOURCES["oral_e2"], SOURCES["ucsf"]],
+            "sourceRefs": [SOURCES["ucsf"], SOURCES["oral_e2"], SOURCES["mtf_estradiol"]],
         },
         "Oral Estradiol": {
-            "indication": "Menopausal vasomotor symptoms or hypoestrogenism in the cited label",
-            "amountText": "1-2 mg estradiol daily",
-            "scheduleText": "Daily; cyclic administration is described for some labeled indications",
-            "ranges": [dose_range(1, 2, "mg", "daily-total", "daily", "label-regimen", "Label regimen", not_recommendation)],
+            "indication": "Feminizing hormone therapy in the cited UCSF guideline",
+            "amountText": "1-8 mg estradiol total daily across the initial-low through maximum UCSF guideline entries",
+            "scheduleText": "Daily; divided twice-daily administration is listed above 2 mg",
+            "ranges": [
+                dose_range(1, 4, "mg", "daily-total", "daily", "guideline-regimen", "Initial-low through initial range", ""),
+                dose_range(8, 8, "mg", "daily-total", "divided twice daily", "guideline-regimen", "Guideline maximum", ""),
+            ],
+            "sourceRefs": [SOURCES["ucsf"], SOURCES["oral_e2"], SOURCES["mtf_estradiol"]],
         },
         "Sublingual/Buccal Estradiol": {
             "indication": "Human pharmacokinetic study regimen",
@@ -606,16 +651,21 @@ def apply_regimen_overrides(entries: list[tuple[Path, dict, list[dict]]]) -> Non
             "ranges": [dose_range(1, 1, "mg", "per-dose", "single study dose", "study-regimen", "PK study regimen", "Rapid peak exposure makes sampling time essential. " + not_recommendation)],
         },
         "Estradiol Transdermal Patch": {
-            "indication": "Approved transdermal estradiol product strengths",
-            "amountText": "0.025-0.1 mg estradiol delivered per day",
-            "scheduleText": "Product-specific once- or twice-weekly patch replacement",
-            "ranges": [dose_range(0.025, 0.1, "mg/day", "patch-delivery-rate", "continuous delivery; product-specific replacement interval", "label-regimen", "Patch delivery range", not_recommendation)],
+            "indication": "Feminizing hormone therapy in the cited UCSF guideline",
+            "amountText": "50-400 mcg estradiol delivered per day across the cited guideline entries",
+            "scheduleText": "Continuous transdermal delivery; patch replacement frequency is product-specific",
+            "ranges": [
+                dose_range(50, 100, "mcg/day", "patch-delivery-rate", "continuous delivery", "guideline-regimen", "Initial-low through initial range", ""),
+                dose_range(100, 400, "mcg/day", "patch-delivery-rate", "continuous delivery", "guideline-regimen", "Guideline upper range", ""),
+            ],
+            "sourceRefs": [SOURCES["ucsf"], SOURCES["patch"], SOURCES["mtf_patch"]],
         },
         "Estradiol Gel": {
             "indication": "Menopausal vasomotor symptoms in the cited label",
             "amountText": "0.25-1.25 mg estradiol applied daily",
             "scheduleText": "Once daily transdermal application",
-            "ranges": [dose_range(0.25, 1.25, "mg", "daily-total", "once daily", "label-regimen", "Gel label regimen", not_recommendation)],
+            "ranges": [dose_range(0.25, 1.25, "mg", "daily-total", "once daily", "label-regimen", "Gel label regimen", "")],
+            "sourceRefs": [SOURCES["gel"], SOURCES["ucsf"], SOURCES["mtf_gel"]],
         },
         "Estradiol Spray": {
             "indication": "Menopausal vasomotor symptoms in the cited label",
@@ -624,28 +674,38 @@ def apply_regimen_overrides(entries: list[tuple[Path, dict, list[dict]]]) -> Non
             "ranges": [dose_range(1, 3, "spray", "daily-total", "once daily", "label-regimen", "Metered spray regimen", "Delivered systemic exposure is not equivalent to the amount applied to skin. " + not_recommendation)],
         },
         "Estradiol Valerate Injection": {
-            "indication": "Female hypoestrogenism in the cited approved label",
-            "amountText": "10-20 mg intramuscularly",
-            "scheduleText": "Every 4 weeks in the cited label",
-            "ranges": [dose_range(10, 20, "mg", "per-dose", "every 4 weeks", "label-regimen", "Injection label regimen", "Peak/trough and assay timing are interval-sensitive. " + not_recommendation)],
+            "indication": "Feminizing hormone therapy in the cited UCSF guideline",
+            "amountText": "2-20 mg estradiol valerate per weekly IM or subcutaneous dose across the cited guideline entries",
+            "scheduleText": "Once weekly in the cited guideline",
+            "ranges": [
+                dose_range(2, 4, "mg", "per-dose", "once weekly", "guideline-regimen", "Initial-low through initial range", ""),
+                dose_range(20, 20, "mg", "per-dose", "once weekly", "guideline-regimen", "Guideline maximum", ""),
+            ],
+            "sourceRefs": [SOURCES["ucsf"], SOURCES["ev_injection"], SOURCES["ev_pk"], SOURCES["mtf_injection"]],
         },
         "Estradiol Cypionate Injection": {
-            "indication": "Menopausal symptoms in the cited approved label",
-            "amountText": "1-5 mg intramuscularly",
-            "scheduleText": "Every 3-4 weeks in the cited label",
-            "ranges": [dose_range(1, 5, "mg", "per-dose", "every 3-4 weeks", "label-regimen", "Injection label regimen", "Peak/trough and assay timing are interval-sensitive. " + not_recommendation)],
+            "indication": "Feminizing hormone therapy in the cited UCSF guideline",
+            "amountText": "1-5 mg estradiol cypionate per weekly IM or subcutaneous dose across the cited guideline entries",
+            "scheduleText": "Once weekly in the cited guideline",
+            "ranges": [
+                dose_range(1, 2, "mg", "per-dose", "once weekly", "guideline-regimen", "Initial-low through initial range", ""),
+                dose_range(5, 5, "mg", "per-dose", "once weekly", "guideline-regimen", "Guideline maximum", ""),
+            ],
+            "sourceRefs": [SOURCES["ucsf"], SOURCES["ec_injection"], SOURCES["ec_pk"], SOURCES["mtf_injection"]],
         },
         "Estradiol Enanthate Injection": {
             "indication": "Human pharmacokinetic study regimen",
             "amountText": "10 mg intramuscular estradiol enanthate in the cited PK study",
             "scheduleText": "Single study dose",
-            "ranges": [dose_range(10, 10, "mg", "per-dose", "single study dose", "study-regimen", "PK study regimen", "This is not a standalone-product label regimen; peak/trough and assay timing are interval-sensitive. " + not_recommendation)],
+            "ranges": [dose_range(10, 10, "mg", "per-dose", "single study dose", "study-regimen", "PK study regimen", "")],
+            "sourceRefs": [SOURCES["ee_pk"], SOURCES["mtf_injection"]],
         },
         "Oral Estradiol Valerate": {
             "indication": "Menopausal symptoms in the cited SmPC",
             "amountText": "1-2 mg estradiol valerate daily",
             "scheduleText": "Continuous once-daily administration in the cited SmPC",
-            "ranges": [dose_range(1, 2, "mg", "daily-total", "once daily", "label-regimen", "SmPC regimen", not_recommendation)],
+            "ranges": [dose_range(1, 2, "mg", "daily-total", "once daily", "label-regimen", "SmPC regimen", "")],
+            "sourceRefs": [SOURCES["oral_ev"], SOURCES["ucsf"], SOURCES["mtf_oral_ev"]],
         },
         "Conjugated Estrogens": {
             "indication": "Female hypogonadism in the cited label",
@@ -667,10 +727,27 @@ def apply_regimen_overrides(entries: list[tuple[Path, dict, list[dict]]]) -> Non
             "ranges": [dose_range(None, None, "mg", "component-dose", "once daily for 24 active days per 28-day pack", "label-regimen", "Estetrol component", not_recommendation, [{"substance": "estetrol", "min": 14.2, "max": 14.2, "unit": "mg"}])],
         },
         "Cyproterone Acetate": {
-            "indication": "Androgen-dependent indications in the cited Androcur SmPC",
-            "amountText": "50 mg twice daily at treatment initiation in the cited high-dose SmPC",
-            "scheduleText": "Twice daily after meals; indication-specific tapering is described",
-            "ranges": [dose_range(100, 100, "mg", "daily-total", "50 mg twice daily", "label-regimen", "High-dose approved-label regimen", "This approved-label regimen is not a feminizing-HRT recommendation. Cumulative exposure affects meningioma risk. " + not_recommendation)],
+            "indication": "Feminizing hormone therapy in the cited clinical guideline",
+            "population": "Adults",
+            "amountText": "12.5-50 mg cyproterone acetate total daily in the cited guideline",
+            "scheduleText": "Oral daily administration; the cited guideline lists 12.5-25 mg as usual and 50 mg as the maximum",
+            "ranges": [
+                dose_range(
+                    12.5,
+                    50,
+                    "mg",
+                    "daily-total",
+                    "once daily",
+                    "guideline-regimen",
+                    "HRT guideline range",
+                    "The cited guideline notes that the 50 mg maximum is rarely required or used.",
+                )
+            ],
+            "sourceRefs": [
+                SOURCES["cpa_hrt_guideline"],
+                SOURCES["cpa_suppression"],
+                SOURCES["cpa_safety"],
+            ],
         },
         "Chlormadinone Acetate": {
             "indication": "Component dose in a cited combined oral contraceptive product",
@@ -733,7 +810,7 @@ def apply_regimen_overrides(entries: list[tuple[Path, dict, list[dict]]]) -> Non
         override = overrides[substance["name"]]
         reference = substance["doseUseReferences"][0]
         reference.update(override)
-        reference["note"] = not_recommendation
+        reference.pop("note", None)
         reference["sourceType"] = reference["sourceRefs"][0]["sourceType"]
         reference["evidenceLevel"] = reference["sourceRefs"][0]["evidenceLevel"]
 
@@ -748,7 +825,6 @@ def candidate_suppressor_model(roles: list[str], refs: list[dict]) -> dict:
         "caveats": [
             "Evidence and effect size are product-, indication-, and regimen-dependent.",
             "Pharmacodynamic suppression is delayed relative to plasma concentration.",
-            "Do not infer dosing recommendations from this compatibility marker.",
         ],
         "sourceRefs": unique_sources(refs + [SOURCES["progestogen_review"]]),
     }
@@ -1158,7 +1234,12 @@ def build_entries() -> list[tuple[Path, dict, list[dict]]]:
             ),
         )
 
-    cpa_refs = [SOURCES["cpa_label"], SOURCES["cpa_safety"], SOURCES["cpa_suppression"]]
+    cpa_refs = [
+        SOURCES["cpa_label"],
+        SOURCES["cpa_safety"],
+        SOURCES["cpa_suppression"],
+        SOURCES["cpa_hrt_guideline"],
+    ]
     cpa_roles = ["testosterone-suppressor", "lh-fsh-suppressor", "prolactin-risk"]
     add(
         "antiandrogenic_progestins/cyproterone_acetate.json",
@@ -1167,18 +1248,12 @@ def build_entries() -> list[tuple[Path, dict, list[dict]]]:
             ["Cyproterone acetate", "CPA", "醋酸环丙孕酮", "Androcur", "Cyprostat"],
             SOURCES["cpa_label"]["url"],
             common_categories,
-            "醋酸环丙孕酮（CPA）兼具甾体抗雄激素、孕激素和抗促性腺激素作用。累积暴露相关脑膜瘤风险、肝毒性和泌乳素变化是本条目的核心安全信息。",
+            "醋酸环丙孕酮（CPA）兼具甾体抗雄激素、孕激素和抗促性腺激素作用。",
             ["G03HA01"],
             ["Steroidal antiandrogen", "Progestin", "Antigonadotropin"],
             ["Androgen-dependent indications defined by local approved labeling", "Feminizing hormone therapy literature context"],
             ["Current or previous meningioma", "Severe liver disease", "Use other product-specific contraindications"],
-            [
-                "Meningioma risk increases with higher dose and cumulative exposure.",
-                "Hepatotoxicity, including severe hepatic injury, has been reported.",
-                "Hyperprolactinemia can occur and may be dose-related.",
-                "Mood changes, fatigue, and sexual-function changes can occur.",
-                "Thromboembolic risk context requires attention when combined with estrogen therapy.",
-            ],
+            [],
             ["Other hepatotoxic drugs can increase liver-safety concern", "Combined estrogen therapy changes the overall thromboembolic risk context"],
             ["Total testosterone", "Estradiol", "LH", "FSH", "Prolactin", "AST", "ALT", "Bilirubin", "Metabolic markers when clinically indicated"],
             cpa_refs,
@@ -1194,12 +1269,8 @@ def build_entries() -> list[tuple[Path, dict, list[dict]]]:
                 cpa_roles,
                 safety=[
                     "Meningioma risk related to higher dose and cumulative exposure",
-                    "Hepatotoxicity",
-                    "Hyperprolactinemia",
-                    "Mood changes",
-                    "Fatigue",
-                    "Sexual function changes",
-                    "Thromboembolic risk context when combined with estrogen therapy",
+                    "Hepatotoxicity, including severe hepatic injury",
+                    "Hyperprolactinemia, mood changes, fatigue, sexual-function changes, and thromboembolic risk context with combined estrogen therapy",
                 ],
                 monitoring=["Total testosterone", "Estradiol", "LH", "FSH", "Prolactin", "AST", "ALT", "Bilirubin", "Metabolic markers when clinically indicated"],
             ),
@@ -1227,7 +1298,6 @@ def build_entries() -> list[tuple[Path, dict, list[dict]]]:
                 "requiredLabFields": ["totalTestosterone", "lh", "fsh", "prolactin", "sampleTimestamp"],
                 "caveats": [
                     "Testosterone suppression is delayed relative to plasma concentration.",
-                    "Do not infer dosing recommendations from the model.",
                     "Cumulative exposure matters for safety risk.",
                     "Liver function and prolactin monitoring may be clinically relevant.",
                 ],

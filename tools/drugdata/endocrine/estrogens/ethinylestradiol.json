@@ -175,7 +175,6 @@
           "scheduleText": "One combination tablet daily in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed femhrt norethindrone acetate/ethinyl estradiol label",
@@ -195,7 +194,6 @@
               "frequency": "once daily",
               "rangeKind": "label-regimen",
               "label": "Ethinylestradiol component",
-              "note": "Do not interpret as ordinary serum E2.",
               "components": [
                 {
                   "substance": "ethinylestradiol",
@@ -203,7 +201,8 @@
                   "max": 5,
                   "unit": "mcg"
                 }
-              ]
+              ],
+              "note": "Do not interpret as ordinary serum E2."
             }
           ]
         }

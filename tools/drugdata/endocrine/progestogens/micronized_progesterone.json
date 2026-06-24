@@ -174,7 +174,6 @@
           "scheduleText": "12 consecutive days per 28-day cycle",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed progesterone capsule label",
@@ -201,8 +200,8 @@
               "frequency": "bedtime for 12 days per 28-day cycle",
               "rangeKind": "label-regimen",
               "label": "Label regimen",
-              "note": "Sedation and dizziness are clinically relevant. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "components": [],
+              "note": "Sedation and dizziness are clinically relevant."
             }
           ]
         }
@@ -222,8 +221,7 @@
         ],
         "requiredLabFields": [],
         "caveats": [
-          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
-          "Do not infer a dosing recommendation from this metadata."
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent."
         ],
         "sourceRefs": [
           {

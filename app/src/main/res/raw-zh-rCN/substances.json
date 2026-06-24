@@ -52201,7 +52201,6 @@
           "scheduleText": "One active tablet daily for 21 days followed by a 7-day break",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Belara chlormadinone acetate/ethinylestradiol product information",
@@ -52221,7 +52220,6 @@
               "frequency": "once daily for 21 days",
               "rangeKind": "label-regimen",
               "label": "Chlormadinone component",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": [
                 {
                   "substance": "chlormadinone acetate",
@@ -52260,8 +52258,7 @@
         ],
         "caveats": [
           "Evidence and effect size are product-, indication-, and regimen-dependent.",
-          "Pharmacodynamic suppression is delayed relative to plasma concentration.",
-          "Do not infer dosing recommendations from this compatibility marker."
+          "Pharmacodynamic suppression is delayed relative to plasma concentration."
         ],
         "sourceRefs": [
           {
@@ -52294,19 +52291,13 @@
       "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
       "isApproved": true,
       "crossTolerances": [],
-      "toxicities": [
-        "Meningioma risk increases with higher dose and cumulative exposure.",
-        "Hepatotoxicity, including severe hepatic injury, has been reported.",
-        "Hyperprolactinemia can occur and may be dose-related.",
-        "Mood changes, fatigue, and sexual-function changes can occur.",
-        "Thromboembolic risk context requires attention when combined with estrogen therapy."
-      ],
+      "toxicities": [],
       "categories": [
         "endocrine",
         "hrt-related",
         "prescription-medicine"
       ],
-      "summary": "醋酸环丙孕酮（CPA）兼具甾体抗雄激素、孕激素和抗促性腺激素作用。累积暴露相关脑膜瘤风险、肝毒性和泌乳素变化是本条目的核心安全信息。",
+      "summary": "醋酸环丙孕酮（CPA）兼具甾体抗雄激素、孕激素和抗促性腺激素作用。",
       "clinicalInfo": {
         "atcCodes": [
           "G03HA01"
@@ -52325,13 +52316,7 @@
           "Severe liver disease",
           "Use other product-specific contraindications"
         ],
-        "majorWarnings": [
-          "Meningioma risk increases with higher dose and cumulative exposure.",
-          "Hepatotoxicity, including severe hepatic injury, has been reported.",
-          "Hyperprolactinemia can occur and may be dose-related.",
-          "Mood changes, fatigue, and sexual-function changes can occur.",
-          "Thromboembolic risk context requires attention when combined with estrogen therapy."
-        ],
+        "majorWarnings": [],
         "majorInteractions": [
           "Other hepatotoxic drugs can increase liver-safety concern",
           "Combined estrogen therapy changes the overall thromboembolic risk context"
@@ -52369,6 +52354,14 @@
             "sourceType": "clinical-study",
             "accessedDate": "2026-06-24",
             "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+            "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Feminizing hormone therapy: anti-androgens"
           }
         ]
       },
@@ -52407,12 +52400,8 @@
         ],
         "safetySignals": [
           "Meningioma risk related to higher dose and cumulative exposure",
-          "Hepatotoxicity",
-          "Hyperprolactinemia",
-          "Mood changes",
-          "Fatigue",
-          "Sexual function changes",
-          "Thromboembolic risk context when combined with estrogen therapy"
+          "Hepatotoxicity, including severe hepatic injury",
+          "Hyperprolactinemia, mood changes, fatigue, sexual-function changes, and thromboembolic risk context with combined estrogen therapy"
         ],
         "modelRoles": [
           "testosterone-suppressor",
@@ -52441,6 +52430,14 @@
             "sourceType": "clinical-study",
             "accessedDate": "2026-06-24",
             "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+            "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Feminizing hormone therapy: anti-androgens"
           },
           {
             "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
@@ -52484,6 +52481,14 @@
               "sourceType": "clinical-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+              "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE",
+              "labelSection": "Feminizing hormone therapy: anti-androgens"
             }
           ],
           "tmax": {
@@ -52508,30 +52513,22 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Androgen-dependent indications in the cited Androcur SmPC",
-          "population": "Adults; product- and indication-specific",
+          "indication": "Feminizing hormone therapy in the cited clinical guideline",
+          "population": "Adults",
           "route": "oral",
           "formulation": "tablet",
-          "amountText": "50 mg twice daily at treatment initiation in the cited high-dose SmPC",
-          "scheduleText": "Twice daily after meals; indication-specific tapering is described",
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "amountText": "12.5-50 mg cyproterone acetate total daily in the cited guideline",
+          "scheduleText": "Oral daily administration; the cited guideline lists 12.5-25 mg as usual and 50 mg as the maximum",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
           "sourceRefs": [
             {
-              "title": "Androcur 50 mg tablets SmPC",
-              "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
-              "sourceType": "regulatory-label",
+              "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+              "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+              "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "5.2 Pharmacokinetic properties"
-            },
-            {
-              "title": "EMA referral: cyproterone-containing medicinal products",
-              "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
-              "sourceType": "regulatory-safety-communication",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_SAFETY"
+              "evidenceLevel": "CLINICAL_GUIDELINE",
+              "labelSection": "Feminizing hormone therapy: anti-androgens"
             },
             {
               "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
@@ -52539,19 +52536,26 @@
               "sourceType": "clinical-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "EMA referral: cyproterone-containing medicinal products",
+              "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
+              "sourceType": "regulatory-safety-communication",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_SAFETY"
             }
           ],
           "ranges": [
             {
-              "min": 100,
-              "max": 100,
+              "min": 12.5,
+              "max": 50,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "50 mg twice daily",
-              "rangeKind": "label-regimen",
-              "label": "High-dose approved-label regimen",
-              "note": "This approved-label regimen is not a feminizing-HRT recommendation. Cumulative exposure affects meningioma risk. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "frequency": "once daily",
+              "rangeKind": "guideline-regimen",
+              "label": "HRT guideline range",
+              "components": [],
+              "note": "The cited guideline notes that the 50 mg maximum is rarely required or used."
             }
           ]
         }
@@ -52584,7 +52588,6 @@
         ],
         "caveats": [
           "Testosterone suppression is delayed relative to plasma concentration.",
-          "Do not infer dosing recommendations from the model.",
           "Cumulative exposure matters for safety risk.",
           "Liver function and prolactin monitoring may be clinically relevant."
         ],
@@ -52610,6 +52613,14 @@
             "sourceType": "clinical-study",
             "accessedDate": "2026-06-24",
             "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+            "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Feminizing hormone therapy: anti-androgens"
           }
         ]
       },
@@ -52782,7 +52793,6 @@
           "scheduleText": "12-14 consecutive days per month in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed medroxyprogesterone acetate tablet label",
@@ -52809,7 +52819,6 @@
               "frequency": "12-14 days per month",
               "rangeKind": "label-regimen",
               "label": "Oral label regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -52841,8 +52850,7 @@
         ],
         "caveats": [
           "Evidence and effect size are product-, indication-, and regimen-dependent.",
-          "Pharmacodynamic suppression is delayed relative to plasma concentration.",
-          "Do not infer dosing recommendations from this compatibility marker."
+          "Pharmacodynamic suppression is delayed relative to plasma concentration."
         ],
         "sourceRefs": [
           {
@@ -53048,7 +53056,6 @@
           "scheduleText": "One active tablet daily for 24 days followed by 4 placebo tablets",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Zoely SmPC",
@@ -53075,7 +53082,6 @@
               "frequency": "once daily for 24 active days",
               "rangeKind": "label-regimen",
               "label": "Nomegestrol component",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": [
                 {
                   "substance": "nomegestrol acetate",
@@ -53114,8 +53120,7 @@
         ],
         "caveats": [
           "Evidence and effect size are product-, indication-, and regimen-dependent.",
-          "Pharmacodynamic suppression is delayed relative to plasma concentration.",
-          "Do not infer dosing recommendations from this compatibility marker."
+          "Pharmacodynamic suppression is delayed relative to plasma concentration."
         ],
         "sourceRefs": [
           {
@@ -53306,7 +53311,6 @@
           "scheduleText": "Cyclic administration is described in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Premarin label",
@@ -53334,8 +53338,8 @@
               "frequency": "daily, cyclic regimen",
               "rangeKind": "label-regimen",
               "label": "Label regimen",
-              "note": "This mixture must not be interpreted as ordinary serum estradiol exposure. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "components": [],
+              "note": "This mixture must not be interpreted as ordinary serum estradiol exposure."
             }
           ]
         }
@@ -53556,7 +53560,6 @@
           "scheduleText": "One active tablet daily for 24 days, followed by 4 inert tablets",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Nextstellis label",
@@ -53584,7 +53587,6 @@
               "frequency": "once daily for 24 active days per 28-day pack",
               "rangeKind": "label-regimen",
               "label": "Estetrol component",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": [
                 {
                   "substance": "estetrol",
@@ -53819,16 +53821,22 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Menopausal vasomotor symptoms or hypoestrogenism in the cited oral label",
+          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "micronized tablet",
-          "amountText": "1-2 mg estradiol daily in the cited oral label",
-          "scheduleText": "Daily; the cited label describes cyclic administration for some indications",
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "amountText": "1-8 mg estradiol total daily across the initial-low through maximum UCSF guideline entries",
+          "scheduleText": "Daily; the cited guideline recommends divided twice-daily administration above 2 mg",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
           "sourceRefs": [
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
             {
               "title": "DailyMed Activella label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
@@ -53838,23 +53846,23 @@
               "labelSection": "12.3 Pharmacokinetics"
             },
             {
-              "title": "UCSF Overview of feminizing hormone therapy",
-              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
-              "sourceType": "clinical-guideline",
+              "title": "MtF.wiki: Estradiol tablets",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol",
+              "sourceType": "community-reference",
               "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE"
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language formulation and route index; numeric regimens require higher-authority corroboration."
             }
           ],
           "ranges": [
             {
               "min": 1,
-              "max": 2,
+              "max": 1,
               "unit": "mg",
               "basis": "daily-total",
               "frequency": "daily",
-              "rangeKind": "label-regimen",
-              "label": "Oral label regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "rangeKind": "initial",
+              "label": "Initial-low guideline entry",
               "components": []
             },
             {
@@ -53864,8 +53872,17 @@
               "basis": "daily-total",
               "frequency": "daily",
               "rangeKind": "guideline-regimen",
-              "label": "UCSF guideline regimen",
-              "note": "A guideline-reported regimen is not an individualized recommendation. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "label": "Initial guideline range",
+              "components": []
+            },
+            {
+              "min": 8,
+              "max": 8,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "divided twice daily",
+              "rangeKind": "guideline-regimen",
+              "label": "Guideline maximum",
               "components": []
             }
           ]
@@ -53897,8 +53914,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {
@@ -54113,16 +54129,22 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Menopausal symptoms in the cited approved label",
+          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
           "population": "Adults; product- and indication-specific",
           "route": "intramuscular",
           "formulation": "oil depot injection",
-          "amountText": "1-5 mg intramuscularly",
-          "scheduleText": "Every 3-4 weeks in the cited label",
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "amountText": "1-5 mg estradiol cypionate per weekly IM or subcutaneous dose across the cited guideline entries",
+          "scheduleText": "Once weekly in the cited guideline",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
           "sourceRefs": [
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
             {
               "title": "DailyMed Depo-Estradiol label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a4229fd-fecd-4ac1-9c4f-6d442533457f",
@@ -54137,18 +54159,35 @@
               "sourceType": "human-pk-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "MtF.wiki: Estradiol injections",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/injection/estrogen-injection",
+              "sourceType": "community-reference",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language ester and formulation index; guideline and label sources take precedence."
             }
           ],
           "ranges": [
             {
               "min": 1,
+              "max": 2,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "once weekly",
+              "rangeKind": "guideline-regimen",
+              "label": "Initial-low through initial range",
+              "components": []
+            },
+            {
+              "min": 5,
               "max": 5,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "every 3-4 weeks",
-              "rangeKind": "label-regimen",
-              "label": "Injection label regimen",
-              "note": "Peak/trough and assay timing are interval-sensitive. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "frequency": "once weekly",
+              "rangeKind": "guideline-regimen",
+              "label": "Guideline maximum",
               "components": []
             }
           ]
@@ -54183,8 +54222,7 @@
         "caveats": [
           "Peak and trough variation can be large.",
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {
@@ -54383,7 +54421,6 @@
           "scheduleText": "Single study dose",
           "sourceType": "human-pk-study",
           "evidenceLevel": "HUMAN_STUDY",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Pharmacokinetic studies of estradiol enanthate in menopausal women",
@@ -54391,6 +54428,14 @@
               "sourceType": "human-pk-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "MtF.wiki: Estradiol injections",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/injection/estrogen-injection",
+              "sourceType": "community-reference",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language ester and formulation index; guideline and label sources take precedence."
             }
           ],
           "ranges": [
@@ -54402,7 +54447,6 @@
               "frequency": "single study dose",
               "rangeKind": "study-regimen",
               "label": "PK study regimen",
-              "note": "This is not a standalone-product label regimen; peak/trough and assay timing are interval-sensitive. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -54437,8 +54481,7 @@
         "caveats": [
           "Peak and trough variation can be large.",
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {
@@ -54656,7 +54699,6 @@
           "scheduleText": "Once daily transdermal application",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Estradiol Gel 0.1% label",
@@ -54667,11 +54709,19 @@
               "labelSection": "12.3 Pharmacokinetics"
             },
             {
-              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
               "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
+            {
+              "title": "MtF.wiki: Estradiol gel",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/gel",
+              "sourceType": "community-reference",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language product and administration index."
             }
           ],
           "ranges": [
@@ -54683,7 +54733,6 @@
               "frequency": "once daily",
               "rangeKind": "label-regimen",
               "label": "Gel label regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -54715,8 +54764,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {
@@ -54927,16 +54975,22 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved transdermal estradiol product strengths",
+          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
           "population": "Adults; product- and indication-specific",
           "route": "transdermal",
           "formulation": "continuous-delivery patch",
-          "amountText": "0.025-0.1 mg estradiol delivered per day",
-          "scheduleText": "Product-specific once- or twice-weekly patch replacement",
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "amountText": "50-400 mcg estradiol delivered per day across the cited guideline entries",
+          "scheduleText": "Continuous transdermal delivery; patch replacement frequency is product-specific",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
           "sourceRefs": [
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
             {
               "title": "DailyMed Estradiol Transdermal System label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=396686ba-ab8d-4223-80e7-9c4f7ddb7852",
@@ -54946,23 +55000,33 @@
               "labelSection": "12.3 Pharmacokinetics"
             },
             {
-              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-              "sourceType": "clinical-guideline",
+              "title": "MtF.wiki: Estradiol patches",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol-patch",
+              "sourceType": "community-reference",
               "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE"
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language product and formulation index."
             }
           ],
           "ranges": [
             {
-              "min": 0.025,
-              "max": 0.1,
-              "unit": "mg/day",
+              "min": 50,
+              "max": 100,
+              "unit": "mcg/day",
               "basis": "patch-delivery-rate",
-              "frequency": "continuous delivery; product-specific replacement interval",
-              "rangeKind": "label-regimen",
-              "label": "Patch delivery range",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "frequency": "continuous delivery",
+              "rangeKind": "guideline-regimen",
+              "label": "Initial-low through initial range",
+              "components": []
+            },
+            {
+              "min": 100,
+              "max": 400,
+              "unit": "mcg/day",
+              "basis": "patch-delivery-rate",
+              "frequency": "continuous delivery",
+              "rangeKind": "guideline-regimen",
+              "label": "Guideline upper range",
               "components": []
             }
           ]
@@ -54994,8 +55058,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {
@@ -55200,7 +55263,6 @@
           "scheduleText": "Once daily application",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Evamist label",
@@ -55227,8 +55289,8 @@
               "frequency": "once daily",
               "rangeKind": "label-regimen",
               "label": "Metered spray regimen",
-              "note": "Delivered systemic exposure is not equivalent to the amount applied to skin. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "components": [],
+              "note": "Delivered systemic exposure is not equivalent to the amount applied to skin."
             }
           ]
         }
@@ -55259,8 +55321,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {
@@ -55475,16 +55536,22 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Female hypoestrogenism in the cited approved label",
+          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
           "population": "Adults; product- and indication-specific",
           "route": "intramuscular",
           "formulation": "oil depot injection",
-          "amountText": "10-20 mg intramuscularly",
-          "scheduleText": "Every 4 weeks in the cited label",
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "amountText": "2-20 mg estradiol valerate per weekly IM or subcutaneous dose across the cited guideline entries",
+          "scheduleText": "Once weekly in the cited guideline",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
           "sourceRefs": [
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
             {
               "title": "DailyMed Estradiol Valerate injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2e5c7559-7420-168d-6272-92bb4d20035d",
@@ -55499,18 +55566,35 @@
               "sourceType": "human-pk-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "MtF.wiki: Estradiol injections",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/injection/estrogen-injection",
+              "sourceType": "community-reference",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language ester and formulation index; guideline and label sources take precedence."
             }
           ],
           "ranges": [
             {
-              "min": 10,
+              "min": 2,
+              "max": 4,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "once weekly",
+              "rangeKind": "guideline-regimen",
+              "label": "Initial-low through initial range",
+              "components": []
+            },
+            {
+              "min": 20,
               "max": 20,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "every 4 weeks",
-              "rangeKind": "label-regimen",
-              "label": "Injection label regimen",
-              "note": "Peak/trough and assay timing are interval-sensitive. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "frequency": "once weekly",
+              "rangeKind": "guideline-regimen",
+              "label": "Guideline maximum",
               "components": []
             }
           ]
@@ -55545,8 +55629,7 @@
         "caveats": [
           "Peak and trough variation can be large.",
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {
@@ -55743,7 +55826,6 @@
           "scheduleText": "One combination tablet daily in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed femhrt norethindrone acetate/ethinyl estradiol label",
@@ -55763,7 +55845,6 @@
               "frequency": "once daily",
               "rangeKind": "label-regimen",
               "label": "Ethinylestradiol component",
-              "note": "Do not interpret as ordinary serum E2.",
               "components": [
                 {
                   "substance": "ethinylestradiol",
@@ -55771,7 +55852,8 @@
                   "max": 5,
                   "unit": "mcg"
                 }
-              ]
+              ],
+              "note": "Do not interpret as ordinary serum E2."
             }
           ]
         }
@@ -55985,16 +56067,22 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Menopausal vasomotor symptoms or hypoestrogenism in the cited label",
+          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "micronized tablet",
-          "amountText": "1-2 mg estradiol daily",
-          "scheduleText": "Daily; cyclic administration is described for some labeled indications",
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "amountText": "1-8 mg estradiol total daily across the initial-low through maximum UCSF guideline entries",
+          "scheduleText": "Daily; divided twice-daily administration is listed above 2 mg",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
           "sourceRefs": [
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
             {
               "title": "DailyMed Activella label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
@@ -56004,23 +56092,33 @@
               "labelSection": "12.3 Pharmacokinetics"
             },
             {
-              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-              "sourceType": "clinical-guideline",
+              "title": "MtF.wiki: Estradiol tablets",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol",
+              "sourceType": "community-reference",
               "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE"
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language formulation and route index; numeric regimens require higher-authority corroboration."
             }
           ],
           "ranges": [
             {
               "min": 1,
-              "max": 2,
+              "max": 4,
               "unit": "mg",
               "basis": "daily-total",
               "frequency": "daily",
-              "rangeKind": "label-regimen",
-              "label": "Label regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "rangeKind": "guideline-regimen",
+              "label": "Initial-low through initial range",
+              "components": []
+            },
+            {
+              "min": 8,
+              "max": 8,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "divided twice daily",
+              "rangeKind": "guideline-regimen",
+              "label": "Guideline maximum",
               "components": []
             }
           ]
@@ -56052,8 +56150,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {
@@ -56252,7 +56349,6 @@
           "scheduleText": "Continuous once-daily administration in the cited SmPC",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Progynova 2 mg tablets SmPC",
@@ -56263,11 +56359,19 @@
               "labelSection": "5.2 Pharmacokinetic properties"
             },
             {
-              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
               "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
+            {
+              "title": "MtF.wiki: Oral estradiol valerate",
+              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol-valerate",
+              "sourceType": "community-reference",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
+              "note": "Used as a Chinese-language formulation index; route-specific evidence remains limited."
             }
           ],
           "ranges": [
@@ -56279,7 +56383,6 @@
               "frequency": "once daily",
               "rangeKind": "label-regimen",
               "label": "SmPC regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -56311,8 +56414,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {
@@ -56517,7 +56619,6 @@
           "scheduleText": "Single-dose crossover pharmacokinetic study",
           "sourceType": "human-pk-study",
           "evidenceLevel": "HUMAN_STUDY",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Pharmacokinetics of Sublingual Versus Oral Estradiol in Transgender Women",
@@ -56543,8 +56644,8 @@
               "frequency": "single study dose",
               "rangeKind": "study-regimen",
               "label": "PK study regimen",
-              "note": "Rapid peak exposure makes sampling time essential. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "components": [],
+              "note": "Rapid peak exposure makes sampling time essential."
             }
           ]
         }
@@ -56575,8 +56676,7 @@
         ],
         "caveats": [
           "Sampling time, formulation, and assay method strongly affect interpretation.",
-          "Interindividual variability can be large.",
-          "The model must not be used for dose adjustment."
+          "Interindividual variability can be large."
         ],
         "sourceRefs": [
           {
@@ -56768,7 +56868,6 @@
           "scheduleText": "Continuous once-daily administration",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Sawis dienogest SmPC",
@@ -56795,7 +56894,6 @@
               "frequency": "once daily",
               "rangeKind": "label-regimen",
               "label": "SmPC regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -56816,8 +56914,7 @@
         ],
         "requiredLabFields": [],
         "caveats": [
-          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
-          "Do not infer a dosing recommendation from this metadata."
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent."
         ],
         "sourceRefs": [
           {
@@ -57007,7 +57104,6 @@
           "scheduleText": "One active tablet daily for 24 days followed by 4 inert tablets",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Slynd drospirenone label",
@@ -57027,7 +57123,6 @@
               "frequency": "once daily for 24 active days",
               "rangeKind": "label-regimen",
               "label": "Label regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -57048,8 +57143,7 @@
         ],
         "requiredLabFields": [],
         "caveats": [
-          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
-          "Do not infer a dosing recommendation from this metadata."
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent."
         ],
         "sourceRefs": [
           {
@@ -57252,7 +57346,6 @@
           "scheduleText": "Last 12-14 days of an estrogen cycle in the cited HRT section",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Nalvee dydrogesterone SmPC",
@@ -57279,7 +57372,6 @@
               "frequency": "12-14 days per cycle",
               "rangeKind": "label-regimen",
               "label": "SmPC regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -57300,8 +57392,7 @@
         ],
         "requiredLabFields": [],
         "caveats": [
-          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
-          "Do not infer a dosing recommendation from this metadata."
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent."
         ],
         "sourceRefs": [
           {
@@ -57498,7 +57589,6 @@
           "scheduleText": "As soon as possible within 72 hours in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed levonorgestrel tablet label",
@@ -57525,7 +57615,6 @@
               "frequency": "single dose",
               "rangeKind": "label-regimen",
               "label": "Label regimen",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -57546,8 +57635,7 @@
         ],
         "requiredLabFields": [],
         "caveats": [
-          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
-          "Do not infer a dosing recommendation from this metadata."
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent."
         ],
         "sourceRefs": [
           {
@@ -57743,7 +57831,6 @@
           "scheduleText": "12 consecutive days per 28-day cycle",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed progesterone capsule label",
@@ -57770,8 +57857,8 @@
               "frequency": "bedtime for 12 days per 28-day cycle",
               "rangeKind": "label-regimen",
               "label": "Label regimen",
-              "note": "Sedation and dizziness are clinically relevant. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "components": [],
+              "note": "Sedation and dizziness are clinically relevant."
             }
           ]
         }
@@ -57791,8 +57878,7 @@
         ],
         "requiredLabFields": [],
         "caveats": [
-          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
-          "Do not infer a dosing recommendation from this metadata."
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent."
         ],
         "sourceRefs": [
           {
@@ -57989,7 +58075,6 @@
           "scheduleText": "Initial 5 mg daily with label-described stepwise increases",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed norethindrone acetate tablet label",
@@ -58016,7 +58101,6 @@
               "frequency": "daily",
               "rangeKind": "label-regimen",
               "label": "Label titration range",
-              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
               "components": []
             }
           ]
@@ -58037,8 +58121,7 @@
         ],
         "requiredLabFields": [],
         "caveats": [
-          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
-          "Do not infer a dosing recommendation from this metadata."
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent."
         ],
         "sourceRefs": [
           {

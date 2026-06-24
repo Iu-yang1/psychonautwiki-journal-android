@@ -12,19 +12,13 @@
       "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
       "isApproved": true,
       "crossTolerances": [],
-      "toxicities": [
-        "Meningioma risk increases with higher dose and cumulative exposure.",
-        "Hepatotoxicity, including severe hepatic injury, has been reported.",
-        "Hyperprolactinemia can occur and may be dose-related.",
-        "Mood changes, fatigue, and sexual-function changes can occur.",
-        "Thromboembolic risk context requires attention when combined with estrogen therapy."
-      ],
+      "toxicities": [],
       "categories": [
         "endocrine",
         "hrt-related",
         "prescription-medicine"
       ],
-      "summary": "醋酸环丙孕酮（CPA）兼具甾体抗雄激素、孕激素和抗促性腺激素作用。累积暴露相关脑膜瘤风险、肝毒性和泌乳素变化是本条目的核心安全信息。",
+      "summary": "醋酸环丙孕酮（CPA）兼具甾体抗雄激素、孕激素和抗促性腺激素作用。",
       "clinicalInfo": {
         "atcCodes": [
           "G03HA01"
@@ -43,13 +37,7 @@
           "Severe liver disease",
           "Use other product-specific contraindications"
         ],
-        "majorWarnings": [
-          "Meningioma risk increases with higher dose and cumulative exposure.",
-          "Hepatotoxicity, including severe hepatic injury, has been reported.",
-          "Hyperprolactinemia can occur and may be dose-related.",
-          "Mood changes, fatigue, and sexual-function changes can occur.",
-          "Thromboembolic risk context requires attention when combined with estrogen therapy."
-        ],
+        "majorWarnings": [],
         "majorInteractions": [
           "Other hepatotoxic drugs can increase liver-safety concern",
           "Combined estrogen therapy changes the overall thromboembolic risk context"
@@ -87,6 +75,14 @@
             "sourceType": "clinical-study",
             "accessedDate": "2026-06-24",
             "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+            "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Feminizing hormone therapy: anti-androgens"
           }
         ]
       },
@@ -125,12 +121,8 @@
         ],
         "safetySignals": [
           "Meningioma risk related to higher dose and cumulative exposure",
-          "Hepatotoxicity",
-          "Hyperprolactinemia",
-          "Mood changes",
-          "Fatigue",
-          "Sexual function changes",
-          "Thromboembolic risk context when combined with estrogen therapy"
+          "Hepatotoxicity, including severe hepatic injury",
+          "Hyperprolactinemia, mood changes, fatigue, sexual-function changes, and thromboembolic risk context with combined estrogen therapy"
         ],
         "modelRoles": [
           "testosterone-suppressor",
@@ -159,6 +151,14 @@
             "sourceType": "clinical-study",
             "accessedDate": "2026-06-24",
             "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+            "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Feminizing hormone therapy: anti-androgens"
           },
           {
             "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
@@ -202,6 +202,14 @@
               "sourceType": "clinical-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+              "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE",
+              "labelSection": "Feminizing hormone therapy: anti-androgens"
             }
           ],
           "tmax": {
@@ -226,30 +234,22 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Androgen-dependent indications in the cited Androcur SmPC",
-          "population": "Adults; product- and indication-specific",
+          "indication": "Feminizing hormone therapy in the cited clinical guideline",
+          "population": "Adults",
           "route": "oral",
           "formulation": "tablet",
-          "amountText": "50 mg twice daily at treatment initiation in the cited high-dose SmPC",
-          "scheduleText": "Twice daily after meals; indication-specific tapering is described",
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "amountText": "12.5-50 mg cyproterone acetate total daily in the cited guideline",
+          "scheduleText": "Oral daily administration; the cited guideline lists 12.5-25 mg as usual and 50 mg as the maximum",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
           "sourceRefs": [
             {
-              "title": "Androcur 50 mg tablets SmPC",
-              "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
-              "sourceType": "regulatory-label",
+              "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+              "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+              "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "5.2 Pharmacokinetic properties"
-            },
-            {
-              "title": "EMA referral: cyproterone-containing medicinal products",
-              "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
-              "sourceType": "regulatory-safety-communication",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_SAFETY"
+              "evidenceLevel": "CLINICAL_GUIDELINE",
+              "labelSection": "Feminizing hormone therapy: anti-androgens"
             },
             {
               "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
@@ -257,19 +257,26 @@
               "sourceType": "clinical-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "EMA referral: cyproterone-containing medicinal products",
+              "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
+              "sourceType": "regulatory-safety-communication",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_SAFETY"
             }
           ],
           "ranges": [
             {
-              "min": 100,
-              "max": 100,
+              "min": 12.5,
+              "max": 50,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "50 mg twice daily",
-              "rangeKind": "label-regimen",
-              "label": "High-dose approved-label regimen",
-              "note": "This approved-label regimen is not a feminizing-HRT recommendation. Cumulative exposure affects meningioma risk. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "frequency": "once daily",
+              "rangeKind": "guideline-regimen",
+              "label": "HRT guideline range",
+              "components": [],
+              "note": "The cited guideline notes that the 50 mg maximum is rarely required or used."
             }
           ]
         }
@@ -302,7 +309,6 @@
         ],
         "caveats": [
           "Testosterone suppression is delayed relative to plasma concentration.",
-          "Do not infer dosing recommendations from the model.",
           "Cumulative exposure matters for safety risk.",
           "Liver function and prolactin monitoring may be clinically relevant."
         ],
@@ -328,6 +334,14 @@
             "sourceType": "clinical-study",
             "accessedDate": "2026-06-24",
             "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
+            "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Feminizing hormone therapy: anti-androgens"
           }
         ]
       },
