@@ -565,15 +565,15 @@ fun SubstanceScreen(
 
 @Composable
 fun ClinicalInformationSection(clinicalInfo: ClinicalInfo) {
-    SectionWithTitle(title = "临床资料 / Clinical information") {
+    SectionWithTitle(title = stringResource(R.string.clinical_information_title)) {
         Column(Modifier.padding(horizontal = horizontalPadding)) {
-            ClinicalInfoListRow("ATC 编码 / ATC code", clinicalInfo.atcCodes)
-            ClinicalInfoListRow("药物类别 / Drug class", clinicalInfo.drugClass)
-            ClinicalInfoListRow("主要适应证 / Main indications", clinicalInfo.indications)
-            ClinicalInfoListRow("禁忌证 / Contraindications", clinicalInfo.contraindications)
-            ClinicalInfoListRow("重要警示 / Major warnings", clinicalInfo.majorWarnings)
-            ClinicalInfoListRow("重要相互作用 / Major interactions", clinicalInfo.majorInteractions)
-            ClinicalInfoListRow("监测项目 / Monitoring", clinicalInfo.monitoring)
+            ClinicalInfoListRow(stringResource(R.string.clinical_atc_code), clinicalInfo.atcCodes)
+            ClinicalInfoListRow(stringResource(R.string.clinical_drug_class), clinicalInfo.drugClass)
+            ClinicalInfoListRow(stringResource(R.string.clinical_main_indications), clinicalInfo.indications)
+            ClinicalInfoListRow(stringResource(R.string.clinical_contraindications), clinicalInfo.contraindications)
+            ClinicalInfoListRow(stringResource(R.string.clinical_major_warnings), clinicalInfo.majorWarnings)
+            ClinicalInfoListRow(stringResource(R.string.clinical_major_interactions), clinicalInfo.majorInteractions)
+            ClinicalInfoListRow(stringResource(R.string.clinical_monitoring), clinicalInfo.monitoring)
             SourceRefs(sourceRefs = clinicalInfo.sourceRefs)
             VerticalSpace()
         }
@@ -582,10 +582,10 @@ fun ClinicalInformationSection(clinicalInfo: ClinicalInfo) {
 
 @Composable
 fun TimeCourseSection(timeCourses: List<TimeCourse>) {
-    SectionWithTitle(title = "药代 / 药效时间进程") {
+    SectionWithTitle(title = stringResource(R.string.time_course_title)) {
         Column(Modifier.padding(horizontal = horizontalPadding)) {
             Text(
-                text = "Tmax 表示血浆浓度达峰时间，不一定等于最大临床效果时间。以上信息仅供学习和资料索引，不用于诊断、处方或自行调整药物。",
+                text = stringResource(R.string.time_course_disclaimer),
                 style = MaterialTheme.typography.bodySmall
             )
             Spacer(modifier = Modifier.height(8.dp))
@@ -601,14 +601,14 @@ fun TimeCourseSection(timeCourses: List<TimeCourse>) {
                     Spacer(modifier = Modifier.height(6.dp))
                     TimeCourseChart(timeCourse = timeCourse)
                     Spacer(modifier = Modifier.height(6.dp))
-                    TimeValueRow("起效时间 / Onset", timeCourse.onset)
-                    TimeValueRow("Tmax", timeCourse.tmax)
-                    TimeValueRow("药效峰值 / Peak effect", timeCourse.peakEffect)
-                    TimeValueRow("作用持续时间 / Duration of action", timeCourse.durationOfAction)
-                    TimeValueRow("消除半衰期 / Elimination half-life", timeCourse.eliminationHalfLife)
-                    TimeValueRow("稳态时间 / Time to steady state", timeCourse.timeToSteadyState)
-                    TimeValueRow("洗脱时间 / Washout", timeCourse.washout)
-                    ClinicalInfoListRow("备注 / Notes", timeCourse.notes)
+                    TimeValueRow(stringResource(R.string.time_course_onset), timeCourse.onset)
+                    TimeValueRow(stringResource(R.string.time_course_tmax), timeCourse.tmax)
+                    TimeValueRow(stringResource(R.string.time_course_peak_effect), timeCourse.peakEffect)
+                    TimeValueRow(stringResource(R.string.time_course_duration_of_action), timeCourse.durationOfAction)
+                    TimeValueRow(stringResource(R.string.time_course_elimination_half_life), timeCourse.eliminationHalfLife)
+                    TimeValueRow(stringResource(R.string.time_course_time_to_steady_state), timeCourse.timeToSteadyState)
+                    TimeValueRow(stringResource(R.string.time_course_washout), timeCourse.washout)
+                    ClinicalInfoListRow(stringResource(R.string.time_course_notes), timeCourse.notes)
                     SourceRefs(sourceRefs = timeCourse.sourceRefs)
                 }
                 if (index < timeCourses.size - 1) {
@@ -622,26 +622,26 @@ fun TimeCourseSection(timeCourses: List<TimeCourse>) {
 
 @Composable
 fun TherapeuticDrugMonitoringSection(tdm: TherapeuticDrugMonitoring) {
-    SectionWithTitle(title = "治疗药物监测 / TDM") {
+    SectionWithTitle(title = stringResource(R.string.tdm_title)) {
         Column(Modifier.padding(horizontal = horizontalPadding)) {
             Text(
-                text = "This information is for educational reference and data indexing only. It is not medical advice and must not be used for diagnosis, prescribing, self-medication, or dose adjustment. 本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量。",
+                text = stringResource(R.string.medical_information_disclaimer),
                 style = MaterialTheme.typography.bodySmall
             )
             Spacer(modifier = Modifier.height(8.dp))
-            InfoLabel("常规监测 / Routine monitoring")
+            InfoLabel(stringResource(R.string.tdm_routine_monitoring))
             Text(text = stringResource(if (tdm.isRoutinelyMonitored) R.string.label_yes else R.string.label_no))
             VerticalSpace()
-            ClinicalInfoTextRow("监测类型 / Monitoring type", tdm.monitoringType)
-            ClinicalInfoTextRow("原因 / Reason", tdm.reason)
-            ClinicalInfoListRow("分析物 / Analytes", tdm.analytes)
-            ClinicalInfoTextRow("标本 / Specimen", tdm.specimen)
-            ClinicalInfoTextRow("采样时间 / Sampling time", tdm.samplingTime)
-            TherapeuticRangeRows("治疗范围 / Therapeutic ranges", tdm.therapeuticRanges)
-            ToxicityThresholdRows("中毒阈值 / Toxicity thresholds", tdm.toxicityThresholds)
-            ToxicityThresholdRows("危急值 / Critical values", tdm.criticalValues)
-            ClinicalInfoTextRow("检测方法 / Assay method", tdm.assayMethod)
-            ClinicalInfoListRow("解释注意事项 / Interpretation caveats", tdm.interpretationCaveats)
+            ClinicalInfoTextRow(stringResource(R.string.tdm_monitoring_type), tdm.monitoringType)
+            ClinicalInfoTextRow(stringResource(R.string.tdm_reason), tdm.reason)
+            ClinicalInfoListRow(stringResource(R.string.tdm_analytes), tdm.analytes)
+            ClinicalInfoTextRow(stringResource(R.string.tdm_specimen), tdm.specimen)
+            ClinicalInfoTextRow(stringResource(R.string.tdm_sampling_time), tdm.samplingTime)
+            TherapeuticRangeRows(stringResource(R.string.tdm_therapeutic_ranges), tdm.therapeuticRanges)
+            ToxicityThresholdRows(stringResource(R.string.tdm_toxicity_thresholds), tdm.toxicityThresholds)
+            ToxicityThresholdRows(stringResource(R.string.tdm_critical_values), tdm.criticalValues)
+            ClinicalInfoTextRow(stringResource(R.string.tdm_assay_method), tdm.assayMethod)
+            ClinicalInfoListRow(stringResource(R.string.tdm_interpretation_caveats), tdm.interpretationCaveats)
             SourceRefs(sourceRefs = tdm.sourceRefs)
             VerticalSpace()
         }

@@ -44,7 +44,9 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.substances.classes.TimeCourse
 import com.isaakhanimann.journal.data.substances.classes.TimeValue
 import com.isaakhanimann.journal.data.substances.classes.representativeHours
@@ -195,13 +197,13 @@ fun TimeCourseChart(timeCourse: TimeCourse) {
             verticalAlignment = Alignment.Top
         ) {
             val endPill = listOf(
-                "持续" to timeCourse.durationOfAction,
-                "清除" to timeCourse.washout,
-                "半衰期" to timeCourse.eliminationHalfLife
+                stringResource(R.string.time_course_chart_duration) to timeCourse.durationOfAction,
+                stringResource(R.string.time_course_chart_clearance) to timeCourse.washout,
+                stringResource(R.string.time_course_chart_half_life) to timeCourse.eliminationHalfLife
             ).firstOrNull { it.second != null }
-            TimePill("起效", timeCourse.onset)
-            TimePill("Tmax", timeCourse.tmax)
-            TimePill("峰效", timeCourse.peakEffect)
+            TimePill(stringResource(R.string.time_course_chart_onset), timeCourse.onset)
+            TimePill(stringResource(R.string.time_course_tmax), timeCourse.tmax)
+            TimePill(stringResource(R.string.time_course_chart_peak_effect), timeCourse.peakEffect)
             endPill?.let { TimePill(it.first, it.second) }
         }
     }
