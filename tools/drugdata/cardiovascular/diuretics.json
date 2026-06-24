@@ -22,6 +22,8 @@
       ],
       "categories": [
         "cardiovascular",
+        "endocrine",
+        "hrt-related",
         "prescription-medicine",
         "atc-c03"
       ],
@@ -269,7 +271,8 @@
         "indications": [
           "Heart failure and edema contexts depending on label",
           "Hypertension",
-          "Primary hyperaldosteronism"
+          "Primary hyperaldosteronism",
+          "Androgen blockade in feminizing hormone therapy under specialist guideline context"
         ],
         "contraindications": [
           "Hyperkalemia",
@@ -290,7 +293,8 @@
           "Renal function",
           "Blood pressure",
           "Volume status",
-          "Creatinine/eGFR"
+          "Creatinine/eGFR",
+          "Total testosterone and estradiol when used in feminizing hormone therapy"
         ],
         "sourceRefs": [
           {
@@ -360,6 +364,62 @@
           }
         ]
       },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Steroidal antiandrogen",
+          "Mineralocorticoid receptor antagonist",
+          "Potassium-sparing diuretic"
+        ],
+        "mechanisms": [
+          "Androgen receptor antagonism",
+          "Variable suppression of testosterone synthesis in feminizing hormone therapy",
+          "Mineralocorticoid receptor antagonism"
+        ],
+        "affectedHormones": [
+          "Androgen receptor signaling",
+          "Total testosterone",
+          "Estradiol indirectly through the combined regimen",
+          "Renin and aldosterone physiology"
+        ],
+        "monitoringLabs": [
+          "Serum potassium",
+          "Creatinine/eGFR",
+          "Blood pressure",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "assayCaveats": [
+          "Plasma spironolactone concentration is not used to measure androgen blockade.",
+          "Testosterone suppression is variable and must be interpreted with the complete hormone regimen."
+        ],
+        "safetySignals": [
+          "Hyperkalemia",
+          "Renal impairment",
+          "Hypotension and orthostasis",
+          "Polyuria and volume depletion"
+        ],
+        "modelRoles": [
+          "androgen-receptor-antagonist",
+          "variable-testosterone-suppression",
+          "potassium-risk"
+        ],
+        "sourceRefs": [
+          {
+            "title": "UCSF Overview of feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "DailyMed spironolactone label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
       "interactions": {
         "dangerous": [
           "Eplerenone",
@@ -420,8 +480,100 @@
           "reviewedLabelMatch": "Spironolactone",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        },
+        {
+          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
+          "population": "Adults in the cited clinical guideline",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "25-400 mg spironolactone total daily across the cited initial-low through maximum entries",
+          "scheduleText": "Once daily at the initial-low entry or divided twice daily at the initial and maximum entries",
+          "ranges": [
+            {
+              "min": 25,
+              "max": 25,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "initial",
+              "label": "Initial-low guideline entry",
+              "components": []
+            },
+            {
+              "min": 100,
+              "max": 100,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "50 mg twice daily",
+              "rangeKind": "guideline-regimen",
+              "label": "Initial guideline entry",
+              "components": []
+            },
+            {
+              "min": 400,
+              "max": 400,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "200 mg twice daily",
+              "rangeKind": "guideline-regimen",
+              "label": "Guideline maximum entry",
+              "components": []
+            }
+          ],
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
+          "note": "The cited table is a clinical use index; potassium, renal function, blood pressure, goals, and the full hormone regimen determine interpretation.",
+          "sourceRefs": [
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE",
+              "labelSection": "Table 3. Androgen blocker preparations and dosing"
+            }
+          ]
         }
       ],
+      "hrtModelInfo": {
+        "modelCompatible": false,
+        "modelRoles": [
+          "androgen-receptor-antagonist",
+          "variable-testosterone-suppression",
+          "potassium-risk"
+        ],
+        "primaryModeledAnalytes": [
+          "Total testosterone",
+          "Serum potassium",
+          "Creatinine/eGFR"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "amount",
+          "unit",
+          "route"
+        ],
+        "requiredLabFields": [
+          "totalTestosterone",
+          "estradiol",
+          "potassium",
+          "creatinineOrEgfr",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "Testosterone suppression is variable and cannot be inferred from parent-drug plasma pharmacokinetics.",
+          "Safety monitoring for potassium and renal function is essential to any future model context."
+        ],
+        "sourceRefs": [
+          {
+            "title": "UCSF Overview of feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
       "sourceRefs": [
         {
           "title": "DailyMed spironolactone label",

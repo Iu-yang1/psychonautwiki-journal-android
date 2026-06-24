@@ -20,6 +20,15 @@ INJECTION_ESTERS = {
     "Estradiol Enanthate Injection",
 }
 NON_STANDARD_E2 = {"Ethinylestradiol", "Conjugated Estrogens"}
+REQUIRED_HRT_EXTENSIONS = {
+    "Bicalutamide",
+    "Leuprolide Acetate",
+    "Histrelin Implant",
+    "Goserelin",
+    "Triptorelin",
+    "Degarelix",
+    "Relugolix",
+}
 SEARCH_TERMS = (
     "CPA",
     "醋酸环丙孕酮",
@@ -41,6 +50,16 @@ SEARCH_TERMS = (
     "ethinylestradiol",
     "conjugated estrogens",
     "micronized progesterone",
+    "bicalutamide",
+    "比卡鲁胺",
+    "leuprolide",
+    "亮丙瑞林",
+    "histrelin",
+    "goserelin",
+    "triptorelin",
+    "degarelix",
+    "relugolix",
+    "GnRH antagonist",
 )
 
 
@@ -128,12 +147,15 @@ def main() -> int:
             substances.append((path, substance))
 
     names = [substance.get("name") for _, substance in substances]
-    if len(files) != 23:
-        errors.append(f"Expected 23 endocrine JSON files, found {len(files)}")
-    if len(substances) != 23:
-        errors.append(f"Expected 23 endocrine substances, found {len(substances)}")
+    if len(files) != 24:
+        errors.append(f"Expected 24 endocrine JSON files, found {len(files)}")
+    if len(substances) != 30:
+        errors.append(f"Expected 30 endocrine substances, found {len(substances)}")
     if len(set(names)) != len(names):
         errors.append("Endocrine substance names must be unique")
+    missing_extensions = sorted(REQUIRED_HRT_EXTENSIONS - set(names))
+    if missing_extensions:
+        errors.append(f"Missing HRT extension entries: {missing_extensions}")
 
     for path, substance in substances:
         name = substance.get("name", "<unnamed>")
@@ -222,6 +244,38 @@ def main() -> int:
                 for dose_range in cpa_ranges
             ):
                 errors.append(f"{prefix}: missing 12.5-50 mg daily-total HRT range")
+
+        if name == "Bicalutamide":
+            text = " ".join(
+                (substance.get("endocrineInfo") or {}).get("assayCaveats", [])
+                + (substance.get("hrtModelInfo") or {}).get("caveats", [])
+            ).lower()
+            if "testosterone" not in text or "receptor" not in text:
+                errors.append(f"{prefix}: must distinguish receptor blockade from testosterone suppression")
+            if (substance.get("hrtModelInfo") or {}).get("modelCompatible") is not False:
+                errors.append(f"{prefix}: HRT model must remain disabled")
+
+        if name in {"Leuprolide Acetate", "Histrelin Implant", "Goserelin", "Triptorelin"}:
+            time_course = (substance.get("timeCourse") or [{}])[0]
+            if time_course.get("depotRelease") is not True:
+                errors.append(f"{prefix}: GnRH agonist depot/implant must set depotRelease")
+            text = " ".join(
+                time_course.get("notes", [])
+                + (substance.get("endocrineInfo") or {}).get("safetySignals", [])
+            ).lower()
+            if "flare" not in text:
+                errors.append(f"{prefix}: missing initial agonist flare caveat")
+
+        if name in {"Degarelix", "Relugolix"}:
+            model = substance.get("hrtModelInfo") or {}
+            if model.get("modelCompatible") is not False:
+                errors.append(f"{prefix}: oncology-only antagonist evidence must not enable HRT model")
+            text = " ".join(
+                (substance.get("endocrineInfo") or {}).get("mechanisms", [])
+                + model.get("caveats", [])
+            ).lower()
+            if "without an agonist flare" not in text:
+                errors.append(f"{prefix}: missing no-agonist-flare distinction")
 
     for term in SEARCH_TERMS:
         if not any(

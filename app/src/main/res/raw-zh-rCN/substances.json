@@ -57649,6 +57649,8 @@
       ],
       "categories": [
         "cardiovascular",
+        "endocrine",
+        "hrt-related",
         "prescription-medicine",
         "atc-c03"
       ],
@@ -57896,7 +57898,8 @@
         "indications": [
           "Heart failure and edema contexts depending on label",
           "Hypertension",
-          "Primary hyperaldosteronism"
+          "Primary hyperaldosteronism",
+          "Androgen blockade in feminizing hormone therapy under specialist guideline context"
         ],
         "contraindications": [
           "Hyperkalemia",
@@ -57917,7 +57920,8 @@
           "Renal function",
           "Blood pressure",
           "Volume status",
-          "Creatinine/eGFR"
+          "Creatinine/eGFR",
+          "Total testosterone and estradiol when used in feminizing hormone therapy"
         ],
         "sourceRefs": [
           {
@@ -57987,6 +57991,62 @@
           }
         ]
       },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Steroidal antiandrogen",
+          "Mineralocorticoid receptor antagonist",
+          "Potassium-sparing diuretic"
+        ],
+        "mechanisms": [
+          "Androgen receptor antagonism",
+          "Variable suppression of testosterone synthesis in feminizing hormone therapy",
+          "Mineralocorticoid receptor antagonism"
+        ],
+        "affectedHormones": [
+          "Androgen receptor signaling",
+          "Total testosterone",
+          "Estradiol indirectly through the combined regimen",
+          "Renin and aldosterone physiology"
+        ],
+        "monitoringLabs": [
+          "Serum potassium",
+          "Creatinine/eGFR",
+          "Blood pressure",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "assayCaveats": [
+          "Plasma spironolactone concentration is not used to measure androgen blockade.",
+          "Testosterone suppression is variable and must be interpreted with the complete hormone regimen."
+        ],
+        "safetySignals": [
+          "Hyperkalemia",
+          "Renal impairment",
+          "Hypotension and orthostasis",
+          "Polyuria and volume depletion"
+        ],
+        "modelRoles": [
+          "androgen-receptor-antagonist",
+          "variable-testosterone-suppression",
+          "potassium-risk"
+        ],
+        "sourceRefs": [
+          {
+            "title": "UCSF Overview of feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "DailyMed spironolactone label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-23",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
       "interactions": {
         "dangerous": [
           "Eplerenone",
@@ -58047,8 +58107,100 @@
           "reviewedLabelMatch": "Spironolactone",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-06-24"
+        },
+        {
+          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
+          "population": "Adults in the cited clinical guideline",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "25-400 mg spironolactone total daily across the cited initial-low through maximum entries",
+          "scheduleText": "Once daily at the initial-low entry or divided twice daily at the initial and maximum entries",
+          "ranges": [
+            {
+              "min": 25,
+              "max": 25,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "initial",
+              "label": "Initial-low guideline entry",
+              "components": []
+            },
+            {
+              "min": 100,
+              "max": 100,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "50 mg twice daily",
+              "rangeKind": "guideline-regimen",
+              "label": "Initial guideline entry",
+              "components": []
+            },
+            {
+              "min": 400,
+              "max": 400,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "200 mg twice daily",
+              "rangeKind": "guideline-regimen",
+              "label": "Guideline maximum entry",
+              "components": []
+            }
+          ],
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
+          "note": "The cited table is a clinical use index; potassium, renal function, blood pressure, goals, and the full hormone regimen determine interpretation.",
+          "sourceRefs": [
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE",
+              "labelSection": "Table 3. Androgen blocker preparations and dosing"
+            }
+          ]
         }
       ],
+      "hrtModelInfo": {
+        "modelCompatible": false,
+        "modelRoles": [
+          "androgen-receptor-antagonist",
+          "variable-testosterone-suppression",
+          "potassium-risk"
+        ],
+        "primaryModeledAnalytes": [
+          "Total testosterone",
+          "Serum potassium",
+          "Creatinine/eGFR"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "amount",
+          "unit",
+          "route"
+        ],
+        "requiredLabFields": [
+          "totalTestosterone",
+          "estradiol",
+          "potassium",
+          "creatinineOrEgfr",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "Testosterone suppression is variable and cannot be inferred from parent-drug plasma pharmacokinetics.",
+          "Safety monitoring for potassium and renal function is essential to any future model context."
+        ],
+        "sourceRefs": [
+          {
+            "title": "UCSF Overview of feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
       "sourceRefs": [
         {
           "title": "DailyMed spironolactone label",
@@ -65385,6 +65537,1569 @@
         ]
       },
       "roas": []
+    },
+    {
+      "name": "Bicalutamide",
+      "commonNames": [
+        "Bicalutamide",
+        "Casodex",
+        "比卡鲁胺",
+        "比卡魯胺"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+      "isApproved": true,
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine",
+        "antiandrogen"
+      ],
+      "summary": "比卡鲁胺是非甾体雄激素受体抑制剂。它阻断雄激素作用，但单药使用时不会可靠降低血清睾酮；女性化 HRT 语境的证据有限，并存在严重肝损伤风险。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "L02BB03"
+        ],
+        "drugClass": [
+          "Nonsteroidal androgen receptor inhibitor",
+          "Antiandrogen"
+        ],
+        "indications": [
+          "Metastatic prostate cancer in combination with an LHRH analogue under the cited label",
+          "Feminizing HRT has limited evidence and is not an approved indication"
+        ],
+        "contraindications": [
+          "Product-label contraindications apply",
+          "Pregnancy"
+        ],
+        "majorWarnings": [
+          "Severe liver injury, including hepatic failure, has been reported.",
+          "Serum testosterone may remain high or rise because androgen production is not directly suppressed."
+        ],
+        "majorInteractions": [
+          "CYP3A4 substrate interactions may alter exposure.",
+          "Coumarin anticoagulant effects and prothrombin time can increase."
+        ],
+        "monitoring": [
+          "AST",
+          "ALT",
+          "Bilirubin",
+          "Clinical signs of liver injury",
+          "Total testosterone and estradiol for context only"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed CASODEX (bicalutamide) label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.1 Hepatitis; 12.3 Pharmacokinetics"
+          },
+          {
+            "title": "UCSF Overview of feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Nonsteroidal antiandrogen",
+          "Androgen receptor inhibitor"
+        ],
+        "mechanisms": [
+          "Competitive inhibition of androgen receptor signaling"
+        ],
+        "affectedHormones": [
+          "Androgen receptor signaling",
+          "Total testosterone may remain unchanged or increase",
+          "Estradiol may increase"
+        ],
+        "monitoringLabs": [
+          "AST",
+          "ALT",
+          "Bilirubin",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "assayCaveats": [
+          "Serum testosterone does not measure androgen-receptor blockade and is not useful for titrating bicalutamide exposure."
+        ],
+        "safetySignals": [
+          "Severe liver injury",
+          "Gynecomastia",
+          "Anemia",
+          "Drug interactions"
+        ],
+        "modelRoles": [
+          "androgen-receptor-antagonist",
+          "not-a-testosterone-production-suppressor",
+          "liver-risk"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed CASODEX (bicalutamide) label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "film-coated tablet",
+          "tmax": {
+            "min": 16.7,
+            "max": 45.9,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Mean 31.3 hours with SD 14.6 hours for the active enantiomer."
+          },
+          "eliminationHalfLife": {
+            "min": 3.51,
+            "max": 8.09,
+            "unit": "day",
+            "basis": "label pharmacokinetics",
+            "note": "Mean 5.8 days with SD 2.29 days for the active enantiomer."
+          },
+          "timeToSteadyState": {
+            "min": 28,
+            "max": 42,
+            "unit": "day",
+            "basis": "literature estimate",
+            "note": "Approximate accumulation window; not a clinical-effect endpoint."
+          },
+          "notes": [
+            "Androgen-receptor blockade must not be interpreted as testosterone production suppression."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed CASODEX (bicalutamide) label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Metastatic prostate cancer in combination with an LHRH analogue under the cited label",
+          "population": "Adults in the approved oncology context",
+          "route": "oral",
+          "formulation": "film-coated tablet",
+          "amountText": "50 mg bicalutamide per dose",
+          "scheduleText": "Once daily with an LHRH analogue in the cited label",
+          "ranges": [
+            {
+              "min": 50,
+              "max": 50,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Oncology label regimen"
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This oncology label regimen is not a feminizing HRT recommendation.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed CASODEX (bicalutamide) label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2 Dosage and Administration"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": false,
+        "modelRoles": [
+          "androgen-receptor-antagonist",
+          "not-a-testosterone-production-suppressor",
+          "liver-risk"
+        ],
+        "primaryModeledAnalytes": [],
+        "requiredEventFields": [
+          "timestamp",
+          "amount",
+          "unit",
+          "route"
+        ],
+        "requiredLabFields": [
+          "ast",
+          "alt",
+          "bilirubin",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "Blood testosterone does not quantify androgen-receptor blockade.",
+          "Do not use this entry as a testosterone-suppression model."
+        ],
+        "sourceRefs": [
+          {
+            "title": "UCSF Overview of feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
+      "roas": [],
+      "sourceRefs": [
+        {
+          "title": "DailyMed CASODEX (bicalutamide) label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ]
+    },
+    {
+      "name": "Leuprolide Acetate",
+      "commonNames": [
+        "Leuprolide",
+        "Lupron Depot-PED",
+        "亮丙瑞林",
+        "醋酸亮丙瑞林",
+        "GnRHa"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+      "isApproved": true,
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine",
+        "gnrh-agonist"
+      ],
+      "summary": "醋酸亮丙瑞林是 GnRH 激动剂；持续给药会先产生短暂刺激，随后下调受体并抑制 LH、FSH 和性腺类固醇。本条目区分产品标签的中枢性性早熟用途与青春期抑制/HRT 资料语境。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "L02AE02"
+        ],
+        "drugClass": [
+          "GnRH agonist",
+          "Gonadal-axis suppressor"
+        ],
+        "indications": [
+          "Central precocious puberty under the cited pediatric label",
+          "Puberty suppression requires specialist guideline-based care"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "Hypersensitivity to GnRH-related products or formulation components"
+        ],
+        "majorWarnings": [
+          "Initial gonadotropin and sex-steroid flare",
+          "Psychiatric symptoms, seizures, and intracranial hypertension are product-label safety concerns."
+        ],
+        "majorInteractions": [
+          "No routine plasma concentration TDM is established."
+        ],
+        "monitoring": [
+          "LH",
+          "FSH",
+          "Estradiol or testosterone",
+          "Pubertal stage",
+          "Growth velocity",
+          "Bone age"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed LUPRON DEPOT-PED label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "GnRH agonist",
+          "Hypothalamic-pituitary-gonadal axis suppressor"
+        ],
+        "mechanisms": [
+          "Initial GnRH receptor stimulation followed by receptor downregulation and suppression of LH and FSH."
+        ],
+        "affectedHormones": [
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "monitoringLabs": [
+          "LH",
+          "FSH",
+          "Total testosterone or estradiol",
+          "Pubertal stage, growth velocity, and bone age"
+        ],
+        "assayCaveats": [
+          "Hormone results depend on depot formulation, time since injection, suppression phase, and assay method."
+        ],
+        "safetySignals": [
+          "Initial hormone flare",
+          "Bone-density effects with prolonged suppression",
+          "Mood or psychiatric symptoms",
+          "Injection-site reactions"
+        ],
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "gonadal-sex-steroid-suppressor",
+          "initial-agonist-flare"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "intramuscular",
+          "formulation": "1-, 3-, or 6-month depot injection",
+          "tmax": {
+            "min": 1,
+            "max": 4,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Product-specific peak times across cited depot formulations."
+          },
+          "durationOfAction": {
+            "min": 1,
+            "max": 6,
+            "unit": "month",
+            "basis": "formulation delivery or clinical effect"
+          },
+          "depotRelease": true,
+          "injectionIntervalSensitive": true,
+          "assayTimingSensitive": true,
+          "notes": [
+            "An initial agonist flare precedes sustained suppression.",
+            "Depot strengths and release characteristics are not interchangeable."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed LUPRON DEPOT-PED label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Central precocious puberty under the cited pediatric label",
+          "population": "Pediatric product-label population",
+          "route": "intramuscular",
+          "formulation": "product-specific depot injection",
+          "amountText": "7.5-45 mg across product-specific LUPRON DEPOT-PED strengths",
+          "scheduleText": "Every 1, 3, or 6 months according to the selected formulation",
+          "ranges": [
+            {
+              "min": 7.5,
+              "max": 45,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "product-specific 1-, 3-, or 6-month interval",
+              "rangeKind": "label-regimen",
+              "label": "CPP label formulations",
+              "note": "Strengths and intervals are not interchangeable."
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This pediatric label index is not an HRT dosing recommendation.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed LUPRON DEPOT-PED label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "gonadal-sex-steroid-suppressor",
+          "depot-release"
+        ],
+        "primaryModeledAnalytes": [
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "compound",
+          "route",
+          "formulation",
+          "amount",
+          "unit",
+          "lastDoseTime"
+        ],
+        "requiredLabFields": [
+          "lh",
+          "fsh",
+          "totalTestosteroneOrEstradiol",
+          "sampleTimestamp",
+          "assayMethod"
+        ],
+        "caveats": [
+          "Initial flare and depot suppression must be modeled separately.",
+          "Current data are readiness metadata only."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
+      "roas": [],
+      "sourceRefs": [
+        {
+          "title": "DailyMed LUPRON DEPOT-PED label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ]
+    },
+    {
+      "name": "Histrelin Implant",
+      "commonNames": [
+        "Histrelin acetate",
+        "Supprelin LA",
+        "组氨瑞林植入剂",
+        "醋酸组氨瑞林"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=histrelin",
+      "isApproved": true,
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine",
+        "gnrh-agonist"
+      ],
+      "summary": "组氨瑞林植入剂是长效 GnRH 激动剂。持续释放会抑制 LH、FSH 和性腺类固醇；产品标签要求植入满 12 个月后取出或更换。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "H01CA03"
+        ],
+        "drugClass": [
+          "GnRH agonist",
+          "Subcutaneous implant"
+        ],
+        "indications": [
+          "Central precocious puberty under the cited pediatric label",
+          "Puberty suppression requires specialist guideline-based care"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "Hypersensitivity to GnRH-related products"
+        ],
+        "majorWarnings": [
+          "Initial hormone flare",
+          "Implant localization, removal, breakage, or extrusion problems",
+          "Psychiatric symptoms and intracranial hypertension are label concerns."
+        ],
+        "majorInteractions": [],
+        "monitoring": [
+          "LH",
+          "FSH",
+          "Estradiol or testosterone",
+          "Pubertal stage",
+          "Growth velocity",
+          "Implant site"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed SUPPRELIN LA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=histrelin",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "GnRH agonist",
+          "Hypothalamic-pituitary-gonadal axis suppressor"
+        ],
+        "mechanisms": [
+          "Initial stimulation followed by GnRH receptor downregulation and sustained gonadotropin suppression."
+        ],
+        "affectedHormones": [
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "monitoringLabs": [
+          "LH",
+          "FSH",
+          "Total testosterone or estradiol",
+          "Pubertal stage and growth"
+        ],
+        "assayCaveats": [
+          "Implant age and sample timing must be recorded when interpreting suppression."
+        ],
+        "safetySignals": [
+          "Initial hormone flare",
+          "Implant-site reactions",
+          "Implant removal complications",
+          "Bone-health context"
+        ],
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "gonadal-sex-steroid-suppressor",
+          "implant-release"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed SUPPRELIN LA label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=histrelin",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "subcutaneous",
+          "formulation": "upper-arm implant",
+          "durationOfAction": {
+            "min": 12,
+            "max": 12,
+            "unit": "month",
+            "basis": "formulation delivery or clinical effect"
+          },
+          "depotRelease": true,
+          "injectionIntervalSensitive": true,
+          "assayTimingSensitive": true,
+          "notes": [
+            "Median serum histrelin remained quantifiable through the treatment period.",
+            "The implant must be removed after 12 months; a new implant may be placed if treatment continues."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed SUPPRELIN LA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=histrelin",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Central precocious puberty under the cited pediatric label",
+          "population": "Pediatric product-label population",
+          "route": "subcutaneous",
+          "formulation": "upper-arm implant",
+          "amountText": "One SUPPRELIN LA implant",
+          "scheduleText": "Provides drug for 12 months, then must be removed or replaced",
+          "ranges": [
+            {
+              "min": 1,
+              "max": 1,
+              "unit": "implant",
+              "basis": "per-dose",
+              "frequency": "12-month implant period",
+              "rangeKind": "label-regimen",
+              "label": "CPP label implant"
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This pediatric label index is not an HRT dosing recommendation.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed SUPPRELIN LA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=histrelin",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "gonadal-sex-steroid-suppressor",
+          "implant-release"
+        ],
+        "primaryModeledAnalytes": [
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "requiredEventFields": [
+          "implantTimestamp",
+          "removalTimestamp",
+          "compound",
+          "formulation"
+        ],
+        "requiredLabFields": [
+          "lh",
+          "fsh",
+          "totalTestosteroneOrEstradiol",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "Implant insertion and removal dates are required.",
+          "Current data are readiness metadata only."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
+      "roas": [],
+      "sourceRefs": [
+        {
+          "title": "DailyMed SUPPRELIN LA label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=histrelin",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ]
+    },
+    {
+      "name": "Goserelin",
+      "commonNames": [
+        "Goserelin acetate",
+        "Zoladex",
+        "戈舍瑞林",
+        "醋酸戈舍瑞林"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cb3c20-2738-400a-b522-3f36f71fe6c5",
+      "isApproved": true,
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine",
+        "gnrh-agonist"
+      ],
+      "summary": "戈舍瑞林是皮下缓释 GnRH 激动剂。其监管标签主要覆盖肿瘤和部分妇科用途；跨性别成人或青春期抑制语境应按专科指南单独解释。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "L02AE03"
+        ],
+        "drugClass": [
+          "GnRH agonist",
+          "Subcutaneous depot implant"
+        ],
+        "indications": [
+          "Approved oncology and gynecologic contexts in the cited label",
+          "HRT use is context-dependent and not established by this label"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "Hypersensitivity"
+        ],
+        "majorWarnings": [
+          "Initial hormone flare",
+          "Bone-density loss",
+          "Metabolic and cardiovascular risks in androgen-deprivation contexts"
+        ],
+        "majorInteractions": [
+          "QT-prolonging context may require review."
+        ],
+        "monitoring": [
+          "LH",
+          "FSH",
+          "Testosterone or estradiol",
+          "Bone health",
+          "Clinical response"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed ZOLADEX label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cb3c20-2738-400a-b522-3f36f71fe6c5",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "GnRH agonist",
+          "Hypothalamic-pituitary-gonadal axis suppressor"
+        ],
+        "mechanisms": [
+          "Initial stimulation followed by GnRH receptor downregulation and suppression of LH and FSH."
+        ],
+        "affectedHormones": [
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "monitoringLabs": [
+          "LH",
+          "FSH",
+          "Total testosterone or estradiol",
+          "Bone and metabolic markers when indicated"
+        ],
+        "assayCaveats": [
+          "Depot strength and time since implantation materially affect interpretation."
+        ],
+        "safetySignals": [
+          "Initial hormone flare",
+          "Bone-density effects",
+          "Metabolic effects",
+          "Implant-site injury"
+        ],
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "gonadal-sex-steroid-suppressor",
+          "depot-release"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed ZOLADEX label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cb3c20-2738-400a-b522-3f36f71fe6c5",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "subcutaneous",
+          "formulation": "3.6 mg or 10.8 mg depot implant",
+          "tmax": {
+            "min": 1.46,
+            "max": 2.14,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Mean 1.8 hours with SD 0.34 hours for the 10.8 mg depot."
+          },
+          "durationOfAction": {
+            "min": 4,
+            "max": 12,
+            "unit": "week",
+            "basis": "formulation delivery or clinical effect"
+          },
+          "depotRelease": true,
+          "injectionIntervalSensitive": true,
+          "assayTimingSensitive": true,
+          "notes": [
+            "Initial agonist flare precedes sustained suppression.",
+            "The 3.6 mg and 10.8 mg depot concentration profiles differ."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed ZOLADEX label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cb3c20-2738-400a-b522-3f36f71fe6c5",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Approved oncology or gynecologic contexts in the cited label",
+          "population": "Product-label population",
+          "route": "subcutaneous",
+          "formulation": "depot implant",
+          "amountText": "3.6 mg or 10.8 mg depot implant",
+          "scheduleText": "Every 28 days or every 12 weeks according to product strength",
+          "ranges": [
+            {
+              "min": 3.6,
+              "max": 10.8,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "product-specific 28-day or 12-week interval",
+              "rangeKind": "label-regimen",
+              "label": "Product-label depot strengths"
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This label index is not an HRT dosing recommendation.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed ZOLADEX label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cb3c20-2738-400a-b522-3f36f71fe6c5",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "gonadal-sex-steroid-suppressor",
+          "depot-release"
+        ],
+        "primaryModeledAnalytes": [
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "compound",
+          "route",
+          "formulation",
+          "amount",
+          "unit",
+          "lastDoseTime"
+        ],
+        "requiredLabFields": [
+          "lh",
+          "fsh",
+          "totalTestosteroneOrEstradiol",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "Initial flare, depot-specific release, and the administration interval must be modeled separately.",
+          "Current data are readiness metadata only."
+        ],
+        "sourceRefs": [
+          {
+            "title": "UCSF Overview of feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
+      "roas": [],
+      "sourceRefs": [
+        {
+          "title": "DailyMed ZOLADEX label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cb3c20-2738-400a-b522-3f36f71fe6c5",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ]
+    },
+    {
+      "name": "Triptorelin",
+      "commonNames": [
+        "Triptorelin pamoate",
+        "Triptodur",
+        "曲普瑞林",
+        "GnRHa"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+      "isApproved": true,
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine",
+        "gnrh-agonist"
+      ],
+      "summary": "曲普瑞林是长效 GnRH 激动剂。本条目采用 TRIPTODUR 中枢性性早熟产品标签记录 24 周制剂，并将青春期抑制语境单独标识。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "L02AE04"
+        ],
+        "drugClass": [
+          "GnRH agonist",
+          "Extended-release injection"
+        ],
+        "indications": [
+          "Central precocious puberty under the cited pediatric label",
+          "Puberty suppression requires specialist guideline-based care"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "Hypersensitivity"
+        ],
+        "majorWarnings": [
+          "Initial hormone flare",
+          "Psychiatric symptoms, seizures, intracranial hypertension, and severe skin reactions are label concerns."
+        ],
+        "majorInteractions": [],
+        "monitoring": [
+          "LH",
+          "FSH",
+          "Estradiol or testosterone",
+          "Pubertal stage",
+          "Growth and bone age"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed TRIPTODUR label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "GnRH agonist",
+          "Hypothalamic-pituitary-gonadal axis suppressor"
+        ],
+        "mechanisms": [
+          "Initial stimulation followed by receptor downregulation and suppression of LH and FSH."
+        ],
+        "affectedHormones": [
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "monitoringLabs": [
+          "LH",
+          "FSH",
+          "Total testosterone or estradiol",
+          "Pubertal stage and growth"
+        ],
+        "assayCaveats": [
+          "The 24-week depot interval and sample timing must be recorded."
+        ],
+        "safetySignals": [
+          "Initial hormone flare",
+          "Injection-site reactions",
+          "Bone-health context",
+          "Psychiatric symptoms"
+        ],
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "gonadal-sex-steroid-suppressor",
+          "depot-release"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed TRIPTODUR label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "intramuscular",
+          "formulation": "24-week extended-release injection",
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "week",
+            "basis": "formulation delivery or clinical effect"
+          },
+          "depotRelease": true,
+          "injectionIntervalSensitive": true,
+          "assayTimingSensitive": true,
+          "notes": [
+            "Initial agonist flare precedes sustained suppression.",
+            "Renal or hepatic impairment can increase exposure to non-depot intravenous triptorelin; depot interpretation remains product-specific."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed TRIPTODUR label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Central precocious puberty under the cited pediatric label",
+          "population": "Pediatric patients 2 years and older under the cited label",
+          "route": "intramuscular",
+          "formulation": "extended-release injection",
+          "amountText": "22.5 mg triptorelin per injection",
+          "scheduleText": "Once every 24 weeks",
+          "ranges": [
+            {
+              "min": 22.5,
+              "max": 22.5,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "every 24 weeks",
+              "rangeKind": "label-regimen",
+              "label": "TRIPTODUR label regimen"
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This pediatric label index is not an HRT dosing recommendation.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed TRIPTODUR label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "gonadal-sex-steroid-suppressor",
+          "depot-release"
+        ],
+        "primaryModeledAnalytes": [
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "compound",
+          "route",
+          "formulation",
+          "amount",
+          "unit",
+          "lastDoseTime"
+        ],
+        "requiredLabFields": [
+          "lh",
+          "fsh",
+          "totalTestosteroneOrEstradiol",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "Initial flare, sample timing, and the 24-week depot interval must be modeled separately.",
+          "Current data are readiness metadata only."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
+      "roas": [],
+      "sourceRefs": [
+        {
+          "title": "DailyMed TRIPTODUR label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ]
+    },
+    {
+      "name": "Degarelix",
+      "commonNames": [
+        "Firmagon",
+        "地加瑞克",
+        "GnRH antagonist"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b",
+      "isApproved": true,
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine",
+        "gnrh-antagonist"
+      ],
+      "summary": "地加瑞克是注射用 GnRH 拮抗剂，可直接降低 LH、FSH 和睾酮而不产生激动剂初始反跳。现有监管标签为前列腺癌用途，并非标准 HRT 条目。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "L02BX02"
+        ],
+        "drugClass": [
+          "GnRH antagonist",
+          "Injection-site depot"
+        ],
+        "indications": [
+          "Advanced prostate cancer under the cited label",
+          "Routine HRT use is not established by this label"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "Hypersensitivity"
+        ],
+        "majorWarnings": [
+          "QT prolongation context",
+          "Injection-site reactions",
+          "Metabolic and bone effects of prolonged androgen deprivation"
+        ],
+        "majorInteractions": [
+          "Review other QT-prolonging therapies."
+        ],
+        "monitoring": [
+          "Testosterone",
+          "LH and FSH when indicated",
+          "ECG/QT risk",
+          "Metabolic and bone health"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed FIRMAGON label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "GnRH antagonist",
+          "Hypothalamic-pituitary-gonadal axis suppressor"
+        ],
+        "mechanisms": [
+          "Competitive GnRH receptor antagonism rapidly reduces LH and FSH without an agonist flare."
+        ],
+        "affectedHormones": [
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "monitoringLabs": [
+          "Total testosterone",
+          "LH",
+          "FSH",
+          "Metabolic and bone markers when indicated"
+        ],
+        "assayCaveats": [
+          "Suppression markers and clinical context are more informative than plasma degarelix concentration."
+        ],
+        "safetySignals": [
+          "Injection-site reactions",
+          "QT risk",
+          "Bone-density and metabolic effects"
+        ],
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "testosterone-suppressor",
+          "no-agonist-flare"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed FIRMAGON label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "subcutaneous",
+          "formulation": "injection-site depot",
+          "durationOfAction": {
+            "min": 28,
+            "max": 28,
+            "unit": "day",
+            "basis": "formulation delivery or clinical effect"
+          },
+          "eliminationHalfLife": {
+            "min": 53,
+            "max": 53,
+            "unit": "day",
+            "basis": "label pharmacokinetics",
+            "note": "Long terminal half-life reflects slow release from the injection-site depot."
+          },
+          "depotRelease": true,
+          "injectionIntervalSensitive": true,
+          "assayTimingSensitive": true,
+          "notes": [
+            "Testosterone suppression begins rapidly without an agonist flare.",
+            "The long terminal half-life must not be treated as ordinary duration of action."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed FIRMAGON label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Advanced prostate cancer under the cited label",
+          "population": "Adults in the approved oncology context",
+          "route": "subcutaneous",
+          "formulation": "injection-site depot",
+          "amountText": "240 mg loading dose followed by 80 mg maintenance doses",
+          "scheduleText": "Loading dose, then every 28 days",
+          "ranges": [
+            {
+              "min": 80,
+              "max": 240,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "phase-specific oncology regimen",
+              "rangeKind": "label-regimen",
+              "label": "Oncology label regimen",
+              "note": "Loading and maintenance phases must not be collapsed into one interchangeable range."
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This oncology label regimen is not an HRT dosing recommendation.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed FIRMAGON label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": false,
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "testosterone-suppressor",
+          "no-agonist-flare"
+        ],
+        "primaryModeledAnalytes": [
+          "LH",
+          "FSH",
+          "Total testosterone"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "amount",
+          "unit",
+          "route",
+          "formulation"
+        ],
+        "requiredLabFields": [
+          "lh",
+          "fsh",
+          "totalTestosterone",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "The cited evidence and regimen are oncology-specific.",
+          "Injection timing and the 28-day maintenance interval affect interpretation.",
+          "Routine feminizing HRT model use is not established."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed FIRMAGON label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "roas": [],
+      "sourceRefs": [
+        {
+          "title": "DailyMed FIRMAGON label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ]
+    },
+    {
+      "name": "Relugolix",
+      "commonNames": [
+        "Orgovyx",
+        "瑞卢戈利",
+        "瑞盧戈利",
+        "Oral GnRH antagonist"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=077a92f6-9f1b-479a-87c7-c92b5db6aa9c",
+      "isApproved": true,
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine",
+        "gnrh-antagonist"
+      ],
+      "summary": "瑞卢戈利是口服 GnRH 拮抗剂，可快速抑制 LH、FSH 和睾酮且无激动剂初始反跳。现有监管标签为前列腺癌用途，并非标准 HRT 条目。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "L02BX04"
+        ],
+        "drugClass": [
+          "Oral GnRH antagonist"
+        ],
+        "indications": [
+          "Advanced prostate cancer under the cited label",
+          "Routine HRT use is not established by this label"
+        ],
+        "contraindications": [
+          "Pregnancy",
+          "Hypersensitivity"
+        ],
+        "majorWarnings": [
+          "QT prolongation context",
+          "Embryo-fetal toxicity",
+          "Bone and metabolic effects of prolonged androgen deprivation"
+        ],
+        "majorInteractions": [
+          "P-gp inhibitors and combined P-gp/strong CYP3A inducers can substantially alter exposure."
+        ],
+        "monitoring": [
+          "Testosterone",
+          "ECG/QT risk",
+          "Adherence",
+          "Interacting medicines",
+          "Bone and metabolic health"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed ORGOVYX label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=077a92f6-9f1b-479a-87c7-c92b5db6aa9c",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "GnRH antagonist",
+          "Hypothalamic-pituitary-gonadal axis suppressor"
+        ],
+        "mechanisms": [
+          "Competitive GnRH receptor antagonism rapidly reduces LH and FSH without an agonist flare."
+        ],
+        "affectedHormones": [
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "Estradiol"
+        ],
+        "monitoringLabs": [
+          "Total testosterone",
+          "LH",
+          "FSH",
+          "Bone and metabolic markers when indicated"
+        ],
+        "assayCaveats": [
+          "Adherence and time since the last oral dose affect interpretation."
+        ],
+        "safetySignals": [
+          "QT risk",
+          "Drug interactions",
+          "Bone-density and metabolic effects"
+        ],
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "testosterone-suppressor",
+          "no-agonist-flare"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed ORGOVYX label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=077a92f6-9f1b-479a-87c7-c92b5db6aa9c",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "film-coated tablet",
+          "tmax": {
+            "min": 0.5,
+            "max": 5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "label regimen"
+          },
+          "eliminationHalfLife": {
+            "min": 25,
+            "max": 61,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Effective half-life is about 25 hours; mean terminal half-life is about 61 hours."
+          },
+          "assayTimingSensitive": true,
+          "notes": [
+            "Testosterone suppression is a pharmacodynamic endpoint distinct from plasma relugolix concentration.",
+            "Adherence is important because this is a daily oral antagonist."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed ORGOVYX label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=077a92f6-9f1b-479a-87c7-c92b5db6aa9c",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            }
+          ]
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Advanced prostate cancer under the cited label",
+          "population": "Adults in the approved oncology context",
+          "route": "oral",
+          "formulation": "film-coated tablet",
+          "amountText": "360 mg loading dose followed by 120 mg daily",
+          "scheduleText": "Loading dose on day 1, then once daily",
+          "ranges": [
+            {
+              "min": 120,
+              "max": 360,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "phase-specific oncology regimen",
+              "rangeKind": "label-regimen",
+              "label": "Oncology label regimen",
+              "note": "Loading and maintenance phases must not be collapsed into one interchangeable range."
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This oncology label regimen is not an HRT dosing recommendation.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed ORGOVYX label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=077a92f6-9f1b-479a-87c7-c92b5db6aa9c",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": false,
+        "modelRoles": [
+          "gnrh-axis-suppressor",
+          "lh-fsh-suppressor",
+          "testosterone-suppressor",
+          "no-agonist-flare"
+        ],
+        "primaryModeledAnalytes": [
+          "LH",
+          "FSH",
+          "Total testosterone"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "amount",
+          "unit",
+          "route",
+          "lastDoseTime"
+        ],
+        "requiredLabFields": [
+          "lh",
+          "fsh",
+          "totalTestosterone",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "The cited evidence and regimen are oncology-specific.",
+          "Routine feminizing HRT model use is not established."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed ORGOVYX label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=077a92f6-9f1b-479a-87c7-c92b5db6aa9c",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "roas": [],
+      "sourceRefs": [
+        {
+          "title": "DailyMed ORGOVYX label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=077a92f6-9f1b-479a-87c7-c92b5db6aa9c",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-24",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ]
     },
     {
       "name": "Dienogest",
