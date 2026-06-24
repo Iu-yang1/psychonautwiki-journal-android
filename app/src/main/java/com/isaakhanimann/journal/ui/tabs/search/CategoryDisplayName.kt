@@ -24,6 +24,8 @@ fun localizedCategoryDisplayName(categoryName: String): String {
         "antithrombotic" -> "抗血栓"
         "peripheral-circulation" -> "外周循环"
         "prescription-medicine" -> "处方药"
+        "endocrine" -> "内分泌"
+        "hrt-related" -> "HRT 相关"
         "atc-b01" -> "B01 抗血栓药"
         "atc-c01" -> "C01 心脏治疗药"
         "atc-c02" -> "C02 抗高血压药"

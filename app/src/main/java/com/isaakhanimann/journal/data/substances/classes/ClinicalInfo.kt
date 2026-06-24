@@ -22,7 +22,10 @@ data class SourceRef(
     val title: String,
     val url: String,
     val sourceType: String,
-    val accessedDate: String
+    val accessedDate: String,
+    val evidenceLevel: String? = null,
+    val labelSection: String? = null,
+    val note: String? = null
 )
 
 data class TimeValue(
@@ -43,6 +46,11 @@ data class TimeCourse(
     val eliminationHalfLife: TimeValue? = null,
     val timeToSteadyState: TimeValue? = null,
     val washout: TimeValue? = null,
+    val depotRelease: Boolean = false,
+    val peakWindow: TimeValue? = null,
+    val troughWindow: TimeValue? = null,
+    val injectionIntervalSensitive: Boolean = false,
+    val assayTimingSensitive: Boolean = false,
     val notes: List<String> = emptyList(),
     val sourceRefs: List<SourceRef> = emptyList()
 )
@@ -84,5 +92,39 @@ data class TherapeuticDrugMonitoring(
     val criticalValues: List<ToxicityThreshold> = emptyList(),
     val assayMethod: String? = null,
     val interpretationCaveats: List<String> = emptyList(),
+    val sourceRefs: List<SourceRef> = emptyList()
+)
+
+data class EndocrineInfo(
+    val hormoneClass: List<String> = emptyList(),
+    val mechanisms: List<String> = emptyList(),
+    val affectedHormones: List<String> = emptyList(),
+    val monitoringLabs: List<String> = emptyList(),
+    val assayCaveats: List<String> = emptyList(),
+    val safetySignals: List<String> = emptyList(),
+    val modelRoles: List<String> = emptyList(),
+    val sourceRefs: List<SourceRef> = emptyList()
+)
+
+data class DoseUseReference(
+    val indication: String,
+    val population: String? = null,
+    val route: String,
+    val formulation: String? = null,
+    val amountText: String,
+    val scheduleText: String? = null,
+    val sourceType: String,
+    val evidenceLevel: String,
+    val note: String? = null,
+    val sourceRefs: List<SourceRef> = emptyList()
+)
+
+data class HrtModelInfo(
+    val modelCompatible: Boolean,
+    val modelRoles: List<String> = emptyList(),
+    val primaryModeledAnalytes: List<String> = emptyList(),
+    val requiredEventFields: List<String> = emptyList(),
+    val requiredLabFields: List<String> = emptyList(),
+    val caveats: List<String> = emptyList(),
     val sourceRefs: List<SourceRef> = emptyList()
 )

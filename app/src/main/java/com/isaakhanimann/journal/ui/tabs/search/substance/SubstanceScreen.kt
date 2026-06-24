@@ -72,6 +72,9 @@ import com.isaakhanimann.journal.data.room.experiences.entities.CustomUnit
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
 import com.isaakhanimann.journal.data.substances.classes.Category
 import com.isaakhanimann.journal.data.substances.classes.ClinicalInfo
+import com.isaakhanimann.journal.data.substances.classes.DoseUseReference
+import com.isaakhanimann.journal.data.substances.classes.EndocrineInfo
+import com.isaakhanimann.journal.data.substances.classes.HrtModelInfo
 import com.isaakhanimann.journal.data.substances.classes.SourceRef
 import com.isaakhanimann.journal.data.substances.classes.SubstanceWithCategories
 import com.isaakhanimann.journal.data.substances.classes.TherapeuticDrugMonitoring
@@ -244,8 +247,17 @@ fun SubstanceScreen(
             if (substance.clinicalInfo != null) {
                 ClinicalInformationSection(clinicalInfo = substance.clinicalInfo)
             }
+            if (substance.endocrineInfo != null) {
+                EndocrineInformationSection(endocrineInfo = substance.endocrineInfo)
+            }
             if (substance.timeCourse.isNotEmpty()) {
                 TimeCourseSection(timeCourses = substance.timeCourse)
+            }
+            if (substance.doseUseReferences.isNotEmpty()) {
+                DoseUseReferencesSection(references = substance.doseUseReferences)
+            }
+            if (substance.hrtModelInfo != null) {
+                HrtModelReadinessSection(hrtModelInfo = substance.hrtModelInfo)
             }
             if (substance.tdm != null) {
                 TherapeuticDrugMonitoringSection(tdm = substance.tdm)
@@ -581,6 +593,44 @@ fun ClinicalInformationSection(clinicalInfo: ClinicalInfo) {
 }
 
 @Composable
+fun EndocrineInformationSection(endocrineInfo: EndocrineInfo) {
+    SectionWithTitle(title = stringResource(R.string.endocrine_information_title)) {
+        Column(Modifier.padding(horizontal = horizontalPadding)) {
+            ClinicalInfoListRow(
+                stringResource(R.string.endocrine_hormone_class),
+                endocrineInfo.hormoneClass
+            )
+            ClinicalInfoListRow(
+                stringResource(R.string.endocrine_mechanisms),
+                endocrineInfo.mechanisms
+            )
+            ClinicalInfoListRow(
+                stringResource(R.string.endocrine_affected_hormones),
+                endocrineInfo.affectedHormones
+            )
+            ClinicalInfoListRow(
+                stringResource(R.string.endocrine_monitoring_labs),
+                endocrineInfo.monitoringLabs
+            )
+            ClinicalInfoListRow(
+                stringResource(R.string.endocrine_assay_caveats),
+                endocrineInfo.assayCaveats
+            )
+            ClinicalInfoListRow(
+                stringResource(R.string.endocrine_safety_signals),
+                endocrineInfo.safetySignals
+            )
+            ClinicalInfoListRow(
+                stringResource(R.string.endocrine_model_roles),
+                endocrineInfo.modelRoles
+            )
+            SourceRefs(sourceRefs = endocrineInfo.sourceRefs)
+            VerticalSpace()
+        }
+    }
+}
+
+@Composable
 fun TimeCourseSection(timeCourses: List<TimeCourse>) {
     SectionWithTitle(title = stringResource(R.string.time_course_title)) {
         Column(Modifier.padding(horizontal = horizontalPadding)) {
@@ -608,6 +658,19 @@ fun TimeCourseSection(timeCourses: List<TimeCourse>) {
                     TimeValueRow(stringResource(R.string.time_course_elimination_half_life), timeCourse.eliminationHalfLife)
                     TimeValueRow(stringResource(R.string.time_course_time_to_steady_state), timeCourse.timeToSteadyState)
                     TimeValueRow(stringResource(R.string.time_course_washout), timeCourse.washout)
+                    TimeValueRow(stringResource(R.string.time_course_peak_window), timeCourse.peakWindow)
+                    TimeValueRow(stringResource(R.string.time_course_trough_window), timeCourse.troughWindow)
+                    if (timeCourse.depotRelease) {
+                        BooleanInfoRow(stringResource(R.string.time_course_depot_release))
+                    }
+                    if (timeCourse.injectionIntervalSensitive) {
+                        BooleanInfoRow(
+                            stringResource(R.string.time_course_injection_interval_sensitive)
+                        )
+                    }
+                    if (timeCourse.assayTimingSensitive) {
+                        BooleanInfoRow(stringResource(R.string.time_course_assay_timing_sensitive))
+                    }
                     ClinicalInfoListRow(stringResource(R.string.time_course_notes), timeCourse.notes)
                     SourceRefs(sourceRefs = timeCourse.sourceRefs)
                 }
@@ -615,6 +678,101 @@ fun TimeCourseSection(timeCourses: List<TimeCourse>) {
                     HorizontalDivider()
                 }
             }
+            VerticalSpace()
+        }
+    }
+}
+
+@Composable
+fun DoseUseReferencesSection(references: List<DoseUseReference>) {
+    SectionWithTitle(title = stringResource(R.string.dose_use_references_title)) {
+        Column(Modifier.padding(horizontal = horizontalPadding)) {
+            Text(
+                text = stringResource(R.string.dose_use_references_disclaimer),
+                style = MaterialTheme.typography.bodySmall
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            references.forEachIndexed { index, reference ->
+                ClinicalInfoTextRow(
+                    stringResource(R.string.dose_reference_indication),
+                    reference.indication
+                )
+                ClinicalInfoTextRow(
+                    stringResource(R.string.dose_reference_population),
+                    reference.population
+                )
+                ClinicalInfoTextRow(
+                    stringResource(R.string.dose_reference_route),
+                    localizedClinicalRouteText(reference.route)
+                )
+                ClinicalInfoTextRow(
+                    stringResource(R.string.dose_reference_formulation),
+                    reference.formulation
+                )
+                ClinicalInfoTextRow(
+                    stringResource(R.string.dose_reference_amount),
+                    reference.amountText
+                )
+                ClinicalInfoTextRow(
+                    stringResource(R.string.dose_reference_schedule),
+                    reference.scheduleText
+                )
+                ClinicalInfoTextRow(
+                    stringResource(R.string.dose_reference_source_type),
+                    reference.sourceType
+                )
+                ClinicalInfoTextRow(
+                    stringResource(R.string.dose_reference_evidence_level),
+                    reference.evidenceLevel
+                )
+                ClinicalInfoTextRow(stringResource(R.string.dose_reference_note), reference.note)
+                SourceRefs(sourceRefs = reference.sourceRefs)
+                if (index < references.lastIndex) {
+                    HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
+                }
+            }
+            VerticalSpace()
+        }
+    }
+}
+
+@Composable
+fun HrtModelReadinessSection(hrtModelInfo: HrtModelInfo) {
+    SectionWithTitle(title = stringResource(R.string.hrt_model_readiness_title)) {
+        Column(Modifier.padding(horizontal = horizontalPadding)) {
+            Text(
+                text = stringResource(R.string.hrt_model_readiness_disclaimer),
+                style = MaterialTheme.typography.bodySmall
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            InfoLabel(stringResource(R.string.hrt_model_compatible))
+            Text(
+                text = stringResource(
+                    if (hrtModelInfo.modelCompatible) R.string.label_yes else R.string.label_no
+                )
+            )
+            VerticalSpace()
+            ClinicalInfoListRow(
+                stringResource(R.string.hrt_model_roles),
+                hrtModelInfo.modelRoles
+            )
+            ClinicalInfoListRow(
+                stringResource(R.string.hrt_primary_modeled_analytes),
+                hrtModelInfo.primaryModeledAnalytes
+            )
+            ClinicalInfoListRow(
+                stringResource(R.string.hrt_required_event_fields),
+                hrtModelInfo.requiredEventFields
+            )
+            ClinicalInfoListRow(
+                stringResource(R.string.hrt_required_lab_fields),
+                hrtModelInfo.requiredLabFields
+            )
+            ClinicalInfoListRow(
+                stringResource(R.string.hrt_model_caveats),
+                hrtModelInfo.caveats
+            )
+            SourceRefs(sourceRefs = hrtModelInfo.sourceRefs)
             VerticalSpace()
         }
     }
@@ -718,6 +876,13 @@ private fun InfoLabel(label: String) {
 }
 
 @Composable
+private fun BooleanInfoRow(label: String) {
+    InfoLabel(label)
+    Text(text = stringResource(R.string.label_yes))
+    VerticalSpace()
+}
+
+@Composable
 private fun SourceRefs(sourceRefs: List<SourceRef>) {
     if (sourceRefs.isEmpty()) return
     val uriHandler = LocalUriHandler.current
@@ -725,6 +890,21 @@ private fun SourceRefs(sourceRefs: List<SourceRef>) {
     sourceRefs.forEach { sourceRef ->
         TextButton(onClick = { uriHandler.openUri(sourceRef.url) }) {
             Text(stringResource(R.string.source_ref_format, sourceRef.title, sourceRef.sourceType, sourceRef.accessedDate))
+        }
+        sourceRef.evidenceLevel?.let {
+            Text(
+                text = stringResource(R.string.source_evidence_level, it),
+                style = MaterialTheme.typography.bodySmall
+            )
+        }
+        sourceRef.labelSection?.let {
+            Text(
+                text = stringResource(R.string.source_label_section, it),
+                style = MaterialTheme.typography.bodySmall
+            )
+        }
+        sourceRef.note?.let {
+            Text(text = it, style = MaterialTheme.typography.bodySmall)
         }
     }
     VerticalSpace()

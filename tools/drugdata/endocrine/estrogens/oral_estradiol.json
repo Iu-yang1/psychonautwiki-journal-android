@@ -1,0 +1,256 @@
+{
+  "substances": [
+    {
+      "name": "Oral Estradiol",
+      "commonNames": [
+        "Estradiol oral tablet",
+        "Oral E2",
+        "口服雌二醇",
+        "E2 oral"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
+        "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
+        "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+      ],
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine"
+      ],
+      "summary": "E2 oral 的制剂专属资料条目，重点记录药代时间进程、采样时点和检测方法注意事项。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G03CA03"
+        ],
+        "drugClass": [
+          "Oral estrogen",
+          "17beta-estradiol"
+        ],
+        "indications": [
+          "Approved estrogen indications vary by product",
+          "Feminizing hormone therapy guideline or literature context"
+        ],
+        "contraindications": [
+          "Use product-specific estrogen contraindications"
+        ],
+        "majorWarnings": [
+          "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
+          "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
+          "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+        ],
+        "majorInteractions": [
+          "Enzyme inducers or inhibitors can alter exposure depending on route and formulation.",
+          "Estrogens can alter thyroid-binding globulin and may affect interpretation or requirements of thyroid therapy.",
+          "Estrogens can reduce lamotrigine concentrations in some contexts."
+        ],
+        "monitoring": [
+          "Clinical response and adverse effects",
+          "Estradiol and total testosterone when clinically indicated",
+          "Blood pressure",
+          "Cardiometabolic risk factors when clinically indicated",
+          "Prolactin only when symptoms, regimen, or local guidance indicate"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Activella label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics"
+          },
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Estrogen",
+          "Estrogen receptor agonist"
+        ],
+        "mechanisms": [
+          "Estrogen receptor alpha and beta agonism",
+          "Feedback effects on hypothalamic-pituitary-gonadal signaling"
+        ],
+        "affectedHormones": [
+          "Estradiol",
+          "Estrone",
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "SHBG"
+        ],
+        "monitoringLabs": [
+          "Clinical response and adverse effects",
+          "Estradiol and total testosterone when clinically indicated",
+          "Blood pressure",
+          "Cardiometabolic risk factors when clinically indicated",
+          "Prolactin only when symptoms, regimen, or local guidance indicate"
+        ],
+        "assayCaveats": [
+          "Sampling time, route, formulation, and time since last dose can materially change measured estradiol.",
+          "Immunoassays and LC-MS/MS methods may not agree, particularly at low concentrations or with oral estrogen metabolites.",
+          "The laboratory method and local reference interval must be recorded with each result."
+        ],
+        "safetySignals": [
+          "Venous thromboembolism and cardiovascular risk context",
+          "Blood pressure and migraine changes",
+          "Breast and endometrial safety context",
+          "Liver and gallbladder adverse effects"
+        ],
+        "modelRoles": [
+          "e2-source",
+          "estrogen-receptor-agonist",
+          "gonadotropin-suppressor"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Activella label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics"
+          },
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
+            "sourceType": "assay-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY",
+            "note": "Assay bias can depend on formulation and assay platform."
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "micronized tablet",
+          "depotRelease": false,
+          "injectionIntervalSensitive": false,
+          "assayTimingSensitive": true,
+          "notes": [
+            "Values are label-derived from an oral estradiol combination product and may vary by product.",
+            "First-pass metabolism produces substantial estrone and conjugated estrogen exposure."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Activella label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            }
+          ],
+          "tmax": {
+            "min": 5,
+            "max": 8,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": 14,
+            "unit": "h",
+            "basis": "literature or label pharmacokinetics"
+          }
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Approved-label or guideline context",
+          "population": "Adults; product- and indication-specific",
+          "route": "oral",
+          "formulation": "micronized tablet",
+          "amountText": "source needed",
+          "scheduleText": "source needed",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed Activella label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            },
+            {
+              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": [
+          "e2-source",
+          "estrogen-receptor-agonist",
+          "gonadotropin-suppressor"
+        ],
+        "primaryModeledAnalytes": [
+          "Estradiol"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "compound",
+          "route",
+          "formulation",
+          "amount",
+          "unit",
+          "lastDoseTime"
+        ],
+        "requiredLabFields": [
+          "estradiol",
+          "sampleTimestamp",
+          "assayMethod"
+        ],
+        "caveats": [
+          "Sampling time, formulation, and assay method strongly affect interpretation.",
+          "Interindividual variability can be large.",
+          "The model must not be used for dose adjustment."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
+            "sourceType": "assay-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY",
+            "note": "Assay bias can depend on formulation and assay platform."
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

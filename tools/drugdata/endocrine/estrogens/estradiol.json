@@ -1,0 +1,289 @@
+{
+  "substances": [
+    {
+      "name": "Estradiol",
+      "commonNames": [
+        "17beta-estradiol",
+        "E2",
+        "雌二醇",
+        "17β-雌二醇"
+      ],
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
+        "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
+        "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+      ],
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine"
+      ],
+      "summary": "雌二醇（E2）是内源性主要雌激素。本条目用于汇总不同制剂的共同机制、监测和模型角色；具体药代必须按给药途径查看对应条目。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G03CA03"
+        ],
+        "drugClass": [
+          "Estrogen",
+          "17beta-estradiol"
+        ],
+        "indications": [
+          "Estrogen replacement contexts defined by local labeling",
+          "Feminizing hormone therapy guideline context"
+        ],
+        "contraindications": [
+          "Use product-specific contraindications; contraindications vary by route and indication"
+        ],
+        "majorWarnings": [
+          "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
+          "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
+          "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+        ],
+        "majorInteractions": [
+          "Enzyme inducers or inhibitors can alter exposure depending on route and formulation.",
+          "Estrogens can alter thyroid-binding globulin and may affect interpretation or requirements of thyroid therapy.",
+          "Estrogens can reduce lamotrigine concentrations in some contexts."
+        ],
+        "monitoring": [
+          "Clinical response and adverse effects",
+          "Estradiol and total testosterone when clinically indicated",
+          "Blood pressure",
+          "Cardiometabolic risk factors when clinically indicated",
+          "Prolactin only when symptoms, regimen, or local guidance indicate"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "WPATH Standards of Care Version 8",
+            "url": "https://wpath.org/publications/soc8/",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "UCSF Overview of feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Estrogen",
+          "Estrogen receptor agonist"
+        ],
+        "mechanisms": [
+          "Estrogen receptor alpha and beta agonism",
+          "Feedback effects on hypothalamic-pituitary-gonadal signaling"
+        ],
+        "affectedHormones": [
+          "Estradiol",
+          "Estrone",
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "SHBG"
+        ],
+        "monitoringLabs": [
+          "Clinical response and adverse effects",
+          "Estradiol and total testosterone when clinically indicated",
+          "Blood pressure",
+          "Cardiometabolic risk factors when clinically indicated",
+          "Prolactin only when symptoms, regimen, or local guidance indicate"
+        ],
+        "assayCaveats": [
+          "Sampling time, route, formulation, and time since last dose can materially change measured estradiol.",
+          "Immunoassays and LC-MS/MS methods may not agree, particularly at low concentrations or with oral estrogen metabolites.",
+          "The laboratory method and local reference interval must be recorded with each result."
+        ],
+        "safetySignals": [
+          "Venous thromboembolism and cardiovascular risk context",
+          "Blood pressure and migraine changes",
+          "Breast and endometrial safety context",
+          "Liver and gallbladder adverse effects"
+        ],
+        "modelRoles": [
+          "e2-source",
+          "estrogen-receptor-agonist",
+          "gonadotropin-suppressor"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "WPATH Standards of Care Version 8",
+            "url": "https://wpath.org/publications/soc8/",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "UCSF Overview of feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
+            "sourceType": "assay-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY",
+            "note": "Assay bias can depend on formulation and assay platform."
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "multiple routes",
+          "formulation": "route-specific formulations",
+          "depotRelease": false,
+          "injectionIntervalSensitive": false,
+          "assayTimingSensitive": true,
+          "notes": [
+            "No single Tmax or half-life applies across oral, sublingual, transdermal, and depot injection formulations.",
+            "Use the route-specific entries for drawable pharmacokinetic time-course data."
+          ],
+          "sourceRefs": [
+            {
+              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
+            {
+              "title": "WPATH Standards of Care Version 8",
+              "url": "https://wpath.org/publications/soc8/",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            }
+          ]
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Guideline and approved-label contexts",
+          "population": "Adults; product- and indication-specific",
+          "route": "multiple routes",
+          "formulation": "route-specific formulations",
+          "amountText": "source needed",
+          "scheduleText": "source needed",
+          "sourceType": "clinical-guideline",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
+          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
+            {
+              "title": "WPATH Standards of Care Version 8",
+              "url": "https://wpath.org/publications/soc8/",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            },
+            {
+              "title": "UCSF Overview of feminizing hormone therapy",
+              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "CLINICAL_GUIDELINE"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": [
+          "e2-source",
+          "estrogen-receptor-agonist",
+          "gonadotropin-suppressor"
+        ],
+        "primaryModeledAnalytes": [
+          "Estradiol"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "compound",
+          "route",
+          "formulation",
+          "amount",
+          "unit",
+          "lastDoseTime"
+        ],
+        "requiredLabFields": [
+          "estradiol",
+          "sampleTimestamp",
+          "assayMethod"
+        ],
+        "caveats": [
+          "Sampling time, formulation, and assay method strongly affect interpretation.",
+          "Interindividual variability can be large.",
+          "The model must not be used for dose adjustment."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
+            "sourceType": "assay-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY",
+            "note": "Assay bias can depend on formulation and assay platform."
+          }
+        ]
+      },
+      "roas": []
+    }
+  ],
+  "categories": [
+    {
+      "name": "endocrine",
+      "description": "Endocrine medicines and hormone pharmacology reference entries.",
+      "color": 4283215696,
+      "url": null
+    },
+    {
+      "name": "hrt-related",
+      "description": "Medicines relevant to hormone therapy data indexing and future model research.",
+      "color": 4288423856,
+      "url": null
+    }
+  ]
+}

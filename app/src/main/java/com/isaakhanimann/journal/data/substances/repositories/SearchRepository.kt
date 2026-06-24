@@ -118,6 +118,8 @@ class SearchRepository @Inject constructor(
         val currentSubstance = substance
         val clinicalInfo = currentSubstance.clinicalInfo
         val tdm = currentSubstance.tdm
+        val endocrineInfo = currentSubstance.endocrineInfo
+        val hrtModelInfo = currentSubstance.hrtModelInfo
         return currentSubstance.commonNames +
             currentSubstance.name +
             currentSubstance.categories +
@@ -137,7 +139,42 @@ class SearchRepository @Inject constructor(
             tdm?.criticalValues.orEmpty().flatMap { threshold ->
                 listOfNotNull(threshold.threshold, threshold.unit, threshold.note)
             } +
-            tdm?.interpretationCaveats.orEmpty()
+            tdm?.interpretationCaveats.orEmpty() +
+            currentSubstance.timeCourse.flatMap { timeCourse ->
+                listOfNotNull(timeCourse.route, timeCourse.formulation) +
+                    listOf("Tmax", "half-life").filter { term ->
+                        when (term) {
+                            "Tmax" -> timeCourse.tmax != null
+                            else -> timeCourse.eliminationHalfLife != null
+                        }
+                    } +
+                    timeCourse.notes
+            } +
+            endocrineInfo?.hormoneClass.orEmpty() +
+            endocrineInfo?.mechanisms.orEmpty() +
+            endocrineInfo?.affectedHormones.orEmpty() +
+            endocrineInfo?.monitoringLabs.orEmpty() +
+            endocrineInfo?.assayCaveats.orEmpty() +
+            endocrineInfo?.safetySignals.orEmpty() +
+            endocrineInfo?.modelRoles.orEmpty() +
+            currentSubstance.doseUseReferences.flatMap { reference ->
+                listOfNotNull(
+                    reference.indication,
+                    reference.population,
+                    reference.route,
+                    reference.formulation,
+                    reference.amountText,
+                    reference.scheduleText,
+                    reference.sourceType,
+                    reference.evidenceLevel,
+                    reference.note
+                )
+            } +
+            hrtModelInfo?.modelRoles.orEmpty() +
+            hrtModelInfo?.primaryModeledAnalytes.orEmpty() +
+            hrtModelInfo?.requiredEventFields.orEmpty() +
+            hrtModelInfo?.requiredLabFields.orEmpty() +
+            hrtModelInfo?.caveats.orEmpty()
     }
 
     private fun String.normalizedForSearch(): String {

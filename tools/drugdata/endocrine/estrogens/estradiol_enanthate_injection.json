@@ -1,0 +1,245 @@
+{
+  "substances": [
+    {
+      "name": "Estradiol Enanthate Injection",
+      "commonNames": [
+        "Estradiol enanthate",
+        "EEn",
+        "庚酸雌二醇注射剂",
+        "estradiol enantate"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3814225/",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
+        "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
+        "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+      ],
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine"
+      ],
+      "summary": "庚酸雌二醇注射剂属于长效雌二醇酯储库制剂。峰值、谷值和化验结果高度依赖注射间隔、剂量、部位、个体差异与采样时间。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G03CA03"
+        ],
+        "drugClass": [
+          "Depot estradiol ester",
+          "Long-acting estrogen"
+        ],
+        "indications": [
+          "Approved indications vary by product and country",
+          "Feminizing hormone therapy literature context"
+        ],
+        "contraindications": [
+          "Use product-specific estrogen and injectable-product contraindications"
+        ],
+        "majorWarnings": [
+          "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
+          "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
+          "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+        ],
+        "majorInteractions": [
+          "Enzyme inducers or inhibitors can alter exposure depending on route and formulation.",
+          "Estrogens can alter thyroid-binding globulin and may affect interpretation or requirements of thyroid therapy.",
+          "Estrogens can reduce lamotrigine concentrations in some contexts."
+        ],
+        "monitoring": [
+          "Clinical response and adverse effects",
+          "Estradiol and total testosterone when clinically indicated",
+          "Blood pressure",
+          "Cardiometabolic risk factors when clinically indicated",
+          "Prolactin only when symptoms, regimen, or local guidance indicate"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Pharmacokinetic studies of estradiol enanthate in menopausal women",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/3814225/",
+            "sourceType": "human-pk-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Estrogen",
+          "Estrogen receptor agonist"
+        ],
+        "mechanisms": [
+          "Estrogen receptor alpha and beta agonism",
+          "Feedback effects on hypothalamic-pituitary-gonadal signaling"
+        ],
+        "affectedHormones": [
+          "Estradiol",
+          "Estrone",
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "SHBG"
+        ],
+        "monitoringLabs": [
+          "Clinical response and adverse effects",
+          "Estradiol and total testosterone when clinically indicated",
+          "Blood pressure",
+          "Cardiometabolic risk factors when clinically indicated",
+          "Prolactin only when symptoms, regimen, or local guidance indicate"
+        ],
+        "assayCaveats": [
+          "Sampling time, route, formulation, and time since last dose can materially change measured estradiol.",
+          "Immunoassays and LC-MS/MS methods may not agree, particularly at low concentrations or with oral estrogen metabolites.",
+          "The laboratory method and local reference interval must be recorded with each result."
+        ],
+        "safetySignals": [
+          "Venous thromboembolism and cardiovascular risk context",
+          "Blood pressure and migraine changes",
+          "Breast and endometrial safety context",
+          "Liver and gallbladder adverse effects"
+        ],
+        "modelRoles": [
+          "e2-source",
+          "estrogen-receptor-agonist",
+          "gonadotropin-suppressor",
+          "depot-release",
+          "injection-interval-sensitive",
+          "peak-trough-sensitive",
+          "sample-timing-sensitive"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Pharmacokinetic studies of estradiol enanthate in menopausal women",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/3814225/",
+            "sourceType": "human-pk-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
+            "sourceType": "assay-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY",
+            "note": "Assay bias can depend on formulation and assay platform."
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "intramuscular",
+          "formulation": "oil depot injection",
+          "depotRelease": true,
+          "injectionIntervalSensitive": true,
+          "assayTimingSensitive": true,
+          "notes": [
+            "Published estimates vary by study, assay, dose, ester, injection site, and population.",
+            "Peak and trough variation can be large; sample timing must be recorded.",
+            "These literature estimates must not be used to select or adjust a dose."
+          ],
+          "sourceRefs": [
+            {
+              "title": "Pharmacokinetic studies of estradiol enanthate in menopausal women",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3814225/",
+              "sourceType": "human-pk-study",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "HUMAN_STUDY"
+            }
+          ],
+          "tmax": {
+            "min": 3,
+            "max": 8,
+            "unit": "day",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 5.6,
+            "max": 7.5,
+            "unit": "day",
+            "basis": "literature or label pharmacokinetics"
+          },
+          "peakWindow": {
+            "min": 3,
+            "max": 8,
+            "unit": "day",
+            "basis": "plasma concentration"
+          }
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Approved-label or pharmacokinetic literature context",
+          "population": "Adults; product- and indication-specific",
+          "route": "intramuscular",
+          "formulation": "oil depot injection",
+          "amountText": "source needed",
+          "scheduleText": "source needed",
+          "sourceType": "human-pk-study",
+          "evidenceLevel": "HUMAN_STUDY",
+          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "Pharmacokinetic studies of estradiol enanthate in menopausal women",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3814225/",
+              "sourceType": "human-pk-study",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "HUMAN_STUDY"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": [
+          "e2-source",
+          "estrogen-receptor-agonist",
+          "gonadotropin-suppressor",
+          "depot-release"
+        ],
+        "primaryModeledAnalytes": [
+          "Estradiol"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "compound",
+          "ester",
+          "route",
+          "formulation",
+          "amount",
+          "unit",
+          "lastDoseTime"
+        ],
+        "requiredLabFields": [
+          "estradiol",
+          "sampleTimestamp",
+          "assayMethod"
+        ],
+        "caveats": [
+          "Peak and trough variation can be large.",
+          "Sampling time, formulation, and assay method strongly affect interpretation.",
+          "Interindividual variability can be large.",
+          "The model must not be used for dose adjustment."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          },
+          {
+            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
+            "sourceType": "assay-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY",
+            "note": "Assay bias can depend on formulation and assay platform."
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

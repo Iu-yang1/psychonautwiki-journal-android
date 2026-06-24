@@ -1,0 +1,253 @@
+{
+  "substances": [
+    {
+      "name": "Chlormadinone Acetate",
+      "commonNames": [
+        "Chlormadinone Acetate",
+        "CMA",
+        "醋酸氯地孕酮",
+        "Chlormadinone"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Mood changes and fatigue",
+        "Bleeding-pattern changes",
+        "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
+        "Evidence for benefits in feminizing HRT is limited and context-dependent"
+      ],
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine"
+      ],
+      "summary": "醋酸氯地孕酮是合成孕激素；其抗促性腺激素或抗雄相关作用须按具体制剂、适应证和证据谨慎解释。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G03DB06"
+        ],
+        "drugClass": [
+          "Progestin",
+          "Steroidal antiandrogen",
+          "Antigonadotropin"
+        ],
+        "indications": [
+          "Approved gynecologic or contraceptive indications vary by product",
+          "Feminizing hormone therapy evidence is limited"
+        ],
+        "contraindications": [
+          "Use product-specific contraindications"
+        ],
+        "majorWarnings": [
+          "Mood changes and fatigue",
+          "Bleeding-pattern changes",
+          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
+          "Evidence for benefits in feminizing HRT is limited and context-dependent"
+        ],
+        "majorInteractions": [
+          "Enzyme-inducing drugs may reduce exposure",
+          "Combined estrogen products have additional interaction and thrombotic-risk considerations"
+        ],
+        "monitoring": [
+          "Clinical response and adverse effects",
+          "Bleeding pattern when relevant",
+          "Mood symptoms",
+          "Blood pressure and cardiometabolic risk factors when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Pharmacokinetics of chlormadinone acetate following single and multiple dosing",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
+            "sourceType": "human-pk-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Progestin",
+          "Steroidal antiandrogen",
+          "Antigonadotropin"
+        ],
+        "mechanisms": [
+          "Progesterone receptor agonism",
+          "Possible suppression of gonadotropin secretion"
+        ],
+        "affectedHormones": [
+          "LH",
+          "FSH",
+          "Total testosterone indirectly"
+        ],
+        "monitoringLabs": [
+          "Clinical response and adverse effects",
+          "Bleeding pattern when relevant",
+          "Mood symptoms",
+          "Blood pressure and cardiometabolic risk factors when clinically indicated"
+        ],
+        "assayCaveats": [
+          "Routine serum progestin concentration monitoring is generally not established for these entries.",
+          "Hormone results must be interpreted with indication, formulation, timing, and co-administered estrogen."
+        ],
+        "safetySignals": [
+          "Mood changes and fatigue",
+          "Bleeding-pattern changes",
+          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
+          "Evidence for benefits in feminizing HRT is limited and context-dependent"
+        ],
+        "modelRoles": [
+          "progestin",
+          "possible-gonadotropin-suppressor",
+          "testosterone-suppression-candidate"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Pharmacokinetics of chlormadinone acetate following single and multiple dosing",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
+            "sourceType": "human-pk-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "depotRelease": false,
+          "injectionIntervalSensitive": false,
+          "assayTimingSensitive": true,
+          "notes": [
+            "Evidence for use in a testosterone-suppression model is limited and context-dependent.",
+            "Pharmacodynamic gonadotropin effects do not equal plasma Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "Pharmacokinetics of chlormadinone acetate following single and multiple dosing",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
+              "sourceType": "human-pk-study",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+              "sourceType": "systematic-review",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 25,
+            "max": 39,
+            "unit": "h",
+            "basis": "literature or label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 7,
+            "max": 15,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Approved-label or literature context",
+          "population": "Adults; product- and indication-specific",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "source needed",
+          "scheduleText": "source needed",
+          "sourceType": "human-pk-study",
+          "evidenceLevel": "HUMAN_STUDY",
+          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "Pharmacokinetics of chlormadinone acetate following single and multiple dosing",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
+              "sourceType": "human-pk-study",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "HUMAN_STUDY"
+            },
+            {
+              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+              "sourceType": "systematic-review",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": [
+          "progestin",
+          "possible-gonadotropin-suppressor",
+          "testosterone-suppression-candidate"
+        ],
+        "primaryModeledAnalytes": [
+          "Total testosterone",
+          "LH",
+          "FSH"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "amount",
+          "unit",
+          "route"
+        ],
+        "requiredLabFields": [
+          "totalTestosterone",
+          "lh",
+          "fsh",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "Evidence and effect size are product-, indication-, and regimen-dependent.",
+          "Pharmacodynamic suppression is delayed relative to plasma concentration.",
+          "Do not infer dosing recommendations from this compatibility marker."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Pharmacokinetics of chlormadinone acetate following single and multiple dosing",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
+            "sourceType": "human-pk-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

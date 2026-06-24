@@ -4,12 +4,15 @@ import json
 from pathlib import Path
 
 
-DEFAULT_BASE = Path("app/src/main/res/raw/substances.json")
-DEFAULT_SOURCE_DIR = Path("tools/drugdata/cardiovascular")
-DEFAULT_OUTPUT = Path("app/src/main/res/raw/substances.json")
-DEFAULT_LOCALIZED_OUTPUTS = [
-    Path("app/src/main/res/raw-zh-rCN/substances.json"),
+DEFAULT_BASE = Path("app/src/main/res/raw/substances_base.json")
+DEFAULT_LOCALIZED_BASES = [
+    (
+        Path("app/src/main/res/raw-zh-rCN/substances_base.json"),
+        Path("app/src/main/res/raw-zh-rCN/substances.json"),
+    ),
 ]
+DEFAULT_SOURCE_DIR = Path("tools/drugdata")
+DEFAULT_OUTPUT = Path("app/src/main/res/raw/substances.json")
 
 
 def load_json(path: Path) -> dict:
@@ -41,7 +44,11 @@ def upsert_by_name(items: list[dict], incoming: list[dict]) -> list[dict]:
 
 
 def iter_source_files(source_dir: Path) -> list[Path]:
-    return sorted(source_dir.rglob("*.json"))
+    return sorted(
+        path
+        for path in source_dir.rglob("*.json")
+        if path.name not in {"substances.json", "substances_base.json"}
+    )
 
 
 def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = False) -> None:
@@ -64,14 +71,14 @@ def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = F
 
 def build_default_resources(source_dir: Path) -> None:
     build(DEFAULT_BASE, source_dir, DEFAULT_OUTPUT)
-    for localized_output in DEFAULT_LOCALIZED_OUTPUTS:
-        if localized_output.exists():
-            build(localized_output, source_dir, localized_output, hybrid=True)
+    for localized_base, localized_output in DEFAULT_LOCALIZED_BASES:
+        if localized_base.exists():
+            build(localized_base, source_dir, localized_output, hybrid=True)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Merge cardiovascular drug-data fragments into substances.json."
+        description="Merge local drug-data packs into substances.json."
     )
     parser.add_argument("--base", type=Path, default=DEFAULT_BASE)
     parser.add_argument("--source-dir", type=Path, default=DEFAULT_SOURCE_DIR)

@@ -43,6 +43,9 @@ data class Substance(
     val clinicalInfo: ClinicalInfo? = null,
     val timeCourse: List<TimeCourse> = emptyList(),
     val tdm: TherapeuticDrugMonitoring? = null,
+    val endocrineInfo: EndocrineInfo? = null,
+    val doseUseReferences: List<DoseUseReference> = emptyList(),
+    val hrtModelInfo: HrtModelInfo? = null,
 ) {
     fun getRoa(route: AdministrationRoute): Roa? {
         return roas.firstOrNull { it.route == route }

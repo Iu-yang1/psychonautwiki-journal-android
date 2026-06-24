@@ -102,4 +102,63 @@ class TestParse {
         assertEquals("0.5-0.9", tdm?.therapeuticRanges?.first()?.range)
         assertEquals(">2.0", tdm?.toxicityThresholds?.first()?.threshold)
     }
+
+    @Test
+    fun parseEndocrineHrtFields() {
+        val text = """
+{
+  "categories": [],
+  "substances": [
+    {
+      "name": "Estradiol Valerate Injection",
+      "commonNames": ["EV", "戊酸雌二醇注射剂"],
+      "url": "https://example.org",
+      "categories": ["endocrine", "hrt-related"],
+      "endocrineInfo": {
+        "hormoneClass": ["Estrogen"],
+        "mechanisms": ["Estrogen receptor agonism"],
+        "modelRoles": ["e2-source", "depot-release"]
+      },
+      "timeCourse": [
+        {
+          "route": "intramuscular",
+          "formulation": "oil depot",
+          "depotRelease": true,
+          "injectionIntervalSensitive": true,
+          "assayTimingSensitive": true,
+          "peakWindow": {
+            "min": 1,
+            "max": 3,
+            "unit": "day"
+          }
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "label context",
+          "route": "intramuscular",
+          "amountText": "source needed",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": ["e2-source", "depot-release"],
+        "primaryModeledAnalytes": ["Estradiol"]
+      },
+      "roas": []
+    }
+  ]
+}"""
+        val substance = SubstanceParser().parseSubstanceFile(string = text).substances.first()
+
+        assertEquals("Estrogen", substance.endocrineInfo?.hormoneClass?.first())
+        assertTrue(substance.timeCourse.first().depotRelease)
+        assertTrue(substance.timeCourse.first().injectionIntervalSensitive)
+        assertEquals(1.0, substance.timeCourse.first().peakWindow?.min)
+        assertEquals("source needed", substance.doseUseReferences.first().amountText)
+        assertTrue(substance.hrtModelInfo?.modelCompatible == true)
+        assertEquals("Estradiol", substance.hrtModelInfo?.primaryModeledAnalytes?.first())
+    }
 }

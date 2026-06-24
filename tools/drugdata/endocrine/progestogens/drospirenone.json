@@ -1,0 +1,230 @@
+{
+  "substances": [
+    {
+      "name": "Drospirenone",
+      "commonNames": [
+        "Drospirenone",
+        "DRSP",
+        "屈螺酮",
+        "Slynd",
+        "Yasmin"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0f8f8a21-cee8-462f-98b3-6c06f2f33e0d",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Hyperkalemia risk in susceptible patients or with potassium-raising drugs"
+      ],
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine"
+      ],
+      "summary": "屈螺酮以药品资料记录为主；目前不默认纳入睾酮或雌二醇预测模型。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G03AC10"
+        ],
+        "drugClass": [
+          "Progestin",
+          "Antimineralocorticoid progestin",
+          "Antiandrogenic progestin"
+        ],
+        "indications": [
+          "Approved indications vary by product",
+          "Evidence for routine use in feminizing HRT is limited or context-dependent"
+        ],
+        "contraindications": [
+          "Use product-specific contraindications"
+        ],
+        "majorWarnings": [
+          "Hyperkalemia risk in susceptible patients or with potassium-raising drugs"
+        ],
+        "majorInteractions": [
+          "Enzyme-inducing drugs may reduce exposure",
+          "Product-specific interactions apply"
+        ],
+        "monitoring": [
+          "Potassium and renal function when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed drospirenone and ethinyl estradiol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0f8f8a21-cee8-462f-98b3-6c06f2f33e0d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Progestin",
+          "Antimineralocorticoid progestin",
+          "Antiandrogenic progestin"
+        ],
+        "mechanisms": [
+          "Progesterone receptor agonism",
+          "Product-specific secondary receptor activity"
+        ],
+        "affectedHormones": [
+          "Progesterone-related signaling",
+          "LH and FSH may change depending on regimen"
+        ],
+        "monitoringLabs": [
+          "Potassium and renal function when clinically indicated"
+        ],
+        "assayCaveats": [
+          "Routine serum progestin concentration monitoring is generally not established for these entries.",
+          "Hormone results must be interpreted with indication, formulation, timing, and co-administered estrogen."
+        ],
+        "safetySignals": [
+          "Hyperkalemia risk in susceptible patients or with potassium-raising drugs"
+        ],
+        "modelRoles": [
+          "progestin",
+          "limited-hrt-model-evidence"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed drospirenone and ethinyl estradiol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0f8f8a21-cee8-462f-98b3-6c06f2f33e0d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet or capsule",
+          "depotRelease": false,
+          "injectionIntervalSensitive": false,
+          "assayTimingSensitive": false,
+          "notes": [
+            "PK values are formulation- and study-specific."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed drospirenone and ethinyl estradiol label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0f8f8a21-cee8-462f-98b3-6c06f2f33e0d",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            },
+            {
+              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+              "sourceType": "systematic-review",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 30,
+            "max": 30,
+            "unit": "h",
+            "basis": "literature or label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 8,
+            "max": 10,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Approved-label context",
+          "population": "Adults; product- and indication-specific",
+          "route": "oral",
+          "formulation": "tablet or capsule",
+          "amountText": "source needed",
+          "scheduleText": "source needed",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed drospirenone and ethinyl estradiol label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0f8f8a21-cee8-462f-98b3-6c06f2f33e0d",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            },
+            {
+              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+              "sourceType": "systematic-review",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": false,
+        "modelRoles": [
+          "progestin",
+          "limited-hrt-model-evidence"
+        ],
+        "primaryModeledAnalytes": [],
+        "requiredEventFields": [
+          "timestamp",
+          "amount",
+          "unit",
+          "route"
+        ],
+        "requiredLabFields": [],
+        "caveats": [
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
+          "Do not infer a dosing recommendation from this metadata."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed drospirenone and ethinyl estradiol label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0f8f8a21-cee8-462f-98b3-6c06f2f33e0d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

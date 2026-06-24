@@ -1,0 +1,257 @@
+{
+  "substances": [
+    {
+      "name": "Nomegestrol Acetate",
+      "commonNames": [
+        "Nomegestrol Acetate",
+        "NOMAC",
+        "醋酸诺美孕酮",
+        "Nomegestrol",
+        "Zoely"
+      ],
+      "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Mood changes and fatigue",
+        "Bleeding-pattern changes",
+        "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
+        "Evidence for benefits in feminizing HRT is limited and context-dependent"
+      ],
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine"
+      ],
+      "summary": "醋酸诺美孕酮是合成孕激素；其抗促性腺激素或抗雄相关作用须按具体制剂、适应证和证据谨慎解释。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G03DB04"
+        ],
+        "drugClass": [
+          "Progestin",
+          "Antigonadotropin"
+        ],
+        "indications": [
+          "Approved gynecologic or contraceptive indications vary by product",
+          "Feminizing hormone therapy evidence is limited"
+        ],
+        "contraindications": [
+          "Use product-specific contraindications"
+        ],
+        "majorWarnings": [
+          "Mood changes and fatigue",
+          "Bleeding-pattern changes",
+          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
+          "Evidence for benefits in feminizing HRT is limited and context-dependent"
+        ],
+        "majorInteractions": [
+          "Enzyme-inducing drugs may reduce exposure",
+          "Combined estrogen products have additional interaction and thrombotic-risk considerations"
+        ],
+        "monitoring": [
+          "Clinical response and adverse effects",
+          "Bleeding pattern when relevant",
+          "Mood symptoms",
+          "Blood pressure and cardiometabolic risk factors when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Zoely SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.2 Pharmacokinetic properties"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Progestin",
+          "Antigonadotropin"
+        ],
+        "mechanisms": [
+          "Progesterone receptor agonism",
+          "Possible suppression of gonadotropin secretion"
+        ],
+        "affectedHormones": [
+          "LH",
+          "FSH",
+          "Total testosterone indirectly"
+        ],
+        "monitoringLabs": [
+          "Clinical response and adverse effects",
+          "Bleeding pattern when relevant",
+          "Mood symptoms",
+          "Blood pressure and cardiometabolic risk factors when clinically indicated"
+        ],
+        "assayCaveats": [
+          "Routine serum progestin concentration monitoring is generally not established for these entries.",
+          "Hormone results must be interpreted with indication, formulation, timing, and co-administered estrogen."
+        ],
+        "safetySignals": [
+          "Mood changes and fatigue",
+          "Bleeding-pattern changes",
+          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
+          "Evidence for benefits in feminizing HRT is limited and context-dependent"
+        ],
+        "modelRoles": [
+          "progestin",
+          "possible-gonadotropin-suppressor",
+          "testosterone-suppression-candidate"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Zoely SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.2 Pharmacokinetic properties"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "depotRelease": false,
+          "injectionIntervalSensitive": false,
+          "assayTimingSensitive": true,
+          "notes": [
+            "Evidence for use in a testosterone-suppression model is limited and context-dependent.",
+            "Pharmacodynamic gonadotropin effects do not equal plasma Tmax."
+          ],
+          "sourceRefs": [
+            {
+              "title": "Zoely SmPC",
+              "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "5.2 Pharmacokinetic properties"
+            },
+            {
+              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+              "sourceType": "systematic-review",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ],
+          "tmax": {
+            "min": 1.5,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 28,
+            "max": 83,
+            "unit": "h",
+            "basis": "literature or label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 5,
+            "max": 5,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Approved-label or literature context",
+          "population": "Adults; product- and indication-specific",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "source needed",
+          "scheduleText": "source needed",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "Zoely SmPC",
+              "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "5.2 Pharmacokinetic properties"
+            },
+            {
+              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+              "sourceType": "systematic-review",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": [
+          "progestin",
+          "possible-gonadotropin-suppressor",
+          "testosterone-suppression-candidate"
+        ],
+        "primaryModeledAnalytes": [
+          "Total testosterone",
+          "LH",
+          "FSH"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "amount",
+          "unit",
+          "route"
+        ],
+        "requiredLabFields": [
+          "totalTestosterone",
+          "lh",
+          "fsh",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "Evidence and effect size are product-, indication-, and regimen-dependent.",
+          "Pharmacodynamic suppression is delayed relative to plasma concentration.",
+          "Do not infer dosing recommendations from this compatibility marker."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Zoely SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.2 Pharmacokinetic properties"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "substances": [
+    {
+      "name": "Levonorgestrel",
+      "commonNames": [
+        "Levonorgestrel",
+        "LNG",
+        "左炔诺孕酮",
+        "Plan B",
+        "Levonorgestrel oral"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Mood changes and fatigue",
+        "Bleeding-pattern changes",
+        "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
+        "Evidence for benefits in feminizing HRT is limited and context-dependent"
+      ],
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine"
+      ],
+      "summary": "左炔诺孕酮以药品资料记录为主；目前不默认纳入睾酮或雌二醇预测模型。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G03AC03"
+        ],
+        "drugClass": [
+          "Progestin",
+          "19-nortestosterone derivative"
+        ],
+        "indications": [
+          "Approved indications vary by product",
+          "Evidence for routine use in feminizing HRT is limited or context-dependent"
+        ],
+        "contraindications": [
+          "Use product-specific contraindications"
+        ],
+        "majorWarnings": [
+          "Mood changes and fatigue",
+          "Bleeding-pattern changes",
+          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
+          "Evidence for benefits in feminizing HRT is limited and context-dependent"
+        ],
+        "majorInteractions": [
+          "Enzyme-inducing drugs may reduce exposure",
+          "Product-specific interactions apply"
+        ],
+        "monitoring": [
+          "Clinical response and adverse effects",
+          "Bleeding pattern when relevant",
+          "Mood symptoms",
+          "Blood pressure and cardiometabolic risk factors when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed levonorgestrel tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Progestin",
+          "19-nortestosterone derivative"
+        ],
+        "mechanisms": [
+          "Progesterone receptor agonism",
+          "Product-specific secondary receptor activity"
+        ],
+        "affectedHormones": [
+          "Progesterone-related signaling",
+          "LH and FSH may change depending on regimen"
+        ],
+        "monitoringLabs": [
+          "Clinical response and adverse effects",
+          "Bleeding pattern when relevant",
+          "Mood symptoms",
+          "Blood pressure and cardiometabolic risk factors when clinically indicated"
+        ],
+        "assayCaveats": [
+          "Routine serum progestin concentration monitoring is generally not established for these entries.",
+          "Hormone results must be interpreted with indication, formulation, timing, and co-administered estrogen."
+        ],
+        "safetySignals": [
+          "Mood changes and fatigue",
+          "Bleeding-pattern changes",
+          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
+          "Evidence for benefits in feminizing HRT is limited and context-dependent"
+        ],
+        "modelRoles": [
+          "progestin",
+          "limited-hrt-model-evidence"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed levonorgestrel tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet or capsule",
+          "depotRelease": false,
+          "injectionIntervalSensitive": false,
+          "assayTimingSensitive": false,
+          "notes": [
+            "PK values are formulation- and study-specific."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed levonorgestrel tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            },
+            {
+              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+              "sourceType": "systematic-review",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 4,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 21.9,
+            "max": 33.1,
+            "unit": "h",
+            "basis": "literature or label pharmacokinetics"
+          }
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Approved-label context",
+          "population": "Adults; product- and indication-specific",
+          "route": "oral",
+          "formulation": "tablet or capsule",
+          "amountText": "source needed",
+          "scheduleText": "source needed",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed levonorgestrel tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            },
+            {
+              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+              "sourceType": "systematic-review",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": false,
+        "modelRoles": [
+          "progestin",
+          "limited-hrt-model-evidence"
+        ],
+        "primaryModeledAnalytes": [],
+        "requiredEventFields": [
+          "timestamp",
+          "amount",
+          "unit",
+          "route"
+        ],
+        "requiredLabFields": [],
+        "caveats": [
+          "Evidence for direct use in a testosterone or estradiol prediction model is limited or context-dependent.",
+          "Do not infer a dosing recommendation from this metadata."
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed levonorgestrel tablet label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "substances": [
+    {
+      "name": "Estetrol",
+      "commonNames": [
+        "E4",
+        "雌四醇",
+        "Estetrol monohydrate",
+        "Nextstellis"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
+        "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
+        "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+      ],
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine"
+      ],
+      "summary": "Estetrol monohydrate是雌激素相关制剂，但不能当作普通 17β-雌二醇血清暴露解释。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G03CA06"
+        ],
+        "drugClass": [
+          "Estrogen",
+          "Estetrol",
+          "E4"
+        ],
+        "indications": [
+          "Approved indications depend on product"
+        ],
+        "contraindications": [
+          "Use product-specific estrogen contraindications"
+        ],
+        "majorWarnings": [
+          "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
+          "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
+          "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+        ],
+        "majorInteractions": [
+          "Enzyme inducers or inhibitors can alter exposure depending on route and formulation.",
+          "Estrogens can alter thyroid-binding globulin and may affect interpretation or requirements of thyroid therapy.",
+          "Estrogens can reduce lamotrigine concentrations in some contexts."
+        ],
+        "monitoring": [
+          "Clinical response and adverse effects",
+          "Estradiol and total testosterone when clinically indicated",
+          "Blood pressure",
+          "Cardiometabolic risk factors when clinically indicated",
+          "Prolactin only when symptoms, regimen, or local guidance indicate"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Nextstellis label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics"
+          },
+          {
+            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
+            "sourceType": "assay-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY",
+            "note": "Assay bias can depend on formulation and assay platform."
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Estrogen",
+          "Estrogen receptor agonist"
+        ],
+        "mechanisms": [
+          "Estrogen receptor alpha and beta agonism",
+          "Feedback effects on hypothalamic-pituitary-gonadal signaling"
+        ],
+        "affectedHormones": [
+          "Estradiol",
+          "Estrone",
+          "LH",
+          "FSH",
+          "Total testosterone",
+          "SHBG"
+        ],
+        "monitoringLabs": [
+          "Clinical response and adverse effects",
+          "Estradiol and total testosterone when clinically indicated",
+          "Blood pressure",
+          "Cardiometabolic risk factors when clinically indicated",
+          "Prolactin only when symptoms, regimen, or local guidance indicate"
+        ],
+        "assayCaveats": [
+          "Sampling time, route, formulation, and time since last dose can materially change measured estradiol.",
+          "Immunoassays and LC-MS/MS methods may not agree, particularly at low concentrations or with oral estrogen metabolites.",
+          "The laboratory method and local reference interval must be recorded with each result."
+        ],
+        "safetySignals": [
+          "Venous thromboembolism and cardiovascular risk context",
+          "Blood pressure and migraine changes",
+          "Breast and endometrial safety context",
+          "Liver and gallbladder adverse effects"
+        ],
+        "modelRoles": [
+          "estrogenic-agent",
+          "not-compatible-with-standard-e2-assay-model"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed Nextstellis label",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics"
+          },
+          {
+            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
+            "sourceType": "assay-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY",
+            "note": "Assay bias can depend on formulation and assay platform."
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "depotRelease": false,
+          "injectionIntervalSensitive": false,
+          "assayTimingSensitive": true,
+          "notes": [
+            "Values are from a combination-product label.",
+            "Estetrol is not 17beta-estradiol and is not compatible with an ordinary serum E2 exposure model."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed Nextstellis label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            }
+          ],
+          "tmax": {
+            "min": 0.5,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 27,
+            "max": 27,
+            "unit": "h",
+            "basis": "literature or label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 4,
+            "max": 4,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Approved-label context",
+          "population": "Adults; product- and indication-specific",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "source needed",
+          "scheduleText": "source needed",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed Nextstellis label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
+            },
+            {
+              "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
+              "sourceType": "assay-study",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "HUMAN_STUDY",
+              "note": "Assay bias can depend on formulation and assay platform."
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": false,
+        "modelRoles": [
+          "estrogenic-agent",
+          "not-compatible-with-standard-e2-assay-model"
+        ],
+        "primaryModeledAnalytes": [],
+        "requiredEventFields": [],
+        "requiredLabFields": [],
+        "caveats": [
+          "This product should not be interpreted as ordinary 17beta-estradiol exposure.",
+          "Standard estradiol assays may not accurately reflect estrogenic exposure.",
+          "Do not use this entry with a serum estradiol prediction model."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
+            "sourceType": "assay-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY",
+            "note": "Assay bias can depend on formulation and assay platform."
+          },
+          {
+            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
+            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "CLINICAL_GUIDELINE"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

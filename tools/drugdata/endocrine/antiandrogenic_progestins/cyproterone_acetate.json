@@ -1,0 +1,324 @@
+{
+  "substances": [
+    {
+      "name": "Cyproterone Acetate",
+      "commonNames": [
+        "Cyproterone acetate",
+        "CPA",
+        "醋酸环丙孕酮",
+        "Androcur",
+        "Cyprostat"
+      ],
+      "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+      "isApproved": true,
+      "crossTolerances": [],
+      "toxicities": [
+        "Meningioma risk increases with higher dose and cumulative exposure.",
+        "Hepatotoxicity, including severe hepatic injury, has been reported.",
+        "Hyperprolactinemia can occur and may be dose-related.",
+        "Mood changes, fatigue, and sexual-function changes can occur.",
+        "Thromboembolic risk context requires attention when combined with estrogen therapy."
+      ],
+      "categories": [
+        "endocrine",
+        "hrt-related",
+        "prescription-medicine"
+      ],
+      "summary": "醋酸环丙孕酮（CPA）兼具甾体抗雄激素、孕激素和抗促性腺激素作用。累积暴露相关脑膜瘤风险、肝毒性和泌乳素变化是本条目的核心安全信息。",
+      "clinicalInfo": {
+        "atcCodes": [
+          "G03HA01"
+        ],
+        "drugClass": [
+          "Steroidal antiandrogen",
+          "Progestin",
+          "Antigonadotropin"
+        ],
+        "indications": [
+          "Androgen-dependent indications defined by local approved labeling",
+          "Feminizing hormone therapy literature context"
+        ],
+        "contraindications": [
+          "Current or previous meningioma",
+          "Severe liver disease",
+          "Use other product-specific contraindications"
+        ],
+        "majorWarnings": [
+          "Meningioma risk increases with higher dose and cumulative exposure.",
+          "Hepatotoxicity, including severe hepatic injury, has been reported.",
+          "Hyperprolactinemia can occur and may be dose-related.",
+          "Mood changes, fatigue, and sexual-function changes can occur.",
+          "Thromboembolic risk context requires attention when combined with estrogen therapy."
+        ],
+        "majorInteractions": [
+          "Other hepatotoxic drugs can increase liver-safety concern",
+          "Combined estrogen therapy changes the overall thromboembolic risk context"
+        ],
+        "monitoring": [
+          "Total testosterone",
+          "Estradiol",
+          "LH",
+          "FSH",
+          "Prolactin",
+          "AST",
+          "ALT",
+          "Bilirubin",
+          "Metabolic markers when clinically indicated"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Androcur 50 mg tablets SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.2 Pharmacokinetic properties"
+          },
+          {
+            "title": "EMA referral: cyproterone-containing medicinal products",
+            "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
+            "sourceType": "regulatory-safety-communication",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_SAFETY"
+          },
+          {
+            "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34176757/",
+            "sourceType": "clinical-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY"
+          }
+        ]
+      },
+      "endocrineInfo": {
+        "hormoneClass": [
+          "Steroidal antiandrogen",
+          "Progestin",
+          "Antigonadotropin"
+        ],
+        "mechanisms": [
+          "Androgen receptor antagonism",
+          "Progestogenic suppression of gonadotropins",
+          "Reduction of gonadal testosterone production"
+        ],
+        "affectedHormones": [
+          "Total testosterone",
+          "LH",
+          "FSH",
+          "Prolactin",
+          "Estradiol indirectly when combined with estrogen therapy"
+        ],
+        "monitoringLabs": [
+          "Total testosterone",
+          "Estradiol",
+          "LH",
+          "FSH",
+          "Prolactin",
+          "AST",
+          "ALT",
+          "Bilirubin",
+          "Metabolic markers when clinically indicated"
+        ],
+        "assayCaveats": [
+          "Routine serum progestin concentration monitoring is generally not established for these entries.",
+          "Hormone results must be interpreted with indication, formulation, timing, and co-administered estrogen."
+        ],
+        "safetySignals": [
+          "Meningioma risk related to higher dose and cumulative exposure",
+          "Hepatotoxicity",
+          "Hyperprolactinemia",
+          "Mood changes",
+          "Fatigue",
+          "Sexual function changes",
+          "Thromboembolic risk context when combined with estrogen therapy"
+        ],
+        "modelRoles": [
+          "testosterone-suppressor",
+          "lh-fsh-suppressor",
+          "prolactin-risk"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Androcur 50 mg tablets SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.2 Pharmacokinetic properties"
+          },
+          {
+            "title": "EMA referral: cyproterone-containing medicinal products",
+            "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
+            "sourceType": "regulatory-safety-communication",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_SAFETY"
+          },
+          {
+            "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34176757/",
+            "sourceType": "clinical-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
+            "sourceType": "systematic-review",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "SYSTEMATIC_REVIEW"
+          }
+        ]
+      },
+      "timeCourse": [
+        {
+          "route": "oral",
+          "formulation": "tablet",
+          "depotRelease": false,
+          "injectionIntervalSensitive": false,
+          "assayTimingSensitive": true,
+          "notes": [
+            "Testosterone suppression is delayed relative to plasma concentration.",
+            "Terminal half-life and accumulation vary with dose and repeated exposure."
+          ],
+          "sourceRefs": [
+            {
+              "title": "Androcur 50 mg tablets SmPC",
+              "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "5.2 Pharmacokinetic properties"
+            },
+            {
+              "title": "EMA referral: cyproterone-containing medicinal products",
+              "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
+              "sourceType": "regulatory-safety-communication",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_SAFETY"
+            },
+            {
+              "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34176757/",
+              "sourceType": "clinical-study",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "HUMAN_STUDY"
+            }
+          ],
+          "tmax": {
+            "min": 1.5,
+            "max": 2,
+            "unit": "h",
+            "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 1.7,
+            "max": 2.3,
+            "unit": "day",
+            "basis": "literature or label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 8,
+            "max": 16,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Approved-label and feminizing hormone therapy literature contexts",
+          "population": "Adults; product- and indication-specific",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "source needed",
+          "scheduleText": "source needed",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "Androcur 50 mg tablets SmPC",
+              "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "5.2 Pharmacokinetic properties"
+            },
+            {
+              "title": "EMA referral: cyproterone-containing medicinal products",
+              "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
+              "sourceType": "regulatory-safety-communication",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "REGULATORY_SAFETY"
+            },
+            {
+              "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/34176757/",
+              "sourceType": "clinical-study",
+              "accessedDate": "2026-06-24",
+              "evidenceLevel": "HUMAN_STUDY"
+            }
+          ]
+        }
+      ],
+      "hrtModelInfo": {
+        "modelCompatible": true,
+        "modelRoles": [
+          "testosterone-suppressor",
+          "lh-fsh-suppressor",
+          "prolactin-risk"
+        ],
+        "primaryModeledAnalytes": [
+          "Total testosterone",
+          "LH",
+          "FSH",
+          "Prolactin"
+        ],
+        "requiredEventFields": [
+          "timestamp",
+          "amount",
+          "unit",
+          "route"
+        ],
+        "requiredLabFields": [
+          "totalTestosterone",
+          "lh",
+          "fsh",
+          "prolactin",
+          "sampleTimestamp"
+        ],
+        "caveats": [
+          "Testosterone suppression is delayed relative to plasma concentration.",
+          "Do not infer dosing recommendations from the model.",
+          "Cumulative exposure matters for safety risk.",
+          "Liver function and prolactin monitoring may be clinically relevant."
+        ],
+        "sourceRefs": [
+          {
+            "title": "Androcur 50 mg tablets SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.2 Pharmacokinetic properties"
+          },
+          {
+            "title": "EMA referral: cyproterone-containing medicinal products",
+            "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
+            "sourceType": "regulatory-safety-communication",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "REGULATORY_SAFETY"
+          },
+          {
+            "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34176757/",
+            "sourceType": "clinical-study",
+            "accessedDate": "2026-06-24",
+            "evidenceLevel": "HUMAN_STUDY"
+          }
+        ]
+      },
+      "roas": []
+    }
+  ]
+}

@@ -116,6 +116,10 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
         val clinicalInfo = parseClinicalInfo(jsonSubstance.getOptionalJSONObject("clinicalInfo"))
         val timeCourse = parseTimeCourses(jsonSubstance.getOptionalJSONArray("timeCourse"))
         val tdm = parseTherapeuticDrugMonitoring(jsonSubstance.getOptionalJSONObject("tdm"))
+        val endocrineInfo = parseEndocrineInfo(jsonSubstance.getOptionalJSONObject("endocrineInfo"))
+        val doseUseReferences =
+            parseDoseUseReferences(jsonSubstance.getOptionalJSONArray("doseUseReferences"))
+        val hrtModelInfo = parseHrtModelInfo(jsonSubstance.getOptionalJSONObject("hrtModelInfo"))
         return Substance(
             name = name,
             commonNames = commonNames,
@@ -137,6 +141,9 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             clinicalInfo = clinicalInfo,
             timeCourse = timeCourse,
             tdm = tdm,
+            endocrineInfo = endocrineInfo,
+            doseUseReferences = doseUseReferences,
+            hrtModelInfo = hrtModelInfo,
         )
     }
 
@@ -190,6 +197,13 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
                     eliminationHalfLife = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("eliminationHalfLife")),
                     timeToSteadyState = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("timeToSteadyState")),
                     washout = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("washout")),
+                    depotRelease = jsonTimeCourse.getOptionalBoolean("depotRelease") ?: false,
+                    peakWindow = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("peakWindow")),
+                    troughWindow = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("troughWindow")),
+                    injectionIntervalSensitive =
+                        jsonTimeCourse.getOptionalBoolean("injectionIntervalSensitive") ?: false,
+                    assayTimingSensitive =
+                        jsonTimeCourse.getOptionalBoolean("assayTimingSensitive") ?: false,
                     notes = parseJsonArrayToStringArray(jsonTimeCourse.getOptionalJSONArray("notes")),
                     sourceRefs = parseSourceRefs(jsonTimeCourse.getOptionalJSONArray("sourceRefs"))
                 )
@@ -246,6 +260,96 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             assayMethod = assayMethod,
             interpretationCaveats = interpretationCaveats,
             sourceRefs = sourceRefs
+        )
+    }
+
+    private fun parseEndocrineInfo(jsonEndocrineInfo: JSONObject?): EndocrineInfo? {
+        if (jsonEndocrineInfo == null) return null
+        val hormoneClass =
+            parseJsonArrayToStringArray(jsonEndocrineInfo.getOptionalJSONArray("hormoneClass"))
+        val mechanisms =
+            parseJsonArrayToStringArray(jsonEndocrineInfo.getOptionalJSONArray("mechanisms"))
+        val affectedHormones =
+            parseJsonArrayToStringArray(jsonEndocrineInfo.getOptionalJSONArray("affectedHormones"))
+        val monitoringLabs =
+            parseJsonArrayToStringArray(jsonEndocrineInfo.getOptionalJSONArray("monitoringLabs"))
+        val assayCaveats =
+            parseJsonArrayToStringArray(jsonEndocrineInfo.getOptionalJSONArray("assayCaveats"))
+        val safetySignals =
+            parseJsonArrayToStringArray(jsonEndocrineInfo.getOptionalJSONArray("safetySignals"))
+        val modelRoles =
+            parseJsonArrayToStringArray(jsonEndocrineInfo.getOptionalJSONArray("modelRoles"))
+        val sourceRefs = parseSourceRefs(jsonEndocrineInfo.getOptionalJSONArray("sourceRefs"))
+        if (
+            listOf(
+                hormoneClass,
+                mechanisms,
+                affectedHormones,
+                monitoringLabs,
+                assayCaveats,
+                safetySignals,
+                modelRoles,
+                sourceRefs
+            ).none { it.isNotEmpty() }
+        ) {
+            return null
+        }
+        return EndocrineInfo(
+            hormoneClass = hormoneClass,
+            mechanisms = mechanisms,
+            affectedHormones = affectedHormones,
+            monitoringLabs = monitoringLabs,
+            assayCaveats = assayCaveats,
+            safetySignals = safetySignals,
+            modelRoles = modelRoles,
+            sourceRefs = sourceRefs
+        )
+    }
+
+    private fun parseDoseUseReferences(jsonReferences: JSONArray?): List<DoseUseReference> {
+        if (jsonReferences == null) return emptyList()
+        val references = mutableListOf<DoseUseReference>()
+        for (i in 0 until jsonReferences.length()) {
+            val jsonReference = jsonReferences.getOptionalJSONObject(i) ?: continue
+            references.add(
+                DoseUseReference(
+                    indication = jsonReference.getOptionalString("indication") ?: continue,
+                    population = jsonReference.getOptionalString("population"),
+                    route = jsonReference.getOptionalString("route") ?: continue,
+                    formulation = jsonReference.getOptionalString("formulation"),
+                    amountText = jsonReference.getOptionalString("amountText") ?: continue,
+                    scheduleText = jsonReference.getOptionalString("scheduleText"),
+                    sourceType = jsonReference.getOptionalString("sourceType") ?: continue,
+                    evidenceLevel = jsonReference.getOptionalString("evidenceLevel") ?: continue,
+                    note = jsonReference.getOptionalString("note"),
+                    sourceRefs = parseSourceRefs(jsonReference.getOptionalJSONArray("sourceRefs"))
+                )
+            )
+        }
+        return references
+    }
+
+    private fun parseHrtModelInfo(jsonHrtModelInfo: JSONObject?): HrtModelInfo? {
+        if (jsonHrtModelInfo == null) return null
+        val modelCompatible = jsonHrtModelInfo.getOptionalBoolean("modelCompatible") ?: return null
+        return HrtModelInfo(
+            modelCompatible = modelCompatible,
+            modelRoles =
+                parseJsonArrayToStringArray(jsonHrtModelInfo.getOptionalJSONArray("modelRoles")),
+            primaryModeledAnalytes =
+                parseJsonArrayToStringArray(
+                    jsonHrtModelInfo.getOptionalJSONArray("primaryModeledAnalytes")
+                ),
+            requiredEventFields =
+                parseJsonArrayToStringArray(
+                    jsonHrtModelInfo.getOptionalJSONArray("requiredEventFields")
+                ),
+            requiredLabFields =
+                parseJsonArrayToStringArray(
+                    jsonHrtModelInfo.getOptionalJSONArray("requiredLabFields")
+                ),
+            caveats = parseJsonArrayToStringArray(jsonHrtModelInfo.getOptionalJSONArray("caveats")),
+            sourceRefs = parseSourceRefs(jsonHrtModelInfo.getOptionalJSONArray("sourceRefs"))
         )
     }
 
@@ -320,7 +424,10 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
                     title = title,
                     url = url,
                     sourceType = sourceType,
-                    accessedDate = accessedDate
+                    accessedDate = accessedDate,
+                    evidenceLevel = jsonSourceRef.getOptionalString("evidenceLevel"),
+                    labelSection = jsonSourceRef.getOptionalString("labelSection"),
+                    note = jsonSourceRef.getOptionalString("note")
                 )
             )
         }
