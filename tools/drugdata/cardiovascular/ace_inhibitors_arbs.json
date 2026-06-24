@@ -155,7 +155,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "2.5-80 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 2.5,
@@ -177,9 +177,14 @@
               "title": "DailyMed lisinopril label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Lisinopril",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -341,7 +346,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "25-100 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 25,
@@ -363,9 +368,14 @@
               "title": "DailyMed losartan potassium label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Losartan",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     }

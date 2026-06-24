@@ -1,0 +1,6 @@
+# 复制到 release/signing.properties，并填入本地发布密钥信息。
+# release/ 已被 .gitignore 排除，不要提交真实密钥或密码。
+storeFile=release/psychonautwiki-journal-release.jks
+storePassword=replace-with-local-secret
+keyAlias=psychonautwiki-journal-release
+keyPassword=replace-with-local-secret

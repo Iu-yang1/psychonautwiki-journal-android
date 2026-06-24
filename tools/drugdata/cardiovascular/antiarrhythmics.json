@@ -181,7 +181,7 @@
           "route": "intravenous",
           "formulation": "injection/infusion",
           "amountText": "1-3 mg/kg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 1,
@@ -203,9 +203,14 @@
               "title": "DailyMed lidocaine hydrochloride injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Lidocaine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -421,7 +426,7 @@
           "route": "intravenous",
           "formulation": "injection/infusion",
           "amountText": "10-17 mg/kg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label uses individualized, response-guided, laboratory-guided, or renal-function-adjusted administration; no single fixed frequency applies.",
           "ranges": [
             {
               "min": 10,
@@ -443,9 +448,14 @@
               "title": "DailyMed procainamide hydrochloride injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=procainamide%20hydrochloride%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Procainamide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         },
         {
           "indication": "Arrhythmias",
@@ -453,7 +463,7 @@
           "route": "oral",
           "formulation": "capsule/tablet",
           "amountText": "250-1000 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label uses individualized, response-guided, laboratory-guided, or renal-function-adjusted administration; no single fixed frequency applies.",
           "ranges": [
             {
               "min": 250,
@@ -475,9 +485,14 @@
               "title": "DailyMed procainamide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=procainamide",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Procainamide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -651,7 +666,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "50-400 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily, every four days, every 12 hours. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 50,
@@ -673,9 +688,14 @@
               "title": "DailyMed flecainide acetate tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=flecainide%20acetate%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Flecainide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -852,7 +872,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "200-1600 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 200,
@@ -874,9 +894,14 @@
               "title": "DailyMed amiodarone hydrochloride tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Amiodarone",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         },
         {
           "indication": "Life-threatening recurrent ventricular arrhythmias",
@@ -884,7 +909,7 @@
           "route": "intravenous",
           "formulation": null,
           "amountText": "150-900 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 150,
@@ -906,7 +931,9 @@
               "title": "DailyMed amiodarone hydrochloride tablet label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C01BD01",
@@ -914,7 +941,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Amiodarone",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1088,7 +1118,7 @@
           "route": "oral",
           "formulation": "sulfate tablet/capsule",
           "amountText": "200-600 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies every 12 hours; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 200,
@@ -1110,9 +1140,14 @@
               "title": "DailyMed quinidine sulfate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=quinidine%20sulfate",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Quinidine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1260,7 +1295,7 @@
           "route": "oral",
           "formulation": "capsule",
           "amountText": "100-800 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: every 6 to 8 hours, every 6 hours, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 100,
@@ -1282,9 +1317,14 @@
               "title": "DailyMed disopyramide phosphate capsule label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=disopyramide%20phosphate%20capsule",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Disopyramide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1445,7 +1485,7 @@
           "route": "oral",
           "formulation": "capsule",
           "amountText": "150-1200 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: every eight hours, every 12 hours, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 150,
@@ -1467,9 +1507,14 @@
               "title": "DailyMed mexiletine hydrochloride capsule label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=mexiletine%20hydrochloride%20capsule",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Mexiletine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1624,7 +1669,7 @@
           "route": "oral",
           "formulation": "extended-release capsule",
           "amountText": "150-900 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: every 8 hours. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 150,
@@ -1646,9 +1691,14 @@
               "title": "DailyMed propafenone hydrochloride label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ecd6452-ccc3-493f-9a4a-69f0fbf67a42",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Propafenone",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1835,7 +1885,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "40-320 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily, three times daily, every 3 days, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 40,
@@ -1857,9 +1907,14 @@
               "title": "DailyMed sotalol hydrochloride label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c824f6b2-80c5-45a6-a491-4c14c9f5e33d",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Sotalol",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2021,7 +2076,7 @@
           "route": "oral",
           "formulation": "capsule",
           "amountText": "125-500 mcg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 125,
@@ -2043,9 +2098,14 @@
               "title": "DailyMed dofetilide label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26de5f8c-8cec-46f6-a468-69451758a278",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Dofetilide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2189,7 +2249,7 @@
           "route": "intravenous",
           "formulation": "injection",
           "amountText": "0.01-2 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 0.01,
@@ -2211,9 +2271,14 @@
               "title": "DailyMed ibutilide fumarate injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ibutilide%20fumarate%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Ibutilide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2372,7 +2437,7 @@
           "route": "intravenous",
           "formulation": "rapid bolus injection",
           "amountText": "3-12 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 3,
@@ -2394,9 +2459,14 @@
               "title": "DailyMed adenosine injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48d72391-b3d4-bd97-e063-6294a90a9d6f",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Adenosine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     }

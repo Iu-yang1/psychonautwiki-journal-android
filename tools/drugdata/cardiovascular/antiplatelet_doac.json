@@ -151,7 +151,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "75-600 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies once daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 75,
@@ -173,9 +173,14 @@
               "title": "DailyMed clopidogrel label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Clopidogrel",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },

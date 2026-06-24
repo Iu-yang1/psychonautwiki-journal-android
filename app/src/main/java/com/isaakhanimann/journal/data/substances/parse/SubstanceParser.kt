@@ -320,6 +320,12 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
                     formulation = jsonReference.getOptionalString("formulation"),
                     amountText = jsonReference.getOptionalString("amountText") ?: continue,
                     scheduleText = jsonReference.getOptionalString("scheduleText"),
+                    scheduleReviewStatus =
+                        jsonReference.getOptionalString("scheduleReviewStatus"),
+                    scheduleReviewedDate =
+                        jsonReference.getOptionalString("scheduleReviewedDate"),
+                    reviewedLabelMatch =
+                        jsonReference.getOptionalString("reviewedLabelMatch"),
                     ranges = parseDoseRanges(jsonReference.getOptionalJSONArray("ranges")),
                     sourceType = jsonReference.getOptionalString("sourceType") ?: continue,
                     evidenceLevel = jsonReference.getOptionalString("evidenceLevel") ?: continue,

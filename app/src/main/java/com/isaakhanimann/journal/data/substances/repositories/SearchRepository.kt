@@ -165,6 +165,9 @@ class SearchRepository @Inject constructor(
                     reference.formulation,
                     reference.amountText,
                     reference.scheduleText,
+                    reference.scheduleReviewStatus,
+                    reference.scheduleReviewedDate,
+                    reference.reviewedLabelMatch,
                     reference.sourceType,
                     reference.evidenceLevel,
                     reference.note

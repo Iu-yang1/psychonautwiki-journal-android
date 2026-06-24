@@ -124,7 +124,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "6.25-150 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 6.25,
@@ -146,9 +146,14 @@
               "title": "DailyMed Captopril label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=captopril%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Captopril",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -279,7 +284,7 @@
           "route": "oral",
           "formulation": "capsule/tablet",
           "amountText": "1.25-10 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily, single dose, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 1.25,
@@ -301,9 +306,14 @@
               "title": "DailyMed Ramipril label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ramipril%20capsule",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Ramipril",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -425,7 +435,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "5-40 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 5,
@@ -447,9 +457,14 @@
               "title": "DailyMed Olmesartan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=olmesartan%20medoxomil%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Olmesartan",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -569,7 +584,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "75-300 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies once daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 75,
@@ -591,9 +606,14 @@
               "title": "DailyMed Irbesartan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=irbesartan%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Irbesartan",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -716,7 +736,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "20-80 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 20,
@@ -738,9 +758,14 @@
               "title": "DailyMed Telmisartan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=telmisartan%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Telmisartan",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -861,7 +886,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "4-32 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 4,
@@ -883,9 +908,14 @@
               "title": "DailyMed Candesartan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=candesartan%20cilexetil%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Candesartan",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1013,7 +1043,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "12.5-100 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, single dose. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 12.5,
@@ -1035,9 +1065,14 @@
               "title": "DailyMed Chlorthalidone label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorthalidone%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Chlorthalidone",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1159,7 +1194,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "1.25-5 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies once daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 1.25,
@@ -1181,9 +1216,14 @@
               "title": "DailyMed Indapamide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=indapamide%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Indapamide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1351,7 +1391,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "0.5-10 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: single dose. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 0.5,
@@ -1373,9 +1413,14 @@
               "title": "DailyMed Bumetanide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Bumetanide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         },
         {
           "indication": "Edema contexts depending on label",
@@ -1383,7 +1428,7 @@
           "route": "intravenous",
           "formulation": "injection",
           "amountText": "0.5-2 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: single dose. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 0.5,
@@ -1405,9 +1450,14 @@
               "title": "DailyMed Bumetanide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Bumetanide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1533,7 +1583,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "25-100 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily, every other day. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 25,
@@ -1555,9 +1605,14 @@
               "title": "DailyMed Eplerenone label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eplerenone%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Eplerenone",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1715,7 +1770,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "10-300 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: four times daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 10,
@@ -1737,9 +1792,14 @@
               "title": "DailyMed Hydralazine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Hydralazine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         },
         {
           "indication": "Hypertension contexts depending on label",
@@ -1747,7 +1807,7 @@
           "route": "intravenous",
           "formulation": "injection",
           "amountText": "5-20 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: four times daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 5,
@@ -1769,9 +1829,14 @@
               "title": "DailyMed Hydralazine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Hydralazine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1931,7 +1996,7 @@
           "route": "oral",
           "formulation": "immediate-release tablet",
           "amountText": "10-120 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 10,
@@ -1953,15 +2018,22 @@
               "title": "DailyMed Isosorbide Mononitrate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "DailyMed Isosorbide Mononitrate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Isosorbide Mononitrate",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2124,7 +2196,7 @@
           "route": "sublingual",
           "formulation": "tablet",
           "amountText": "2.5-10 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies three times daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 2.5,
@@ -2146,9 +2218,14 @@
               "title": "DailyMed Isosorbide Dinitrate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Isosorbide Dinitrate",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         },
         {
           "indication": "Angina treatment or prophylaxis contexts depending on route/formulation and label",
@@ -2156,7 +2233,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "5-160 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies three times daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 5,
@@ -2178,9 +2255,14 @@
               "title": "DailyMed Isosorbide Dinitrate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Isosorbide Dinitrate",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2307,7 +2389,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "2.5-100 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 2.5,
@@ -2329,9 +2411,14 @@
               "title": "DailyMed Minoxidil label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=minoxidil%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Minoxidil",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2451,7 +2538,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "10-80 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, single dose. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 10,
@@ -2473,9 +2560,14 @@
               "title": "DailyMed Pravastatin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pravastatin%20sodium%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Pravastatin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2596,7 +2688,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "5-40 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 5,
@@ -2618,9 +2710,14 @@
               "title": "DailyMed Simvastatin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Simvastatin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2739,7 +2836,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "10-10 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label uses individualized, response-guided, laboratory-guided, or renal-function-adjusted administration; no single fixed frequency applies.",
           "ranges": [
             {
               "min": 10,
@@ -2761,9 +2858,14 @@
               "title": "DailyMed Ezetimibe label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ezetimibe%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Ezetimibe",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2886,7 +2988,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "60-180 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies twice daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 60,
@@ -2908,9 +3010,14 @@
               "title": "DailyMed Ticagrelor label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ticagrelor%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Ticagrelor",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -3032,7 +3139,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "5-60 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies once daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 5,
@@ -3054,9 +3161,14 @@
               "title": "DailyMed Prasugrel label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prasugrel%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Prasugrel",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -3178,7 +3290,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "15-60 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, weekly. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 15,
@@ -3200,9 +3312,14 @@
               "title": "DailyMed Edoxaban label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=edoxaban%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Edoxaban",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -3326,7 +3443,7 @@
           "route": "subcutaneous",
           "formulation": "injection",
           "amountText": "30-150 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, every 12 hours, intravenous bolus. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 30,
@@ -3348,9 +3465,14 @@
               "title": "DailyMed Enoxaparin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enoxaparin%20sodium%20injection",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Enoxaparin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -3476,7 +3598,7 @@
           "route": "oral",
           "formulation": "extended-release tablet",
           "amountText": "500-1000 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 500,
@@ -3498,9 +3620,14 @@
               "title": "DailyMed Ranolazine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranolazine%20extended-release%20tablet",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Ranolazine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     }

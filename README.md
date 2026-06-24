@@ -179,8 +179,27 @@ Clinical dose-reference maintenance commands:
 
 ```bash
 python tools/drugdata/migrate_clinical_dose_references.py
+python tools/drugdata/review_cardiovascular_schedules.py
+python tools/drugdata/build_substances_json.py
 python tools/drugdata/check_clinical_dose_references.py
 ```
+
+`review_cardiovascular_schedules.py` reviews previously unresolved administration
+frequencies against official label dosage sections where available. It records the
+review date and label match in the source data. A normalized schedule remains an
+indexing aid only: indication, formulation, treatment phase, laboratory results,
+organ function, interactions, and the current locally approved label still govern
+clinical interpretation.
+
+## Local release signing
+
+Release signing credentials are loaded from `release/signing.properties` when that
+file exists. The entire `release/` directory is ignored by Git. Use
+`release-signing.properties.example` as the field template, and keep the keystore
+and its passwords outside version control. The same keystore must be preserved for
+future updates signed under the same application ID.
+
+Without the local properties file, Gradle can still build an unsigned release APK.
 
 ## License
 

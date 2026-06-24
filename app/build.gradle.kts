@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -7,6 +9,13 @@ plugins {
     id("androidx.room")
     kotlin("plugin.serialization") version "2.0.20"
     alias(libs.plugins.autoresconfig)
+}
+
+val releaseSigningPropertiesFile = rootProject.file("release/signing.properties")
+val releaseSigningProperties = Properties().apply {
+    if (releaseSigningPropertiesFile.isFile) {
+        releaseSigningPropertiesFile.inputStream().use(::load)
+    }
 }
 
 android {
@@ -27,6 +36,32 @@ android {
         schemaDirectory("$projectDir/schemas")
     }
 
+    val localReleaseSigningConfig =
+        if (releaseSigningPropertiesFile.isFile) {
+            signingConfigs.create("localRelease") {
+                storeFile =
+                    rootProject.file(
+                        requireNotNull(releaseSigningProperties.getProperty("storeFile")) {
+                            "release/signing.properties 缺少 storeFile"
+                        }
+                    )
+                storePassword =
+                    requireNotNull(releaseSigningProperties.getProperty("storePassword")) {
+                        "release/signing.properties 缺少 storePassword"
+                    }
+                keyAlias =
+                    requireNotNull(releaseSigningProperties.getProperty("keyAlias")) {
+                        "release/signing.properties 缺少 keyAlias"
+                    }
+                keyPassword =
+                    requireNotNull(releaseSigningProperties.getProperty("keyPassword")) {
+                        "release/signing.properties 缺少 keyPassword"
+                    }
+            }
+        } else {
+            null
+        }
+
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -36,6 +71,7 @@ android {
                 "proguard-rules.pro"
             )
             ndk.debugSymbolLevel = "FULL"
+            signingConfig = localReleaseSigningConfig
         }
     }
     compileOptions {

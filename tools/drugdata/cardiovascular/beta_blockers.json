@@ -381,7 +381,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "10-320 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily, four times daily, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 10,
@@ -403,9 +403,14 @@
               "title": "DailyMed propranolol hydrochloride label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Propranolol",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -559,7 +564,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "25-100 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 25,
@@ -581,9 +586,14 @@
               "title": "DailyMed atenolol label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Atenolol",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -736,7 +746,7 @@
           "route": "oral",
           "formulation": "tablet",
           "amountText": "3.125-50 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 3.125,
@@ -758,9 +768,14 @@
               "title": "DailyMed carvedilol label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Carvedilol",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -926,7 +941,7 @@
           "route": "intravenous",
           "formulation": "infusion",
           "amountText": "25-200 mcg/kg/min legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: continuous infusion. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 25,
@@ -948,9 +963,14 @@
               "title": "DailyMed esmolol hydrochloride injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Esmolol",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     }

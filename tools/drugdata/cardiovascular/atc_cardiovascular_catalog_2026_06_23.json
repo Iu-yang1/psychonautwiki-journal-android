@@ -196,7 +196,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "0.05-0.5 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited literature describes repeated oral maintenance use; frequency is patient- and concentration-specific and must be verified in an approved local label.",
           "ranges": [
             {
               "min": 0.05,
@@ -232,7 +232,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -363,7 +365,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "200-1200 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily, morning and evening. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 200,
@@ -385,7 +387,9 @@
               "title": "DailyMed Dronedarone label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dronedarone",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C01BD07",
@@ -393,7 +397,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Dronedarone",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -523,7 +530,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "2.5-15 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies twice daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 2.5,
@@ -545,7 +552,9 @@
               "title": "DailyMed Ivabradine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ivabradine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C01EB17",
@@ -553,7 +562,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Ivabradine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -683,7 +695,7 @@
           "route": "intravenous",
           "formulation": "infusion",
           "amountText": "1-20 mcg/kg/min legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label uses individualized, response-guided, laboratory-guided, or renal-function-adjusted administration; no single fixed frequency applies.",
           "ranges": [
             {
               "min": 1,
@@ -705,7 +717,9 @@
               "title": "DailyMed Dobutamine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dobutamine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C01CA07",
@@ -713,7 +727,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Dobutamine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -842,7 +859,7 @@
           "route": "intravenous",
           "formulation": "infusion",
           "amountText": "1-20 mcg/kg/min legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: continuous infusion. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 1,
@@ -864,7 +881,9 @@
               "title": "DailyMed Dopamine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dopamine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C01CA04",
@@ -872,7 +891,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Dopamine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1001,7 +1023,7 @@
           "route": "intravenous",
           "formulation": "injection/infusion",
           "amountText": "0.125-0.75 mcg/kg/min legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: continuous infusion. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 0.125,
@@ -1023,7 +1045,9 @@
               "title": "DailyMed Milrinone label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Milrinone",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C01CE02",
@@ -1031,7 +1055,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Milrinone",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1161,7 +1188,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "2.5-20 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, every 2 weeks. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 2.5,
@@ -1183,7 +1210,9 @@
               "title": "DailyMed Vericiguat label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vericiguat",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C01DX22",
@@ -1191,7 +1220,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Vericiguat",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1320,7 +1352,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "0.05-0.8 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily, weekly, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 0.05,
@@ -1342,7 +1374,9 @@
               "title": "DailyMed Clonidine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clonidine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C02AC01",
@@ -1350,7 +1384,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Clonidine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1479,7 +1516,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "125-2000 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 125,
@@ -1501,7 +1538,9 @@
               "title": "DailyMed Methyldopa label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methyldopa",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C02AB01",
@@ -1509,7 +1548,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Methyldopa",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1650,18 +1692,18 @@
           "population": "Adults or source-specific population; verify cited source",
           "route": "oral",
           "formulation": "tablet/capsule",
-          "amountText": "0.2-0.8 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "amountText": "0.2 mg daily initially; the cited SmPC permits titration up to 0.6 mg total daily",
+          "scheduleText": "Once daily in the morning; 0.4 mg may be given once daily or divided morning and evening, and 0.6 mg is divided",
           "ranges": [
             {
               "min": 0.2,
-              "max": 0.8,
+              "max": 0.6,
               "unit": "mg",
-              "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "basis": "daily-total",
+              "frequency": "once daily or divided twice daily according to total dose",
+              "rangeKind": "label-regimen",
+              "label": "SmPC regimen",
+              "note": "Renal function and tolerability affect titration. This is not a dosing recommendation.",
               "components": []
             }
           ],
@@ -1673,7 +1715,9 @@
               "title": "Moxonidine 200 microgram film-coated tablets SmPC",
               "url": "https://www.medicines.org.uk/emc/product/4140/smpc",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "Pharmacokinetics of moxonidine after single and repeated daily doses",
@@ -1687,7 +1731,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1816,7 +1862,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "0.5-20 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 0.5,
@@ -1838,7 +1884,9 @@
               "title": "DailyMed Prazosin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Prazosin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C02CA01",
@@ -1846,7 +1894,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Prazosin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -1975,7 +2026,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "1-16 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 1,
@@ -1997,7 +2048,9 @@
               "title": "DailyMed Doxazosin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Doxazosin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C02CA04",
@@ -2005,7 +2058,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Doxazosin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2134,7 +2190,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "1-20 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 1,
@@ -2156,7 +2212,9 @@
               "title": "DailyMed Terazosin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Terazosin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C02CA03",
@@ -2164,7 +2222,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Terazosin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2292,18 +2353,18 @@
           "population": "Adults or source-specific population; verify cited source",
           "route": "oral",
           "formulation": "tablet/capsule",
-          "amountText": "62.5-500 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "amountText": "62.5 mg twice daily for 4 weeks, then 125 mg twice daily in the cited adult PAH label",
+          "scheduleText": "Twice daily; the cited label uses an initial 4-week phase before the maintenance regimen",
           "ranges": [
             {
               "min": 62.5,
-              "max": 500,
+              "max": 125,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "frequency": "twice daily",
+              "rangeKind": "label-regimen",
+              "label": "Adult PAH label regimen",
+              "note": "Liver monitoring and indication-specific restrictions apply. This is not a dosing recommendation.",
               "components": []
             }
           ],
@@ -2315,7 +2376,9 @@
               "title": "DailyMed Bosentan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bosentan",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C02KX01",
@@ -2323,7 +2386,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2452,7 +2517,7 @@
           "route": "intravenous",
           "formulation": "infusion",
           "amountText": "0.1-10 mcg/kg/min legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label uses individualized, response-guided, laboratory-guided, or renal-function-adjusted administration; no single fixed frequency applies.",
           "ranges": [
             {
               "min": 0.1,
@@ -2474,7 +2539,9 @@
               "title": "DailyMed Sodium Nitroprusside label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sodium%20Nitroprusside",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C02DD01",
@@ -2482,7 +2549,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Sodium Nitroprusside",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2611,7 +2681,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "2.5-20 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 2.5,
@@ -2633,7 +2703,9 @@
               "title": "DailyMed Amiloride label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amiloride",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C03DB01",
@@ -2641,7 +2713,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Amiloride",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2770,7 +2845,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "25-200 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: single dose, divided doses. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 25,
@@ -2792,7 +2867,9 @@
               "title": "DailyMed Triamterene label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Triamterene",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C03DB02",
@@ -2800,7 +2877,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Triamterene",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -2929,7 +3009,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "2.5-20 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 2.5,
@@ -2951,7 +3031,9 @@
               "title": "DailyMed Metolazone label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Metolazone",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C03BA08",
@@ -2959,7 +3041,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Metolazone",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -3088,7 +3173,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "25-200 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily, single dose. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 25,
@@ -3110,7 +3195,9 @@
               "title": "DailyMed Ethacrynic Acid label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ethacrynic%20Acid",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C03CC01",
@@ -3118,7 +3205,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Ethacrynic Acid",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -3247,7 +3337,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "250-2000 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 250,
@@ -3269,7 +3359,9 @@
               "title": "DailyMed Chlorothiazide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlorothiazide",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C03AA04",
@@ -3277,7 +3369,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Chlorothiazide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -3424,18 +3519,18 @@
           "population": "Adults or source-specific population; verify cited source",
           "route": "oral",
           "formulation": "tablet/capsule",
-          "amountText": "1.25-10 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "amountText": "2.5 mg once daily for hypertension; 5-10 mg once daily or on alternate days for edema in cited product information",
+          "scheduleText": "Morning administration; frequency differs between hypertension, initial edema treatment, and intermittent maintenance",
           "ranges": [
             {
-              "min": 1.25,
+              "min": 2.5,
               "max": 10,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "frequency": "once daily, alternate days, or intermittent weekly maintenance depending on indication",
+              "rangeKind": "label-regimen",
+              "label": "Product-information regimen",
+              "note": "Indication, electrolytes, renal function, and volume status change interpretation. This is not a dosing recommendation.",
               "components": []
             }
           ],
@@ -3447,13 +3542,17 @@
               "title": "Bendroflumethiazide Evolan SmPC",
               "url": "https://docetp.mpa.se/LMF/Bendroflumetiazid%20Evolan%20tablet%20ENG%20SmPC_09001bee807a0c7b.pdf",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "Arrow Bendrofluazide New Zealand Data Sheet",
               "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C03AA01",
@@ -3461,7 +3560,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -3615,7 +3716,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "10-80 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited literature describes oral dosing in clinical studies; no single product-label frequency was confirmed for this data pack.",
           "ranges": [
             {
               "min": 10,
@@ -3651,7 +3752,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -3794,7 +3897,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "25-200 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited human pharmacokinetic study used study-specific oral administration; it is not a general prescribing schedule.",
           "ranges": [
             {
               "min": 25,
@@ -3830,7 +3933,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -3959,7 +4064,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "10-80 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 10,
@@ -3981,7 +4086,9 @@
               "title": "DailyMed Finerenone label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Finerenone",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C03DA05",
@@ -3989,7 +4096,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Finerenone",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -4118,7 +4228,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "7.5-60 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: every 3 months, weekly, monthly. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 7.5,
@@ -4140,7 +4250,9 @@
               "title": "DailyMed Tolvaptan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tolvaptan",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C03XA01",
@@ -4148,7 +4260,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Tolvaptan",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -4278,7 +4393,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "200-1200 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 200,
@@ -4300,7 +4415,9 @@
               "title": "DailyMed Pentoxifylline label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Pentoxifylline",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C04AD03",
@@ -4308,7 +4425,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Pentoxifylline",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -4445,7 +4565,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "100-600 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited review covers oral treatment regimens used across trials; frequency varies by product and study protocol.",
           "ranges": [
             {
               "min": 100,
@@ -4475,7 +4595,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -4619,7 +4741,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "5-60 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited regulatory review covers multiple products and indications; frequency must be checked in the applicable local product information.",
           "ranges": [
             {
               "min": 5,
@@ -4655,7 +4777,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -4785,7 +4909,7 @@
           "route": "intravenous",
           "formulation": "injection",
           "amountText": "1-20 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 1,
@@ -4807,7 +4931,9 @@
               "title": "DailyMed Phentolamine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Phentolamine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C04AB01",
@@ -4815,7 +4941,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Phentolamine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -4949,7 +5078,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "25-200 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "No current authoritative product-label frequency was confirmed; this legacy reference remains unsuitable for regimen guidance.",
           "ranges": [
             {
               "min": 25,
@@ -4985,7 +5114,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -5114,7 +5245,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "250-2000 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 250,
@@ -5136,7 +5267,9 @@
               "title": "DailyMed Diosmin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diosmin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C05CA03",
@@ -5144,7 +5277,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Diosmin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -5273,7 +5409,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "50-1000 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 50,
@@ -5295,7 +5431,9 @@
               "title": "DailyMed Hesperidin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Hesperidin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C05CA53",
@@ -5303,7 +5441,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Hesperidin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -5435,7 +5576,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "300-1800 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited human pharmacokinetic source used a study-specific administration schedule; it is not a general prescribing schedule.",
           "ranges": [
             {
               "min": 300,
@@ -5465,7 +5606,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -5607,7 +5750,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "250-1500 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited clinical study used a protocol-specific oral schedule; it is not a universal product regimen.",
           "ranges": [
             {
               "min": 250,
@@ -5643,7 +5786,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -5781,7 +5926,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "50-600 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited human exposure study used a study-specific oral regimen; it is not a product-label prescribing schedule.",
           "ranges": [
             {
               "min": 50,
@@ -5817,7 +5962,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -5946,7 +6093,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "100-1200 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies twice daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 100,
@@ -5968,7 +6115,9 @@
               "title": "DailyMed Acebutolol label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acebutolol",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C07AB04",
@@ -5976,7 +6125,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Acebutolol",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -6105,7 +6257,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "5-40 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies twice daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 5,
@@ -6127,7 +6279,9 @@
               "title": "DailyMed Betaxolol label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Betaxolol",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C07AB05",
@@ -6135,7 +6289,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Betaxolol",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -6264,7 +6421,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "20-320 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 20,
@@ -6286,7 +6443,9 @@
               "title": "DailyMed Nadolol label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nadolol",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C07AA12",
@@ -6294,7 +6453,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Nadolol",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -6423,7 +6585,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "2.5-60 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 2.5,
@@ -6445,7 +6607,9 @@
               "title": "DailyMed Pindolol label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Pindolol",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C07AA03",
@@ -6453,7 +6617,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Pindolol",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -6582,7 +6749,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "5-60 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 5,
@@ -6604,7 +6771,9 @@
               "title": "DailyMed Timolol label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Timolol",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C07AA06",
@@ -6612,7 +6781,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Timolol",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -6741,7 +6913,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "2.5-20 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies once daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 2.5,
@@ -6763,7 +6935,9 @@
               "title": "DailyMed Felodipine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Felodipine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C08CA02",
@@ -6771,7 +6945,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Felodipine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -6900,7 +7077,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "2.5-20 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 2.5,
@@ -6922,7 +7099,9 @@
               "title": "DailyMed Isradipine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Isradipine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C08CA03",
@@ -6930,7 +7109,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Isradipine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -7059,7 +7241,7 @@
           "route": "oral",
           "formulation": "capsule/injection",
           "amountText": "20-120 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily, three times daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 20,
@@ -7081,7 +7263,9 @@
               "title": "DailyMed Nicardipine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicardipine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C08CA04",
@@ -7089,7 +7273,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Nicardipine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -7218,7 +7405,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "30-360 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies every 4 hours; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 30,
@@ -7240,7 +7427,9 @@
               "title": "DailyMed Nimodipine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nimodipine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C08CA06",
@@ -7248,7 +7437,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Nimodipine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -7389,18 +7581,18 @@
           "population": "Adults or source-specific population; verify cited source",
           "route": "oral",
           "formulation": "tablet/capsule",
-          "amountText": "5-40 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "amountText": "10 mg once daily; may be increased to 20 mg once daily in the cited product information",
+          "scheduleText": "Once daily, at least 15 minutes before a meal",
           "ranges": [
             {
-              "min": 5,
-              "max": 40,
+              "min": 10,
+              "max": 20,
               "unit": "mg",
-              "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Product-information regimen",
+              "note": "Titration is response- and tolerability-dependent. This is not a dosing recommendation.",
               "components": []
             }
           ],
@@ -7418,7 +7610,9 @@
               "title": "Zanidip product information",
               "url": "https://medsinfo.com.au/api/documents/Zanidip_PI?format=pdf",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C08CA13",
@@ -7426,7 +7620,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -7555,7 +7751,7 @@
           "route": "intravenous",
           "formulation": "emulsion infusion",
           "amountText": "1-32 mg/h legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label uses individualized, response-guided, laboratory-guided, or renal-function-adjusted administration; no single fixed frequency applies.",
           "ranges": [
             {
               "min": 1,
@@ -7577,7 +7773,9 @@
               "title": "DailyMed Clevidipine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clevidipine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C08CA16",
@@ -7585,7 +7783,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Clevidipine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -7714,7 +7915,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "8.5-68 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies once daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 8.5,
@@ -7736,7 +7937,9 @@
               "title": "DailyMed Nisoldipine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nisoldipine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C08CA07",
@@ -7744,7 +7947,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Nisoldipine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -7873,7 +8079,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "2-16 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 2,
@@ -7895,7 +8101,9 @@
               "title": "DailyMed Perindopril label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Perindopril",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C09AA04",
@@ -7903,7 +8111,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Perindopril",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -8032,7 +8243,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "5-40 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, single dose, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 5,
@@ -8054,7 +8265,9 @@
               "title": "DailyMed Benazepril label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Benazepril",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C09AA07",
@@ -8062,7 +8275,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Benazepril",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -8191,7 +8407,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "5-40 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 5,
@@ -8213,7 +8429,9 @@
               "title": "DailyMed Fosinopril label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fosinopril",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C09AA09",
@@ -8221,7 +8439,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Fosinopril",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -8350,7 +8571,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "5-80 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily, weekly, single dose, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 5,
@@ -8372,7 +8593,9 @@
               "title": "DailyMed Quinapril label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quinapril",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C09AA06",
@@ -8380,7 +8603,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Quinapril",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -8509,7 +8735,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "1-8 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 1,
@@ -8531,7 +8757,9 @@
               "title": "DailyMed Trandolapril label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trandolapril",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C09AA10",
@@ -8539,7 +8767,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Trandolapril",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -8668,7 +8899,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "20-160 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 20,
@@ -8690,7 +8921,9 @@
               "title": "DailyMed Azilsartan label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Azilsartan",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C09CA09",
@@ -8698,7 +8931,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Azilsartan",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -9021,7 +9257,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "75-600 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 75,
@@ -9043,7 +9279,9 @@
               "title": "DailyMed Aliskiren label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Aliskiren",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C09XA02",
@@ -9051,7 +9289,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Aliskiren",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -9193,18 +9434,18 @@
           "population": "Adults or source-specific population; verify cited source",
           "route": "oral",
           "formulation": "tablet/capsule",
-          "amountText": "300-1200 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "amountText": "600 mg once daily initially; 400-800 mg total daily once or in two divided doses in the cited label",
+          "scheduleText": "Once daily or divided twice daily depending on total daily regimen",
           "ranges": [
             {
-              "min": 300,
-              "max": 1200,
+              "min": 400,
+              "max": 800,
               "unit": "mg",
-              "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "basis": "daily-total",
+              "frequency": "once daily or divided twice daily",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "note": "Volume status, renal function, and combination-product context matter. This is not a dosing recommendation.",
               "components": []
             }
           ],
@@ -9216,7 +9457,9 @@
               "title": "DailyMed: TEVETEN HCT eprosartan/hydrochlorothiazide",
               "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b1dfcac3-ef66-4d3e-9d58-37d3f516eb31",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "Pharmacokinetics of eprosartan in healthy subjects and special populations",
@@ -9230,7 +9473,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -9359,7 +9604,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "3.75-30 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 3.75,
@@ -9381,7 +9626,9 @@
               "title": "DailyMed Moexipril label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Moexipril",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C09AA13",
@@ -9389,7 +9636,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Moexipril",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -9518,7 +9768,7 @@
           "route": "subcutaneous",
           "formulation": "injection",
           "amountText": "140-840 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: every 2 weeks, monthly. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 140,
@@ -9540,7 +9790,9 @@
               "title": "DailyMed Evolocumab label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Evolocumab",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AX13",
@@ -9548,7 +9800,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Evolocumab",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -9677,7 +9932,7 @@
           "route": "subcutaneous",
           "formulation": "injection",
           "amountText": "75-600 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: every 2 weeks, every 4 weeks. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 75,
@@ -9699,7 +9954,9 @@
               "title": "DailyMed Alirocumab label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alirocumab",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AX14",
@@ -9707,7 +9964,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Alirocumab",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -9836,7 +10096,7 @@
           "route": "subcutaneous",
           "formulation": "injection",
           "amountText": "284-852 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies every 6 months; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 284,
@@ -9858,7 +10118,9 @@
               "title": "DailyMed Inclisiran label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Inclisiran",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AX16",
@@ -9866,7 +10128,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Inclisiran",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -9995,7 +10260,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "90-540 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies once daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 90,
@@ -10017,7 +10282,9 @@
               "title": "DailyMed Bempedoic Acid label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bempedoic%20Acid",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AX15",
@@ -10025,7 +10292,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Bempedoic Acid",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -10154,7 +10424,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "48-300 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 48,
@@ -10176,7 +10446,9 @@
               "title": "DailyMed Fenofibrate label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fenofibrate",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AB05",
@@ -10184,7 +10456,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Fenofibrate",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -10313,7 +10588,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "300-2400 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies divided doses; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 300,
@@ -10335,7 +10610,9 @@
               "title": "DailyMed Gemfibrozil label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Gemfibrozil",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AB04",
@@ -10343,7 +10620,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Gemfibrozil",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -10467,7 +10747,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "4-24 g legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies twice daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 4,
@@ -10489,7 +10769,9 @@
               "title": "DailyMed Cholestyramine label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Cholestyramine",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AC01",
@@ -10497,7 +10779,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Cholestyramine",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -10621,7 +10906,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "1.875-7.5 g legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 1.875,
@@ -10643,7 +10928,9 @@
               "title": "DailyMed Colesevelam label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Colesevelam",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AC04",
@@ -10651,7 +10938,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Colesevelam",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -10780,7 +11070,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "20-160 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily, single dose, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 20,
@@ -10802,7 +11092,9 @@
               "title": "DailyMed Fluvastatin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluvastatin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AA04",
@@ -10810,7 +11102,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Fluvastatin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -10939,7 +11234,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "10-80 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, divided doses. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 10,
@@ -10961,7 +11256,9 @@
               "title": "DailyMed Lovastatin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lovastatin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AA02",
@@ -10969,7 +11266,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Lovastatin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -11098,7 +11398,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "1-8 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies once daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 1,
@@ -11120,7 +11420,9 @@
               "title": "DailyMed Pitavastatin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Pitavastatin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C10AA08",
@@ -11128,7 +11430,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Pitavastatin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -11258,7 +11563,7 @@
           "route": "intravenous",
           "formulation": null,
           "amountText": "1000-30000 units legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: every 4 to 6 hours, every 8 to 12 hours, every 8 hours, every 12 hours, every 4 hours, continuous infusion. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 1000,
@@ -11280,7 +11585,9 @@
               "title": "DailyMed Heparin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Heparin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AB01",
@@ -11288,7 +11595,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Heparin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -11418,7 +11728,7 @@
           "route": "subcutaneous",
           "formulation": "injection",
           "amountText": "2500-20000 IU legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: once daily, twice daily, every 12 hours. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 2500,
@@ -11440,7 +11750,9 @@
               "title": "DailyMed Dalteparin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dalteparin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AB04",
@@ -11448,7 +11760,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Dalteparin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -11578,7 +11893,7 @@
           "route": "subcutaneous",
           "formulation": "injection",
           "amountText": "2.5-10 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies once daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 2.5,
@@ -11600,7 +11915,9 @@
               "title": "DailyMed Fondaparinux label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fondaparinux",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AX05",
@@ -11608,7 +11925,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Fondaparinux",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -11747,7 +12067,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "75-1000 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies every 4 hours; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 75,
@@ -11769,7 +12089,9 @@
               "title": "DailyMed Aspirin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Aspirin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AC06",
@@ -11777,7 +12099,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Aspirin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -11925,18 +12250,18 @@
           "population": "Adults or source-specific population; verify cited source",
           "route": "oral",
           "formulation": "tablet/capsule",
-          "amountText": "125-1000 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "amountText": "250 mg twice daily with food in the cited label",
+          "scheduleText": "Twice daily with meals",
           "ranges": [
             {
-              "min": 125,
-              "max": 1000,
+              "min": 250,
+              "max": 250,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "frequency": "twice daily",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "note": "Serious hematologic toxicity and bleeding monitoring apply; availability varies by country. This is not a dosing recommendation.",
               "components": []
             }
           ],
@@ -11948,13 +12273,17 @@
               "title": "DailyMed: Ticlopidine hydrochloride label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TICLOPIDINE",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "Canadian product monograph: Ticlopidine hydrochloride tablets",
               "url": "https://pdf.hres.ca/dpd_pm/00015080.PDF",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AC05",
@@ -11962,7 +12291,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -12092,7 +12423,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "25-400 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section specifies four times daily; verify the indication, formulation, and patient-specific conditions.",
           "ranges": [
             {
               "min": 25,
@@ -12114,7 +12445,9 @@
               "title": "DailyMed Dipyridamole label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dipyridamole",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AC07",
@@ -12122,7 +12455,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Dipyridamole",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -12252,7 +12588,7 @@
           "route": "intravenous",
           "formulation": "infusion",
           "amountText": "0.05-0.3 mcg/kg/min legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label uses individualized, response-guided, laboratory-guided, or renal-function-adjusted administration; no single fixed frequency applies.",
           "ranges": [
             {
               "min": 0.05,
@@ -12274,7 +12610,9 @@
               "title": "DailyMed Tirofiban label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tirofiban",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AC17",
@@ -12282,7 +12620,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Tirofiban",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -12412,7 +12753,7 @@
           "route": "intravenous",
           "formulation": "bolus/infusion",
           "amountText": "0.5-4 mcg/kg/min legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: continuous infusion. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 0.5,
@@ -12434,7 +12775,9 @@
               "title": "DailyMed Eptifibatide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Eptifibatide",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AC16",
@@ -12442,7 +12785,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Eptifibatide",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -12585,18 +12931,29 @@
           "population": "Adults or source-specific population; verify cited source",
           "route": "intravenous",
           "formulation": "bolus/infusion",
-          "amountText": "5-40 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "amountText": "0.25 mg/kg IV bolus followed by 0.125 mcg/kg/min infusion, maximum 10 mcg/min, for 12 hours in the cited FDA label",
+          "scheduleText": "Single IV bolus followed immediately by a continuous 12-hour infusion",
           "ranges": [
             {
-              "min": 5,
-              "max": 40,
-              "unit": "mg",
-              "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "min": 0.25,
+              "max": 0.25,
+              "unit": "mg/kg",
+              "basis": "weight-based",
+              "frequency": "single intravenous bolus",
+              "rangeKind": "label-regimen",
+              "label": "Bolus component",
+              "note": "PCI protocol and bleeding-risk monitoring are essential. This is not a dosing recommendation.",
+              "components": []
+            },
+            {
+              "min": 0.125,
+              "max": 0.125,
+              "unit": "mcg/kg/min",
+              "basis": "weight-based",
+              "frequency": "continuous infusion for 12 hours; maximum 10 mcg/min",
+              "rangeKind": "label-regimen",
+              "label": "Infusion component",
+              "note": "This infusion rate must not be collapsed into a scalar mg range. This is not a dosing recommendation.",
               "components": []
             }
           ],
@@ -12608,13 +12965,17 @@
               "title": "FDA label: ReoPro abciximab",
               "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/1997/abcicen110597-lab.pdf",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "Canadian product monograph: ReoPro",
               "url": "https://pdf.hres.ca/dpd_pm/00042357.PDF",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AC13",
@@ -12622,7 +12983,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -12752,7 +13115,7 @@
           "route": "intravenous",
           "formulation": "infusion",
           "amountText": "1-16 mcg/kg/min legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 1,
@@ -12774,7 +13137,9 @@
               "title": "DailyMed Cangrelor label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Cangrelor",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AC25",
@@ -12782,7 +13147,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Cangrelor",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -12912,7 +13280,7 @@
           "route": "intravenous",
           "formulation": "infusion",
           "amountText": "10-100 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 10,
@@ -12934,7 +13302,9 @@
               "title": "DailyMed Alteplase label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alteplase",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AD02",
@@ -12942,7 +13312,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Alteplase",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -13072,7 +13445,7 @@
           "route": "intravenous",
           "formulation": "bolus",
           "amountText": "30-60 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: intravenous bolus. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 30,
@@ -13094,7 +13467,9 @@
               "title": "DailyMed Tenecteplase label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tenecteplase",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AD11",
@@ -13102,7 +13477,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Tenecteplase",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -13232,7 +13610,7 @@
           "route": "intravenous",
           "formulation": "infusion",
           "amountText": "0.5-10 mcg/kg/min legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: continuous infusion, intravenous bolus. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 0.5,
@@ -13254,7 +13632,9 @@
               "title": "DailyMed Argatroban label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Argatroban",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AE03",
@@ -13262,7 +13642,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Argatroban",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -13392,7 +13775,7 @@
           "route": "intravenous",
           "formulation": "bolus/infusion",
           "amountText": "0.25-5 mg/kg/h legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label contains multiple or context-specific schedules: continuous infusion, intravenous bolus. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
           "ranges": [
             {
               "min": 0.25,
@@ -13414,7 +13797,9 @@
               "title": "DailyMed Bivalirudin label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bivalirudin",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AE06",
@@ -13422,7 +13807,10 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Bivalirudin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -13558,18 +13946,18 @@
           "population": "Adults or source-specific population; verify cited source",
           "route": "oral",
           "formulation": "tablet/capsule",
-          "amountText": "1.08-8.32 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "amountText": "2.08 mg orally once daily in the cited label",
+          "scheduleText": "Once daily, with or without food",
           "ranges": [
             {
-              "min": 1.08,
-              "max": 8.32,
+              "min": 2.08,
+              "max": 2.08,
               "unit": "mg",
-              "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "note": "Bleeding risk and concomitant antiplatelet therapy are central to interpretation. This is not a dosing recommendation.",
               "components": []
             }
           ],
@@ -13581,7 +13969,9 @@
               "title": "DailyMed: ZONTIVITY vorapaxar",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f001f406-8cf1-40a4-bbf5-1775fe020122",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AC26",
@@ -13589,7 +13979,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -13719,18 +14111,29 @@
           "population": "Adults or source-specific population; verify cited source",
           "route": "oral",
           "formulation": "tablet/capsule",
-          "amountText": "40-320 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "amountText": "160 mg initial single dose followed by 80 mg once daily; cited label includes 80 mg then 40 mg once daily in specified high-risk contexts",
+          "scheduleText": "Single loading dose followed by once-daily administration for the label-specified treatment duration",
           "ranges": [
             {
-              "min": 40,
-              "max": 320,
+              "min": 80,
+              "max": 160,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "frequency": "single initial dose",
+              "rangeKind": "initial",
+              "label": "Initial label dose",
+              "note": "The lower initial dose applies only to specified renal-function or interaction contexts. This is not a dosing recommendation.",
+              "components": []
+            },
+            {
+              "min": 40,
+              "max": 80,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "maintenance",
+              "label": "Maintenance label dose",
+              "note": "Bleeding risk, renal function, and P-gp interactions change interpretation. This is not a dosing recommendation.",
               "components": []
             }
           ],
@@ -13742,7 +14145,9 @@
               "title": "FDA label: BEVYXXA betrixaban",
               "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: B01AF04",
@@ -13750,7 +14155,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -13898,18 +14305,29 @@
           "population": "Adults or source-specific population; verify cited source",
           "route": "oral",
           "formulation": "tablet/capsule",
-          "amountText": "1-8 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "amountText": "2-4 mg once daily initially without loading; maintenance commonly 1-8 mg once daily, individualized by PT/INR in the cited SmPC",
+          "scheduleText": "Single dose at the same time each day; amount is adjusted according to PT/INR",
           "ranges": [
+            {
+              "min": 2,
+              "max": 4,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily during initial treatment",
+              "rangeKind": "initial",
+              "label": "Initial SmPC reference",
+              "note": "Alternative loading regimens exist in the cited SmPC. This is not a dosing recommendation.",
+              "components": []
+            },
             {
               "min": 1,
               "max": 8,
               "unit": "mg",
-              "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "basis": "daily-total",
+              "frequency": "once daily; individualized by PT/INR",
+              "rangeKind": "maintenance",
+              "label": "Maintenance SmPC reference",
+              "note": "INR, indication, bleeding risk, diet, illness, and interactions govern dosing. This section must not be used for dose adjustment.",
               "components": []
             }
           ],
@@ -13921,7 +14339,9 @@
               "title": "Sinthrome acenocoumarol SmPC",
               "url": "https://www.medicines.org.uk/emc/product/2058/smpc",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "Acenocoumarol pharmacokinetic review",
@@ -13935,7 +14355,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -14084,7 +14506,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "1-12 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "Oral administration is individualized using anticoagulation response and bleeding risk; no fixed frequency can be used for dose adjustment.",
           "ranges": [
             {
               "min": 1,
@@ -14120,7 +14542,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     }

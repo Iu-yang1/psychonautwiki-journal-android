@@ -25414,7 +25414,7 @@
           "route": "oral",
           "formulation": "tablet/capsule",
           "amountText": "125-1000 mg legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label uses indication-specific schedules ranging from once-daily or intermittent morning administration to divided daily dosing; renal function, electrolytes, and treatment response require separate review.",
           "ranges": [
             {
               "min": 125,
@@ -25436,7 +25436,9 @@
               "title": "DailyMed Acetazolamide label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acetazolamide",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C03BA01",
@@ -25444,7 +25446,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     },
@@ -25571,7 +25575,7 @@
           "route": "intravenous",
           "formulation": "infusion",
           "amountText": "12.5-100 g legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label uses indication-specific single or repeated intravenous infusions, with infusion duration and repetition guided by clinical response, fluid balance, renal function, and serum osmolality; no universal fixed interval applies.",
           "ranges": [
             {
               "min": 12.5,
@@ -25593,7 +25597,9 @@
               "title": "DailyMed Mannitol label search",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Mannitol",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             },
             {
               "title": "WHO ATC/DDD Index: C03DA05",
@@ -25601,7 +25607,9 @@
               "sourceType": "terminology",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     }

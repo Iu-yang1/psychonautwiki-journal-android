@@ -70,9 +70,17 @@ def main() -> int:
             for index, reference in enumerate(references):
                 reference_prefix = f"{prefix}: doseUseReferences[{index}]"
                 amount = reference.get("amountText", "")
+                schedule = (reference.get("scheduleText") or "").lower()
                 refs = reference.get("sourceRefs", [])
                 if concrete_amount(amount) and not refs:
                     errors.append(f"{reference_prefix}: concrete amountText missing sourceRefs")
+                if "cardiovascular" in set(substance.get("categories", [])):
+                    if not schedule:
+                        errors.append(f"{reference_prefix}: missing cardiovascular scheduleText")
+                    elif "source needed" in schedule:
+                        errors.append(
+                            f"{reference_prefix}: cardiovascular scheduleText still needs review"
+                        )
                 for range_index, dose_range in enumerate(reference.get("ranges", [])):
                     numeric = has_number(dose_range.get("min")) or has_number(
                         dose_range.get("max")
@@ -122,7 +130,10 @@ def main() -> int:
         for error in errors:
             print(f"ERROR: {error}")
         return 1
-    print("Clinical dose-reference validation passed with no roas.dose remnants.")
+    print(
+        "Clinical dose-reference validation passed with no roas.dose remnants "
+        "or pending cardiovascular schedules."
+    )
     return 0
 
 

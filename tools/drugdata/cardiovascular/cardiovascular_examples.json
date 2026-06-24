@@ -454,7 +454,7 @@
           "route": "transdermal",
           "formulation": "patch",
           "amountText": "0.1-0.4 mg/h legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 0.1,
@@ -476,9 +476,14 @@
               "title": "DailyMed nitroglycerin transdermal system label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e98a2692-1cb9-4994-98d8-1d8d9ef1a256",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23"
+              "accessedDate": "2026-06-23",
+              "labelSection": "Dosage and Administration",
+              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24."
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Nitroglycerin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         },
         {
           "indication": "Angina pectoris",
@@ -486,7 +491,7 @@
           "route": "intravenous",
           "formulation": "infusion",
           "amountText": "5-20 mcg/min legacy reference span",
-          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "scheduleText": "The cited label dosage section is regimen- and indication-specific; no single frequency could be safely normalized from the section.",
           "ranges": [
             {
               "min": 5,
@@ -510,7 +515,10 @@
               "sourceType": "source-needed",
               "accessedDate": "2026-06-23"
             }
-          ]
+          ],
+          "reviewedLabelMatch": "Nitroglycerin",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-06-24"
         }
       ]
     }
