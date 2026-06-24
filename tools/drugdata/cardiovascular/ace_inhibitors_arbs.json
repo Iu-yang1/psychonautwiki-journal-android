@@ -145,17 +145,43 @@
       },
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 2.5,
-            "commonMin": 10,
-            "strongMin": 20,
-            "heavyMin": 80
-          }
+          "name": "ORAL"
         }
       ],
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "2.5-80 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 2.5,
+              "max": 80,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed lisinopril label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Losartan",
@@ -305,16 +331,43 @@
       },
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 25,
-            "commonMin": 50,
-            "strongMin": 100
-          }
+          "name": "ORAL"
         }
       ],
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "25-100 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 25,
+              "max": 100,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed losartan potassium label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

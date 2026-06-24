@@ -140,27 +140,12 @@
       },
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 0.0625,
-            "commonMin": 0.125,
-            "strongMin": 0.25,
-            "heavyMin": 0.5
-          }
+          "name": "ORAL"
         },
         {
-          "name": "INTRAVENOUS",
-          "dose": {
-            "units": "mg",
-            "lightMin": 0.125,
-            "commonMin": 0.25,
-            "strongMin": 0.5,
-            "heavyMin": 1
-          }
+          "name": "INTRAVENOUS"
         }
       ],
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "timeCourse": [
         {
           "route": "oral",
@@ -235,6 +220,40 @@
             {
               "title": "DailyMed digoxin injection label",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=digoxin%20injection",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Maintenance therapy in the cited oral tablet label",
+          "population": "Adults; indication- and label-specific",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "0.0625-0.25 mg once daily in commonly cited adult maintenance contexts",
+          "scheduleText": "Once daily; individualized by renal function, age, lean body weight, response, and concentration timing",
+          "ranges": [
+            {
+              "min": 0.0625,
+              "max": 0.25,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "maintenance",
+              "label": "Maintenance reference",
+              "note": "This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "Digoxin has a narrow therapeutic index. Concentration sampling time, renal function, electrolytes, ECG, symptoms, and interactions are essential. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed digoxin tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=digoxin%20tablet",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23"
             }

@@ -161,6 +161,13 @@ SOURCES = {
         "REGULATORY_LABEL",
         "12.3 Pharmacokinetics",
     ),
+    "femhrt": source(
+        "DailyMed femhrt norethindrone acetate/ethinyl estradiol label",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=434511bb-ebf9-4e25-9ef8-90e4c6786361",
+        "regulatory-label",
+        "REGULATORY_LABEL",
+        "2 Dosage and Administration; 3 Dosage Forms and Strengths",
+    ),
     "estetrol": source(
         "DailyMed Nextstellis label",
         "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a",
@@ -193,6 +200,13 @@ SOURCES = {
         "human-pk-study",
         "HUMAN_STUDY",
     ),
+    "cma_label": source(
+        "Belara chlormadinone acetate/ethinylestradiol product information",
+        "https://mohpublic.z6.web.core.windows.net/IsraelDrugs/Rishum01_7_88033023.pdf",
+        "regulatory-label",
+        "REGULATORY_LABEL",
+        "Posology and method of administration",
+    ),
     "mpa": source(
         "DailyMed medroxyprogesterone acetate tablet label",
         "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5f5c46c-b8b7-4502-9d2b-8f12284d1a63",
@@ -213,6 +227,13 @@ SOURCES = {
         "regulatory-label",
         "REGULATORY_LABEL",
         "12.3 Pharmacokinetics",
+    ),
+    "slynd": source(
+        "DailyMed Slynd drospirenone label",
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db32bc55-f295-4d87-9dbb-0a2f45573dcf",
+        "regulatory-label",
+        "REGULATORY_LABEL",
+        "2 Dosage and Administration",
     ),
     "dydrogesterone": source(
         "Nalvee dydrogesterone SmPC",
@@ -528,6 +549,193 @@ def limited_progestin_model(roles: list[str], refs: list[dict]) -> dict:
         ],
         "sourceRefs": unique_sources(refs + [SOURCES["progestogen_review"]]),
     }
+
+
+def dose_range(
+    minimum: float | None,
+    maximum: float | None,
+    unit: str,
+    basis: str,
+    frequency: str,
+    range_kind: str,
+    label: str,
+    note: str,
+    components: list[dict] | None = None,
+) -> dict:
+    return {
+        "min": minimum,
+        "max": maximum,
+        "unit": unit,
+        "basis": basis,
+        "frequency": frequency,
+        "rangeKind": range_kind,
+        "label": label,
+        "note": note,
+        "components": components or [],
+    }
+
+
+def apply_regimen_overrides(entries: list[tuple[Path, dict, list[dict]]]) -> None:
+    not_recommendation = (
+        "This is a label- or study-reported regimen reference, not a dosing recommendation. "
+        "It must not be used for self-medication or dose adjustment."
+    )
+    overrides = {
+        "Estradiol": {
+            "indication": "Menopausal vasomotor symptoms or hypoestrogenism in the cited oral label",
+            "route": "oral",
+            "formulation": "micronized tablet",
+            "amountText": "1-2 mg estradiol daily in the cited oral label",
+            "scheduleText": "Daily; the cited label describes cyclic administration for some indications",
+            "ranges": [
+                dose_range(1, 2, "mg", "daily-total", "daily", "label-regimen", "Oral label regimen", not_recommendation),
+                dose_range(2, 4, "mg", "daily-total", "daily", "guideline-regimen", "UCSF guideline regimen", "A guideline-reported regimen is not an individualized recommendation. " + not_recommendation),
+            ],
+            "sourceRefs": [SOURCES["oral_e2"], SOURCES["ucsf"]],
+        },
+        "Oral Estradiol": {
+            "indication": "Menopausal vasomotor symptoms or hypoestrogenism in the cited label",
+            "amountText": "1-2 mg estradiol daily",
+            "scheduleText": "Daily; cyclic administration is described for some labeled indications",
+            "ranges": [dose_range(1, 2, "mg", "daily-total", "daily", "label-regimen", "Label regimen", not_recommendation)],
+        },
+        "Sublingual/Buccal Estradiol": {
+            "indication": "Human pharmacokinetic study regimen",
+            "amountText": "1 mg single sublingual estradiol dose in the cited PK study",
+            "scheduleText": "Single-dose crossover pharmacokinetic study",
+            "ranges": [dose_range(1, 1, "mg", "per-dose", "single study dose", "study-regimen", "PK study regimen", "Rapid peak exposure makes sampling time essential. " + not_recommendation)],
+        },
+        "Estradiol Transdermal Patch": {
+            "indication": "Approved transdermal estradiol product strengths",
+            "amountText": "0.025-0.1 mg estradiol delivered per day",
+            "scheduleText": "Product-specific once- or twice-weekly patch replacement",
+            "ranges": [dose_range(0.025, 0.1, "mg/day", "patch-delivery-rate", "continuous delivery; product-specific replacement interval", "label-regimen", "Patch delivery range", not_recommendation)],
+        },
+        "Estradiol Gel": {
+            "indication": "Menopausal vasomotor symptoms in the cited label",
+            "amountText": "0.25-1.25 mg estradiol applied daily",
+            "scheduleText": "Once daily transdermal application",
+            "ranges": [dose_range(0.25, 1.25, "mg", "daily-total", "once daily", "label-regimen", "Gel label regimen", not_recommendation)],
+        },
+        "Estradiol Spray": {
+            "indication": "Menopausal vasomotor symptoms in the cited label",
+            "amountText": "1-3 metered sprays daily; each spray contains 1.53 mg estradiol",
+            "scheduleText": "Once daily application",
+            "ranges": [dose_range(1, 3, "spray", "daily-total", "once daily", "label-regimen", "Metered spray regimen", "Delivered systemic exposure is not equivalent to the amount applied to skin. " + not_recommendation)],
+        },
+        "Estradiol Valerate Injection": {
+            "indication": "Female hypoestrogenism in the cited approved label",
+            "amountText": "10-20 mg intramuscularly",
+            "scheduleText": "Every 4 weeks in the cited label",
+            "ranges": [dose_range(10, 20, "mg", "per-dose", "every 4 weeks", "label-regimen", "Injection label regimen", "Peak/trough and assay timing are interval-sensitive. " + not_recommendation)],
+        },
+        "Estradiol Cypionate Injection": {
+            "indication": "Menopausal symptoms in the cited approved label",
+            "amountText": "1-5 mg intramuscularly",
+            "scheduleText": "Every 3-4 weeks in the cited label",
+            "ranges": [dose_range(1, 5, "mg", "per-dose", "every 3-4 weeks", "label-regimen", "Injection label regimen", "Peak/trough and assay timing are interval-sensitive. " + not_recommendation)],
+        },
+        "Estradiol Enanthate Injection": {
+            "indication": "Human pharmacokinetic study regimen",
+            "amountText": "10 mg intramuscular estradiol enanthate in the cited PK study",
+            "scheduleText": "Single study dose",
+            "ranges": [dose_range(10, 10, "mg", "per-dose", "single study dose", "study-regimen", "PK study regimen", "This is not a standalone-product label regimen; peak/trough and assay timing are interval-sensitive. " + not_recommendation)],
+        },
+        "Oral Estradiol Valerate": {
+            "indication": "Menopausal symptoms in the cited SmPC",
+            "amountText": "1-2 mg estradiol valerate daily",
+            "scheduleText": "Continuous once-daily administration in the cited SmPC",
+            "ranges": [dose_range(1, 2, "mg", "daily-total", "once daily", "label-regimen", "SmPC regimen", not_recommendation)],
+        },
+        "Conjugated Estrogens": {
+            "indication": "Female hypogonadism in the cited label",
+            "amountText": "0.3-0.625 mg conjugated estrogens daily",
+            "scheduleText": "Cyclic administration is described in the cited label",
+            "ranges": [dose_range(0.3, 0.625, "mg", "daily-total", "daily, cyclic regimen", "label-regimen", "Label regimen", "This mixture must not be interpreted as ordinary serum estradiol exposure. " + not_recommendation)],
+        },
+        "Ethinylestradiol": {
+            "indication": "Component dose in cited menopausal combination products",
+            "amountText": "2.5-5 mcg ethinylestradiol component per tablet",
+            "scheduleText": "One combination tablet daily in the cited label",
+            "ranges": [dose_range(None, None, "mcg", "component-dose", "once daily", "label-regimen", "Ethinylestradiol component", "Do not interpret as ordinary serum E2.", [{"substance": "ethinylestradiol", "min": 2.5, "max": 5, "unit": "mcg"}])],
+            "sourceRefs": [SOURCES["femhrt"]],
+        },
+        "Estetrol": {
+            "indication": "Component dose in the cited combined oral contraceptive label",
+            "amountText": "14.2 mg estetrol component in each active tablet",
+            "scheduleText": "One active tablet daily for 24 days, followed by 4 inert tablets",
+            "ranges": [dose_range(None, None, "mg", "component-dose", "once daily for 24 active days per 28-day pack", "label-regimen", "Estetrol component", not_recommendation, [{"substance": "estetrol", "min": 14.2, "max": 14.2, "unit": "mg"}])],
+        },
+        "Cyproterone Acetate": {
+            "indication": "Androgen-dependent indications in the cited Androcur SmPC",
+            "amountText": "50 mg twice daily at treatment initiation in the cited high-dose SmPC",
+            "scheduleText": "Twice daily after meals; indication-specific tapering is described",
+            "ranges": [dose_range(100, 100, "mg", "daily-total", "50 mg twice daily", "label-regimen", "High-dose approved-label regimen", "This approved-label regimen is not a feminizing-HRT recommendation. Cumulative exposure affects meningioma risk. " + not_recommendation)],
+        },
+        "Chlormadinone Acetate": {
+            "indication": "Component dose in a cited combined oral contraceptive product",
+            "amountText": "2 mg chlormadinone acetate component per active tablet",
+            "scheduleText": "One active tablet daily for 21 days followed by a 7-day break",
+            "ranges": [dose_range(None, None, "mg", "component-dose", "once daily for 21 days", "label-regimen", "Chlormadinone component", not_recommendation, [{"substance": "chlormadinone acetate", "min": 2, "max": 2, "unit": "mg"}])],
+            "sourceRefs": [SOURCES["cma_label"]],
+        },
+        "Medroxyprogesterone Acetate": {
+            "indication": "Endometrial protection with daily conjugated estrogens in the cited oral label",
+            "amountText": "5-10 mg medroxyprogesterone acetate daily",
+            "scheduleText": "12-14 consecutive days per month in the cited label",
+            "ranges": [dose_range(5, 10, "mg", "daily-total", "12-14 days per month", "label-regimen", "Oral label regimen", not_recommendation)],
+        },
+        "Nomegestrol Acetate": {
+            "indication": "Component dose in the cited combined oral contraceptive SmPC",
+            "amountText": "2.5 mg nomegestrol acetate component per active tablet",
+            "scheduleText": "One active tablet daily for 24 days followed by 4 placebo tablets",
+            "ranges": [dose_range(None, None, "mg", "component-dose", "once daily for 24 active days", "label-regimen", "Nomegestrol component", not_recommendation, [{"substance": "nomegestrol acetate", "min": 2.5, "max": 2.5, "unit": "mg"}])],
+        },
+        "Drospirenone": {
+            "indication": "Progestin-only contraception in the cited label",
+            "amountText": "4 mg drospirenone per active tablet",
+            "scheduleText": "One active tablet daily for 24 days followed by 4 inert tablets",
+            "ranges": [dose_range(4, 4, "mg", "per-dose", "once daily for 24 active days", "label-regimen", "Label regimen", not_recommendation)],
+            "sourceRefs": [SOURCES["slynd"]],
+        },
+        "Dydrogesterone": {
+            "indication": "Progestogen supplementation with estrogen therapy in the cited SmPC",
+            "amountText": "10-20 mg dydrogesterone daily depending on cited regimen and clinical context",
+            "scheduleText": "Last 12-14 days of an estrogen cycle in the cited HRT section",
+            "ranges": [dose_range(10, 20, "mg", "daily-total", "12-14 days per cycle", "label-regimen", "SmPC regimen", not_recommendation)],
+        },
+        "Micronized Progesterone": {
+            "indication": "Prevention of endometrial hyperplasia with estrogen in the cited label",
+            "amountText": "200 mg micronized progesterone at bedtime",
+            "scheduleText": "12 consecutive days per 28-day cycle",
+            "ranges": [dose_range(200, 200, "mg", "per-dose", "bedtime for 12 days per 28-day cycle", "label-regimen", "Label regimen", "Sedation and dizziness are clinically relevant. " + not_recommendation)],
+        },
+        "Norethisterone Acetate": {
+            "indication": "Endometriosis in the cited label",
+            "amountText": "5-15 mg norethisterone acetate daily during label titration",
+            "scheduleText": "Initial 5 mg daily with label-described stepwise increases",
+            "ranges": [dose_range(5, 15, "mg", "daily-total", "daily", "label-regimen", "Label titration range", not_recommendation)],
+        },
+        "Levonorgestrel": {
+            "indication": "Emergency contraception in the cited label",
+            "amountText": "1.5 mg levonorgestrel as a single oral dose",
+            "scheduleText": "As soon as possible within 72 hours in the cited label",
+            "ranges": [dose_range(1.5, 1.5, "mg", "per-dose", "single dose", "label-regimen", "Label regimen", not_recommendation)],
+        },
+        "Dienogest": {
+            "indication": "Endometriosis in the cited SmPC",
+            "amountText": "2 mg dienogest daily",
+            "scheduleText": "Continuous once-daily administration",
+            "ranges": [dose_range(2, 2, "mg", "daily-total", "once daily", "label-regimen", "SmPC regimen", not_recommendation)],
+        },
+    }
+    for _, substance, _ in entries:
+        override = overrides[substance["name"]]
+        reference = substance["doseUseReferences"][0]
+        reference.update(override)
+        reference["note"] = not_recommendation
+        reference["sourceType"] = reference["sourceRefs"][0]["sourceType"]
+        reference["evidenceLevel"] = reference["sourceRefs"][0]["evidenceLevel"]
 
 
 def candidate_suppressor_model(roles: list[str], refs: list[dict]) -> dict:
@@ -1244,6 +1452,7 @@ def build_entries() -> list[tuple[Path, dict, list[dict]]]:
             ),
         )
 
+    apply_regimen_overrides(entries)
     return entries
 
 

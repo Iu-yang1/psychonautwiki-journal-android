@@ -188,29 +188,23 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Guideline and approved-label contexts",
+          "indication": "Menopausal vasomotor symptoms or hypoestrogenism in the cited oral label",
           "population": "Adults; product- and indication-specific",
-          "route": "multiple routes",
-          "formulation": "route-specific formulations",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
-          "sourceType": "clinical-guideline",
-          "evidenceLevel": "CLINICAL_GUIDELINE",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "route": "oral",
+          "formulation": "micronized tablet",
+          "amountText": "1-2 mg estradiol daily in the cited oral label",
+          "scheduleText": "Daily; the cited label describes cyclic administration for some indications",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
-              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-              "sourceType": "clinical-guideline",
+              "title": "DailyMed Activella label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE"
-            },
-            {
-              "title": "WPATH Standards of Care Version 8",
-              "url": "https://wpath.org/publications/soc8/",
-              "sourceType": "clinical-guideline",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE"
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
             },
             {
               "title": "UCSF Overview of feminizing hormone therapy",
@@ -218,6 +212,30 @@
               "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "CLINICAL_GUIDELINE"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 1,
+              "max": 2,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "daily",
+              "rangeKind": "label-regimen",
+              "label": "Oral label regimen",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            },
+            {
+              "min": 2,
+              "max": 4,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "daily",
+              "rangeKind": "guideline-regimen",
+              "label": "UCSF guideline regimen",
+              "note": "A guideline-reported regimen is not an individualized recommendation. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

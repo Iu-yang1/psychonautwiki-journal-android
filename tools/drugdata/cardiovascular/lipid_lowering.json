@@ -145,17 +145,43 @@
       },
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 10,
-            "commonMin": 20,
-            "strongMin": 40,
-            "heavyMin": 80
-          }
+          "name": "ORAL"
         }
       ],
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
+      "doseUseReferences": [
+        {
+          "indication": "Hyperlipidemia and cardiovascular-risk indications in the cited label",
+          "population": "Adults; indication- and label-specific",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "10-80 mg once daily",
+          "scheduleText": "Once daily",
+          "ranges": [
+            {
+              "min": 10,
+              "max": 80,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "note": "This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "Clinical context, indication, renal function, electrolytes, blood pressure, heart rate, ECG, INR/anti-Xa, and interacting drugs may change interpretation. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed atorvastatin calcium label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

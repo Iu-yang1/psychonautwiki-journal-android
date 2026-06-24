@@ -167,31 +167,43 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label context",
+          "indication": "Component dose in cited menopausal combination products",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "2.5-5 mcg ethinylestradiol component per tablet",
+          "scheduleText": "One combination tablet daily in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
-              "title": "DailyMed norethindrone acetate and ethinyl estradiol label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e6634d24-08af-44bc-8e76-e759619857fa&type=display",
+              "title": "DailyMed femhrt norethindrone acetate/ethinyl estradiol label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=434511bb-ebf9-4e25-9ef8-90e4c6786361",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
-            },
+              "labelSection": "2 Dosage and Administration; 3 Dosage Forms and Strengths"
+            }
+          ],
+          "ranges": [
             {
-              "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
-              "sourceType": "assay-study",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "HUMAN_STUDY",
-              "note": "Assay bias can depend on formulation and assay platform."
+              "min": null,
+              "max": null,
+              "unit": "mcg",
+              "basis": "component-dose",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Ethinylestradiol component",
+              "note": "Do not interpret as ordinary serum E2.",
+              "components": [
+                {
+                  "substance": "ethinylestradiol",
+                  "min": 2.5,
+                  "max": 5,
+                  "unit": "mcg"
+                }
+              ]
             }
           ]
         }

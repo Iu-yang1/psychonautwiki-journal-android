@@ -161,16 +161,54 @@
       },
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 2.5,
-            "commonMin": 5,
-            "strongMin": 10
-          }
+          "name": "ORAL"
         }
       ],
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension in the cited adult label",
+          "population": "Adults; indication- and label-specific",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "5 mg initial label dose; maximum 10 mg once daily",
+          "scheduleText": "Once daily",
+          "ranges": [
+            {
+              "min": 2.5,
+              "max": 5,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "once daily",
+              "rangeKind": "initial",
+              "label": "Initial reference",
+              "note": "This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            },
+            {
+              "min": null,
+              "max": 10,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "maximum-labeled",
+              "label": "Upper bound",
+              "note": "This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "Clinical context, indication, renal function, electrolytes, blood pressure, heart rate, ECG, INR/anti-Xa, and interacting drugs may change interpretation. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed amlodipine besylate label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Nitroglycerin",
@@ -368,34 +406,113 @@
       },
       "roas": [
         {
-          "name": "SUBLINGUAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 0.3,
-            "commonMin": 0.4,
-            "strongMin": 0.6
-          }
+          "name": "SUBLINGUAL"
         },
         {
-          "name": "TRANSDERMAL",
-          "dose": {
-            "units": "mg/h",
-            "lightMin": 0.1,
-            "commonMin": 0.2,
-            "strongMin": 0.4
-          }
+          "name": "TRANSDERMAL"
         },
         {
-          "name": "INTRAVENOUS",
-          "dose": {
-            "units": "mcg/min",
-            "lightMin": 5,
-            "commonMin": 10,
-            "strongMin": 20
-          }
+          "name": "INTRAVENOUS"
         }
       ],
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
+      "doseUseReferences": [
+        {
+          "indication": "Acute angina in the cited sublingual label",
+          "population": "Adults; indication- and label-specific",
+          "route": "sublingual",
+          "formulation": "tablet",
+          "amountText": "0.3-0.6 mg per sublingual dose",
+          "scheduleText": "May be repeated at 5-minute intervals up to the cited label limit",
+          "ranges": [
+            {
+              "min": 0.3,
+              "max": 0.6,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "5-minute intervals when indicated by label",
+              "rangeKind": "label-regimen",
+              "label": "Sublingual label regimen",
+              "note": "This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "Clinical context, indication, renal function, electrolytes, blood pressure, heart rate, ECG, INR/anti-Xa, and interacting drugs may change interpretation. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed nitroglycerin sublingual tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "indication": "Angina pectoris",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "transdermal",
+          "formulation": "patch",
+          "amountText": "0.1-0.4 mg/h legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 0.1,
+              "max": 0.4,
+              "unit": "mg/h",
+              "basis": "patch-delivery-rate",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed nitroglycerin transdermal system label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e98a2692-1cb9-4994-98d8-1d8d9ef1a256",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "indication": "Angina pectoris",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "intravenous",
+          "formulation": "infusion",
+          "amountText": "5-20 mcg/min legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 5,
+              "max": 20,
+              "unit": "mcg/min",
+              "basis": "infusion-rate",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "source-needed",
+          "evidenceLevel": "LITERATURE_OR_DATABASE",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed nitroglycerin reference search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=nitroglycerin%20injection",
+              "sourceType": "source-needed",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -169,15 +169,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label or pharmacokinetic literature context",
+          "indication": "Human pharmacokinetic study regimen",
           "population": "Adults; product- and indication-specific",
           "route": "intramuscular",
           "formulation": "oil depot injection",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "10 mg intramuscular estradiol enanthate in the cited PK study",
+          "scheduleText": "Single study dose",
           "sourceType": "human-pk-study",
           "evidenceLevel": "HUMAN_STUDY",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Pharmacokinetic studies of estradiol enanthate in menopausal women",
@@ -185,6 +185,19 @@
               "sourceType": "human-pk-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 10,
+              "max": 10,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "single study dose",
+              "rangeKind": "study-regimen",
+              "label": "PK study regimen",
+              "note": "This is not a standalone-product label regimen; peak/trough and assay timing are interval-sensitive. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

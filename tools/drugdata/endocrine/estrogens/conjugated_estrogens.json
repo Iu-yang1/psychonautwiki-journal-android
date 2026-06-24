@@ -161,15 +161,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label context",
+          "indication": "Female hypogonadism in the cited label",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "0.3-0.625 mg conjugated estrogens daily",
+          "scheduleText": "Cyclic administration is described in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Premarin label",
@@ -186,6 +186,19 @@
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY",
               "note": "Assay bias can depend on formulation and assay platform."
+            }
+          ],
+          "ranges": [
+            {
+              "min": 0.3,
+              "max": 0.625,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "daily, cyclic regimen",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "note": "This mixture must not be interpreted as ordinary serum estradiol exposure. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

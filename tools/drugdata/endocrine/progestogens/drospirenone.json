@@ -160,30 +160,36 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label context",
+          "indication": "Progestin-only contraception in the cited label",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet or capsule",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "4 mg drospirenone per active tablet",
+          "scheduleText": "One active tablet daily for 24 days followed by 4 inert tablets",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
-              "title": "DailyMed drospirenone and ethinyl estradiol label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0f8f8a21-cee8-462f-98b3-6c06f2f33e0d",
+              "title": "DailyMed Slynd drospirenone label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db32bc55-f295-4d87-9dbb-0a2f45573dcf",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
-            },
+              "labelSection": "2 Dosage and Administration"
+            }
+          ],
+          "ranges": [
             {
-              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-              "sourceType": "systematic-review",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SYSTEMATIC_REVIEW"
+              "min": 4,
+              "max": 4,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "once daily for 24 active days",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

@@ -141,16 +141,43 @@
       },
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 75,
-            "commonMin": 300,
-            "strongMin": 600
-          }
+          "name": "ORAL"
         }
       ],
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
+      "doseUseReferences": [
+        {
+          "indication": "Reduction of atherothrombotic events in selected cardiovascular contexts depending on label",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "75-600 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 75,
+              "max": 600,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed clopidogrel label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Apixaban",
@@ -296,16 +323,43 @@
       },
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 2.5,
-            "commonMin": 5,
-            "strongMin": 10
-          }
+          "name": "ORAL"
         }
       ],
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。"
+      "doseUseReferences": [
+        {
+          "indication": "Multiple anticoagulation indications in the cited label",
+          "population": "Adults; indication- and label-specific",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "2.5-10 mg per dose across distinct cited label regimens",
+          "scheduleText": "Once or twice daily depending on indication and treatment phase",
+          "ranges": [
+            {
+              "min": 2.5,
+              "max": 10,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "indication- and phase-specific",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen span",
+              "note": "This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "The endpoints represent different indications and phases and must not be treated as an interchangeable titration range. Renal function, age, weight, bleeding risk, and interacting drugs matter. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed apixaban/Eliquis label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

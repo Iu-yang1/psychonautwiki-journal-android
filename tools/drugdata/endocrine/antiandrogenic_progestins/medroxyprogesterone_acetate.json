@@ -159,15 +159,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label or literature context",
+          "indication": "Endometrial protection with daily conjugated estrogens in the cited oral label",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "5-10 mg medroxyprogesterone acetate daily",
+          "scheduleText": "12-14 consecutive days per month in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed medroxyprogesterone acetate tablet label",
@@ -183,6 +183,19 @@
               "sourceType": "systematic-review",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 5,
+              "max": 10,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "12-14 days per month",
+              "rangeKind": "label-regimen",
+              "label": "Oral label regimen",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

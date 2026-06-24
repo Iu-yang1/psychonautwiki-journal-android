@@ -156,6 +156,19 @@ def main() -> int:
                 errors.append(f"{prefix}: numeric dose reference has no sourceRefs")
             if reference.get("amountText", "").strip().lower() == "source needed":
                 warnings.append(f"{name}: dose amount remains source needed")
+            for range_index, dose_range in enumerate(reference.get("ranges", [])):
+                has_number = isinstance(dose_range.get("min"), (int, float)) or isinstance(
+                    dose_range.get("max"), (int, float)
+                )
+                has_component_number = any(
+                    isinstance(component.get("min"), (int, float))
+                    or isinstance(component.get("max"), (int, float))
+                    for component in dose_range.get("components", [])
+                )
+                if (has_number or has_component_number) and not reference.get("sourceRefs"):
+                    errors.append(
+                        f"{prefix}: numeric ranges[{range_index}] has no sourceRefs"
+                    )
 
         refs = list(source_refs_in(substance))
         if not refs:

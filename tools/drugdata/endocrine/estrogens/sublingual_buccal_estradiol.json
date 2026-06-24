@@ -175,15 +175,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label or guideline context",
+          "indication": "Human pharmacokinetic study regimen",
           "population": "Adults; product- and indication-specific",
           "route": "sublingual",
           "formulation": "micronized tablet used sublingually or buccally",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "1 mg single sublingual estradiol dose in the cited PK study",
+          "scheduleText": "Single-dose crossover pharmacokinetic study",
           "sourceType": "human-pk-study",
           "evidenceLevel": "HUMAN_STUDY",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Pharmacokinetics of Sublingual Versus Oral Estradiol in Transgender Women",
@@ -198,6 +198,19 @@
               "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "CLINICAL_GUIDELINE"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 1,
+              "max": 1,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "single study dose",
+              "rangeKind": "study-regimen",
+              "label": "PK study regimen",
+              "note": "Rapid peak exposure makes sampling time essential. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

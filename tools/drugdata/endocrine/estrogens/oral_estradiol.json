@@ -175,15 +175,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label or guideline context",
+          "indication": "Menopausal vasomotor symptoms or hypoestrogenism in the cited label",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "micronized tablet",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "1-2 mg estradiol daily",
+          "scheduleText": "Daily; cyclic administration is described for some labeled indications",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Activella label",
@@ -199,6 +199,19 @@
               "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "CLINICAL_GUIDELINE"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 1,
+              "max": 2,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "daily",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

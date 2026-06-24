@@ -44,11 +44,52 @@ def atc_codes(substance: dict) -> list[str]:
     return [code for code in clinical.get("atcCodes", []) if isinstance(code, str)]
 
 
+def has_legacy_roa_dose(substance: dict) -> bool:
+    return any(isinstance(roa.get("dose"), dict) for roa in substance.get("roas", []))
+
+
+def validate_dose_references(substance: dict) -> list[str]:
+    errors: list[str] = []
+    references = substance.get("doseUseReferences", [])
+    if not references:
+        return ["missing doseUseReferences"]
+    for index, reference in enumerate(references):
+        prefix = f"doseUseReferences[{index}]"
+        if not reference.get("amountText"):
+            errors.append(f"{prefix} missing amountText")
+        for range_index, dose_range in enumerate(reference.get("ranges", [])):
+            has_number = isinstance(dose_range.get("min"), (int, float)) or isinstance(
+                dose_range.get("max"), (int, float)
+            )
+            has_component_number = any(
+                isinstance(component.get("min"), (int, float))
+                or isinstance(component.get("max"), (int, float))
+                for component in dose_range.get("components", [])
+            )
+            if (has_number or has_component_number) and not reference.get("sourceRefs"):
+                errors.append(f"{prefix}.ranges[{range_index}] numeric range missing sourceRefs")
+    clinical = substance.get("clinicalInfo") or {}
+    anticoagulant = " ".join(
+        clinical.get("drugClass", []) + clinical.get("indications", [])
+    ).lower()
+    if "anticoagulant" in anticoagulant or "anticoagulation" in anticoagulant:
+        caveat = " ".join(
+            str(reference.get("note", ""))
+            + " "
+            + " ".join(str(item.get("note", "")) for item in reference.get("ranges", []))
+            for reference in references
+        ).lower()
+        if not any(term in caveat for term in ("inr", "anti-xa", "bleeding")):
+            errors.append("anticoagulant dose reference missing INR/anti-Xa/bleeding caveat")
+    return errors
+
+
 def main() -> int:
     missing_time_course: list[tuple[str, str]] = []
     missing_atc: list[tuple[str, str]] = []
     missing_source: list[tuple[str, str]] = []
     missing_chinese: list[tuple[str, str]] = []
+    dose_reference_errors: list[tuple[str, str, str]] = []
     group_counts = {prefix: 0 for prefix in ATC_PREFIXES}
     total = 0
     for path in sorted(SOURCE_DIR.glob("*.json")):
@@ -69,13 +110,26 @@ def main() -> int:
                 missing_source.append((path.name, name))
             if not contains_chinese(substance.get("commonNames", [])):
                 missing_chinese.append((path.name, name))
+            if has_legacy_roa_dose(substance):
+                dose_reference_errors.append((path.name, name, "legacy roas.dose remains"))
+            for error in validate_dose_references(substance):
+                dose_reference_errors.append((path.name, name, error))
 
     print(f"Checked cardiovascular substances: {total}")
     print("ATC group counts:")
     for prefix, count in group_counts.items():
         print(f"- {prefix}: {count}")
-    if not (missing_time_course or missing_atc or missing_source or missing_chinese):
-        print("All cardiovascular substances have numeric drawable timeCourse data, ATC codes, sourceRefs, and Chinese common names.")
+    if not (
+        missing_time_course
+        or missing_atc
+        or missing_source
+        or missing_chinese
+        or dose_reference_errors
+    ):
+        print(
+            "All cardiovascular substances have numeric drawable timeCourse data, "
+            "ATC codes, sourceRefs, Chinese common names, and migrated doseUseReferences."
+        )
         return 0
 
     if missing_time_course:
@@ -94,6 +148,10 @@ def main() -> int:
         print("Missing Chinese commonNames:")
         for filename, name in missing_chinese:
             print(f"- {filename}: {name}")
+    if dose_reference_errors:
+        print("Dose reference migration errors:")
+        for filename, name, error in dose_reference_errors:
+            print(f"- {filename}: {name}: {error}")
     return 1
 
 

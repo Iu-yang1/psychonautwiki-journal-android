@@ -226,15 +226,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label and feminizing hormone therapy literature contexts",
+          "indication": "Androgen-dependent indications in the cited Androcur SmPC",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "50 mg twice daily at treatment initiation in the cited high-dose SmPC",
+          "scheduleText": "Twice daily after meals; indication-specific tapering is described",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Androcur 50 mg tablets SmPC",
@@ -257,6 +257,19 @@
               "sourceType": "clinical-study",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 100,
+              "max": 100,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "50 mg twice daily",
+              "rangeKind": "label-regimen",
+              "label": "High-dose approved-label regimen",
+              "note": "This approved-label regimen is not a feminizing-HRT recommendation. Cumulative exposure affects meningioma risk. This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

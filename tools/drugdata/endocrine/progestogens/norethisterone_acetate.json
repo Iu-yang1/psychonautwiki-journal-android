@@ -167,15 +167,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label context",
+          "indication": "Endometriosis in the cited label",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet or capsule",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "5-15 mg norethisterone acetate daily during label titration",
+          "scheduleText": "Initial 5 mg daily with label-described stepwise increases",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed norethindrone acetate tablet label",
@@ -191,6 +191,19 @@
               "sourceType": "systematic-review",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 5,
+              "max": 15,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "daily",
+              "rangeKind": "label-regimen",
+              "label": "Label titration range",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

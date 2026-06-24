@@ -176,15 +176,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label or literature context",
+          "indication": "Component dose in the cited combined oral contraceptive SmPC",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "2.5 mg nomegestrol acetate component per active tablet",
+          "scheduleText": "One active tablet daily for 24 days followed by 4 placebo tablets",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Zoely SmPC",
@@ -200,6 +200,26 @@
               "sourceType": "systematic-review",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ],
+          "ranges": [
+            {
+              "min": null,
+              "max": null,
+              "unit": "mg",
+              "basis": "component-dose",
+              "frequency": "once daily for 24 active days",
+              "rangeKind": "label-regimen",
+              "label": "Nomegestrol component",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": [
+                {
+                  "substance": "nomegestrol acetate",
+                  "min": 2.5,
+                  "max": 2.5,
+                  "unit": "mg"
+                }
+              ]
             }
           ]
         }

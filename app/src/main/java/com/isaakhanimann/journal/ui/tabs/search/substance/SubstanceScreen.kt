@@ -72,7 +72,6 @@ import com.isaakhanimann.journal.data.room.experiences.entities.CustomUnit
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
 import com.isaakhanimann.journal.data.substances.classes.Category
 import com.isaakhanimann.journal.data.substances.classes.ClinicalInfo
-import com.isaakhanimann.journal.data.substances.classes.DoseUseReference
 import com.isaakhanimann.journal.data.substances.classes.EndocrineInfo
 import com.isaakhanimann.journal.data.substances.classes.HrtModelInfo
 import com.isaakhanimann.journal.data.substances.classes.SourceRef
@@ -254,7 +253,12 @@ fun SubstanceScreen(
                 TimeCourseSection(timeCourses = substance.timeCourse)
             }
             if (substance.doseUseReferences.isNotEmpty()) {
-                DoseUseReferencesSection(references = substance.doseUseReferences)
+                DoseUseReferenceSection(
+                    references = substance.doseUseReferences,
+                    isCardiovascular = "cardiovascular" in substance.categories,
+                    isEndocrine =
+                        "endocrine" in substance.categories || "hrt-related" in substance.categories
+                )
             }
             if (substance.hrtModelInfo != null) {
                 HrtModelReadinessSection(hrtModelInfo = substance.hrtModelInfo)
@@ -676,59 +680,6 @@ fun TimeCourseSection(timeCourses: List<TimeCourse>) {
                 }
                 if (index < timeCourses.size - 1) {
                     HorizontalDivider()
-                }
-            }
-            VerticalSpace()
-        }
-    }
-}
-
-@Composable
-fun DoseUseReferencesSection(references: List<DoseUseReference>) {
-    SectionWithTitle(title = stringResource(R.string.dose_use_references_title)) {
-        Column(Modifier.padding(horizontal = horizontalPadding)) {
-            Text(
-                text = stringResource(R.string.dose_use_references_disclaimer),
-                style = MaterialTheme.typography.bodySmall
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            references.forEachIndexed { index, reference ->
-                ClinicalInfoTextRow(
-                    stringResource(R.string.dose_reference_indication),
-                    reference.indication
-                )
-                ClinicalInfoTextRow(
-                    stringResource(R.string.dose_reference_population),
-                    reference.population
-                )
-                ClinicalInfoTextRow(
-                    stringResource(R.string.dose_reference_route),
-                    localizedClinicalRouteText(reference.route)
-                )
-                ClinicalInfoTextRow(
-                    stringResource(R.string.dose_reference_formulation),
-                    reference.formulation
-                )
-                ClinicalInfoTextRow(
-                    stringResource(R.string.dose_reference_amount),
-                    reference.amountText
-                )
-                ClinicalInfoTextRow(
-                    stringResource(R.string.dose_reference_schedule),
-                    reference.scheduleText
-                )
-                ClinicalInfoTextRow(
-                    stringResource(R.string.dose_reference_source_type),
-                    reference.sourceType
-                )
-                ClinicalInfoTextRow(
-                    stringResource(R.string.dose_reference_evidence_level),
-                    reference.evidenceLevel
-                )
-                ClinicalInfoTextRow(stringResource(R.string.dose_reference_note), reference.note)
-                SourceRefs(sourceRefs = reference.sourceRefs)
-                if (index < references.lastIndex) {
-                    HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
                 }
             }
             VerticalSpace()

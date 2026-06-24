@@ -173,15 +173,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label context",
+          "indication": "Progestogen supplementation with estrogen therapy in the cited SmPC",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet or capsule",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "10-20 mg dydrogesterone daily depending on cited regimen and clinical context",
+          "scheduleText": "Last 12-14 days of an estrogen cycle in the cited HRT section",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Nalvee dydrogesterone SmPC",
@@ -197,6 +197,19 @@
               "sourceType": "systematic-review",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 10,
+              "max": 20,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "12-14 days per cycle",
+              "rangeKind": "label-regimen",
+              "label": "SmPC regimen",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

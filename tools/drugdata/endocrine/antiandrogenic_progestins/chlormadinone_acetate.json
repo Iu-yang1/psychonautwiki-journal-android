@@ -174,29 +174,43 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label or literature context",
+          "indication": "Component dose in a cited combined oral contraceptive product",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
-          "sourceType": "human-pk-study",
-          "evidenceLevel": "HUMAN_STUDY",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "amountText": "2 mg chlormadinone acetate component per active tablet",
+          "scheduleText": "One active tablet daily for 21 days followed by a 7-day break",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
-              "title": "Pharmacokinetics of chlormadinone acetate following single and multiple dosing",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
-              "sourceType": "human-pk-study",
+              "title": "Belara chlormadinone acetate/ethinylestradiol product information",
+              "url": "https://mohpublic.z6.web.core.windows.net/IsraelDrugs/Rishum01_7_88033023.pdf",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-24",
-              "evidenceLevel": "HUMAN_STUDY"
-            },
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "Posology and method of administration"
+            }
+          ],
+          "ranges": [
             {
-              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-              "sourceType": "systematic-review",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SYSTEMATIC_REVIEW"
+              "min": null,
+              "max": null,
+              "unit": "mg",
+              "basis": "component-dose",
+              "frequency": "once daily for 21 days",
+              "rangeKind": "label-regimen",
+              "label": "Chlormadinone component",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": [
+                {
+                  "substance": "chlormadinone acetate",
+                  "min": 2,
+                  "max": 2,
+                  "unit": "mg"
+                }
+              ]
             }
           ]
         }

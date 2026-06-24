@@ -162,15 +162,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label context",
+          "indication": "Endometriosis in the cited SmPC",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet or capsule",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "2 mg dienogest daily",
+          "scheduleText": "Continuous once-daily administration",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Sawis dienogest SmPC",
@@ -186,6 +186,19 @@
               "sourceType": "systematic-review",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 2,
+              "max": 2,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "SmPC regimen",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

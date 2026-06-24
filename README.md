@@ -159,6 +159,29 @@ python tools/drugdata/build_substances_json.py
 
 The base files normally do not need to be regenerated. `tools/drugdata/initialize_substances_base.py` is a migration utility for deliberately rebuilding the base boundary from an existing generated resource.
 
+## Dose use references / Reference regimen bars
+
+`doseUseReferences` is the clinical-medicine dose-use indexing structure used by cardiovascular and Endocrine / HRT entries. It is separate from the original PsychonautWiki `roas.dose` model.
+
+The original `roas.dose` fields and their `light`, `common`, `strong`, and `heavy` labels describe the legacy PsychonautWiki-style recreational dose classification. They must not be used to represent prescription-medicine regimens. All currently managed cardiovascular and Endocrine / HRT entries have been migrated away from `roas.dose`.
+
+`ReferenceRegimenBar` displays ranges reported in labels, guidelines, protocols, or studies. It can distinguish:
+
+- per-dose, daily-total, weekly-total, patch-delivery-rate, infusion-rate, weight-based, body-surface-area-based, and component-dose bases;
+- initial, maintenance, maximum-labeled, study, guideline, label, and protocol ranges;
+- scalar ranges from component-aware combination products.
+
+The bar is not a recommended dose. It must not be used for prescribing, self-medication, dose adjustment, anticoagulant titration, or self-adjustment of hormone therapy. Cardiovascular interpretation can depend on indication, renal function, electrolytes, blood pressure, heart rate, ECG, INR or anti-Xa results, bleeding risk, and interacting drugs. Hormone interpretation can depend on route, formulation, time since the last dose, assay method, SHBG, albumin, liver function, and individual absorption.
+
+Every numeric range must retain `sourceRefs`. When a reliable numeric range is unavailable, use `source needed` and null boundaries rather than inventing a value.
+
+Clinical dose-reference maintenance commands:
+
+```bash
+python tools/drugdata/migrate_clinical_dose_references.py
+python tools/drugdata/check_clinical_dose_references.py
+```
+
 ## License
 
     This file is part of PsychonautWiki Journal.

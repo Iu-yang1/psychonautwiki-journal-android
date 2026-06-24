@@ -117,17 +117,43 @@
         "reason": "Clinical use is usually guided by heart rate, blood pressure, symptoms, ECG context, organ function, and interacting drugs rather than plasma concentration.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 2.5,
-            "commonMin": 5,
-            "strongMin": 10,
-            "heavyMin": 20
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "2.5-20 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 2.5,
+              "max": 20,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed bisoprolol fumarate label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -243,17 +269,43 @@
         "reason": "Monitoring is usually clinical rather than concentration-guided.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 2.5,
-            "commonMin": 5,
-            "strongMin": 10,
-            "heavyMin": 40
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "2.5-40 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 2.5,
+              "max": 40,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed BYSTOLIC label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=07ed02ff-523f-437e-bddc-5c41a4bb0062",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -372,27 +424,84 @@
         "reason": "Clinical response and safety are monitored using blood pressure, heart rate, symptoms, and clinical context.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 100,
-            "commonMin": 200,
-            "strongMin": 400,
-            "heavyMin": 2400
-          }
+          "name": "ORAL"
         },
         {
-          "name": "INTRAVENOUS",
-          "dose": {
-            "units": "mg",
-            "lightMin": 20,
-            "commonMin": 40,
-            "strongMin": 80,
-            "heavyMin": 300
-          }
+          "name": "INTRAVENOUS"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "100-2400 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 100,
+              "max": 2400,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed labetalol hydrochloride tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
+        },
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "intravenous",
+          "formulation": null,
+          "amountText": "20-300 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 20,
+              "max": 300,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed labetalol hydrochloride tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "WHO ATC/DDD Index: C07AG01",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07AG01",
+              "sourceType": "terminology",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -511,17 +620,43 @@
         "reason": "Clinical use is guided by blood pressure, renal function, potassium, symptoms, and local labeling rather than plasma concentration.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 2.5,
-            "commonMin": 5,
-            "strongMin": 10,
-            "heavyMin": 40
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "2.5-40 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 2.5,
+              "max": 40,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed enalapril maleate label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a88902bd-742f-4ea6-b625-cc9df1709efc&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -638,17 +773,43 @@
         "reason": "Clinical use is usually guided by blood pressure, renal function, potassium, symptoms, and local approved labeling.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 40,
-            "commonMin": 80,
-            "strongMin": 160,
-            "heavyMin": 320
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "40-320 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 40,
+              "max": 320,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed valsartan tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8478a05f-38fd-412d-af49-69a73a787c8f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -806,17 +967,49 @@
         "reason": "Clinical monitoring usually focuses on heart rate, blood pressure, ECG/conduction, heart failure symptoms, and interactions.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg/day",
-            "lightMin": 120,
-            "commonMin": 180,
-            "strongMin": 240,
-            "heavyMin": 480
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "immediate-release tablet",
+          "amountText": "120-480 mg/day legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 120,
+              "max": 480,
+              "unit": "mg/day",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed verapamil hydrochloride tablet label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f00c1caf-68b6-40c1-a1fa-72d17d2cf44f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "DailyMed verapamil extended-release label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3bee2d26-138c-4641-a217-a38d3d657461",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -973,17 +1166,49 @@
         "reason": "Clinical use is usually guided by blood pressure, heart rate, symptoms, edema, and interacting drugs rather than plasma concentration.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 10,
-            "commonMin": 30,
-            "strongMin": 60,
-            "heavyMin": 90
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "immediate-release capsule",
+          "amountText": "10-90 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 10,
+              "max": 90,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed nifedipine capsule label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "DailyMed nifedipine extended-release label",
+              "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -1117,17 +1342,43 @@
         "reason": "Clinical monitoring focuses on blood pressure, volume status, renal function, and electrolytes.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 12.5,
-            "commonMin": 25,
-            "strongMin": 50,
-            "heavyMin": 100
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Hypertension",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet/capsule",
+          "amountText": "12.5-100 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 12.5,
+              "max": 100,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed hydrochlorothiazide label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9416208e-e3fe-4213-a4c1-2ea6ebdc5795&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -1255,17 +1506,43 @@
         "reason": "Clinical monitoring focuses on diuresis, weight/volume status, blood pressure, renal function, and electrolytes.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 5,
-            "commonMin": 10,
-            "strongMin": 20,
-            "heavyMin": 200
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Edema associated with heart failure, renal disease, or hepatic disease depending on label",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "5-200 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 5,
+              "max": 200,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed torsemide label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f1439b9c-c01c-a6d4-594b-d92b8e0af26e",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -1395,17 +1672,43 @@
           "This entry is for learning and indexing only, not anticoagulation management."
         ]
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 2.5,
-            "commonMin": 10,
-            "strongMin": 15,
-            "heavyMin": 20
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Stroke/systemic embolism risk reduction in selected atrial fibrillation contexts",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "2.5-20 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 2.5,
+              "max": 20,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment. Anticoagulant interpretation also depends on bleeding risk and, where applicable, INR, anti-Xa, renal function, and interacting drugs.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment. Anticoagulant interpretation also depends on bleeding risk and, where applicable, INR, anti-Xa, renal function, and interacting drugs.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed XARELTO label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -1547,16 +1850,49 @@
           "This entry is for learning and indexing only, not anticoagulation management."
         ]
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 75,
-            "commonMin": 110,
-            "strongMin": 150
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Stroke/systemic embolism risk reduction in selected atrial fibrillation contexts",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "capsule",
+          "amountText": "75-150 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 75,
+              "max": 150,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment. Anticoagulant interpretation also depends on bleeding risk and, where applicable, INR, anti-Xa, renal function, and interacting drugs.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment. Anticoagulant interpretation also depends on bleeding risk and, where applicable, INR, anti-Xa, renal function, and interacting drugs.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed PRADAXA label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80637981-d5a7-48cb-b7b2-f50807a8ab20",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "PRADAXA HCP dosing and administration",
+              "url": "https://pro.boehringer-ingelheim.com/us/products/pradaxa/dosing-administration",
+              "sourceType": "manufacturer-label-support",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -1674,17 +2010,43 @@
         "reason": "Clinical monitoring focuses on lipid response, adverse muscle symptoms, liver enzymes when indicated, renal context, and interacting drugs.",
         "pharmacokineticParametersAvailable": true
       },
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级，不表示娱乐性强度，也不等同个体化处方剂量或确定中毒剂量。毒理风险与适应证、年龄、体重、肝肾功能、合并用药、给药途径和监测结果有关。本资料仅用于学习和资料索引，不构成医疗建议，不用于诊断、处方、自行用药或调整剂量；实际用药必须遵循医生医嘱和当地批准说明书。",
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 5,
-            "commonMin": 10,
-            "strongMin": 20,
-            "heavyMin": 40
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Hyperlipidemia and selected cardiovascular risk-reduction contexts depending on local label",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet",
+          "amountText": "5-40 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 5,
+              "max": 40,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed rosuvastatin calcium label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=94245f53-2892-4209-8c94-c32c87d5b106",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     }

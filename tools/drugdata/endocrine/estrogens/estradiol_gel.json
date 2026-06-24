@@ -188,15 +188,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label or guideline context",
+          "indication": "Menopausal vasomotor symptoms in the cited label",
           "population": "Adults; product- and indication-specific",
           "route": "transdermal",
           "formulation": "gel",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "0.25-1.25 mg estradiol applied daily",
+          "scheduleText": "Once daily transdermal application",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Estradiol Gel 0.1% label",
@@ -212,6 +212,19 @@
               "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "CLINICAL_GUIDELINE"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 0.25,
+              "max": 1.25,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "Gel label regimen",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

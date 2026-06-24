@@ -169,15 +169,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label or guideline context",
+          "indication": "Menopausal symptoms in the cited SmPC",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "film-coated tablet",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "1-2 mg estradiol valerate daily",
+          "scheduleText": "Continuous once-daily administration in the cited SmPC",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "Progynova 2 mg tablets SmPC",
@@ -193,6 +193,19 @@
               "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "CLINICAL_GUIDELINE"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 1,
+              "max": 2,
+              "unit": "mg",
+              "basis": "daily-total",
+              "frequency": "once daily",
+              "rangeKind": "label-regimen",
+              "label": "SmPC regimen",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

@@ -189,15 +189,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label or guideline context",
+          "indication": "Approved transdermal estradiol product strengths",
           "population": "Adults; product- and indication-specific",
           "route": "transdermal",
           "formulation": "continuous-delivery patch",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "0.025-0.1 mg estradiol delivered per day",
+          "scheduleText": "Product-specific once- or twice-weekly patch replacement",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Estradiol Transdermal System label",
@@ -213,6 +213,19 @@
               "sourceType": "clinical-guideline",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "CLINICAL_GUIDELINE"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 0.025,
+              "max": 0.1,
+              "unit": "mg/day",
+              "basis": "patch-delivery-rate",
+              "frequency": "continuous delivery; product-specific replacement interval",
+              "rangeKind": "label-regimen",
+              "label": "Patch delivery range",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

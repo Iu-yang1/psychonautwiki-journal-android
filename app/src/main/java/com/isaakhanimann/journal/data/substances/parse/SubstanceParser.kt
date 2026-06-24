@@ -71,9 +71,10 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
         val jsonSubstances = wholeFile.getOptionalJSONArray("substances") ?: return emptyList()
         val substances: MutableList<Substance> = mutableListOf()
         for (i in 0 until jsonSubstances.length()) {
-            val jsonCategory = jsonSubstances.getOptionalJSONObject(i) ?: continue
-            val newSubstance = parseSubstance(jsonCategory)
-            substances.add(newSubstance)
+            val jsonSubstance = jsonSubstances.getOptionalJSONObject(i) ?: continue
+            runCatching { parseSubstance(jsonSubstance) }
+                .getOrNull()
+                ?.let(substances::add)
         }
         return substances
     }
@@ -319,6 +320,7 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
                     formulation = jsonReference.getOptionalString("formulation"),
                     amountText = jsonReference.getOptionalString("amountText") ?: continue,
                     scheduleText = jsonReference.getOptionalString("scheduleText"),
+                    ranges = parseDoseRanges(jsonReference.getOptionalJSONArray("ranges")),
                     sourceType = jsonReference.getOptionalString("sourceType") ?: continue,
                     evidenceLevel = jsonReference.getOptionalString("evidenceLevel") ?: continue,
                     note = jsonReference.getOptionalString("note"),
@@ -327,6 +329,47 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             )
         }
         return references
+    }
+
+    private fun parseDoseRanges(jsonRanges: JSONArray?): List<DoseRange> {
+        if (jsonRanges == null) return emptyList()
+        val ranges = mutableListOf<DoseRange>()
+        for (i in 0 until jsonRanges.length()) {
+            val jsonRange = jsonRanges.getOptionalJSONObject(i) ?: continue
+            val unit = jsonRange.getOptionalString("unit") ?: continue
+            val basis = jsonRange.getOptionalString("basis") ?: "unknown"
+            ranges.add(
+                DoseRange(
+                    min = jsonRange.getOptionalDouble("min"),
+                    max = jsonRange.getOptionalDouble("max"),
+                    unit = unit,
+                    basis = basis,
+                    frequency = jsonRange.getOptionalString("frequency"),
+                    rangeKind = jsonRange.getOptionalString("rangeKind"),
+                    label = jsonRange.getOptionalString("label"),
+                    note = jsonRange.getOptionalString("note"),
+                    components = parseDoseComponents(jsonRange.getOptionalJSONArray("components"))
+                )
+            )
+        }
+        return ranges
+    }
+
+    private fun parseDoseComponents(jsonComponents: JSONArray?): List<DoseComponent> {
+        if (jsonComponents == null) return emptyList()
+        val components = mutableListOf<DoseComponent>()
+        for (i in 0 until jsonComponents.length()) {
+            val jsonComponent = jsonComponents.getOptionalJSONObject(i) ?: continue
+            components.add(
+                DoseComponent(
+                    substance = jsonComponent.getOptionalString("substance") ?: continue,
+                    min = jsonComponent.getOptionalDouble("min"),
+                    max = jsonComponent.getOptionalDouble("max"),
+                    unit = jsonComponent.getOptionalString("unit") ?: continue
+                )
+            )
+        }
+        return components
     }
 
     private fun parseHrtModelInfo(jsonHrtModelInfo: JSONObject?): HrtModelInfo? {

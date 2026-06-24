@@ -174,15 +174,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label context",
+          "indication": "Component dose in the cited combined oral contraceptive label",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "14.2 mg estetrol component in each active tablet",
+          "scheduleText": "One active tablet daily for 24 days, followed by 4 inert tablets",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed Nextstellis label",
@@ -199,6 +199,26 @@
               "accessedDate": "2026-06-24",
               "evidenceLevel": "HUMAN_STUDY",
               "note": "Assay bias can depend on formulation and assay platform."
+            }
+          ],
+          "ranges": [
+            {
+              "min": null,
+              "max": null,
+              "unit": "mg",
+              "basis": "component-dose",
+              "frequency": "once daily for 24 active days per 28-day pack",
+              "rangeKind": "label-regimen",
+              "label": "Estetrol component",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": [
+                {
+                  "substance": "estetrol",
+                  "min": 14.2,
+                  "max": 14.2,
+                  "unit": "mg"
+                }
+              ]
             }
           ]
         }

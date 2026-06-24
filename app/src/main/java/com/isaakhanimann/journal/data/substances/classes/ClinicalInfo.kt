@@ -113,10 +113,30 @@ data class DoseUseReference(
     val formulation: String? = null,
     val amountText: String,
     val scheduleText: String? = null,
+    val ranges: List<DoseRange> = emptyList(),
     val sourceType: String,
     val evidenceLevel: String,
     val note: String? = null,
     val sourceRefs: List<SourceRef> = emptyList()
+)
+
+data class DoseRange(
+    val min: Double? = null,
+    val max: Double? = null,
+    val unit: String,
+    val basis: String,
+    val frequency: String? = null,
+    val rangeKind: String? = null,
+    val label: String? = null,
+    val note: String? = null,
+    val components: List<DoseComponent> = emptyList()
+)
+
+data class DoseComponent(
+    val substance: String,
+    val min: Double? = null,
+    val max: Double? = null,
+    val unit: String
 )
 
 data class HrtModelInfo(

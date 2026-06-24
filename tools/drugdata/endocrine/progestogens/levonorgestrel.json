@@ -167,15 +167,15 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Approved-label context",
+          "indication": "Emergency contraception in the cited label",
           "population": "Adults; product- and indication-specific",
           "route": "oral",
           "formulation": "tablet or capsule",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "amountText": "1.5 mg levonorgestrel as a single oral dose",
+          "scheduleText": "As soon as possible within 72 hours in the cited label",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This field indexes label, guideline, or literature use only. It is not a recommended dose and must not be used for self-medication or dose adjustment.",
+          "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
           "sourceRefs": [
             {
               "title": "DailyMed levonorgestrel tablet label",
@@ -191,6 +191,19 @@
               "sourceType": "systematic-review",
               "accessedDate": "2026-06-24",
               "evidenceLevel": "SYSTEMATIC_REVIEW"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 1.5,
+              "max": 1.5,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "single dose",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen",
+              "note": "This is a label- or study-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
             }
           ]
         }

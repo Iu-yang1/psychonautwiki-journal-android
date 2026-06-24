@@ -25317,7 +25317,6 @@
         "atc-c03"
       ],
       "summary": "乙酰唑胺属于C03 利尿剂。本条目用于 ATC 分类、药代/药效时间进程、相互作用和监测要点的学习索引，不构成医疗建议、处方建议或剂量调整建议。",
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级。",
       "clinicalInfo": {
         "atcCodes": [
           "C03BA01"
@@ -25408,14 +25407,47 @@
       },
       "roas": [
         {
-          "name": "ORAL",
-          "dose": {
-            "units": "mg",
-            "lightMin": 125,
-            "commonMin": 250,
-            "strongMin": 500,
-            "heavyMin": 1000
-          }
+          "name": "ORAL"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Indications depend on approved local labeling and clinical context.",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "oral",
+          "formulation": "tablet/capsule",
+          "amountText": "125-1000 mg legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 125,
+              "max": 1000,
+              "unit": "mg",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed Acetazolamide label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acetazolamide",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "WHO ATC/DDD Index: C03BA01",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03BA01",
+              "sourceType": "terminology",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     },
@@ -25442,7 +25474,6 @@
         "atc-c03"
       ],
       "summary": "甘露醇属于C03 利尿剂。本条目用于 ATC 分类、药代/药效时间进程、相互作用和监测要点的学习索引，不构成医疗建议、处方建议或剂量调整建议。",
-      "dosageRemark": "临床参考剂量：light/common/strong/heavy 仅表示低参考、常见参考、较高或上限参考层级。",
       "clinicalInfo": {
         "atcCodes": [
           "C03DA05"
@@ -25533,14 +25564,47 @@
       },
       "roas": [
         {
-          "name": "INTRAVENOUS",
-          "dose": {
-            "units": "g",
-            "lightMin": 12.5,
-            "commonMin": 25,
-            "strongMin": 50,
-            "heavyMin": 100
-          }
+          "name": "INTRAVENOUS"
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Indications depend on approved local labeling and clinical context.",
+          "population": "Adults or source-specific population; verify cited source",
+          "route": "intravenous",
+          "formulation": "infusion",
+          "amountText": "12.5-100 g legacy reference span",
+          "scheduleText": "source needed for indication-specific schedule; verify cited source",
+          "ranges": [
+            {
+              "min": 12.5,
+              "max": 100,
+              "unit": "g",
+              "basis": "per-dose",
+              "frequency": "source specific",
+              "rangeKind": "protocol-range",
+              "label": "Migrated clinical reference span",
+              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+              "components": []
+            }
+          ],
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
+          "sourceRefs": [
+            {
+              "title": "DailyMed Mannitol label search",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Mannitol",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-23"
+            },
+            {
+              "title": "WHO ATC/DDD Index: C03DA05",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03DA05",
+              "sourceType": "terminology",
+              "accessedDate": "2026-06-23"
+            }
+          ]
         }
       ]
     }

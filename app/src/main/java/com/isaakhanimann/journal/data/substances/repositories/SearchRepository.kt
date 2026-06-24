@@ -168,7 +168,22 @@ class SearchRepository @Inject constructor(
                     reference.sourceType,
                     reference.evidenceLevel,
                     reference.note
-                )
+                ) +
+                    reference.ranges.flatMap { range ->
+                        listOfNotNull(
+                            range.unit,
+                            range.basis,
+                            range.frequency,
+                            range.rangeKind,
+                            range.label,
+                            range.note
+                        ) + range.components.flatMap { component ->
+                            listOf(component.substance, component.unit)
+                        }
+                    } +
+                    reference.sourceRefs.flatMap { source ->
+                        listOf(source.title, source.sourceType)
+                    }
             } +
             hrtModelInfo?.modelRoles.orEmpty() +
             hrtModelInfo?.primaryModeledAnalytes.orEmpty() +

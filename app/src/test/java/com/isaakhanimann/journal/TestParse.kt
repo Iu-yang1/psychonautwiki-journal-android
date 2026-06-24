@@ -138,6 +138,23 @@ class TestParse {
           "indication": "label context",
           "route": "intramuscular",
           "amountText": "source needed",
+          "ranges": [
+            {
+              "min": null,
+              "max": 10,
+              "unit": "mg",
+              "basis": "component-dose",
+              "rangeKind": "label-regimen",
+              "components": [
+                {
+                  "substance": "estradiol valerate",
+                  "min": null,
+                  "max": 10,
+                  "unit": "mg"
+                }
+              ]
+            }
+          ],
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL"
         }
@@ -158,7 +175,38 @@ class TestParse {
         assertTrue(substance.timeCourse.first().injectionIntervalSensitive)
         assertEquals(1.0, substance.timeCourse.first().peakWindow?.min)
         assertEquals("source needed", substance.doseUseReferences.first().amountText)
+        assertEquals(10.0, substance.doseUseReferences.first().ranges.first().max)
+        assertEquals(
+            "estradiol valerate",
+            substance.doseUseReferences.first().ranges.first().components.first().substance
+        )
         assertTrue(substance.hrtModelInfo?.modelCompatible == true)
         assertEquals("Estradiol", substance.hrtModelInfo?.primaryModeledAnalytes?.first())
+    }
+
+    @Test
+    fun malformedSubstanceDoesNotDiscardValidEntries() {
+        val text = """
+{
+  "categories": [],
+  "substances": [
+    {
+      "commonNames": ["Missing required name"],
+      "url": "https://example.org",
+      "roas": []
+    },
+    {
+      "name": "Valid entry",
+      "commonNames": [],
+      "url": "https://example.org",
+      "roas": []
+    }
+  ]
+}"""
+
+        val result = SubstanceParser().parseSubstanceFile(string = text)
+
+        assertEquals(1, result.substances.size)
+        assertEquals("Valid entry", result.substances.first().name)
     }
 }
