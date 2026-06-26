@@ -218,6 +218,60 @@
       "description": "Medicines relevant to hormone therapy data indexing and future model research.",
       "color": 4288423856,
       "url": null
+    },
+    {
+      "name": "clinical-psychiatry",
+      "description": "Clinical psychiatry and neuropsychiatry medicines indexed separately from recreational psychoactive categories.",
+      "color": 4282339765,
+      "url": null
+    },
+    {
+      "name": "anxiolytic",
+      "description": "Medicines used in anxiety-related clinical contexts.",
+      "color": 4285297077,
+      "url": null
+    },
+    {
+      "name": "sedative-hypnotic",
+      "description": "Medicines used in sedative or hypnotic clinical contexts.",
+      "color": 4287467926,
+      "url": null
+    },
+    {
+      "name": "z-drug",
+      "description": "Non-benzodiazepine hypnotics such as zolpidem and zopiclone.",
+      "color": 4284105434,
+      "url": null
+    },
+    {
+      "name": "adhd-medication",
+      "description": "Medicines used in attention-deficit/hyperactivity disorder clinical contexts.",
+      "color": 4280668390,
+      "url": null
+    },
+    {
+      "name": "wakefulness-promoting-agent",
+      "description": "Medicines used in wakefulness-promoting or sleep-disorder clinical contexts.",
+      "color": 4281558732,
+      "url": null
+    },
+    {
+      "name": "cognitive-disorder-medication",
+      "description": "Medicines used in dementia or cognitive-disorder clinical contexts.",
+      "color": 4283453520,
+      "url": null
+    },
+    {
+      "name": "substance-use-disorder-treatment",
+      "description": "Medicines used in substance-use-disorder treatment or overdose reversal contexts.",
+      "color": 4288059027,
+      "url": null
+    },
+    {
+      "name": "gabapentinoid",
+      "description": "Gabapentinoid medicines used in neurologic and selected psychiatric-adjacent contexts.",
+      "color": 4285243631,
+      "url": null
     }
   ],
   "substances": [
@@ -8143,7 +8197,9 @@
       "commonNames": [
         "Xanax",
         "Alprazolam",
-        "Ksalol"
+        "Ksalol",
+        "阿普唑仑",
+        "佳静安定"
       ],
       "url": "https://psychonautwiki.org/wiki/Alprazolam",
       "isApproved": true,
@@ -8163,7 +8219,10 @@
         "depressant",
         "benzodiazepine",
         "habit-forming",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "anxiolytic",
+        "sedative-hypnotic"
       ],
       "summary": "An extremely common benzodiazepine better known as Xanax, frequently prescribed for the treatment of anxiety and panic disorders. Alprazolam is short-lasting and primarily anxiolytic, though also possesses hypnotic properties. At high doses amnesia and loss of inhibition are common. Do not mix with other depressants.",
       "effectsSummary": "Anti-excitant and anti-anxiety, sedative, soporific and muscle relaxant. At high doses: slowing down, drowsiness, danger of memory lapses (\"film tear\").\nTaking benzodiazepines increases the effectiveness of the neurotransmitter gamma-aminobutyric acid (GABA) at the GABA-A receptor. This triggers sedative (calming), hypnotic, anxiolytic (anxiety-relieving), anticonvulsant (anticonvulsant) and muscle-relaxing effects in the body. Benzodiazepines have a depressant effect on the central nervous system. The flow of information in the brain between the brain cells (neurons) is thereby reduced / disturbed and feelings and perceptions are dampened.\nThe breakdown of the individual active ingredients of benzodiazepines in the body is age-dependent and therefore varies from person to person.",
@@ -8273,7 +8332,9 @@
         "Amphetamine",
         "Speed",
         "Adderall",
-        "Pep"
+        "Pep",
+        "苯丙胺",
+        "安非他明"
       ],
       "url": "https://psychonautwiki.org/wiki/Amphetamine",
       "isApproved": true,
@@ -8293,7 +8354,9 @@
       "categories": [
         "stimulant",
         "habit-forming",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "adhd-medication"
       ],
       "summary": "A very popular CNS stimulant available on prescription and black markets. Recreational in high doses, producing mild euphoria and an abundance of energy. Popular in eastern europe and the US.",
       "effectsSummary": "The release of the endogenous neurotransmitters noradrenalin and dopamine produced by the use of amphetamine can cause a feeling of increased performance, an increase in self-esteem, an increase in body temperature, the suppression of tiredness, hunger and thirst, an increased willingness to take risks and a suppressed feeling of pain, and can lead to euphoria as well as an increased urge to talk (babble flash).",
@@ -8782,7 +8845,8 @@
         "Waklert",
         "Artvigil",
         "R-Modawake",
-        "Neoresotyl"
+        "Neoresotyl",
+        "阿莫达非尼"
       ],
       "url": "https://psychonautwiki.org/wiki/Armodafinil",
       "isApproved": true,
@@ -8803,7 +8867,9 @@
         "stimulant",
         "eugeroic",
         "nootropic",
-        "habit-forming"
+        "habit-forming",
+        "clinical-psychiatry",
+        "wakefulness-promoting-agent"
       ],
       "summary": "The more potent of the two modafinil isomers, said to have a longer duration and lesser side effects. Sometimes prescribed for ADHD and daytime sleepiness.",
       "interactions": {
@@ -9141,7 +9207,8 @@
         "Lexatin",
         "Calmepam",
         "Zepam",
-        "Lexotanil"
+        "Lexotanil",
+        "溴西泮"
       ],
       "url": "https://psychonautwiki.org/wiki/Bromazepam",
       "isApproved": false,
@@ -9153,7 +9220,10 @@
       "categories": [
         "benzodiazepine",
         "habit-forming",
-        "depressant"
+        "depressant",
+        "clinical-psychiatry",
+        "anxiolytic",
+        "sedative-hypnotic"
       ],
       "summary": "A benzodiazepine drug with a medium-long duration, developed by Roche in the 1960s. Has primarily anxiolytic properties. May cause lowered inhibitions and amnesia in high doses.",
       "interactions": {
@@ -9445,7 +9515,8 @@
         "Butrans",
         "Cizdol",
         "Addnok",
-        "Transtec"
+        "Transtec",
+        "丁丙诺啡"
       ],
       "url": "https://psychonautwiki.org/wiki/Buprenorphine",
       "isApproved": true,
@@ -9464,7 +9535,9 @@
       "categories": [
         "opioid",
         "habit-forming",
-        "depressant"
+        "depressant",
+        "clinical-psychiatry",
+        "substance-use-disorder-treatment"
       ],
       "summary": "A semi-synthetic opioid analgesic also known as subutex. Often administered as Butrans patches, or in combination with Naloxone as Suboxone, a heroin replacement therapy drug. Will cause withdrawals if you have an opioid tolerance and don't wait long enough (typically around 48 hours) before taking this.",
       "effectsSummary": "Like all opiates, buprenorphine has analgesic and cough-irritant effects. However, its euphoric and sedative properties are less pronounced than those of other opioids, which is why it is also used for substitution treatment. Buprenorphine is a partial agonist. This means that, for safety reasons, only a submaximal effect is elicited. After a certain dose, a saturation effect (ceiling effect) occurs, which prevents a further increase in the effect. This makes the active ingredient so relevant for substitution treatments, as withdrawal symptoms can be alleviated and overdoses avoided.",
@@ -9571,16 +9644,17 @@
     {
       "name": "Buspirone",
       "commonNames": [
-        "DMT",
-        "Dimethyltryptamine",
-        "Dmitri"
+        "Buspirone",
+        "Buspar",
+        "丁螺环酮"
       ],
       "url": "https://psychonautwiki.org/wiki/Buspirone",
       "isApproved": false,
       "crossTolerances": [],
       "toxicities": [],
       "categories": [
-        "psychedelic"
+        "clinical-psychiatry",
+        "anxiolytic"
       ],
       "roas": [
         {
@@ -10151,7 +10225,10 @@
     {
       "name": "Chlordiazepoxide",
       "commonNames": [
-        "Librium"
+        "Librium",
+        "Chlordiazepoxide",
+        "氯氮䓬",
+        "利眠宁"
       ],
       "url": "https://psychonautwiki.org/wiki/Chlordiazepoxide",
       "isApproved": false,
@@ -10161,7 +10238,11 @@
         "potentially lethal when mixed with depressants like alcohol or opioids"
       ],
       "categories": [
-        "depressant"
+        "depressant",
+        "clinical-psychiatry",
+        "anxiolytic",
+        "sedative-hypnotic",
+        "benzodiazepine"
       ],
       "interactions": {
         "dangerous": [
@@ -10402,7 +10483,8 @@
         "Clonazepam",
         "Klonopin",
         "K-Pins",
-        "Rivotril"
+        "Rivotril",
+        "氯硝西泮"
       ],
       "url": "https://psychonautwiki.org/wiki/Clonazepam",
       "isApproved": true,
@@ -10422,7 +10504,10 @@
         "depressant",
         "benzodiazepine",
         "habit-forming",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "anxiolytic",
+        "sedative-hypnotic"
       ],
       "summary": "A medium-length common prescription benzodiazepine, often used to treat panic attacks because of its relatively fast sublingual onset. Primarily anxiolytic, but also possessing of other benzo traits.",
       "interactions": {
@@ -11448,14 +11533,18 @@
         "D-amphetamine",
         "Dexedrine",
         "Dex",
-        "Attentin"
+        "Attentin",
+        "右旋苯丙胺",
+        "右旋安非他明"
       ],
       "url": "https://psychonautwiki.org/wiki/Dextroamphetamine",
       "isApproved": false,
       "crossTolerances": [],
       "toxicities": [],
       "categories": [
-        "stimulant"
+        "stimulant",
+        "clinical-psychiatry",
+        "adhd-medication"
       ],
       "interactions": {
         "dangerous": [
@@ -11770,7 +11859,9 @@
         "Valium",
         "Diastat",
         "Mother's Little Helper",
-        "Apaurin"
+        "Apaurin",
+        "地西泮",
+        "安定"
       ],
       "url": "https://psychonautwiki.org/wiki/Diazepam",
       "isApproved": true,
@@ -11790,7 +11881,10 @@
         "depressant",
         "benzodiazepine",
         "habit-forming",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "anxiolytic",
+        "sedative-hypnotic"
       ],
       "summary": "A very common and widely prescribed benzodiazepine with hypnotic and sedative qualities. The metre by which other benzodiazepines are compared. May cause amnesia and lowered inhibitions in excess. Has a relatively long half-life in comparison with other benzodiazepines.",
       "effectsSummary": "Diazepam has a calming, relaxing, antispasmodic, anti-anxiety and sleep-inducing effect.\nTaking benzodiazepines increases the effectiveness of the neurotransmitter gamma-aminobutyric acid (GABA) at the GABA-A receptor. This triggers sedative (calming), hypnotic, anxiolytic (anxiety-relieving), anticonvulsant (anticonvulsant) and muscle-relaxing effects in the body. Benzodiazepines have a depressant effect on the central nervous system. The flow of information in the brain between the brain cells (neurons) is thereby reduced / disturbed and feelings and perceptions are dampened.\nThe breakdown of the individual active ingredients of benzodiazepines in the body is age-dependent and therefore varies from person to person.",
@@ -13340,7 +13434,9 @@
       "name": "Eszopiclone",
       "commonNames": [
         "Lunesta",
-        "Eszop"
+        "Eszop",
+        "Eszopiclone",
+        "右佐匹克隆"
       ],
       "url": "https://psychonautwiki.org/wiki/Eszopiclone",
       "isApproved": false,
@@ -13360,7 +13456,10 @@
         "hallucinogen",
         "depressant",
         "hypnotic",
-        "habit-forming"
+        "habit-forming",
+        "clinical-psychiatry",
+        "sedative-hypnotic",
+        "z-drug"
       ],
       "summary": "The d-isomer of Zopiclone, this drug is a potent hypnotic 'Z' drug often used to treat insomnia. High doses may cause amnesia, delirium and lowered inhibitions. Should not be combined with any depressants. Limited recreational value.",
       "roas": [
@@ -13853,7 +13952,8 @@
         "Etizolam",
         "Etilaam",
         "Etizest",
-        "Depas"
+        "Depas",
+        "依替唑仑"
       ],
       "url": "https://psychonautwiki.org/wiki/Etizolam",
       "isApproved": true,
@@ -13874,7 +13974,10 @@
         "depressant",
         "benzodiazepine",
         "research-chemical",
-        "habit-forming"
+        "habit-forming",
+        "clinical-psychiatry",
+        "anxiolytic",
+        "sedative-hypnotic"
       ],
       "summary": "A thienodiazepine anxiolytic. Similar in action to benzodiazepine drugs. Relieves anxiety, causes sedation and mild euphoria. High doses can lead to losing memory of what happened while on the drug. Users often compulsively re-dose frequently leading to accidental blackouts. Can be found in pressed pharmaceutical pills from various countries, clandestine pill presses, or as a powder",
       "effectsSummary": "Etizolam is a research chemical with anti-anxiety, anticonvulsant, sedative and sleep-inducing properties.\nAs it is a little-researched substance, only vague information is available regarding its effect.\nTaking benzodiazepines increases the effectiveness of the neurotransmitter gamma-aminobutyric acid (GABA) at the GABA-A receptor. This triggers sedative (calming), hypnotic, anxiolytic (anxiety-relieving), anticonvulsant (anticonvulsant) and muscle-relaxing effects in the body. Benzodiazepines have a depressant effect on the central nervous system. The flow of information in the brain between the brain cells (neurons) is thereby reduced / disturbed and feelings and perceptions are dampened.\nThe breakdown of the individual active ingredients of benzodiazepines in the body is age-dependent and therefore varies from person to person.",
@@ -14486,7 +14589,8 @@
         "R2",
         "Roach 2",
         "Rophies",
-        "Wolfies"
+        "Wolfies",
+        "氟硝西泮"
       ],
       "url": "https://psychonautwiki.org/wiki/Flunitrazepam",
       "isApproved": false,
@@ -14505,7 +14609,9 @@
       "categories": [
         "depressant",
         "benzodiazepine",
-        "habit-forming"
+        "habit-forming",
+        "clinical-psychiatry",
+        "sedative-hypnotic"
       ],
       "summary": "Known as Rohypnol or 'roofies,' this infamous drug has similar qualities to most other benzodiazepines; sedating with strong hypnotic effects. Despite being known as a 'date rape drug' has only been implicated in a small number of such crimes. Danger of respiratory depression in combination with other depressants. May cause amnesia and lowered inhibitions in overdose.",
       "effectsSummary": "Flunitrazepam has a calming, relaxing, antispasmodic, anti-anxiety and sleep-inducing effect.\nTaking benzodiazepines increases the effectiveness of the neurotransmitter gamma-aminobutyric acid (GABA) at the GABA-A receptor. This triggers sedative (calming), hypnotic, anxiolytic (anxiety-relieving), anticonvulsant (anticonvulsant) and muscle-relaxing effects in the body. Benzodiazepines have a depressant effect on the central nervous system. The flow of information in the brain between the brain cells (neurons) is thereby reduced / disturbed and feelings and perceptions are dampened.\nThe breakdown of the individual active ingredients of benzodiazepines in the body is age-dependent and therefore varies from person to person.",
@@ -14619,7 +14725,8 @@
         "Gabapentin",
         "Neurontin",
         "Gabarone",
-        "Gralise"
+        "Gralise",
+        "加巴喷丁"
       ],
       "url": "https://psychonautwiki.org/wiki/Gabapentin",
       "isApproved": true,
@@ -14633,7 +14740,9 @@
       ],
       "categories": [
         "depressant",
-        "habit-forming"
+        "habit-forming",
+        "clinical-psychiatry",
+        "gabapentinoid"
       ],
       "summary": "An analogue of GABA also known as Neurontin, originally developed to treat epilepsy. Commonly prescribed for neuropathic pain, it also has pronounced anxiolytic effects leading to its use in treating anxiety disorders.",
       "interactions": {
@@ -14732,7 +14841,8 @@
     {
       "name": "Galantamine",
       "commonNames": [
-        "Galantamine"
+        "Galantamine",
+        "加兰他敏"
       ],
       "url": "https://psychonautwiki.org/wiki/Galantamine",
       "isApproved": true,
@@ -14743,7 +14853,9 @@
       ],
       "categories": [
         "oneirogen",
-        "nootropic"
+        "nootropic",
+        "clinical-psychiatry",
+        "cognitive-disorder-medication"
       ],
       "roas": [
         {
@@ -14979,7 +15091,10 @@
     {
       "name": "Haloperidol",
       "commonNames": [
-        "Haldol"
+        "Haldol",
+        "Haloperidol",
+        "氟哌啶醇",
+        "氟哌丁苯"
       ],
       "url": "https://psychonautwiki.org/wiki/Haloperidol",
       "isApproved": true,
@@ -14989,7 +15104,8 @@
         "risk of having severe extrapyramidal symptoms and muscle rigidity"
       ],
       "categories": [
-        "antipsychotic"
+        "antipsychotic",
+        "clinical-psychiatry"
       ],
       "roas": [
         {
@@ -15988,7 +16104,9 @@
         "Ketanest",
         "Vitamin K",
         "Purple",
-        "Jet"
+        "Jet",
+        "氯胺酮",
+        "凯他敏"
       ],
       "url": "https://psychonautwiki.org/wiki/Ketamine",
       "isApproved": true,
@@ -16003,7 +16121,8 @@
       "categories": [
         "dissociative",
         "habit-forming",
-        "common"
+        "common",
+        "clinical-psychiatry"
       ],
       "summary": "A short acting dissociative anaesthetic and hallucinogen commonly used in emergency medicine. It is the prototypical dissociative, and is widely used at sub-anesthetic doses recreationally. Small doses are comparable with alcohol, while larger doses are immobilising and lead to psychedelic experiences: the \"K-Hole.\"",
       "effectsSummary": "The effect of ketamine as an intoxicant is strongly dependent on the dosage: In lower doses, it has a disinhibiting and relaxing effect similar to alcohol, while higher doses can induce trance-like states up to out-of-body or near-death experiences (K-Hole). There can be a fragmentary dissolution of the environment and bodily sensation, thoughts can break off, feelings of weightlessness or floating can appear. Sensory perceptions and the sense of space-time change. At higher doses, detachment from one's own body and/or ego dissolution or merging with the environment may occur.\nAfter the trip: drowsiness, memory of the experience is often only partially possible.",
@@ -16263,14 +16382,17 @@
       "commonNames": [
         "Lisdexamfetamine",
         "Vyvanse",
-        "Elvanse"
+        "Elvanse",
+        "赖右苯丙胺"
       ],
       "url": "https://psychonautwiki.org/wiki/Lisdexamfetamine",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [],
       "categories": [
-        "stimulant"
+        "stimulant",
+        "clinical-psychiatry",
+        "adhd-medication"
       ],
       "interactions": {
         "dangerous": [
@@ -16350,7 +16472,8 @@
         "Lorazepam",
         "Ativan",
         "Orfidal",
-        "Lorsilan"
+        "Lorsilan",
+        "劳拉西泮"
       ],
       "url": "https://psychonautwiki.org/wiki/Lorazepam",
       "isApproved": true,
@@ -16370,7 +16493,10 @@
         "depressant",
         "benzodiazepine",
         "habit-forming",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "anxiolytic",
+        "sedative-hypnotic"
       ],
       "summary": "An intermediate acting benzodiazepine commonly known as Ativan, commonly prescribed as an alternative to Xanax. Sedating, hypnotic and anxiolytic. Potential to induce amnesia and lowered inhibitions in overdose. Do not combine with other depressants.",
       "effectsSummary": "Lorazepam has a calming, relaxing, antispasmodic, anti-anxiety and sleep-inducing effect.\nTaking benzodiazepines increases the effectiveness of the neurotransmitter gamma-aminobutyric acid (GABA) at the GABA-A receptor. This triggers sedative (calming), hypnotic, anxiolytic (anxiety-relieving), anticonvulsant (anticonvulsant) and muscle-relaxing effects in the body. Benzodiazepines have a depressant effect on the central nervous system. The flow of information in the brain between the brain cells (neurons) is thereby reduced / disturbed and feelings and perceptions are dampened.\nThe breakdown of the individual active ingredients of benzodiazepines in the body is age-dependent and therefore varies from person to person.",
@@ -17327,7 +17453,8 @@
     {
       "name": "Melatonin",
       "commonNames": [
-        "Melatonin"
+        "Melatonin",
+        "褪黑素"
       ],
       "url": "https://psychonautwiki.org/wiki/Melatonin",
       "isApproved": true,
@@ -17344,7 +17471,9 @@
       "categories": [
         "oneirogen",
         "nootropic",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "sedative-hypnotic"
       ],
       "summary": "A naturally occurring hormone produced in the body, which promotes sleep at certain times in the day based on the circadian rhythm. It is also commonly available as a drug to treat insomnia and promote a proper sleep cycle. It can be used to promote sleepfulness at the tail-end of drug experiences, though it is not particularly hypnotic.",
       "roas": [
@@ -17399,7 +17528,9 @@
         "Namenda",
         "Namenda XR",
         "Namzaric (with donepezil",
-        "both extended-release)"
+        "both extended-release)",
+        "美金刚",
+        "盐酸美金刚"
       ],
       "url": "https://psychonautwiki.org/wiki/Memantine",
       "isApproved": true,
@@ -17413,7 +17544,9 @@
       "categories": [
         "dissociative",
         "deliriant",
-        "tentative"
+        "tentative",
+        "clinical-psychiatry",
+        "cognitive-disorder-medication"
       ],
       "summary": "An NMDA-antagonist that if used recreationally can cause to a very prolonged \"hole\" lasting up to 16+ hours.",
       "interactions": {
@@ -17941,7 +18074,8 @@
       "commonNames": [
         "Methadone",
         "Dolophine",
-        "Methadose"
+        "Methadose",
+        "美沙酮"
       ],
       "url": "https://psychonautwiki.org/wiki/Methadone",
       "isApproved": true,
@@ -17962,7 +18096,9 @@
         "opioid",
         "habit-forming",
         "depressant",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "substance-use-disorder-treatment"
       ],
       "summary": "A synthetic opioid drug used as an analgesic and is often used in detoxification off of other opioids. As it has a much longer half-life.",
       "interactions": {
@@ -19061,7 +19197,10 @@
         "Concerta",
         "Methylin",
         "Ritalin",
-        "Equasym XL"
+        "Equasym XL",
+        "哌甲酯",
+        "利他林",
+        "专注达"
       ],
       "url": "https://psychonautwiki.org/wiki/Methylphenidate",
       "isApproved": true,
@@ -19071,7 +19210,9 @@
       "categories": [
         "stimulant",
         "habit-forming",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "adhd-medication"
       ],
       "summary": "A psychostimulant commonly used in the treatment of ADHD, narcolepsy and obesity, particularly in the EU instead of Adderall. Methylphenidate is also a 5HT1A receptor agonist. Sometimes prescribed off-label to help the withdrawals from cocaine and other stimulants.",
       "effectsSummary": "Taking methylphenidate increases the concentration of the nerve messengers dopamine, noradrenaline and serotonin in the brain. When prescribed for ADHD, the drug is supposed to act as a filter for incoming stimuli and alleviate symptoms such as distractibility, attention deficit disorder, disorganisation and impulsivity.\nHowever, due to its stimulating, energising and drive-enhancing properties, methylphenidate is also used as a party drug or to increase performance. Due to the increased release of dopamine, similar effects occur as with the use of cocaine.",
@@ -19319,7 +19460,8 @@
       "name": "Midazolam",
       "commonNames": [
         "Midazolam",
-        "Versed"
+        "Versed",
+        "咪达唑仑"
       ],
       "url": "https://psychonautwiki.org/wiki/Midazolam",
       "isApproved": true,
@@ -19328,7 +19470,9 @@
       "categories": [
         "depressant",
         "benzodiazepine",
-        "habit-forming"
+        "habit-forming",
+        "clinical-psychiatry",
+        "sedative-hypnotic"
       ],
       "summary": "A common hypnotic, sedative and anxiolytic benzodiazepine. High doses may cause amnesia and loss of inhibitions. Unusually, it is water soluble, and commonly used as a premedication for sedation as the solubility makes it better for IV use than other benzodiazepines.",
       "effectsSummary": "Midazolam has a calming, relaxing, antispasmodic, anti-anxiety and sleep-inducing effect.\nTaking benzodiazepines increases the effectiveness of the neurotransmitter gamma-aminobutyric acid (GABA) at the GABA-A receptor. This triggers sedative (calming), hypnotic, anxiolytic (anxiety-relieving), anticonvulsant (anticonvulsant) and muscle-relaxing effects in the body. Benzodiazepines have a depressant effect on the central nervous system. The flow of information in the brain between the brain cells (neurons) is thereby reduced / disturbed and feelings and perceptions are dampened.\nThe breakdown of the individual active ingredients of benzodiazepines in the body is age-dependent and therefore varies from person to person.",
@@ -19539,7 +19683,10 @@
         "Mirtaz",
         "Mirtazon",
         "Remeron",
-        "Zispin"
+        "Zispin",
+        "Mirtazapine",
+        "米氮平",
+        "瑞美隆"
       ],
       "url": "https://psychonautwiki.org/wiki/Mirtazapine",
       "isApproved": true,
@@ -19554,7 +19701,8 @@
       "categories": [
         "deliriant",
         "depressant",
-        "antidepressant"
+        "antidepressant",
+        "clinical-psychiatry"
       ],
       "interactions": {
         "dangerous": [],
@@ -19606,7 +19754,8 @@
         "Modavigil",
         "Modiodal",
         "Provigil",
-        "Modalert"
+        "Modalert",
+        "莫达非尼"
       ],
       "url": "https://psychonautwiki.org/wiki/Modafinil",
       "isApproved": true,
@@ -19628,7 +19777,9 @@
         "eugeroic",
         "habit-forming",
         "nootropic",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "wakefulness-promoting-agent"
       ],
       "summary": "A wakefulness promoting, long acting stimulant which is typically only used functionally, because there is no real euphoric component to its effects. Also prescribed for daytime sleeping disorders.",
       "effectsSummary": "The mechanism of action of modafinil is not yet fully understood. It is assumed that modafinil binds to the dopamine transporter and inhibits dopamine reuptake. Unlike other stimulants such as amphetamine or methylphenidate (Ritalin®, Concerta®), which in equivalent wakefulness-promoting doses increase neuronal activity throughout the brain, modafinil acts primarily on the brain regions responsible for controlling waking, sleep, wakefulness and vigilance (sustained attention).\nModafinil thus promotes alertness (physical and mental), increases attention and motor activity. Due to its stimulating, wakefulness-promoting properties, modafinil is consumed by healthy people as a so-called \"smart drug\" or \"cognitive enhancer\".According to user reports, modafinil has a much more subtle effect than other stimulants and does not trigger comparable states of intoxication. Modafinil causes less physical restlessness and the sleep-wake rhythm is less disturbed.\nA mood-lifting and euphoric effect is controversial. According to a publication of the American Food and Drug Administration (FDA), modafinil causes psychoactive and euphoric effects, whereas various studies point to the lack of a euphoric effect.",
@@ -20045,14 +20196,17 @@
     {
       "name": "N-Acetylcysteine",
       "commonNames": [
-        "N-Acetylcysteine"
+        "N-Acetylcysteine",
+        "乙酰半胱氨酸",
+        "NAC"
       ],
       "url": "https://psychonautwiki.org/wiki/N-Acetylcysteine",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [],
       "categories": [
-        "nootropic"
+        "nootropic",
+        "clinical-psychiatry"
       ],
       "roas": [
         {
@@ -20271,7 +20425,8 @@
       "commonNames": [
         "Naloxone",
         "Narcan",
-        "Evzio"
+        "Evzio",
+        "纳洛酮"
       ],
       "url": "https://psychonautwiki.org/wiki/Naloxone",
       "isApproved": true,
@@ -20279,7 +20434,9 @@
       "addictionPotential": "not habit-forming",
       "toxicities": [],
       "categories": [
-        "opioid"
+        "opioid",
+        "clinical-psychiatry",
+        "substance-use-disorder-treatment"
       ],
       "roas": [
         {
@@ -21213,7 +21370,8 @@
       "commonNames": [
         "Oxazepam",
         "Serax",
-        "Ceresta"
+        "Ceresta",
+        "奥沙西泮"
       ],
       "url": "https://psychonautwiki.org/wiki/Oxazepam",
       "isApproved": false,
@@ -21225,7 +21383,10 @@
       "categories": [
         "benzodiazepine",
         "depressant",
-        "habit-forming"
+        "habit-forming",
+        "clinical-psychiatry",
+        "anxiolytic",
+        "sedative-hypnotic"
       ],
       "summary": "A prescription benzodiazepine with intermediate duration and half life. A sedative and hypnotic which may cause lowered inhibitions and amnesia in higher doses.",
       "effectsSummary": "Oxazepam has a calming, relaxing, antispasmodic, anti-anxiety and sleep-inducing effect.\nTaking benzodiazepines increases the effectiveness of the neurotransmitter gamma-aminobutyric acid (GABA) at the GABA-A receptor. This triggers sedative (calming), hypnotic, anxiolytic (anxiety-relieving), anticonvulsant (anticonvulsant) and muscle-relaxing effects in the body. Benzodiazepines have a depressant effect on the central nervous system. The flow of information in the brain between the brain cells (neurons) is thereby reduced / disturbed and feelings and perceptions are dampened.\nThe breakdown of the individual active ingredients of benzodiazepines in the body is age-dependent and therefore varies from person to person.",
@@ -22045,7 +22206,8 @@
       "commonNames": [
         "Pentobarbital",
         "pentobarbitone",
-        "Nembutal"
+        "Nembutal",
+        "戊巴比妥"
       ],
       "url": "https://psychonautwiki.org/wiki/Pentobarbital",
       "isApproved": true,
@@ -22058,7 +22220,9 @@
       "categories": [
         "depressant",
         "habit-forming",
-        "barbiturate"
+        "barbiturate",
+        "clinical-psychiatry",
+        "sedative-hypnotic"
       ],
       "summary": "A CNS depressant drug that is of the barbituate class. Typically not used often as it is easier to OD on than benzodiazepines, the new alternative to barbituates. Used often for insomnia, to cause sedation.",
       "roas": [
@@ -22328,7 +22492,9 @@
         "Phenobarbital",
         "Phenobarbitone",
         "Luminal",
-        "Phenobarb"
+        "Phenobarb",
+        "苯巴比妥",
+        "鲁米那"
       ],
       "url": "https://psychonautwiki.org/wiki/Phenobarbital",
       "isApproved": true,
@@ -22341,7 +22507,9 @@
       "categories": [
         "depressant",
         "habit-forming",
-        "barbiturate"
+        "barbiturate",
+        "clinical-psychiatry",
+        "sedative-hypnotic"
       ],
       "summary": "CNS depressant that is used mostly for insomnia (In older patients) and epliepsy (in younger patients) And it a very strong narcotic, that can be taken most ways. It's used less as \"safer\" alternatives have been made (Benzodiazepines).",
       "roas": [
@@ -22651,7 +22819,8 @@
       "commonNames": [
         "Pregabalin",
         "Lyrica",
-        "Nervalin"
+        "Nervalin",
+        "普瑞巴林"
       ],
       "url": "https://psychonautwiki.org/wiki/Pregabalin",
       "isApproved": true,
@@ -22666,7 +22835,9 @@
       "categories": [
         "depressant",
         "habit-forming",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "gabapentinoid"
       ],
       "summary": "Pregabalin (Lyrica) is a GABA derivative that is used to treat neuropathic pain and seizures, as well as anxiety.",
       "interactions": {
@@ -22836,14 +23007,18 @@
         "Stemzine",
         "Buccastem",
         "Stemetil",
-        "Phenotil"
+        "Phenotil",
+        "Prochlorperazine",
+        "丙氯拉嗪",
+        "普鲁氯哌嗪"
       ],
       "url": "https://psychonautwiki.org/wiki/Prochlorperazine",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [],
       "categories": [
-        "antipsychotic"
+        "antipsychotic",
+        "clinical-psychiatry"
       ],
       "roas": [
         {
@@ -23432,7 +23607,9 @@
       "name": "Quetiapine",
       "commonNames": [
         "Quetiapine",
-        "Seroquel"
+        "Seroquel",
+        "喹硫平",
+        "思瑞康"
       ],
       "url": "https://psychonautwiki.org/wiki/Quetiapine",
       "isApproved": true,
@@ -23447,7 +23624,8 @@
       ],
       "categories": [
         "antipsychotic",
-        "depressant"
+        "depressant",
+        "clinical-psychiatry"
       ],
       "summary": "An atypical antipsychotic medication under the brand name Seroquel. Also used to treat insomnia and mood swings. This drug is very sedating and can stop/slow down psychedelic drug trips. Infrequently abused.",
       "interactions": {
@@ -23507,14 +23685,18 @@
     {
       "name": "Risperidone",
       "commonNames": [
-        "Risperdal"
+        "Risperdal",
+        "Risperidone",
+        "利培酮",
+        "维思通"
       ],
       "url": "https://psychonautwiki.org/wiki/Risperidone",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [],
       "categories": [
-        "antipsychotic"
+        "antipsychotic",
+        "clinical-psychiatry"
       ],
       "roas": [
         {
@@ -24150,7 +24332,8 @@
       "commonNames": [
         "Temazepam",
         "Restoril",
-        "Normison"
+        "Normison",
+        "替马西泮"
       ],
       "url": "https://psychonautwiki.org/wiki/Temazepam",
       "isApproved": true,
@@ -24169,7 +24352,9 @@
       "categories": [
         "depressant",
         "benzodiazepine",
-        "habit-forming"
+        "habit-forming",
+        "clinical-psychiatry",
+        "sedative-hypnotic"
       ],
       "summary": "Temazepam's brand name is Restoril. It is a hypnotic benzodiazepine with effects similar to clonazepam, frequently prescribed as a sleep aid. Some users report mild euphoria alongside the hypnotic effects.",
       "roas": [
@@ -24492,7 +24677,8 @@
         "Tianeptine",
         "Stablon",
         "Coaxil",
-        "Tatinol"
+        "Tatinol",
+        "噻奈普汀"
       ],
       "url": "https://psychonautwiki.org/wiki/Tianeptine",
       "isApproved": true,
@@ -24514,7 +24700,8 @@
         "opioid",
         "antidepressant",
         "habit-forming",
-        "depressant"
+        "depressant",
+        "clinical-psychiatry"
       ],
       "summary": "A Tricyclic antidepressant, that has quite unique pharmacological properties than others in its class. Such as the possible indirect action on NMDA/AMPA and a full agonist at the μ-opioid receptor. While abuse of this substance is uncommon, it has been shown in a few countries.",
       "roas": [
@@ -24903,7 +25090,10 @@
     },
     {
       "name": "Triazolam",
-      "commonNames": [],
+      "commonNames": [
+        "Triazolam",
+        "三唑仑"
+      ],
       "url": "https://psychonautwiki.org/wiki/Triazolam",
       "isApproved": false,
       "tolerance": {
@@ -24921,7 +25111,9 @@
       "categories": [
         "depressant",
         "benzodiazepine",
-        "habit-forming"
+        "habit-forming",
+        "clinical-psychiatry",
+        "sedative-hypnotic"
       ],
       "summary": "An uncommon and very short acting benzodiazepine. Sedating and hypnotic, and may induce amnesia and lowered inhibitions at high doses.",
       "roas": [
@@ -25134,7 +25326,10 @@
         "Ambien",
         "Intermezzo",
         "Edluar",
-        "Zolpimist"
+        "Zolpimist",
+        "Zolpidem",
+        "唑吡坦",
+        "思诺思"
       ],
       "url": "https://psychonautwiki.org/wiki/Zolpidem",
       "isApproved": true,
@@ -25148,7 +25343,10 @@
         "hallucinogen",
         "depressant",
         "habit-forming",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "sedative-hypnotic",
+        "z-drug"
       ],
       "summary": "Commonly prescribed for insomnia, Ambien (zolpidem) can cause realistic hallucinations similar to those of deliriants, and is very likely to cause amnesia at higher doses. Take care when using this drug, as it tends to lower inhibitions to a level which causes the user to do things they might not normally do when sober.",
       "roas": [
@@ -25200,7 +25398,9 @@
       "name": "Zopiclone",
       "commonNames": [
         "Zimovane",
-        "Imovane"
+        "Imovane",
+        "Zopiclone",
+        "佐匹克隆"
       ],
       "url": "https://psychonautwiki.org/wiki/Zopiclone",
       "isApproved": true,
@@ -25220,7 +25420,10 @@
         "hallucinogen",
         "depressant",
         "habit-forming",
-        "common"
+        "common",
+        "clinical-psychiatry",
+        "sedative-hypnotic",
+        "z-drug"
       ],
       "summary": "A nonbenzodiazepine sedative sleep aid (Z-drug), which can have hallucinogenic effects if taken while awake. Often causes users to have a metallic taste in the mouth for ~12h. Has been reported in some cases to cause certain users to black out, redose excessively and undertake dangerous activities such as driving.",
       "roas": [
@@ -31415,7 +31618,9 @@
       "categories": [
         "cardiovascular",
         "prescription-medicine",
-        "atc-c02"
+        "atc-c02",
+        "clinical-psychiatry",
+        "adhd-medication"
       ],
       "summary": "可乐定属于C02 抗高血压药。本条目用于 ATC 分类、药代/药效时间进程、相互作用和监测要点的学习索引，不构成医疗建议、处方建议或剂量调整建议。",
       "clinicalInfo": {

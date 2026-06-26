@@ -1,0 +1,267 @@
+{
+  "categories": [
+    {
+      "name": "clinical-psychiatry",
+      "description": "Clinical psychiatry and neuropsychiatry medicines indexed separately from recreational psychoactive categories.",
+      "color": 4282339765,
+      "url": null
+    },
+    {
+      "name": "anxiolytic",
+      "description": "Medicines used in anxiety-related clinical contexts.",
+      "color": 4285297077,
+      "url": null
+    },
+    {
+      "name": "sedative-hypnotic",
+      "description": "Medicines used in sedative or hypnotic clinical contexts.",
+      "color": 4287467926,
+      "url": null
+    },
+    {
+      "name": "z-drug",
+      "description": "Non-benzodiazepine hypnotics such as zolpidem and zopiclone.",
+      "color": 4284105434,
+      "url": null
+    },
+    {
+      "name": "adhd-medication",
+      "description": "Medicines used in attention-deficit/hyperactivity disorder clinical contexts.",
+      "color": 4280668390,
+      "url": null
+    },
+    {
+      "name": "wakefulness-promoting-agent",
+      "description": "Medicines used in wakefulness-promoting or sleep-disorder clinical contexts.",
+      "color": 4281558732,
+      "url": null
+    },
+    {
+      "name": "cognitive-disorder-medication",
+      "description": "Medicines used in dementia or cognitive-disorder clinical contexts.",
+      "color": 4283453520,
+      "url": null
+    },
+    {
+      "name": "substance-use-disorder-treatment",
+      "description": "Medicines used in substance-use-disorder treatment or overdose reversal contexts.",
+      "color": 4288059027,
+      "url": null
+    },
+    {
+      "name": "gabapentinoid",
+      "description": "Gabapentinoid medicines used in neurologic and selected psychiatric-adjacent contexts.",
+      "color": 4285243631,
+      "url": null
+    }
+  ],
+  "substancePatches": [
+    {
+      "name": "Haloperidol",
+      "commonNamesAdd": ["Haloperidol", "氟哌啶醇", "氟哌丁苯"],
+      "categoriesAdd": ["clinical-psychiatry", "antipsychotic"]
+    },
+    {
+      "name": "Prochlorperazine",
+      "commonNamesAdd": ["Prochlorperazine", "丙氯拉嗪", "普鲁氯哌嗪"],
+      "categoriesAdd": ["clinical-psychiatry", "antipsychotic"]
+    },
+    {
+      "name": "Quetiapine",
+      "commonNamesAdd": ["Quetiapine", "喹硫平", "思瑞康"],
+      "categoriesAdd": ["clinical-psychiatry", "antipsychotic"]
+    },
+    {
+      "name": "Risperidone",
+      "commonNamesAdd": ["Risperidone", "利培酮", "维思通"],
+      "categoriesAdd": ["clinical-psychiatry", "antipsychotic"]
+    },
+    {
+      "name": "Mirtazapine",
+      "commonNamesAdd": ["Mirtazapine", "米氮平", "瑞美隆"],
+      "categoriesAdd": ["clinical-psychiatry", "antidepressant"]
+    },
+    {
+      "name": "Tianeptine",
+      "commonNamesAdd": ["Tianeptine", "噻奈普汀"],
+      "categoriesAdd": ["clinical-psychiatry", "antidepressant"]
+    },
+    {
+      "name": "Buspirone",
+      "commonNamesRemove": ["DMT", "Dimethyltryptamine", "Dmitri"],
+      "commonNamesAdd": ["Buspirone", "Buspar", "丁螺环酮"],
+      "categoriesRemove": ["psychedelic"],
+      "categoriesAdd": ["clinical-psychiatry", "anxiolytic"]
+    },
+    {
+      "name": "Alprazolam",
+      "commonNamesAdd": ["阿普唑仑", "佳静安定"],
+      "categoriesAdd": ["clinical-psychiatry", "anxiolytic", "sedative-hypnotic"]
+    },
+    {
+      "name": "Bromazepam",
+      "commonNamesAdd": ["溴西泮"],
+      "categoriesAdd": ["clinical-psychiatry", "anxiolytic", "sedative-hypnotic"]
+    },
+    {
+      "name": "Chlordiazepoxide",
+      "commonNamesAdd": ["Chlordiazepoxide", "氯氮䓬", "利眠宁"],
+      "categoriesAdd": ["clinical-psychiatry", "anxiolytic", "sedative-hypnotic", "benzodiazepine"]
+    },
+    {
+      "name": "Clonazepam",
+      "commonNamesAdd": ["氯硝西泮"],
+      "categoriesAdd": ["clinical-psychiatry", "anxiolytic", "sedative-hypnotic"]
+    },
+    {
+      "name": "Diazepam",
+      "commonNamesAdd": ["地西泮", "安定"],
+      "categoriesAdd": ["clinical-psychiatry", "anxiolytic", "sedative-hypnotic"]
+    },
+    {
+      "name": "Lorazepam",
+      "commonNamesAdd": ["劳拉西泮"],
+      "categoriesAdd": ["clinical-psychiatry", "anxiolytic", "sedative-hypnotic"]
+    },
+    {
+      "name": "Midazolam",
+      "commonNamesAdd": ["咪达唑仑"],
+      "categoriesAdd": ["clinical-psychiatry", "sedative-hypnotic"]
+    },
+    {
+      "name": "Oxazepam",
+      "commonNamesAdd": ["奥沙西泮"],
+      "categoriesAdd": ["clinical-psychiatry", "anxiolytic", "sedative-hypnotic"]
+    },
+    {
+      "name": "Flunitrazepam",
+      "commonNamesAdd": ["氟硝西泮"],
+      "categoriesAdd": ["clinical-psychiatry", "sedative-hypnotic"]
+    },
+    {
+      "name": "Temazepam",
+      "commonNamesAdd": ["替马西泮"],
+      "categoriesAdd": ["clinical-psychiatry", "sedative-hypnotic"]
+    },
+    {
+      "name": "Triazolam",
+      "commonNamesAdd": ["Triazolam", "三唑仑"],
+      "categoriesAdd": ["clinical-psychiatry", "sedative-hypnotic", "benzodiazepine"]
+    },
+    {
+      "name": "Etizolam",
+      "commonNamesAdd": ["依替唑仑"],
+      "categoriesAdd": ["clinical-psychiatry", "anxiolytic", "sedative-hypnotic"]
+    },
+    {
+      "name": "Phenobarbital",
+      "commonNamesAdd": ["苯巴比妥", "鲁米那"],
+      "categoriesAdd": ["clinical-psychiatry", "sedative-hypnotic"]
+    },
+    {
+      "name": "Pentobarbital",
+      "commonNamesAdd": ["戊巴比妥"],
+      "categoriesAdd": ["clinical-psychiatry", "sedative-hypnotic"]
+    },
+    {
+      "name": "Zolpidem",
+      "commonNamesAdd": ["Zolpidem", "唑吡坦", "思诺思"],
+      "categoriesAdd": ["clinical-psychiatry", "sedative-hypnotic", "z-drug"]
+    },
+    {
+      "name": "Zopiclone",
+      "commonNamesAdd": ["Zopiclone", "佐匹克隆"],
+      "categoriesAdd": ["clinical-psychiatry", "sedative-hypnotic", "z-drug"]
+    },
+    {
+      "name": "Eszopiclone",
+      "commonNamesAdd": ["Eszopiclone", "右佐匹克隆"],
+      "categoriesAdd": ["clinical-psychiatry", "sedative-hypnotic", "z-drug"]
+    },
+    {
+      "name": "Melatonin",
+      "commonNamesAdd": ["褪黑素"],
+      "categoriesAdd": ["clinical-psychiatry", "sedative-hypnotic"]
+    },
+    {
+      "name": "Amphetamine",
+      "commonNamesAdd": ["苯丙胺", "安非他明"],
+      "categoriesAdd": ["clinical-psychiatry", "adhd-medication"]
+    },
+    {
+      "name": "Dextroamphetamine",
+      "commonNamesAdd": ["右旋苯丙胺", "右旋安非他明"],
+      "categoriesAdd": ["clinical-psychiatry", "adhd-medication"]
+    },
+    {
+      "name": "Lisdexamfetamine",
+      "commonNamesAdd": ["赖右苯丙胺"],
+      "categoriesAdd": ["clinical-psychiatry", "adhd-medication"]
+    },
+    {
+      "name": "Methylphenidate",
+      "commonNamesAdd": ["哌甲酯", "利他林", "专注达"],
+      "categoriesAdd": ["clinical-psychiatry", "adhd-medication"]
+    },
+    {
+      "name": "Modafinil",
+      "commonNamesAdd": ["莫达非尼"],
+      "categoriesAdd": ["clinical-psychiatry", "wakefulness-promoting-agent"]
+    },
+    {
+      "name": "Armodafinil",
+      "commonNamesAdd": ["阿莫达非尼"],
+      "categoriesAdd": ["clinical-psychiatry", "wakefulness-promoting-agent"]
+    },
+    {
+      "name": "Memantine",
+      "commonNamesAdd": ["美金刚", "盐酸美金刚"],
+      "categoriesAdd": ["clinical-psychiatry", "cognitive-disorder-medication"]
+    },
+    {
+      "name": "Galantamine",
+      "commonNamesAdd": ["加兰他敏"],
+      "categoriesAdd": ["clinical-psychiatry", "cognitive-disorder-medication"]
+    },
+    {
+      "name": "Gabapentin",
+      "commonNamesAdd": ["加巴喷丁"],
+      "categoriesAdd": ["clinical-psychiatry", "gabapentinoid"]
+    },
+    {
+      "name": "Pregabalin",
+      "commonNamesAdd": ["普瑞巴林"],
+      "categoriesAdd": ["clinical-psychiatry", "gabapentinoid"]
+    },
+    {
+      "name": "Methadone",
+      "commonNamesAdd": ["美沙酮"],
+      "categoriesAdd": ["clinical-psychiatry", "substance-use-disorder-treatment"]
+    },
+    {
+      "name": "Buprenorphine",
+      "commonNamesAdd": ["丁丙诺啡"],
+      "categoriesAdd": ["clinical-psychiatry", "substance-use-disorder-treatment"]
+    },
+    {
+      "name": "Naloxone",
+      "commonNamesAdd": ["纳洛酮"],
+      "categoriesAdd": ["clinical-psychiatry", "substance-use-disorder-treatment"]
+    },
+    {
+      "name": "N-Acetylcysteine",
+      "commonNamesAdd": ["乙酰半胱氨酸", "NAC"],
+      "categoriesAdd": ["clinical-psychiatry"]
+    },
+    {
+      "name": "Clonidine",
+      "commonNamesAdd": ["可乐定"],
+      "categoriesAdd": ["clinical-psychiatry", "adhd-medication"]
+    },
+    {
+      "name": "Ketamine",
+      "commonNamesAdd": ["氯胺酮", "凯他敏"],
+      "categoriesAdd": ["clinical-psychiatry"]
+    }
+  ]
+}

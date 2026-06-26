@@ -43,6 +43,61 @@ def upsert_by_name(items: list[dict], incoming: list[dict]) -> list[dict]:
     return result
 
 
+def append_unique(current: list, incoming: list) -> list:
+    result = list(current)
+    seen = {
+        json.dumps(item, ensure_ascii=False, sort_keys=True)
+        if isinstance(item, dict)
+        else item
+        for item in result
+    }
+    for item in incoming:
+        marker = (
+            json.dumps(item, ensure_ascii=False, sort_keys=True)
+            if isinstance(item, dict)
+            else item
+        )
+        if marker not in seen:
+            seen.add(marker)
+            result.append(item)
+    return result
+
+
+def remove_values(current: list, values_to_remove: list) -> list:
+    remove_set = set(values_to_remove)
+    return [item for item in current if item not in remove_set]
+
+
+def apply_substance_patches(items: list[dict], patches: list[dict]) -> list[dict]:
+    by_name = {item.get("name"): item for item in items}
+    for patch in patches:
+        name = patch.get("name")
+        if name not in by_name:
+            continue
+        item = by_name[name]
+        if "commonNamesRemove" in patch:
+            item["commonNames"] = remove_values(
+                item.get("commonNames", []),
+                patch.get("commonNamesRemove", []),
+            )
+        if "commonNamesAdd" in patch:
+            item["commonNames"] = append_unique(
+                item.get("commonNames", []),
+                patch.get("commonNamesAdd", []),
+            )
+        if "categoriesRemove" in patch:
+            item["categories"] = remove_values(
+                item.get("categories", []),
+                patch.get("categoriesRemove", []),
+            )
+        if "categoriesAdd" in patch:
+            item["categories"] = append_unique(
+                item.get("categories", []),
+                patch.get("categoriesAdd", []),
+            )
+    return items
+
+
 def iter_source_files(source_dir: Path) -> list[Path]:
     return sorted(
         path
@@ -60,6 +115,10 @@ def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = F
         source_data = load_json(source_path)
         categories = upsert_by_name(categories, source_data.get("categories", []))
         substances = upsert_by_name(substances, source_data.get("substances", []))
+        substances = apply_substance_patches(
+            substances,
+            source_data.get("substancePatches", []),
+        )
 
     data["categories"] = categories
     data["substances"] = substances

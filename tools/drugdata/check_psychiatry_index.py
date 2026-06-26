@@ -1,0 +1,147 @@
+#!/usr/bin/env python3
+import json
+import sys
+from pathlib import Path
+
+
+SUBSTANCES_PATH = Path("app/src/main/res/raw/substances.json")
+
+CLINICAL_CATEGORY = "clinical-psychiatry"
+
+HIGH_VALUE_MISSING = {
+    "antipsychotics": [
+        "Chlorpromazine",
+        "Clozapine",
+        "Olanzapine",
+        "Aripiprazole",
+        "Paliperidone",
+        "Ziprasidone",
+        "Lurasidone",
+        "Amisulpride",
+        "Sulpiride",
+        "Perphenazine",
+    ],
+    "antidepressants": [
+        "Sertraline",
+        "Fluoxetine",
+        "Paroxetine",
+        "Escitalopram",
+        "Citalopram",
+        "Fluvoxamine",
+        "Venlafaxine",
+        "Duloxetine",
+        "Bupropion",
+        "Trazodone",
+        "Vortioxetine",
+        "Amitriptyline",
+        "Clomipramine",
+    ],
+    "mood_stabilizers": [
+        "Lithium",
+        "Valproate",
+        "Carbamazepine",
+        "Lamotrigine",
+    ],
+    "anxiolytics_and_hypnotics": [
+        "Hydroxyzine",
+        "Zaleplon",
+        "Ramelteon",
+        "Suvorexant",
+        "Lemborexant",
+    ],
+    "adhd": [
+        "Atomoxetine",
+        "Guanfacine",
+        "Clonidine",
+    ],
+    "cognitive_disorders": [
+        "Donepezil",
+        "Rivastigmine",
+    ],
+    "substance_use_disorder": [
+        "Naltrexone",
+        "Acamprosate",
+        "Varenicline",
+        "Disulfiram",
+    ],
+}
+
+RECREATIONAL_ONLY_CATEGORY_MARKERS = {
+    "psychedelic",
+    "entactogen",
+    "dissociative",
+    "deliriant",
+    "cannabinoid",
+    "research-chemical",
+}
+
+
+def load_substances() -> list[dict]:
+    data = json.loads(SUBSTANCES_PATH.read_text(encoding="utf-8"))
+    return data.get("substances", [])
+
+
+def has_chinese_alias(substance: dict) -> bool:
+    return any(
+        any("\u4e00" <= char <= "\u9fff" for char in alias)
+        for alias in substance.get("commonNames", [])
+    )
+
+
+def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+    substances = load_substances()
+    by_name = {substance.get("name", "").lower(): substance for substance in substances}
+    clinical_entries = [
+        substance
+        for substance in substances
+        if CLINICAL_CATEGORY in substance.get("categories", [])
+    ]
+    missing_chinese = [
+        substance.get("name")
+        for substance in clinical_entries
+        if not has_chinese_alias(substance)
+    ]
+    missing_by_group = {
+        group: [name for name in names if name.lower() not in by_name]
+        for group, names in HIGH_VALUE_MISSING.items()
+    }
+    recreational_candidates = [
+        substance.get("name")
+        for substance in substances
+        if CLINICAL_CATEGORY not in substance.get("categories", [])
+        and RECREATIONAL_ONLY_CATEGORY_MARKERS.intersection(substance.get("categories", []))
+    ]
+
+    print(f"Clinical psychiatry indexed entries: {len(clinical_entries)}")
+    for substance in sorted(clinical_entries, key=lambda item: item.get("name", "")):
+        print(
+            json.dumps(
+                {
+                    "name": substance.get("name"),
+                    "categories": substance.get("categories", []),
+                    "commonNames": substance.get("commonNames", []),
+                },
+                ensure_ascii=False,
+            )
+        )
+
+    if missing_chinese:
+        raise SystemExit(
+            "Clinical psychiatry entries without Chinese alias: "
+            + ", ".join(missing_chinese)
+        )
+
+    print("\nHigh-value missing clinical psychiatry medicines:")
+    for group, names in missing_by_group.items():
+        print(f"{group}: {', '.join(names) if names else 'none'}")
+
+    print("\nRecreational-only removal candidates, not deleted automatically:")
+    print(", ".join(recreational_candidates[:120]))
+    if len(recreational_candidates) > 120:
+        print(f"... and {len(recreational_candidates) - 120} more")
+
+
+if __name__ == "__main__":
+    main()
