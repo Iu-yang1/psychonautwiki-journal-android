@@ -5,6 +5,7 @@ from pathlib import Path
 
 ACCESSED_DATE = "2026-06-27"
 OUTPUT_PATH = Path("tools/drugdata/psychiatry/psychiatry_clinical_core.json")
+AUTO_LABEL_DATA_PATH = Path("tools/drugdata/psychiatry/openfda_psychiatry_label_data.json")
 
 
 SOURCE_ATC_N05 = {
@@ -190,6 +191,17 @@ CURATED_LABEL_DATA = {
         "doseBar": (5, 20, 40, 60),
     },
 }
+
+
+def _load_auto_label_data() -> dict:
+    if not AUTO_LABEL_DATA_PATH.exists():
+        return {}
+    return json.loads(AUTO_LABEL_DATA_PATH.read_text(encoding="utf-8"))
+
+
+# 手工核对数据优先；批量 openFDA 缓存只补充尚未手工覆盖的条目。
+MANUAL_CURATED_LABEL_DATA = CURATED_LABEL_DATA
+CURATED_LABEL_DATA = {**_load_auto_label_data(), **MANUAL_CURATED_LABEL_DATA}
 
 
 GROUPS = {
@@ -475,7 +487,7 @@ def curated_time_course(name: str, source_refs: list[dict]) -> list[dict] | None
 
 def curated_dose_use_reference(name: str, source_refs: list[dict]) -> list[dict] | None:
     curated = CURATED_LABEL_DATA.get(name)
-    if not curated:
+    if not curated or "doseReference" not in curated:
         return None
     indication, amount_text, schedule_text, range_min, range_max = curated["doseReference"]
     return [
