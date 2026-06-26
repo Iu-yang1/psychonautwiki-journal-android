@@ -1,4 +1,18 @@
 {
+  "buildConfig": {
+    "retainSubstanceCategories": [
+      "clinical-psychiatry",
+      "cardiovascular",
+      "antithrombotic",
+      "peripheral-circulation",
+      "pulmonary-hypertension",
+      "heart-failure",
+      "lipid-lowering",
+      "prescription-medicine",
+      "endocrine",
+      "hrt-related"
+    ]
+  },
   "categories": [
     {
       "name": "clinical-psychiatry",
@@ -52,6 +66,12 @@
       "name": "gabapentinoid",
       "description": "Gabapentinoid medicines used in neurologic and selected psychiatric-adjacent contexts.",
       "color": 4285243631,
+      "url": null
+    },
+    {
+      "name": "mood-stabilizer",
+      "description": "Medicines used in bipolar disorder or mood-stabilization clinical contexts.",
+      "color": 4287732651,
       "url": null
     }
   ],

@@ -95,6 +95,68 @@ def apply_substance_patches(items: list[dict], patches: list[dict]) -> list[dict
                 item.get("categories", []),
                 patch.get("categoriesAdd", []),
             )
+        for field_name, value in patch.get("fieldsSet", {}).items():
+            item[field_name] = value
+    return items
+
+
+def filter_by_retain_categories(
+    items: list[dict],
+    retain_categories: set[str],
+) -> list[dict]:
+    if not retain_categories:
+        return items
+    return [
+        item
+        for item in items
+        if retain_categories.intersection(item.get("categories", []))
+    ]
+
+
+RECREATIONAL_PSYCHIATRY_CATEGORY_MARKERS = {
+    "common",
+    "habit-forming",
+    "research-chemical",
+    "tentative",
+    "psychedelic",
+    "stimulant",
+    "depressant",
+    "opioid",
+    "dissociative",
+    "deliriant",
+    "hallucinogen",
+    "oneirogen",
+    "nootropic",
+    "cannabinoid",
+    "entactogen",
+    "常见的",
+    "易成瘾",
+    "研究性化学品",
+    "信息不确定",
+    "迷幻剂",
+    "兴奋剂",
+    "抑制剂",
+    "阿片类物质",
+    "分离剂",
+    "谵妄剂",
+    "致幻剂",
+    "致梦剂",
+    "益智药",
+    "大麻素",
+    "同感剂",
+}
+
+
+def sanitize_clinical_psychiatry_categories(items: list[dict]) -> list[dict]:
+    for item in items:
+        categories = item.get("categories", [])
+        if "clinical-psychiatry" not in categories:
+            continue
+        item["categories"] = [
+            category
+            for category in categories
+            if category not in RECREATIONAL_PSYCHIATRY_CATEGORY_MARKERS
+        ]
     return items
 
 
@@ -110,9 +172,12 @@ def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = F
     data = load_json(base_path)
     categories = data.get("categories", [])
     substances = data.get("substances", [])
+    retain_categories: set[str] = set()
 
     for source_path in iter_source_files(source_dir):
         source_data = load_json(source_path)
+        build_config = source_data.get("buildConfig", {})
+        retain_categories.update(build_config.get("retainSubstanceCategories", []))
         categories = upsert_by_name(categories, source_data.get("categories", []))
         substances = upsert_by_name(substances, source_data.get("substances", []))
         substances = apply_substance_patches(
@@ -120,6 +185,8 @@ def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = F
             source_data.get("substancePatches", []),
         )
 
+    substances = filter_by_retain_categories(substances, retain_categories)
+    substances = sanitize_clinical_psychiatry_categories(substances)
     data["categories"] = categories
     data["substances"] = substances
     if hybrid:

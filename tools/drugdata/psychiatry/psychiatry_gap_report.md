@@ -56,9 +56,15 @@ The following groups should not be part of a clinical psychiatry medicine index 
 
 They are not deleted automatically in this pass because deletion changes the product scope of the original PsychonautWiki app. Use `python tools/drugdata/check_psychiatry_index.py` to list concrete candidates from the current generated dataset.
 
-## High-Value Missing Medicines
+## Current Coverage
 
-These are not added yet because the user requested classification/index work first and no content rewrite.
+The generated app resources now keep only clinical data-pack substances. Pure recreational or experimental PsychonautWiki entries are excluded at build time unless they are explicitly indexed as clinical psychiatry medicines.
+
+Current generated resources:
+
+- Total substances: 316
+- Clinical psychiatry substances: 119
+- High-value core gaps checked by `check_psychiatry_index.py`: none
 
 Antipsychotics:
 
@@ -121,3 +127,24 @@ Substance-use-disorder treatment:
 - Acamprosate
 - Varenicline
 - Disulfiram
+
+## Remaining Work
+
+The newly added psychiatry entries are clinical indexing skeletons. They include:
+
+- `clinicalInfo`
+- `timeCourse` structure
+- `tdm` / monitoring distinction
+- `doseUseReferences`
+- `sourceRefs`
+
+However, most newly added psychiatry entries intentionally keep exact pharmacokinetic values and numeric dose ranges as `source needed` until a current product-specific label, guideline, or local approved labeling is reviewed.
+
+Next evidence pass should extract product-specific:
+
+- Tmax
+- elimination half-life
+- duration / effect windows where clinically meaningful
+- steady-state timing
+- exact label regimen text for `doseUseReferences`
+- special monitoring such as lithium serum concentration, valproate/carbamazepine levels, clozapine ANC, QT/ECG, metabolic labs, liver function, renal/thyroid monitoring

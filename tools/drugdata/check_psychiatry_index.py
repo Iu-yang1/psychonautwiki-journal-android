@@ -7,6 +7,18 @@ from pathlib import Path
 SUBSTANCES_PATH = Path("app/src/main/res/raw/substances.json")
 
 CLINICAL_CATEGORY = "clinical-psychiatry"
+RETAINED_CLINICAL_CATEGORIES = {
+    "clinical-psychiatry",
+    "cardiovascular",
+    "antithrombotic",
+    "peripheral-circulation",
+    "pulmonary-hypertension",
+    "heart-failure",
+    "lipid-lowering",
+    "prescription-medicine",
+    "endocrine",
+    "hrt-related",
+}
 
 HIGH_VALUE_MISSING = {
     "antipsychotics": [
@@ -20,6 +32,18 @@ HIGH_VALUE_MISSING = {
         "Amisulpride",
         "Sulpiride",
         "Perphenazine",
+        "Fluphenazine",
+        "Trifluoperazine",
+        "Thioridazine",
+        "Droperidol",
+        "Pimozide",
+        "Flupentixol",
+        "Zuclopenthixol",
+        "Loxapine",
+        "Cariprazine",
+        "Brexpiprazole",
+        "Asenapine",
+        "Pimavanserin",
     ],
     "antidepressants": [
         "Sertraline",
@@ -35,24 +59,49 @@ HIGH_VALUE_MISSING = {
         "Vortioxetine",
         "Amitriptyline",
         "Clomipramine",
+        "Desvenlafaxine",
+        "Milnacipran",
+        "Vilazodone",
+        "Imipramine",
+        "Nortriptyline",
+        "Doxepin",
+        "Maprotiline",
+        "Moclobemide",
+        "Phenelzine",
+        "Tranylcypromine",
+        "Agomelatine",
     ],
     "mood_stabilizers": [
-        "Lithium",
+        "Lithium Carbonate",
         "Valproate",
+        "Divalproex",
         "Carbamazepine",
+        "Oxcarbazepine",
         "Lamotrigine",
     ],
     "anxiolytics_and_hypnotics": [
         "Hydroxyzine",
+        "Nitrazepam",
+        "Estazolam",
+        "Lormetazepam",
+        "Flurazepam",
+        "Clorazepate",
+        "Prazepam",
+        "Clobazam",
+        "Tofisopam",
         "Zaleplon",
         "Ramelteon",
         "Suvorexant",
         "Lemborexant",
+        "Daridorexant",
     ],
     "adhd": [
         "Atomoxetine",
         "Guanfacine",
-        "Clonidine",
+        "Dexmethylphenidate",
+        "Viloxazine",
+        "Pitolisant",
+        "Solriamfetol",
     ],
     "cognitive_disorders": [
         "Donepezil",
@@ -67,12 +116,36 @@ HIGH_VALUE_MISSING = {
 }
 
 RECREATIONAL_ONLY_CATEGORY_MARKERS = {
+    "common",
+    "habit-forming",
     "psychedelic",
+    "stimulant",
+    "depressant",
+    "opioid",
     "entactogen",
     "dissociative",
     "deliriant",
+    "hallucinogen",
+    "oneirogen",
+    "nootropic",
     "cannabinoid",
     "research-chemical",
+    "tentative",
+    "常见的",
+    "易成瘾",
+    "迷幻剂",
+    "兴奋剂",
+    "抑制剂",
+    "阿片类物质",
+    "同感剂",
+    "分离剂",
+    "谵妄剂",
+    "致幻剂",
+    "致梦剂",
+    "益智药",
+    "大麻素",
+    "研究性化学品",
+    "信息不确定",
 }
 
 
@@ -107,6 +180,17 @@ def main() -> None:
         group: [name for name in names if name.lower() not in by_name]
         for group, names in HIGH_VALUE_MISSING.items()
     }
+    non_clinical_entries = [
+        substance.get("name")
+        for substance in substances
+        if not RETAINED_CLINICAL_CATEGORIES.intersection(substance.get("categories", []))
+    ]
+    clinical_recreational_category_residue = {
+        category
+        for substance in clinical_entries
+        for category in substance.get("categories", [])
+        if category in RECREATIONAL_ONLY_CATEGORY_MARKERS
+    }
     recreational_candidates = [
         substance.get("name")
         for substance in substances
@@ -131,6 +215,16 @@ def main() -> None:
         raise SystemExit(
             "Clinical psychiatry entries without Chinese alias: "
             + ", ".join(missing_chinese)
+        )
+    if non_clinical_entries:
+        raise SystemExit(
+            "Non-clinical substances remained after generation: "
+            + ", ".join(non_clinical_entries[:80])
+        )
+    if clinical_recreational_category_residue:
+        raise SystemExit(
+            "Clinical psychiatry entries still contain recreational categories: "
+            + ", ".join(sorted(clinical_recreational_category_residue))
         )
 
     print("\nHigh-value missing clinical psychiatry medicines:")
