@@ -148,6 +148,15 @@ RECREATIONAL_PSYCHIATRY_CATEGORY_MARKERS = {
 
 
 def sanitize_clinical_psychiatry_categories(items: list[dict]) -> list[dict]:
+    retained_clinical_routes = {
+        "oral",
+        "sublingual",
+        "buccal",
+        "transdermal",
+        "subcutaneous",
+        "intramuscular",
+        "intravenous",
+    }
     for item in items:
         categories = item.get("categories", [])
         if "clinical-psychiatry" not in categories:
@@ -157,6 +166,12 @@ def sanitize_clinical_psychiatry_categories(items: list[dict]) -> list[dict]:
             for category in categories
             if category not in RECREATIONAL_PSYCHIATRY_CATEGORY_MARKERS
         ]
+        if "roas" in item:
+            item["roas"] = [
+                roa
+                for roa in item.get("roas", [])
+                if roa.get("name") in retained_clinical_routes
+            ]
     return items
 
 

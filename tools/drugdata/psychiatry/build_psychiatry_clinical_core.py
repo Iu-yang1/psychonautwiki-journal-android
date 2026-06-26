@@ -29,6 +29,168 @@ SOURCE_NEML_CN = {
     "evidenceLevel": "REFERENCE_DATABASE",
 }
 
+CURATED_LABEL_DATA = {
+    "Sertraline": {
+        "openfdaSetId": "00179766-980b-44b0-99d3-1fee2bb27e37",
+        "timeCourse": {
+            "tmax": (4.5, 8.4, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (26, 26, "h", "label pharmacokinetics"),
+            "timeToSteadyState": (7, 7, "day", "label pharmacokinetics"),
+        },
+        "doseReference": ("Major depressive disorder / anxiety-related label contexts", "50 to 200 mg/day in cited label contexts", "once daily; dose changes no more often than weekly in the cited label", 50, 200),
+        "doseBar": (25, 50, 150, 200),
+    },
+    "Fluoxetine": {
+        "openfdaSetId": "02283de9-6087-45f7-a9ce-3b082ce860de",
+        "timeCourse": {
+            "tmax": (6, 8, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (4, 6, "day", "label pharmacokinetics", "Fluoxetine half-life after chronic administration; norfluoxetine half-life is longer."),
+        },
+        "doseReference": ("Major depressive disorder / OCD / bulimia / panic disorder label contexts", "20 to 80 mg/day across cited adult label contexts", "once daily or divided depending on product-specific label context", 20, 80),
+        "doseBar": (10, 20, 40, 60),
+    },
+    "Paroxetine": {
+        "openfdaSetId": "05ec70fd-4c65-495f-ba12-e8433a10b655",
+        "timeCourse": {
+            "tmax": (5.2, 5.2, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (21, 21, "h", "label pharmacokinetics"),
+            "timeToSteadyState": (10, 10, "day", "label pharmacokinetics"),
+        },
+        "doseReference": ("MDD / OCD / panic disorder / PTSD / SAD / GAD label contexts", "10 to 60 mg/day across cited adult label contexts", "once daily in the morning in the cited label", 10, 60),
+        "doseBar": (10, 20, 40, 60),
+    },
+    "Citalopram": {
+        "openfdaSetId": "0109f365-bebd-4810-a56f-4451e10245db",
+        "timeCourse": {
+            "tmax": (4, 4, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (35, 35, "h", "label pharmacokinetics"),
+            "timeToSteadyState": (7, 7, "day", "label pharmacokinetics"),
+        },
+        "doseReference": ("Major depressive disorder label context", "20 to 40 mg/day in cited label context", "once daily with or without food", 20, 40),
+        "doseBar": (10, 20, 30, 40),
+    },
+    "Venlafaxine": {
+        "openfdaSetId": "017a84aa-0e1f-f560-e063-6294a90a9069",
+        "timeCourse": {
+            "timeToSteadyState": (3, 3, "day", "label pharmacokinetics"),
+        },
+        "doseReference": ("Major depressive disorder immediate-release label context", "75 to 375 mg/day across cited label contexts", "two or three divided doses with food in the cited immediate-release label", 75, 375),
+        "doseBar": (37.5, 75, 150, 225),
+    },
+    "Duloxetine": {
+        "openfdaSetId": "00628e5e-4c5b-2573-e063-6294a90a0e3b",
+        "timeCourse": {
+            "tmax": (6, 10, "h", "label pharmacokinetics", "Food may delay Tmax from 6 to 10 hours."),
+            "eliminationHalfLife": (8, 17, "h", "label pharmacokinetics"),
+            "timeToSteadyState": (3, 3, "day", "label pharmacokinetics"),
+        },
+        "doseReference": ("MDD / GAD / pain-related label contexts", "30 to 120 mg/day across cited label contexts", "once daily or divided depending on indication in the cited label", 30, 120),
+        "doseBar": (20, 40, 60, 120),
+    },
+    "Olanzapine": {
+        "openfdaSetId": "002dd00f-7946-ea4f-e063-6294a90a5916",
+        "timeCourse": {
+            "tmax": (6, 6, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (21, 54, "h", "label pharmacokinetics", "5th to 95th percentile range; mean about 30 hours."),
+        },
+        "doseReference": ("Schizophrenia / bipolar disorder oral label contexts", "5 to 20 mg/day across cited adult oral label contexts", "once daily depending on indication in the cited label", 5, 20),
+        "doseBar": (2.5, 5, 10, 20),
+    },
+    "Risperidone": {
+        "openfdaSetId": "07d43bf6-a695-453a-a5c7-9581effe585c",
+        "timeCourse": {
+            "tmax": (1, 1, "h", "label pharmacokinetics", "Risperidone parent compound; active metabolite Tmax depends on CYP2D6 phenotype."),
+            "peakEffect": (3, 17, "h", "label pharmacokinetics", "9-hydroxyrisperidone peak occurs around 3 hours in extensive metabolizers and around 17 hours in poor metabolizers."),
+        },
+        "doseReference": ("Schizophrenia / bipolar mania / irritability in autism label contexts", "0.25 to 16 mg/day across cited label contexts", "once or twice daily depending on indication and product-specific label", 0.25, 16),
+        "doseBar": (0.25, 1, 3, 6),
+    },
+    "Quetiapine": {
+        "openfdaSetId": "01261008-5f42-4844-8a65-d4545a67a309",
+        "timeCourse": {
+            "tmax": (1.5, 1.5, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (6, 6, "h", "label pharmacokinetics"),
+            "timeToSteadyState": (2, 2, "day", "label pharmacokinetics"),
+        },
+        "doseReference": ("Schizophrenia / bipolar disorder immediate-release label contexts", "25 to 800 mg/day across cited label contexts", "once daily at bedtime or divided depending on indication in the cited label", 25, 800),
+        "doseBar": (25, 50, 300, 750),
+    },
+    "Clozapine": {
+        "openfdaSetId": "09231d80-6343-4a34-bd5b-100c547fd3c9",
+        "timeCourse": {
+            "tmax": (1, 6, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (12, 12, "h", "label pharmacokinetics"),
+        },
+        "doseReference": ("Treatment-resistant schizophrenia label context", "12.5 to 900 mg/day across cited label titration and maximum context", "divided dosing after initial titration in the cited label", 12.5, 900),
+        "doseBar": (12.5, 25, 300, 900),
+    },
+    "Zolpidem": {
+        "openfdaSetId": "021153ce-fe27-4ed1-8d88-b4157b0ed734",
+        "timeCourse": {
+            "tmax": (1.6, 1.6, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (1.4, 4.5, "h", "label pharmacokinetics"),
+        },
+        "doseReference": ("Insomnia label context", "5 to 10 mg once nightly in cited immediate-release label context", "immediately before bedtime with 7 to 8 hours before awakening", 5, 10),
+        "doseBar": (2.5, 5, 10, 10),
+    },
+    "Donepezil": {
+        "openfdaSetId": "03e26183-3e07-45e8-a414-a8bad32483e2",
+        "timeCourse": {
+            "tmax": (3, 8, "h", "label pharmacokinetics", "About 3 hours for 10 mg tablets and about 8 hours for 23 mg tablets."),
+            "eliminationHalfLife": (70, 70, "h", "label pharmacokinetics"),
+            "timeToSteadyState": (15, 15, "day", "label pharmacokinetics"),
+        },
+        "doseReference": ("Alzheimer disease label context", "5 to 23 mg/day across cited label contexts", "once daily in the evening", 5, 23),
+        "doseBar": (5, 10, 23, 23),
+    },
+    "Lithium Carbonate": {
+        "openfdaSetId": "01c4facd-ed79-4078-ba33-2044de372d0f",
+        "timeCourse": {
+            "tmax": (0.25, 6, "h", "label pharmacokinetics", "Immediate-release Tmax 0.25 to 3 hours; sustained-release Tmax 2 to 6 hours."),
+        },
+        "doseReference": ("Bipolar disorder label context", "300 mg two or three times daily as cited starting regimens; titrate by serum lithium concentration in label context", "serum concentration-guided; 12-hour trough sampling in cited label", 600, 900),
+        "doseBar": (300, 600, 900, 1800),
+        "tdm": {
+            "therapeuticRanges": [
+                {"indication": "Acute manic or mixed episodes", "range": "0.8-1.2", "unit": "mEq/L", "note": "12-hour post-dose serum lithium concentration in cited label context."},
+                {"indication": "Maintenance treatment", "range": "0.8-1.0", "unit": "mEq/L", "note": "12-hour post-dose serum lithium concentration in cited label context."}
+            ],
+            "samplingTime": "Draw serum lithium concentration 12 hours after the last oral dose in the cited label context.",
+        },
+    },
+    "Alprazolam": {
+        "openfdaSetId": "02840ea6-e4a0-96a0-e063-6394a90a19ae",
+        "timeCourse": {
+            "tmax": (1, 2, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (6.3, 26.9, "h", "label pharmacokinetics", "Mean about 11.2 hours in healthy adults."),
+        },
+        "doseReference": ("Generalized anxiety disorder / panic disorder label contexts", "0.75 to 10 mg/day across cited adult divided-dose label contexts", "divided dosing; taper gradually in the cited label", 0.75, 10),
+        "doseBar": (0.25, 0.5, 2, 4),
+    },
+    "Diazepam": {
+        "openfdaSetId": "01f04ee4-fff9-499a-8213-984e16368084",
+        "timeCourse": {
+            "tmax": (0.25, 2.5, "h", "label pharmacokinetics", "Average 1 to 1.5 hours fasting; food can delay Tmax."),
+        },
+        "doseReference": ("Anxiety / alcohol withdrawal / muscle spasm / seizure adjunct label contexts", "2 to 40 mg/day across cited adult divided-dose label contexts", "2 to 4 divided doses depending on indication in the cited label", 2, 40),
+        "doseBar": (2, 5, 10, 20),
+    },
+    "Buspirone": {
+        "openfdaSetId": "02628a0c-bfdb-4a58-8e48-bcd8ca12d53b",
+        "timeCourse": {
+            "tmax": (40, 90, "min", "label pharmacokinetics"),
+        },
+        "doseReference": ("Anxiety label context", "15 to 60 mg/day across cited adult divided-dose label context", "divided dosing; commonly 20 to 30 mg/day in cited trials", 15, 60),
+        "doseBar": (5, 15, 30, 60),
+    },
+    "Methylphenidate": {
+        "openfdaSetId": "034fb7cd-e183-475e-8beb-64fd88facc8f",
+        "timeCourse": {},
+        "doseReference": ("ADHD extended-release capsule label context", "20 to 60 mg/day in cited extended-release capsule label context", "once daily in the morning; titrate weekly in 10 mg increments in the cited label", 20, 60),
+        "doseBar": (5, 20, 40, 60),
+    },
+}
+
 
 GROUPS = {
     "antipsychotic": {
@@ -258,10 +420,145 @@ def dailymed_search(name: str) -> dict:
     }
 
 
+def openfda_source(name: str, set_id: str) -> dict:
+    query = name.replace(" ", "+")
+    return {
+        "title": f"openFDA drug label: {name}",
+        "url": f"https://api.fda.gov/drug/label.json?search=set_id:{set_id}",
+        "sourceType": "regulatory-label",
+        "accessedDate": ACCESSED_DATE,
+        "evidenceLevel": "REGULATORY_LABEL",
+        "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+        "note": f"openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query={query}",
+    }
+
+
+def time_value(value: tuple) -> dict:
+    min_value, max_value, unit, basis, *note = value
+    result = {
+        "min": min_value,
+        "max": max_value,
+        "unit": unit,
+        "basis": basis,
+    }
+    if note:
+        result["note"] = note[0]
+    return result
+
+
+def curated_time_course(name: str, source_refs: list[dict]) -> list[dict] | None:
+    curated = CURATED_LABEL_DATA.get(name)
+    if not curated:
+        return None
+    time_course = {
+        "route": "oral",
+        "formulation": "product-specific oral formulation",
+        "notes": [
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines.",
+        ],
+        "sourceRefs": source_refs,
+    }
+    for field in [
+        "onset",
+        "tmax",
+        "peakEffect",
+        "durationOfAction",
+        "eliminationHalfLife",
+        "timeToSteadyState",
+        "washout",
+    ]:
+        if field in curated["timeCourse"]:
+            time_course[field] = time_value(curated["timeCourse"][field])
+    return [time_course]
+
+
+def curated_dose_use_reference(name: str, source_refs: list[dict]) -> list[dict] | None:
+    curated = CURATED_LABEL_DATA.get(name)
+    if not curated:
+        return None
+    indication, amount_text, schedule_text, range_min, range_max = curated["doseReference"]
+    return [
+        {
+            "indication": indication,
+            "population": "Adults unless product-specific label states otherwise",
+            "route": "oral",
+            "formulation": "product-specific oral formulation",
+            "amountText": amount_text,
+            "scheduleText": schedule_text,
+            "ranges": [
+                {
+                    "min": range_min,
+                    "max": range_max,
+                    "unit": "mg",
+                    "basis": "daily-total",
+                    "frequency": schedule_text,
+                    "rangeKind": "label-regimen",
+                    "label": "Label regimen range",
+                    "note": "Label/literature regimen range for reference indexing; not a dosing recommendation.",
+                }
+            ],
+            "sourceType": "regulatory-label",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
+            "sourceRefs": source_refs,
+        }
+    ]
+
+
+def curated_roas(name: str) -> list[dict]:
+    curated = CURATED_LABEL_DATA.get(name)
+    if not curated or "doseBar" not in curated:
+        return []
+    light, common, strong, heavy = curated["doseBar"]
+    return [
+        {
+            "name": "oral",
+            "dose": {
+                "units": "mg",
+                "lightMin": light,
+                "commonMin": common,
+                "strongMin": strong,
+                "heavyMin": heavy,
+            },
+        }
+    ]
+
+
+def merge_tdm(base_tdm: dict, name: str, source_refs: list[dict]) -> dict:
+    curated = CURATED_LABEL_DATA.get(name, {})
+    tdm = dict(base_tdm)
+    tdm["sourceRefs"] = source_refs
+    if "tdm" in curated:
+        tdm["isRoutinelyMonitored"] = True
+        tdm["monitoringType"] = "serum concentration monitoring"
+        tdm["samplingTime"] = curated["tdm"].get("samplingTime")
+        tdm["therapeuticRanges"] = curated["tdm"].get("therapeuticRanges", [])
+        tdm["interpretationCaveats"] = [
+            "Interpret serum concentration with timing, renal function, sodium/fluid status, interacting medicines, symptoms, and local laboratory method.",
+            "Serum concentration targets are label contexts and not self-adjustment instructions.",
+        ]
+    return tdm
+
+
 def entry(name: str, aliases: list[str], group_key: str, atc_codes: list[str]) -> dict:
     group = GROUPS[group_key]
-    source_refs = group["sourceRefs"] + [dailymed_search(name)]
+    curated = CURATED_LABEL_DATA.get(name)
+    source_refs = group["sourceRefs"] + [
+        openfda_source(name, curated["openfdaSetId"]) if curated else dailymed_search(name)
+    ]
     route = "oral"
+    base_tdm = {
+        "isRoutinelyMonitored": group_key == "mood-stabilizer" and name in {"Lithium Carbonate", "Valproate", "Carbamazepine"},
+        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
+        "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
+        "pharmacokineticParametersAvailable": True,
+        "interpretationCaveats": [
+            "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
+            "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method.",
+        ],
+        "sourceRefs": source_refs,
+    }
     return {
         "name": name,
         "commonNames": [name] + aliases,
@@ -279,7 +576,7 @@ def entry(name: str, aliases: list[str], group_key: str, atc_codes: list[str]) -
             "monitoring": group["monitoring"],
             "sourceRefs": source_refs,
         },
-        "timeCourse": [
+        "timeCourse": curated_time_course(name, source_refs) or [
             {
                 "route": route,
                 "formulation": "product-specific",
@@ -290,18 +587,8 @@ def entry(name: str, aliases: list[str], group_key: str, atc_codes: list[str]) -
                 "sourceRefs": [dailymed_search(name)],
             }
         ],
-        "tdm": {
-            "isRoutinelyMonitored": group_key == "mood-stabilizer" and name in {"Lithium Carbonate", "Valproate", "Carbamazepine"},
-            "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
-            "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
-            "pharmacokineticParametersAvailable": True,
-            "interpretationCaveats": [
-                "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-                "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method.",
-            ],
-            "sourceRefs": source_refs,
-        },
-        "doseUseReferences": [
+        "tdm": merge_tdm(base_tdm, name, source_refs),
+        "doseUseReferences": curated_dose_use_reference(name, source_refs) or [
             {
                 "indication": group["indications"][0],
                 "population": "Adults unless local label specifies otherwise",
@@ -327,22 +614,23 @@ def entry(name: str, aliases: list[str], group_key: str, atc_codes: list[str]) -
                 "sourceRefs": [],
             }
         ],
-        "roas": [],
+        "roas": curated_roas(name),
         "sourceRefs": source_refs,
     }
 
 
 def patch(name: str, aliases: list[str], group_key: str, atc_codes: list[str]) -> dict:
     generated = entry(name, aliases, group_key, atc_codes)
+    fields_set = {
+        "clinicalInfo": generated["clinicalInfo"],
+        "timeCourse": generated["timeCourse"],
+        "tdm": generated["tdm"],
+        "doseUseReferences": generated["doseUseReferences"],
+        "sourceRefs": generated["sourceRefs"],
+    }
     return {
         "name": name,
-        "fieldsSet": {
-            "clinicalInfo": generated["clinicalInfo"],
-            "timeCourse": generated["timeCourse"],
-            "tdm": generated["tdm"],
-            "doseUseReferences": generated["doseUseReferences"],
-            "sourceRefs": generated["sourceRefs"],
-        },
+        "fieldsSet": fields_set,
     }
 
 

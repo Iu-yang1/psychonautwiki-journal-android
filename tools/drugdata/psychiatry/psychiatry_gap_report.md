@@ -148,3 +148,29 @@ Next evidence pass should extract product-specific:
 - steady-state timing
 - exact label regimen text for `doseUseReferences`
 - special monitoring such as lithium serum concentration, valproate/carbamazepine levels, clozapine ANC, QT/ECG, metabolic labs, liver function, renal/thyroid monitoring
+
+## Curated Label Data Progress
+
+The first precise-label pass has added product-label pharmacokinetic and regimen-index data for:
+
+- Sertraline
+- Fluoxetine
+- Paroxetine
+- Citalopram
+- Venlafaxine
+- Duloxetine
+- Olanzapine
+- Risperidone
+- Quetiapine
+- Clozapine
+- Zolpidem
+- Donepezil
+- Lithium Carbonate
+- Alprazolam
+- Diazepam
+- Buspirone
+- Methylphenidate
+
+For existing PsychonautWiki-backed clinical psychiatry entries, original `roas.duration` graph data is retained where present. Non-clinical routes such as insufflated/smoked/rectal are removed from final generated clinical psychiatry resources.
+
+Remaining psychiatry entries still need product-specific label extraction for exact `timeCourse`, `tdm`, and numeric `doseUseReferences`.

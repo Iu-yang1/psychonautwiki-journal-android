@@ -332,43 +332,6 @@
       },
       "roas": [
         {
-          "name": "inhaled",
-          "dose": {
-            "units": "mg",
-            "lightMin": 0.05,
-            "commonMin": 0.25,
-            "strongMin": 0.5,
-            "heavyMin": 1
-          },
-          "duration": {
-            "onset": {
-              "min": 5,
-              "max": 10,
-              "units": "seconds"
-            },
-            "comeup": {
-              "min": 5,
-              "max": 10,
-              "units": "minutes"
-            },
-            "peak": {
-              "min": 1,
-              "max": 2,
-              "units": "hours"
-            },
-            "offset": {
-              "min": 2,
-              "max": 3,
-              "units": "hours"
-            },
-            "total": {
-              "min": 4,
-              "max": 5,
-              "units": "hours"
-            }
-          }
-        },
-        {
           "name": "oral",
           "dose": {
             "units": "mg",
@@ -453,33 +416,62 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Alprazolam",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alprazolam",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Alprazolam",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:02840ea6-e4a0-96a0-e063-6394a90a19ae",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alprazolam"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Alprazolam",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alprazolam",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Alprazolam",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:02840ea6-e4a0-96a0-e063-6394a90a19ae",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alprazolam"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 6.3,
+            "max": 26.9,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Mean about 11.2 hours in healthy adults."
+          }
         }
       ],
       "tdm": {
@@ -507,39 +499,64 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Alprazolam",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alprazolam",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Alprazolam",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:02840ea6-e4a0-96a0-e063-6394a90a19ae",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alprazolam"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Generalized anxiety disorder / panic disorder label contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "0.75 to 10 mg/day across cited adult divided-dose label contexts",
+          "scheduleText": "divided dosing; taper gradually in the cited label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 0.75,
+              "max": 10,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "divided dosing; taper gradually in the cited label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Alprazolam",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:02840ea6-e4a0-96a0-e063-6394a90a19ae",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alprazolam"
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -558,12 +575,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Alprazolam",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alprazolam",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Alprazolam",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:02840ea6-e4a0-96a0-e063-6394a90a19ae",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alprazolam"
         }
       ]
     },
@@ -641,48 +659,6 @@
         ]
       },
       "roas": [
-        {
-          "name": "insufflated",
-          "dose": {
-            "units": "mg",
-            "lightMin": 4,
-            "commonMin": 15,
-            "strongMin": 30,
-            "heavyMin": 50
-          },
-          "duration": {
-            "onset": {
-              "min": 1,
-              "max": 5,
-              "units": "minutes"
-            },
-            "comeup": {
-              "min": 30,
-              "max": 90,
-              "units": "minutes"
-            },
-            "peak": {
-              "min": 1,
-              "max": 2,
-              "units": "hours"
-            },
-            "offset": {
-              "min": 1.5,
-              "max": 3,
-              "units": "hours"
-            },
-            "total": {
-              "min": 3,
-              "max": 6,
-              "units": "hours"
-            },
-            "afterglow": {
-              "min": 2,
-              "max": 4,
-              "units": "hours"
-            }
-          }
-        },
         {
           "name": "intravenous",
           "dose": {
@@ -1437,38 +1413,6 @@
       },
       "roas": [
         {
-          "name": "insufflated",
-          "dose": {
-            "units": "mg",
-            "lightMin": 0.2,
-            "commonMin": 0.4,
-            "strongMin": 0.8,
-            "heavyMin": 1.5
-          },
-          "duration": {
-            "onset": {
-              "min": 30,
-              "max": 60,
-              "units": "minutes"
-            },
-            "peak": {
-              "min": 4,
-              "max": 8,
-              "units": "hours"
-            },
-            "total": {
-              "min": 8,
-              "max": 14,
-              "units": "hours"
-            },
-            "afterglow": {
-              "min": 1,
-              "max": 3,
-              "units": "days"
-            }
-          }
-        },
-        {
           "name": "sublingual",
           "dose": {
             "units": "mg",
@@ -1707,33 +1651,55 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Buspirone",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Buspirone",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Buspirone",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:02628a0c-bfdb-4a58-8e48-bcd8ca12d53b",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Buspirone"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Buspirone",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Buspirone",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Buspirone",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:02628a0c-bfdb-4a58-8e48-bcd8ca12d53b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Buspirone"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 40,
+            "max": 90,
+            "unit": "min",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -1761,39 +1727,64 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Buspirone",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Buspirone",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Buspirone",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:02628a0c-bfdb-4a58-8e48-bcd8ca12d53b",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Buspirone"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Anxiety label context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "15 to 60 mg/day across cited adult divided-dose label context",
+          "scheduleText": "divided dosing; commonly 20 to 30 mg/day in cited trials",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 15,
+              "max": 60,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "divided dosing; commonly 20 to 30 mg/day in cited trials",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Buspirone",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:02628a0c-bfdb-4a58-8e48-bcd8ca12d53b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Buspirone"
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -1812,12 +1803,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Buspirone",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Buspirone",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Buspirone",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:02628a0c-bfdb-4a58-8e48-bcd8ca12d53b",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Buspirone"
         }
       ]
     },
@@ -2325,48 +2317,6 @@
       },
       "roas": [
         {
-          "name": "insufflated",
-          "dose": {
-            "units": "mg",
-            "lightMin": 3,
-            "commonMin": 7.5,
-            "strongMin": 12,
-            "heavyMin": 21.5
-          },
-          "duration": {
-            "onset": {
-              "min": 1,
-              "max": 5,
-              "units": "minutes"
-            },
-            "comeup": {
-              "min": 5,
-              "max": 15,
-              "units": "minutes"
-            },
-            "peak": {
-              "min": 1,
-              "max": 2,
-              "units": "hours"
-            },
-            "offset": {
-              "min": 1.5,
-              "max": 3,
-              "units": "hours"
-            },
-            "total": {
-              "min": 3,
-              "max": 6,
-              "units": "hours"
-            },
-            "afterglow": {
-              "min": 2,
-              "max": 4,
-              "units": "hours"
-            }
-          }
-        },
-        {
           "name": "oral",
           "dose": {
             "units": "mg",
@@ -2669,33 +2619,56 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Diazepam",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diazepam",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Diazepam",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:01f04ee4-fff9-499a-8213-984e16368084",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diazepam"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Diazepam",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diazepam",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Diazepam",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:01f04ee4-fff9-499a-8213-984e16368084",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diazepam"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 0.25,
+            "max": 2.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Average 1 to 1.5 hours fasting; food can delay Tmax."
+          }
         }
       ],
       "tdm": {
@@ -2723,39 +2696,64 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Diazepam",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diazepam",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Diazepam",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:01f04ee4-fff9-499a-8213-984e16368084",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diazepam"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Anxiety / alcohol withdrawal / muscle spasm / seizure adjunct label contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "2 to 40 mg/day across cited adult divided-dose label contexts",
+          "scheduleText": "2 to 4 divided doses depending on indication in the cited label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 2,
+              "max": 40,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "2 to 4 divided doses depending on indication in the cited label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Diazepam",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:01f04ee4-fff9-499a-8213-984e16368084",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diazepam"
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -2774,12 +2772,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Diazepam",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diazepam",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Diazepam",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:01f04ee4-fff9-499a-8213-984e16368084",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diazepam"
         }
       ]
     },
@@ -4117,51 +4116,6 @@
       },
       "roas": [
         {
-          "name": "insufflated",
-          "dose": {
-            "units": "mg",
-            "lightMin": 5,
-            "commonMin": 30,
-            "strongMin": 75,
-            "heavyMin": 150
-          },
-          "duration": {
-            "onset": {
-              "min": 1,
-              "max": 3,
-              "units": "minutes"
-            },
-            "comeup": {
-              "min": 5,
-              "max": 15,
-              "units": "minutes"
-            },
-            "peak": {
-              "min": 15,
-              "max": 45,
-              "units": "minutes"
-            },
-            "offset": {
-              "min": 30,
-              "max": 60,
-              "units": "minutes"
-            },
-            "total": {
-              "min": 1,
-              "max": 2,
-              "units": "hours"
-            },
-            "afterglow": {
-              "min": 2,
-              "max": 12,
-              "units": "hours"
-            }
-          },
-          "bioavailability": {
-            "max": 45
-          }
-        },
-        {
           "name": "oral",
           "dose": {
             "units": "mg",
@@ -5496,48 +5450,6 @@
       },
       "roas": [
         {
-          "name": "insufflated",
-          "dose": {
-            "units": "mg",
-            "lightMin": 1,
-            "commonMin": 10,
-            "strongMin": 30,
-            "heavyMin": 60
-          },
-          "duration": {
-            "onset": {
-              "min": 5,
-              "max": 20,
-              "units": "minutes"
-            },
-            "comeup": {
-              "min": 15,
-              "max": 40,
-              "units": "minutes"
-            },
-            "peak": {
-              "min": 30,
-              "max": 45,
-              "units": "minutes"
-            },
-            "offset": {
-              "min": 2,
-              "max": 4,
-              "units": "hours"
-            },
-            "total": {
-              "min": 2,
-              "max": 4,
-              "units": "hours"
-            },
-            "afterglow": {
-              "min": 1,
-              "max": 4,
-              "units": "hours"
-            }
-          }
-        },
-        {
           "name": "oral",
           "dose": {
             "units": "mg",
@@ -5615,31 +5527,40 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Methylphenidate",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methylphenidate",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Methylphenidate",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:034fb7cd-e183-475e-8beb-64fd88facc8f",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methylphenidate"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Methylphenidate",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methylphenidate",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Methylphenidate",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:034fb7cd-e183-475e-8beb-64fd88facc8f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methylphenidate"
             }
           ]
         }
@@ -5662,39 +5583,57 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Methylphenidate",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methylphenidate",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Methylphenidate",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:034fb7cd-e183-475e-8beb-64fd88facc8f",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methylphenidate"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Attention-deficit/hyperactivity disorder depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "ADHD extended-release capsule label context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "20 to 60 mg/day in cited extended-release capsule label context",
+          "scheduleText": "once daily in the morning; titrate weekly in 10 mg increments in the cited label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 20,
+              "max": 60,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily in the morning; titrate weekly in 10 mg increments in the cited label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Methylphenidate",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:034fb7cd-e183-475e-8beb-64fd88facc8f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methylphenidate"
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -5706,12 +5645,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Methylphenidate",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methylphenidate",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Methylphenidate",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:034fb7cd-e183-475e-8beb-64fd88facc8f",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methylphenidate"
         }
       ]
     },
@@ -6626,26 +6566,6 @@
         "substance-use-disorder-treatment"
       ],
       "roas": [
-        {
-          "name": "insufflated",
-          "dose": {
-            "units": "mg",
-            "commonMin": 1,
-            "strongMin": 4
-          },
-          "duration": {
-            "onset": {
-              "min": 0,
-              "max": 10,
-              "units": "minutes"
-            },
-            "total": {
-              "min": 30,
-              "max": 60,
-              "units": "minutes"
-            }
-          }
-        },
         {
           "name": "intramuscular",
           "dose": {
@@ -7612,48 +7532,6 @@
           "bioavailability": {
             "max": 90
           }
-        },
-        {
-          "name": "rectal",
-          "dose": {
-            "units": "mg",
-            "lightMin": 40,
-            "commonMin": 200,
-            "strongMin": 450,
-            "heavyMin": 600
-          },
-          "duration": {
-            "onset": {
-              "min": 15,
-              "max": 30,
-              "units": "minutes"
-            },
-            "comeup": {
-              "min": 30,
-              "max": 120,
-              "units": "minutes"
-            },
-            "peak": {
-              "min": 2,
-              "max": 3,
-              "units": "hours"
-            },
-            "offset": {
-              "min": 3,
-              "max": 5,
-              "units": "hours"
-            },
-            "total": {
-              "min": 5,
-              "max": 8,
-              "units": "hours"
-            },
-            "afterglow": {
-              "min": 6,
-              "max": 12,
-              "units": "hours"
-            }
-          }
         }
       ],
       "clinicalInfo": {
@@ -8116,33 +7994,67 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Quetiapine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quetiapine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Quetiapine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:01261008-5f42-4844-8a65-d4545a67a309",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quetiapine"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Quetiapine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quetiapine",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Quetiapine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:01261008-5f42-4844-8a65-d4545a67a309",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quetiapine"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1.5,
+            "max": 1.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 6,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 2,
+            "max": 2,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -8170,39 +8082,64 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Quetiapine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quetiapine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Quetiapine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:01261008-5f42-4844-8a65-d4545a67a309",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quetiapine"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Schizophrenia spectrum disorders",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Schizophrenia / bipolar disorder immediate-release label contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "25 to 800 mg/day across cited label contexts",
+          "scheduleText": "once daily at bedtime or divided depending on indication in the cited label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 25,
+              "max": 800,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily at bedtime or divided depending on indication in the cited label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Quetiapine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:01261008-5f42-4844-8a65-d4545a67a309",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quetiapine"
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -8221,12 +8158,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Quetiapine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quetiapine",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Quetiapine",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:01261008-5f42-4844-8a65-d4545a67a309",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quetiapine"
         }
       ]
     },
@@ -8325,33 +8263,63 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Risperidone",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Risperidone",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Risperidone",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:07d43bf6-a695-453a-a5c7-9581effe585c",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Risperidone"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Risperidone",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Risperidone",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Risperidone",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:07d43bf6-a695-453a-a5c7-9581effe585c",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Risperidone"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Risperidone parent compound; active metabolite Tmax depends on CYP2D6 phenotype."
+          },
+          "peakEffect": {
+            "min": 3,
+            "max": 17,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "9-hydroxyrisperidone peak occurs around 3 hours in extensive metabolizers and around 17 hours in poor metabolizers."
+          }
         }
       ],
       "tdm": {
@@ -8379,39 +8347,64 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Risperidone",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Risperidone",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Risperidone",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:07d43bf6-a695-453a-a5c7-9581effe585c",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Risperidone"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Schizophrenia spectrum disorders",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Schizophrenia / bipolar mania / irritability in autism label contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "0.25 to 16 mg/day across cited label contexts",
+          "scheduleText": "once or twice daily depending on indication and product-specific label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 0.25,
+              "max": 16,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once or twice daily depending on indication and product-specific label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Risperidone",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:07d43bf6-a695-453a-a5c7-9581effe585c",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Risperidone"
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -8430,12 +8423,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Risperidone",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Risperidone",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Risperidone",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:07d43bf6-a695-453a-a5c7-9581effe585c",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Risperidone"
         }
       ]
     },
@@ -9208,33 +9202,61 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Zolpidem",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Zolpidem",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:021153ce-fe27-4ed1-8d88-b4157b0ed734",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Zolpidem",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Zolpidem",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:021153ce-fe27-4ed1-8d88-b4157b0ed734",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1.6,
+            "max": 1.6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 1.4,
+            "max": 4.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -9262,39 +9284,64 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Zolpidem",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Zolpidem",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:021153ce-fe27-4ed1-8d88-b4157b0ed734",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Insomnia label context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "5 to 10 mg once nightly in cited immediate-release label context",
+          "scheduleText": "immediately before bedtime with 7 to 8 hours before awakening",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 5,
+              "max": 10,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "immediately before bedtime with 7 to 8 hours before awakening",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Zolpidem",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:021153ce-fe27-4ed1-8d88-b4157b0ed734",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem"
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -9313,12 +9360,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Zolpidem",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Zolpidem",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:021153ce-fe27-4ed1-8d88-b4157b0ed734",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem"
         }
       ]
     },
@@ -15677,11 +15725,7 @@
           }
         ]
       },
-      "roas": [
-        {
-          "name": "ORAL"
-        }
-      ],
+      "roas": [],
       "doseUseReferences": [
         {
           "indication": "Indications depend on approved local labeling and clinical context.",
@@ -52927,33 +52971,61 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Clozapine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clozapine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Clozapine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:09231d80-6343-4a34-bd5b-100c547fd3c9",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clozapine"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Clozapine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clozapine",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Clozapine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:09231d80-6343-4a34-bd5b-100c547fd3c9",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clozapine"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": 12,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -52981,42 +53053,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Clozapine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clozapine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Clozapine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:09231d80-6343-4a34-bd5b-100c547fd3c9",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clozapine"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Schizophrenia spectrum disorders",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Treatment-resistant schizophrenia label context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "12.5 to 900 mg/day across cited label titration and maximum context",
+          "scheduleText": "divided dosing after initial titration in the cited label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 12.5,
+              "max": 900,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "divided dosing after initial titration in the cited label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Clozapine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:09231d80-6343-4a34-bd5b-100c547fd3c9",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clozapine"
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 12.5,
+            "commonMin": 25,
+            "strongMin": 300,
+            "heavyMin": 900
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N05 Psycholeptics",
@@ -53033,12 +53141,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Clozapine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clozapine",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Clozapine",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:09231d80-6343-4a34-bd5b-100c547fd3c9",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clozapine"
         }
       ]
     },
@@ -53102,33 +53211,62 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Olanzapine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Olanzapine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Olanzapine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:002dd00f-7946-ea4f-e063-6294a90a5916",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Olanzapine"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Olanzapine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Olanzapine",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Olanzapine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:002dd00f-7946-ea4f-e063-6294a90a5916",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Olanzapine"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 6,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 21,
+            "max": 54,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "5th to 95th percentile range; mean about 30 hours."
+          }
         }
       ],
       "tdm": {
@@ -53156,42 +53294,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Olanzapine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Olanzapine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Olanzapine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:002dd00f-7946-ea4f-e063-6294a90a5916",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Olanzapine"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Schizophrenia spectrum disorders",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Schizophrenia / bipolar disorder oral label contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "5 to 20 mg/day across cited adult oral label contexts",
+          "scheduleText": "once daily depending on indication in the cited label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 5,
+              "max": 20,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily depending on indication in the cited label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Olanzapine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:002dd00f-7946-ea4f-e063-6294a90a5916",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Olanzapine"
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 2.5,
+            "commonMin": 5,
+            "strongMin": 10,
+            "heavyMin": 20
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N05 Psycholeptics",
@@ -53208,12 +53382,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Olanzapine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Olanzapine",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Olanzapine",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:002dd00f-7946-ea4f-e063-6294a90a5916",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Olanzapine"
         }
       ]
     },
@@ -56581,33 +56756,67 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Sertraline",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sertraline",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Sertraline",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:00179766-980b-44b0-99d3-1fee2bb27e37",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sertraline"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Sertraline",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sertraline",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Sertraline",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:00179766-980b-44b0-99d3-1fee2bb27e37",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sertraline"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 4.5,
+            "max": 8.4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 26,
+            "max": 26,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 7,
+            "max": 7,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -56635,42 +56844,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Sertraline",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sertraline",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Sertraline",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:00179766-980b-44b0-99d3-1fee2bb27e37",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sertraline"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Major depressive disorder / anxiety-related label contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "50 to 200 mg/day in cited label contexts",
+          "scheduleText": "once daily; dose changes no more often than weekly in the cited label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 50,
+              "max": 200,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily; dose changes no more often than weekly in the cited label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Sertraline",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:00179766-980b-44b0-99d3-1fee2bb27e37",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sertraline"
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 25,
+            "commonMin": 50,
+            "strongMin": 150,
+            "heavyMin": 200
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -56687,12 +56932,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Sertraline",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sertraline",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Sertraline",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:00179766-980b-44b0-99d3-1fee2bb27e37",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sertraline"
         }
       ]
     },
@@ -56753,33 +56999,62 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Fluoxetine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluoxetine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Fluoxetine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:02283de9-6087-45f7-a9ce-3b082ce860de",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluoxetine"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Fluoxetine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluoxetine",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Fluoxetine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:02283de9-6087-45f7-a9ce-3b082ce860de",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluoxetine"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 6,
+            "max": 8,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 4,
+            "max": 6,
+            "unit": "day",
+            "basis": "label pharmacokinetics",
+            "note": "Fluoxetine half-life after chronic administration; norfluoxetine half-life is longer."
+          }
         }
       ],
       "tdm": {
@@ -56807,42 +57082,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Fluoxetine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluoxetine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Fluoxetine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:02283de9-6087-45f7-a9ce-3b082ce860de",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluoxetine"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Major depressive disorder / OCD / bulimia / panic disorder label contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "20 to 80 mg/day across cited adult label contexts",
+          "scheduleText": "once daily or divided depending on product-specific label context",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 20,
+              "max": 80,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily or divided depending on product-specific label context",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Fluoxetine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:02283de9-6087-45f7-a9ce-3b082ce860de",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluoxetine"
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 10,
+            "commonMin": 20,
+            "strongMin": 40,
+            "heavyMin": 60
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -56859,12 +57170,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Fluoxetine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluoxetine",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Fluoxetine",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:02283de9-6087-45f7-a9ce-3b082ce860de",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluoxetine"
         }
       ]
     },
@@ -56925,33 +57237,67 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Paroxetine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Paroxetine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Paroxetine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:05ec70fd-4c65-495f-ba12-e8433a10b655",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Paroxetine"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Paroxetine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Paroxetine",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Paroxetine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:05ec70fd-4c65-495f-ba12-e8433a10b655",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Paroxetine"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 5.2,
+            "max": 5.2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 21,
+            "max": 21,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 10,
+            "max": 10,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -56979,42 +57325,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Paroxetine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Paroxetine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Paroxetine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:05ec70fd-4c65-495f-ba12-e8433a10b655",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Paroxetine"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "MDD / OCD / panic disorder / PTSD / SAD / GAD label contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "10 to 60 mg/day across cited adult label contexts",
+          "scheduleText": "once daily in the morning in the cited label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 10,
+              "max": 60,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily in the morning in the cited label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Paroxetine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:05ec70fd-4c65-495f-ba12-e8433a10b655",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Paroxetine"
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 10,
+            "commonMin": 20,
+            "strongMin": 40,
+            "heavyMin": 60
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -57031,12 +57413,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Paroxetine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Paroxetine",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Paroxetine",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:05ec70fd-4c65-495f-ba12-e8433a10b655",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Paroxetine"
         }
       ]
     },
@@ -57268,33 +57651,67 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Citalopram",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Citalopram",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Citalopram",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:0109f365-bebd-4810-a56f-4451e10245db",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Citalopram"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Citalopram",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Citalopram",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Citalopram",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:0109f365-bebd-4810-a56f-4451e10245db",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Citalopram"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 4,
+            "max": 4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 35,
+            "max": 35,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 7,
+            "max": 7,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -57322,42 +57739,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Citalopram",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Citalopram",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Citalopram",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:0109f365-bebd-4810-a56f-4451e10245db",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Citalopram"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Major depressive disorder label context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "20 to 40 mg/day in cited label context",
+          "scheduleText": "once daily with or without food",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 20,
+              "max": 40,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily with or without food",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Citalopram",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:0109f365-bebd-4810-a56f-4451e10245db",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Citalopram"
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 10,
+            "commonMin": 20,
+            "strongMin": 30,
+            "heavyMin": 40
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -57374,12 +57827,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Citalopram",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Citalopram",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Citalopram",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:0109f365-bebd-4810-a56f-4451e10245db",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Citalopram"
         }
       ]
     },
@@ -57611,33 +58065,55 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Venlafaxine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Venlafaxine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Venlafaxine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:017a84aa-0e1f-f560-e063-6294a90a9069",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Venlafaxine"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Venlafaxine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Venlafaxine",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Venlafaxine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:017a84aa-0e1f-f560-e063-6294a90a9069",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Venlafaxine"
             }
-          ]
+          ],
+          "timeToSteadyState": {
+            "min": 3,
+            "max": 3,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -57665,42 +58141,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Venlafaxine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Venlafaxine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Venlafaxine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:017a84aa-0e1f-f560-e063-6294a90a9069",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Venlafaxine"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Major depressive disorder immediate-release label context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "75 to 375 mg/day across cited label contexts",
+          "scheduleText": "two or three divided doses with food in the cited immediate-release label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 75,
+              "max": 375,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "two or three divided doses with food in the cited immediate-release label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Venlafaxine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:017a84aa-0e1f-f560-e063-6294a90a9069",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Venlafaxine"
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 37.5,
+            "commonMin": 75,
+            "strongMin": 150,
+            "heavyMin": 225
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -57717,12 +58229,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Venlafaxine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Venlafaxine",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Venlafaxine",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:017a84aa-0e1f-f560-e063-6294a90a9069",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Venlafaxine"
         }
       ]
     },
@@ -57954,33 +58467,68 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Duloxetine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Duloxetine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Duloxetine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:00628e5e-4c5b-2573-e063-6294a90a0e3b",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Duloxetine"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Duloxetine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Duloxetine",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Duloxetine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:00628e5e-4c5b-2573-e063-6294a90a0e3b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Duloxetine"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 6,
+            "max": 10,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Food may delay Tmax from 6 to 10 hours."
+          },
+          "eliminationHalfLife": {
+            "min": 8,
+            "max": 17,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 3,
+            "max": 3,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -58008,42 +58556,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Duloxetine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Duloxetine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Duloxetine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:00628e5e-4c5b-2573-e063-6294a90a0e3b",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Duloxetine"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "MDD / GAD / pain-related label contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "30 to 120 mg/day across cited label contexts",
+          "scheduleText": "once daily or divided depending on indication in the cited label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 30,
+              "max": 120,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily or divided depending on indication in the cited label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Duloxetine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:00628e5e-4c5b-2573-e063-6294a90a0e3b",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Duloxetine"
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 20,
+            "commonMin": 40,
+            "strongMin": 60,
+            "heavyMin": 120
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -58060,12 +58644,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Duloxetine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Duloxetine",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Duloxetine",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:00628e5e-4c5b-2573-e063-6294a90a0e3b",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Duloxetine"
         }
       ]
     },
@@ -60686,43 +61271,59 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Lithium Carbonate",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lithium+Carbonate",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Lithium Carbonate",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:01c4facd-ed79-4078-ba33-2044de372d0f",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lithium+Carbonate"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Lithium Carbonate",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lithium+Carbonate",
-              "sourceType": "regulatory-label-search",
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Lithium Carbonate",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:01c4facd-ed79-4078-ba33-2044de372d0f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lithium+Carbonate"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 0.25,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Immediate-release Tmax 0.25 to 3 hours; sustained-release Tmax 2 to 6 hours."
+          }
         }
       ],
       "tdm": {
         "isRoutinelyMonitored": true,
-        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
+        "monitoringType": "serum concentration monitoring",
         "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
         "pharmacokineticParametersAvailable": true,
         "interpretationCaveats": [
-          "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-          "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method."
+          "Interpret serum concentration with timing, renal function, sodium/fluid status, interacting medicines, symptoms, and local laboratory method.",
+          "Serum concentration targets are label contexts and not self-adjustment instructions."
         ],
         "sourceRefs": [
           {
@@ -60733,42 +61334,86 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Lithium Carbonate",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lithium+Carbonate",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Lithium Carbonate",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:01c4facd-ed79-4078-ba33-2044de372d0f",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lithium+Carbonate"
+          }
+        ],
+        "samplingTime": "Draw serum lithium concentration 12 hours after the last oral dose in the cited label context.",
+        "therapeuticRanges": [
+          {
+            "indication": "Acute manic or mixed episodes",
+            "range": "0.8-1.2",
+            "unit": "mEq/L",
+            "note": "12-hour post-dose serum lithium concentration in cited label context."
+          },
+          {
+            "indication": "Maintenance treatment",
+            "range": "0.8-1.0",
+            "unit": "mEq/L",
+            "note": "12-hour post-dose serum lithium concentration in cited label context."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Bipolar disorder and seizure-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Bipolar disorder label context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "300 mg two or three times daily as cited starting regimens; titrate by serum lithium concentration in label context",
+          "scheduleText": "serum concentration-guided; 12-hour trough sampling in cited label",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 600,
+              "max": 900,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "serum concentration-guided; 12-hour trough sampling in cited label",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Lithium Carbonate",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:01c4facd-ed79-4078-ba33-2044de372d0f",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lithium+Carbonate"
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 300,
+            "commonMin": 600,
+            "strongMin": 900,
+            "heavyMin": 1800
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "国家基本药物目录 2018",
@@ -60778,12 +61423,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Lithium Carbonate",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lithium+Carbonate",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Lithium Carbonate",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:01c4facd-ed79-4078-ba33-2044de372d0f",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lithium+Carbonate"
         }
       ]
     },
@@ -64901,33 +65547,61 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Donepezil",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Donepezil",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Donepezil",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:03e26183-3e07-45e8-a414-a8bad32483e2",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Donepezil"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Donepezil",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Donepezil",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Donepezil",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:03e26183-3e07-45e8-a414-a8bad32483e2",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Donepezil"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 3,
+            "max": 8,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "About 3 hours for 10 mg tablets and about 8 hours for 23 mg tablets."
+          },
+          "eliminationHalfLife": {
+            "min": 70,
+            "max": 70,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 15,
+            "max": 15,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -64948,42 +65622,71 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Donepezil",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Donepezil",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Donepezil",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:03e26183-3e07-45e8-a414-a8bad32483e2",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Donepezil"
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Alzheimer disease or cognitive-disorder indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Alzheimer disease label context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "5 to 23 mg/day across cited label contexts",
+          "scheduleText": "once daily in the evening",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 5,
+              "max": 23,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily in the evening",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Donepezil",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:03e26183-3e07-45e8-a414-a8bad32483e2",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Donepezil"
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 5,
+            "commonMin": 10,
+            "strongMin": 23,
+            "heavyMin": 23
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -64993,12 +65696,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Donepezil",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Donepezil",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Donepezil",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:03e26183-3e07-45e8-a414-a8bad32483e2",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Donepezil"
         }
       ]
     },
