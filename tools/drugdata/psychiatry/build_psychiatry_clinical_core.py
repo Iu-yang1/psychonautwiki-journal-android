@@ -311,6 +311,82 @@ CURATED_LABEL_DATA = {
         "doseReference": ("ADHD / narcolepsy oral label context", "5 to 60 mg/day across cited ADHD and narcolepsy label contexts", "divided dosing; late evening doses avoided in the cited label", 5, 60),
         "doseBar": (2.5, 5, 20, 40),
     },
+    "Agomelatine": {
+        "emcProductId": "6564",
+        "emcTitle": "UK eMC SmPC: Valdoxan 25 mg film-coated tablets",
+        "timeCourse": {
+            "tmax": (1, 2, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (1, 2, "h", "label pharmacokinetics"),
+        },
+        "doseReference": ("Major depressive episodes adult SmPC context", "25 to 50 mg/day in cited SmPC context", "once daily at bedtime; increase after two weeks only in the cited SmPC context", 25, 50),
+        "doseBar": (25, 25, 50, 50),
+    },
+    "Amisulpride": {
+        "emcProductId": "548",
+        "emcTitle": "UK eMC SmPC: Amisulpride 50 mg Tablets",
+        "timeCourse": {
+            "eliminationHalfLife": (12, 12, "h", "label pharmacokinetics"),
+        },
+        "doseReference": ("Schizophrenia oral SmPC/PIL context", "50 to 1200 mg/day across cited oral amisulpride label contexts", "once daily up to 300 mg/day or divided above 300 mg/day in cited label context", 50, 1200),
+        "doseBar": (50, 100, 800, 1200),
+    },
+    "Sulpiride": {
+        "emcProductId": "2430",
+        "emcTitle": "UK eMC SmPC: Sulpiride 200 mg Tablets",
+        "timeCourse": {
+            "tmax": (3, 6, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (8, 8, "h", "label pharmacokinetics"),
+        },
+    },
+    "Flupentixol": {
+        "emcProductId": "998",
+        "emcTitle": "UK eMC SmPC: Fluanxol 0.5 mg film-coated tablets",
+        "timeCourse": {
+            "tmax": (4, 4, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (35, 35, "h", "label pharmacokinetics"),
+        },
+    },
+    "Zuclopenthixol": {
+        "emcProductId": "994",
+        "emcTitle": "UK eMC SmPC: Clopixol 2 mg film-coated tablets",
+        "timeCourse": {
+            "tmax": (3, 6, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (1, 1, "day", "label pharmacokinetics"),
+        },
+    },
+    "Trifluoperazine": {
+        "emcProductId": "1546",
+        "emcTitle": "UK eMC SmPC: Trifluoperazine 5 mg/5 ml Oral Solution",
+        "timeCourse": {
+            "eliminationHalfLife": (22, 22, "h", "label pharmacokinetics", "Terminal elimination half-life; alpha phase is about 3.6 hours in cited SmPC."),
+        },
+    },
+    "Nitrazepam": {
+        "emcProductId": "3901",
+        "emcTitle": "UK eMC SmPC: Mogadon 5 mg Tablets",
+        "timeCourse": {
+            "eliminationHalfLife": (30, 30, "h", "label pharmacokinetics", "Average plasma half-life; elderly patients may have longer half-life in cited SmPC."),
+            "timeToSteadyState": (5, 5, "day", "label pharmacokinetics"),
+        },
+    },
+    "Zopiclone": {
+        "emcProductId": "2855",
+        "emcTitle": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
+        "timeCourse": {
+            "eliminationHalfLife": (5, 5, "h", "label pharmacokinetics"),
+        },
+        "doseReference": ("Insomnia oral SmPC context", "3.75 to 7.5 mg at night in cited SmPC context", "single bedtime dose; lower dose in older adults or impaired hepatic/renal/respiratory function in cited SmPC context", 3.75, 7.5),
+        "doseBar": (3.75, 3.75, 7.5, 7.5),
+    },
+    "Melatonin": {
+        "emcProductId": "101120",
+        "emcTitle": "UK eMC SmPC: Melatonin 2 mg prolonged-release tablets",
+        "timeCourse": {
+            "eliminationHalfLife": (3.5, 4, "h", "label pharmacokinetics", "Prolonged-release tablet SmPC; immediate-release products may differ."),
+        },
+        "doseReference": ("Insomnia prolonged-release SmPC context", "2 mg/day in cited prolonged-release SmPC context", "once daily after food, 1 to 2 hours before bedtime in cited SmPC context", 2, 2),
+        "doseBar": (1, 2, 2, 2),
+    },
 }
 
 
@@ -566,6 +642,28 @@ def openfda_source(name: str, set_id: str) -> dict:
     }
 
 
+def emc_source(name: str, product_id: str, title: str | None = None) -> dict:
+    return {
+        "title": title or f"UK eMC SmPC: {name}",
+        "url": f"https://www.medicines.org.uk/emc/product/{product_id}/smpc",
+        "sourceType": "regulatory-label",
+        "accessedDate": ACCESSED_DATE,
+        "evidenceLevel": "REGULATORY_LABEL",
+        "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+        "note": "UK electronic Medicines Compendium Summary of Product Characteristics.",
+    }
+
+
+def curated_regulatory_source(name: str, curated: dict | None) -> dict:
+    if not curated:
+        return dailymed_search(name)
+    if "openfdaSetId" in curated:
+        return openfda_source(name, curated["openfdaSetId"])
+    if "emcProductId" in curated:
+        return emc_source(name, curated["emcProductId"], curated.get("emcTitle"))
+    return dailymed_search(name)
+
+
 def time_value(value: tuple) -> dict:
     min_value, max_value, unit, basis, *note = value
     result = {
@@ -677,9 +775,7 @@ def merge_tdm(base_tdm: dict, name: str, source_refs: list[dict]) -> dict:
 def entry(name: str, aliases: list[str], group_key: str, atc_codes: list[str]) -> dict:
     group = GROUPS[group_key]
     curated = CURATED_LABEL_DATA.get(name)
-    source_refs = group["sourceRefs"] + [
-        openfda_source(name, curated["openfdaSetId"]) if curated else dailymed_search(name)
-    ]
+    source_refs = group["sourceRefs"] + [curated_regulatory_source(name, curated)]
     route = "oral"
     base_tdm = {
         "isRoutinelyMonitored": group_key == "mood-stabilizer" and name in {"Lithium Carbonate", "Valproate", "Carbamazepine"},

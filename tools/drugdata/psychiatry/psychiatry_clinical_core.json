@@ -1590,33 +1590,55 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Amisulpride",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amisulpride",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Amisulpride 50 mg Tablets",
+            "url": "https://www.medicines.org.uk/emc/product/548/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Amisulpride",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amisulpride",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Amisulpride 50 mg Tablets",
+              "url": "https://www.medicines.org.uk/emc/product/548/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": 12,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -1644,42 +1666,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Amisulpride",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amisulpride",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Amisulpride 50 mg Tablets",
+            "url": "https://www.medicines.org.uk/emc/product/548/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Schizophrenia spectrum disorders",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Schizophrenia oral SmPC/PIL context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "50 to 1200 mg/day across cited oral amisulpride label contexts",
+          "scheduleText": "once daily up to 300 mg/day or divided above 300 mg/day in cited label context",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 50,
+              "max": 1200,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily up to 300 mg/day or divided above 300 mg/day in cited label context",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Amisulpride 50 mg Tablets",
+              "url": "https://www.medicines.org.uk/emc/product/548/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 50,
+            "commonMin": 100,
+            "strongMin": 800,
+            "heavyMin": 1200
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N05 Psycholeptics",
@@ -1696,12 +1754,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Amisulpride",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amisulpride",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Amisulpride 50 mg Tablets",
+          "url": "https://www.medicines.org.uk/emc/product/548/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -1764,33 +1823,61 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Sulpiride",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sulpiride",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Sulpiride 200 mg Tablets",
+            "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Sulpiride",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sulpiride",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Sulpiride 200 mg Tablets",
+              "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 3,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 8,
+            "max": 8,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -1818,12 +1905,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Sulpiride",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sulpiride",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Sulpiride 200 mg Tablets",
+            "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
@@ -1870,12 +1958,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Sulpiride",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sulpiride",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Sulpiride 200 mg Tablets",
+          "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -2310,33 +2399,56 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Trifluoperazine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trifluoperazine",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Trifluoperazine 5 mg/5 ml Oral Solution",
+            "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Trifluoperazine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trifluoperazine",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Trifluoperazine 5 mg/5 ml Oral Solution",
+              "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 22,
+            "max": 22,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Terminal elimination half-life; alpha phase is about 3.6 hours in cited SmPC."
+          }
         }
       ],
       "tdm": {
@@ -2364,12 +2476,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Trifluoperazine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trifluoperazine",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Trifluoperazine 5 mg/5 ml Oral Solution",
+            "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
@@ -2416,12 +2529,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Trifluoperazine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trifluoperazine",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Trifluoperazine 5 mg/5 ml Oral Solution",
+          "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -3083,33 +3197,61 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Flupentixol",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Flupentixol",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Fluanxol 0.5 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/998/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Flupentixol",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Flupentixol",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Fluanxol 0.5 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/998/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 4,
+            "max": 4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 35,
+            "max": 35,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -3137,12 +3279,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Flupentixol",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Flupentixol",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Fluanxol 0.5 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/998/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
@@ -3189,12 +3332,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Flupentixol",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Flupentixol",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Fluanxol 0.5 mg film-coated tablets",
+          "url": "https://www.medicines.org.uk/emc/product/998/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -3257,33 +3401,61 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Zuclopenthixol",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zuclopenthixol",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Clopixol 2 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/994/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Zuclopenthixol",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zuclopenthixol",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Clopixol 2 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/994/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 3,
+            "max": 6,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 1,
+            "max": 1,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -3311,12 +3483,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Zuclopenthixol",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zuclopenthixol",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Clopixol 2 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/994/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
@@ -3363,12 +3536,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Zuclopenthixol",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zuclopenthixol",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Clopixol 2 mg film-coated tablets",
+          "url": "https://www.medicines.org.uk/emc/product/994/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -9409,33 +9583,61 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Agomelatine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Agomelatine",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Valdoxan 25 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/6564/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Agomelatine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Agomelatine",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Valdoxan 25 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/6564/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -9463,42 +9665,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Agomelatine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Agomelatine",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Valdoxan 25 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/6564/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Major depressive episodes adult SmPC context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "25 to 50 mg/day in cited SmPC context",
+          "scheduleText": "once daily at bedtime; increase after two weeks only in the cited SmPC context",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 25,
+              "max": 50,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "once daily at bedtime; increase after two weeks only in the cited SmPC context",
+              "rangeKind": "label-regimen",
+              "label": "Label regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Valdoxan 25 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/6564/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 25,
+            "commonMin": 25,
+            "strongMin": 50,
+            "heavyMin": 50
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -9515,12 +9753,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Agomelatine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Agomelatine",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Valdoxan 25 mg film-coated tablets",
+          "url": "https://www.medicines.org.uk/emc/product/6564/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -10887,33 +11126,62 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Nitrazepam",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nitrazepam",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Mogadon 5 mg Tablets",
+            "url": "https://www.medicines.org.uk/emc/product/3901/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Nitrazepam",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nitrazepam",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Mogadon 5 mg Tablets",
+              "url": "https://www.medicines.org.uk/emc/product/3901/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 30,
+            "max": 30,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Average plasma half-life; elderly patients may have longer half-life in cited SmPC."
+          },
+          "timeToSteadyState": {
+            "min": 5,
+            "max": 5,
+            "unit": "day",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -10941,12 +11209,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Nitrazepam",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nitrazepam",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Mogadon 5 mg Tablets",
+            "url": "https://www.medicines.org.uk/emc/product/3901/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
@@ -10993,12 +11262,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Nitrazepam",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nitrazepam",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Mogadon 5 mg Tablets",
+          "url": "https://www.medicines.org.uk/emc/product/3901/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -19701,33 +19971,55 @@
               "evidenceLevel": "REFERENCE_DATABASE"
             },
             {
-              "title": "DailyMed label search: Zopiclone",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zopiclone",
-              "sourceType": "regulatory-label-search",
+              "title": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
           ]
         },
         "timeCourse": [
           {
             "route": "oral",
-            "formulation": "product-specific",
+            "formulation": "product-specific oral formulation",
             "notes": [
-              "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-              "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+              "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+              "Values can vary by formulation, population, organ function, and interacting medicines."
             ],
             "sourceRefs": [
               {
-                "title": "DailyMed label search: Zopiclone",
-                "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zopiclone",
-                "sourceType": "regulatory-label-search",
+                "title": "WHO ATC/DDD Index N05 Psycholeptics",
+                "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+                "sourceType": "classification",
                 "accessedDate": "2026-06-27",
-                "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-                "note": "Use the current product-specific label before entering numeric PK or regimen values."
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "国家基本药物目录 2018",
+                "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+                "sourceType": "national-essential-medicines-list",
+                "accessedDate": "2026-06-27",
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
+                "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-06-27",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+                "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
               }
-            ]
+            ],
+            "eliminationHalfLife": {
+              "min": 5,
+              "max": 5,
+              "unit": "h",
+              "basis": "label pharmacokinetics"
+            }
           }
         ],
         "tdm": {
@@ -19755,39 +20047,64 @@
               "evidenceLevel": "REFERENCE_DATABASE"
             },
             {
-              "title": "DailyMed label search: Zopiclone",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zopiclone",
-              "sourceType": "regulatory-label-search",
+              "title": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
           ]
         },
         "doseUseReferences": [
           {
-            "indication": "Anxiety or insomnia-related indications depending on local labeling",
-            "population": "Adults unless local label specifies otherwise",
+            "indication": "Insomnia oral SmPC context",
+            "population": "Adults unless product-specific label states otherwise",
             "route": "oral",
-            "formulation": "product-specific",
-            "amountText": "source needed",
-            "scheduleText": "source needed",
+            "formulation": "product-specific oral formulation",
+            "amountText": "3.75 to 7.5 mg at night in cited SmPC context",
+            "scheduleText": "single bedtime dose; lower dose in older adults or impaired hepatic/renal/respiratory function in cited SmPC context",
             "ranges": [
               {
-                "min": null,
-                "max": null,
+                "min": 3.75,
+                "max": 7.5,
                 "unit": "mg",
-                "basis": "unknown",
-                "frequency": "source needed",
-                "rangeKind": "source-needed",
-                "label": "Label/literature regimen",
-                "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+                "basis": "daily-total",
+                "frequency": "single bedtime dose; lower dose in older adults or impaired hepatic/renal/respiratory function in cited SmPC context",
+                "rangeKind": "label-regimen",
+                "label": "Label regimen range",
+                "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
               }
             ],
-            "sourceType": "regulatory-label-search",
-            "evidenceLevel": "SOURCE_NEEDED",
+            "sourceType": "regulatory-label",
+            "evidenceLevel": "REGULATORY_LABEL",
             "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-            "sourceRefs": []
+            "sourceRefs": [
+              {
+                "title": "WHO ATC/DDD Index N05 Psycholeptics",
+                "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+                "sourceType": "classification",
+                "accessedDate": "2026-06-27",
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "国家基本药物目录 2018",
+                "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+                "sourceType": "national-essential-medicines-list",
+                "accessedDate": "2026-06-27",
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
+                "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-06-27",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+                "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+              }
+            ]
           }
         ],
         "sourceRefs": [
@@ -19806,12 +20123,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Zopiclone",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zopiclone",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       }
@@ -20051,33 +20369,56 @@
               "evidenceLevel": "REFERENCE_DATABASE"
             },
             {
-              "title": "DailyMed label search: Melatonin",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Melatonin",
-              "sourceType": "regulatory-label-search",
+              "title": "UK eMC SmPC: Melatonin 2 mg prolonged-release tablets",
+              "url": "https://www.medicines.org.uk/emc/product/101120/smpc",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
           ]
         },
         "timeCourse": [
           {
             "route": "oral",
-            "formulation": "product-specific",
+            "formulation": "product-specific oral formulation",
             "notes": [
-              "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-              "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+              "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+              "Values can vary by formulation, population, organ function, and interacting medicines."
             ],
             "sourceRefs": [
               {
-                "title": "DailyMed label search: Melatonin",
-                "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Melatonin",
-                "sourceType": "regulatory-label-search",
+                "title": "WHO ATC/DDD Index N05 Psycholeptics",
+                "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+                "sourceType": "classification",
                 "accessedDate": "2026-06-27",
-                "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-                "note": "Use the current product-specific label before entering numeric PK or regimen values."
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "国家基本药物目录 2018",
+                "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+                "sourceType": "national-essential-medicines-list",
+                "accessedDate": "2026-06-27",
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "UK eMC SmPC: Melatonin 2 mg prolonged-release tablets",
+                "url": "https://www.medicines.org.uk/emc/product/101120/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-06-27",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+                "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
               }
-            ]
+            ],
+            "eliminationHalfLife": {
+              "min": 3.5,
+              "max": 4,
+              "unit": "h",
+              "basis": "label pharmacokinetics",
+              "note": "Prolonged-release tablet SmPC; immediate-release products may differ."
+            }
           }
         ],
         "tdm": {
@@ -20105,39 +20446,64 @@
               "evidenceLevel": "REFERENCE_DATABASE"
             },
             {
-              "title": "DailyMed label search: Melatonin",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Melatonin",
-              "sourceType": "regulatory-label-search",
+              "title": "UK eMC SmPC: Melatonin 2 mg prolonged-release tablets",
+              "url": "https://www.medicines.org.uk/emc/product/101120/smpc",
+              "sourceType": "regulatory-label",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
           ]
         },
         "doseUseReferences": [
           {
-            "indication": "Anxiety or insomnia-related indications depending on local labeling",
-            "population": "Adults unless local label specifies otherwise",
+            "indication": "Insomnia prolonged-release SmPC context",
+            "population": "Adults unless product-specific label states otherwise",
             "route": "oral",
-            "formulation": "product-specific",
-            "amountText": "source needed",
-            "scheduleText": "source needed",
+            "formulation": "product-specific oral formulation",
+            "amountText": "2 mg/day in cited prolonged-release SmPC context",
+            "scheduleText": "once daily after food, 1 to 2 hours before bedtime in cited SmPC context",
             "ranges": [
               {
-                "min": null,
-                "max": null,
+                "min": 2,
+                "max": 2,
                 "unit": "mg",
-                "basis": "unknown",
-                "frequency": "source needed",
-                "rangeKind": "source-needed",
-                "label": "Label/literature regimen",
-                "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+                "basis": "daily-total",
+                "frequency": "once daily after food, 1 to 2 hours before bedtime in cited SmPC context",
+                "rangeKind": "label-regimen",
+                "label": "Label regimen range",
+                "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
               }
             ],
-            "sourceType": "regulatory-label-search",
-            "evidenceLevel": "SOURCE_NEEDED",
+            "sourceType": "regulatory-label",
+            "evidenceLevel": "REGULATORY_LABEL",
             "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-            "sourceRefs": []
+            "sourceRefs": [
+              {
+                "title": "WHO ATC/DDD Index N05 Psycholeptics",
+                "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+                "sourceType": "classification",
+                "accessedDate": "2026-06-27",
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "国家基本药物目录 2018",
+                "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+                "sourceType": "national-essential-medicines-list",
+                "accessedDate": "2026-06-27",
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "UK eMC SmPC: Melatonin 2 mg prolonged-release tablets",
+                "url": "https://www.medicines.org.uk/emc/product/101120/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-06-27",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+                "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+              }
+            ]
           }
         ],
         "sourceRefs": [
@@ -20156,12 +20522,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Melatonin",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Melatonin",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Melatonin 2 mg prolonged-release tablets",
+            "url": "https://www.medicines.org.uk/emc/product/101120/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       }
