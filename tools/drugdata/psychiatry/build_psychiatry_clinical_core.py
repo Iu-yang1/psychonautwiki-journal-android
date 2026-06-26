@@ -190,6 +190,127 @@ CURATED_LABEL_DATA = {
         "doseReference": ("ADHD extended-release capsule label context", "20 to 60 mg/day in cited extended-release capsule label context", "once daily in the morning; titrate weekly in 10 mg increments in the cited label", 20, 60),
         "doseBar": (5, 20, 40, 60),
     },
+    "Armodafinil": {
+        "openfdaSetId": "23da56b8-7552-4362-a1ab-e794c131194c",
+        "timeCourse": {
+            "timeToSteadyState": (7, 7, "day", "label pharmacokinetics"),
+        },
+    },
+    "Bupropion": {
+        "openfdaSetId": "004d8121-59d4-46c4-acb8-b2dd097bf556",
+        "timeCourse": {
+            "eliminationHalfLife": (12, 30, "h", "label pharmacokinetics", "Label reports mean bupropion half-life 21 ± 9 hours."),
+            "timeToSteadyState": (8, 8, "day", "label pharmacokinetics"),
+        },
+        "doseReference": ("Major depressive disorder / seasonal affective disorder extended-release label context", "150 to 300 mg/day in cited extended-release label context", "once daily; gradual increase to reduce seizure risk in the cited label", 150, 300),
+        "doseBar": (150, 150, 300, 300),
+    },
+    "Trazodone": {
+        "openfdaSetId": "007f38e0-653b-43e4-a1c1-b59997b2762a",
+        "timeCourse": {
+            "tmax": (1, 2, "h", "label pharmacokinetics", "Peak plasma levels occur about 1 hour fasting or 2 hours with food in the cited label."),
+        },
+        "doseReference": ("Major depressive disorder label context", "150 to 400 mg/day in cited outpatient label context", "divided doses after meal or light snack; gradual changes in the cited label", 150, 400),
+        "doseBar": (50, 150, 300, 400),
+    },
+    "Vilazodone": {
+        "openfdaSetId": "0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
+        "timeCourse": {
+            "tmax": (4, 5, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (25, 25, "h", "label pharmacokinetics"),
+            "timeToSteadyState": (3, 3, "day", "label pharmacokinetics"),
+        },
+        "doseReference": ("Major depressive disorder label context", "20 to 40 mg/day in cited target-dose label context", "once daily with food after label titration", 20, 40),
+        "doseBar": (10, 20, 40, 40),
+    },
+    "Temazepam": {
+        "openfdaSetId": "066e25b2-8a1b-4b08-b585-ce36753bf104",
+        "timeCourse": {
+            "eliminationHalfLife": (3.5, 18.4, "h", "label pharmacokinetics", "Label reports terminal half-life range with mean about 8.8 hours."),
+        },
+        "doseReference": ("Insomnia label context", "7.5 to 30 mg before retiring in cited label context", "single bedtime dose in the cited label", 7.5, 30),
+        "doseBar": (7.5, 15, 30, 30),
+    },
+    "Loxapine": {
+        "openfdaSetId": "2ce01a5d-b9bc-af4d-e063-6394a90af9e4",
+        "timeCourse": {
+            "onset": (20, 30, "min", "pharmacodynamic effect"),
+            "peakEffect": (1.5, 3, "h", "pharmacodynamic effect"),
+            "durationOfAction": (12, 12, "h", "pharmacodynamic effect", "Normal-volunteer sedation timing in cited label; not equivalent to antipsychotic response."),
+        },
+        "doseReference": ("Schizophrenia oral capsule label context", "20 to 250 mg/day across cited initial, maintenance, and upper-limit label contexts", "usually divided two to four times daily in the cited label", 20, 250),
+        "doseBar": (10, 20, 100, 250),
+    },
+    "Thioridazine": {
+        "openfdaSetId": "1fd16a99-e856-4a37-9dae-c443714fac14",
+        "timeCourse": {},
+        "doseReference": ("Treatment-refractory schizophrenia label context", "200 to 800 mg/day in cited adult total daily dosage context", "divided two to four times daily in the cited label", 200, 800),
+        "doseBar": (50, 200, 400, 800),
+    },
+    "Disulfiram": {
+        "openfdaSetId": "07abe950-3565-418c-8086-b804406a8c87",
+        "timeCourse": {
+            "durationOfAction": (1, 2, "week", "pharmacodynamic effect", "Label states alcohol reaction may persist one or even two weeks after the last dose."),
+        },
+        "doseReference": ("Alcohol use disorder aversive-therapy label context", "125 to 500 mg/day across cited maintenance range and upper limit", "single daily dose in the cited label context", 125, 500),
+        "doseBar": (125, 250, 500, 500),
+    },
+    "Tranylcypromine": {
+        "openfdaSetId": "3c14a558-2df4-4d93-97dd-640dec6ee785",
+        "timeCourse": {
+            "durationOfAction": (3, 5, "day", "pharmacodynamic effect", "Label states MAO activity recovery takes up to 3 to 5 days although tranylcypromine is eliminated within 24 hours."),
+        },
+        "doseReference": ("Major depressive disorder MAOI label context", "30 to 60 mg/day in cited label context", "divided doses; gradual increases in the cited label", 30, 60),
+        "doseBar": (10, 30, 40, 60),
+    },
+    "Hydroxyzine": {
+        "openfdaSetId": "02616eee-a1a4-4afc-b84e-69fd28755138",
+        "timeCourse": {},
+        "doseReference": ("Anxiety/tension symptomatic-relief label context", "50 to 400 mg/day in cited adult anxiety label context", "50 to 100 mg four times daily in the cited label", 50, 400),
+        "doseBar": (25, 50, 100, 400),
+    },
+    "Imipramine": {
+        "openfdaSetId": "02c19a0a-3d9d-4881-ad14-1687aafd87b5",
+        "timeCourse": {},
+        "doseReference": ("Depression label context", "75 to 300 mg/day across cited adult outpatient and hospitalized label contexts", "divided doses; maintenance lower in cited label", 75, 300),
+        "doseBar": (25, 75, 150, 300),
+    },
+    "Nortriptyline": {
+        "openfdaSetId": "017f7717-e160-4142-9a5a-1a2bd9776707",
+        "timeCourse": {},
+        "doseReference": ("Depression label context", "75 to 150 mg/day across cited adult label context", "25 mg three or four times daily or once daily total dose in cited label", 75, 150),
+        "doseBar": (25, 75, 100, 150),
+        "tdm": {
+            "therapeuticRanges": [
+                {"indication": "Nortriptyline plasma concentration monitoring in cited label context", "range": "50-150", "unit": "ng/mL", "note": "Label states plasma levels should be monitored above 100 mg/day and maintained in this range."}
+            ],
+            "samplingTime": "Product- and laboratory-specific; interpret with dose timing, adherence, CYP2D6 status, ECG, symptoms, and local method.",
+        },
+    },
+    "Haloperidol": {
+        "openfdaSetId": "00bb61c8-db35-4c04-9ef7-47d447d2496b",
+        "timeCourse": {},
+        "doseReference": ("Psychotic disorder oral label context", "1 to 100 mg/day across cited adult oral label contexts", "divided twice or three times daily; individualized in the cited label", 1, 100),
+        "doseBar": (0.5, 1, 15, 100),
+    },
+    "Chlorpromazine": {
+        "openfdaSetId": "02c56c39-99bd-44a4-8d9d-9d867c323968",
+        "timeCourse": {},
+        "doseReference": ("Psychotic disorder oral label context", "30 to 1000 mg/day across cited outpatient and inpatient label contexts", "divided dosing; individualized and reduced to maintenance in the cited label", 30, 1000),
+        "doseBar": (25, 75, 400, 1000),
+    },
+    "Prochlorperazine": {
+        "openfdaSetId": "02069e43-5245-20dc-e063-6294a90a9dcd",
+        "timeCourse": {},
+        "doseReference": ("Adult psychiatric disorder oral label context", "15 to 150 mg/day across cited anxiety and psychotic-disorder label contexts", "divided three or four times daily in the cited label", 15, 150),
+        "doseBar": (5, 15, 75, 150),
+    },
+    "Amphetamine": {
+        "openfdaSetId": "00242264-40d8-4267-a91a-727a1f088616",
+        "timeCourse": {},
+        "doseReference": ("ADHD / narcolepsy oral label context", "5 to 60 mg/day across cited ADHD and narcolepsy label contexts", "divided dosing; late evening doses avoided in the cited label", 5, 60),
+        "doseBar": (2.5, 5, 20, 40),
+    },
 }
 
 
