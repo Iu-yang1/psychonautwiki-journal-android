@@ -62,10 +62,10 @@ internal fun TimeCourse.toRoaDurationForTimeline(): RoaDuration? {
 }
 
 private fun TimeCourse.totalEndHours(): Float? {
-    val clinicalEnd = durationOfAction?.representativeHours()
-    val washoutEnd = washout?.representativeHours()
+    val clinicalEnd = durationOfAction?.endpointHours()
+    val washoutEnd = washout?.endpointHours()
     val clearanceEstimate = eliminationHalfLife?.representativeHours()?.times(5f)
-    return listOfNotNull(clinicalEnd, washoutEnd, clearanceEstimate).maxOrNull()
+    return clinicalEnd ?: washoutEnd ?: clearanceEstimate
 }
 
 private fun estimateOnsetHours(totalEnd: Float): Float {

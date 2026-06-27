@@ -102,6 +102,7 @@ CURATED_LABEL_DATA = {
         "timeCourse": {
             "tmax": (1, 1, "h", "label pharmacokinetics", "Risperidone parent compound; active metabolite Tmax depends on CYP2D6 phenotype."),
             "peakEffect": (3, 17, "h", "label pharmacokinetics", "9-hydroxyrisperidone peak occurs around 3 hours in extensive metabolizers and around 17 hours in poor metabolizers."),
+            "eliminationHalfLife": (16.7, 20, "h", "label pharmacokinetics", "Active moiety half-life is about 20 hours in the cited FDA label; eMC SmPC reports 16.7 hours in young adults."),
         },
         "doseReference": ("Schizophrenia / bipolar mania / irritability in autism label contexts", "0.25 to 16 mg/day across cited label contexts", "once or twice daily depending on indication and product-specific label", 0.25, 16),
         "doseBar": (0.25, 1, 3, 6),
@@ -148,6 +149,7 @@ CURATED_LABEL_DATA = {
         "openfdaSetId": "01c4facd-ed79-4078-ba33-2044de372d0f",
         "timeCourse": {
             "tmax": (0.25, 6, "h", "label pharmacokinetics", "Immediate-release Tmax 0.25 to 3 hours; sustained-release Tmax 2 to 6 hours."),
+            "eliminationHalfLife": (18, 36, "h", "label pharmacokinetics"),
         },
         "doseReference": ("Bipolar disorder label context", "300 mg two or three times daily as cited starting regimens; titrate by serum lithium concentration in label context", "serum concentration-guided; 12-hour trough sampling in cited label", 600, 900),
         "doseBar": (300, 600, 900, 1800),
@@ -172,6 +174,7 @@ CURATED_LABEL_DATA = {
         "openfdaSetId": "01f04ee4-fff9-499a-8213-984e16368084",
         "timeCourse": {
             "tmax": (0.25, 2.5, "h", "label pharmacokinetics", "Average 1 to 1.5 hours fasting; food can delay Tmax."),
+            "eliminationHalfLife": (48, 48, "h", "label pharmacokinetics", "Terminal elimination half-life is up to 48 hours in the cited label; active metabolite N-desmethyldiazepam may be up to 100 hours."),
         },
         "doseReference": ("Anxiety / alcohol withdrawal / muscle spasm / seizure adjunct label contexts", "2 to 40 mg/day across cited adult divided-dose label contexts", "2 to 4 divided doses depending on indication in the cited label", 2, 40),
         "doseBar": (2, 5, 10, 20),
@@ -180,6 +183,7 @@ CURATED_LABEL_DATA = {
         "openfdaSetId": "02628a0c-bfdb-4a58-8e48-bcd8ca12d53b",
         "timeCourse": {
             "tmax": (40, 90, "min", "label pharmacokinetics"),
+            "eliminationHalfLife": (2, 3, "h", "label pharmacokinetics", "Average elimination half-life of unchanged buspirone after single 10 to 40 mg doses."),
         },
         "doseReference": ("Anxiety label context", "15 to 60 mg/day across cited adult divided-dose label context", "divided dosing; commonly 20 to 30 mg/day in cited trials", 15, 60),
         "doseBar": (5, 15, 30, 60),
@@ -213,8 +217,19 @@ CURATED_LABEL_DATA = {
     },
     "Trazodone": {
         "openfdaSetId": "007f38e0-653b-43e4-a1c1-b59997b2762a",
+        "extraSourceRefs": [
+            {
+                "title": "UK eMC SmPC: Trazodone 50 mg Capsules",
+                "url": "https://www.medicines.org.uk/emc/product/7186/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "5.2 Pharmacokinetic properties",
+            }
+        ],
         "timeCourse": {
             "tmax": (1, 2, "h", "label pharmacokinetics", "Peak plasma levels occur about 1 hour fasting or 2 hours with food in the cited label."),
+            "eliminationHalfLife": (5, 13, "h", "label pharmacokinetics", "UK eMC SmPC describes biphasic elimination with terminal half-life of 5 to 13 hours."),
         },
         "doseReference": ("Major depressive disorder label context", "150 to 400 mg/day in cited outpatient label context", "divided doses after meal or light snack; gradual changes in the cited label", 150, 400),
         "doseBar": (50, 150, 300, 400),
@@ -1204,6 +1219,62 @@ CURATED_LABEL_DATA = {
         "doseBar": (1, 2, 2, 2),
     },
 }
+
+
+CURATED_LABEL_DATA["Amitriptyline"]["timeCourse"]["eliminationHalfLife"] = (
+    16.49,
+    40.36,
+    "h",
+    "label pharmacokinetics",
+    "SmPC reports mean plasma half-life about 25 hours with this range.",
+)
+
+CURATED_LABEL_DATA.setdefault("Pimavanserin", {}).setdefault("timeCourse", {}).update(
+    {
+        "tmax": (4, 24, "h", "label pharmacokinetics", "Median Tmax is 6 hours with a 4 to 24 hour range."),
+        "eliminationHalfLife": (
+            57,
+            57,
+            "h",
+            "label pharmacokinetics",
+            "Mean pimavanserin half-life; active metabolite mean half-life is about 200 hours.",
+        ),
+    }
+)
+
+CURATED_LABEL_DATA.setdefault("Clobazam", {}).setdefault("timeCourse", {}).update(
+    {
+        "tmax": (0.5, 4, "h", "label pharmacokinetics"),
+        "eliminationHalfLife": (
+            36,
+            42,
+            "h",
+            "label pharmacokinetics",
+            "Estimated mean clobazam half-life; N-desmethylclobazam half-life is about 71 to 82 hours.",
+        ),
+    }
+)
+
+CURATED_LABEL_DATA.setdefault("Viloxazine", {}).setdefault("timeCourse", {}).update(
+    {
+        "tmax": (3, 9, "h", "label pharmacokinetics", "Median Tmax about 5 hours with a 3 to 9 hour range."),
+        "eliminationHalfLife": (
+            2.28,
+            11.76,
+            "h",
+            "label pharmacokinetics",
+            "Mean half-life 7.02 +/- 4.74 hours in the cited label.",
+        ),
+    }
+)
+
+CURATED_LABEL_DATA.setdefault("Solriamfetol", {}).setdefault("timeCourse", {}).update(
+    {
+        "tmax": (1.25, 3, "h", "label pharmacokinetics"),
+        "eliminationHalfLife": (7.1, 7.1, "h", "label pharmacokinetics"),
+        "timeToSteadyState": (3, 3, "day", "label pharmacokinetics"),
+    }
+)
 
 
 def _load_auto_label_data() -> dict:

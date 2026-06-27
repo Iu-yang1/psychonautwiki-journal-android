@@ -29,6 +29,16 @@ fun TimeValue.representativeHours(): Float? {
     }
 }
 
+fun TimeValue.endpointHours(): Float? {
+    val minHours = min?.toHours(unit)
+    val maxHours = max?.toHours(unit)
+    return when {
+        maxHours != null -> maxHours.toFloat()
+        minHours != null -> minHours.toFloat()
+        else -> null
+    }
+}
+
 private fun Double.toHours(unit: String): Double? {
     return when (unit.lowercase()) {
         "s", "sec", "second", "seconds" -> this / 3600.0
@@ -36,6 +46,7 @@ private fun Double.toHours(unit: String): Double? {
         "h", "hr", "hour", "hours" -> this
         "d", "day", "days" -> this * 24.0
         "wk", "week", "weeks" -> this * 24.0 * 7.0
+        "mo", "month", "months" -> this * 24.0 * 30.0
         else -> null
     }
 }

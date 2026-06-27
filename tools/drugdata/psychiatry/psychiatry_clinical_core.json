@@ -5240,10 +5240,18 @@
             }
           ],
           "tmax": {
-            "min": 6,
-            "max": 6,
+            "min": 4,
+            "max": 24,
             "unit": "h",
-            "basis": "label pharmacokinetics"
+            "basis": "label pharmacokinetics",
+            "note": "Median Tmax is 6 hours with a 4 to 24 hour range."
+          },
+          "eliminationHalfLife": {
+            "min": 57,
+            "max": 57,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Mean pimavanserin half-life; active metabolite mean half-life is about 200 hours."
           }
         }
       ],
@@ -8032,6 +8040,14 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trazodone"
+          },
+          {
+            "title": "UK eMC SmPC: Trazodone 50 mg Capsules",
+            "url": "https://www.medicines.org.uk/emc/product/7186/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.2 Pharmacokinetic properties"
           }
         ]
       },
@@ -8066,6 +8082,14 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trazodone"
+            },
+            {
+              "title": "UK eMC SmPC: Trazodone 50 mg Capsules",
+              "url": "https://www.medicines.org.uk/emc/product/7186/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "5.2 Pharmacokinetic properties"
             }
           ],
           "tmax": {
@@ -8074,6 +8098,13 @@
             "unit": "h",
             "basis": "label pharmacokinetics",
             "note": "Peak plasma levels occur about 1 hour fasting or 2 hours with food in the cited label."
+          },
+          "eliminationHalfLife": {
+            "min": 5,
+            "max": 13,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "UK eMC SmPC describes biphasic elimination with terminal half-life of 5 to 13 hours."
           }
         }
       ],
@@ -8109,6 +8140,14 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trazodone"
+          },
+          {
+            "title": "UK eMC SmPC: Trazodone 50 mg Capsules",
+            "url": "https://www.medicines.org.uk/emc/product/7186/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.2 Pharmacokinetic properties"
           }
         ]
       },
@@ -8158,6 +8197,14 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trazodone"
+            },
+            {
+              "title": "UK eMC SmPC: Trazodone 50 mg Capsules",
+              "url": "https://www.medicines.org.uk/emc/product/7186/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "5.2 Pharmacokinetic properties"
             }
           ]
         }
@@ -8197,6 +8244,14 @@
           "evidenceLevel": "REGULATORY_LABEL",
           "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
           "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trazodone"
+        },
+        {
+          "title": "UK eMC SmPC: Trazodone 50 mg Capsules",
+          "url": "https://www.medicines.org.uk/emc/product/7186/smpc",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "5.2 Pharmacokinetic properties"
         }
       ]
     },
@@ -8777,6 +8832,13 @@
             "unit": "h",
             "basis": "label pharmacokinetics",
             "note": "SmPC reports mean Tmax about 3.89 ± 1.87 hours for 10 mg/25 mg film-coated tablets."
+          },
+          "eliminationHalfLife": {
+            "min": 16.49,
+            "max": 40.36,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC reports mean plasma half-life about 25 hours with this range."
           }
         }
       ],
@@ -11229,6 +11291,12 @@
             "unit": "h",
             "basis": "label pharmacokinetics",
             "note": "Immediate-release Tmax 0.25 to 3 hours; sustained-release Tmax 2 to 6 hours."
+          },
+          "eliminationHalfLife": {
+            "min": 18,
+            "max": 36,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
           }
         }
       ],
@@ -14124,6 +14192,13 @@
             "max": 4,
             "unit": "h",
             "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 36,
+            "max": 42,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Estimated mean clobazam half-life; N-desmethylclobazam half-life is about 71 to 82 hours."
           }
         }
       ],
@@ -16439,7 +16514,15 @@
             "min": 3,
             "max": 9,
             "unit": "h",
-            "basis": "label pharmacokinetics"
+            "basis": "label pharmacokinetics",
+            "note": "Median Tmax about 5 hours with a 3 to 9 hour range."
+          },
+          "eliminationHalfLife": {
+            "min": 2.28,
+            "max": 11.76,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Mean half-life 7.02 +/- 4.74 hours in the cited label."
           }
         }
       ],
@@ -16834,6 +16917,12 @@
           "tmax": {
             "min": 1.25,
             "max": 3,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 7.1,
+            "max": 7.1,
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
@@ -18952,6 +19041,13 @@
               "unit": "h",
               "basis": "label pharmacokinetics",
               "note": "9-hydroxyrisperidone peak occurs around 3 hours in extensive metabolizers and around 17 hours in poor metabolizers."
+            },
+            "eliminationHalfLife": {
+              "min": 16.7,
+              "max": 20,
+              "unit": "h",
+              "basis": "label pharmacokinetics",
+              "note": "Active moiety half-life is about 20 hours in the cited FDA label; eMC SmPC reports 16.7 hours in young adults."
             }
           }
         ],
@@ -19681,6 +19777,13 @@
               "max": 90,
               "unit": "min",
               "basis": "label pharmacokinetics"
+            },
+            "eliminationHalfLife": {
+              "min": 2,
+              "max": 3,
+              "unit": "h",
+              "basis": "label pharmacokinetics",
+              "note": "Average elimination half-life of unchanged buspirone after single 10 to 40 mg doses."
             }
           }
         ],
@@ -20797,6 +20900,13 @@
               "unit": "h",
               "basis": "label pharmacokinetics",
               "note": "Average 1 to 1.5 hours fasting; food can delay Tmax."
+            },
+            "eliminationHalfLife": {
+              "min": 48,
+              "max": 48,
+              "unit": "h",
+              "basis": "label pharmacokinetics",
+              "note": "Terminal elimination half-life is up to 48 hours in the cited label; active metabolite N-desmethyldiazepam may be up to 100 hours."
             }
           }
         ],

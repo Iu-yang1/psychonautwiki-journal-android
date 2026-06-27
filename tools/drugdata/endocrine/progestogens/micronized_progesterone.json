@@ -161,6 +161,13 @@
             "max": 3,
             "unit": "h",
             "basis": "plasma concentration"
+          },
+          "eliminationHalfLife": {
+            "min": 14.5,
+            "max": 20.3,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "DailyMed progesterone capsule pharmacokinetic table reports mean half-life values around 16.8 to 18.3 hours with standard deviations; this range approximates those reported values."
           }
         }
       ],

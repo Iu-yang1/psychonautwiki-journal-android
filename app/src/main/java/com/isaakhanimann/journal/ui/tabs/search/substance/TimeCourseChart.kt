@@ -49,6 +49,7 @@ import androidx.compose.ui.unit.dp
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.substances.classes.TimeCourse
 import com.isaakhanimann.journal.data.substances.classes.TimeValue
+import com.isaakhanimann.journal.data.substances.classes.endpointHours
 import com.isaakhanimann.journal.data.substances.classes.representativeHours
 import com.isaakhanimann.journal.ui.utils.localizedClinicalRouteText
 import kotlin.math.ceil
@@ -253,10 +254,10 @@ private fun TimeCourse.toChartModel(): TimeCourseChartModel? {
     val representativeOnset = onset?.representativeHours()
     val onsetStart = representativeOnset ?: 0f
     val onsetEnd = representativeOnset ?: onsetStart
-    val durationEnd = durationOfAction?.representativeHours()
-    val washoutEnd = washout?.representativeHours()
+    val durationEnd = durationOfAction?.endpointHours()
+    val washoutEnd = washout?.endpointHours()
     val clearanceEnd = eliminationHalfLife?.representativeHours()?.times(5f)
-    val chartEndCandidate = listOfNotNull(durationEnd, washoutEnd, clearanceEnd).maxOrNull()
+    val chartEndCandidate = durationEnd ?: washoutEnd ?: clearanceEnd
     val peak = peakEffect?.representativeHours()
         ?: tmax?.representativeHours()
         ?: if (chartEndCandidate != null) {

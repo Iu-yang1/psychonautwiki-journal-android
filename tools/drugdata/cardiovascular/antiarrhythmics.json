@@ -901,6 +901,13 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
+          "eliminationHalfLife": {
+            "min": 26,
+            "max": 107,
+            "unit": "day",
+            "basis": "label pharmacokinetics",
+            "note": "Terminal elimination half-life is extremely variable because of extensive tissue accumulation; do not treat this as ordinary duration of action."
+          },
           "notes": [
             "Amiodarone pharmacokinetics are complex because of tissue accumulation and active metabolites.",
             "Do not infer clinical response or dose adjustment from Tmax alone.",
@@ -1906,6 +1913,13 @@
             "unit": "h",
             "basis": "label pharmacokinetics",
             "note": "Peak plasma levels occur approximately 3.5 hours after administration in most individuals."
+          },
+          "eliminationHalfLife": {
+            "min": 10,
+            "max": 32,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Extended-release propafenone exposure varies substantially with CYP2D6 phenotype and nonlinear pharmacokinetics."
           },
           "notes": [
             "Propafenone has nonlinear pharmacokinetics and substantial interindividual variability.",
