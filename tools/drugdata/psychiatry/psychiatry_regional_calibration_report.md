@@ -5,19 +5,19 @@ Numeric values are only written into substances data when a product label or SmP
 
 - Clinical psychiatry entries: 119
 - Entries with openFDA label source: 94
-- Entries with UK eMC SmPC source: 9
-- Entries with numeric timeCourse: 98
-- Entries still needing numeric timeCourse review: 21
-- Entries with numeric doseUseReferences: 37
-- Entries still needing numeric dose-reference review: 82
+- Entries with UK eMC SmPC source: 17
+- Entries with numeric timeCourse: 119
+- Entries still needing numeric timeCourse review: 0
+- Entries with numeric doseUseReferences: 48
+- Entries still needing numeric dose-reference review: 71
 
 ## Still Needs Numeric TimeCourse Review
 
-Amitriptyline, Bromazepam, Chlordiazepoxide, Chlorpromazine, Droperidol, Etizolam, Flunitrazepam, Fluphenazine, Hydroxyzine, Imipramine, Ketamine, Lormetazepam, Maprotiline, Moclobemide, N-Acetylcysteine, Nortriptyline, Prazepam, Prochlorperazine, Thioridazine, Tianeptine, Tofisopam
+None
 
 ## Still Needs Numeric Dose Reference Review
 
-Acamprosate, Amitriptyline, Aripiprazole, Armodafinil, Asenapine, Atomoxetine, Brexpiprazole, Bromazepam, Buprenorphine, Carbamazepine, Cariprazine, Chlordiazepoxide, Clobazam, Clomipramine, Clonazepam, Clorazepate, Daridorexant, Desvenlafaxine, Dexmethylphenidate, Dextroamphetamine, Divalproex, Doxepin, Droperidol, Escitalopram, Estazolam, Eszopiclone, Etizolam, Flunitrazepam, Flupentixol, Fluphenazine, Flurazepam, Fluvoxamine, Gabapentin, Galantamine, Guanfacine, Ketamine, Lamotrigine, Lemborexant, Lisdexamfetamine, Lorazepam, Lormetazepam, Lurasidone, Maprotiline, Memantine, Methadone, Midazolam, Milnacipran, Mirtazapine, Moclobemide, Modafinil, N-Acetylcysteine, Naloxone, Naltrexone, Nitrazepam, Oxazepam, Oxcarbazepine, Paliperidone, Pentobarbital, Perphenazine, Phenelzine, Phenobarbital, Pimavanserin, Pimozide, Pitolisant, Prazepam, Pregabalin, Ramelteon, Rivastigmine, Solriamfetol, Sulpiride, Suvorexant, Tianeptine, Tofisopam, Triazolam, Trifluoperazine, Valproate, Varenicline, Viloxazine, Vortioxetine, Zaleplon, Ziprasidone, Zuclopenthixol
+Acamprosate, Aripiprazole, Armodafinil, Asenapine, Atomoxetine, Brexpiprazole, Buprenorphine, Carbamazepine, Cariprazine, Clobazam, Clomipramine, Clonazepam, Clorazepate, Daridorexant, Desvenlafaxine, Dexmethylphenidate, Dextroamphetamine, Divalproex, Doxepin, Droperidol, Escitalopram, Estazolam, Eszopiclone, Flupentixol, Fluphenazine, Flurazepam, Fluvoxamine, Gabapentin, Galantamine, Guanfacine, Ketamine, Lamotrigine, Lemborexant, Lisdexamfetamine, Lorazepam, Lurasidone, Memantine, Methadone, Midazolam, Milnacipran, Mirtazapine, Modafinil, N-Acetylcysteine, Naloxone, Naltrexone, Nitrazepam, Oxazepam, Oxcarbazepine, Paliperidone, Pentobarbital, Perphenazine, Phenelzine, Phenobarbital, Pimavanserin, Pimozide, Pitolisant, Pregabalin, Ramelteon, Rivastigmine, Solriamfetol, Sulpiride, Suvorexant, Triazolam, Trifluoperazine, Valproate, Varenicline, Viloxazine, Vortioxetine, Zaleplon, Ziprasidone, Zuclopenthixol
 
 ## Source Strategy
 

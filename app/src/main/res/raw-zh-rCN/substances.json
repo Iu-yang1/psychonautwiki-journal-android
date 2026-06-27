@@ -528,7 +528,7 @@
               "basis": "daily-total",
               "frequency": "divided dosing; taper gradually in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -900,7 +900,7 @@
               "basis": "daily-total",
               "frequency": "divided dosing; late evening doses avoided in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -1346,18 +1346,41 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "HPRA SmPC: Lexotan 1.5 mg Tablets",
+            "url": "https://assets.hpra.ie/products/Human/30761/Licence_PA2239-008-001_07052020082419.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "Irish HPRA Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
             {
               "title": "DailyMed label search: Bromazepam",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bromazepam",
@@ -1365,8 +1388,38 @@
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL_SEARCH",
               "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "HPRA SmPC: Lexotan 1.5 mg Tablets",
+              "url": "https://assets.hpra.ie/products/Human/30761/Licence_PA2239-008-001_07052020082419.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "Irish HPRA Summary of Product Characteristics."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC states peak plasma concentrations are reached within 2 hours after oral administration."
+          },
+          "eliminationHalfLife": {
+            "min": 20,
+            "max": 20,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC states elimination half-life is about 20 hours."
+          },
+          "timeToSteadyState": {
+            "min": 5,
+            "max": 9,
+            "unit": "day",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC states steady-state plasma concentrations are reached in around 5 to 9 days."
+          }
         }
       ],
       "tdm": {
@@ -1400,33 +1453,74 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "HPRA SmPC: Lexotan 1.5 mg Tablets",
+            "url": "https://assets.hpra.ie/products/Human/30761/Licence_PA2239-008-001_07052020082419.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "Irish HPRA Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Anxiety oral SmPC context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "3 to 18 mg/day usual general-practice range; up to 60 mg/day only in exceptional hospitalised-patient SmPC context",
+          "scheduleText": "divided doses in cited SmPC context",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 3,
+              "max": 60,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "divided doses in cited SmPC context",
+              "rangeKind": "label-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "DailyMed label search: Bromazepam",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bromazepam",
+              "sourceType": "regulatory-label-search",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
+              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "HPRA SmPC: Lexotan 1.5 mg Tablets",
+              "url": "https://assets.hpra.ie/products/Human/30761/Licence_PA2239-008-001_07052020082419.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "Irish HPRA Summary of Product Characteristics."
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -1451,6 +1545,15 @@
           "accessedDate": "2026-06-27",
           "evidenceLevel": "REGULATORY_LABEL_SEARCH",
           "note": "Use the current product-specific label before entering numeric PK or regimen values."
+        },
+        {
+          "title": "HPRA SmPC: Lexotan 1.5 mg Tablets",
+          "url": "https://assets.hpra.ie/products/Human/30761/Licence_PA2239-008-001_07052020082419.pdf",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "Irish HPRA Summary of Product Characteristics."
         }
       ]
     },
@@ -1877,7 +1980,7 @@
               "basis": "daily-total",
               "frequency": "divided dosing; commonly 20 to 30 mg/day in cited trials",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -2043,33 +2146,68 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Chlordiazepoxide",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlordiazepoxide",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Librium 10 mg Capsules",
+            "url": "https://www.medicines.org.uk/emc/product/1729/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Chlordiazepoxide",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlordiazepoxide",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Librium 10 mg Capsules",
+              "url": "https://www.medicines.org.uk/emc/product/1729/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 6,
+            "max": 30,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 3,
+            "max": 3,
+            "unit": "day",
+            "basis": "label pharmacokinetics",
+            "note": "Parent drug steady-state levels usually reached within three days; active metabolites reach steady state later."
+          }
         }
       ],
       "tdm": {
@@ -2097,39 +2235,64 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Chlordiazepoxide",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlordiazepoxide",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Librium 10 mg Capsules",
+            "url": "https://www.medicines.org.uk/emc/product/1729/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Anxiety / insomnia associated with anxiety / alcohol withdrawal SmPC contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "10 to 100 mg/day across cited adult SmPC contexts",
+          "scheduleText": "divided doses or bedtime depending on indication in cited SmPC",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 10,
+              "max": 100,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "divided doses or bedtime depending on indication in cited SmPC",
+              "rangeKind": "label-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Librium 10 mg Capsules",
+              "url": "https://www.medicines.org.uk/emc/product/1729/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -2148,12 +2311,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Chlordiazepoxide",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlordiazepoxide",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Librium 10 mg Capsules",
+          "url": "https://www.medicines.org.uk/emc/product/1729/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -2893,7 +3057,7 @@
               "basis": "daily-total",
               "frequency": "2 to 4 divided doses depending on indication in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -3330,18 +3494,50 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "DEA Drug & Chemical Evaluation Section: Etizolam",
+            "url": "https://www.deadiversion.usdoj.gov/drug_chem_info/etizolam.pdf",
+            "sourceType": "government-safety-monograph",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "GOVERNMENT_SAFETY_MONOGRAPH",
+            "labelSection": "Pharmacology",
+            "note": "US DEA pharmacology summary; etizolam is not approved for medical use in the United States."
+          },
+          {
+            "title": "PMDA report: Benzodiazepine receptor agonists package-insert revisions",
+            "url": "https://www.pmda.go.jp/files/000217229.pdf",
+            "sourceType": "regulatory-safety-report",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_SAFETY_REPORT",
+            "labelSection": "Appendix etizolam dosing table",
+            "note": "Japanese PMDA package-insert revision report with labeled adult dosage contexts."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
             {
               "title": "DailyMed label search: Etizolam",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Etizolam",
@@ -3349,8 +3545,40 @@
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL_SEARCH",
               "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "DEA Drug & Chemical Evaluation Section: Etizolam",
+              "url": "https://www.deadiversion.usdoj.gov/drug_chem_info/etizolam.pdf",
+              "sourceType": "government-safety-monograph",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "GOVERNMENT_SAFETY_MONOGRAPH",
+              "labelSection": "Pharmacology",
+              "note": "US DEA pharmacology summary; etizolam is not approved for medical use in the United States."
+            },
+            {
+              "title": "PMDA report: Benzodiazepine receptor agonists package-insert revisions",
+              "url": "https://www.pmda.go.jp/files/000217229.pdf",
+              "sourceType": "regulatory-safety-report",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_SAFETY_REPORT",
+              "labelSection": "Appendix etizolam dosing table",
+              "note": "Japanese PMDA package-insert revision report with labeled adult dosage contexts."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 0.5,
+            "max": 2,
+            "unit": "h",
+            "basis": "literature estimate",
+            "note": "DEA summary cites a single-dose human PK study with maximum plasma concentration within 0.5 to 2 hours."
+          },
+          "eliminationHalfLife": {
+            "min": 3.4,
+            "max": 3.4,
+            "unit": "h",
+            "basis": "literature estimate",
+            "note": "DEA summary cites a mean elimination half-life averaging 3.4 hours."
+          }
         }
       ],
       "tdm": {
@@ -3384,33 +3612,92 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "DEA Drug & Chemical Evaluation Section: Etizolam",
+            "url": "https://www.deadiversion.usdoj.gov/drug_chem_info/etizolam.pdf",
+            "sourceType": "government-safety-monograph",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "GOVERNMENT_SAFETY_MONOGRAPH",
+            "labelSection": "Pharmacology",
+            "note": "US DEA pharmacology summary; etizolam is not approved for medical use in the United States."
+          },
+          {
+            "title": "PMDA report: Benzodiazepine receptor agonists package-insert revisions",
+            "url": "https://www.pmda.go.jp/files/000217229.pdf",
+            "sourceType": "regulatory-safety-report",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_SAFETY_REPORT",
+            "labelSection": "Appendix etizolam dosing table",
+            "note": "Japanese PMDA package-insert revision report with labeled adult dosage contexts."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Japanese labeled anxiety/depression/insomnia contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "1.5 to 3 mg/day across cited PMDA package-insert contexts",
+          "scheduleText": "divided three times daily for neurosis/depression or once nightly for sleep-disorder context in cited PMDA report",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 1.5,
+              "max": 3,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "divided three times daily for neurosis/depression or once nightly for sleep-disorder context in cited PMDA report",
+              "rangeKind": "label-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-safety-report",
+          "evidenceLevel": "REGULATORY_SAFETY_REPORT",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "DailyMed label search: Etizolam",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Etizolam",
+              "sourceType": "regulatory-label-search",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
+              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "DEA Drug & Chemical Evaluation Section: Etizolam",
+              "url": "https://www.deadiversion.usdoj.gov/drug_chem_info/etizolam.pdf",
+              "sourceType": "government-safety-monograph",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "GOVERNMENT_SAFETY_MONOGRAPH",
+              "labelSection": "Pharmacology",
+              "note": "US DEA pharmacology summary; etizolam is not approved for medical use in the United States."
+            },
+            {
+              "title": "PMDA report: Benzodiazepine receptor agonists package-insert revisions",
+              "url": "https://www.pmda.go.jp/files/000217229.pdf",
+              "sourceType": "regulatory-safety-report",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_SAFETY_REPORT",
+              "labelSection": "Appendix etizolam dosing table",
+              "note": "Japanese PMDA package-insert revision report with labeled adult dosage contexts."
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -3435,6 +3722,24 @@
           "accessedDate": "2026-06-27",
           "evidenceLevel": "REGULATORY_LABEL_SEARCH",
           "note": "Use the current product-specific label before entering numeric PK or regimen values."
+        },
+        {
+          "title": "DEA Drug & Chemical Evaluation Section: Etizolam",
+          "url": "https://www.deadiversion.usdoj.gov/drug_chem_info/etizolam.pdf",
+          "sourceType": "government-safety-monograph",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "GOVERNMENT_SAFETY_MONOGRAPH",
+          "labelSection": "Pharmacology",
+          "note": "US DEA pharmacology summary; etizolam is not approved for medical use in the United States."
+        },
+        {
+          "title": "PMDA report: Benzodiazepine receptor agonists package-insert revisions",
+          "url": "https://www.pmda.go.jp/files/000217229.pdf",
+          "sourceType": "regulatory-safety-report",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_SAFETY_REPORT",
+          "labelSection": "Appendix etizolam dosing table",
+          "note": "Japanese PMDA package-insert revision report with labeled adult dosage contexts."
         }
       ]
     },
@@ -3563,18 +3868,41 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "HPRA SmPC: Rohypnol 1 mg film-coated tablets",
+            "url": "https://assets.hpra.ie/products/Human/14097/LicenseSPC_PA0050-008-001_11042011141024.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "Irish HPRA Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
             {
               "title": "DailyMed label search: Flunitrazepam",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Flunitrazepam",
@@ -3582,8 +3910,24 @@
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL_SEARCH",
               "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "HPRA SmPC: Rohypnol 1 mg film-coated tablets",
+              "url": "https://assets.hpra.ie/products/Human/14097/LicenseSPC_PA0050-008-001_11042011141024.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "Irish HPRA Summary of Product Characteristics."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 16,
+            "max": 35,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC states elimination half-life may be between 16 and 35 hours and onset is rapid but not numerically specified."
+          }
         }
       ],
       "tdm": {
@@ -3617,33 +3961,74 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "HPRA SmPC: Rohypnol 1 mg film-coated tablets",
+            "url": "https://assets.hpra.ie/products/Human/14097/LicenseSPC_PA0050-008-001_11042011141024.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "Irish HPRA Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Short-term insomnia oral SmPC context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "0.5 to 2 mg at bedtime in cited adult SmPC context",
+          "scheduleText": "single dose just before going to bed in cited SmPC context",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 0.5,
+              "max": 2,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "single dose just before going to bed in cited SmPC context",
+              "rangeKind": "label-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "DailyMed label search: Flunitrazepam",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Flunitrazepam",
+              "sourceType": "regulatory-label-search",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
+              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "HPRA SmPC: Rohypnol 1 mg film-coated tablets",
+              "url": "https://assets.hpra.ie/products/Human/14097/LicenseSPC_PA0050-008-001_11042011141024.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "Irish HPRA Summary of Product Characteristics."
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -3668,6 +4053,15 @@
           "accessedDate": "2026-06-27",
           "evidenceLevel": "REGULATORY_LABEL_SEARCH",
           "note": "Use the current product-specific label before entering numeric PK or regimen values."
+        },
+        {
+          "title": "HPRA SmPC: Rohypnol 1 mg film-coated tablets",
+          "url": "https://assets.hpra.ie/products/Human/14097/LicenseSPC_PA0050-008-001_11042011141024.pdf",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "Irish HPRA Summary of Product Characteristics."
         }
       ]
     },
@@ -4308,7 +4702,7 @@
               "basis": "daily-total",
               "frequency": "divided twice or three times daily; individualized in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -4536,33 +4930,56 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Ketamine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ketamine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Ketamine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:14e8f864-8b8a-4e7e-8439-e510d3107063",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ketamine"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific",
+          "route": "intravenous",
+          "formulation": "injection",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Ketamine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ketamine",
-              "sourceType": "regulatory-label-search",
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Ketamine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:14e8f864-8b8a-4e7e-8439-e510d3107063",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ketamine"
             }
-          ]
+          ],
+          "durationOfAction": {
+            "min": 10,
+            "max": 15,
+            "unit": "min",
+            "basis": "label pharmacokinetics",
+            "note": "Initial alpha phase half-life corresponds clinically to anesthetic effect in cited label."
+          },
+          "eliminationHalfLife": {
+            "min": 2.5,
+            "max": 2.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Redistribution beta-phase half-life after intravenous administration in cited label."
+          }
         }
       ],
       "tdm": {
@@ -4583,12 +5000,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Ketamine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ketamine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Ketamine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:14e8f864-8b8a-4e7e-8439-e510d3107063",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ketamine"
           }
         ]
       },
@@ -4627,12 +5045,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Ketamine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ketamine",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Ketamine",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:14e8f864-8b8a-4e7e-8439-e510d3107063",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ketamine"
         }
       ]
     },
@@ -5335,7 +5754,7 @@
               "basis": "daily-total",
               "frequency": "once daily after food, 1 to 2 hours before bedtime in cited SmPC context",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -6108,7 +6527,7 @@
               "basis": "daily-total",
               "frequency": "once daily in the morning; titrate weekly in 10 mg increments in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -7043,33 +7462,49 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: N-Acetylcysteine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=N-Acetylcysteine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: N-Acetylcysteine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:2324d60b-4f49-4759-a46e-a06bfce7e8aa",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=N-Acetylcysteine"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific",
+          "route": "intravenous",
+          "formulation": "injection",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: N-Acetylcysteine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=N-Acetylcysteine",
-              "sourceType": "regulatory-label-search",
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: N-Acetylcysteine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:2324d60b-4f49-4759-a46e-a06bfce7e8aa",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=N-Acetylcysteine"
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 5.6,
+            "max": 5.6,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Acetaminophen-overdose IV label context; psychiatric research use may not share this dosing context."
+          }
         }
       ],
       "tdm": {
@@ -7090,12 +7525,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: N-Acetylcysteine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=N-Acetylcysteine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: N-Acetylcysteine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:2324d60b-4f49-4759-a46e-a06bfce7e8aa",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=N-Acetylcysteine"
           }
         ]
       },
@@ -7134,12 +7570,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: N-Acetylcysteine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=N-Acetylcysteine",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: N-Acetylcysteine",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:2324d60b-4f49-4759-a46e-a06bfce7e8aa",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=N-Acetylcysteine"
         }
       ]
     },
@@ -8466,20 +8903,20 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "openFDA drug label: Prochlorperazine",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:02069e43-5245-20dc-e063-6294a90a9dcd",
+            "title": "UK eMC SmPC: Prochlorperazine maleate 3 mg Buccal Tablets",
+            "url": "https://www.medicines.org.uk/emc/product/101549/smpc",
             "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Prochlorperazine"
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
+          "route": "buccal",
+          "formulation": "buccal tablet",
           "notes": [
             "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
             "Values can vary by formulation, population, organ function, and interacting medicines."
@@ -8500,15 +8937,22 @@
               "evidenceLevel": "REFERENCE_DATABASE"
             },
             {
-              "title": "openFDA drug label: Prochlorperazine",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:02069e43-5245-20dc-e063-6294a90a9dcd",
+              "title": "UK eMC SmPC: Prochlorperazine maleate 3 mg Buccal Tablets",
+              "url": "https://www.medicines.org.uk/emc/product/101549/smpc",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Prochlorperazine"
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 9,
+            "max": 9,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Buccal formulation half-life similar to oral formulation in cited SmPC."
+          }
         }
       ],
       "tdm": {
@@ -8536,33 +8980,33 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "openFDA drug label: Prochlorperazine",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:02069e43-5245-20dc-e063-6294a90a9dcd",
+            "title": "UK eMC SmPC: Prochlorperazine maleate 3 mg Buccal Tablets",
+            "url": "https://www.medicines.org.uk/emc/product/101549/smpc",
             "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Prochlorperazine"
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Adult psychiatric disorder oral label context",
+          "indication": "Migraine/nausea buccal SmPC context",
           "population": "Adults unless product-specific label states otherwise",
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
-          "amountText": "15 to 150 mg/day across cited anxiety and psychotic-disorder label contexts",
-          "scheduleText": "divided three or four times daily in the cited label",
+          "route": "buccal",
+          "formulation": "buccal tablet",
+          "amountText": "3 to 12 mg/day in cited adult buccal SmPC context",
+          "scheduleText": "one or two 3 mg buccal tablets twice daily for up to two days in cited SmPC",
           "ranges": [
             {
-              "min": 15,
-              "max": 150,
+              "min": 3,
+              "max": 12,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "divided three or four times daily in the cited label",
+              "frequency": "one or two 3 mg buccal tablets twice daily for up to two days in cited SmPC",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -8585,13 +9029,13 @@
               "evidenceLevel": "REFERENCE_DATABASE"
             },
             {
-              "title": "openFDA drug label: Prochlorperazine",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:02069e43-5245-20dc-e063-6294a90a9dcd",
+              "title": "UK eMC SmPC: Prochlorperazine maleate 3 mg Buccal Tablets",
+              "url": "https://www.medicines.org.uk/emc/product/101549/smpc",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Prochlorperazine"
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
           ]
         }
@@ -8612,13 +9056,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "openFDA drug label: Prochlorperazine",
-          "url": "https://api.fda.gov/drug/label.json?search=set_id:02069e43-5245-20dc-e063-6294a90a9dcd",
+          "title": "UK eMC SmPC: Prochlorperazine maleate 3 mg Buccal Tablets",
+          "url": "https://www.medicines.org.uk/emc/product/101549/smpc",
           "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
           "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Prochlorperazine"
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -8859,7 +9303,7 @@
               "basis": "daily-total",
               "frequency": "once daily at bedtime or divided depending on indication in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -9125,7 +9569,7 @@
               "basis": "daily-total",
               "frequency": "once or twice daily depending on indication and product-specific label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -9387,7 +9831,7 @@
               "basis": "daily-total",
               "frequency": "single bedtime dose in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -9564,18 +10008,50 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "PubMed: The pharmacokinetics of the antidepressant tianeptine and its main metabolite in healthy humans",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/2341111/",
+            "sourceType": "pharmacokinetic-study",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "PHARMACOKINETIC_STUDY",
+            "labelSection": "Abstract",
+            "note": "Human pharmacokinetic study after oral dosing."
+          },
+          {
+            "title": "UIC Drug Information Group FAQ: tianeptine misuse/withdrawal",
+            "url": "https://dig.pharmacy.uic.edu/faqs/2024-2/june-2024-faqs/what-is-tianeptine-and-are-there-recommendations-for-managing-tianeptine-misuse-withdrawal-in-the-medical-setting/",
+            "sourceType": "clinical-review",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "CLINICAL_REVIEW",
+            "labelSection": "Background",
+            "note": "Review used only to index broad medical-use dose context and misuse caveats, not as a dosing recommendation."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
             {
               "title": "DailyMed label search: Tianeptine",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tianeptine",
@@ -9583,8 +10059,40 @@
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL_SEARCH",
               "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "PubMed: The pharmacokinetics of the antidepressant tianeptine and its main metabolite in healthy humans",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/2341111/",
+              "sourceType": "pharmacokinetic-study",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "PHARMACOKINETIC_STUDY",
+              "labelSection": "Abstract",
+              "note": "Human pharmacokinetic study after oral dosing."
+            },
+            {
+              "title": "UIC Drug Information Group FAQ: tianeptine misuse/withdrawal",
+              "url": "https://dig.pharmacy.uic.edu/faqs/2024-2/june-2024-faqs/what-is-tianeptine-and-are-there-recommendations-for-managing-tianeptine-misuse-withdrawal-in-the-medical-setting/",
+              "sourceType": "clinical-review",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "CLINICAL_REVIEW",
+              "labelSection": "Background",
+              "note": "Review used only to index broad medical-use dose context and misuse caveats, not as a dosing recommendation."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 0.47,
+            "max": 1.41,
+            "unit": "h",
+            "basis": "literature estimate",
+            "note": "Human PK study reports tmax 0.94 +/- 0.47 hours after oral dosing."
+          },
+          "eliminationHalfLife": {
+            "min": 1.4,
+            "max": 3.6,
+            "unit": "h",
+            "basis": "literature estimate",
+            "note": "Human PK study reports plasma half-life 2.5 +/- 1.1 hours."
+          }
         }
       ],
       "tdm": {
@@ -9618,33 +10126,92 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "PubMed: The pharmacokinetics of the antidepressant tianeptine and its main metabolite in healthy humans",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/2341111/",
+            "sourceType": "pharmacokinetic-study",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "PHARMACOKINETIC_STUDY",
+            "labelSection": "Abstract",
+            "note": "Human pharmacokinetic study after oral dosing."
+          },
+          {
+            "title": "UIC Drug Information Group FAQ: tianeptine misuse/withdrawal",
+            "url": "https://dig.pharmacy.uic.edu/faqs/2024-2/june-2024-faqs/what-is-tianeptine-and-are-there-recommendations-for-managing-tianeptine-misuse-withdrawal-in-the-medical-setting/",
+            "sourceType": "clinical-review",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "CLINICAL_REVIEW",
+            "labelSection": "Background",
+            "note": "Review used only to index broad medical-use dose context and misuse caveats, not as a dosing recommendation."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Medical-use literature context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "25 to 50 mg/day medical-use context cited in review literature",
+          "scheduleText": "product- and country-specific schedule; often divided dosing in clinical references",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 25,
+              "max": 50,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "product- and country-specific schedule; often divided dosing in clinical references",
+              "rangeKind": "literature-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "clinical-review",
+          "evidenceLevel": "CLINICAL_REVIEW",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "DailyMed label search: Tianeptine",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tianeptine",
+              "sourceType": "regulatory-label-search",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
+              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "PubMed: The pharmacokinetics of the antidepressant tianeptine and its main metabolite in healthy humans",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/2341111/",
+              "sourceType": "pharmacokinetic-study",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "PHARMACOKINETIC_STUDY",
+              "labelSection": "Abstract",
+              "note": "Human pharmacokinetic study after oral dosing."
+            },
+            {
+              "title": "UIC Drug Information Group FAQ: tianeptine misuse/withdrawal",
+              "url": "https://dig.pharmacy.uic.edu/faqs/2024-2/june-2024-faqs/what-is-tianeptine-and-are-there-recommendations-for-managing-tianeptine-misuse-withdrawal-in-the-medical-setting/",
+              "sourceType": "clinical-review",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "CLINICAL_REVIEW",
+              "labelSection": "Background",
+              "note": "Review used only to index broad medical-use dose context and misuse caveats, not as a dosing recommendation."
+            }
+          ]
         }
       ],
       "sourceRefs": [
@@ -9669,6 +10236,24 @@
           "accessedDate": "2026-06-27",
           "evidenceLevel": "REGULATORY_LABEL_SEARCH",
           "note": "Use the current product-specific label before entering numeric PK or regimen values."
+        },
+        {
+          "title": "PubMed: The pharmacokinetics of the antidepressant tianeptine and its main metabolite in healthy humans",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/2341111/",
+          "sourceType": "pharmacokinetic-study",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "PHARMACOKINETIC_STUDY",
+          "labelSection": "Abstract",
+          "note": "Human pharmacokinetic study after oral dosing."
+        },
+        {
+          "title": "UIC Drug Information Group FAQ: tianeptine misuse/withdrawal",
+          "url": "https://dig.pharmacy.uic.edu/faqs/2024-2/june-2024-faqs/what-is-tianeptine-and-are-there-recommendations-for-managing-tianeptine-misuse-withdrawal-in-the-medical-setting/",
+          "sourceType": "clinical-review",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "CLINICAL_REVIEW",
+          "labelSection": "Background",
+          "note": "Review used only to index broad medical-use dose context and misuse caveats, not as a dosing recommendation."
         }
       ]
     },
@@ -10137,7 +10722,7 @@
               "basis": "daily-total",
               "frequency": "immediately before bedtime with 7 to 8 hours before awakening",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -10339,6 +10924,12 @@
               "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
           ],
+          "tmax": {
+            "min": 1.5,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
           "eliminationHalfLife": {
             "min": 5,
             "max": 5,
@@ -10398,7 +10989,7 @@
               "basis": "daily-total",
               "frequency": "single bedtime dose; lower dose in older adults or impaired hepatic/renal/respiratory function in cited SmPC context",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -53679,6 +54270,15 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlorpromazine"
+          },
+          {
+            "title": "HPRA SmPC: Clonactil 100 mg film-coated tablets",
+            "url": "https://assets.hpra.ie/products/Human/14852/Licence_PA0126-026-002_24112019113323.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "Irish HPRA Summary of Product Characteristics."
           }
         ]
       },
@@ -53713,8 +54313,24 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlorpromazine"
+            },
+            {
+              "title": "HPRA SmPC: Clonactil 100 mg film-coated tablets",
+              "url": "https://assets.hpra.ie/products/Human/14852/Licence_PA0126-026-002_24112019113323.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "Irish HPRA Summary of Product Characteristics."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 3,
+            "max": 288,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC describes a prolonged biphasic half-life from 3 hours up to 12 days; do not interpret this as ordinary duration of action."
+          }
         }
       ],
       "tdm": {
@@ -53749,6 +54365,15 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlorpromazine"
+          },
+          {
+            "title": "HPRA SmPC: Clonactil 100 mg film-coated tablets",
+            "url": "https://assets.hpra.ie/products/Human/14852/Licence_PA0126-026-002_24112019113323.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "Irish HPRA Summary of Product Characteristics."
           }
         ]
       },
@@ -53768,7 +54393,7 @@
               "basis": "daily-total",
               "frequency": "divided dosing; individualized and reduced to maintenance in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -53798,6 +54423,15 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlorpromazine"
+            },
+            {
+              "title": "HPRA SmPC: Clonactil 100 mg film-coated tablets",
+              "url": "https://assets.hpra.ie/products/Human/14852/Licence_PA0126-026-002_24112019113323.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "Irish HPRA Summary of Product Characteristics."
             }
           ]
         }
@@ -53837,6 +54471,15 @@
           "evidenceLevel": "REGULATORY_LABEL",
           "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
           "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlorpromazine"
+        },
+        {
+          "title": "HPRA SmPC: Clonactil 100 mg film-coated tablets",
+          "url": "https://assets.hpra.ie/products/Human/14852/Licence_PA0126-026-002_24112019113323.pdf",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "Irish HPRA Summary of Product Characteristics."
         }
       ]
     },
@@ -54007,7 +54650,7 @@
               "basis": "daily-total",
               "frequency": "divided dosing after initial titration in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -54248,7 +54891,7 @@
               "basis": "daily-total",
               "frequency": "once daily depending on indication in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -55304,7 +55947,7 @@
               "basis": "daily-total",
               "frequency": "once daily up to 300 mg/day or divided above 300 mg/day in cited label context",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -55837,33 +56480,87 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Fluphenazine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Fluphenazine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:0860b3f3-3116-40f8-bcb0-e5c47731bdc8",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine"
+          },
+          {
+            "title": "openFDA drug label: Fluphenazine Decanoate",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:044f49f3-f980-4ef8-8beb-78412702cd9d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine+Decanoate"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific",
+          "route": "intramuscular or subcutaneous",
+          "formulation": "decanoate depot injection",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Fluphenazine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "openFDA drug label: Fluphenazine",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:0860b3f3-3116-40f8-bcb0-e5c47731bdc8",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine"
+            },
+            {
+              "title": "openFDA drug label: Fluphenazine Decanoate",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:044f49f3-f980-4ef8-8beb-78412702cd9d",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine+Decanoate"
             }
-          ]
+          ],
+          "onset": {
+            "min": 24,
+            "max": 72,
+            "unit": "h",
+            "basis": "clinical effect"
+          },
+          "peakEffect": {
+            "min": 48,
+            "max": 96,
+            "unit": "h",
+            "basis": "clinical effect",
+            "note": "Label states effects on psychotic symptoms become significant within 48 to 96 hours after injection."
+          },
+          "durationOfAction": {
+            "min": 4,
+            "max": 6,
+            "unit": "week",
+            "basis": "clinical effect",
+            "note": "Maintenance injection may control symptoms up to four weeks or longer; response has lasted as long as six weeks in a few patients."
+          }
         }
       ],
       "tdm": {
@@ -55891,12 +56588,22 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Fluphenazine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine",
-            "sourceType": "regulatory-label-search",
+            "title": "openFDA drug label: Fluphenazine",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:0860b3f3-3116-40f8-bcb0-e5c47731bdc8",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine"
+          },
+          {
+            "title": "openFDA drug label: Fluphenazine Decanoate",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:044f49f3-f980-4ef8-8beb-78412702cd9d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine+Decanoate"
           }
         ]
       },
@@ -55943,12 +56650,22 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Fluphenazine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine",
-          "sourceType": "regulatory-label-search",
+          "title": "openFDA drug label: Fluphenazine",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:0860b3f3-3116-40f8-bcb0-e5c47731bdc8",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine"
+        },
+        {
+          "title": "openFDA drug label: Fluphenazine Decanoate",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:044f49f3-f980-4ef8-8beb-78412702cd9d",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluphenazine+Decanoate"
         }
       ]
     },
@@ -56217,6 +56934,15 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Thioridazine"
+          },
+          {
+            "title": "PubMed: Plasma levels and half lives of thioridazine and some of its metabolites",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/837967/",
+            "sourceType": "pharmacokinetic-study",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "PHARMACOKINETIC_STUDY",
+            "labelSection": "Abstract",
+            "note": "Older chronic psychotic patient pharmacokinetic study; early and late disappearance half-lives are not ordinary clinical duration."
           }
         ]
       },
@@ -56251,8 +56977,24 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Thioridazine"
+            },
+            {
+              "title": "PubMed: Plasma levels and half lives of thioridazine and some of its metabolites",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/837967/",
+              "sourceType": "pharmacokinetic-study",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "PHARMACOKINETIC_STUDY",
+              "labelSection": "Abstract",
+              "note": "Older chronic psychotic patient pharmacokinetic study; early and late disappearance half-lives are not ordinary clinical duration."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 5,
+            "max": 26,
+            "unit": "h",
+            "basis": "literature estimate",
+            "note": "Study reports mean early disappearance half-life of 5 hours and mean late disappearance half-life of 26 hours."
+          }
         }
       ],
       "tdm": {
@@ -56287,6 +57029,15 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Thioridazine"
+          },
+          {
+            "title": "PubMed: Plasma levels and half lives of thioridazine and some of its metabolites",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/837967/",
+            "sourceType": "pharmacokinetic-study",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "PHARMACOKINETIC_STUDY",
+            "labelSection": "Abstract",
+            "note": "Older chronic psychotic patient pharmacokinetic study; early and late disappearance half-lives are not ordinary clinical duration."
           }
         ]
       },
@@ -56306,7 +57057,7 @@
               "basis": "daily-total",
               "frequency": "divided two to four times daily in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -56336,6 +57087,15 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Thioridazine"
+            },
+            {
+              "title": "PubMed: Plasma levels and half lives of thioridazine and some of its metabolites",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/837967/",
+              "sourceType": "pharmacokinetic-study",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "PHARMACOKINETIC_STUDY",
+              "labelSection": "Abstract",
+              "note": "Older chronic psychotic patient pharmacokinetic study; early and late disappearance half-lives are not ordinary clinical duration."
             }
           ]
         }
@@ -56375,6 +57135,15 @@
           "evidenceLevel": "REGULATORY_LABEL",
           "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
           "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Thioridazine"
+        },
+        {
+          "title": "PubMed: Plasma levels and half lives of thioridazine and some of its metabolites",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/837967/",
+          "sourceType": "pharmacokinetic-study",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "PHARMACOKINETIC_STUDY",
+          "labelSection": "Abstract",
+          "note": "Older chronic psychotic patient pharmacokinetic study; early and late disappearance half-lives are not ordinary clinical duration."
         }
       ]
     },
@@ -56437,33 +57206,69 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Droperidol",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Droperidol",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Droperidol 2.5 mg/ml Solution for Injection",
+            "url": "https://www.medicines.org.uk/emc/product/7310/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific",
+          "route": "intravenous",
+          "formulation": "solution for injection",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Droperidol",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Droperidol",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Droperidol 2.5 mg/ml Solution for Injection",
+              "url": "https://www.medicines.org.uk/emc/product/7310/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "onset": {
+            "min": 2,
+            "max": 3,
+            "unit": "min",
+            "basis": "clinical effect"
+          },
+          "durationOfAction": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "Sedative/tranquillising effects tend to persist 2 to 4 hours; alertness may be affected up to 12 hours."
+          },
+          "eliminationHalfLife": {
+            "min": 121,
+            "max": 147,
+            "unit": "min",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC reports elimination half-life 134 ± 13 minutes."
+          }
         }
       ],
       "tdm": {
@@ -56491,12 +57296,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Droperidol",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Droperidol",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Droperidol 2.5 mg/ml Solution for Injection",
+            "url": "https://www.medicines.org.uk/emc/product/7310/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
@@ -56543,12 +57349,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Droperidol",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Droperidol",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Droperidol 2.5 mg/ml Solution for Injection",
+          "url": "https://www.medicines.org.uk/emc/product/7310/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -57332,7 +58139,7 @@
               "basis": "daily-total",
               "frequency": "usually divided two to four times daily in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -58379,7 +59186,7 @@
               "basis": "daily-total",
               "frequency": "once daily; dose changes no more often than weekly in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -58617,7 +59424,7 @@
               "basis": "daily-total",
               "frequency": "once daily or divided depending on product-specific label context",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -58860,7 +59667,7 @@
               "basis": "daily-total",
               "frequency": "once daily in the morning in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -59298,7 +60105,7 @@
               "basis": "daily-total",
               "frequency": "once daily with or without food",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -59724,7 +60531,7 @@
               "basis": "daily-total",
               "frequency": "two or three divided doses with food in the cited immediate-release label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -60163,7 +60970,7 @@
               "basis": "daily-total",
               "frequency": "once daily or divided depending on indication in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -60595,7 +61402,7 @@
               "basis": "daily-total",
               "frequency": "once daily; gradual increase to reduce seizure risk in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -60826,7 +61633,7 @@
               "basis": "daily-total",
               "frequency": "divided doses after meal or light snack; gradual changes in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -61263,7 +62070,7 @@
               "basis": "daily-total",
               "frequency": "once daily with food after label titration",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -61391,33 +62198,56 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Amitriptyline",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amitriptyline",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Amitriptyline 10 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/14334/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Amitriptyline",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amitriptyline",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Amitriptyline 10 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/14334/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1.93,
+            "max": 7.98,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC reports mean Tmax about 3.89 ± 1.87 hours for 10 mg/25 mg film-coated tablets."
+          }
         }
       ],
       "tdm": {
@@ -61445,42 +62275,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Amitriptyline",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amitriptyline",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Amitriptyline 10 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/14334/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Major depressive disorder adult SmPC context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "50 to 150 mg/day in cited adult depression SmPC context",
+          "scheduleText": "divided into two doses; increased gradually in cited SmPC",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 50,
+              "max": 150,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "divided into two doses; increased gradually in cited SmPC",
+              "rangeKind": "label-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Amitriptyline 10 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/14334/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 10,
+            "commonMin": 50,
+            "strongMin": 100,
+            "heavyMin": 150
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -61497,12 +62363,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Amitriptyline",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amitriptyline",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Amitriptyline 10 mg film-coated tablets",
+          "url": "https://www.medicines.org.uk/emc/product/14334/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -61763,13 +62630,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "openFDA drug label: Imipramine",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:02c19a0a-3d9d-4881-ad14-1687aafd87b5",
+            "title": "UK eMC SmPC: Imipramine Hydrochloride 25 mg/5 ml Oral Solution",
+            "url": "https://www.medicines.org.uk/emc/product/13879/smpc",
             "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Imipramine"
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
@@ -61797,15 +62664,21 @@
               "evidenceLevel": "REFERENCE_DATABASE"
             },
             {
-              "title": "openFDA drug label: Imipramine",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:02c19a0a-3d9d-4881-ad14-1687aafd87b5",
+              "title": "UK eMC SmPC: Imipramine Hydrochloride 25 mg/5 ml Oral Solution",
+              "url": "https://www.medicines.org.uk/emc/product/13879/smpc",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Imipramine"
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 19,
+            "max": 19,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -61833,33 +62706,33 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "openFDA drug label: Imipramine",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:02c19a0a-3d9d-4881-ad14-1687aafd87b5",
+            "title": "UK eMC SmPC: Imipramine Hydrochloride 25 mg/5 ml Oral Solution",
+            "url": "https://www.medicines.org.uk/emc/product/13879/smpc",
             "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Imipramine"
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Depression label context",
+          "indication": "Depression adult SmPC context",
           "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
           "formulation": "product-specific oral formulation",
-          "amountText": "75 to 300 mg/day across cited adult outpatient and hospitalized label contexts",
-          "scheduleText": "divided doses; maintenance lower in cited label",
+          "amountText": "75 to 300 mg/day across cited adult outpatient and inpatient SmPC contexts",
+          "scheduleText": "divided doses; maintenance lower in cited SmPC",
           "ranges": [
             {
               "min": 75,
               "max": 300,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "divided doses; maintenance lower in cited label",
+              "frequency": "divided doses; maintenance lower in cited SmPC",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -61882,13 +62755,13 @@
               "evidenceLevel": "REFERENCE_DATABASE"
             },
             {
-              "title": "openFDA drug label: Imipramine",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:02c19a0a-3d9d-4881-ad14-1687aafd87b5",
+              "title": "UK eMC SmPC: Imipramine Hydrochloride 25 mg/5 ml Oral Solution",
+              "url": "https://www.medicines.org.uk/emc/product/13879/smpc",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Imipramine"
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
           ]
         }
@@ -61921,13 +62794,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "openFDA drug label: Imipramine",
-          "url": "https://api.fda.gov/drug/label.json?search=set_id:02c19a0a-3d9d-4881-ad14-1687aafd87b5",
+          "title": "UK eMC SmPC: Imipramine Hydrochloride 25 mg/5 ml Oral Solution",
+          "url": "https://www.medicines.org.uk/emc/product/13879/smpc",
           "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
           "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Imipramine"
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -61994,6 +62867,15 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nortriptyline"
+          },
+          {
+            "title": "HPRA SmPC: Nortriptyline 10 mg Film-coated Tablets",
+            "url": "https://assets.hpra.ie/products/Human/29663/Licence_PA0599-005-001_20032024151245.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "Irish HPRA Summary of Product Characteristics."
           }
         ]
       },
@@ -62028,8 +62910,38 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nortriptyline"
+            },
+            {
+              "title": "HPRA SmPC: Nortriptyline 10 mg Film-coated Tablets",
+              "url": "https://assets.hpra.ie/products/Human/29663/Licence_PA0599-005-001_20032024151245.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "Irish HPRA Summary of Product Characteristics."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 4.0,
+            "max": 8.8,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC reports Tmax 5.5 +/- 1.9 hours, range 4.0 to 8.8 hours."
+          },
+          "eliminationHalfLife": {
+            "min": 16,
+            "max": 38,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC reports approximate half-life 26 hours, range 16 to 38 hours."
+          },
+          "timeToSteadyState": {
+            "min": 7,
+            "max": 7,
+            "unit": "day",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC states steady-state plasma levels are reached within one week for most patients."
+          }
         }
       ],
       "tdm": {
@@ -62064,6 +62976,15 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nortriptyline"
+          },
+          {
+            "title": "HPRA SmPC: Nortriptyline 10 mg Film-coated Tablets",
+            "url": "https://assets.hpra.ie/products/Human/29663/Licence_PA0599-005-001_20032024151245.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "Irish HPRA Summary of Product Characteristics."
           }
         ],
         "samplingTime": "Product- and laboratory-specific; interpret with dose timing, adherence, CYP2D6 status, ECG, symptoms, and local method.",
@@ -62092,7 +63013,7 @@
               "basis": "daily-total",
               "frequency": "25 mg three or four times daily or once daily total dose in cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -62122,6 +63043,15 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nortriptyline"
+            },
+            {
+              "title": "HPRA SmPC: Nortriptyline 10 mg Film-coated Tablets",
+              "url": "https://assets.hpra.ie/products/Human/29663/Licence_PA0599-005-001_20032024151245.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "Irish HPRA Summary of Product Characteristics."
             }
           ]
         }
@@ -62161,6 +63091,15 @@
           "evidenceLevel": "REGULATORY_LABEL",
           "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
           "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nortriptyline"
+        },
+        {
+          "title": "HPRA SmPC: Nortriptyline 10 mg Film-coated Tablets",
+          "url": "https://assets.hpra.ie/products/Human/29663/Licence_PA0599-005-001_20032024151245.pdf",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "Irish HPRA Summary of Product Characteristics."
         }
       ]
     },
@@ -62427,18 +63366,41 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "FDA label: Maprotiline hydrochloride tablets, USP",
+            "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/072285s021lbl.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "Clinical Pharmacology; Dosage and Administration",
+            "note": "FDA label available through Drugs@FDA/accessdata."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
             {
               "title": "DailyMed label search: Maprotiline",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Maprotiline",
@@ -62446,8 +63408,38 @@
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL_SEARCH",
               "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "FDA label: Maprotiline hydrochloride tablets, USP",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/072285s021lbl.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "Clinical Pharmacology; Dosage and Administration",
+              "note": "FDA label available through Drugs@FDA/accessdata."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 12,
+            "max": 12,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "FDA label states mean time to peak is 12 hours."
+          },
+          "eliminationHalfLife": {
+            "min": 51,
+            "max": 51,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "FDA label states elimination half-life averages 51 hours."
+          },
+          "timeToSteadyState": {
+            "min": 14,
+            "max": 14,
+            "unit": "day",
+            "basis": "label pharmacokinetics",
+            "note": "FDA label states steady state is reached in the second week."
+          }
         }
       ],
       "tdm": {
@@ -62481,36 +63473,88 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "FDA label: Maprotiline hydrochloride tablets, USP",
+            "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/072285s021lbl.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "Clinical Pharmacology; Dosage and Administration",
+            "note": "FDA label available through Drugs@FDA/accessdata."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Depressive illness oral FDA label context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "75 to 225 mg/day across cited outpatient, hospitalized, and maximum label contexts",
+          "scheduleText": "single daily or divided dosing in cited label context",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 75,
+              "max": 225,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "single daily or divided dosing in cited label context",
+              "rangeKind": "label-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "DailyMed label search: Maprotiline",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Maprotiline",
+              "sourceType": "regulatory-label-search",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
+              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "FDA label: Maprotiline hydrochloride tablets, USP",
+              "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/072285s021lbl.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "Clinical Pharmacology; Dosage and Administration",
+              "note": "FDA label available through Drugs@FDA/accessdata."
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 25,
+            "commonMin": 75,
+            "strongMin": 150,
+            "heavyMin": 225
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -62533,6 +63577,15 @@
           "accessedDate": "2026-06-27",
           "evidenceLevel": "REGULATORY_LABEL_SEARCH",
           "note": "Use the current product-specific label before entering numeric PK or regimen values."
+        },
+        {
+          "title": "FDA label: Maprotiline hydrochloride tablets, USP",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/072285s021lbl.pdf",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "Clinical Pharmacology; Dosage and Administration",
+          "note": "FDA label available through Drugs@FDA/accessdata."
         }
       ]
     },
@@ -62592,33 +63645,68 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Moclobemide",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Moclobemide",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Moclobemide 150 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/7295/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Moclobemide",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Moclobemide",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Moclobemide 150 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/7295/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "eliminationHalfLife": {
+            "min": 1,
+            "max": 4,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
+          "timeToSteadyState": {
+            "min": 7,
+            "max": 7,
+            "unit": "day",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC states concentrations increase over the first week and remain stable thereafter."
+          }
         }
       ],
       "tdm": {
@@ -62646,42 +63734,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Moclobemide",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Moclobemide",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Moclobemide 150 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/7295/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder and anxiety-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Major depression / social phobia SmPC contexts",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "150 to 600 mg/day across cited SmPC contexts",
+          "scheduleText": "divided doses after meals in cited SmPC",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 150,
+              "max": 600,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "divided doses after meals in cited SmPC",
+              "rangeKind": "label-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Moclobemide 150 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/7295/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 150,
+            "commonMin": 300,
+            "strongMin": 450,
+            "heavyMin": 600
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
@@ -62698,12 +63822,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Moclobemide",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Moclobemide",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Moclobemide 150 mg film-coated tablets",
+          "url": "https://www.medicines.org.uk/emc/product/7295/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -63067,7 +64192,7 @@
               "basis": "daily-total",
               "frequency": "divided doses; gradual increases in the cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -63303,7 +64428,7 @@
               "basis": "daily-total",
               "frequency": "once daily at bedtime; increase after two weeks only in the cited SmPC context",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -63531,7 +64656,7 @@
               "basis": "daily-total",
               "frequency": "serum concentration-guided; 12-hour trough sampling in cited label",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -64513,13 +65638,13 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "openFDA drug label: Hydroxyzine",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:02616eee-a1a4-4afc-b84e-69fd28755138",
+            "title": "UK eMC SmPC: Hydroxyzine 10 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/100997/smpc",
             "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Hydroxyzine"
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
@@ -64547,15 +65672,29 @@
               "evidenceLevel": "REFERENCE_DATABASE"
             },
             {
-              "title": "openFDA drug label: Hydroxyzine",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:02616eee-a1a4-4afc-b84e-69fd28755138",
+              "title": "UK eMC SmPC: Hydroxyzine 10 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/100997/smpc",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Hydroxyzine"
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1.7,
+            "max": 2.5,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC reports mean Tmax 2.1 ± 0.4 hours after single oral dose."
+          },
+          "eliminationHalfLife": {
+            "min": 14,
+            "max": 24.1,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC reports 20.0 ± 4.1 hours and 14.0 hours in adults."
+          }
         }
       ],
       "tdm": {
@@ -64583,33 +65722,33 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "openFDA drug label: Hydroxyzine",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:02616eee-a1a4-4afc-b84e-69fd28755138",
+            "title": "UK eMC SmPC: Hydroxyzine 10 mg film-coated tablets",
+            "url": "https://www.medicines.org.uk/emc/product/100997/smpc",
             "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Hydroxyzine"
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety/tension symptomatic-relief label context",
+          "indication": "Anxiety adult SmPC context",
           "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
           "formulation": "product-specific oral formulation",
-          "amountText": "50 to 400 mg/day in cited adult anxiety label context",
-          "scheduleText": "50 to 100 mg four times daily in the cited label",
+          "amountText": "50 to 100 mg/day in cited adult anxiety SmPC context",
+          "scheduleText": "divided doses; use lowest effective dose for shortest duration in cited SmPC",
           "ranges": [
             {
               "min": 50,
-              "max": 400,
+              "max": 100,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "50 to 100 mg four times daily in the cited label",
+              "frequency": "divided doses; use lowest effective dose for shortest duration in cited SmPC",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -64632,13 +65771,13 @@
               "evidenceLevel": "REFERENCE_DATABASE"
             },
             {
-              "title": "openFDA drug label: Hydroxyzine",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:02616eee-a1a4-4afc-b84e-69fd28755138",
+              "title": "UK eMC SmPC: Hydroxyzine 10 mg film-coated tablets",
+              "url": "https://www.medicines.org.uk/emc/product/100997/smpc",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Hydroxyzine"
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
           ]
         }
@@ -64648,10 +65787,10 @@
           "name": "oral",
           "dose": {
             "units": "mg",
-            "lightMin": 25,
-            "commonMin": 50,
-            "strongMin": 100,
-            "heavyMin": 400
+            "lightMin": 10,
+            "commonMin": 25,
+            "strongMin": 50,
+            "heavyMin": 100
           }
         }
       ],
@@ -64671,13 +65810,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "openFDA drug label: Hydroxyzine",
-          "url": "https://api.fda.gov/drug/label.json?search=set_id:02616eee-a1a4-4afc-b84e-69fd28755138",
+          "title": "UK eMC SmPC: Hydroxyzine 10 mg film-coated tablets",
+          "url": "https://www.medicines.org.uk/emc/product/100997/smpc",
           "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
           "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Hydroxyzine"
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -64781,6 +65920,12 @@
               "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
           ],
+          "tmax": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          },
           "eliminationHalfLife": {
             "min": 30,
             "max": 30,
@@ -65137,33 +66282,55 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Lormetazepam",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lormetazepam",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Lormetazepam 0.5 mg Tablets",
+            "url": "https://www.medicines.org.uk/emc/product/5269/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed label search: Lormetazepam",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lormetazepam",
-              "sourceType": "regulatory-label-search",
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
               "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Lormetazepam 0.5 mg Tablets",
+              "url": "https://www.medicines.org.uk/emc/product/5269/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 11,
+            "max": 11,
+            "unit": "h",
+            "basis": "label pharmacokinetics"
+          }
         }
       ],
       "tdm": {
@@ -65191,42 +66358,78 @@
             "evidenceLevel": "REFERENCE_DATABASE"
           },
           {
-            "title": "DailyMed label search: Lormetazepam",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lormetazepam",
-            "sourceType": "regulatory-label-search",
+            "title": "UK eMC SmPC: Lormetazepam 0.5 mg Tablets",
+            "url": "https://www.medicines.org.uk/emc/product/5269/smpc",
+            "sourceType": "regulatory-label",
             "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Insomnia SmPC context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "0.5 to 1.5 mg before retiring in cited SmPC context",
+          "scheduleText": "single bedtime dose; shortest possible duration in cited SmPC",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 0.5,
+              "max": 1.5,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "single bedtime dose; shortest possible duration in cited SmPC",
+              "rangeKind": "label-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "UK eMC SmPC: Lormetazepam 0.5 mg Tablets",
+              "url": "https://www.medicines.org.uk/emc/product/5269/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 0.5,
+            "commonMin": 0.5,
+            "strongMin": 1,
+            "heavyMin": 1.5
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N05 Psycholeptics",
@@ -65243,12 +66446,13 @@
           "evidenceLevel": "REFERENCE_DATABASE"
         },
         {
-          "title": "DailyMed label search: Lormetazepam",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lormetazepam",
-          "sourceType": "regulatory-label-search",
+          "title": "UK eMC SmPC: Lormetazepam 0.5 mg Tablets",
+          "url": "https://www.medicines.org.uk/emc/product/5269/smpc",
+          "sourceType": "regulatory-label",
           "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
         }
       ]
     },
@@ -65713,18 +66917,41 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "HPRA SmPC: Centrax 10 mg Tablets",
+            "url": "https://assets.hpra.ie/products/Human/21640/Licence_PA0822-010-001_25052023120251.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "Irish HPRA Summary of Product Characteristics."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
             {
               "title": "DailyMed label search: Prazepam",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Prazepam",
@@ -65732,8 +66959,24 @@
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL_SEARCH",
               "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "HPRA SmPC: Centrax 10 mg Tablets",
+              "url": "https://assets.hpra.ie/products/Human/21640/Licence_PA0822-010-001_25052023120251.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "Irish HPRA Summary of Product Characteristics."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 63,
+            "max": 70,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "SmPC reports mean half-life of the principal active metabolite norprazepam as 63 hours before and 70 hours after multiple dosing."
+          }
         }
       ],
       "tdm": {
@@ -65767,36 +67010,88 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "HPRA SmPC: Centrax 10 mg Tablets",
+            "url": "https://assets.hpra.ie/products/Human/21640/Licence_PA0822-010-001_25052023120251.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+            "note": "Irish HPRA Summary of Product Characteristics."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Anxiety oral SmPC context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "10 to 60 mg/day in cited adult SmPC context",
+          "scheduleText": "single or divided doses in cited SmPC context",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 10,
+              "max": 60,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "single or divided doses in cited SmPC context",
+              "rangeKind": "label-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "DailyMed label search: Prazepam",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Prazepam",
+              "sourceType": "regulatory-label-search",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
+              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "HPRA SmPC: Centrax 10 mg Tablets",
+              "url": "https://assets.hpra.ie/products/Human/21640/Licence_PA0822-010-001_25052023120251.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+              "note": "Irish HPRA Summary of Product Characteristics."
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 10,
+            "commonMin": 10,
+            "strongMin": 30,
+            "heavyMin": 60
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N05 Psycholeptics",
@@ -65819,6 +67114,15 @@
           "accessedDate": "2026-06-27",
           "evidenceLevel": "REGULATORY_LABEL_SEARCH",
           "note": "Use the current product-specific label before entering numeric PK or regimen values."
+        },
+        {
+          "title": "HPRA SmPC: Centrax 10 mg Tablets",
+          "url": "https://assets.hpra.ie/products/Human/21640/Licence_PA0822-010-001_25052023120251.pdf",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+          "note": "Irish HPRA Summary of Product Characteristics."
         }
       ]
     },
@@ -66081,18 +67385,50 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "PubMed: Pharmacokinetics and metabolism of tofisopam (Grandaxin)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8100113/",
+            "sourceType": "pharmacokinetic-study",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "PHARMACOKINETIC_STUDY",
+            "labelSection": "Abstract",
+            "note": "Human pharmacokinetic and metabolism study."
+          },
+          {
+            "title": "Kusuri-no-Shiori: GRANDAXIN Tablets 50",
+            "url": "https://www.rad-ar.or.jp/siori/english/search/result?n=44482",
+            "sourceType": "drug-information-sheet",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "DRUG_INFORMATION_SHEET",
+            "labelSection": "Dosage regimen",
+            "note": "Japanese patient drug information sheet used for labeled dosage context."
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "product-specific",
+          "formulation": "product-specific oral formulation",
           "notes": [
-            "Specific Tmax, half-life, duration, and steady-state values vary by formulation and product label.",
-            "Numeric graph values are intentionally left unfilled until product-specific labels are reviewed."
+            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
+            "Values can vary by formulation, population, organ function, and interacting medicines."
           ],
           "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
             {
               "title": "DailyMed label search: Tofisopam",
               "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tofisopam",
@@ -66100,8 +67436,33 @@
               "accessedDate": "2026-06-27",
               "evidenceLevel": "REGULATORY_LABEL_SEARCH",
               "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "PubMed: Pharmacokinetics and metabolism of tofisopam (Grandaxin)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/8100113/",
+              "sourceType": "pharmacokinetic-study",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "PHARMACOKINETIC_STUDY",
+              "labelSection": "Abstract",
+              "note": "Human pharmacokinetic and metabolism study."
+            },
+            {
+              "title": "Kusuri-no-Shiori: GRANDAXIN Tablets 50",
+              "url": "https://www.rad-ar.or.jp/siori/english/search/result?n=44482",
+              "sourceType": "drug-information-sheet",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "DRUG_INFORMATION_SHEET",
+              "labelSection": "Dosage regimen",
+              "note": "Japanese patient drug information sheet used for labeled dosage context."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 2.7,
+            "max": 3.5,
+            "unit": "h",
+            "basis": "literature estimate",
+            "note": "Human PK study abstract reports unchanged tofisopam plasma half-life of 2.7 to 3.5 hours; total radioactivity declines more slowly."
+          }
         }
       ],
       "tdm": {
@@ -66135,36 +67496,106 @@
             "accessedDate": "2026-06-27",
             "evidenceLevel": "REGULATORY_LABEL_SEARCH",
             "note": "Use the current product-specific label before entering numeric PK or regimen values."
+          },
+          {
+            "title": "PubMed: Pharmacokinetics and metabolism of tofisopam (Grandaxin)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/8100113/",
+            "sourceType": "pharmacokinetic-study",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "PHARMACOKINETIC_STUDY",
+            "labelSection": "Abstract",
+            "note": "Human pharmacokinetic and metabolism study."
+          },
+          {
+            "title": "Kusuri-no-Shiori: GRANDAXIN Tablets 50",
+            "url": "https://www.rad-ar.or.jp/siori/english/search/result?n=44482",
+            "sourceType": "drug-information-sheet",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "DRUG_INFORMATION_SHEET",
+            "labelSection": "Dosage regimen",
+            "note": "Japanese patient drug information sheet used for labeled dosage context."
           }
         ]
       },
       "doseUseReferences": [
         {
-          "indication": "Anxiety or insomnia-related indications depending on local labeling",
-          "population": "Adults unless local label specifies otherwise",
+          "indication": "Japanese labeled autonomic/anxiety symptom context",
+          "population": "Adults unless product-specific label states otherwise",
           "route": "oral",
-          "formulation": "product-specific",
-          "amountText": "source needed",
-          "scheduleText": "source needed",
+          "formulation": "product-specific oral formulation",
+          "amountText": "150 mg/day in cited Japanese drug-information sheet context",
+          "scheduleText": "50 mg three times daily; adjusted by age or symptoms in cited sheet",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 150,
+              "max": 150,
               "unit": "mg",
-              "basis": "unknown",
-              "frequency": "source needed",
-              "rangeKind": "source-needed",
-              "label": "Label/literature regimen",
-              "note": "No numeric regimen is shown until a current product-specific label or guideline is reviewed."
+              "basis": "daily-total",
+              "frequency": "50 mg three times daily; adjusted by age or symptoms in cited sheet",
+              "rangeKind": "label-regimen",
+              "label": "Label/literature regimen range",
+              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
-          "sourceType": "regulatory-label-search",
-          "evidenceLevel": "SOURCE_NEEDED",
+          "sourceType": "drug-information-sheet",
+          "evidenceLevel": "DRUG_INFORMATION_SHEET",
           "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": []
+          "sourceRefs": [
+            {
+              "title": "WHO ATC/DDD Index N05 Psycholeptics",
+              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
+              "sourceType": "classification",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "国家基本药物目录 2018",
+              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
+              "sourceType": "national-essential-medicines-list",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REFERENCE_DATABASE"
+            },
+            {
+              "title": "DailyMed label search: Tofisopam",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tofisopam",
+              "sourceType": "regulatory-label-search",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
+              "note": "Use the current product-specific label before entering numeric PK or regimen values."
+            },
+            {
+              "title": "PubMed: Pharmacokinetics and metabolism of tofisopam (Grandaxin)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/8100113/",
+              "sourceType": "pharmacokinetic-study",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "PHARMACOKINETIC_STUDY",
+              "labelSection": "Abstract",
+              "note": "Human pharmacokinetic and metabolism study."
+            },
+            {
+              "title": "Kusuri-no-Shiori: GRANDAXIN Tablets 50",
+              "url": "https://www.rad-ar.or.jp/siori/english/search/result?n=44482",
+              "sourceType": "drug-information-sheet",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "DRUG_INFORMATION_SHEET",
+              "labelSection": "Dosage regimen",
+              "note": "Japanese patient drug information sheet used for labeled dosage context."
+            }
+          ]
         }
       ],
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg",
+            "lightMin": 50,
+            "commonMin": 150,
+            "strongMin": 150,
+            "heavyMin": 150
+          }
+        }
+      ],
       "sourceRefs": [
         {
           "title": "WHO ATC/DDD Index N05 Psycholeptics",
@@ -66187,6 +67618,24 @@
           "accessedDate": "2026-06-27",
           "evidenceLevel": "REGULATORY_LABEL_SEARCH",
           "note": "Use the current product-specific label before entering numeric PK or regimen values."
+        },
+        {
+          "title": "PubMed: Pharmacokinetics and metabolism of tofisopam (Grandaxin)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/8100113/",
+          "sourceType": "pharmacokinetic-study",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "PHARMACOKINETIC_STUDY",
+          "labelSection": "Abstract",
+          "note": "Human pharmacokinetic and metabolism study."
+        },
+        {
+          "title": "Kusuri-no-Shiori: GRANDAXIN Tablets 50",
+          "url": "https://www.rad-ar.or.jp/siori/english/search/result?n=44482",
+          "sourceType": "drug-information-sheet",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "DRUG_INFORMATION_SHEET",
+          "labelSection": "Dosage regimen",
+          "note": "Japanese patient drug information sheet used for labeled dosage context."
         }
       ]
     },
@@ -68387,7 +69836,7 @@
               "basis": "daily-total",
               "frequency": "once daily in the evening",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],
@@ -69275,7 +70724,7 @@
               "basis": "daily-total",
               "frequency": "single daily dose in the cited label context",
               "rangeKind": "label-regimen",
-              "label": "Label regimen range",
+              "label": "Label/literature regimen range",
               "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
             }
           ],

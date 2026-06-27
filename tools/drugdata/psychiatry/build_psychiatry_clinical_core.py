@@ -247,7 +247,20 @@ CURATED_LABEL_DATA = {
     },
     "Thioridazine": {
         "openfdaSetId": "1fd16a99-e856-4a37-9dae-c443714fac14",
-        "timeCourse": {},
+        "extraSourceRefs": [
+            {
+                "title": "PubMed: Plasma levels and half lives of thioridazine and some of its metabolites",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/837967/",
+                "sourceType": "pharmacokinetic-study",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "PHARMACOKINETIC_STUDY",
+                "labelSection": "Abstract",
+                "note": "Older chronic psychotic patient pharmacokinetic study; early and late disappearance half-lives are not ordinary clinical duration.",
+            }
+        ],
+        "timeCourse": {
+            "eliminationHalfLife": (5, 26, "h", "literature estimate", "Study reports mean early disappearance half-life of 5 hours and mean late disappearance half-life of 26 hours."),
+        },
         "doseReference": ("Treatment-refractory schizophrenia label context", "200 to 800 mg/day in cited adult total daily dosage context", "divided two to four times daily in the cited label", 200, 800),
         "doseBar": (50, 200, 400, 800),
     },
@@ -267,21 +280,24 @@ CURATED_LABEL_DATA = {
         "doseReference": ("Major depressive disorder MAOI label context", "30 to 60 mg/day in cited label context", "divided doses; gradual increases in the cited label", 30, 60),
         "doseBar": (10, 30, 40, 60),
     },
-    "Hydroxyzine": {
-        "openfdaSetId": "02616eee-a1a4-4afc-b84e-69fd28755138",
-        "timeCourse": {},
-        "doseReference": ("Anxiety/tension symptomatic-relief label context", "50 to 400 mg/day in cited adult anxiety label context", "50 to 100 mg four times daily in the cited label", 50, 400),
-        "doseBar": (25, 50, 100, 400),
-    },
-    "Imipramine": {
-        "openfdaSetId": "02c19a0a-3d9d-4881-ad14-1687aafd87b5",
-        "timeCourse": {},
-        "doseReference": ("Depression label context", "75 to 300 mg/day across cited adult outpatient and hospitalized label contexts", "divided doses; maintenance lower in cited label", 75, 300),
-        "doseBar": (25, 75, 150, 300),
-    },
     "Nortriptyline": {
         "openfdaSetId": "017f7717-e160-4142-9a5a-1a2bd9776707",
-        "timeCourse": {},
+        "extraSourceRefs": [
+            {
+                "title": "HPRA SmPC: Nortriptyline 10 mg Film-coated Tablets",
+                "url": "https://assets.hpra.ie/products/Human/29663/Licence_PA0599-005-001_20032024151245.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+                "note": "Irish HPRA Summary of Product Characteristics.",
+            }
+        ],
+        "timeCourse": {
+            "tmax": (4.0, 8.8, "h", "label pharmacokinetics", "SmPC reports Tmax 5.5 +/- 1.9 hours, range 4.0 to 8.8 hours."),
+            "eliminationHalfLife": (16, 38, "h", "label pharmacokinetics", "SmPC reports approximate half-life 26 hours, range 16 to 38 hours."),
+            "timeToSteadyState": (7, 7, "day", "label pharmacokinetics", "SmPC states steady-state plasma levels are reached within one week for most patients."),
+        },
         "doseReference": ("Depression label context", "75 to 150 mg/day across cited adult label context", "25 mg three or four times daily or once daily total dose in cited label", 75, 150),
         "doseBar": (25, 75, 100, 150),
         "tdm": {
@@ -312,15 +328,22 @@ CURATED_LABEL_DATA = {
     },
     "Chlorpromazine": {
         "openfdaSetId": "02c56c39-99bd-44a4-8d9d-9d867c323968",
-        "timeCourse": {},
+        "extraSourceRefs": [
+            {
+                "title": "HPRA SmPC: Clonactil 100 mg film-coated tablets",
+                "url": "https://assets.hpra.ie/products/Human/14852/Licence_PA0126-026-002_24112019113323.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+                "note": "Irish HPRA Summary of Product Characteristics.",
+            }
+        ],
+        "timeCourse": {
+            "eliminationHalfLife": (3, 288, "h", "label pharmacokinetics", "SmPC describes a prolonged biphasic half-life from 3 hours up to 12 days; do not interpret this as ordinary duration of action."),
+        },
         "doseReference": ("Psychotic disorder oral label context", "30 to 1000 mg/day across cited outpatient and inpatient label contexts", "divided dosing; individualized and reduced to maintenance in the cited label", 30, 1000),
         "doseBar": (25, 75, 400, 1000),
-    },
-    "Prochlorperazine": {
-        "openfdaSetId": "02069e43-5245-20dc-e063-6294a90a9dcd",
-        "timeCourse": {},
-        "doseReference": ("Adult psychiatric disorder oral label context", "15 to 150 mg/day across cited anxiety and psychotic-disorder label contexts", "divided three or four times daily in the cited label", 15, 150),
-        "doseBar": (5, 15, 75, 150),
     },
     "Amphetamine": {
         "openfdaSetId": "00242264-40d8-4267-a91a-727a1f088616",
@@ -333,6 +356,15 @@ CURATED_LABEL_DATA = {
         },
         "doseReference": ("ADHD / narcolepsy oral label context", "5 to 60 mg/day across cited ADHD and narcolepsy label contexts", "divided dosing; late evening doses avoided in the cited label", 5, 60),
         "doseBar": (2.5, 5, 20, 40),
+    },
+    "Amitriptyline": {
+        "emcProductId": "14334",
+        "emcTitle": "UK eMC SmPC: Amitriptyline 10 mg film-coated tablets",
+        "timeCourse": {
+            "tmax": (1.93, 7.98, "h", "label pharmacokinetics", "SmPC reports mean Tmax about 3.89 ± 1.87 hours for 10 mg/25 mg film-coated tablets."),
+        },
+        "doseReference": ("Major depressive disorder adult SmPC context", "50 to 150 mg/day in cited adult depression SmPC context", "divided into two doses; increased gradually in cited SmPC", 50, 150),
+        "doseBar": (10, 50, 100, 150),
     },
     "Agomelatine": {
         "emcProductId": "6564",
@@ -384,22 +416,294 @@ CURATED_LABEL_DATA = {
             "eliminationHalfLife": (22, 22, "h", "label pharmacokinetics", "Terminal elimination half-life; alpha phase is about 3.6 hours in cited SmPC."),
         },
     },
+    "Droperidol": {
+        "emcProductId": "7310",
+        "emcTitle": "UK eMC SmPC: Droperidol 2.5 mg/ml Solution for Injection",
+        "route": "intravenous",
+        "formulation": "solution for injection",
+        "timeCourse": {
+            "onset": (2, 3, "min", "clinical effect"),
+            "durationOfAction": (2, 4, "h", "pharmacodynamic effect", "Sedative/tranquillising effects tend to persist 2 to 4 hours; alertness may be affected up to 12 hours."),
+            "eliminationHalfLife": (121, 147, "min", "label pharmacokinetics", "SmPC reports elimination half-life 134 ± 13 minutes."),
+        },
+    },
+    "Fluphenazine": {
+        "openfdaSetId": "0860b3f3-3116-40f8-bcb0-e5c47731bdc8",
+        "extraOpenfdaSetIds": [
+            ("044f49f3-f980-4ef8-8beb-78412702cd9d", "openFDA drug label: Fluphenazine Decanoate"),
+        ],
+        "route": "intramuscular or subcutaneous",
+        "formulation": "decanoate depot injection",
+        "timeCourse": {
+            "onset": (24, 72, "h", "clinical effect"),
+            "peakEffect": (48, 96, "h", "clinical effect", "Label states effects on psychotic symptoms become significant within 48 to 96 hours after injection."),
+            "durationOfAction": (4, 6, "week", "clinical effect", "Maintenance injection may control symptoms up to four weeks or longer; response has lasted as long as six weeks in a few patients."),
+        },
+    },
+    "Hydroxyzine": {
+        "emcProductId": "100997",
+        "emcTitle": "UK eMC SmPC: Hydroxyzine 10 mg film-coated tablets",
+        "timeCourse": {
+            "tmax": (1.7, 2.5, "h", "label pharmacokinetics", "SmPC reports mean Tmax 2.1 ± 0.4 hours after single oral dose."),
+            "eliminationHalfLife": (14, 24.1, "h", "label pharmacokinetics", "SmPC reports 20.0 ± 4.1 hours and 14.0 hours in adults."),
+        },
+        "doseReference": ("Anxiety adult SmPC context", "50 to 100 mg/day in cited adult anxiety SmPC context", "divided doses; use lowest effective dose for shortest duration in cited SmPC", 50, 100),
+        "doseBar": (10, 25, 50, 100),
+    },
     "Nitrazepam": {
         "emcProductId": "3901",
         "emcTitle": "UK eMC SmPC: Mogadon 5 mg Tablets",
         "timeCourse": {
+            "tmax": (2, 2, "h", "label pharmacokinetics"),
             "eliminationHalfLife": (30, 30, "h", "label pharmacokinetics", "Average plasma half-life; elderly patients may have longer half-life in cited SmPC."),
             "timeToSteadyState": (5, 5, "day", "label pharmacokinetics"),
         },
+    },
+    "Imipramine": {
+        "emcProductId": "13879",
+        "emcTitle": "UK eMC SmPC: Imipramine Hydrochloride 25 mg/5 ml Oral Solution",
+        "timeCourse": {
+            "eliminationHalfLife": (19, 19, "h", "label pharmacokinetics"),
+        },
+        "doseReference": ("Depression adult SmPC context", "75 to 300 mg/day across cited adult outpatient and inpatient SmPC contexts", "divided doses; maintenance lower in cited SmPC", 75, 300),
+        "doseBar": (25, 75, 150, 300),
+    },
+    "Ketamine": {
+        "openfdaSetId": "14e8f864-8b8a-4e7e-8439-e510d3107063",
+        "route": "intravenous",
+        "formulation": "injection",
+        "timeCourse": {
+            "durationOfAction": (10, 15, "min", "label pharmacokinetics", "Initial alpha phase half-life corresponds clinically to anesthetic effect in cited label."),
+            "eliminationHalfLife": (2.5, 2.5, "h", "label pharmacokinetics", "Redistribution beta-phase half-life after intravenous administration in cited label."),
+        },
+    },
+    "Chlordiazepoxide": {
+        "emcProductId": "1729",
+        "emcTitle": "UK eMC SmPC: Librium 10 mg Capsules",
+        "timeCourse": {
+            "tmax": (1, 2, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (6, 30, "h", "label pharmacokinetics"),
+            "timeToSteadyState": (3, 3, "day", "label pharmacokinetics", "Parent drug steady-state levels usually reached within three days; active metabolites reach steady state later."),
+        },
+        "doseReference": ("Anxiety / insomnia associated with anxiety / alcohol withdrawal SmPC contexts", "10 to 100 mg/day across cited adult SmPC contexts", "divided doses or bedtime depending on indication in cited SmPC", 10, 100),
+        "doseBar": (5, 10, 30, 100),
+    },
+    "Lormetazepam": {
+        "emcProductId": "5269",
+        "emcTitle": "UK eMC SmPC: Lormetazepam 0.5 mg Tablets",
+        "timeCourse": {
+            "eliminationHalfLife": (11, 11, "h", "label pharmacokinetics"),
+        },
+        "doseReference": ("Insomnia SmPC context", "0.5 to 1.5 mg before retiring in cited SmPC context", "single bedtime dose; shortest possible duration in cited SmPC", 0.5, 1.5),
+        "doseBar": (0.5, 0.5, 1, 1.5),
+    },
+    "Moclobemide": {
+        "emcProductId": "7295",
+        "emcTitle": "UK eMC SmPC: Moclobemide 150 mg film-coated tablets",
+        "timeCourse": {
+            "tmax": (1, 1, "h", "label pharmacokinetics"),
+            "eliminationHalfLife": (1, 4, "h", "label pharmacokinetics"),
+            "timeToSteadyState": (7, 7, "day", "label pharmacokinetics", "SmPC states concentrations increase over the first week and remain stable thereafter."),
+        },
+        "doseReference": ("Major depression / social phobia SmPC contexts", "150 to 600 mg/day across cited SmPC contexts", "divided doses after meals in cited SmPC", 150, 600),
+        "doseBar": (150, 300, 450, 600),
+    },
+    "N-Acetylcysteine": {
+        "openfdaSetId": "2324d60b-4f49-4759-a46e-a06bfce7e8aa",
+        "route": "intravenous",
+        "formulation": "injection",
+        "timeCourse": {
+            "eliminationHalfLife": (5.6, 5.6, "h", "label pharmacokinetics", "Acetaminophen-overdose IV label context; psychiatric research use may not share this dosing context."),
+        },
+    },
+    "Prochlorperazine": {
+        "emcProductId": "101549",
+        "emcTitle": "UK eMC SmPC: Prochlorperazine maleate 3 mg Buccal Tablets",
+        "route": "buccal",
+        "formulation": "buccal tablet",
+        "timeCourse": {
+            "eliminationHalfLife": (9, 9, "h", "label pharmacokinetics", "Buccal formulation half-life similar to oral formulation in cited SmPC."),
+        },
+        "doseReference": ("Migraine/nausea buccal SmPC context", "3 to 12 mg/day in cited adult buccal SmPC context", "one or two 3 mg buccal tablets twice daily for up to two days in cited SmPC", 3, 12),
+        "doseBar": (3, 3, 6, 12),
     },
     "Zopiclone": {
         "emcProductId": "2855",
         "emcTitle": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
         "timeCourse": {
+            "tmax": (1.5, 2, "h", "label pharmacokinetics"),
             "eliminationHalfLife": (5, 5, "h", "label pharmacokinetics"),
         },
         "doseReference": ("Insomnia oral SmPC context", "3.75 to 7.5 mg at night in cited SmPC context", "single bedtime dose; lower dose in older adults or impaired hepatic/renal/respiratory function in cited SmPC context", 3.75, 7.5),
         "doseBar": (3.75, 3.75, 7.5, 7.5),
+    },
+    "Bromazepam": {
+        "extraSourceRefs": [
+            {
+                "title": "HPRA SmPC: Lexotan 1.5 mg Tablets",
+                "url": "https://assets.hpra.ie/products/Human/30761/Licence_PA2239-008-001_07052020082419.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+                "note": "Irish HPRA Summary of Product Characteristics.",
+            }
+        ],
+        "timeCourse": {
+            "tmax": (2, 2, "h", "label pharmacokinetics", "SmPC states peak plasma concentrations are reached within 2 hours after oral administration."),
+            "eliminationHalfLife": (20, 20, "h", "label pharmacokinetics", "SmPC states elimination half-life is about 20 hours."),
+            "timeToSteadyState": (5, 9, "day", "label pharmacokinetics", "SmPC states steady-state plasma concentrations are reached in around 5 to 9 days."),
+        },
+        "doseReference": ("Anxiety oral SmPC context", "3 to 18 mg/day usual general-practice range; up to 60 mg/day only in exceptional hospitalised-patient SmPC context", "divided doses in cited SmPC context", 3, 60),
+        "doseBar": (1.5, 3, 18, 60),
+    },
+    "Etizolam": {
+        "extraSourceRefs": [
+            {
+                "title": "DEA Drug & Chemical Evaluation Section: Etizolam",
+                "url": "https://www.deadiversion.usdoj.gov/drug_chem_info/etizolam.pdf",
+                "sourceType": "government-safety-monograph",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "GOVERNMENT_SAFETY_MONOGRAPH",
+                "labelSection": "Pharmacology",
+                "note": "US DEA pharmacology summary; etizolam is not approved for medical use in the United States.",
+            },
+            {
+                "title": "PMDA report: Benzodiazepine receptor agonists package-insert revisions",
+                "url": "https://www.pmda.go.jp/files/000217229.pdf",
+                "sourceType": "regulatory-safety-report",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "REGULATORY_SAFETY_REPORT",
+                "labelSection": "Appendix etizolam dosing table",
+                "note": "Japanese PMDA package-insert revision report with labeled adult dosage contexts.",
+            },
+        ],
+        "timeCourse": {
+            "tmax": (0.5, 2, "h", "literature estimate", "DEA summary cites a single-dose human PK study with maximum plasma concentration within 0.5 to 2 hours."),
+            "eliminationHalfLife": (3.4, 3.4, "h", "literature estimate", "DEA summary cites a mean elimination half-life averaging 3.4 hours."),
+        },
+        "doseReference": ("Japanese labeled anxiety/depression/insomnia contexts", "1.5 to 3 mg/day across cited PMDA package-insert contexts", "divided three times daily for neurosis/depression or once nightly for sleep-disorder context in cited PMDA report", 1.5, 3),
+        "doseSourceType": "regulatory-safety-report",
+        "doseEvidenceLevel": "REGULATORY_SAFETY_REPORT",
+        "doseRangeKind": "label-regimen",
+        "doseBar": (0.5, 1.5, 3, 3),
+    },
+    "Flunitrazepam": {
+        "extraSourceRefs": [
+            {
+                "title": "HPRA SmPC: Rohypnol 1 mg film-coated tablets",
+                "url": "https://assets.hpra.ie/products/Human/14097/LicenseSPC_PA0050-008-001_11042011141024.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+                "note": "Irish HPRA Summary of Product Characteristics.",
+            }
+        ],
+        "timeCourse": {
+            "eliminationHalfLife": (16, 35, "h", "label pharmacokinetics", "SmPC states elimination half-life may be between 16 and 35 hours and onset is rapid but not numerically specified."),
+        },
+        "doseReference": ("Short-term insomnia oral SmPC context", "0.5 to 2 mg at bedtime in cited adult SmPC context", "single dose just before going to bed in cited SmPC context", 0.5, 2),
+        "doseBar": (0.5, 0.5, 1, 2),
+    },
+    "Maprotiline": {
+        "extraSourceRefs": [
+            {
+                "title": "FDA label: Maprotiline hydrochloride tablets, USP",
+                "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/072285s021lbl.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "Clinical Pharmacology; Dosage and Administration",
+                "note": "FDA label available through Drugs@FDA/accessdata.",
+            }
+        ],
+        "timeCourse": {
+            "tmax": (12, 12, "h", "label pharmacokinetics", "FDA label states mean time to peak is 12 hours."),
+            "eliminationHalfLife": (51, 51, "h", "label pharmacokinetics", "FDA label states elimination half-life averages 51 hours."),
+            "timeToSteadyState": (14, 14, "day", "label pharmacokinetics", "FDA label states steady state is reached in the second week."),
+        },
+        "doseReference": ("Depressive illness oral FDA label context", "75 to 225 mg/day across cited outpatient, hospitalized, and maximum label contexts", "single daily or divided dosing in cited label context", 75, 225),
+        "doseBar": (25, 75, 150, 225),
+    },
+    "Prazepam": {
+        "extraSourceRefs": [
+            {
+                "title": "HPRA SmPC: Centrax 10 mg Tablets",
+                "url": "https://assets.hpra.ie/products/Human/21640/Licence_PA0822-010-001_25052023120251.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
+                "note": "Irish HPRA Summary of Product Characteristics.",
+            }
+        ],
+        "timeCourse": {
+            "eliminationHalfLife": (63, 70, "h", "label pharmacokinetics", "SmPC reports mean half-life of the principal active metabolite norprazepam as 63 hours before and 70 hours after multiple dosing."),
+        },
+        "doseReference": ("Anxiety oral SmPC context", "10 to 60 mg/day in cited adult SmPC context", "single or divided doses in cited SmPC context", 10, 60),
+        "doseBar": (10, 10, 30, 60),
+    },
+    "Tianeptine": {
+        "extraSourceRefs": [
+            {
+                "title": "PubMed: The pharmacokinetics of the antidepressant tianeptine and its main metabolite in healthy humans",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/2341111/",
+                "sourceType": "pharmacokinetic-study",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "PHARMACOKINETIC_STUDY",
+                "labelSection": "Abstract",
+                "note": "Human pharmacokinetic study after oral dosing.",
+            },
+            {
+                "title": "UIC Drug Information Group FAQ: tianeptine misuse/withdrawal",
+                "url": "https://dig.pharmacy.uic.edu/faqs/2024-2/june-2024-faqs/what-is-tianeptine-and-are-there-recommendations-for-managing-tianeptine-misuse-withdrawal-in-the-medical-setting/",
+                "sourceType": "clinical-review",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "CLINICAL_REVIEW",
+                "labelSection": "Background",
+                "note": "Review used only to index broad medical-use dose context and misuse caveats, not as a dosing recommendation.",
+            },
+        ],
+        "timeCourse": {
+            "tmax": (0.47, 1.41, "h", "literature estimate", "Human PK study reports tmax 0.94 +/- 0.47 hours after oral dosing."),
+            "eliminationHalfLife": (1.4, 3.6, "h", "literature estimate", "Human PK study reports plasma half-life 2.5 +/- 1.1 hours."),
+        },
+        "doseReference": ("Medical-use literature context", "25 to 50 mg/day medical-use context cited in review literature", "product- and country-specific schedule; often divided dosing in clinical references", 25, 50),
+        "doseSourceType": "clinical-review",
+        "doseEvidenceLevel": "CLINICAL_REVIEW",
+        "doseRangeKind": "literature-regimen",
+        "doseBar": (12.5, 25, 37.5, 50),
+    },
+    "Tofisopam": {
+        "extraSourceRefs": [
+            {
+                "title": "PubMed: Pharmacokinetics and metabolism of tofisopam (Grandaxin)",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/8100113/",
+                "sourceType": "pharmacokinetic-study",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "PHARMACOKINETIC_STUDY",
+                "labelSection": "Abstract",
+                "note": "Human pharmacokinetic and metabolism study.",
+            },
+            {
+                "title": "Kusuri-no-Shiori: GRANDAXIN Tablets 50",
+                "url": "https://www.rad-ar.or.jp/siori/english/search/result?n=44482",
+                "sourceType": "drug-information-sheet",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "DRUG_INFORMATION_SHEET",
+                "labelSection": "Dosage regimen",
+                "note": "Japanese patient drug information sheet used for labeled dosage context.",
+            },
+        ],
+        "timeCourse": {
+            "eliminationHalfLife": (2.7, 3.5, "h", "literature estimate", "Human PK study abstract reports unchanged tofisopam plasma half-life of 2.7 to 3.5 hours; total radioactivity declines more slowly."),
+        },
+        "doseReference": ("Japanese labeled autonomic/anxiety symptom context", "150 mg/day in cited Japanese drug-information sheet context", "50 mg three times daily; adjusted by age or symptoms in cited sheet", 150, 150),
+        "doseSourceType": "drug-information-sheet",
+        "doseEvidenceLevel": "DRUG_INFORMATION_SHEET",
+        "doseRangeKind": "label-regimen",
+        "doseBar": (50, 150, 150, 150),
     },
     "Melatonin": {
         "emcProductId": "101120",
@@ -715,8 +1019,8 @@ def curated_time_course(name: str, source_refs: list[dict]) -> list[dict] | None
     if not curated:
         return None
     time_course = {
-        "route": "oral",
-        "formulation": "product-specific oral formulation",
+        "route": curated.get("route", "oral"),
+        "formulation": curated.get("formulation", "product-specific oral formulation"),
         "notes": [
             "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
             "Values can vary by formulation, population, organ function, and interacting medicines.",
@@ -742,12 +1046,15 @@ def curated_dose_use_reference(name: str, source_refs: list[dict]) -> list[dict]
     if not curated or "doseReference" not in curated:
         return None
     indication, amount_text, schedule_text, range_min, range_max = curated["doseReference"]
+    source_type = curated.get("doseSourceType", "regulatory-label")
+    evidence_level = curated.get("doseEvidenceLevel", "REGULATORY_LABEL")
+    range_kind = curated.get("doseRangeKind", "label-regimen")
     return [
         {
             "indication": indication,
             "population": "Adults unless product-specific label states otherwise",
-            "route": "oral",
-            "formulation": "product-specific oral formulation",
+            "route": curated.get("doseRoute", curated.get("route", "oral")),
+            "formulation": curated.get("doseFormulation", curated.get("formulation", "product-specific oral formulation")),
             "amountText": amount_text,
             "scheduleText": schedule_text,
             "ranges": [
@@ -757,13 +1064,13 @@ def curated_dose_use_reference(name: str, source_refs: list[dict]) -> list[dict]
                     "unit": "mg",
                     "basis": "daily-total",
                     "frequency": schedule_text,
-                    "rangeKind": "label-regimen",
-                    "label": "Label regimen range",
+                    "rangeKind": range_kind,
+                    "label": curated.get("doseRangeLabel", "Label/literature regimen range"),
                     "note": "Label/literature regimen range for reference indexing; not a dosing recommendation.",
                 }
             ],
-            "sourceType": "regulatory-label",
-            "evidenceLevel": "REGULATORY_LABEL",
+            "sourceType": source_type,
+            "evidenceLevel": evidence_level,
             "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
             "sourceRefs": source_refs,
         }

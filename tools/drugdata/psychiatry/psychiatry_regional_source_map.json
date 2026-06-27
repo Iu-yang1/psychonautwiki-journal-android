@@ -126,11 +126,11 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed"
+      "UK eMC"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amitriptyline",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22AMITRIPTYLINE%22&limit=1",
@@ -344,9 +344,9 @@
       "China NEML",
       "DailyMed"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bromazepam",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22BROMAZEPAM%22&limit=1",
@@ -516,11 +516,11 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed"
+      "UK eMC"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlordiazepoxide",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22CHLORDIAZEPOXIDE%22&limit=1",
@@ -547,7 +547,7 @@
       "DailyMed",
       "openFDA"
     ],
-    "hasNumericTimeCourse": false,
+    "hasNumericTimeCourse": true,
     "hasNumericDoseUseReference": true,
     "hasSourceNeeded": false,
     "calibrationSearchUrls": {
@@ -1038,9 +1038,9 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed"
+      "UK eMC"
     ],
-    "hasNumericTimeCourse": false,
+    "hasNumericTimeCourse": true,
     "hasNumericDoseUseReference": false,
     "hasSourceNeeded": true,
     "calibrationSearchUrls": {
@@ -1189,9 +1189,9 @@
       "China NEML",
       "DailyMed"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Etizolam",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22ETIZOLAM%22&limit=1",
@@ -1229,9 +1229,9 @@
       "China NEML",
       "DailyMed"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Flunitrazepam",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22FLUNITRAZEPAM%22&limit=1",
@@ -1310,9 +1310,10 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed"
+      "DailyMed",
+      "openFDA"
     ],
-    "hasNumericTimeCourse": false,
+    "hasNumericTimeCourse": true,
     "hasNumericDoseUseReference": false,
     "hasSourceNeeded": true,
     "calibrationSearchUrls": {
@@ -1507,10 +1508,9 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed",
-      "openFDA"
+      "UK eMC"
     ],
-    "hasNumericTimeCourse": false,
+    "hasNumericTimeCourse": true,
     "hasNumericDoseUseReference": true,
     "hasSourceNeeded": false,
     "calibrationSearchUrls": {
@@ -1535,10 +1535,9 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed",
-      "openFDA"
+      "UK eMC"
     ],
-    "hasNumericTimeCourse": false,
+    "hasNumericTimeCourse": true,
     "hasNumericDoseUseReference": true,
     "hasSourceNeeded": false,
     "calibrationSearchUrls": {
@@ -1573,9 +1572,10 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed"
+      "DailyMed",
+      "openFDA"
     ],
-    "hasNumericTimeCourse": false,
+    "hasNumericTimeCourse": true,
     "hasNumericDoseUseReference": false,
     "hasSourceNeeded": true,
     "calibrationSearchUrls": {
@@ -1748,11 +1748,11 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed"
+      "UK eMC"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lormetazepam",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22LORMETAZEPAM%22&limit=1",
@@ -1833,9 +1833,9 @@
       "China NEML",
       "DailyMed"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Maprotiline",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22MAPROTILINE%22&limit=1",
@@ -2069,11 +2069,11 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed"
+      "UK eMC"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Moclobemide",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22MOCLOBEMIDE%22&limit=1",
@@ -2127,9 +2127,10 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed"
+      "DailyMed",
+      "openFDA"
     ],
-    "hasNumericTimeCourse": false,
+    "hasNumericTimeCourse": true,
     "hasNumericDoseUseReference": false,
     "hasSourceNeeded": true,
     "calibrationSearchUrls": {
@@ -2242,7 +2243,7 @@
       "DailyMed",
       "openFDA"
     ],
-    "hasNumericTimeCourse": false,
+    "hasNumericTimeCourse": true,
     "hasNumericDoseUseReference": true,
     "hasSourceNeeded": false,
     "calibrationSearchUrls": {
@@ -2616,9 +2617,9 @@
       "China NEML",
       "DailyMed"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Prazepam",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22PRAZEPAM%22&limit=1",
@@ -2675,10 +2676,9 @@
     ],
     "confirmedSourceFamilies": [
       "China NEML",
-      "DailyMed",
-      "openFDA"
+      "UK eMC"
     ],
-    "hasNumericTimeCourse": false,
+    "hasNumericTimeCourse": true,
     "hasNumericDoseUseReference": true,
     "hasSourceNeeded": false,
     "calibrationSearchUrls": {
@@ -2963,7 +2963,7 @@
       "DailyMed",
       "openFDA"
     ],
-    "hasNumericTimeCourse": false,
+    "hasNumericTimeCourse": true,
     "hasNumericDoseUseReference": true,
     "hasSourceNeeded": false,
     "calibrationSearchUrls": {
@@ -2992,9 +2992,9 @@
       "China NEML",
       "DailyMed"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tianeptine",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22TIANEPTINE%22&limit=1",
@@ -3020,9 +3020,9 @@
       "China NEML",
       "DailyMed"
     ],
-    "hasNumericTimeCourse": false,
-    "hasNumericDoseUseReference": false,
-    "hasSourceNeeded": true,
+    "hasNumericTimeCourse": true,
+    "hasNumericDoseUseReference": true,
+    "hasSourceNeeded": false,
     "calibrationSearchUrls": {
       "dailyMed": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tofisopam",
       "openFDA": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22TOFISOPAM%22&limit=1",
