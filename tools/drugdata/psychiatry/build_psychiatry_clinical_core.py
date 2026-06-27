@@ -199,6 +199,8 @@ CURATED_LABEL_DATA = {
         "timeCourse": {
             "timeToSteadyState": (7, 7, "day", "label pharmacokinetics"),
         },
+        "doseReference": ("Narcolepsy / obstructive sleep apnea / shift-work disorder label contexts", "150 to 250 mg/day across cited adult label contexts", "once daily in the morning for narcolepsy/OSA or about 1 hour before shift work in cited label", 150, 250),
+        "doseBar": (50, 150, 200, 250),
     },
     "Bupropion": {
         "openfdaSetId": "004d8121-59d4-46c4-acb8-b2dd097bf556",
@@ -392,6 +394,8 @@ CURATED_LABEL_DATA = {
             "tmax": (3, 6, "h", "label pharmacokinetics"),
             "eliminationHalfLife": (8, 8, "h", "label pharmacokinetics"),
         },
+        "doseReference": ("Schizophrenia oral SmPC context", "400 to 2400 mg/day across cited adult SmPC contexts", "one or two tablets twice daily; symptom-pattern-specific ranges in cited SmPC", 400, 2400),
+        "doseBar": (200, 400, 800, 2400),
     },
     "Flupentixol": {
         "emcProductId": "998",
@@ -400,6 +404,8 @@ CURATED_LABEL_DATA = {
             "tmax": (4, 4, "h", "label pharmacokinetics"),
             "eliminationHalfLife": (35, 35, "h", "label pharmacokinetics"),
         },
+        "doseReference": ("Low-dose oral flupentixol SmPC context", "1 to 3 mg/day in cited adult SmPC context", "single morning dose or divided doses above 2 mg/day in cited SmPC", 1, 3),
+        "doseBar": (0.5, 1, 2, 3),
     },
     "Zuclopenthixol": {
         "emcProductId": "994",
@@ -408,6 +414,8 @@ CURATED_LABEL_DATA = {
             "tmax": (3, 6, "h", "label pharmacokinetics"),
             "eliminationHalfLife": (1, 1, "day", "label pharmacokinetics"),
         },
+        "doseReference": ("Psychotic disorder oral SmPC context", "4 to 150 mg/day in cited adult oral SmPC context", "divided doses; usual initial and maintenance ranges are narrower in cited SmPC", 4, 150),
+        "doseBar": (2, 4, 50, 150),
     },
     "Trifluoperazine": {
         "emcProductId": "1546",
@@ -415,6 +423,8 @@ CURATED_LABEL_DATA = {
         "timeCourse": {
             "eliminationHalfLife": (22, 22, "h", "label pharmacokinetics", "Terminal elimination half-life; alpha phase is about 3.6 hours in cited SmPC."),
         },
+        "doseReference": ("Low-dose / high-dose oral SmPC contexts", "2 to 15 mg/day across cited adult low-dose and high-dose starting contexts", "divided doses; further increases only at intervals in cited SmPC", 2, 15),
+        "doseBar": (1, 2, 6, 15),
     },
     "Droperidol": {
         "emcProductId": "7310",
@@ -426,6 +436,27 @@ CURATED_LABEL_DATA = {
             "durationOfAction": (2, 4, "h", "pharmacodynamic effect", "Sedative/tranquillising effects tend to persist 2 to 4 hours; alertness may be affected up to 12 hours."),
             "eliminationHalfLife": (121, 147, "min", "label pharmacokinetics", "SmPC reports elimination half-life 134 ± 13 minutes."),
         },
+        "customDoseUseReferences": [
+            {
+                "indication": "Post-operative nausea and vomiting intravenous SmPC context",
+                "route": "intravenous",
+                "formulation": "solution for injection",
+                "amountText": "0.625 to 1.25 mg per adult IV dose in cited SmPC context",
+                "scheduleText": "administered around the end of surgery; repeat dosing no more often than every 6 hours as required in cited SmPC",
+                "ranges": [
+                    {
+                        "min": 0.625,
+                        "max": 1.25,
+                        "unit": "mg",
+                        "basis": "per-dose",
+                        "frequency": "repeat every 6 hours as required in cited SmPC context",
+                        "rangeKind": "label-regimen",
+                        "label": "IV per-dose label range",
+                        "note": "PONV label context, not a psychiatric dosing recommendation.",
+                    }
+                ],
+            }
+        ],
     },
     "Fluphenazine": {
         "openfdaSetId": "0860b3f3-3116-40f8-bcb0-e5c47731bdc8",
@@ -439,6 +470,10 @@ CURATED_LABEL_DATA = {
             "peakEffect": (48, 96, "h", "clinical effect", "Label states effects on psychotic symptoms become significant within 48 to 96 hours after injection."),
             "durationOfAction": (4, 6, "week", "clinical effect", "Maintenance injection may control symptoms up to four weeks or longer; response has lasted as long as six weeks in a few patients."),
         },
+        "doseReference": ("Psychotic disorder oral label context", "1 to 40 mg/day across cited oral maintenance, initial, and upper label contexts", "divided every 6 to 8 hours initially; maintenance often lower in cited label", 1, 40),
+        "doseRoute": "oral",
+        "doseFormulation": "tablet or elixir",
+        "doseBar": (1, 2.5, 20, 40),
     },
     "Hydroxyzine": {
         "emcProductId": "100997",
@@ -458,6 +493,8 @@ CURATED_LABEL_DATA = {
             "eliminationHalfLife": (30, 30, "h", "label pharmacokinetics", "Average plasma half-life; elderly patients may have longer half-life in cited SmPC."),
             "timeToSteadyState": (5, 5, "day", "label pharmacokinetics"),
         },
+        "doseReference": ("Insomnia oral SmPC context", "5 to 10 mg at bedtime in cited adult SmPC context", "single dose before retiring; shortest possible duration in cited SmPC", 5, 10),
+        "doseBar": (2.5, 5, 10, 10),
     },
     "Imipramine": {
         "emcProductId": "13879",
@@ -476,6 +513,37 @@ CURATED_LABEL_DATA = {
             "durationOfAction": (10, 15, "min", "label pharmacokinetics", "Initial alpha phase half-life corresponds clinically to anesthetic effect in cited label."),
             "eliminationHalfLife": (2.5, 2.5, "h", "label pharmacokinetics", "Redistribution beta-phase half-life after intravenous administration in cited label."),
         },
+        "customDoseUseReferences": [
+            {
+                "indication": "Anesthesia induction label context",
+                "route": "intravenous or intramuscular",
+                "formulation": "injection",
+                "amountText": "IV 1 to 4.5 mg/kg or IM 6.5 to 13 mg/kg initial induction dose in cited label context",
+                "scheduleText": "administered by clinicians experienced in general anesthesia and airway management in cited label",
+                "ranges": [
+                    {
+                        "min": 1,
+                        "max": 4.5,
+                        "unit": "mg/kg",
+                        "basis": "weight-based",
+                        "frequency": "single IV induction context",
+                        "rangeKind": "label-regimen",
+                        "label": "IV induction label range",
+                        "note": "Anesthesia label context, not a psychiatric ketamine protocol.",
+                    },
+                    {
+                        "min": 6.5,
+                        "max": 13,
+                        "unit": "mg/kg",
+                        "basis": "weight-based",
+                        "frequency": "single IM induction context",
+                        "rangeKind": "label-regimen",
+                        "label": "IM induction label range",
+                        "note": "Anesthesia label context, not a psychiatric ketamine protocol.",
+                    },
+                ],
+            }
+        ],
     },
     "Chlordiazepoxide": {
         "emcProductId": "1729",
@@ -515,6 +583,27 @@ CURATED_LABEL_DATA = {
         "timeCourse": {
             "eliminationHalfLife": (5.6, 5.6, "h", "label pharmacokinetics", "Acetaminophen-overdose IV label context; psychiatric research use may not share this dosing context."),
         },
+        "customDoseUseReferences": [
+            {
+                "indication": "Acetaminophen overdose intravenous label context",
+                "route": "intravenous",
+                "formulation": "injection",
+                "amountText": "150 mg/kg loading dose followed by 50 mg/kg and 100 mg/kg infusion doses over the cited 21-hour label protocol",
+                "scheduleText": "three-dose IV protocol; acetaminophen nomogram and clinical context determine use in cited label",
+                "ranges": [
+                    {
+                        "min": 50,
+                        "max": 150,
+                        "unit": "mg/kg",
+                        "basis": "weight-based",
+                        "frequency": "three-dose 21-hour protocol context",
+                        "rangeKind": "label-regimen",
+                        "label": "IV acetaminophen-overdose protocol dose components",
+                        "note": "Antidote label protocol, not a psychiatric NAC regimen.",
+                    }
+                ],
+            }
+        ],
     },
     "Prochlorperazine": {
         "emcProductId": "101549",
@@ -536,6 +625,406 @@ CURATED_LABEL_DATA = {
         },
         "doseReference": ("Insomnia oral SmPC context", "3.75 to 7.5 mg at night in cited SmPC context", "single bedtime dose; lower dose in older adults or impaired hepatic/renal/respiratory function in cited SmPC context", 3.75, 7.5),
         "doseBar": (3.75, 3.75, 7.5, 7.5),
+    },
+    "Acamprosate": {
+        "doseReference": ("Alcohol dependence maintenance of abstinence label context", "999 to 1998 mg/day across cited renal-adjusted and usual adult label contexts", "333 to 666 mg three times daily depending on renal function in cited label", 999, 1998),
+        "doseBar": (333, 999, 1998, 1998),
+    },
+    "Aripiprazole": {
+        "doseReference": ("Schizophrenia oral adult label context", "10 to 30 mg/day in cited adult schizophrenia label context", "once daily without regard to meals; dose changes no more often than every 2 weeks in cited label", 10, 30),
+        "doseBar": (2, 10, 15, 30),
+    },
+    "Asenapine": {
+        "doseReference": ("Bipolar mania sublingual label context", "10 to 20 mg/day in cited adult adjunctive bipolar mania label context", "5 to 10 mg sublingually twice daily; do not swallow tablet in cited label", 10, 20),
+        "doseBar": (5, 10, 15, 20),
+    },
+    "Atomoxetine": {
+        "doseReference": ("ADHD adult and >70 kg label context", "40 to 100 mg/day in cited adult and >70 kg label context", "once daily or divided morning and late afternoon/early evening in cited label", 40, 100),
+        "doseBar": (10, 40, 80, 100),
+    },
+    "Brexpiprazole": {
+        "doseReference": ("MDD adjunctive / schizophrenia / dementia-agitation label contexts", "0.5 to 4 mg/day across cited adult label contexts", "once daily with or without food; indication-specific titration in cited label", 0.5, 4),
+        "doseBar": (0.5, 1, 2, 4),
+    },
+    "Buprenorphine": {
+        "doseReference": ("Opioid use disorder sublingual induction/maintenance label context", "2 to 24 mg/day across cited induction and maintenance label contexts", "single daily sublingual dose; protocol- and withdrawal-state-dependent in cited label", 2, 24),
+        "doseBar": (2, 4, 16, 24),
+    },
+    "Carbamazepine": {
+        "doseReference": ("Seizure disorder / neuralgia / bipolar-related label contexts", "200 to 1600 mg/day across cited adult label contexts", "divided dosing with meals; formulation-specific conversion caveats in cited label", 200, 1600),
+        "doseBar": (100, 200, 800, 1600),
+    },
+    "Cariprazine": {
+        "doseReference": ("Schizophrenia / bipolar disorder / MDD adjunctive adult label contexts", "1.5 to 6 mg/day across cited adult label contexts", "once daily; dose changes reflect slowly because of long half-life in cited label", 1.5, 6),
+        "doseBar": (1.5, 1.5, 3, 6),
+    },
+    "Clobazam": {
+        "doseReference": ("Lennox-Gastaut syndrome adjunctive therapy label context", "5 to 40 mg/day across cited body-weight label contexts", "daily dose above 5 mg divided twice daily; titrate no faster than weekly in cited label", 5, 40),
+        "doseBar": (5, 5, 20, 40),
+    },
+    "Clomipramine": {
+        "doseReference": ("Obsessive-compulsive disorder label context", "25 to 250 mg/day across cited adult label titration and maximum contexts", "initially divided with meals; may be given once daily at bedtime after titration in cited label", 25, 250),
+        "doseBar": (25, 25, 100, 250),
+    },
+    "Clonazepam": {
+        "doseReference": ("Seizure disorder / panic disorder oral label contexts", "0.5 to 20 mg/day across cited adult panic and seizure label contexts", "divided dosing for seizure context or twice daily for panic context in cited label", 0.5, 20),
+        "doseBar": (0.25, 0.5, 4, 20),
+    },
+    "Clorazepate": {
+        "doseReference": ("Anxiety / alcohol withdrawal / seizure-adjunct label contexts", "7.5 to 90 mg/day across cited adult label contexts", "divided dosing or bedtime dosing depending on indication in cited label", 7.5, 90),
+        "doseBar": (7.5, 15, 60, 90),
+    },
+    "Daridorexant": {
+        "doseReference": ("Insomnia adult label context", "25 to 50 mg/night in cited adult label context", "once nightly within 30 minutes before bed with at least 7 hours before planned awakening", 25, 50),
+        "doseBar": (25, 25, 50, 50),
+    },
+    "Desvenlafaxine": {
+        "doseReference": ("Major depressive disorder adult label context", "25 to 100 mg/day across cited adult, discontinuation, renal, and hepatic label contexts", "once daily; tablets swallowed whole in cited label", 25, 100),
+        "doseBar": (25, 50, 50, 100),
+    },
+    "Dexmethylphenidate": {
+        "customDoseUseReferences": [
+            {
+                "indication": "ADHD Azstarys fixed-combination label context",
+                "route": "oral",
+                "formulation": "serdexmethylphenidate/dexmethylphenidate capsule",
+                "amountText": "7.8 to 10.4 mg/day dexmethylphenidate component in cited fixed-combination label context",
+                "scheduleText": "once daily in the morning; do not substitute mg-for-mg with other methylphenidate products in cited label",
+                "ranges": [
+                    {
+                        "min": 7.8,
+                        "max": 10.4,
+                        "unit": "mg",
+                        "basis": "component-dose",
+                        "frequency": "once daily",
+                        "rangeKind": "label-regimen",
+                        "label": "Dexmethylphenidate component",
+                        "note": "Component-aware display only; this is not a standalone dexmethylphenidate equivalence.",
+                    }
+                ],
+            }
+        ],
+    },
+    "Dextroamphetamine": {
+        "doseReference": ("ADHD / narcolepsy stimulant label contexts", "2.5 to 60 mg/day across cited ADHD and narcolepsy label contexts", "divided dosing; late evening doses avoided in cited label", 2.5, 60),
+        "doseBar": (2.5, 5, 20, 40),
+    },
+    "Divalproex": {
+        "customDoseUseReferences": [
+            {
+                "indication": "Mania / seizure extended-release label contexts",
+                "route": "oral",
+                "formulation": "extended-release tablet",
+                "amountText": "25 to 60 mg/kg/day across cited mania initial and maximum label contexts",
+                "scheduleText": "once daily extended-release dosing; plasma-level and indication-specific titration in cited label",
+                "ranges": [
+                    {
+                        "min": 25,
+                        "max": 60,
+                        "unit": "mg/kg/day",
+                        "basis": "weight-based",
+                        "frequency": "once daily extended-release context",
+                        "rangeKind": "label-regimen",
+                        "label": "Weight-based label range",
+                        "note": "Weight-based range; do not render as scalar mg/day.",
+                    }
+                ],
+            }
+        ],
+    },
+    "Doxepin": {
+        "doseReference": ("Insomnia low-dose tablet label context", "3 to 6 mg/night in cited insomnia label context", "once daily within 30 minutes of bedtime in cited label", 3, 6),
+        "doseBar": (3, 3, 6, 6),
+    },
+    "Escitalopram": {
+        "doseReference": ("Major depressive disorder / generalized anxiety disorder label contexts", "10 to 20 mg/day in cited adult label contexts", "once daily morning or evening with or without food in cited label", 10, 20),
+        "doseBar": (5, 10, 15, 20),
+    },
+    "Estazolam": {
+        "doseReference": ("Insomnia oral label context", "0.5 to 2 mg at bedtime across cited adult and geriatric label contexts", "single bedtime dose in cited label", 0.5, 2),
+        "doseBar": (0.5, 1, 2, 2),
+    },
+    "Eszopiclone": {
+        "doseReference": ("Insomnia oral label context", "1 to 3 mg at bedtime in cited adult label context", "single dose immediately before bedtime with 7 to 8 hours before awakening in cited label", 1, 3),
+        "doseBar": (1, 1, 2, 3),
+    },
+    "Flurazepam": {
+        "doseReference": ("Insomnia oral label context", "15 to 30 mg at bedtime in cited adult label context", "single bedtime dose; sex- and geriatric-specific starting caveats in cited label", 15, 30),
+        "doseBar": (15, 15, 30, 30),
+    },
+    "Fluvoxamine": {
+        "doseReference": ("Obsessive-compulsive disorder extended-release label context", "100 to 300 mg/day in cited adult label context", "once daily at bedtime; weekly 50 mg increases as tolerated in cited label", 100, 300),
+        "doseBar": (50, 100, 200, 300),
+    },
+    "Gabapentin": {
+        "doseReference": ("Postherpetic neuralgia / partial-onset seizure label contexts", "300 to 3600 mg/day across cited adult label contexts", "titrated and divided dosing; renal adjustment required in cited label", 300, 3600),
+        "doseBar": (100, 300, 1800, 3600),
+    },
+    "Galantamine": {
+        "doseReference": ("Alzheimer disease extended-release label context", "8 to 24 mg/day in cited label context", "once daily in the morning with food; titrate after minimum 4-week intervals in cited label", 8, 24),
+        "doseBar": (4, 8, 16, 24),
+    },
+    "Guanfacine": {
+        "doseReference": ("Hypertension immediate-release label context", "1 to 3 mg/day in cited antihypertensive label context", "once daily at bedtime; higher doses increase adverse reactions in cited label", 1, 3),
+        "doseBar": (1, 1, 2, 3),
+    },
+    "Lamotrigine": {
+        "doseReference": ("Epilepsy / bipolar disorder label contexts", "25 to 400 mg/day across cited adult titration and maintenance label contexts", "titration depends strongly on valproate, enzyme inducers, and estrogen-containing products in cited label", 25, 400),
+        "doseBar": (25, 25, 200, 400),
+    },
+    "Lemborexant": {
+        "doseReference": ("Insomnia adult label context", "5 to 10 mg/night in cited adult label context", "once nightly immediately before bed with at least 7 hours before awakening in cited label", 5, 10),
+        "doseBar": (5, 5, 10, 10),
+    },
+    "Lisdexamfetamine": {
+        "doseReference": ("ADHD / binge eating disorder adult label contexts", "30 to 70 mg/day across cited label contexts", "once daily in the morning with or without food in cited label", 30, 70),
+        "doseBar": (10, 30, 50, 70),
+    },
+    "Lorazepam": {
+        "doseReference": ("Anxiety / insomnia due to anxiety oral label contexts", "1 to 10 mg/day across cited adult oral label contexts", "divided dosing for anxiety or single bedtime dose for insomnia context in cited label", 1, 10),
+        "doseBar": (0.5, 1, 4, 10),
+    },
+    "Lurasidone": {
+        "doseReference": ("Schizophrenia / bipolar depression adult label contexts", "20 to 160 mg/day across cited adult label contexts", "once daily with at least 350 calories of food in cited label", 20, 160),
+        "doseBar": (20, 40, 80, 160),
+    },
+    "Memantine": {
+        "doseReference": ("Alzheimer disease oral label context", "5 to 20 mg/day in cited oral tablet label context", "titrate by 5 mg increments no more often than weekly in cited label", 5, 20),
+        "doseBar": (5, 5, 10, 20),
+    },
+    "Milnacipran": {
+        "doseReference": ("Fibromyalgia oral label context", "12.5 to 200 mg/day across cited titration and upper label contexts", "divided twice daily after titration in cited label", 12.5, 200),
+        "doseBar": (12.5, 50, 100, 200),
+    },
+    "Midazolam": {
+        "customDoseUseReferences": [
+            {
+                "indication": "Preoperative sedation/anxiolysis/amnesia injection label context",
+                "route": "intramuscular or intravenous",
+                "formulation": "injection",
+                "amountText": "IM 0.07 to 0.08 mg/kg or IV titrated doses usually not exceeding 5 mg in cited adult label contexts",
+                "scheduleText": "requires continuous respiratory and cardiac monitoring in cited label",
+                "ranges": [
+                    {
+                        "min": 0.07,
+                        "max": 0.08,
+                        "unit": "mg/kg",
+                        "basis": "weight-based",
+                        "frequency": "single IM premedication context",
+                        "rangeKind": "label-regimen",
+                        "label": "IM premedication label range",
+                        "note": "Procedural/anesthesia context, not outpatient hypnotic use.",
+                    },
+                    {
+                        "min": 1,
+                        "max": 5,
+                        "unit": "mg",
+                        "basis": "per-dose",
+                        "frequency": "IV titration context",
+                        "rangeKind": "label-regimen",
+                        "label": "IV titration label context",
+                        "note": "Procedural/anesthesia context with monitoring requirements.",
+                    },
+                ],
+            }
+        ],
+    },
+    "Mirtazapine": {
+        "doseReference": ("Major depressive disorder oral label context", "15 to 45 mg/day in cited adult label context", "once daily, preferably in the evening before sleep, in cited label", 15, 45),
+        "doseBar": (7.5, 15, 30, 45),
+    },
+    "Modafinil": {
+        "doseReference": ("Narcolepsy / obstructive sleep apnea / shift-work disorder label contexts", "200 to 400 mg/day across cited adult label contexts", "once daily in the morning for narcolepsy/OSA or about 1 hour before shift work in cited label", 200, 400),
+        "doseBar": (100, 200, 200, 400),
+    },
+    "Methadone": {
+        "openfdaSetId": "14f7b1d8-344a-4eaa-a1bf-bc1a00c3ab58",
+        "customDoseUseReferences": [
+            {
+                "indication": "Opioid use disorder oral concentrate label context",
+                "route": "oral",
+                "formulation": "oral concentrate",
+                "amountText": "20 to 30 mg initial single dose and 80 to 120 mg/day common maintenance-stability range in cited label context",
+                "scheduleText": "dispensed under opioid-treatment-program requirements; first-day total ordinarily not above 40 mg in cited label",
+                "ranges": [
+                    {
+                        "min": 20,
+                        "max": 30,
+                        "unit": "mg",
+                        "basis": "per-dose",
+                        "frequency": "initial single-dose context",
+                        "rangeKind": "label-regimen",
+                        "label": "Initial single-dose label context",
+                        "note": "OUD protocol context; not for self-adjustment.",
+                    },
+                    {
+                        "min": 80,
+                        "max": 120,
+                        "unit": "mg",
+                        "basis": "daily-total",
+                        "frequency": "maintenance context",
+                        "rangeKind": "label-regimen",
+                        "label": "Maintenance-stability label context",
+                        "note": "OUD protocol context; clinical stability range is not an initiation target.",
+                    },
+                ],
+            }
+        ],
+    },
+    "Naltrexone": {
+        "doseReference": ("Alcohol dependence oral label context", "50 mg/day in cited alcoholism label context", "once daily as part of broader treatment context in cited label", 50, 50),
+        "doseBar": (25, 50, 50, 50),
+    },
+    "Naloxone": {
+        "openfdaSetId": "139c30b9-5600-48f5-8610-0cacd2782398",
+        "customDoseUseReferences": [
+            {
+                "indication": "Known or suspected opioid overdose nasal spray label context",
+                "route": "intranasal",
+                "formulation": "nasal spray",
+                "amountText": "4 mg single intranasal spray; additional sprays may be given every 2 to 3 minutes until emergency help arrives in cited label",
+                "scheduleText": "seek emergency medical care immediately after use in cited label",
+                "ranges": [
+                    {
+                        "min": 4,
+                        "max": 4,
+                        "unit": "mg",
+                        "basis": "per-dose",
+                        "frequency": "repeat every 2 to 3 minutes as needed in overdose emergency context",
+                        "rangeKind": "label-regimen",
+                        "label": "Nasal spray per-dose label context",
+                        "note": "Emergency overdose reversal context.",
+                    }
+                ],
+            }
+        ],
+    },
+    "Oxazepam": {
+        "doseReference": ("Anxiety / alcohol withdrawal oral label contexts", "30 to 120 mg/day across cited adult label contexts", "three or four divided doses in cited label", 30, 120),
+        "doseBar": (10, 30, 60, 120),
+    },
+    "Oxcarbazepine": {
+        "doseReference": ("Partial-onset seizure adult oral label context", "600 to 2400 mg/day across cited adult monotherapy/adjunctive label contexts", "twice daily; titration and renal adjustment in cited label", 600, 2400),
+        "doseBar": (300, 600, 1200, 2400),
+    },
+    "Paliperidone": {
+        "doseReference": ("Schizophrenia / schizoaffective disorder extended-release label contexts", "3 to 12 mg/day in cited adult label contexts", "once daily; tablets swallowed whole in cited label", 3, 12),
+        "doseBar": (1.5, 3, 6, 12),
+    },
+    "Pentobarbital": {
+        "customDoseUseReferences": [
+            {
+                "indication": "Sedative-hypnotic parenteral label context",
+                "route": "intramuscular",
+                "formulation": "injection",
+                "amountText": "150 to 200 mg as a single adult IM hypnotic dose in cited label context",
+                "scheduleText": "single IM dose; parenteral route only when oral administration is impossible or impractical in cited label",
+                "ranges": [
+                    {
+                        "min": 150,
+                        "max": 200,
+                        "unit": "mg",
+                        "basis": "per-dose",
+                        "frequency": "single IM hypnotic dose context",
+                        "rangeKind": "label-regimen",
+                        "label": "IM hypnotic per-dose label context",
+                        "note": "Parenteral barbiturate label context with monitoring requirements.",
+                    }
+                ],
+            }
+        ],
+    },
+    "Perphenazine": {
+        "doseReference": ("Schizophrenia oral label context", "12 to 64 mg/day across cited adult schizophrenia label contexts", "divided dosing; prolonged doses above 24 mg/day reserved for monitored contexts in cited label", 12, 64),
+        "doseBar": (4, 12, 24, 64),
+    },
+    "Phenelzine": {
+        "doseReference": ("Depression MAOI oral label context", "15 to 90 mg/day across cited initial, early-phase, and maintenance label contexts", "divided dosing; maintenance may be reduced after maximum benefit in cited label", 15, 90),
+        "doseBar": (15, 45, 60, 90),
+    },
+    "Phenobarbital": {
+        "openfdaSetId": "057992c1-29a0-4229-9c30-d787cb632eac",
+        "doseReference": ("Sedation / hypnotic / anticonvulsant oral label contexts", "30 to 400 mg/day across cited adult oral label contexts", "divided daytime sedation, oral hypnotic single-dose, or anticonvulsant contexts in cited label", 30, 400),
+        "doseBar": (30, 60, 200, 400),
+    },
+    "Pimavanserin": {
+        "doseReference": ("Parkinson disease psychosis oral label context", "34 mg/day in cited label context", "once daily with or without food in cited label", 34, 34),
+        "doseBar": (10, 34, 34, 34),
+    },
+    "Pimozide": {
+        "doseReference": ("Tourette disorder oral label context", "1 to 10 mg/day across cited adult/pediatric tic-suppression label context", "divided dosing; ECG and CYP2D6 caveats in cited label", 1, 10),
+        "doseBar": (1, 2, 4, 10),
+    },
+    "Pitolisant": {
+        "doseReference": ("Narcolepsy adult oral label context", "8.9 to 35.6 mg/day across cited adult label titration context", "once daily in the morning upon awakening in cited label", 8.9, 35.6),
+        "doseBar": (4.45, 8.9, 17.8, 35.6),
+    },
+    "Pregabalin": {
+        "doseReference": ("Neuropathic pain / fibromyalgia / seizure-adjunct label contexts", "150 to 600 mg/day across cited adult label contexts", "two or three divided doses; renal adjustment required in cited label", 150, 600),
+        "doseBar": (75, 150, 300, 600),
+    },
+    "Ramelteon": {
+        "doseReference": ("Insomnia adult label context", "8 mg/day in cited adult label context", "within 30 minutes of going to bed; avoid high-fat meal timing in cited label", 8, 8),
+        "doseBar": (4, 8, 8, 8),
+    },
+    "Rivastigmine": {
+        "doseReference": ("Alzheimer disease / Parkinson disease dementia oral capsule label contexts", "3 to 12 mg/day across cited oral capsule label contexts", "twice daily with meals in cited label", 3, 12),
+        "doseBar": (1.5, 3, 6, 12),
+    },
+    "Solriamfetol": {
+        "doseReference": ("Narcolepsy / obstructive sleep apnea adult label contexts", "37.5 to 150 mg/day across cited adult label contexts", "once daily upon awakening; avoid within 9 hours of bedtime in cited label", 37.5, 150),
+        "doseBar": (37.5, 75, 150, 150),
+    },
+    "Suvorexant": {
+        "doseReference": ("Insomnia adult label context", "10 to 20 mg/night in cited adult label context", "once nightly within 30 minutes before bed with at least 7 hours before awakening in cited label", 10, 20),
+        "doseBar": (5, 10, 20, 20),
+    },
+    "Triazolam": {
+        "doseReference": ("Insomnia oral label context", "0.125 to 0.5 mg/night across cited adult and geriatric label contexts", "single bedtime dose; quantities should not exceed 1-month supply in cited label", 0.125, 0.5),
+        "doseBar": (0.125, 0.25, 0.5, 0.5),
+    },
+    "Valproate": {
+        "customDoseUseReferences": [
+            {
+                "indication": "Seizure disorder oral solution label context",
+                "route": "oral",
+                "formulation": "oral solution",
+                "amountText": "10 to 60 mg/kg/day across cited initial and upper label contexts",
+                "scheduleText": "increase by 5 to 10 mg/kg/week; plasma-level and clinical-response context in cited label",
+                "ranges": [
+                    {
+                        "min": 10,
+                        "max": 60,
+                        "unit": "mg/kg/day",
+                        "basis": "weight-based",
+                        "frequency": "daily total weight-based context",
+                        "rangeKind": "label-regimen",
+                        "label": "Weight-based label range",
+                        "note": "Weight-based range; do not render as scalar mg/day.",
+                    }
+                ],
+            }
+        ],
+    },
+    "Varenicline": {
+        "doseReference": ("Smoking cessation oral label context", "0.5 to 2 mg/day across cited starting-week and continuing-week label contexts", "titrated from once daily to twice daily in cited label", 0.5, 2),
+        "doseBar": (0.5, 0.5, 1, 2),
+    },
+    "Viloxazine": {
+        "doseReference": ("ADHD adult extended-release label context", "200 to 600 mg/day in cited adult label context", "once daily; weekly 200 mg titration increments in cited label", 200, 600),
+        "doseBar": (100, 200, 400, 600),
+    },
+    "Vortioxetine": {
+        "doseReference": ("Major depressive disorder adult label context", "5 to 20 mg/day across cited adult label contexts", "once daily without regard to meals in cited label", 5, 20),
+        "doseBar": (5, 10, 15, 20),
+    },
+    "Zaleplon": {
+        "doseReference": ("Insomnia oral label context", "5 to 20 mg/night across cited adult label contexts", "immediately before bedtime or after difficulty falling asleep in cited label", 5, 20),
+        "doseBar": (5, 10, 20, 20),
+    },
+    "Ziprasidone": {
+        "doseReference": ("Schizophrenia / bipolar mania oral capsule label contexts", "40 to 160 mg/day across cited adult label contexts", "twice daily with food in cited label", 40, 160),
+        "doseBar": (20, 40, 80, 160),
     },
     "Bromazepam": {
         "extraSourceRefs": [
@@ -725,7 +1214,18 @@ def _load_auto_label_data() -> dict:
 
 # 手工核对数据优先；批量 openFDA 缓存只补充尚未手工覆盖的条目。
 MANUAL_CURATED_LABEL_DATA = CURATED_LABEL_DATA
-CURATED_LABEL_DATA = {**_load_auto_label_data(), **MANUAL_CURATED_LABEL_DATA}
+
+
+def merge_curated_label_data(auto_data: dict, manual_data: dict) -> dict:
+    merged = dict(auto_data)
+    for name, manual in manual_data.items():
+        base = dict(merged.get(name, {}))
+        base.update(manual)
+        merged[name] = base
+    return merged
+
+
+CURATED_LABEL_DATA = merge_curated_label_data(_load_auto_label_data(), MANUAL_CURATED_LABEL_DATA)
 
 
 GROUPS = {
@@ -1043,7 +1543,20 @@ def curated_time_course(name: str, source_refs: list[dict]) -> list[dict] | None
 
 def curated_dose_use_reference(name: str, source_refs: list[dict]) -> list[dict] | None:
     curated = CURATED_LABEL_DATA.get(name)
-    if not curated or "doseReference" not in curated:
+    if not curated:
+        return None
+    if "customDoseUseReferences" in curated:
+        refs = []
+        for ref in curated["customDoseUseReferences"]:
+            ref_copy = dict(ref)
+            ref_copy.setdefault("population", "Adults unless product-specific label states otherwise")
+            ref_copy.setdefault("sourceType", ref_copy.get("sourceType", "regulatory-label"))
+            ref_copy.setdefault("evidenceLevel", ref_copy.get("evidenceLevel", "REGULATORY_LABEL"))
+            ref_copy.setdefault("note", "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.")
+            ref_copy["sourceRefs"] = source_refs
+            refs.append(ref_copy)
+        return refs
+    if "doseReference" not in curated:
         return None
     indication, amount_text, schedule_text, range_min, range_max = curated["doseReference"]
     source_type = curated.get("doseSourceType", "regulatory-label")

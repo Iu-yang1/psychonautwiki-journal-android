@@ -8,8 +8,8 @@ Numeric values are only written into substances data when a product label or SmP
 - Entries with UK eMC SmPC source: 17
 - Entries with numeric timeCourse: 119
 - Entries still needing numeric timeCourse review: 0
-- Entries with numeric doseUseReferences: 48
-- Entries still needing numeric dose-reference review: 71
+- Entries with numeric doseUseReferences: 119
+- Entries still needing numeric dose-reference review: 0
 
 ## Still Needs Numeric TimeCourse Review
 
@@ -17,7 +17,7 @@ None
 
 ## Still Needs Numeric Dose Reference Review
 
-Acamprosate, Aripiprazole, Armodafinil, Asenapine, Atomoxetine, Brexpiprazole, Buprenorphine, Carbamazepine, Cariprazine, Clobazam, Clomipramine, Clonazepam, Clorazepate, Daridorexant, Desvenlafaxine, Dexmethylphenidate, Dextroamphetamine, Divalproex, Doxepin, Droperidol, Escitalopram, Estazolam, Eszopiclone, Flupentixol, Fluphenazine, Flurazepam, Fluvoxamine, Gabapentin, Galantamine, Guanfacine, Ketamine, Lamotrigine, Lemborexant, Lisdexamfetamine, Lorazepam, Lurasidone, Memantine, Methadone, Midazolam, Milnacipran, Mirtazapine, Modafinil, N-Acetylcysteine, Naloxone, Naltrexone, Nitrazepam, Oxazepam, Oxcarbazepine, Paliperidone, Pentobarbital, Perphenazine, Phenelzine, Phenobarbital, Pimavanserin, Pimozide, Pitolisant, Pregabalin, Ramelteon, Rivastigmine, Solriamfetol, Sulpiride, Suvorexant, Triazolam, Trifluoperazine, Valproate, Varenicline, Viloxazine, Vortioxetine, Zaleplon, Ziprasidone, Zuclopenthixol
+None
 
 ## Source Strategy
 
