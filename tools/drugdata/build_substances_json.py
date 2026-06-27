@@ -183,6 +183,12 @@ def iter_source_files(source_dir: Path) -> list[Path]:
     )
 
 
+def is_data_pack(data: object) -> bool:
+    return isinstance(data, dict) and any(
+        key in data for key in ("buildConfig", "categories", "substances", "substancePatches")
+    )
+
+
 def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = False) -> None:
     data = load_json(base_path)
     categories = data.get("categories", [])
@@ -191,6 +197,8 @@ def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = F
 
     for source_path in iter_source_files(source_dir):
         source_data = load_json(source_path)
+        if not is_data_pack(source_data):
+            continue
         build_config = source_data.get("buildConfig", {})
         retain_categories.update(build_config.get("retainSubstanceCategories", []))
         categories = upsert_by_name(categories, source_data.get("categories", []))

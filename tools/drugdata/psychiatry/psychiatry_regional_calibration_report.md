@@ -6,14 +6,14 @@ Numeric values are only written into substances data when a product label or SmP
 - Clinical psychiatry entries: 119
 - Entries with openFDA label source: 94
 - Entries with UK eMC SmPC source: 9
-- Entries with numeric timeCourse: 95
-- Entries still needing numeric timeCourse review: 24
+- Entries with numeric timeCourse: 98
+- Entries still needing numeric timeCourse review: 21
 - Entries with numeric doseUseReferences: 37
 - Entries still needing numeric dose-reference review: 82
 
 ## Still Needs Numeric TimeCourse Review
 
-Amitriptyline, Amphetamine, Bromazepam, Chlordiazepoxide, Chlorpromazine, Droperidol, Etizolam, Flunitrazepam, Fluphenazine, Haloperidol, Hydroxyzine, Imipramine, Ketamine, Lormetazepam, Maprotiline, Methylphenidate, Moclobemide, N-Acetylcysteine, Nortriptyline, Prazepam, Prochlorperazine, Thioridazine, Tianeptine, Tofisopam
+Amitriptyline, Bromazepam, Chlordiazepoxide, Chlorpromazine, Droperidol, Etizolam, Flunitrazepam, Fluphenazine, Hydroxyzine, Imipramine, Ketamine, Lormetazepam, Maprotiline, Moclobemide, N-Acetylcysteine, Nortriptyline, Prazepam, Prochlorperazine, Thioridazine, Tianeptine, Tofisopam
 
 ## Still Needs Numeric Dose Reference Review
 

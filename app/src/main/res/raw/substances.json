@@ -781,6 +781,15 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amphetamine"
+          },
+          {
+            "title": "openFDA drug label: Adderall XR",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:aff45863-ffe1-4d4f-8acf-c7081512a6c0",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Adderall+XR"
           }
         ]
       },
@@ -808,8 +817,31 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amphetamine"
+            },
+            {
+              "title": "openFDA drug label: Adderall XR",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:aff45863-ffe1-4d4f-8acf-c7081512a6c0",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Adderall+XR"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 3,
+            "max": 7,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Immediate-release mixed amphetamine salts peak around 3 hours; Adderall XR Tmax about 7 hours in cited label."
+          },
+          "eliminationHalfLife": {
+            "min": 10,
+            "max": 13,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Adult mean half-life: about 10 hours for d-amphetamine and 13 hours for l-amphetamine in cited Adderall XR label."
+          }
         }
       ],
       "tdm": {
@@ -837,6 +869,15 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amphetamine"
+          },
+          {
+            "title": "openFDA drug label: Adderall XR",
+            "url": "https://api.fda.gov/drug/label.json?search=set_id:aff45863-ffe1-4d4f-8acf-c7081512a6c0",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Adderall+XR"
           }
         ]
       },
@@ -879,6 +920,15 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amphetamine"
+            },
+            {
+              "title": "openFDA drug label: Adderall XR",
+              "url": "https://api.fda.gov/drug/label.json?search=set_id:aff45863-ffe1-4d4f-8acf-c7081512a6c0",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Adderall+XR"
             }
           ]
         }
@@ -899,6 +949,15 @@
           "evidenceLevel": "REGULATORY_LABEL",
           "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
           "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amphetamine"
+        },
+        {
+          "title": "openFDA drug label: Adderall XR",
+          "url": "https://api.fda.gov/drug/label.json?search=set_id:aff45863-ffe1-4d4f-8acf-c7081512a6c0",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
+          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Adderall+XR"
         }
       ]
     },
@@ -4122,6 +4181,15 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Haloperidol"
+          },
+          {
+            "title": "European Medicines Agency product information: Haldol",
+            "url": "https://www.ema.europa.eu/en/documents/referral/haldol-article-30-referral-annex-iii_en.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.2 Pharmacokinetic properties",
+            "note": "EMA referral product information; haloperidol terminal elimination half-life range and average."
           }
         ]
       },
@@ -4156,8 +4224,24 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Haloperidol"
+            },
+            {
+              "title": "European Medicines Agency product information: Haldol",
+              "url": "https://www.ema.europa.eu/en/documents/referral/haldol-article-30-referral-annex-iii_en.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "5.2 Pharmacokinetic properties",
+              "note": "EMA referral product information; haloperidol terminal elimination half-life range and average."
             }
-          ]
+          ],
+          "eliminationHalfLife": {
+            "min": 15,
+            "max": 37,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "EMA product information reports average terminal half-life about 24 hours, range 15 to 37 hours."
+          }
         }
       ],
       "tdm": {
@@ -4192,6 +4276,15 @@
             "evidenceLevel": "REGULATORY_LABEL",
             "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
             "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Haloperidol"
+          },
+          {
+            "title": "European Medicines Agency product information: Haldol",
+            "url": "https://www.ema.europa.eu/en/documents/referral/haldol-article-30-referral-annex-iii_en.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-06-27",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "5.2 Pharmacokinetic properties",
+            "note": "EMA referral product information; haloperidol terminal elimination half-life range and average."
           }
         ]
       },
@@ -4241,6 +4334,15 @@
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Haloperidol"
+            },
+            {
+              "title": "European Medicines Agency product information: Haldol",
+              "url": "https://www.ema.europa.eu/en/documents/referral/haldol-article-30-referral-annex-iii_en.pdf",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-06-27",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "5.2 Pharmacokinetic properties",
+              "note": "EMA referral product information; haloperidol terminal elimination half-life range and average."
             }
           ]
         }
@@ -4268,6 +4370,15 @@
           "evidenceLevel": "REGULATORY_LABEL",
           "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
           "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Haloperidol"
+        },
+        {
+          "title": "European Medicines Agency product information: Haldol",
+          "url": "https://www.ema.europa.eu/en/documents/referral/haldol-article-30-referral-annex-iii_en.pdf",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-06-27",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "5.2 Pharmacokinetic properties",
+          "note": "EMA referral product information; haloperidol terminal elimination half-life range and average."
         }
       ]
     },
@@ -5925,7 +6036,28 @@
               "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
               "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methylphenidate"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 3,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "First peak for methylphenidate extended-release capsules in cited label."
+          },
+          "peakEffect": {
+            "min": 4.3,
+            "max": 11,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Second peak window for methylphenidate extended-release capsules; product-specific bimodal profile."
+          },
+          "eliminationHalfLife": {
+            "min": 1.5,
+            "max": 4.2,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Range across pediatric and adult extended-release capsule pharmacokinetic table in cited label."
+          }
         }
       ],
       "tdm": {

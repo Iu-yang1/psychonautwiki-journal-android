@@ -186,7 +186,11 @@ CURATED_LABEL_DATA = {
     },
     "Methylphenidate": {
         "openfdaSetId": "034fb7cd-e183-475e-8beb-64fd88facc8f",
-        "timeCourse": {},
+        "timeCourse": {
+            "tmax": (1, 3, "h", "label pharmacokinetics", "First peak for methylphenidate extended-release capsules in cited label."),
+            "peakEffect": (4.3, 11, "h", "label pharmacokinetics", "Second peak window for methylphenidate extended-release capsules; product-specific bimodal profile."),
+            "eliminationHalfLife": (1.5, 4.2, "h", "label pharmacokinetics", "Range across pediatric and adult extended-release capsule pharmacokinetic table in cited label."),
+        },
         "doseReference": ("ADHD extended-release capsule label context", "20 to 60 mg/day in cited extended-release capsule label context", "once daily in the morning; titrate weekly in 10 mg increments in the cited label", 20, 60),
         "doseBar": (5, 20, 40, 60),
     },
@@ -289,7 +293,20 @@ CURATED_LABEL_DATA = {
     },
     "Haloperidol": {
         "openfdaSetId": "00bb61c8-db35-4c04-9ef7-47d447d2496b",
-        "timeCourse": {},
+        "extraSourceRefs": [
+            {
+                "title": "European Medicines Agency product information: Haldol",
+                "url": "https://www.ema.europa.eu/en/documents/referral/haldol-article-30-referral-annex-iii_en.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": ACCESSED_DATE,
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "5.2 Pharmacokinetic properties",
+                "note": "EMA referral product information; haloperidol terminal elimination half-life range and average.",
+            }
+        ],
+        "timeCourse": {
+            "eliminationHalfLife": (15, 37, "h", "label pharmacokinetics", "EMA product information reports average terminal half-life about 24 hours, range 15 to 37 hours."),
+        },
         "doseReference": ("Psychotic disorder oral label context", "1 to 100 mg/day across cited adult oral label contexts", "divided twice or three times daily; individualized in the cited label", 1, 100),
         "doseBar": (0.5, 1, 15, 100),
     },
@@ -307,7 +324,13 @@ CURATED_LABEL_DATA = {
     },
     "Amphetamine": {
         "openfdaSetId": "00242264-40d8-4267-a91a-727a1f088616",
-        "timeCourse": {},
+        "extraOpenfdaSetIds": [
+            ("aff45863-ffe1-4d4f-8acf-c7081512a6c0", "openFDA drug label: Adderall XR"),
+        ],
+        "timeCourse": {
+            "tmax": (3, 7, "h", "label pharmacokinetics", "Immediate-release mixed amphetamine salts peak around 3 hours; Adderall XR Tmax about 7 hours in cited label."),
+            "eliminationHalfLife": (10, 13, "h", "label pharmacokinetics", "Adult mean half-life: about 10 hours for d-amphetamine and 13 hours for l-amphetamine in cited Adderall XR label."),
+        },
         "doseReference": ("ADHD / narcolepsy oral label context", "5 to 60 mg/day across cited ADHD and narcolepsy label contexts", "divided dosing; late evening doses avoided in the cited label", 5, 60),
         "doseBar": (2.5, 5, 20, 40),
     },
@@ -664,6 +687,16 @@ def curated_regulatory_source(name: str, curated: dict | None) -> dict:
     return dailymed_search(name)
 
 
+def curated_regulatory_sources(name: str, curated: dict | None) -> list[dict]:
+    sources = [curated_regulatory_source(name, curated)]
+    if curated:
+        for set_id, title in curated.get("extraOpenfdaSetIds", []):
+            sources.append(openfda_source(title.replace("openFDA drug label: ", ""), set_id))
+            sources[-1]["title"] = title
+        sources.extend(curated.get("extraSourceRefs", []))
+    return sources
+
+
 def time_value(value: tuple) -> dict:
     min_value, max_value, unit, basis, *note = value
     result = {
@@ -775,7 +808,7 @@ def merge_tdm(base_tdm: dict, name: str, source_refs: list[dict]) -> dict:
 def entry(name: str, aliases: list[str], group_key: str, atc_codes: list[str]) -> dict:
     group = GROUPS[group_key]
     curated = CURATED_LABEL_DATA.get(name)
-    source_refs = group["sourceRefs"] + [curated_regulatory_source(name, curated)]
+    source_refs = group["sourceRefs"] + curated_regulatory_sources(name, curated)
     route = "oral"
     base_tdm = {
         "isRoutinelyMonitored": group_key == "mood-stabilizer" and name in {"Lithium Carbonate", "Valproate", "Carbamazepine"},
