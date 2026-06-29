@@ -1276,6 +1276,729 @@ CURATED_LABEL_DATA.setdefault("Solriamfetol", {}).setdefault("timeCourse", {}).u
     }
 )
 
+CURATED_LABEL_DATA.update(
+    {
+        "Levomepromazine": {
+            "emcProductId": "11912",
+            "emcTitle": "UK eMC SmPC: Levomepromazine Maleate 25 mg Tablets",
+            "timeCourse": {
+                "tmax": (2, 3, "h", "label pharmacokinetics"),
+                "eliminationHalfLife": (15, 30, "h", "label pharmacokinetics"),
+            },
+            "doseReference": (
+                "Psychiatric oral SmPC context",
+                "25 to 1000 mg/day across cited ambulant and inpatient SmPC contexts",
+                "divided dosing, usually three times daily; reduce to maintenance after symptom control in cited SmPC",
+                25,
+                1000,
+            ),
+            "doseBar": (12.5, 25, 100, 1000),
+        },
+        "Promazine": {
+            "emcProductId": "101928",
+            "emcTitle": "UK eMC SmPC: Promazine Hydrochloride 25 mg/5 mL Oral Syrup",
+            "timeCourse": {},
+            "timeCourseNotes": [
+                "The cited SmPC describes ready absorption, first-pass metabolism, and variable therapeutic-effect duration, but does not give a simple numeric Tmax or plasma half-life suitable for plotting."
+            ],
+            "doseReference": (
+                "Agitation/restlessness oral SmPC context",
+                "100 to 800 mg/day across cited adult oral SmPC context",
+                "100 to 200 mg up to four times daily in cited adult SmPC context; elderly label context is lower",
+                100,
+                800,
+            ),
+            "doseBar": (25, 100, 400, 800),
+        },
+        "Melperone": {
+            "extraSourceRefs": [
+                {
+                    "title": "PubMed: Pharmacokinetics of melperone in man",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/7140807/",
+                    "sourceType": "pharmacokinetic-study",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "PHARMACOKINETIC_STUDY",
+                    "note": "Human pharmacokinetic study used to index absorption and elimination parameters.",
+                },
+                {
+                    "title": "East London NHS Foundation Trust: Guidelines for the use of melperone",
+                    "url": "https://www.elft.nhs.uk/sites/default/files/2022-01/guidelines_for_the_use_of_melperone_4.0.pdf",
+                    "sourceType": "clinical-guidance",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "LOCAL_CLINICAL_GUIDANCE",
+                    "note": "Local clinical guidance used only as a dose-use reference source; product-specific local labeling should be checked.",
+                },
+            ],
+            "timeCourse": {
+                "tmax": (1, 3, "h", "literature estimate", "Human PK literature reports rapid absorption; product-specific labels should be checked."),
+                "eliminationHalfLife": (3, 6, "h", "literature estimate", "Approximate terminal elimination half-life range from human PK literature; do not treat as clinical duration."),
+            },
+            "doseReference": (
+                "Psychotic disorder / behavioral disturbance clinical-guidance context",
+                "25 to 400 mg/day across cited clinical-guidance contexts",
+                "divided dosing; product- and country-specific labeling should be checked",
+                25,
+                400,
+            ),
+            "doseSourceType": "clinical-guidance",
+            "doseEvidenceLevel": "LOCAL_CLINICAL_GUIDANCE",
+            "doseRangeKind": "guideline-regimen",
+            "doseBar": (25, 100, 300, 400),
+        },
+        "Sertindole": {
+            "extraSourceRefs": [
+                {
+                    "title": "EMA referral information: Sertindole",
+                    "url": "https://www.ema.europa.eu/en/documents/referral/opinion-following-article-36-referral-sertindole-international-non-proprietary-name-inn-sertindole-background-information-and-annexes-i-ii-english-and-annex-iii-all-languages_en.pdf",
+                    "sourceType": "regulatory-review",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "REGULATORY_REVIEW",
+                    "note": "Regulatory material used for dose-use and cardiac-safety context.",
+                },
+                {
+                    "title": "PMC review: Sertindole in schizophrenia",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2938292/",
+                    "sourceType": "review",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "REVIEW",
+                    "note": "Review literature used to cross-check long half-life and delayed steady state.",
+                },
+            ],
+            "timeCourse": {
+                "eliminationHalfLife": (2, 4, "day", "literature estimate", "Long elimination half-life; ECG/QT monitoring context is clinically important."),
+                "timeToSteadyState": (14, 21, "day", "literature estimate", "Approximate steady-state time reflecting long half-life."),
+            },
+            "doseReference": (
+                "Schizophrenia oral regulatory/literature context",
+                "4 to 24 mg/day across cited titration, maintenance, and upper-limit contexts",
+                "once daily; slow titration and ECG/QT review are label-context caveats",
+                4,
+                24,
+            ),
+            "doseSourceType": "regulatory-review",
+            "doseEvidenceLevel": "REGULATORY_REVIEW",
+            "doseBar": (4, 12, 20, 24),
+        },
+        "Chlorprothixene": {
+            "extraSourceRefs": [
+                {
+                    "title": "PubMed: Pharmacokinetics of chlorprothixene and metabolites",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/8901143/",
+                    "sourceType": "pharmacokinetic-study",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "PHARMACOKINETIC_STUDY",
+                },
+                {
+                    "title": "CBG/MEB core safety profile: Chlorprothixene",
+                    "url": "https://db.cbg-meb.nl/veegactie/csp/Chlorprothixene-December2010.pdf",
+                    "sourceType": "regulatory-safety-profile",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "REGULATORY_REVIEW",
+                },
+            ],
+            "timeCourse": {
+                "tmax": (2, 4, "h", "literature estimate"),
+                "eliminationHalfLife": (8, 12, "h", "literature estimate", "Approximate parent-drug half-life in pharmacokinetic literature."),
+            },
+            "doseReference": (
+                "Psychotic disorder oral literature/regulatory context",
+                "15 to 800 mg/day across cited low-dose and high-dose clinical contexts",
+                "divided dosing; product-specific country label should be checked",
+                15,
+                800,
+            ),
+            "doseSourceType": "regulatory-safety-profile",
+            "doseEvidenceLevel": "REGULATORY_REVIEW",
+            "doseBar": (15, 30, 90, 800),
+        },
+        "Penfluridol": {
+            "extraSourceRefs": [
+                {
+                    "title": "PubMed: Pharmacokinetics of penfluridol",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/385274/",
+                    "sourceType": "pharmacokinetic-study",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "PHARMACOKINETIC_STUDY",
+                },
+                {
+                    "title": "Dutch medicines assessment report: Penfluridol",
+                    "url": "https://www.geneesmiddeleninformatiebank.nl/pars/h129179.pdf",
+                    "sourceType": "regulatory-review",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "REGULATORY_REVIEW",
+                },
+            ],
+            "timeCourse": {
+                "tmax": (4, 8, "h", "literature estimate"),
+                "eliminationHalfLife": (4, 7, "day", "literature estimate", "Very long half-life supports weekly dosing; this is not an acute effect curve."),
+            },
+            "customDoseUseReferences": [
+                {
+                    "indication": "Maintenance antipsychotic oral weekly label/literature context",
+                    "route": "oral",
+                    "formulation": "tablet",
+                    "amountText": "20 to 60 mg once weekly across cited maintenance contexts",
+                    "scheduleText": "once weekly; depot-like long-duration oral antipsychotic context",
+                    "ranges": [
+                        {
+                            "min": 20,
+                            "max": 60,
+                            "unit": "mg",
+                            "basis": "weekly-total",
+                            "frequency": "once weekly",
+                            "rangeKind": "label-regimen",
+                            "label": "Weekly oral regimen range",
+                            "note": "Weekly oral reference range; not comparable with daily-dose antipsychotic bars.",
+                        }
+                    ],
+                }
+            ],
+        },
+        "Tiapride": {
+            "extraSourceRefs": [
+                {
+                    "title": "Tiapride 100 mg Tablets data sheet",
+                    "url": "https://e-lactancia.org/media/papers/Tiapride-DS-HEXAL2006.pdf",
+                    "sourceType": "regulatory-label",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "REGULATORY_LABEL",
+                },
+                {
+                    "title": "PubMed: Tiapride pharmacokinetics",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/2948825/",
+                    "sourceType": "pharmacokinetic-study",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "PHARMACOKINETIC_STUDY",
+                },
+            ],
+            "timeCourse": {
+                "tmax": (1, 2, "h", "label/literature estimate"),
+                "eliminationHalfLife": (3, 5, "h", "label/literature estimate"),
+            },
+            "doseReference": (
+                "Movement/behavioral symptom oral label context",
+                "100 to 1800 mg/day across cited adult oral label contexts",
+                "divided dosing; indication-specific product labeling should be checked",
+                100,
+                1800,
+            ),
+            "doseBar": (100, 300, 600, 1800),
+        },
+        "Levosulpiride": {
+            "extraSourceRefs": [
+                {
+                    "title": "Rwanda FDA SmPC: Micropride 75 (levosulpiride)",
+                    "url": "https://rwandafda.gov.rw/wp-content/uploads/2024/07/Micropride_75_Levosulpiride_75_mg_Tablets_SmPC.pdf",
+                    "sourceType": "regulatory-label",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "REGULATORY_LABEL",
+                },
+                {
+                    "title": "PMC: Levosulpiride pharmacokinetics study",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4629093/",
+                    "sourceType": "pharmacokinetic-study",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "PHARMACOKINETIC_STUDY",
+                },
+            ],
+            "timeCourse": {
+                "tmax": (1, 3, "h", "label/literature estimate"),
+                "eliminationHalfLife": (6, 8, "h", "label/literature estimate"),
+            },
+            "doseReference": (
+                "Oral label context",
+                "25 to 150 mg/day across cited oral label contexts",
+                "usually divided dosing; psychiatric vs gastrointestinal indications differ by country",
+                25,
+                150,
+            ),
+            "doseBar": (25, 75, 150, 150),
+        },
+        "Zotepine": {
+            "extraSourceRefs": [
+                {
+                    "title": "PubMed: Zotepine steady-state pharmacokinetics",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/9485566/",
+                    "sourceType": "pharmacokinetic-study",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "PHARMACOKINETIC_STUDY",
+                },
+                {
+                    "title": "WHO ATC/DDD index: Zotepine",
+                    "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05AX11",
+                    "sourceType": "drug-classification",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "DRUG_CLASSIFICATION",
+                },
+            ],
+            "timeCourse": {
+                "tmax": (2, 4, "h", "literature estimate"),
+                "eliminationHalfLife": (13, 15, "h", "literature estimate", "Approximate steady-state PK literature value; active metabolite context may differ."),
+            },
+            "doseReference": (
+                "Schizophrenia oral literature/label context",
+                "75 to 450 mg/day across cited oral clinical-use contexts",
+                "divided dosing; country-specific label should be checked",
+                75,
+                450,
+            ),
+            "doseSourceType": "literature-or-label",
+            "doseEvidenceLevel": "REVIEWED_REFERENCE",
+            "doseBar": (25, 75, 150, 450),
+        },
+        "Iloperidone": {
+            "openfdaSetId": "33f60b40-3fca-11de-8f56-0002a5d5c51b",
+            "timeCourse": {
+                "tmax": (2, 4, "h", "label pharmacokinetics"),
+                "eliminationHalfLife": (18, 37, "h", "label pharmacokinetics", "Range covers parent-drug CYP2D6 extensive and poor metabolizer label contexts; active metabolite half-lives differ."),
+                "timeToSteadyState": (3, 4, "day", "label pharmacokinetics"),
+            },
+            "doseReference": (
+                "Schizophrenia / bipolar mania oral label contexts",
+                "2 to 24 mg/day across cited adult oral label contexts",
+                "twice daily after slow titration in cited label context",
+                2,
+                24,
+            ),
+            "doseBar": (1, 6, 12, 24),
+        },
+        "Lumateperone": {
+            "openfdaSetId": "db730b06-6351-47fd-8183-e61e61bbead5",
+            "timeCourse": {
+                "tmax": (1, 2, "h", "label pharmacokinetics", "Food may delay median Tmax from about 1 to 2 hours."),
+                "eliminationHalfLife": (18, 18, "h", "label pharmacokinetics", "Terminal half-life after intravenous administration in the cited label."),
+                "timeToSteadyState": (5, 5, "day", "label pharmacokinetics"),
+            },
+            "doseReference": (
+                "Schizophrenia / bipolar depression / MDD adjunctive oral label contexts",
+                "10.5 to 42 mg/day across cited adult oral label and adjustment contexts",
+                "once daily with or without food; dose adjustments depend on hepatic impairment and CYP3A interactions in cited label",
+                10.5,
+                42,
+            ),
+            "doseBar": (10.5, 21, 42, 42),
+        },
+        "Blonanserin": {
+            "extraSourceRefs": [
+                {
+                    "title": "PMDA review report: Blonanserin",
+                    "url": "https://www.pmda.go.jp/files/000153866.pdf",
+                    "sourceType": "regulatory-review",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "REGULATORY_REVIEW",
+                    "note": "Japanese regulatory review used for product context.",
+                },
+                {
+                    "title": "PMC review: Blonanserin for schizophrenia",
+                    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3428331/",
+                    "sourceType": "review",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "REVIEW",
+                },
+            ],
+            "timeCourse": {
+                "tmax": (1.5, 2, "h", "regulatory/literature estimate"),
+                "eliminationHalfLife": (10, 16, "h", "regulatory/literature estimate"),
+            },
+            "doseReference": (
+                "Schizophrenia oral regulatory/literature context",
+                "8 to 24 mg/day across cited Japanese oral treatment contexts",
+                "usually divided twice daily; country-specific labeling should be checked",
+                8,
+                24,
+            ),
+            "doseSourceType": "regulatory-review",
+            "doseEvidenceLevel": "REGULATORY_REVIEW",
+            "doseBar": (4, 8, 16, 24),
+        },
+        "Mianserin": {
+            "emcProductId": "8476",
+            "emcTitle": "UK eMC SmPC: Mianserin 10 mg film-coated tablets",
+            "timeCourse": {
+                "eliminationHalfLife": (6, 39, "h", "label pharmacokinetics", "Biphasic terminal plasma half-life in cited SmPC."),
+            },
+            "doseReference": (
+                "Depression oral SmPC context",
+                "30 to 90 mg/day across cited adult oral SmPC context",
+                "divided doses or single night-time dose; cited SmPC notes divided doses up to 200 mg have been well tolerated",
+                30,
+                90,
+            ),
+            "doseBar": (30, 60, 90, 200),
+        },
+        "Reboxetine": {
+            "emcProductId": "1578",
+            "emcTitle": "UK eMC SmPC: Edronax 4 mg tablets",
+            "timeCourse": {
+                "tmax": (2, 2, "h", "label pharmacokinetics"),
+                "eliminationHalfLife": (13, 13, "h", "label pharmacokinetics"),
+                "timeToSteadyState": (5, 5, "day", "label pharmacokinetics"),
+            },
+            "doseReference": (
+                "Major depressive illness oral SmPC context",
+                "4 to 12 mg/day across cited adult, renal/hepatic, and upper-limit SmPC contexts",
+                "usually twice daily; incomplete response context may increase after 3 to 4 weeks in cited SmPC",
+                4,
+                12,
+            ),
+            "doseBar": (4, 8, 10, 12),
+        },
+        "Levomilnacipran": {
+            "openfdaSetId": "f371258d-91b3-4b6a-ac99-434a1964c3af",
+            "timeCourse": {
+                "tmax": (6, 8, "h", "label pharmacokinetics"),
+                "eliminationHalfLife": (12, 12, "h", "label pharmacokinetics"),
+            },
+            "doseReference": (
+                "Major depressive disorder extended-release oral label context",
+                "20 to 120 mg/day across cited starting, target, and upper-label contexts",
+                "once daily; initial 20 mg/day is a short label titration context before 40 mg/day",
+                20,
+                120,
+            ),
+            "doseBar": (20, 40, 80, 120),
+        },
+        "Nefazodone": {
+            "openfdaSetId": "0bd4c34a-4f43-4c84-8b98-1d074cba97d5",
+            "timeCourse": {
+                "tmax": (1, 1, "h", "label pharmacokinetics"),
+                "eliminationHalfLife": (2, 4, "h", "label pharmacokinetics", "Parent nefazodone half-life; active metabolites and nonlinear kinetics complicate interpretation."),
+            },
+            "doseReference": (
+                "Major depressive disorder oral label context",
+                "100 to 600 mg/day across cited elderly/debilitated starting and adult effective label contexts",
+                "divided twice daily; gradual increases no more often than weekly in cited label context",
+                100,
+                600,
+            ),
+            "doseBar": (100, 200, 300, 600),
+        },
+        "Trimipramine": {
+            "openfdaSetId": "326ef804-8d3a-425e-8513-8c9811856aa0",
+            "timeCourse": {},
+            "timeCourseNotes": [
+                "The cited label reports a ten-day to four-week lag before antidepressant response and states single-dose pharmacokinetics were evaluated, but does not provide a numeric Tmax or half-life suitable for plotting."
+            ],
+            "doseReference": (
+                "Depressive illness oral label context",
+                "50 to 300 mg/day across cited adult, hospitalized, adolescent/geriatric, and maintenance label contexts",
+                "divided dosing or single bedtime maintenance dose depending on cited label context",
+                50,
+                300,
+            ),
+            "doseBar": (50, 75, 150, 300),
+        },
+        "Dosulepin": {
+            "emcProductId": "101603",
+            "emcTitle": "UK eMC SmPC: Dosulepin 25 mg hard capsules",
+            "timeCourse": {
+                "eliminationHalfLife": (50, 50, "h", "label pharmacokinetics", "Approximate half-life of dosulepin and metabolites in cited SmPC."),
+            },
+            "doseReference": (
+                "Depressive illness oral SmPC context",
+                "50 to 225 mg/day across cited adult, hospital, and elderly SmPC contexts",
+                "usually once daily or divided depending on cited SmPC context",
+                50,
+                225,
+            ),
+            "doseBar": (50, 75, 150, 225),
+        },
+        "Protriptyline": {
+            "openfdaSetId": "a023e637-bee9-8c86-e053-2a95a90aa488",
+            "timeCourse": {
+                "onset": (1, 1, "week", "clinical effect", "Label states an initial clinical effect may occur within one week; full antidepressant response may differ."),
+            },
+            "timeCourseNotes": [
+                "The label describes slow excretion but does not provide a numeric half-life suitable for a PK curve."
+            ],
+            "doseReference": (
+                "Depressive symptoms oral label context",
+                "15 to 60 mg/day across cited adult oral label contexts",
+                "divided three or four times daily; upper-label context not recommended above 60 mg/day",
+                15,
+                60,
+            ),
+            "doseBar": (15, 20, 40, 60),
+        },
+        "Isocarboxazid": {
+            "openfdaSetId": "95fde749-44ad-4668-86c4-0ff17bca0074",
+            "timeCourse": {},
+            "timeCourseNotes": [
+                "The cited Marplan label explicitly states that isocarboxazid pharmacokinetic information is not available."
+            ],
+            "doseReference": (
+                "Major depressive disorder MAOI oral label context",
+                "20 to 60 mg/day across cited starting, titration, and upper-label contexts",
+                "divided two to four times daily; label notes response may take 3 to 6 weeks",
+                20,
+                60,
+            ),
+            "doseBar": (20, 40, 60, 60),
+        },
+        "Selegiline": {
+            "openfdaSetId": "b891bd9f-fdb8-4862-89c5-ecdd700398a3",
+            "route": "transdermal",
+            "formulation": "patch",
+            "timeCourse": {
+                "timeToSteadyState": (10, 10, "day", "label pharmacokinetics", "Daily patch administration produced comparable steady-state concentration profiles by day 10 in the cited label."),
+            },
+            "timeCourseNotes": [
+                "Patch delivery is rate-based; plasma concentration and MAO inhibition are not the same as an ordinary short oral dose curve."
+            ],
+            "customDoseUseReferences": [
+                {
+                    "indication": "Major depressive disorder transdermal system label context",
+                    "route": "transdermal",
+                    "formulation": "patch",
+                    "amountText": "6 to 12 mg/24 h across cited transdermal label contexts",
+                    "scheduleText": "apply one patch every 24 hours; increase by 3 mg/24 h no more often than every 2 weeks in cited label",
+                    "ranges": [
+                        {
+                            "min": 6,
+                            "max": 12,
+                            "unit": "mg/24 h",
+                            "basis": "patch-delivery-rate",
+                            "frequency": "once daily patch replacement",
+                            "rangeKind": "label-regimen",
+                            "label": "Transdermal delivery rate range",
+                            "note": "Patch delivery-rate range; tyramine dietary restrictions differ by patch strength in the cited label.",
+                        }
+                    ],
+                }
+            ],
+        },
+        "Esketamine": {
+            "openfdaSetId": "d81a6a79-a74a-44b7-822c-0dfa3036eaed",
+            "route": "intranasal",
+            "formulation": "nasal spray",
+            "timeCourse": {
+                "tmax": (20, 40, "min", "label pharmacokinetics", "Time to maximum plasma concentration after the last nasal spray of a treatment session."),
+                "eliminationHalfLife": (7, 12, "h", "label pharmacokinetics"),
+            },
+            "timeCourseNotes": [
+                "Treatment sessions require post-administration monitoring; antidepressant response timing is not inferred from the plasma half-life."
+            ],
+            "customDoseUseReferences": [
+                {
+                    "indication": "Treatment-resistant depression / acute suicidal ideation MDD intranasal label context",
+                    "route": "intranasal",
+                    "formulation": "nasal spray",
+                    "amountText": "56 to 84 mg per treatment session across cited adult label contexts",
+                    "scheduleText": "twice weekly induction, then weekly or every 2 weeks depending on cited label context",
+                    "ranges": [
+                        {
+                            "min": 56,
+                            "max": 84,
+                            "unit": "mg",
+                            "basis": "per-dose",
+                            "frequency": "treatment-session dependent",
+                            "rangeKind": "label-regimen",
+                            "label": "Treatment-session dose range",
+                            "note": "Administered only under healthcare-provider supervision in the cited label.",
+                        }
+                    ],
+                }
+            ],
+        },
+        "Brotizolam": {
+            "extraSourceRefs": [
+                {
+                    "title": "CBG/MEB product information: Lendormin (brotizolam)",
+                    "url": "https://www.geneesmiddeleninformatiebank.nl/ords/f?p=111:3::SEARCH:NO::P0_DOMAIN,P0_LANG,P3_RVG1:H,NL,11541",
+                    "sourceType": "regulatory-label",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "REGULATORY_LABEL",
+                },
+                {
+                    "title": "PubMed: Brotizolam pharmacokinetics",
+                    "url": "https://pubmed.ncbi.nlm.nih.gov/6146385/",
+                    "sourceType": "pharmacokinetic-study",
+                    "accessedDate": ACCESSED_DATE,
+                    "evidenceLevel": "PHARMACOKINETIC_STUDY",
+                },
+            ],
+            "timeCourse": {
+                "tmax": (0.5, 2, "h", "label/literature estimate"),
+                "eliminationHalfLife": (3, 8, "h", "label/literature estimate"),
+            },
+            "doseReference": (
+                "Short-term insomnia oral label/literature context",
+                "0.125 to 0.25 mg at bedtime across cited oral contexts",
+                "single bedtime dose; use shortest duration in benzodiazepine label context",
+                0.125,
+                0.25,
+            ),
+            "doseFormulation": "tablet",
+            "doseBar": (0.125, 0.25, 0.25, 0.25),
+        },
+        "Quazepam": {
+            "openfdaSetId": "f7d63f3f-5303-48ab-bce2-35fd62c45799",
+            "timeCourse": {
+                "tmax": (2, 2, "h", "label pharmacokinetics"),
+                "eliminationHalfLife": (39, 73, "h", "label pharmacokinetics", "Parent and 2-oxoquazepam mean half-life about 39 hours; N-desalkyl-2-oxoquazepam about 73 hours."),
+                "timeToSteadyState": (7, 13, "day", "label pharmacokinetics", "Parent/2-oxoquazepam by day 7; N-desalkyl-2-oxoquazepam by day 13 in cited label."),
+            },
+            "doseReference": (
+                "Insomnia oral label context",
+                "7.5 to 15 mg at bedtime across cited adult oral label context",
+                "single bedtime dose; elderly/debilitated patients may be more sensitive in cited label",
+                7.5,
+                15,
+            ),
+            "doseFormulation": "tablet",
+            "doseBar": (7.5, 15, 15, 15),
+        },
+        "Loprazolam": {
+            "emcProductId": "4192",
+            "emcTitle": "UK eMC SmPC: Dormonoct 1 mg Tablets",
+            "timeCourse": {
+                "tmax": (4, 5, "h", "label pharmacokinetics", "Assay-dependent mean Tmax values in cited SmPC."),
+                "eliminationHalfLife": (8, 11.7, "h", "label pharmacokinetics", "Assay-dependent mean half-life values in cited SmPC."),
+            },
+            "doseReference": (
+                "Short-term insomnia oral SmPC context",
+                "0.5 to 2 mg at bedtime across cited oral SmPC contexts",
+                "single bedtime dose; elderly/frail contexts are lower in cited SmPC",
+                0.5,
+                2,
+            ),
+            "doseFormulation": "tablet",
+            "doseBar": (0.5, 1, 2, 2),
+        },
+        "Chloral Hydrate": {
+            "emcProductId": "8136",
+            "emcTitle": "UK eMC SmPC: Chloral Hydrate 143.3 mg/5 mL Oral Solution",
+            "timeCourse": {
+                "onset": (30, 30, "min", "clinical effect", "SmPC states chloral hydrate starts to act within 30 minutes after oral administration."),
+                "durationOfAction": (4, 8, "h", "clinical effect"),
+                "eliminationHalfLife": (4, 12, "h", "label pharmacokinetics", "Trichloroethanol active-metabolite half-life in adult context; neonatal half-life is much longer."),
+            },
+            "customDoseUseReferences": [
+                {
+                    "indication": "Short-term insomnia adult oral SmPC context",
+                    "route": "oral",
+                    "formulation": "oral solution",
+                    "amountText": "430 to 2000 mg as a bedtime single-dose context in cited adult SmPC",
+                    "scheduleText": "15 to 30 minutes before bedtime; higher doses should not exceed 2000 mg per dose in cited SmPC",
+                    "ranges": [
+                        {
+                            "min": 430,
+                            "max": 2000,
+                            "unit": "mg",
+                            "basis": "per-dose",
+                            "frequency": "bedtime single dose",
+                            "rangeKind": "label-regimen",
+                            "label": "Adult bedtime dose range",
+                            "note": "Adult SmPC reference range only; pediatric use is specialist-only and weight-based in cited SmPC.",
+                        }
+                    ],
+                }
+            ],
+            "doseBar": (430, 860, 2000, 2000),
+        },
+        "Clomethiazole": {
+            "emcProductId": "14837",
+            "emcTitle": "UK eMC SmPC: Clomethiazole 192 mg capsules",
+            "timeCourse": {},
+            "timeCourseNotes": [
+                "The cited SmPC describes short half-life qualitatively but does not provide a simple numeric Tmax/half-life suitable for plotting."
+            ],
+            "customDoseUseReferences": [
+                {
+                    "indication": "Elderly severe insomnia / agitation / alcohol-withdrawal oral SmPC contexts",
+                    "route": "oral",
+                    "formulation": "capsule",
+                    "amountText": "192 to 2304 mg/day across cited capsule-based SmPC contexts",
+                    "scheduleText": "context-dependent: bedtime, three-times-daily, or short alcohol-withdrawal taper schedules in cited SmPC",
+                    "ranges": [
+                        {
+                            "min": 192,
+                            "max": 2304,
+                            "unit": "mg",
+                            "basis": "daily-total",
+                            "frequency": "context-dependent",
+                            "rangeKind": "label-regimen",
+                            "label": "Capsule-based SmPC range",
+                            "note": "One capsule contains 192 mg clomethiazole; alcohol-withdrawal schedules are protocol-like and not comparable with ordinary insomnia dosing.",
+                        }
+                    ],
+                }
+            ],
+        },
+        "Meprobamate": {
+            "openfdaSetId": "17d814e2-b277-4dce-8615-e7fd7cab773f",
+            "timeCourse": {},
+            "timeCourseNotes": [
+                "The cited US label provides dosing and dependence/sedation warnings but does not provide numeric Tmax or half-life in the available SPL fields."
+            ],
+            "doseReference": (
+                "Anxiety oral label context",
+                "1200 to 2400 mg/day across cited usual and upper-label contexts",
+                "usually divided three or four times daily in cited label",
+                1200,
+                2400,
+            ),
+            "doseBar": (400, 1200, 1600, 2400),
+        },
+        "Tasimelteon": {
+            "openfdaSetId": "46b09064-a675-92d5-24a7-dac0410f77ae",
+            "timeCourse": {
+                "tmax": (0.5, 3, "h", "label pharmacokinetics", "High-fat meal delays median Tmax by about 1.75 hours."),
+                "eliminationHalfLife": (1.3, 1.3, "h", "label pharmacokinetics"),
+            },
+            "doseReference": (
+                "Non-24-hour sleep-wake disorder / nighttime sleep disturbance label context",
+                "20 mg/day in cited oral label context",
+                "once nightly about one hour before bedtime, at the same time every night and without food in cited label",
+                20,
+                20,
+            ),
+            "doseBar": (20, 20, 20, 20),
+        },
+        "Nalmefene": {
+            "openfdaSetId": "22d67228-6c24-47ca-afc7-52ef279520a0",
+            "route": "intravenous / intramuscular / subcutaneous",
+            "formulation": "injection",
+            "timeCourse": {
+                "onset": (5, 5, "min", "pharmacodynamic effect", "Label pharmacodynamic study reports more than 80% receptor blockade within 5 minutes after 1 mg IV."),
+                "tmax": (1.5, 2.3, "h", "label pharmacokinetics", "Approximate Tmax after SC and IM administration respectively; IV bolus has immediate systemic input."),
+                "eliminationHalfLife": (9.4, 10.8, "h", "label pharmacokinetics", "Terminal half-life in elderly and young-adult label table contexts."),
+            },
+            "customDoseUseReferences": [
+                {
+                    "indication": "Opioid reversal injection label context",
+                    "route": "intravenous / intramuscular / subcutaneous",
+                    "formulation": "injection",
+                    "amountText": "0.1 mg/70 kg challenge context, 0.5 to 1.5 mg/70 kg overdose-reversal context, or 0.25 to 1.0 mcg/kg postoperative titration context in cited label",
+                    "scheduleText": "titrate at 2 to 5 minute intervals to clinical effect in cited label; do not exceed the context-specific label ceiling",
+                    "ranges": [
+                        {
+                            "min": 0.5,
+                            "max": 1.5,
+                            "unit": "mg/70 kg",
+                            "basis": "weight-based",
+                            "frequency": "opioid overdose reversal context",
+                            "rangeKind": "label-regimen",
+                            "label": "Overdose reversal cumulative context",
+                            "note": "For non-opioid-dependent overdose context in cited injection label; postoperative microgram/kg context is separate.",
+                        },
+                        {
+                            "min": 0.25,
+                            "max": 1.0,
+                            "unit": "mcg/kg",
+                            "basis": "weight-based",
+                            "frequency": "postoperative opioid-depression reversal context",
+                            "rangeKind": "label-regimen",
+                            "label": "Postoperative titration context",
+                            "note": "Initial and cumulative postoperative context in cited injection label.",
+                        },
+                    ],
+                }
+            ],
+        },
+    }
+)
+
 
 def _load_auto_label_data() -> dict:
     if not AUTO_LABEL_DATA_PATH.exists():
@@ -1628,6 +2351,7 @@ def curated_time_course(name: str, source_refs: list[dict]) -> list[dict] | None
         ],
         "sourceRefs": source_refs,
     }
+    time_course["notes"].extend(curated.get("timeCourseNotes", []))
     for field in [
         "onset",
         "tmax",
