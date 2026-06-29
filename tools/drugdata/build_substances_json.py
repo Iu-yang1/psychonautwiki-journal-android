@@ -129,6 +129,19 @@ RECREATIONAL_PSYCHIATRY_CATEGORY_MARKERS = {
     "nootropic",
     "cannabinoid",
     "entactogen",
+    "benzodiazepine",
+    "barbiturate",
+    "eugeroic",
+    "gabapentinoid",
+    "hypnotic",
+    "z-drug",
+    "苯二氮䓬类",
+    "巴比妥类",
+    "促醒剂",
+    "催眠药",
+    "Z 类催眠药",
+    "Z类催眠药",
+    "加巴喷丁类",
     "常见的",
     "易成瘾",
     "研究性化学品",
@@ -175,6 +188,19 @@ def sanitize_clinical_psychiatry_categories(items: list[dict]) -> list[dict]:
     return items
 
 
+def filter_categories_by_usage(categories: list[dict], substances: list[dict]) -> list[dict]:
+    used_categories = {
+        category
+        for substance in substances
+        for category in substance.get("categories", [])
+    }
+    return [
+        category
+        for category in categories
+        if category.get("name") in used_categories
+    ]
+
+
 def iter_source_files(source_dir: Path) -> list[Path]:
     return sorted(
         path
@@ -210,6 +236,7 @@ def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = F
 
     substances = filter_by_retain_categories(substances, retain_categories)
     substances = sanitize_clinical_psychiatry_categories(substances)
+    categories = filter_categories_by_usage(categories, substances)
     data["categories"] = categories
     data["substances"] = substances
     if hybrid:

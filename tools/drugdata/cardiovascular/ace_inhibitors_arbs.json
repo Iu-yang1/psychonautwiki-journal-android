@@ -305,12 +305,12 @@
             "basis": "plasma concentration",
             "note": "Losartan mean peak concentration occurs in about 1 hour; the active metabolite peaks later."
           },
-          "peakEffect": {
+          "peakWindow": {
             "min": 3,
             "max": 4,
             "unit": "h",
             "basis": "active metabolite plasma concentration",
-            "note": "Principal active metabolite peak concentration occurs about 3 to 4 hours after dosing."
+            "note": "Principal active metabolite peak concentration occurs about 3 to 4 hours after dosing; this is not a clinical peak-effect time."
           },
           "eliminationHalfLife": {
             "min": 2,

@@ -233,6 +233,27 @@
         {
           "route": "inhaled",
           "formulation": "inhalation solution",
+          "peakEffect": {
+            "min": 15,
+            "max": 30,
+            "unit": "min",
+            "basis": "pharmacodynamic effect",
+            "note": "Hemodynamic and walking-distance assessments in the cited label used approximately 15 to 30 minutes after inhalation; relationship to long-term clinical response is not established."
+          },
+          "eliminationHalfLife": {
+            "min": 20,
+            "max": 30,
+            "unit": "min",
+            "basis": "label pharmacokinetics",
+            "note": "Label reports iloprost half-life of 20 to 30 minutes."
+          },
+          "washout": {
+            "min": 30,
+            "max": 60,
+            "unit": "min",
+            "basis": "plasma concentration",
+            "note": "Label states iloprost was generally not detectable in plasma 30 minutes to 1 hour after inhalation."
+          },
           "notes": [
             "Inhaled dosing produces route-specific short pulmonary exposure; the entry intentionally does not infer duration from intravenous half-life."
           ],
@@ -545,11 +566,12 @@
             "unit": "h",
             "basis": "parent plasma concentration"
           },
-          "peakEffect": {
+          "peakWindow": {
             "min": 3,
             "max": 4,
             "unit": "h",
-            "basis": "active metabolite plasma concentration"
+            "basis": "active metabolite plasma concentration",
+            "note": "Active metabolite concentration peak; this is not a clinical peak-effect time."
           },
           "eliminationHalfLife": {
             "min": 6.2,

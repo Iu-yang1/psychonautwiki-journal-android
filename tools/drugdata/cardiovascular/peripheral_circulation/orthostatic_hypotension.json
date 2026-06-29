@@ -75,11 +75,12 @@
             "unit": "h",
             "basis": "prodrug plasma concentration"
           },
-          "peakEffect": {
+          "peakWindow": {
             "min": 1,
             "max": 2,
             "unit": "h",
-            "basis": "active metabolite concentration"
+            "basis": "active metabolite concentration",
+            "note": "Desglymidodrine concentration peak; this is not a clinical peak-effect time."
           },
           "eliminationHalfLife": {
             "min": 3,

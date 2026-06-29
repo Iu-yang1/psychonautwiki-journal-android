@@ -8,11 +8,25 @@ DRAWABLE_FIELDS = (
     "onset",
     "tmax",
     "peakEffect",
+    "peakWindow",
     "durationOfAction",
     "eliminationHalfLife",
     "washout",
 )
-ATC_PREFIXES = ("B01", "C01", "C02", "C03", "C04", "C05", "C07", "C08", "C09", "C10")
+ATC_PREFIXES = (
+    "A10",
+    "B01",
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "G04",
+)
 
 
 def contains_chinese(values: list[str]) -> bool:
@@ -84,6 +98,23 @@ def validate_dose_references(substance: dict) -> list[str]:
     return errors
 
 
+def validate_peak_effect_semantics(substance: dict) -> list[str]:
+    errors: list[str] = []
+    pk_markers = ("plasma", "concentration", "pharmacokinetic", "metabolite", "cmax", "tmax")
+    allowed_basis = ("clinical effect", "pharmacodynamic effect")
+    for index, time_course in enumerate(substance.get("timeCourse", [])):
+        peak_effect = time_course.get("peakEffect")
+        if not isinstance(peak_effect, dict):
+            continue
+        basis = str(peak_effect.get("basis", "")).lower()
+        note = str(peak_effect.get("note", "")).lower()
+        if any(marker in basis for marker in allowed_basis):
+            continue
+        if any(marker in f"{basis} {note}" for marker in pk_markers):
+            errors.append(f"timeCourse[{index}].peakEffect appears to describe a PK peak")
+    return errors
+
+
 def main() -> int:
     missing_time_course: list[tuple[str, str]] = []
     missing_atc: list[tuple[str, str]] = []
@@ -92,8 +123,10 @@ def main() -> int:
     dose_reference_errors: list[tuple[str, str, str]] = []
     group_counts = {prefix: 0 for prefix in ATC_PREFIXES}
     total = 0
-    for path in sorted(SOURCE_DIR.glob("*.json")):
+    for path in sorted(SOURCE_DIR.rglob("*.json")):
         data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, dict) or "substances" not in data:
+            continue
         for substance in data.get("substances", []):
             total += 1
             name = substance.get("name", "<unnamed>")
@@ -113,6 +146,8 @@ def main() -> int:
             if has_legacy_roa_dose(substance):
                 dose_reference_errors.append((path.name, name, "legacy roas.dose remains"))
             for error in validate_dose_references(substance):
+                dose_reference_errors.append((path.name, name, error))
+            for error in validate_peak_effect_semantics(substance):
                 dose_reference_errors.append((path.name, name, error))
 
     print(f"Checked cardiovascular substances: {total}")
@@ -137,7 +172,7 @@ def main() -> int:
         for filename, name in missing_time_course:
             print(f"- {filename}: {name}")
     if missing_atc:
-        print("Missing B01/C ATC code:")
+        print("Missing supported cardiovascular-context ATC code:")
         for filename, name in missing_atc:
             print(f"- {filename}: {name}")
     if missing_source:

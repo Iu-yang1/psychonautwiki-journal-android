@@ -36,6 +36,16 @@ fun localizedCategoryDisplayName(categoryName: String): String {
         "atc-c08" -> "C08 钙通道阻滞剂"
         "atc-c09" -> "C09 RAS 药物"
         "atc-c10" -> "C10 调脂药"
+        "clinical-psychiatry" -> "精神科临床药物"
+        "antipsychotic" -> "抗精神病药"
+        "antidepressant" -> "抗抑郁药"
+        "mood-stabilizer" -> "心境稳定剂"
+        "anxiolytic" -> "抗焦虑药"
+        "sedative-hypnotic" -> "镇静催眠药"
+        "adhd-medication" -> "ADHD 用药"
+        "wakefulness-promoting-agent" -> "促醒药"
+        "cognitive-disorder-medication" -> "认知障碍用药"
+        "substance-use-disorder-treatment" -> "物质使用障碍治疗药"
         else -> categoryName
     }
 }

@@ -283,12 +283,12 @@
             "basis": "label pharmacokinetics",
             "note": "Peak ramipril concentrations are rapid; active ramiprilat peaks later."
           },
-          "peakEffect": {
+          "peakWindow": {
             "min": 2,
             "max": 4,
             "unit": "h",
             "basis": "plasma concentration",
-            "note": "Approximate peak active ramiprilat concentration window."
+            "note": "Approximate peak active ramiprilat concentration window; this is not a clinical peak-effect time."
           },
           "eliminationHalfLife": {
             "min": 13,

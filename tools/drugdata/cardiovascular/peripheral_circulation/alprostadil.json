@@ -68,6 +68,13 @@
         {
           "route": "intravenous or intra-arterial",
           "formulation": "continuous infusion",
+          "washout": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "label pharmacokinetics",
+            "note": "Label states excretion is essentially complete within 24 hours; this is not a clinical duration-of-action estimate."
+          },
           "notes": [
             "Clinical effect is infusion dependent and assessed by oxygenation, blood pressure, and ductal-dependent circulation rather than plasma concentration."
           ],
