@@ -12,6 +12,11 @@ CLINICAL_MARKERS = {
     "prescription-medicine",
 }
 
+HANDLED_EFFECT_TIMELINE_STATUSES = {
+    "not-recommended",
+    "source-needed",
+}
+
 ROUTE_ALIASES = {
     "ORAL": {"oral", "po", "by mouth"},
     "SUBLINGUAL": {"sublingual", "sl"},
@@ -59,6 +64,10 @@ def has_number(time_value: object) -> bool:
 
 def has_reliable_timeline_end(time_course: dict) -> bool:
     return has_number(time_course.get("durationOfAction")) or has_number(time_course.get("washout"))
+
+
+def has_handled_timeline_status(time_course: dict) -> bool:
+    return str(time_course.get("effectTimelineStatus") or "").strip().lower() in HANDLED_EFFECT_TIMELINE_STATUSES
 
 
 def roa_has_duration(roa: dict) -> bool:
@@ -115,6 +124,8 @@ def find_missing_duration_sources(substances: list[dict]) -> list[dict]:
                 if not route_matches(time_course.get("route"), app_route):
                     continue
                 if has_reliable_timeline_end(time_course):
+                    continue
+                if has_handled_timeline_status(time_course):
                     continue
                 if not has_number(time_course.get("eliminationHalfLife")):
                     continue

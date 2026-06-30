@@ -39,6 +39,8 @@ data class TimeValue(
 data class TimeCourse(
     val route: String,
     val formulation: String? = null,
+    val effectTimelineStatus: String? = null,
+    val effectTimelineNote: String? = null,
     val onset: TimeValue? = null,
     val tmax: TimeValue? = null,
     val peakEffect: TimeValue? = null,
