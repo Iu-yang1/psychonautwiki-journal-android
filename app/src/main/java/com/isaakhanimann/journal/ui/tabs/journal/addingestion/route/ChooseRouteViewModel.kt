@@ -25,6 +25,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.navigation.toRoute
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
+import com.isaakhanimann.journal.data.substances.classes.availableRoutesForIngestion
 import com.isaakhanimann.journal.data.substances.repositories.SubstanceRepository
 import com.isaakhanimann.journal.ui.main.navigation.graphs.ChooseRouteOfAddIngestionRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -40,7 +41,7 @@ class ChooseRouteViewModel @Inject constructor(
     val substance = substanceRepo.getSubstance(substanceName)
 
     var showOtherRoutes by mutableStateOf(false)
-    val pwRoutes = substance?.roas?.map { it.route } ?: emptyList()
+    val pwRoutes = substance?.availableRoutesForIngestion() ?: emptyList()
     private val otherRoutes = AdministrationRoute.entries.filter { route ->
         !pwRoutes.contains(route)
     }

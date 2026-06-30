@@ -15244,6 +15244,13 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "formulation pharmacodynamic effect",
+            "note": "DailyMed describes extended-release nifedipine as a once-daily formulation with 24-hour blood-pressure control in label pharmacology/clinical study context."
+          },
           "notes": [
             "Labels describe a second small peak or shoulder around 6-12 hours for some extended-release tablets."
           ],
@@ -34154,6 +34161,13 @@
             "basis": "label pharmacokinetics",
             "note": "Poor CYP2D6 metabolizers may have a longer half-life."
           },
+          "durationOfAction": {
+            "min": 3.3,
+            "max": 6.4,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed reports dose-related beta-blocking effect duration by exercise-heart-rate reduction; these values mark about 50% of maximum beta-blocking effect after single oral doses, not complete offset."
+          },
           "notes": [
             "Effect duration is dose-related and formulation-specific.",
             "Plasma concentration is not the usual clinical monitoring endpoint."
@@ -34618,6 +34632,13 @@
             "max": 7,
             "unit": "h",
             "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": null,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed describes significant beta-blocking effect persisting for at least 24 hours after oral doses."
           },
           "notes": [
             "Atenolol undergoes little or no hepatic metabolism and is primarily renally eliminated.",
@@ -42421,6 +42442,13 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "formulation pharmacodynamic effect",
+            "note": "DailyMed describes extended-release nifedipine as a once-daily formulation with 24-hour blood-pressure control in label pharmacology/clinical study context."
+          },
           "notes": [
             "Labels describe a second small peak or shoulder around 6-12 hours for some extended-release tablets."
           ],
@@ -45152,6 +45180,20 @@
             "max": 4,
             "unit": "h",
             "basis": "active metabolite pharmacokinetics"
+          },
+          "peakEffect": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed describes peak standing systolic blood-pressure effect about 1 hour after a dose."
+          },
+          "durationOfAction": {
+            "min": 2,
+            "max": 3,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed describes pressor effect persisting for about 2 to 3 hours after a dose."
           },
           "notes": [
             "The active metabolite desglymidodrine, not the prodrug alone, drives the pressor response."

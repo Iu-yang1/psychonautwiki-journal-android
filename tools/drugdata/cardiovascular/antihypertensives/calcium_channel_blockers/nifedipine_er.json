@@ -103,6 +103,13 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "formulation pharmacodynamic effect",
+            "note": "DailyMed describes extended-release nifedipine as a once-daily formulation with 24-hour blood-pressure control in label pharmacology/clinical study context."
+          },
           "notes": [
             "Labels describe a second small peak or shoulder around 6-12 hours for some extended-release tablets."
           ],

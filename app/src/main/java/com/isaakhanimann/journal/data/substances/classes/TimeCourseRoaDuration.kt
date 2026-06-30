@@ -24,13 +24,36 @@ import com.isaakhanimann.journal.data.substances.classes.roa.DurationUnits
 import com.isaakhanimann.journal.data.substances.classes.roa.RoaDuration
 import kotlin.math.min
 
+fun Substance.availableRoutesForIngestion(): List<AdministrationRoute> {
+    val roaRoutes = roas.map { it.route }
+    val timeCourseRoutes = timeCourse.flatMap { it.matchingAdministrationRoutes() }
+    return (roaRoutes + timeCourseRoutes).distinct()
+}
+
 fun Substance.derivedRoaDurationForRoute(route: AdministrationRoute): RoaDuration? {
     return timeCourse.firstOrNull { it.matchesRoute(route) }?.toRoaDurationForTimeline()
 }
 
 private fun TimeCourse.matchesRoute(route: AdministrationRoute): Boolean {
-    val routeText = route.normalizedRouteText()
-    return normalizedRouteText() in routeAliases.getValue(route) || normalizedRouteText() == routeText
+    return route in matchingAdministrationRoutes()
+}
+
+fun TimeCourse.matchingAdministrationRoutes(): Set<AdministrationRoute> {
+    val normalizedRoute = normalizedRouteText()
+    val routeWords = normalizedRoute
+        .replace("/", " ")
+        .replace(",", " ")
+        .replace(";", " ")
+        .split(" ")
+        .filter { it.isNotBlank() }
+        .toSet()
+    return AdministrationRoute.entries.filter { route ->
+        val routeText = route.normalizedRouteText()
+        val aliases = routeAliases.getValue(route)
+        normalizedRoute == routeText ||
+            normalizedRoute in aliases ||
+            aliases.any { alias -> alias in routeWords || normalizedRoute.contains(alias) }
+    }.toSet()
 }
 
 internal fun TimeCourse.toRoaDurationForTimeline(): RoaDuration? {
@@ -64,8 +87,7 @@ internal fun TimeCourse.toRoaDurationForTimeline(): RoaDuration? {
 private fun TimeCourse.totalEndHours(): Float? {
     val clinicalEnd = durationOfAction?.endpointHours()
     val washoutEnd = washout?.endpointHours()
-    val clearanceEstimate = eliminationHalfLife?.representativeHours()?.times(5f)
-    return clinicalEnd ?: washoutEnd ?: clearanceEstimate
+    return clinicalEnd ?: washoutEnd
 }
 
 private fun estimateOnsetHours(totalEnd: Float): Float {
@@ -93,12 +115,12 @@ private val routeAliases = mapOf(
     AdministrationRoute.ORAL to setOf("oral", "po", "by mouth"),
     AdministrationRoute.SUBLINGUAL to setOf("sublingual", "sl"),
     AdministrationRoute.BUCCAL to setOf("buccal"),
-    AdministrationRoute.INSUFFLATED to setOf("intranasal", "insufflated", "nasal"),
+    AdministrationRoute.INSUFFLATED to setOf("intranasal", "insufflated", "nasal", "nasal spray"),
     AdministrationRoute.RECTAL to setOf("rectal"),
-    AdministrationRoute.TRANSDERMAL to setOf("transdermal", "topical patch"),
-    AdministrationRoute.SUBCUTANEOUS to setOf("subcutaneous", "sc", "subcut"),
-    AdministrationRoute.INTRAMUSCULAR to setOf("intramuscular", "im"),
-    AdministrationRoute.INTRAVENOUS to setOf("intravenous", "iv", "iv infusion", "infusion"),
+    AdministrationRoute.TRANSDERMAL to setOf("transdermal", "topical patch", "patch"),
+    AdministrationRoute.SUBCUTANEOUS to setOf("subcutaneous", "sc", "subcut", "subcutaneous injection"),
+    AdministrationRoute.INTRAMUSCULAR to setOf("intramuscular", "im", "intramuscular injection"),
+    AdministrationRoute.INTRAVENOUS to setOf("intravenous", "iv", "iv infusion", "infusion", "intravenous infusion"),
     AdministrationRoute.SMOKED to setOf("smoked", "vaporized"),
     AdministrationRoute.INHALED to setOf("inhaled")
 )

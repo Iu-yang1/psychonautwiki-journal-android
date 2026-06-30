@@ -256,18 +256,11 @@ private fun TimeCourse.toChartModel(): TimeCourseChartModel? {
     val onsetEnd = representativeOnset ?: onsetStart
     val durationEnd = durationOfAction?.endpointHours()
     val washoutEnd = washout?.endpointHours()
-    val clearanceEnd = eliminationHalfLife?.representativeHours()?.times(5f)
-    val chartEndCandidate = durationEnd ?: washoutEnd ?: clearanceEnd
+    val chartEndCandidate = durationEnd ?: washoutEnd ?: return null
     val peak = peakEffect?.representativeHours()
         ?: tmax?.representativeHours()
-        ?: if (chartEndCandidate != null) {
-            onsetEnd + ((chartEndCandidate - onsetEnd).coerceAtLeast(0.5f) * 0.25f)
-        } else {
-            null
-        }
-        ?: return null
-    val rawEnd = chartEndCandidate ?: (peak + max(peak * 0.5f, 0.5f))
-    val end = max(rawEnd, peak + 0.5f)
+        ?: onsetEnd + ((chartEndCandidate - onsetEnd).coerceAtLeast(0.5f) * 0.25f)
+    val end = max(chartEndCandidate, peak + 0.5f)
     val roundedEnd = max(0.25f, ceil(end * 2f) / 2f)
     return TimeCourseChartModel(
         onsetStartHour = onsetStart.coerceAtLeast(0f),

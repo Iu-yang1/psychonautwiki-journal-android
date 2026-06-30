@@ -101,6 +101,13 @@
             "basis": "label pharmacokinetics",
             "note": "Poor CYP2D6 metabolizers may have a longer half-life."
           },
+          "durationOfAction": {
+            "min": 3.3,
+            "max": 6.4,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed reports dose-related beta-blocking effect duration by exercise-heart-rate reduction; these values mark about 50% of maximum beta-blocking effect after single oral doses, not complete offset."
+          },
           "notes": [
             "Effect duration is dose-related and formulation-specific.",
             "Plasma concentration is not the usual clinical monitoring endpoint."
@@ -565,6 +572,13 @@
             "max": 7,
             "unit": "h",
             "basis": "label pharmacokinetics"
+          },
+          "durationOfAction": {
+            "min": 24,
+            "max": null,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed describes significant beta-blocking effect persisting for at least 24 hours after oral doses."
           },
           "notes": [
             "Atenolol undergoes little or no hepatic metabolism and is primarily renally eliminated.",

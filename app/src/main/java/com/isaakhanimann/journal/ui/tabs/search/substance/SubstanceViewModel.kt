@@ -24,6 +24,8 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.entities.SubstanceColor
+import com.isaakhanimann.journal.data.substances.classes.availableRoutesForIngestion
+import com.isaakhanimann.journal.data.substances.classes.derivedRoaDurationForRoute
 import com.isaakhanimann.journal.data.substances.repositories.SubstanceRepository
 import com.isaakhanimann.journal.ui.main.navigation.graphs.SubstanceRoute
 import com.isaakhanimann.journal.ui.tabs.journal.experience.TimelineDisplayOption
@@ -68,11 +70,12 @@ class SubstanceViewModel @Inject constructor(
 
     val timelineDisplayOptionFlow = ingestionTimeFlow.map { ingestionTime ->
         val substance = substanceWithCategories.substance
-        val roasWithDurationsDefined = substance.roas.filter { roa ->
-            val roaDuration = roa.roaDuration
+        val routesWithDurationsDefined = substance.availableRoutesForIngestion().mapNotNull { route ->
+            val roa = substance.getRoa(route)
+            val roaDuration = roa?.roaDuration ?: substance.derivedRoaDurationForRoute(route)
             val isEveryDurationNull =
                 roaDuration?.onset == null && roaDuration?.comeup == null && roaDuration?.peak == null && roaDuration?.offset == null && roaDuration?.total == null
-            return@filter !isEveryDurationNull
+            if (isEveryDurationNull) null else route to roaDuration
         }
         val roasWithDosesDefined = substance.roas.filter { roa ->
             val roaDose = roa.roaDose
@@ -82,15 +85,16 @@ class SubstanceViewModel @Inject constructor(
         }
         val firstAverageCommonDose =
             roasWithDosesDefined.firstNotNullOfOrNull { it.roaDose?.averageCommonDose } ?: 100.0
-        val dataForEffectLines = roasWithDurationsDefined.mapIndexed { index, roa ->
+        val dataForEffectLines = routesWithDurationsDefined.mapIndexed { index, (route, roaDuration) ->
+            val roa = substance.getRoa(route)
             DataForOneEffectLine(
                 substanceName = "name$index",
-                route = roa.route,
-                roaDuration = roa.roaDuration,
-                height = roa.roaDose?.getStrengthRelativeToCommonDose(firstAverageCommonDose)
+                route = route,
+                roaDuration = roaDuration,
+                height = roa?.roaDose?.getStrengthRelativeToCommonDose(firstAverageCommonDose)
                     ?.toFloat() ?: 1f,
                 horizontalWeight = 0.5f,
-                color = SubstanceColor.Predefined(roa.route.color),
+                color = SubstanceColor.Predefined(route.color),
                 startTime = ingestionTime.getInstant(),
                 endTime = null,
             )
