@@ -237,7 +237,9 @@ private data class TimeCourseChartModel(
             endHour <= 24f -> 4f
             endHour <= 72f -> 12f
             endHour <= 168f -> 24f
-            else -> 48f
+            endHour <= 720f -> 168f
+            endHour <= 4320f -> 720f
+            else -> 2160f
         }
         val marks = mutableListOf(0f)
         var next = step
@@ -256,9 +258,12 @@ private fun TimeCourse.toChartModel(): TimeCourseChartModel? {
     val onsetEnd = representativeOnset ?: onsetStart
     val durationEnd = durationOfAction?.endpointHours()
     val washoutEnd = washout?.endpointHours()
-    val chartEndCandidate = durationEnd ?: washoutEnd ?: return null
+    val chartEndCandidate = durationEnd ?: washoutEnd ?: pkEstimatedEndHours() ?: return null
     val peak = peakEffect?.representativeHours()
         ?: tmax?.representativeHours()
+        ?: peakWindow?.representativeHours()
+        ?: timeToSteadyState?.representativeHours()
+        ?: defaultPkPeakHours()
         ?: onsetEnd + ((chartEndCandidate - onsetEnd).coerceAtLeast(0.5f) * 0.25f)
     val end = max(chartEndCandidate, peak + 0.5f)
     val roundedEnd = max(0.25f, ceil(end * 2f) / 2f)
@@ -269,6 +274,32 @@ private fun TimeCourse.toChartModel(): TimeCourseChartModel? {
         fallControlHour = (peak + (roundedEnd - peak) * 0.45f).coerceIn(0f, roundedEnd),
         endHour = roundedEnd
     )
+}
+
+private fun TimeCourse.pkEstimatedEndHours(): Float? {
+    if (effectTimelineStatus != "pk-estimated") return null
+    val halfLife = eliminationHalfLife?.representativeHours() ?: return null
+    val peak = peakEffect?.representativeHours()
+        ?: tmax?.representativeHours()
+        ?: peakWindow?.representativeHours()
+        ?: timeToSteadyState?.representativeHours()
+        ?: defaultPkPeakHours()
+        ?: 0.25f
+    return peak + halfLife * PK_HALF_LIVES_TO_LOW_LEVEL
+}
+
+private fun TimeCourse.defaultPkPeakHours(): Float? {
+    if (effectTimelineStatus != "pk-estimated") return null
+    val routeText = route.trim().lowercase().replace("_", " ")
+    val formulationText = formulation?.lowercase().orEmpty()
+    return when {
+        depotRelease || "depot" in formulationText -> 24f
+        "intravenous" in routeText || routeText == "iv" -> 0.25f
+        "intranasal" in routeText || "nasal" in routeText -> 0.5f
+        "injection" in formulationText -> 0.5f
+        "oral" in routeText -> 1f
+        else -> 0.5f
+    }
 }
 
 private fun Float.toAxisLabel(): String {
@@ -299,3 +330,5 @@ private fun Double.toReadableString(): String {
         toString()
     }
 }
+
+private const val PK_HALF_LIVES_TO_LOW_LEVEL = 5f

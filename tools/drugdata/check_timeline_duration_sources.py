@@ -14,6 +14,7 @@ CLINICAL_MARKERS = {
 
 HANDLED_EFFECT_TIMELINE_STATUSES = {
     "not-recommended",
+    "pk-estimated",
     "source-needed",
 }
 

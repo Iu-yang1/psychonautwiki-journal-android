@@ -60,8 +60,7 @@ internal fun TimeCourse.toRoaDurationForTimeline(): RoaDuration? {
     var totalEnd = totalEndHours() ?: return null
     val onsetEnd = (onset?.representativeHours() ?: estimateOnsetHours(totalEnd))
         .coerceAtLeast(0f)
-    var peakAt = (peakEffect?.representativeHours() ?: tmax?.representativeHours())
-        ?: estimatePeakHours(onsetEnd, totalEnd)
+    var peakAt = pkPeakHours() ?: estimatePeakHours(onsetEnd, totalEnd)
 
     val minPhase = min(0.1f, totalEnd * 0.05f).coerceAtLeast(1f / 60f)
     peakAt = peakAt.coerceAtLeast(onsetEnd + minPhase)
@@ -87,7 +86,35 @@ internal fun TimeCourse.toRoaDurationForTimeline(): RoaDuration? {
 private fun TimeCourse.totalEndHours(): Float? {
     val clinicalEnd = durationOfAction?.endpointHours()
     val washoutEnd = washout?.endpointHours()
-    return clinicalEnd ?: washoutEnd
+    val pkEnd = if (effectTimelineStatus == "pk-estimated") pkEstimatedEndHours() else null
+    return clinicalEnd ?: washoutEnd ?: pkEnd
+}
+
+private fun TimeCourse.pkEstimatedEndHours(): Float? {
+    val halfLife = eliminationHalfLife?.representativeHours() ?: return null
+    val peak = pkPeakHours() ?: 0.25f
+    return peak + halfLife * PK_HALF_LIVES_TO_LOW_LEVEL
+}
+
+private fun TimeCourse.pkPeakHours(): Float? {
+    return peakEffect?.representativeHours()
+        ?: tmax?.representativeHours()
+        ?: peakWindow?.representativeHours()
+        ?: timeToSteadyState?.representativeHours()
+        ?: if (effectTimelineStatus == "pk-estimated") defaultPkPeakHours() else null
+}
+
+private fun TimeCourse.defaultPkPeakHours(): Float {
+    val routeText = normalizedRouteText()
+    val formulationText = formulation?.lowercase().orEmpty()
+    return when {
+        depotRelease || "depot" in formulationText -> 24f
+        "intravenous" in routeText || routeText == "iv" -> 0.25f
+        "intranasal" in routeText || "nasal" in routeText -> 0.5f
+        "injection" in formulationText -> 0.5f
+        "oral" in routeText -> 1f
+        else -> 0.5f
+    }
 }
 
 private fun estimateOnsetHours(totalEnd: Float): Float {
@@ -110,6 +137,8 @@ private fun Float.toHourDurationRange(): DurationRange {
 private fun AdministrationRoute.normalizedRouteText(): String = name.lowercase().replace("_", " ")
 
 private fun TimeCourse.normalizedRouteText(): String = route.trim().lowercase().replace("_", " ")
+
+private const val PK_HALF_LIVES_TO_LOW_LEVEL = 5f
 
 private val routeAliases = mapOf(
     AdministrationRoute.ORAL to setOf("oral", "po", "by mouth"),

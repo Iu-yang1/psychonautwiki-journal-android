@@ -1839,8 +1839,8 @@
             "basis": "label pharmacokinetics",
             "note": "Average elimination half-life of unchanged buspirone after single 10 to 40 mg doses."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -12675,8 +12675,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended for continuous infusion records because clinical exposure depends on infusion start, stop, and titration time rather than a fixed duration after one ingestion event."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         },
         {
           "route": "oral",
@@ -12705,8 +12705,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -12991,8 +12991,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -13177,8 +13177,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life because tissue accumulation, loading history, and very long terminal elimination make a simple curve misleading."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -13466,8 +13466,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -13718,8 +13718,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -13944,8 +13944,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -14196,8 +14196,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -14424,8 +14424,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -14678,8 +14678,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -15704,8 +15704,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life alone; anticoagulant or antiplatelet effect and recovery are assay-, indication-, and context-dependent."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -16366,8 +16366,8 @@
               "evidenceLevel": "TERMINOLOGY"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -17376,8 +17376,8 @@
               "evidenceLevel": "TERMINOLOGY"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -27434,8 +27434,8 @@
               "evidenceLevel": "TERMINOLOGY"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -34496,8 +34496,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -35153,8 +35153,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended for continuous infusion records because clinical exposure depends on infusion start, stop, and titration time rather than a fixed duration after one ingestion event."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -35583,8 +35583,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life alone; anticoagulant or antiplatelet effect and recovery are assay-, indication-, and context-dependent."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -35868,8 +35868,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         },
         {
           "route": "intravenous",
@@ -35910,8 +35910,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -36310,8 +36310,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -37104,8 +37104,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -37496,8 +37496,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -37968,8 +37968,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -39160,8 +39160,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -39353,8 +39353,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -39543,8 +39543,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -39737,8 +39737,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life alone; anticoagulant or antiplatelet effect and recovery are assay-, indication-, and context-dependent."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -39930,8 +39930,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life alone; anticoagulant or antiplatelet effect and recovery are assay-, indication-, and context-dependent."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -40124,8 +40124,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life alone; anticoagulant or antiplatelet effect and recovery are assay-, indication-, and context-dependent."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -40323,8 +40323,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life alone; anticoagulant or antiplatelet effect and recovery are assay-, indication-, and context-dependent."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -40519,8 +40519,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -41502,8 +41502,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -42704,8 +42704,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         },
         {
           "route": "oral",
@@ -43398,8 +43398,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life alone; anticoagulant or antiplatelet effect and recovery are assay-, indication-, and context-dependent."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -43628,8 +43628,8 @@
               "evidenceLevel": "SOURCE_REFERENCE"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life alone; anticoagulant or antiplatelet effect and recovery are assay-, indication-, and context-dependent."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -43857,8 +43857,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -44289,8 +44289,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -44633,8 +44633,8 @@
               "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; cardiorenal and metabolic clinical effects are chronic/context-dependent rather than a single-dose curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -44796,8 +44796,8 @@
               "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; cardiorenal and metabolic clinical effects are chronic/context-dependent rather than a single-dose curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -44954,8 +44954,8 @@
               "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -45860,8 +45860,8 @@
               "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -46033,8 +46033,8 @@
               "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -46536,8 +46536,8 @@
               "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -46713,8 +46713,8 @@
               "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended for continuous infusion records because clinical exposure depends on infusion start, stop, and titration time rather than a fixed duration after one ingestion event."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -47045,8 +47045,8 @@
               "labelSection": "2 Dosage and Administration; 5 Warnings and Precautions; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended for continuous infusion records because clinical exposure depends on infusion start, stop, and titration time rather than a fixed duration after one ingestion event."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -47211,8 +47211,8 @@
               "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life alone; anticoagulant or antiplatelet effect and recovery are assay-, indication-, and context-dependent."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -47460,8 +47460,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -47782,8 +47782,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -48319,8 +48319,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -48576,8 +48576,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -48827,8 +48827,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -49699,8 +49699,8 @@
             "unit": "day",
             "basis": "plasma concentration"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -51115,8 +51115,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -51366,8 +51366,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -51642,8 +51642,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -52153,8 +52153,8 @@
               "labelSection": "12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -53728,8 +53728,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -53966,8 +53966,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -54210,8 +54210,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -54455,8 +54455,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -54706,8 +54706,8 @@
             "basis": "label pharmacokinetics",
             "note": "DailyMed progesterone capsule pharmacokinetic table reports mean half-life values around 16.8 to 18.3 hours with standard deviations; this range approximates those reported values."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -54952,8 +54952,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -55162,8 +55162,8 @@
             "basis": "label pharmacokinetics",
             "note": "SmPC describes a prolonged biphasic half-life from 3 hours up to 12 days; do not interpret this as ordinary duration of action."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -55430,8 +55430,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -55673,8 +55673,8 @@
             "basis": "label pharmacokinetics",
             "note": "5th to 95th percentile range; mean about 30 hours."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -55921,8 +55921,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -56168,8 +56168,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -56409,8 +56409,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -56877,8 +56877,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -57118,8 +57118,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -57353,8 +57353,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -57881,8 +57881,8 @@
             "basis": "label pharmacokinetics",
             "note": "Terminal elimination half-life; alpha phase is about 3.6 hours in cited SmPC."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -58135,8 +58135,8 @@
             "basis": "literature estimate",
             "note": "Study reports mean early disappearance half-life of 5 hours and mean late disappearance half-life of 26 hours."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -58633,8 +58633,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -58874,8 +58874,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -59115,8 +59115,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -60074,8 +60074,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -60317,8 +60317,8 @@
             "basis": "label pharmacokinetics",
             "note": "Mean pimavanserin half-life; active metabolite mean half-life is about 200 hours."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -60559,8 +60559,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -61060,8 +61060,8 @@
             "basis": "literature estimate",
             "note": "Approximate terminal elimination half-life range from human PK literature; do not treat as clinical duration."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -61378,8 +61378,8 @@
             "basis": "literature estimate",
             "note": "Approximate steady-state time reflecting long half-life."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -61691,8 +61691,8 @@
             "basis": "literature estimate",
             "note": "Approximate parent-drug half-life in pharmacokinetic literature."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -61998,8 +61998,8 @@
             "basis": "literature estimate",
             "note": "Very long half-life supports weekly dosing; this is not an acute effect curve."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -62293,8 +62293,8 @@
             "unit": "h",
             "basis": "label/literature estimate"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -62599,8 +62599,8 @@
             "unit": "h",
             "basis": "label/literature estimate"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -62906,8 +62906,8 @@
             "basis": "literature estimate",
             "note": "Approximate steady-state PK literature value; active metabolite context may differ."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -63193,8 +63193,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -63442,8 +63442,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -63709,8 +63709,8 @@
             "unit": "h",
             "basis": "regulatory/literature estimate"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; LDL-C or triglyceride response develops over weeks and is distinct from pharmacokinetic half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -63996,8 +63996,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -64236,8 +64236,8 @@
             "basis": "label pharmacokinetics",
             "note": "Fluoxetine half-life after chronic administration; norfluoxetine half-life is longer."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -64481,8 +64481,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -64714,8 +64714,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -64958,8 +64958,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -65190,8 +65190,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -65897,8 +65897,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -66129,8 +66129,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -66368,8 +66368,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -66624,8 +66624,8 @@
             "basis": "label pharmacokinetics",
             "note": "UK eMC SmPC describes biphasic elimination with terminal half-life of 5 to 13 hours."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -66880,8 +66880,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -67124,8 +67124,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -67364,8 +67364,8 @@
             "basis": "label pharmacokinetics",
             "note": "SmPC reports mean plasma half-life about 25 hours with this range."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -67602,8 +67602,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -67834,8 +67834,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -68099,8 +68099,8 @@
             "basis": "label pharmacokinetics",
             "note": "SmPC states steady-state plasma levels are reached within one week for most patients."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -68373,8 +68373,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -68636,8 +68636,8 @@
             "basis": "label pharmacokinetics",
             "note": "FDA label states steady state is reached in the second week."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -68905,8 +68905,8 @@
             "basis": "label pharmacokinetics",
             "note": "SmPC states concentrations increase over the first week and remain stable thereafter."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -69143,8 +69143,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -69612,8 +69612,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -69845,8 +69845,8 @@
             "basis": "label pharmacokinetics",
             "note": "Biphasic terminal plasma half-life in cited SmPC."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -70089,8 +70089,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -70327,8 +70327,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -70566,8 +70566,8 @@
             "basis": "label pharmacokinetics",
             "note": "Parent nefazodone half-life; active metabolites and nonlinear kinetics complicate interpretation."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -71025,8 +71025,8 @@
             "basis": "label pharmacokinetics",
             "note": "Approximate half-life of dosulepin and metabolites in cited SmPC."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -71930,8 +71930,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -72126,8 +72126,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -72348,8 +72348,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -72535,8 +72535,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -72722,8 +72722,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -72932,8 +72932,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -73136,8 +73136,8 @@
             "unit": "week",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -73356,8 +73356,8 @@
             "basis": "label pharmacokinetics",
             "note": "SmPC reports 20.0 ± 4.1 hours and 14.0 hours in adults."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -73602,8 +73602,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -73835,8 +73835,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -74068,8 +74068,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -74307,8 +74307,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -74540,8 +74540,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -74790,8 +74790,8 @@
             "basis": "label pharmacokinetics",
             "note": "SmPC reports mean half-life of the principal active metabolite norprazepam as 63 hours before and 70 hours after multiple dosing."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -75054,8 +75054,8 @@
             "basis": "label pharmacokinetics",
             "note": "Estimated mean clobazam half-life; N-desmethylclobazam half-life is about 71 to 82 hours."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -75322,8 +75322,8 @@
             "basis": "literature estimate",
             "note": "Human PK study abstract reports unchanged tofisopam plasma half-life of 2.7 to 3.5 hours; total radioactivity declines more slowly."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -75612,8 +75612,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -75851,8 +75851,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -76096,8 +76096,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -76335,8 +76335,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -76574,8 +76574,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -76839,8 +76839,8 @@
             "unit": "h",
             "basis": "label/literature estimate"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -77125,8 +77125,8 @@
             "basis": "label pharmacokinetics",
             "note": "Parent/2-oxoquazepam by day 7; N-desalkyl-2-oxoquazepam by day 13 in cited label."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -77366,8 +77366,8 @@
             "basis": "label pharmacokinetics",
             "note": "Assay-dependent mean half-life values in cited SmPC."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -78292,8 +78292,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -78516,8 +78516,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -78719,8 +78719,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -78922,8 +78922,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -79116,8 +79116,8 @@
             "basis": "label pharmacokinetics",
             "note": "Mean half-life 7.02 +/- 4.74 hours in the cited label."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -79319,8 +79319,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -79528,8 +79528,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -79737,8 +79737,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -79940,8 +79940,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -80137,8 +80137,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -80346,8 +80346,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -80549,8 +80549,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Effect timeline charting is not recommended from plasma half-life; psychiatric clinical response usually develops over days to weeks and is not a single-dose effect curve."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
@@ -80957,8 +80957,8 @@
             "basis": "label pharmacokinetics",
             "note": "Terminal half-life in elderly and young-adult label table contexts."
           },
-          "effectTimelineStatus": "not-recommended",
-          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
         }
       ],
       "tdm": {
