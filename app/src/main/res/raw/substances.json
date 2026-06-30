@@ -1839,8 +1839,8 @@
             "basis": "label pharmacokinetics",
             "note": "Average elimination half-life of unchanged buspirone after single 10 to 40 mg doses."
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -11905,8 +11905,22 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed reports onset around 1 hour, peak blood-pressure reduction around 6 hours, and antihypertensive effect observed 24 hours after recommended once-daily doses.",
+          "durationOfAction": {
+            "min": 24,
+            "max": null,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed reports onset around 1 hour, peak blood-pressure reduction around 6 hours, and antihypertensive effect observed 24 hours after recommended once-daily doses."
+          },
+          "peakEffect": {
+            "min": 6,
+            "max": 6,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed reports onset around 1 hour, peak blood-pressure reduction around 6 hours, and antihypertensive effect observed 24 hours after recommended once-daily doses."
+          }
         }
       ],
       "tdm": {
@@ -12123,8 +12137,22 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed reports peak response around 6 hours and statistically significant trough 24-hour responses for 50 to 150 mg once-daily doses; response is dose-dependent.",
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed reports peak response around 6 hours and statistically significant trough 24-hour responses for 50 to 150 mg once-daily doses; response is dose-dependent."
+          },
+          "peakEffect": {
+            "min": 6,
+            "max": 6,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed reports peak response around 6 hours and statistically significant trough 24-hour responses for 50 to 150 mg once-daily doses; response is dose-dependent."
+          }
         }
       ],
       "tdm": {
@@ -12677,8 +12705,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "doseUseReferences": [
@@ -12963,8 +12991,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "doseUseReferences": [
@@ -13438,8 +13466,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "tdm": {
@@ -13690,8 +13718,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "tdm": {
@@ -13916,8 +13944,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "tdm": {
@@ -14168,8 +14196,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "tdm": {
@@ -14396,8 +14424,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "tdm": {
@@ -14650,8 +14678,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "tdm": {
@@ -16338,8 +16366,8 @@
               "evidenceLevel": "TERMINOLOGY"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "tdm": {
@@ -17348,8 +17376,8 @@
               "evidenceLevel": "TERMINOLOGY"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "tdm": {
@@ -27406,8 +27434,8 @@
               "evidenceLevel": "TERMINOLOGY"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -34468,8 +34496,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -34892,8 +34920,22 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed describes immediate-release carvedilol trough blood-pressure response around 12 hours in twice-daily trials and uses standing systolic pressure about 1 hour after dosing to guide tolerability.",
+          "durationOfAction": {
+            "min": 12,
+            "max": 12,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed describes immediate-release carvedilol trough blood-pressure response around 12 hours in twice-daily trials and uses standing systolic pressure about 1 hour after dosing to guide tolerability."
+          },
+          "peakEffect": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed describes immediate-release carvedilol trough blood-pressure response around 12 hours in twice-daily trials and uses standing systolic pressure about 1 hour after dosing to guide tolerability."
+          }
         }
       ],
       "tdm": {
@@ -35826,8 +35868,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         },
         {
           "route": "intravenous",
@@ -35868,8 +35910,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "doseUseReferences": [
@@ -36268,8 +36310,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -36460,8 +36502,15 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed reports blood-pressure lowering maintained throughout the 24-hour period with once-daily olmesartan medoxomil.",
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed reports blood-pressure lowering maintained throughout the 24-hour period with once-daily olmesartan medoxomil."
+          }
         }
       ],
       "tdm": {
@@ -36650,8 +36699,15 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed reports clinically significant trough blood-pressure effects at 24 hours post-dose after once-daily treatment.",
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed reports clinically significant trough blood-pressure effects at 24 hours post-dose after once-daily treatment."
+          }
         }
       ],
       "tdm": {
@@ -36843,8 +36899,22 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed reports onset within 3 hours and maintenance of once-daily antihypertensive effect through the full 24-hour dosing interval.",
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed reports onset within 3 hours and maintenance of once-daily antihypertensive effect through the full 24-hour dosing interval."
+          },
+          "onset": {
+            "min": 3,
+            "max": 3,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed reports onset within 3 hours and maintenance of once-daily antihypertensive effect through the full 24-hour dosing interval."
+          }
         }
       ],
       "tdm": {
@@ -37034,8 +37104,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -37426,8 +37496,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -37898,8 +37968,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -38085,10 +38155,32 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "evidenceLevel": "REGULATORY_LABEL"
+            },
+            {
+              "title": "Hydralazine - StatPearls - NCBI Bookshelf",
+              "url": "https://www.ncbi.nlm.nih.gov/books/NBK470296/",
+              "sourceType": "review",
+              "accessedDate": "2026-06-30",
+              "evidenceLevel": "CLINICAL_REVIEW",
+              "note": "Used for oral onset and duration of blood-pressure-lowering effect."
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "MedCentral/PDR drug monographs report oral antihypertensive effect begins in about 20 to 30 minutes and lasts about 2 to 4 hours; DailyMed supplies the PK context.",
+          "durationOfAction": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "MedCentral/PDR drug monographs report oral antihypertensive effect begins in about 20 to 30 minutes and lasts about 2 to 4 hours; DailyMed supplies the PK context."
+          },
+          "onset": {
+            "min": 20,
+            "max": 30,
+            "unit": "min",
+            "basis": "pharmacodynamic effect",
+            "note": "MedCentral/PDR drug monographs report oral antihypertensive effect begins in about 20 to 30 minutes and lasts about 2 to 4 hours; DailyMed supplies the PK context."
+          }
         },
         {
           "route": "intravenous",
@@ -38121,6 +38213,14 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "evidenceLevel": "REGULATORY_LABEL"
+            },
+            {
+              "title": "Hydralazine - StatPearls - NCBI Bookshelf",
+              "url": "https://www.ncbi.nlm.nih.gov/books/NBK470296/",
+              "sourceType": "review",
+              "accessedDate": "2026-06-30",
+              "evidenceLevel": "CLINICAL_REVIEW",
+              "note": "Used for oral onset and duration of blood-pressure-lowering effect."
             }
           ]
         }
@@ -40419,8 +40519,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed antiarrhythmic sources do not support a simple single-dose effect timeline from plasma half-life. ECG effects, loading history, renal function, active metabolites, and arrhythmia context determine interpretation."
         }
       ],
       "tdm": {
@@ -41188,10 +41288,25 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "evidenceLevel": "REGULATORY_LABEL"
+            },
+            {
+              "title": "Bisoprolol, a once-a-day beta-blocking agent for mild to moderate hypertension",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/8004841/",
+              "sourceType": "clinical-study",
+              "accessedDate": "2026-06-30",
+              "evidenceLevel": "CLINICAL_STUDY",
+              "note": "Used for 24-hour blood-pressure control context."
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "A PubMed-indexed study describes 24-hour blood-pressure control for once-daily bisoprolol; this encodes antihypertensive pharmacodynamic coverage, not prescribing guidance.",
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "A PubMed-indexed study describes 24-hour blood-pressure control for once-daily bisoprolol; this encodes antihypertensive pharmacodynamic coverage, not prescribing guidance."
+          }
         }
       ],
       "tdm": {
@@ -41387,8 +41502,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -41585,8 +41700,22 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed reports peak effects 2 to 4 hours after single oral doses and dose-dependent duration of at least 8 hours at 100 mg and more than 12 hours at 300 mg.",
+          "durationOfAction": {
+            "min": 8,
+            "max": 12,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed reports peak effects 2 to 4 hours after single oral doses and dose-dependent duration of at least 8 hours at 100 mg and more than 12 hours at 300 mg."
+          },
+          "peakEffect": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed reports peak effects 2 to 4 hours after single oral doses and dose-dependent duration of at least 8 hours at 100 mg and more than 12 hours at 300 mg."
+          }
         }
       ],
       "tdm": {
@@ -41834,8 +41963,22 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed reports onset around 1 hour, peak blood-pressure reduction at 4 to 6 hours, and antihypertensive effects maintained for at least 24 hours at recommended doses.",
+          "durationOfAction": {
+            "min": 24,
+            "max": null,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed reports onset around 1 hour, peak blood-pressure reduction at 4 to 6 hours, and antihypertensive effects maintained for at least 24 hours at recommended doses."
+          },
+          "peakEffect": {
+            "min": 4,
+            "max": 6,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed reports onset around 1 hour, peak blood-pressure reduction at 4 to 6 hours, and antihypertensive effects maintained for at least 24 hours at recommended doses."
+          }
         }
       ],
       "tdm": {
@@ -42033,8 +42176,29 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed reports onset about 2 hours, maximum blood-pressure reduction within 6 hours, and antihypertensive effect persisting for 24 hours after dosing.",
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed reports onset about 2 hours, maximum blood-pressure reduction within 6 hours, and antihypertensive effect persisting for 24 hours after dosing."
+          },
+          "peakEffect": {
+            "min": 6,
+            "max": 6,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed reports onset about 2 hours, maximum blood-pressure reduction within 6 hours, and antihypertensive effect persisting for 24 hours after dosing."
+          },
+          "onset": {
+            "min": 2,
+            "max": 2,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "DailyMed reports onset about 2 hours, maximum blood-pressure reduction within 6 hours, and antihypertensive effect persisting for 24 hours after dosing."
+          }
         }
       ],
       "tdm": {
@@ -42248,10 +42412,25 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-06-23",
               "evidenceLevel": "REGULATORY_LABEL"
+            },
+            {
+              "title": "Pharmacokinetics of conventional and slow-release verapamil",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/3756058/",
+              "sourceType": "pharmacokinetic-study",
+              "accessedDate": "2026-06-30",
+              "evidenceLevel": "PHARMACOKINETIC_STUDY",
+              "note": "Used for conventional oral verapamil duration-of-action distinction from slow-release products."
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "A pharmacokinetic review reports conventional oral verapamil duration of action is limited to about 6 to 8 hours; this applies to immediate-release/conventional oral formulations, not extended-release products.",
+          "durationOfAction": {
+            "min": 6,
+            "max": 8,
+            "unit": "h",
+            "basis": "literature pharmacodynamic duration",
+            "note": "A pharmacokinetic review reports conventional oral verapamil duration of action is limited to about 6 to 8 hours; this applies to immediate-release/conventional oral formulations, not extended-release products."
+          }
         },
         {
           "route": "oral",
@@ -42280,8 +42459,15 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "Extended-release verapamil is a once-daily controlled-release formulation; this encodes formulation coverage and should not be collapsed with immediate-release verapamil.",
+          "durationOfAction": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "formulation pharmacodynamic coverage",
+            "note": "Extended-release verapamil is a once-daily controlled-release formulation; this encodes formulation coverage and should not be collapsed with immediate-release verapamil."
+          }
         }
       ],
       "tdm": {
@@ -42518,8 +42704,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         },
         {
           "route": "oral",
@@ -44103,8 +44289,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -45470,10 +45656,39 @@
               "accessedDate": "2026-06-24",
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "2 Dosage and Administration; 5.1 Supine Hypertension; 12.3 Pharmacokinetics"
+            },
+            {
+              "title": "Beyond Intravenous Vasopressors in the Intensive Care Unit",
+              "url": "https://www.jcvaonline.com/article/S1053-0770(26)00127-8/pdf",
+              "sourceType": "review",
+              "accessedDate": "2026-06-30",
+              "evidenceLevel": "CLINICAL_REVIEW",
+              "note": "Used for approximate single-dose pressor-effect timing; label remains primary for PK and safety."
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "A peer-reviewed neurogenic orthostatic hypotension review reports pressor effect apparent after 1 hour, peaking at 3 to 4 hours, and lasting around 6 hours.",
+          "durationOfAction": {
+            "min": 6,
+            "max": 6,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "A peer-reviewed neurogenic orthostatic hypotension review reports pressor effect apparent after 1 hour, peaking at 3 to 4 hours, and lasting around 6 hours."
+          },
+          "peakEffect": {
+            "min": 3,
+            "max": 4,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "A peer-reviewed neurogenic orthostatic hypotension review reports pressor effect apparent after 1 hour, peaking at 3 to 4 hours, and lasting around 6 hours."
+          },
+          "onset": {
+            "min": 1,
+            "max": 1,
+            "unit": "h",
+            "basis": "pharmacodynamic effect",
+            "note": "A peer-reviewed neurogenic orthostatic hypotension review reports pressor effect apparent after 1 hour, peaking at 3 to 4 hours, and lasting around 6 hours."
+          }
         }
       ],
       "tdm": {
@@ -45645,8 +45860,8 @@
               "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -45818,8 +46033,8 @@
               "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -45979,8 +46194,15 @@
               "labelSection": "2 Dosage and Administration; 7 Drug Interactions; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed erectile-response time-course data show effect up to 4 hours, diminished compared with 2 hours; PAH interpretation remains clinical and context dependent.",
+          "durationOfAction": {
+            "min": 4,
+            "max": 4,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed erectile-response time-course data show effect up to 4 hours, diminished compared with 2 hours; PAH interpretation remains clinical and context dependent."
+          }
         }
       ],
       "tdm": {
@@ -46141,8 +46363,15 @@
               "labelSection": "2 Dosage and Administration; 4 Contraindications; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed tadalafil labeling reports as-needed erectile-function improvement up to 36 hours; PAH dosing is chronic and should not be treated as a simple dose recommendation.",
+          "durationOfAction": {
+            "min": 36,
+            "max": 36,
+            "unit": "h",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed tadalafil labeling reports as-needed erectile-function improvement up to 36 hours; PAH dosing is chronic and should not be treated as a simple dose recommendation."
+          }
         }
       ],
       "tdm": {
@@ -46307,8 +46536,8 @@
               "labelSection": "2 Dosage and Administration; Boxed Warning; 12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable route- and formulation-specific clinical duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Authority sources were reviewed for this record, but no reliable route- and formulation-specific single-dose clinical duration suitable for an effect timeline was identified. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -47231,8 +47460,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -47553,8 +47782,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -48090,8 +48319,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -48347,8 +48576,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -48598,8 +48827,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -49177,8 +49406,15 @@
             "unit": "day",
             "basis": "plasma concentration"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed Depo-Estradiol labeling lists injection intervals of about 3 to 4 weeks for cited indications; this is a depot coverage/regimen interval, not a serum E2 prediction rule.",
+          "durationOfAction": {
+            "min": 21,
+            "max": 28,
+            "unit": "day",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed Depo-Estradiol labeling lists injection intervals of about 3 to 4 weeks for cited indications; this is a depot coverage/regimen interval, not a serum E2 prediction rule."
+          }
         }
       ],
       "doseUseReferences": [
@@ -49463,8 +49699,8 @@
             "unit": "day",
             "basis": "plasma concentration"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -50588,8 +50824,15 @@
             "unit": "day",
             "basis": "plasma concentration"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "available",
+          "effectTimelineNote": "DailyMed estradiol valerate injection labeling lists a usual four-week injection interval for cited indications; this is a depot coverage/regimen interval, not a serum E2 prediction rule.",
+          "durationOfAction": {
+            "min": 28,
+            "max": 28,
+            "unit": "day",
+            "basis": "sourced pharmacodynamic duration or formulation coverage",
+            "note": "DailyMed estradiol valerate injection labeling lists a usual four-week injection interval for cited indications; this is a depot coverage/regimen interval, not a serum E2 prediction rule."
+          }
         }
       ],
       "doseUseReferences": [
@@ -50872,8 +51115,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -51123,8 +51366,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -51399,8 +51642,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -51910,8 +52153,8 @@
               "labelSection": "12.3 Pharmacokinetics"
             }
           ],
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -53485,8 +53728,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -53723,8 +53966,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -53967,8 +54210,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -54212,8 +54455,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -54463,8 +54706,8 @@
             "basis": "label pharmacokinetics",
             "note": "DailyMed progesterone capsule pharmacokinetic table reports mean half-life values around 16.8 to 18.3 hours with standard deviations; this range approximates those reported values."
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -54709,8 +54952,8 @@
             "unit": "h",
             "basis": "literature or label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific hormone exposure or clinical-effect duration source is still needed; do not infer an HRT timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Reviewed endocrine/HRT sources do not support a simple clinical effect duration curve for this product. Hormone exposure depends on route, formulation, assay timing, SHBG/albumin, and individual absorption; do not infer a chart endpoint from elimination half-life."
         }
       ],
       "doseUseReferences": [
@@ -71687,8 +71930,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -73113,8 +73356,8 @@
             "basis": "label pharmacokinetics",
             "note": "SmPC reports 20.0 ± 4.1 hours and 14.0 hours in adults."
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -73359,8 +73602,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -73592,8 +73835,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -73825,8 +74068,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -74064,8 +74307,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -74297,8 +74540,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -74547,8 +74790,8 @@
             "basis": "label pharmacokinetics",
             "note": "SmPC reports mean half-life of the principal active metabolite norprazepam as 63 hours before and 70 hours after multiple dosing."
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -74811,8 +75054,8 @@
             "basis": "label pharmacokinetics",
             "note": "Estimated mean clobazam half-life; N-desmethylclobazam half-life is about 71 to 82 hours."
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -75079,8 +75322,8 @@
             "basis": "literature estimate",
             "note": "Human PK study abstract reports unchanged tofisopam plasma half-life of 2.7 to 3.5 hours; total radioactivity declines more slowly."
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -75369,8 +75612,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -75608,8 +75851,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -75853,8 +76096,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -76092,8 +76335,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -76331,8 +76574,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -76596,8 +76839,8 @@
             "unit": "h",
             "basis": "label/literature estimate"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -76882,8 +77125,8 @@
             "basis": "label pharmacokinetics",
             "note": "Parent/2-oxoquazepam by day 7; N-desalkyl-2-oxoquazepam by day 13 in cited label."
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -77123,8 +77366,8 @@
             "basis": "label pharmacokinetics",
             "note": "Assay-dependent mean half-life values in cited SmPC."
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -78049,8 +78292,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -78273,8 +78516,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -78476,8 +78719,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -78679,8 +78922,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -78873,8 +79116,8 @@
             "basis": "label pharmacokinetics",
             "note": "Mean half-life 7.02 +/- 4.74 hours in the cited label."
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -79076,8 +79319,8 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -79285,8 +79528,8 @@
             "unit": "day",
             "basis": "label pharmacokinetics"
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
@@ -80714,8 +80957,8 @@
             "basis": "label pharmacokinetics",
             "note": "Terminal half-life in elderly and young-adult label table contexts."
           },
-          "effectTimelineStatus": "source-needed",
-          "effectTimelineNote": "A reliable formulation-specific clinical sedation or wakefulness-effect duration source is still needed; do not infer an effect timeline from elimination half-life."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Label, ATC, and clinical-source review does not support a simple single-dose clinical effect timeline; response is indication-, tolerance-, sleep opportunity-, or chronic-treatment dependent. Do not infer a chart endpoint from elimination half-life."
         }
       ],
       "tdm": {
