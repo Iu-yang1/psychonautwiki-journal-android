@@ -8,4 +8,6 @@
 .externalNativeBuild
 .cxx
 local.properties
-release
+release/*
+!release/
+!release/signing.properties.example
