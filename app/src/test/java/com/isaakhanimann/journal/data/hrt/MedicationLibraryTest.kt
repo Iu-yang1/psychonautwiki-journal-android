@@ -1,6 +1,7 @@
 package com.isaakhanimann.journal.data.hrt
 
 import com.isaakhanimann.journal.data.substances.classes.*
+import com.isaakhanimann.journal.data.substances.AdministrationRoute
 import com.isaakhanimann.journal.data.substances.parse.SubstanceParser
 import com.isaakhanimann.journal.data.substances.repositories.*
 import org.junit.Assert.*
@@ -68,5 +69,40 @@ class MedicationLibraryTest {
         assertEquals(original.name, model.name)
         assertEquals("中文显示名", model.displayName)
         assertEquals("中文显示名", translated.localizedSortName(Locale.SIMPLIFIED_CHINESE))
+    }
+
+    @Test fun reviewedClinicalRecordingUnitsDoNotInventRecreationalDoseTiersOrOtherRoutes() {
+        val bicalutamide = parser.parseSubstanceFile(raw("substances.json")).substances.single { it.name == "Bicalutamide" }
+        assertEquals("mg", bicalutamide.recordingUnit(AdministrationRoute.ORAL))
+        assertNull(bicalutamide.getRoa(AdministrationRoute.ORAL)?.roaDose)
+        assertEquals("", bicalutamide.recordingUnit(AdministrationRoute.TRANSDERMAL))
+        assertEquals(setOf("form:tablet"), bicalutamide.searchFormulations())
+        assertFalse(bicalutamide.searchFormulations().any { it.contains("tablets", ignoreCase = true) })
+        val translated = bicalutamide.copy(endocrineInfo = bicalutamide.endocrineInfo?.copy(hormoneClass = listOf("非甾体抗雄激素")))
+        val classified = SubstanceFile(emptyList(), listOf(translated)).withHrtTaxonomy().substances.single()
+        assertTrue("hrt-antiandrogens" in classified.categories)
+        assertFalse("hrt-other" in classified.categories)
+    }
+
+    @Test fun classKeywordsRemainSearchableButCannotBecomeIngestionIdentitiesAfterFallback() {
+        val original = parser.parseSubstanceFile(raw("substances.json")).substances.first()
+        val attached = original.copy(commonNames = listOf("ACE inhibitor"))
+            .withCatalogIdentity(MedicationCatalogIdentity(original.id, listOf(original.name),
+                searchTerms = listOf("ACE inhibitor"), excludedAliases = listOf("ACE inhibitor")))
+        assertFalse("ACE inhibitor" in attached.commonNames)
+        assertTrue("ACE inhibitor" in attached.searchTerms)
+        val index = MedicationIdentityIndex(listOf(IdentityEntry(attached.id, attached.name, attached.commonNames, setOf("ORAL"))))
+        assertNull(index.resolve("ACE inhibitor", "ORAL"))
+        val search = MedicationSearchEntry(attached.id, attached.name, attached.commonNames, keywords = attached.searchTerms)
+        assertEquals(listOf(attached.id), MedicationSearch.rank(listOf(search), MedicationSearchRequest("ACE inhibitor")))
+    }
+
+    @Test fun reviewedClassificationDoesNotInferHormoneUseFromClinicalProse() {
+        val original = parser.parseSubstanceFile(raw("substances.json")).substances.first()
+        val reviewed = original.copy(categories = listOf("cardiovascular"), reviewedFields = setOf("categories"),
+            endocrineInfo = EndocrineInfo(hormoneClass = listOf("Estrogen receptor antagonist")))
+        val result = SubstanceFile(emptyList(), listOf(reviewed)).withHrtTaxonomy().substances.single()
+        assertFalse("hrt-estrogens" in result.categories)
+        assertFalse("hrt-related" in result.categories)
     }
 }

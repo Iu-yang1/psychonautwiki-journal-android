@@ -14,6 +14,8 @@ for entry in actual["entries"]:
     assert set(entry.get("administrationRoutes", [])) <= {"ORAL", "SUBLINGUAL", "BUCCAL", "TRANSDERMAL", "INTRAMUSCULAR", "SUBCUTANEOUS"}, entry["id"]
 registry = json.loads((ROOT / "tools/drugdata/medication_ids.json").read_text(encoding="utf-8"))
 by_id = {entry["id"]: entry for entry in actual["entries"]}
+for name, identifier in registry.items():
+    assert name in by_id[identifier]["aliases"], f"Historical canonical name disappeared: {name}"
 oral_e2 = by_id[registry["Oral Estradiol"]]
 oral_ev = by_id[registry["Oral Estradiol Valerate"]]
 injection_ev = by_id[registry["Estradiol Valerate Injection"]]

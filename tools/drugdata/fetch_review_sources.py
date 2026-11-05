@@ -4,6 +4,8 @@ import argparse
 import concurrent.futures
 import hashlib
 import json
+import re
+from html import unescape
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -13,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def fetch(source, directory):
+def fetch(source, directory, refresh=False):
     original_url = source["url"]
     query = urllib.parse.parse_qs(urllib.parse.urlparse(original_url).query)
     set_id = query.get("setid", [None])[0]
@@ -30,12 +32,21 @@ def fetch(source, directory):
         "retrievalUrl": url,
         "title": source.get("title", ""),
     }
-    if path.exists():
+    if path.exists() and not refresh:
         metadata = path.with_suffix(".json")
         if metadata.exists():
             result = json.loads(metadata.read_text(encoding="utf-8"))
-            result["status"] = "cached"
-            return result
+            if result.get("status") in {"downloaded", "cached"} and result.get(
+                "sha256"
+            ):
+                result["status"] = "cached"
+                return result
+            result = {
+                "key": key,
+                "url": original_url,
+                "retrievalUrl": url,
+                "title": source.get("title", ""),
+            }
     try:
         request = urllib.request.Request(
             url, headers={"User-Agent": "Journal-drug-library-review/1.0"}
@@ -43,19 +54,29 @@ def fetch(source, directory):
         with urllib.request.urlopen(request, timeout=30) as response:
             data = response.read()
             result["httpStatus"] = response.status
-        if set_id and "dailymed.nlm.nih.gov" in original_url:
+            result["resolvedUrl"] = response.geturl()
+        if data.startswith(b"%PDF"):
+            text = None
+            result["requiresPdfReview"] = True
+        elif set_id and "dailymed.nlm.nih.gov" in original_url:
             root = ET.fromstring(data)
             ns = {"s": "urn:hl7-org:v3"}
             chunks = []
             for section in root.findall(".//s:section", ns):
                 title = section.find("s:title", ns)
                 body = section.find("s:text", ns)
-                if title is not None and body is not None:
+                code = section.find("s:code", ns)
+                heading = (
+                    " ".join(title.itertext())
+                    if title is not None
+                    else (code.get("displayName", "") if code is not None else "")
+                )
+                if body is not None:
                     chunks.append(
                         "\n## "
-                        + " ".join(title.itertext())
+                        + " ".join(heading.split())
                         + "\n"
-                        + " ".join(body.itertext())
+                        + " ".join(" ".join(body.itertext()).split())
                     )
             if not chunks:
                 raise ValueError("SPL did not contain readable label sections")
@@ -68,10 +89,33 @@ def fetch(source, directory):
             )
         else:
             text = data.decode("utf-8", errors="replace")
+            if any(
+                marker in text
+                for marker in (
+                    "body.cookies-required",
+                    "cf-chl-",
+                    "Checking your browser",
+                )
+            ):
+                raise ValueError("Access challenge returned instead of source content")
+            text = re.sub(
+                r"<(script|style|noscript)\b[^>]*>.*?</\1>", "", text, flags=re.S | re.I
+            )
+            text = re.sub(
+                r"<(?:/p|/div|/h[1-6]|br|/li|/tr)\b[^>]*>", "\n", text, flags=re.I
+            )
+            text = unescape(re.sub(r"<[^>]+>", " ", text))
+            text = "\n".join(
+                " ".join(line.split()) for line in text.splitlines() if line.strip()
+            )
         result["sha256"] = hashlib.sha256(data).hexdigest()
-        result["status"] = "downloaded"
-        result["textFile"] = path.as_posix()
-        path.write_text(text, encoding="utf-8")
+        snapshot = directory / f"{key}-{result['sha256'][:16]}.source"
+        snapshot.write_bytes(data)
+        result["snapshotFile"] = snapshot.as_posix()
+        result["status"] = "requires_pdf_review" if text is None else "downloaded"
+        if text is not None:
+            result["textFile"] = path.as_posix()
+            path.write_text(text, encoding="utf-8")
     except (OSError, ValueError, ET.ParseError) as error:
         result["status"] = "failed"
         result["error"] = str(error)
@@ -87,13 +131,17 @@ def main():
     parser.add_argument(
         "--output-dir", type=Path, default=ROOT / "build/library-sources"
     )
-    parser.add_argument("--proxy", default="http://127.0.0.1:7897")
-    args = parser.parse_args()
-    urllib.request.install_opener(
-        urllib.request.build_opener(
-            urllib.request.ProxyHandler({"http": args.proxy, "https": args.proxy})
-        )
+    parser.add_argument(
+        "--proxy", help="Optional explicit proxy; otherwise use the environment"
     )
+    parser.add_argument("--refresh", action="store_true")
+    args = parser.parse_args()
+    if args.proxy:
+        urllib.request.install_opener(
+            urllib.request.build_opener(
+                urllib.request.ProxyHandler({"http": args.proxy, "https": args.proxy})
+            )
+        )
     manifest = json.loads(
         (ROOT / "tools/drugdata/review_manifest.json").read_text(encoding="utf-8")
     )["entries"]
@@ -116,7 +164,8 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         results = list(
             executor.map(
-                lambda source: fetch(source, args.output_dir), sources.values()
+                lambda source: fetch(source, args.output_dir, args.refresh),
+                sources.values(),
             )
         )
     report = {"batch": args.batch, "membership": membership, "sources": results}

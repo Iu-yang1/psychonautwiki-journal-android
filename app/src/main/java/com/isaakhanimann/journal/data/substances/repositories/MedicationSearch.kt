@@ -15,6 +15,7 @@ data class MedicationSearchEntry(
     val sortName: String = name,
     val domains: Set<String> = categories.filter { it.startsWith("domain:") }.toSet(),
     val mechanisms: Set<String> = emptySet(),
+    val keywords: List<String> = emptyList(),
 )
 
 data class MedicationSearchRequest(
@@ -45,6 +46,7 @@ class MedicationSearchIndex(entries: List<MedicationSearchEntry>, locale: Locale
     private class IndexedEntry(val entry: MedicationSearchEntry, collator: Collator) {
         val name = MedicationIdentity.normalize(entry.name)
         val aliases = entry.aliases.map(MedicationIdentity::normalize).distinct()
+        val keywords = entry.keywords.map(MedicationIdentity::normalize).distinct()
         val references by lazy(LazyThreadSafetyMode.PUBLICATION) { MedicationIdentity.normalize(entry.referenceText) }
         val sortKey = collator.getCollationKey(entry.sortName)
     }
@@ -69,7 +71,9 @@ class MedicationSearchIndex(entries: List<MedicationSearchEntry>, locale: Locale
                 name.startsWith(query) -> 2
                 aliases.any { it.startsWith(query) } -> 3
                 name.contains(query) || aliases.any { it.contains(query) } -> 4
-                request.includeReferences && item.references.contains(query) -> 5
+                item.keywords.any { it == query || it.startsWith(query) } -> 5
+                item.keywords.any { it.contains(query) } -> 6
+                request.includeReferences && item.references.contains(query) -> 7
                 else -> return@mapNotNull null
             }
             item to relevance

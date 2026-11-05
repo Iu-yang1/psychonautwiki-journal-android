@@ -172,8 +172,7 @@ class EditCustomRecipeViewModel @Inject constructor(
     private fun getDefaultUnitForSubstance(substanceName: String): String {
         val substance = substanceRepository.getSubstance(substanceName) ?: return ""
 
-        val defaultRoa = substance.roas.firstOrNull { it.route == administrationRoute }
-        return defaultRoa?.roaDose?.units ?: ""
+        return substance.recordingUnit(administrationRoute)
     }
 
     fun saveRecipe(onSuccess: () -> Unit) {

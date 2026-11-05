@@ -1,4 +1,1442 @@
 {
   "schemaVersion": 1,
-  "entries": {}
+  "entries": {
+    "pw:2adcf441506ca5c9e9f1": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+        "commonNames": [
+          "Bicalutamide",
+          "Casodex",
+          "比卡鲁胺",
+          "康士得",
+          "比卡鲁氨"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "hrt-antiandrogens",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed: Bicalutamide tablets (US)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+          },
+          {
+            "title": "药学数据中心：比卡鲁胺片",
+            "url": "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399682.html",
+            "sourceType": "regulatory-registration",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REFERENCE_DATABASE"
+          },
+          {
+            "title": "WHO ATC: Bicalutamide L02BB03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BB03",
+            "sourceType": "classification",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REFERENCE_DATABASE"
+          },
+          {
+            "title": "UCSF: Feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Antiandrogens – other approaches"
+          }
+        ],
+        "interactions": null,
+        "tdm": null,
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:tablet"
+        ],
+        "searchTerms": [
+          "抗雄激素",
+          "Antiandrogen"
+        ]
+      },
+      "locales": {
+        "en": {
+          "displayName": "Bicalutamide",
+          "summary": "A nonsteroidal androgen receptor inhibitor.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "L02BB03"
+            ],
+            "drugClass": [
+              "Nonsteroidal androgen receptor inhibitor"
+            ],
+            "indications": [
+              "US label: metastatic prostate cancer, combined with an LHRH analog."
+            ],
+            "contraindications": [
+              "Hypersensitivity; pregnancy. The US label excludes use in women."
+            ],
+            "majorWarnings": [
+              "Serious liver injury; breast symptoms; impaired glucose tolerance with LHRH agonists."
+            ],
+            "majorInteractions": [
+              "Coumarin anticoagulants: bleeding risk. CYP3A4 substrates: increased exposure."
+            ],
+            "monitoring": [
+              "Liver function; INR with anticoagulants; glucose with LHRH agonists."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed: Bicalutamide tablets (US)",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+              },
+              {
+                "title": "药学数据中心：比卡鲁胺片",
+                "url": "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399682.html",
+                "sourceType": "regulatory-registration",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "WHO ATC: Bicalutamide L02BB03",
+                "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BB03",
+                "sourceType": "classification",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "UCSF: Feminizing hormone therapy",
+                "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+                "sourceType": "clinical-guideline",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "CLINICAL_GUIDELINE",
+                "labelSection": "Antiandrogens – other approaches"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "oral",
+              "formulation": "tablets",
+              "tmax": {
+                "min": 31.3,
+                "max": 31.3,
+                "unit": "h",
+                "basis": "Active R-enantiomer, single-dose mean"
+              },
+              "eliminationHalfLife": {
+                "min": 5.8,
+                "max": 5.8,
+                "unit": "day",
+                "basis": "Active R-enantiomer, mean"
+              },
+              "sourceRefs": [
+                {
+                  "title": "DailyMed: Bicalutamide tablets (US)",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "US label: metastatic prostate cancer",
+              "population": "Adult men",
+              "route": "oral",
+              "formulation": "tablets",
+              "amountText": "50 mg once daily with an LHRH analog.",
+              "scheduleText": "Once daily",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL v3, effective 2026-02-27, section 2.1",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed: Bicalutamide tablets (US)",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 50,
+                  "max": 50,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "frequency": "Once daily",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "Nonsteroidal antiandrogen"
+            ],
+            "mechanisms": [
+              "Androgen receptor blockade."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed: Bicalutamide tablets (US)",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+              },
+              {
+                "title": "UCSF: Feminizing hormone therapy",
+                "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+                "sourceType": "clinical-guideline",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "CLINICAL_GUIDELINE",
+                "labelSection": "Antiandrogens – other approaches"
+              }
+            ]
+          }
+        },
+        "zh-CN": {
+          "displayName": "比卡鲁胺",
+          "summary": "阻断雄激素受体的非甾体抗雄激素药。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "L02BB03"
+            ],
+            "drugClass": [
+              "非甾体雄激素受体抑制剂"
+            ],
+            "indications": [
+              "美国说明书：与 LHRH 类似物合用，治疗转移性前列腺癌。"
+            ],
+            "contraindications": [
+              "对成分过敏或妊娠。美国说明书未批准女性使用。"
+            ],
+            "majorWarnings": [
+              "可发生严重肝损伤；注意乳房胀痛。合用 LHRH 类似物时可能影响血糖。"
+            ],
+            "majorInteractions": [
+              "香豆素类抗凝药可增加出血风险；可影响 CYP3A4 底物。"
+            ],
+            "monitoring": [
+              "肝功能；合用抗凝药时监测 INR；合用 LHRH 类似物时监测血糖。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed: Bicalutamide tablets (US)",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+              },
+              {
+                "title": "药学数据中心：比卡鲁胺片",
+                "url": "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399682.html",
+                "sourceType": "regulatory-registration",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "WHO ATC: Bicalutamide L02BB03",
+                "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BB03",
+                "sourceType": "classification",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REFERENCE_DATABASE"
+              },
+              {
+                "title": "UCSF: Feminizing hormone therapy",
+                "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+                "sourceType": "clinical-guideline",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "CLINICAL_GUIDELINE",
+                "labelSection": "Antiandrogens – other approaches"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "oral",
+              "formulation": "片剂",
+              "tmax": {
+                "min": 31.3,
+                "max": 31.3,
+                "unit": "h",
+                "basis": "活性 R 异构体，单次给药均值"
+              },
+              "eliminationHalfLife": {
+                "min": 5.8,
+                "max": 5.8,
+                "unit": "day",
+                "basis": "活性 R 异构体，均值"
+              },
+              "sourceRefs": [
+                {
+                  "title": "DailyMed: Bicalutamide tablets (US)",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "美国说明书：转移性前列腺癌",
+              "population": "成年男性",
+              "route": "oral",
+              "formulation": "片剂",
+              "amountText": "50 mg，每日一次，与 LHRH 类似物合用。",
+              "scheduleText": "每日一次",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL v3, effective 2026-02-27, section 2.1",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed: Bicalutamide tablets (US)",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 50,
+                  "max": 50,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "frequency": "每日一次",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "非甾体抗雄激素"
+            ],
+            "mechanisms": [
+              "阻断雄激素受体。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed: Bicalutamide tablets (US)",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+              },
+              {
+                "title": "UCSF: Feminizing hormone therapy",
+                "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+                "sourceType": "clinical-guideline",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "CLINICAL_GUIDELINE",
+                "labelSection": "Antiandrogens – other approaches"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:4d506aefa87f06d6c508": {
+      "fields": {
+        "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+        "commonNames": [
+          "Chlormadinone Acetate",
+          "CMA",
+          "醋酸氯地孕酮"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "hrt-progestogens",
+          "hrt-antiandrogens",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "sourceRefs": [
+          {
+            "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+          },
+          {
+            "title": "PMDA: Chlormadinone acetate tablets 25 mg YD (Japan)",
+            "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2026-04 v3; 2; 4; 8; 11; 18–19"
+          },
+          {
+            "title": "EMA: Nomegestrol/chlormadinone safety measures",
+            "url": "https://www.ema.europa.eu/en/news/new-measures-minimise-risk-meningioma-medicines-containing-nomegestrol-or-chlormadinone",
+            "sourceType": "regulatory-safety-communication",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ],
+        "interactions": null,
+        "tdm": null,
+        "formulationIds": [
+          "form:tablet"
+        ],
+        "searchTerms": [
+          "孕激素",
+          "Progestogen",
+          "抗雄激素",
+          "Antiandrogen"
+        ]
+      },
+      "locales": {
+        "en": {
+          "displayName": "Chlormadinone Acetate",
+          "summary": "A synthetic progestogen with antiandrogenic activity.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03DB06"
+            ],
+            "drugClass": [
+              "Synthetic progestogen; antiandrogen"
+            ],
+            "indications": [
+              "France: selected gynecological disorders when alternatives are inappropriate.",
+              "Japan: prostatic hyperplasia or prostate cancer, subject to label restrictions."
+            ],
+            "contraindications": [
+              "France: meningioma/history, active thrombosis, severe hepatic dysfunction, unexplained genital bleeding, hypersensitivity.",
+              "Japan: severe liver impairment/disease."
+            ],
+            "majorWarnings": [
+              "Meningioma risk increases with cumulative exposure; hepatic, thrombotic, mood and glucose risks."
+            ],
+            "majorInteractions": [
+              "Enzyme inducers may reduce progestogenic effects."
+            ],
+            "monitoring": [
+              "Liver function, glucose, meningioma symptoms and imaging per local labeling."
+            ],
+            "sourceRefs": [
+              {
+                "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+                "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+              },
+              {
+                "title": "PMDA: Chlormadinone acetate tablets 25 mg YD (Japan)",
+                "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "2026-04 v3; 2; 4; 8; 11; 18–19"
+              },
+              {
+                "title": "EMA: Nomegestrol/chlormadinone safety measures",
+                "url": "https://www.ema.europa.eu/en/news/new-measures-minimise-risk-meningioma-medicines-containing-nomegestrol-or-chlormadinone",
+                "sourceType": "regulatory-safety-communication",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "oral",
+              "formulation": "French-labeled oral tablets",
+              "tmax": {
+                "min": 2,
+                "max": 3,
+                "unit": "h",
+                "basis": "Single oral dose"
+              },
+              "eliminationHalfLife": {
+                "min": 36,
+                "max": 36,
+                "unit": "h",
+                "basis": "Label mean"
+              },
+              "sourceRefs": [
+                {
+                  "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "French label: endometriosis",
+              "population": "Adults",
+              "route": "oral",
+              "formulation": "Tablets",
+              "amountText": "10 mg daily, continuous treatment.",
+              "scheduleText": "Daily",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "ANSM RCP 2022-12-12, section4.2 endometriosis",
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "frequency": "Daily",
+                  "rangeKind": "label-regimen"
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "Progestin",
+              "Steroidal antiandrogen"
+            ],
+            "mechanisms": [
+              "Progestogenic activity, androgen antagonism and gonadotropin suppression."
+            ],
+            "sourceRefs": [
+              {
+                "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+                "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+              },
+              {
+                "title": "PMDA: Chlormadinone acetate tablets 25 mg YD (Japan)",
+                "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "2026-04 v3; 2; 4; 8; 11; 18–19"
+              }
+            ]
+          }
+        },
+        "zh-CN": {
+          "displayName": "醋酸氯地孕酮",
+          "summary": "兼有抗雄激素作用的合成孕激素。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03DB06"
+            ],
+            "drugClass": [
+              "合成孕激素；抗雄激素"
+            ],
+            "indications": [
+              "法国：部分月经异常、子宫内膜异位症等，仅在其他治疗不适合时使用。",
+              "日本：前列腺肥大症或前列腺癌，适用条件见所引说明书。"
+            ],
+            "contraindications": [
+              "法国：脑膜瘤或病史、活动性血栓、严重肝功能异常、不明原因生殖道出血及成分过敏。",
+              "日本：重度肝损伤或肝病。"
+            ],
+            "majorWarnings": [
+              "脑膜瘤风险随累积暴露增加；还需注意肝损伤、血栓、情绪变化及血糖异常。"
+            ],
+            "majorInteractions": [
+              "酶诱导剂可降低孕激素作用。"
+            ],
+            "monitoring": [
+              "肝功能、血糖、脑膜瘤相关症状及按当地说明书安排的影像随访。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+                "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+              },
+              {
+                "title": "PMDA: Chlormadinone acetate tablets 25 mg YD (Japan)",
+                "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "2026-04 v3; 2; 4; 8; 11; 18–19"
+              },
+              {
+                "title": "EMA: Nomegestrol/chlormadinone safety measures",
+                "url": "https://www.ema.europa.eu/en/news/new-measures-minimise-risk-meningioma-medicines-containing-nomegestrol-or-chlormadinone",
+                "sourceType": "regulatory-safety-communication",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "oral",
+              "formulation": "法国所引口服片剂",
+              "tmax": {
+                "min": 2,
+                "max": 3,
+                "unit": "h",
+                "basis": "单次口服"
+              },
+              "eliminationHalfLife": {
+                "min": 36,
+                "max": 36,
+                "unit": "h",
+                "basis": "说明书均值"
+              },
+              "sourceRefs": [
+                {
+                  "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "法国说明书：子宫内膜异位症",
+              "population": "成人",
+              "route": "oral",
+              "formulation": "片剂",
+              "amountText": "10 mg，每日持续用药。",
+              "scheduleText": "每日",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "ANSM RCP 2022-12-12, section4.2 endometriosis",
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "frequency": "每日",
+                  "rangeKind": "label-regimen"
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "合成孕激素",
+              "抗雄激素"
+            ],
+            "mechanisms": [
+              "孕激素作用；干扰雄激素受体作用并抑制促性腺激素轴。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+                "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+              },
+              {
+                "title": "PMDA: Chlormadinone acetate tablets 25 mg YD (Japan)",
+                "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "2026-04 v3; 2; 4; 8; 11; 18–19"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:b7371f4396b00a2a6db0": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+        "commonNames": [
+          "Conjugated Estrogens",
+          "结合雌激素",
+          "Conjugated equine estrogens",
+          "CEE",
+          "Premarin",
+          "普力马林"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "hrt-estrogens",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:tablet"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed: Premarin oral tablets (US)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "1–8; 11; 12.3 Table2"
+          },
+          {
+            "title": "Pfizer：普力马林锭 0.625 mg（台湾）",
+            "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=17308",
+            "sourceType": "manufacturer-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "卫署药输字第022533号；成分及适应症"
+          },
+          {
+            "title": "UCSF: Feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Estrogens"
+          }
+        ],
+        "interactions": null,
+        "tdm": null,
+        "searchTerms": [
+          "雌激素",
+          "Estrogen"
+        ]
+      },
+      "locales": {
+        "en": {
+          "displayName": "Conjugated Estrogens",
+          "summary": "An estrogen mixture; information here concerns Premarin oral tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03CA57"
+            ],
+            "drugClass": [
+              "Estrogen mixture"
+            ],
+            "indications": [
+              "US Premarin: menopausal symptoms, selected hypoestrogenic conditions, osteoporosis prevention and selected cancer palliation."
+            ],
+            "contraindications": [
+              "Unexplained genital bleeding, estrogen-dependent cancer, thrombosis/history, thrombophilia, liver disease or severe allergy; breast cancer/history except selected metastatic treatment."
+            ],
+            "majorWarnings": [
+              "Thrombotic, cardiovascular, breast and endometrial risks. Not indicated in pregnancy."
+            ],
+            "majorInteractions": [
+              "CYP3A4 inducers/inhibitors alter exposure."
+            ],
+            "monitoring": [
+              "Abnormal bleeding; thyroid function during thyroid replacement."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed: Premarin oral tablets (US)",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "1–8; 11; 12.3 Table2"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "oral",
+              "formulation": "Premarin 0.625 mg single dose; analyte: Baseline-adjusted unconjugated estrone",
+              "tmax": {
+                "min": 9.6,
+                "max": 9.6,
+                "unit": "h",
+                "basis": "Table2 mean; healthy postmenopausal women"
+              },
+              "eliminationHalfLife": {
+                "min": 20.2,
+                "max": 20.2,
+                "unit": "h",
+                "basis": "Baseline-adjusted unconjugated estrone"
+              },
+              "sourceRefs": [
+                {
+                  "title": "DailyMed: Premarin oral tablets (US)",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "1–8; 11; 12.3 Table2"
+                }
+              ]
+            },
+            {
+              "route": "oral",
+              "formulation": "Premarin 0.625 mg single dose; analyte: Equilin",
+              "tmax": {
+                "min": 7.9,
+                "max": 7.9,
+                "unit": "h",
+                "basis": "Table2 mean; healthy postmenopausal women"
+              },
+              "eliminationHalfLife": {
+                "min": 12.9,
+                "max": 12.9,
+                "unit": "h",
+                "basis": "Equilin"
+              },
+              "sourceRefs": [
+                {
+                  "title": "DailyMed: Premarin oral tablets (US)",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "1–8; 11; 12.3 Table2"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "US Premarin label: menopausal vasomotor symptoms",
+              "population": "Postmenopausal women",
+              "route": "oral",
+              "formulation": "Oral tablets",
+              "amountText": "Initial 0.3 mg once daily.",
+              "scheduleText": "Daily; subsequent clinician-directed adjustment",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL37; section2.1",
+              "ranges": [
+                {
+                  "min": 0.3,
+                  "max": 0.3,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "frequency": "Daily",
+                  "rangeKind": "initial"
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed: Premarin oral tablets (US)",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "1–8; 11; 12.3 Table2"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "Estrogen"
+            ],
+            "mechanisms": [
+              "Estrogen receptor activity."
+            ],
+            "assayCaveats": [
+              "Estradiol assays do not capture the complete mixture."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed: Premarin oral tablets (US)",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "1–8; 11; 12.3 Table2"
+              },
+              {
+                "title": "UCSF: Feminizing hormone therapy",
+                "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+                "sourceType": "clinical-guideline",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "CLINICAL_GUIDELINE",
+                "labelSection": "Estrogens"
+              }
+            ]
+          }
+        },
+        "zh-CN": {
+          "displayName": "结合雌激素",
+          "summary": "雌激素混合物；此处资料以 Premarin 口服片剂为例。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03CA57"
+            ],
+            "drugClass": [
+              "雌激素混合物"
+            ],
+            "indications": [
+              "美国 Premarin 片剂：绝经相关症状、某些低雌激素状态及绝经后骨质疏松预防；也用于特定乳腺癌或前列腺癌的姑息治疗。"
+            ],
+            "contraindications": [
+              "不明原因生殖道出血、雌激素依赖肿瘤、血栓或病史、易栓症、肝病、严重过敏。乳腺癌或病史者禁用，特定转移性肿瘤治疗除外。"
+            ],
+            "majorWarnings": [
+              "注意血栓及心血管事件、乳腺及子宫内膜风险；妊娠期不适用。"
+            ],
+            "majorInteractions": [
+              "CYP3A4 诱导剂或抑制剂可改变雌激素暴露。"
+            ],
+            "monitoring": [
+              "异常出血；合用甲状腺替代治疗时监测甲状腺功能。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed: Premarin oral tablets (US)",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "1–8; 11; 12.3 Table2"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "oral",
+              "formulation": "Premarin 0.625 mg 单次口服；检测：基线校正的未结合雌酮",
+              "tmax": {
+                "min": 9.6,
+                "max": 9.6,
+                "unit": "h",
+                "basis": "表2算术均值；健康绝经后女性"
+              },
+              "eliminationHalfLife": {
+                "min": 20.2,
+                "max": 20.2,
+                "unit": "h",
+                "basis": "基线校正的未结合雌酮"
+              },
+              "sourceRefs": [
+                {
+                  "title": "DailyMed: Premarin oral tablets (US)",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "1–8; 11; 12.3 Table2"
+                }
+              ]
+            },
+            {
+              "route": "oral",
+              "formulation": "Premarin 0.625 mg 单次口服；检测：马烯雌酮",
+              "tmax": {
+                "min": 7.9,
+                "max": 7.9,
+                "unit": "h",
+                "basis": "表2算术均值；健康绝经后女性"
+              },
+              "eliminationHalfLife": {
+                "min": 12.9,
+                "max": 12.9,
+                "unit": "h",
+                "basis": "马烯雌酮"
+              },
+              "sourceRefs": [
+                {
+                  "title": "DailyMed: Premarin oral tablets (US)",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "1–8; 11; 12.3 Table2"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "美国 Premarin 说明书：绝经相关血管舒缩症状",
+              "population": "绝经后女性",
+              "route": "oral",
+              "formulation": "口服片剂",
+              "amountText": "起始量 0.3 mg，每日一次。",
+              "scheduleText": "每日，后续按症状与处方调整",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL37; section2.1",
+              "ranges": [
+                {
+                  "min": 0.3,
+                  "max": 0.3,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "frequency": "每日",
+                  "rangeKind": "initial"
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed: Premarin oral tablets (US)",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "1–8; 11; 12.3 Table2"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "雌激素"
+            ],
+            "mechanisms": [
+              "雌激素受体作用。"
+            ],
+            "assayCaveats": [
+              "雌二醇检测值不能完整反映该混合物的暴露。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed: Premarin oral tablets (US)",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "1–8; 11; 12.3 Table2"
+              },
+              {
+                "title": "UCSF: Feminizing hormone therapy",
+                "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+                "sourceType": "clinical-guideline",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "CLINICAL_GUIDELINE",
+                "labelSection": "Estrogens"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:8024ba444c59c2e7c6d4": {
+      "fields": {
+        "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+        "commonNames": [
+          "Cyproterone acetate",
+          "CPA",
+          "醋酸环丙孕酮",
+          "Androcur",
+          "Cyprostat"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "hrt-antiandrogens",
+          "hrt-progestogens",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:tablet"
+        ],
+        "sourceRefs": [
+          {
+            "title": "Androcur 50 mg SmPC (UK)",
+            "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
+          },
+          {
+            "title": "Cyprostat 50 mg SmPC (UK)",
+            "url": "https://www.medicines.org.uk/emc/product/15997/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2024-10; 4.1"
+          },
+          {
+            "title": "WPATH SOC8 (2022), Appendix C Table 4",
+            "url": "https://doi.org/10.1080/26895269.2022.2100644",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "S254, adult regimens and footnotes"
+          },
+          {
+            "title": "药学数据中心：醋酸环丙孕酮片",
+            "url": "https://pharm.ncmi.cn/zysjk/ypgcyp/202312/t20231205_411706.html",
+            "sourceType": "regulatory-registration",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REFERENCE_DATABASE"
+          }
+        ],
+        "interactions": null,
+        "tdm": null,
+        "searchTerms": [
+          "抗雄激素",
+          "Antiandrogen",
+          "孕激素",
+          "Progestogen"
+        ]
+      },
+      "locales": {
+        "en": {
+          "displayName": "Cyproterone Acetate",
+          "summary": "An androgen receptor blocker with progestogenic activity.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03HA01"
+            ],
+            "drugClass": [
+              "Steroidal antiandrogen; progestogen"
+            ],
+            "indications": [
+              "UK Androcur: selected severe hypersexuality when alternatives are inappropriate.",
+              "UK Cyprostat: selected prostate cancer treatment and associated hot flushes.",
+              "Antiandrogen in feminizing hormone therapy (WPATH)."
+            ],
+            "contraindications": [
+              "Androcur label: liver disease/tumors, meningioma/history, thrombosis/history, severe depression, severe vascular diabetes, sickle-cell anemia, wasting disease, non-prostate malignancy or hypersensitivity; excludes under-18s."
+            ],
+            "majorWarnings": [
+              "Meningioma with cumulative exposure; serious liver injury, thrombosis and long-term bone loss."
+            ],
+            "majorInteractions": [
+              "CYP3A4 inhibitors/inducers affect exposure; high doses with some statins increase myopathy risk."
+            ],
+            "monitoring": [
+              "Liver function, blood count, meningioma symptoms; glucose in diabetes."
+            ],
+            "sourceRefs": [
+              {
+                "title": "Androcur 50 mg SmPC (UK)",
+                "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
+              },
+              {
+                "title": "Cyprostat 50 mg SmPC (UK)",
+                "url": "https://www.medicines.org.uk/emc/product/15997/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "2024-10; 4.1"
+              },
+              {
+                "title": "WPATH SOC8 (2022), Appendix C Table 4",
+                "url": "https://doi.org/10.1080/26895269.2022.2100644",
+                "sourceType": "clinical-guideline",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "CLINICAL_GUIDELINE",
+                "labelSection": "S254, adult regimens and footnotes"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "oral",
+              "formulation": "50 mg tablets; single100 mg oral study",
+              "tmax": {
+                "min": 3,
+                "max": 3,
+                "unit": "h",
+                "basis": "Approximate"
+              },
+              "eliminationHalfLife": {
+                "min": 43.9,
+                "max": 43.9,
+                "unit": "h",
+                "basis": "Terminal mean"
+              },
+              "sourceRefs": [
+                {
+                  "title": "Androcur 50 mg SmPC (UK)",
+                  "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Feminizing hormone therapy (WPATH SOC8 Table4)",
+              "population": "Adults",
+              "route": "oral",
+              "formulation": "Oral tablets",
+              "amountText": "Table-listed regimen:10 mg/day.",
+              "scheduleText": "Daily",
+              "sourceType": "clinical-guideline",
+              "evidenceLevel": "CLINICAL_GUIDELINE",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SOC8 AppendixC Table4 pS254; numeric fact; footnotes reviewed",
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "frequency": "Daily",
+                  "rangeKind": "guideline-regimen"
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "title": "WPATH SOC8 (2022), Appendix C Table 4",
+                  "url": "https://doi.org/10.1080/26895269.2022.2100644",
+                  "sourceType": "clinical-guideline",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "CLINICAL_GUIDELINE",
+                  "labelSection": "S254, adult regimens and footnotes"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "Steroidal antiandrogen",
+              "Progestin"
+            ],
+            "mechanisms": [
+              "Androgen receptor blockade and gonadotropin suppression."
+            ],
+            "sourceRefs": [
+              {
+                "title": "Androcur 50 mg SmPC (UK)",
+                "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
+              }
+            ]
+          }
+        },
+        "zh-CN": {
+          "displayName": "醋酸环丙孕酮",
+          "summary": "兼有孕激素作用的雄激素受体阻断药。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03HA01"
+            ],
+            "drugClass": [
+              "甾体抗雄激素；孕激素"
+            ],
+            "indications": [
+              "英国 Androcur：其他干预不适合的特定严重性欲亢进。",
+              "英国 Cyprostat：特定前列腺癌治疗及相关潮热。",
+              "女性化激素治疗中的抗雄用药（WPATH 指南）。"
+            ],
+            "contraindications": [
+              "所引 Androcur 说明书：肝病或肝肿瘤、脑膜瘤或病史、血栓或病史、严重抑郁、伴血管病变的严重糖尿病、镰状细胞贫血、消耗性疾病、除前列腺癌外的恶性肿瘤及成分过敏；不适用于18岁以下。"
+            ],
+            "majorWarnings": [
+              "注意累积暴露相关脑膜瘤、严重肝损伤、血栓和长期骨量减少风险。"
+            ],
+            "majorInteractions": [
+              "CYP3A4 抑制剂或诱导剂可改变暴露；高剂量合用部分他汀类可增加肌病风险。"
+            ],
+            "monitoring": [
+              "肝功能、血细胞计数及脑膜瘤相关症状；糖尿病患者监测血糖。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "Androcur 50 mg SmPC (UK)",
+                "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
+              },
+              {
+                "title": "Cyprostat 50 mg SmPC (UK)",
+                "url": "https://www.medicines.org.uk/emc/product/15997/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "2024-10; 4.1"
+              },
+              {
+                "title": "WPATH SOC8 (2022), Appendix C Table 4",
+                "url": "https://doi.org/10.1080/26895269.2022.2100644",
+                "sourceType": "clinical-guideline",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "CLINICAL_GUIDELINE",
+                "labelSection": "S254, adult regimens and footnotes"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "oral",
+              "formulation": "50 mg 片剂，单次口服100 mg资料",
+              "tmax": {
+                "min": 3,
+                "max": 3,
+                "unit": "h",
+                "basis": "约值"
+              },
+              "eliminationHalfLife": {
+                "min": 43.9,
+                "max": 43.9,
+                "unit": "h",
+                "basis": "终末相均值"
+              },
+              "sourceRefs": [
+                {
+                  "title": "Androcur 50 mg SmPC (UK)",
+                  "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "女性化激素治疗（WPATH SOC8 表4）",
+              "population": "成人",
+              "route": "oral",
+              "formulation": "口服片剂",
+              "amountText": "表中列示 10 mg/日。",
+              "scheduleText": "每日",
+              "sourceType": "clinical-guideline",
+              "evidenceLevel": "CLINICAL_GUIDELINE",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SOC8 AppendixC Table4 pS254; numeric fact; footnotes reviewed",
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "frequency": "每日",
+                  "rangeKind": "guideline-regimen"
+                }
+              ],
+              "sourceRefs": [
+                {
+                  "title": "WPATH SOC8 (2022), Appendix C Table 4",
+                  "url": "https://doi.org/10.1080/26895269.2022.2100644",
+                  "sourceType": "clinical-guideline",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "CLINICAL_GUIDELINE",
+                  "labelSection": "S254, adult regimens and footnotes"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "甾体抗雄激素",
+              "孕激素"
+            ],
+            "mechanisms": [
+              "阻断雄激素受体，并抑制促性腺激素释放。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "Androcur 50 mg SmPC (UK)",
+                "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL",
+                "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
 }

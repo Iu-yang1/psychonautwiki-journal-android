@@ -29,12 +29,13 @@ class SearchRepository @Inject constructor(
     private val preferences = context.getSharedPreferences("medication_search", 0)
     private val modes = setOf("default", "recent", "name")
     val sortMode = MutableStateFlow(preferences.getString("sort", "default")?.takeIf { it in modes } ?: "default")
-    val selectedCategories = MutableStateFlow(preferences.getStringSet("categories", emptySet()).orEmpty().toSet())
+    val selectedCategories = MutableStateFlow(preferences.getStringSet("categories", emptySet()).orEmpty().map { substanceRepo.taxonomy.node(it)?.id ?: it }.toSet())
     val selectedDomains = MutableStateFlow(preferences.getStringSet("domains", emptySet()).orEmpty().toSet())
     val selectedMechanisms = MutableStateFlow(preferences.getStringSet("mechanisms", emptySet()).orEmpty().toSet())
     val selectedRoutes = MutableStateFlow(preferences.getStringSet("routes", emptySet()).orEmpty().toSet())
     val selectedFormulations = MutableStateFlow(preferences.getStringSet("formulations", emptySet()).orEmpty().toSet())
     val includeReferences = MutableStateFlow(preferences.getBoolean("references", false))
+    val customOnly = MutableStateFlow(preferences.getBoolean("customOnly", false))
     val favorites = database.hrtDao().settings().map { settings -> settings.filter { it.id.startsWith("favorite:") && it.payload == "true" }.map { it.id.removePrefix("favorite:") }.toSet() }
         .distinctUntilChanged().stateIn(applicationScope, SharingStarted.Eagerly, emptySet())
 
@@ -68,7 +69,7 @@ class SearchRepository @Inject constructor(
             val sub = item.substance
             MedicationSearchEntry(sub.id, sub.name, (sub.commonNames + sub.displayName).distinct(), sub.categories.toSet(), sub.availableRoutesForIngestion().map { it.name }.toSet(),
                 sub.searchFormulations(), sub.referenceSearchText(), sub.localizedSortName(locale),
-                mechanisms = sub.categories.filter { taxonomy.node(it)?.kind == "mechanism" }.toSet())
+                mechanisms = sub.categories.filter { taxonomy.node(it)?.kind == "mechanism" }.toSet(), keywords = sub.searchTerms)
         }, locale)
     }
     @Volatile private var prepared: PreparedCatalog? = null
@@ -82,6 +83,7 @@ class SearchRepository @Inject constructor(
             applicationScope.launch { flow.collect { preferences.edit().putStringSet(key, it.toSet()).apply() } }
         }
         applicationScope.launch { includeReferences.collect { preferences.edit().putBoolean("references", it).apply() } }
+        applicationScope.launch { customOnly.collect { preferences.edit().putBoolean("customOnly", it).apply() } }
         applicationScope.launch(Dispatchers.Default) {
             substanceRepo.getAllSubstancesWithCategoriesFlow().collect { prepare(it) }
         }

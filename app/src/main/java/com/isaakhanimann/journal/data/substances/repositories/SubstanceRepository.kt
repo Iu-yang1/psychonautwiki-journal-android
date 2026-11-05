@@ -29,6 +29,7 @@ import com.isaakhanimann.journal.data.substances.classes.Substance
 import com.isaakhanimann.journal.data.substances.classes.SubstanceFile
 import com.isaakhanimann.journal.data.substances.classes.SubstanceWithCategories
 import com.isaakhanimann.journal.data.substances.classes.MedicationTaxonomy
+import com.isaakhanimann.journal.data.substances.classes.withCatalogIdentity
 import com.isaakhanimann.journal.data.substances.parse.SubstanceParserInterface
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
@@ -59,8 +60,7 @@ class SubstanceRepository @Inject constructor(
         val identities = catalog.entries.associateBy { it.id }
         val combined = taxonomy.apply(mergeMedicationFiles(primary, base).withHrtTaxonomy(), appContext.resources.configuration.locales[0])
         return SubstanceFile(combined.categories, combined.substances.map { substance ->
-            val identity = identities[substance.id]
-            substance.copy(identity = identity, commonNames = (substance.commonNames + identity?.aliases.orEmpty()).distinct())
+            substance.withCatalogIdentity(identities[substance.id])
         })
     }
 
@@ -95,7 +95,9 @@ class SubstanceRepository @Inject constructor(
     }
 
     override fun getCategory(categoryName: String): Category? {
+        val canonical = taxonomy.node(categoryName)?.id ?: categoryName
         return _substanceFileFlow.value.categories.firstOrNull { it.name == categoryName }
+            ?: _substanceFileFlow.value.categories.firstOrNull { it.name == canonical }
     }
 
     override fun getSubstanceWithCategories(substanceName: String): SubstanceWithCategories? {

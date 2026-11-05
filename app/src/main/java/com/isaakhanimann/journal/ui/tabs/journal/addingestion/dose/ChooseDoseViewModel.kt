@@ -65,7 +65,7 @@ class ChooseDoseViewModel @Inject constructor(
                 purity.let { safePurity ->
                     if (safePurity == null) return null
                     val result = it.div(safePurity).times(100)
-                    return result.toReadableString() + " impure ${roaDose?.units ?: ""}"
+                    return result.toReadableString() + " impure $units"
                 }
             }
         }
@@ -83,7 +83,7 @@ class ChooseDoseViewModel @Inject constructor(
     }
 
     init {
-        units = roaDose?.units ?: ""
+        units = substance.recordingUnit(administrationRoute)
     }
 
 }

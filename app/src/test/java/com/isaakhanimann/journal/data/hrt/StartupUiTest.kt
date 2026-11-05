@@ -25,11 +25,15 @@ import org.robolectric.annotation.SQLiteMode
 @SQLiteMode(SQLiteMode.Mode.LEGACY)
 class StartupUiTest {
     @get:Rule val compose = createAndroidComposeRule<MainActivity>()
-    @Test fun acceptedProductionApplicationReachesTheHrtChart() {
+    private fun acceptConditions() {
         val app = compose.activity.application as JournalApp
         val field = app.userPreferences.javaClass.getDeclaredField("dataStore").apply { isAccessible = true }
         @Suppress("UNCHECKED_CAST") val store = field.get(app.userPreferences) as DataStore<Preferences>
         runBlocking { store.edit { it[ARE_CONDITIONS_ACCEPTED] = true } }
+    }
+
+    @Test fun acceptedProductionApplicationReachesTheHrtChart() {
+        acceptConditions()
         compose.waitUntil(15000) { compose.onAllNodesWithText("激素曲线 · 估算").fetchSemanticsNodes().isNotEmpty() }
         compose.onNodeWithText("激素曲线 · 估算").assertExists()
         val labels = listOf("HRT", R.string.stats, R.string.journal, R.string.drugs, R.string.settings)
@@ -43,5 +47,24 @@ class StartupUiTest {
                 .fetchSemanticsNodes().maxBy { it.boundsInRoot.top }.boundsInRoot
         }
         iconBounds.forEach { assertEquals(iconBounds.first().center.y, it.center.y, 1f) }
+    }
+
+    @Test fun medicationDomainsFilterTheListAndSurviveTabSwitches() {
+        acceptConditions()
+        compose.waitUntil(15000) { compose.onAllNodesWithText("激素曲线 · 估算").fetchSemanticsNodes().isNotEmpty() }
+        val drugs = compose.activity.getString(R.string.drugs)
+        compose.onNodeWithText(drugs).performClick()
+        val hrtDomain = hasText("HRT and endocrine") or hasText("HRT 与内分泌")
+        compose.onNode(hrtDomain).performClick().assertIsSelected()
+        compose.onNode(hasSetTextAction()).performTextInput("Bicalutamide")
+        val medicationRow = (hasText("Bicalutamide") or hasText("比卡鲁胺")) and !hasSetTextAction()
+        compose.waitUntil(15000) { compose.onAllNodes(medicationRow).fetchSemanticsNodes().isNotEmpty() }
+        compose.onNodeWithText(compose.activity.getString(R.string.stats)).performClick()
+        compose.onNodeWithText(drugs).performClick()
+        compose.onNode(hrtDomain).assertIsSelected()
+        compose.onNode(hasSetTextAction()).assertTextContains("Bicalutamide")
+        compose.onNodeWithText(compose.activity.getString(R.string.medication_filter_count, 0)).performClick()
+        compose.onNodeWithText(compose.activity.getString(R.string.medication_category)).assertExists()
+        compose.onNodeWithText(compose.activity.getString(R.string.medication_custom_only)).assertExists()
     }
 }

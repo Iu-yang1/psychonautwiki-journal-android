@@ -39,11 +39,13 @@ class SearchViewModel @Inject constructor(
     fun categoryIsInSelectedDomain(id: String): Boolean = selectedDomains.value.isEmpty() ||
         taxonomy.tags(listOf(id)).any { it in selectedDomains.value }
     fun toggleDomain(id: String) {
+        isShowingCustomSubstancesFlow.value = false
         val selected = selectedDomains.value
         selectedDomains.value = if (id in selected) selected - id else selected + id
         searchRepository.selectedCategories.value = searchRepository.selectedCategories.value.filter(::categoryIsInSelectedDomain).toSet()
     }
     fun clearFilters() {
+        isShowingCustomSubstancesFlow.value = false
         selectedDomains.value = emptySet()
         searchRepository.selectedCategories.value = emptySet()
         selectedMechanisms.value = emptySet()
@@ -69,14 +71,21 @@ class SearchViewModel @Inject constructor(
 
     private val filtersFlow = searchRepository.selectedCategories.map { it.toList() }
 
-    private val customChipName: String = application.getString(R.string.custom)
+    private val customChipName: String get() = getApplication<Application>().getString(R.string.custom)
+
+    fun toggleCustomOnly() {
+        val enabled = !isShowingCustomSubstancesFlow.value
+        if (enabled) clearFilters()
+        isShowingCustomSubstancesFlow.value = enabled
+    }
 
     fun onFilterTapped(filterName: String) {
         viewModelScope.launch {
             if (filterName == customChipName) {
-                isShowingCustomSubstancesFlow.emit(isShowingCustomSubstancesFlow.value.not())
+                toggleCustomOnly()
                 return@launch
             }
+            isShowingCustomSubstancesFlow.value = false
             val filters = searchRepository.selectedCategories.value.toMutableSet()
             if (filters.contains(filterName)) {
                 filters.remove(filterName)
@@ -87,9 +96,9 @@ class SearchViewModel @Inject constructor(
         }
     }
 
-    private val isShowingCustomSubstancesFlow = MutableStateFlow(false)
+    val isShowingCustomSubstancesFlow = searchRepository.customOnly
 
-    val chipCategoriesFlow: StateFlow<List<CategoryChipModel>> = filtersFlow.map { filters ->
+    val chipCategoriesFlow: StateFlow<List<CategoryChipModel>> = combine(filtersFlow, substanceRepo.getAllSubstancesFlow()) { filters, _ ->
         substanceRepo.getAllCategories().filter { category -> taxonomy.node(category.name)?.let { it.kind == "category" && it.id == category.name } == true }.map { category ->
             val isActive = filters.contains(category.name)
             CategoryChipModel(
@@ -117,6 +126,7 @@ class SearchViewModel @Inject constructor(
     )
 
     val filteredSubstancesFlow = searchRepository.observe(searchTextFlow, filtersFlow, selectedRoutes, selectedFormulations, includeReferences, selectedDomains, selectedMechanisms)
+        .combine(isShowingCustomSubstancesFlow) { matches, customOnly -> if (customOnly) emptyList() else matches }
         .map { matches -> matches.map { it.toSubstanceModel() } }
         .flowOn(Dispatchers.Default)
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
@@ -126,10 +136,13 @@ class SearchViewModel @Inject constructor(
     }
 
     private val customSubstancesFlow = experienceRepo.getCustomSubstancesFlow()
+    private val hasBuiltinFilters = combine(searchRepository.selectedCategories, selectedDomains, selectedMechanisms, selectedRoutes, selectedFormulations) { categories, domains, mechanisms, routes, forms ->
+        listOf(categories, domains, mechanisms, routes, forms).any { it.isNotEmpty() }
+    }
 
     val filteredCustomSubstancesFlow =
-        customSubstancesFlow.combine(searchTextFlow) { customSubstances, searchText ->
-            customSubstances.filter { custom ->
+        combine(customSubstancesFlow, searchTextFlow, hasBuiltinFilters, isShowingCustomSubstancesFlow) { customSubstances, searchText, filtered, onlyCustom ->
+            if (filtered && !onlyCustom) emptyList() else customSubstances.filter { custom ->
                 custom.name.contains(
                     other = searchText,
                     ignoreCase = true

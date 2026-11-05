@@ -79,9 +79,24 @@ def validate(require_complete=False):
         "pendingEntries": pending_entries,
         "fieldStates": dict(states),
     }
+    alias_path = DATA / "alias_review.json"
+    if alias_path.exists():
+        aliases = read(alias_path)["entries"]
+        assert len(aliases) == 106, "Original alias-conflict roster changed"
+        for alias, decision in aliases.items():
+            assert decision.get("reason") and all(
+                identifier in frozen for identifier in decision["affectedIds"]
+            ), alias
+            assert decision["status"] in {"pending", "reviewed"}, alias
+        report["pendingAliasDecisions"] = sum(
+            decision["status"] == "pending" for decision in aliases.values()
+        )
     print(json.dumps(report, ensure_ascii=False))
     if require_complete:
         assert pending_entries == 0, "Publication blocked: field reviews remain pending"
+        assert report.get("pendingAliasDecisions", 0) == 0, (
+            "Publication blocked: alias conflicts remain unreviewed"
+        )
     return report
 
 

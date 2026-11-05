@@ -12,18 +12,34 @@ data class MedicationCatalogIdentity(
     val formulationId: String? = null,
     val sourceUrls: List<String> = emptyList(),
     val administrationRoutes: List<String> = emptyList(),
+    val searchTerms: List<String> = emptyList(),
+    val excludedAliases: List<String> = emptyList(),
 )
 
 @Serializable
 data class MedicationCatalogFile(val version: Int, val entries: List<MedicationCatalogIdentity>)
 
-fun Substance.searchFormulations(): Set<String> = (listOfNotNull(identity?.formulationId) + timeCourse.mapNotNull { it.formulation }).toSet()
+fun Substance.withCatalogIdentity(catalogIdentity: MedicationCatalogIdentity?): Substance {
+    require(catalogIdentity == null || catalogIdentity.id == id)
+    val excluded = catalogIdentity?.excludedAliases.orEmpty()
+        .map(com.isaakhanimann.journal.data.hrt.MedicationIdentity::normalize).toSet()
+    return copy(identity = catalogIdentity,
+        commonNames = (commonNames + catalogIdentity?.aliases.orEmpty()).distinct()
+            .filter { com.isaakhanimann.journal.data.hrt.MedicationIdentity.normalize(it) !in excluded },
+        searchTerms = (searchTerms + catalogIdentity?.searchTerms.orEmpty()).distinct())
+}
+
+fun Substance.searchFormulations(): Set<String> = (listOfNotNull(identity?.formulationId) + formulationIds).toSet()
 
 fun Substance.localizedSortName(locale: Locale = Locale.getDefault()): String =
     if (displayName != name) displayName else if (locale.language == "zh") commonNames.firstOrNull { name -> name.any { it in '\u4e00'..'\u9fff' } } ?: name else name
 
 fun formulationLabel(value: String): String = when (value) {
     "form:oral-solid" -> "口服固体制剂"
+    "form:tablet" -> "片剂"
+    "form:capsule" -> "胶囊剂"
+    "form:oral-liquid" -> "口服液体制剂"
+    "form:powder" -> "散剂 / 粉剂"
     "form:oil-injection" -> "油剂注射剂"
     "form:depot-injection" -> "长效注射剂"
     "form:gel" -> "凝胶"

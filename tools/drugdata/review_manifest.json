@@ -6,161 +6,528 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label",
+            "cn-registration"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label",
+            "cn-registration"
+          ],
+          "note": "保留旧内置误写“比卡鲁氨”以兼容历史名称；标准中文名为比卡鲁胺。"
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "who-atc",
+            "us-label",
+            "ucsf"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reason": "相互作用使用临床资料条目表达，不生成精神活性物质混用矩阵。",
+          "sourceIds": [
+            "us-label"
+          ],
+          "reviewedDate": "2026-11-06"
         }
       },
-      "sources": [],
-      "searches": [],
-      "aliasDecisions": []
+      "sources": [
+        {
+          "id": "us-label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+          "title": "Bicalutamide tablets, DailyMed",
+          "region": "US",
+          "version": "SPL v3; effective 2026-02-27",
+          "accessedDate": "2026-11-06",
+          "sha256": "6341a2d7662c72a540afab60053dd0a272b3795d891dd450a6b2187cf36f542a",
+          "sections": [
+            "1",
+            "2.1",
+            "4",
+            "5",
+            "7",
+            "12.1",
+            "12.3"
+          ]
+        },
+        {
+          "id": "cn-registration",
+          "url": "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399682.html",
+          "title": "比卡鲁胺片 HJ20181036",
+          "region": "CN",
+          "version": "2023-12-05 registration record; issue 2022-11-18",
+          "accessedDate": "2026-11-06"
+        },
+        {
+          "id": "who-atc",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BB03",
+          "title": "ATC L02BB03",
+          "region": "international",
+          "version": "2026-01-20",
+          "accessedDate": "2026-11-06"
+        },
+        {
+          "id": "ucsf",
+          "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+          "title": "Feminizing hormone therapy",
+          "region": "US",
+          "version": "2016-06-17; pending revision 2024 as displayed",
+          "accessedDate": "2026-11-06"
+        }
+      ],
+      "searches": [
+        {
+          "query": "site.nmpa.gov.cn 比卡鲁胺 片 说明书",
+          "date": "2026-11-06",
+          "result": "找到标准与注册信息；中文名和商品名使用 NCMI 注册记录，临床字段使用明确标注的美国说明书。",
+          "sourceUrls": [
+            "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399682.html",
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58"
+          ]
+        }
+      ],
+      "aliasDecisions": [
+        {
+          "alias": "比卡鲁氨",
+          "decision": "retain_historical_spelling",
+          "reason": "旧内置名称；非标准中文药名，保留识别兼容。",
+          "sourceIds": [
+            "cn-registration"
+          ]
+        }
+      ]
     },
     "pw:4d506aefa87f06d6c508": {
       "canonicalName": "Chlormadinone Acetate",
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label",
+            "ema-safety"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fr-rcp"
+          ],
+          "reason": "使用临床相互作用条目，不生成精神活性物质混用矩阵。"
         }
       },
-      "sources": [],
-      "searches": [],
-      "aliasDecisions": []
+      "sources": [
+        {
+          "id": "fr-rcp",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+          "title": "ANSM Chlormadinone Viatris10mg RCP",
+          "region": "FR",
+          "version": "RCP2022-12-12; page2026-09-29; authorization archived2025-12-30",
+          "accessedDate": "2026-11-06",
+          "sha256": "36c6b04b86d7826e73e17f87ac3d6e4a6c0801c7f6d7c8e377af845cc6f8ca11"
+        },
+        {
+          "id": "jp-label",
+          "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07",
+          "title": "Chlormadinone acetate tablets25mg YD",
+          "region": "JP",
+          "version": "2026-04 v3;2478001F2373_1_07",
+          "accessedDate": "2026-11-06",
+          "sha256": "a0be2aaec46d01d3a52f74cc321cbc816e1a69bc2334f8e3a938cd0b014e1818"
+        },
+        {
+          "id": "ema-safety",
+          "url": "https://www.ema.europa.eu/en/news/new-measures-minimise-risk-meningioma-medicines-containing-nomegestrol-or-chlormadinone",
+          "title": "Nomegestrol/chlormadinone meningioma measures",
+          "region": "EU",
+          "version": "2022-09-01",
+          "accessedDate": "2026-11-06"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "site.nmpa.gov.cn 醋酸氯地孕酮",
+          "result": "未取得可核验的中国完整说明书；采用法国和日本原始说明书，分别标注地区。",
+          "sourceUrls": [
+            "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+            "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07"
+          ]
+        },
+        {
+          "date": "2026-11-06",
+          "query": "既有PubMed16904418来源与PMDA旧链接核验",
+          "result": "PubMed返回访问验证页；旧PMDA PDF已换版，不用于本次临床字段。通过PMDA详情页定位2026-04 v3正文。",
+          "sourceUrls": [
+            "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07"
+          ]
+        }
+      ],
+      "aliasDecisions": [
+        {
+          "alias": "Chlormadinone",
+          "decision": "remove_unspecified_parent_form",
+          "reason": "规范身份明确为醋酸酯；不把未指明化学形式的母体名称当作精确身份别名。",
+          "sourceIds": [
+            "fr-rcp",
+            "jp-label"
+          ]
+        }
+      ]
     },
     "pw:b7371f4396b00a2a6db0": {
       "canonicalName": "Conjugated Estrogens",
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label",
+            "tw-label"
+          ],
+          "note": "保留既有药物组ID。资料示例明确限定口服Premarin，不将其他来源、途径或规格的混合物自动等同，亦不换算成雌二醇质量。"
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label",
+            "tw-label"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label",
+            "who-atc"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label",
+            "tw-label",
+            "ucsf"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-label"
+          ],
+          "reason": "相互作用使用临床条目，不提供精神活性物质混用矩阵。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "us-label",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+          "title": "Premarin oral tablets",
+          "region": "US",
+          "version": "SPL37 effective20260604; clinical text revised2025-04",
+          "accessedDate": "2026-11-06",
+          "sha256": "a4e8fa6487eca2cd0dba656c0936bf4179a499eb05c2c5bd30c1a600dd86b58a"
+        },
+        {
+          "id": "tw-label",
+          "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=17308",
+          "title": "普力馬林錠0.625毫克",
+          "region": "TW",
+          "version": "卫署药输字第022533号; Pfizer17308; retrieved2026-11-06",
+          "accessedDate": "2026-11-06"
+        },
+        {
+          "id": "ucsf",
+          "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+          "title": "Feminizing hormone therapy",
+          "region": "US",
+          "version": "2016-06-17; pending revision2024 as displayed",
+          "accessedDate": "2026-11-06"
+        },
+        {
+          "id": "who-atc",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03CA57",
+          "title": "ATC G03CA57 conjugated estrogens",
+          "region": "international",
+          "version": "2026-01-20",
+          "accessedDate": "2026-11-06"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "site.nmpa.gov.cn 结合雌激素片 说明书; site.labeling.pfizer.com 结合雌激素",
+          "result": "未取得中国大陆完整官方说明书。核对美国当前SPL及台湾制造商中文说明书；药代参数按表2具体分析物分别记录。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+            "https://labeling.pfizer.com/ShowLabeling.aspx?id=17308"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:8024ba444c59c2e7c6d4": {
@@ -168,53 +535,174 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur",
+            "cn-registration"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur",
+            "cyprostat",
+            "cn-registration"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur",
+            "cyprostat",
+            "soc8"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "soc8"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur",
+            "cyprostat",
+            "soc8",
+            "cn-registration"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur",
+            "cyprostat",
+            "soc8",
+            "cn-registration"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "androcur"
+          ],
+          "reason": "相互作用使用临床条目，不生成精神活性物质混用矩阵。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "androcur",
+          "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+          "title": "Androcur50mg SmPC",
+          "region": "UK",
+          "version": "2024-10",
+          "accessedDate": "2026-11-06",
+          "sha256": "533c2bc434c4edd200db7a0a135823505c5d106c1d4621b6b3849e8316f8c296"
+        },
+        {
+          "id": "cyprostat",
+          "url": "https://www.medicines.org.uk/emc/product/15997/smpc",
+          "title": "Cyprostat50mg SmPC",
+          "region": "UK",
+          "version": "2024-10",
+          "accessedDate": "2026-11-06"
+        },
+        {
+          "id": "soc8",
+          "url": "https://doi.org/10.1080/26895269.2022.2100644",
+          "title": "WPATH Standards of Care v8",
+          "region": "international",
+          "version": "2022-09-15; AppendixC Table4 pS254",
+          "accessedDate": "2026-11-06",
+          "snapshotUrl": "https://www.psychiatry.wisc.edu/wp-content/uploads/2022/12/Standards-of-Care-for-the-Health-of-Transgender-and-Gender-Diverse-People-Version-8-1.pdf",
+          "sha256": "74e68f1f06424f9bff2c3e159eadf707fb3123d08ad983b60c5cc5b0b9596fa6",
+          "license": "CC-BY-NC-ND-4.0; reference factual numerical data only, no translated or adapted table/text distributed"
+        },
+        {
+          "id": "cn-registration",
+          "url": "https://pharm.ncmi.cn/zysjk/ypgcyp/202312/t20231205_411706.html",
+          "title": "醋酸环丙孕酮片 H20056391",
+          "region": "CN",
+          "version": "record2023-12-05; approval2019-09-30",
+          "accessedDate": "2026-11-06"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "site.nmpa.gov.cn 醋酸环丙孕酮片; WPATH SOC8 cyproterone table4",
+          "result": "中文名称与规格核对NCMI注册记录；临床字段按UK产品区分；HRT用量核对原始SOC8 PDF物理第256页、印刷S254及脚注。",
+          "sourceUrls": [
+            "https://www.medicines.org.uk/emc/product/15996/smpc",
+            "https://www.medicines.org.uk/emc/product/15997/smpc",
+            "https://doi.org/10.1080/26895269.2022.2100644",
+            "https://pharm.ncmi.cn/zysjk/ypgcyp/202312/t20231205_411706.html"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:40830ba74393c4e25c55": {

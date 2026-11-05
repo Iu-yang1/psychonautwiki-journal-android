@@ -35,8 +35,8 @@ class MedicationSearchIndexTest {
         val parser = SubstanceParser()
         val identities = Json.decodeFromString<MedicationCatalogFile>(raw("medication_catalog.json")).entries.associateBy { it.id }
         val entries = mergeMedicationFiles(parser.parseSubstanceFile(raw("substances.json")), parser.parseSubstanceFile(raw("substances_base.json"))).withHrtTaxonomy().substances.map { original ->
-            val sub = original.copy(identity = identities[original.id], commonNames = (original.commonNames + identities[original.id]?.aliases.orEmpty()).distinct())
-            MedicationSearchEntry(sub.id, sub.name, sub.commonNames, sub.categories.toSet(), sub.availableRoutesForIngestion().map { it.name }.toSet(), sub.searchFormulations(), sub.referenceSearchText(), sub.localizedSortName(Locale.ENGLISH))
+            val sub = original.withCatalogIdentity(identities[original.id])
+            MedicationSearchEntry(sub.id, sub.name, sub.commonNames, sub.categories.toSet(), sub.availableRoutesForIngestion().map { it.name }.toSet(), sub.searchFormulations(), sub.referenceSearchText(), sub.localizedSortName(Locale.ENGLISH), keywords = sub.searchTerms)
         }
         assertEquals(595, entries.size)
         val trihexyphenidyl = entries.single { it.name == "Trihexyphenidyl Hydrochloride" }

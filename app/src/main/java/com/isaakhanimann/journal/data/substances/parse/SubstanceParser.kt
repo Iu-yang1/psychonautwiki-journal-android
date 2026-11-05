@@ -85,7 +85,9 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
         val url = jsonCategory.getOptionalString("url")
         val colorDecimal = jsonCategory.getOptionalLong("color") ?: 4278876927
         val color = Color(colorDecimal)
-        return Category(name, description, url, color)
+        return Category(name, description, url, color,
+            displayName = jsonCategory.getOptionalString("displayName"),
+            kind = jsonCategory.getOptionalString("kind"))
     }
 
     private fun parseSubstance(jsonSubstance: JSONObject): Substance {
@@ -150,6 +152,11 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             id = jsonSubstance.optString("id", name),
             displayName = jsonSubstance.getOptionalString("displayName") ?: name,
             reviewedFields = parseJsonArrayToStringArray(jsonSubstance.getOptionalJSONArray("reviewedFields")).toSet(),
+            recordingUnits = jsonSubstance.getOptionalJSONObject("recordingUnits")?.let { units ->
+                units.keys().asSequence().associateWith { units.getString(it) }
+            }.orEmpty(),
+            formulationIds = parseJsonArrayToStringArray(jsonSubstance.getOptionalJSONArray("formulationIds")).toSet(),
+            searchTerms = parseJsonArrayToStringArray(jsonSubstance.getOptionalJSONArray("searchTerms")),
         )
     }
 

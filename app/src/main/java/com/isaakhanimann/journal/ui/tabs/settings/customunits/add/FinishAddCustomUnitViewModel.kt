@@ -117,9 +117,10 @@ class FinishAddCustomUnitViewModel @Inject constructor(
         viewModelScope.launch {
             substanceName = finishAddCustomUnitRoute.substanceName
             substance = substanceRepository.getSubstance(finishAddCustomUnitRoute.substanceName)
-            originalUnit = roaDose?.units ?: "mg"
+            val knownUnit = substance?.recordingUnit(administrationRoute).orEmpty()
+            originalUnit = knownUnit.ifBlank { "mg" }
             isUnitsFieldShown = roaDose?.units?.isBlank() ?: true
-            if (substance == null || roaDose?.units == null) {
+            if (substance == null || knownUnit.isBlank()) {
                 val customSubstance =
                     experienceRepo.getCustomSubstance(finishAddCustomUnitRoute.substanceName)
                 if (customSubstance != null) {

@@ -42,7 +42,7 @@ fun MedicationAssociationDialog(viewModel: HrtViewModel, anchor: Ingestion, onCl
             OutlinedTextField(query, { query = it }, label = { Text("查找名称 / 商品名 / 别名") })
             target?.let { Text("关联到：${it.name}", style = MaterialTheme.typography.titleMedium) }
             matches.take(12).forEach { substance ->
-                FilterChip(targetId == substance.id, { targetId = substance.id }, label = { Text(substance.name) })
+                FilterChip(targetId == substance.id, { targetId = substance.id }, label = { Text(substance.displayName) })
             }
             if (matches.isEmpty()) Text("没有支持此给药途径的匹配药物")
             Row {

@@ -51,7 +51,13 @@ data class Substance(
     val identity: MedicationCatalogIdentity? = null,
     val displayName: String = name,
     val reviewedFields: Set<String> = emptySet(),
+    val recordingUnits: Map<String, String> = emptyMap(),
+    val formulationIds: Set<String> = emptySet(),
+    val searchTerms: List<String> = emptyList(),
 ) {
+    fun recordingUnit(route: AdministrationRoute): String =
+        getRoa(route)?.roaDose?.units?.takeIf { it.isNotBlank() } ?: recordingUnits[route.name].orEmpty()
+
     fun getRoa(route: AdministrationRoute): Roa? {
         return roas.firstOrNull { it.route == route }
     }

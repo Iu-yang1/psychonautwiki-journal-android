@@ -205,6 +205,14 @@ fun SubstanceScreen(
                             )
                             .fillMaxWidth()
                     ) {
+                        val aliases = (listOf(substance.name) + substance.commonNames)
+                            .filter { com.isaakhanimann.journal.data.hrt.MedicationIdentity.normalize(it) != com.isaakhanimann.journal.data.hrt.MedicationIdentity.normalize(substance.displayName) }
+                            .distinctBy(com.isaakhanimann.journal.data.hrt.MedicationIdentity::normalize)
+                        if (aliases.isNotEmpty()) {
+                            Text(aliases.joinToString(" · "), style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            VerticalSpace()
+                        }
                         if (substance.summary != null) {
                             Text(text = substance.summary)
                             VerticalSpace()
@@ -226,9 +234,6 @@ fun SubstanceScreen(
             if (substance.endocrineInfo != null) {
                 EndocrineInformationSection(endocrineInfo = substance.endocrineInfo)
             }
-            if (substance.timeCourse.isNotEmpty()) {
-                TimeCourseSection(timeCourses = substance.timeCourse)
-            }
             if (substance.doseUseReferences.isNotEmpty()) {
                 DoseUseReferenceSection(
                     references = substance.doseUseReferences,
@@ -239,6 +244,9 @@ fun SubstanceScreen(
             }
             if (substance.tdm != null) {
                 TherapeuticDrugMonitoringSection(tdm = substance.tdm)
+            }
+            if (substance.timeCourse.isNotEmpty()) {
+                TimeCourseSection(timeCourses = substance.timeCourse)
             }
             val roasWithDosesDefined = substance.roas.filter { roa ->
                 val roaDose = roa.roaDose

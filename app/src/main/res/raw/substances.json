@@ -2,273 +2,400 @@
   "categories": [
     {
       "name": "common",
-      "description": "Common drugs are those which are well known and widely used among the drug community. This doesn't necessarily mean they are safe, but it usually comes with a longer relative history of use in humans with which to establish a safety profile.",
-      "color": 4278876927
+      "description": "Common",
+      "color": 4278876927,
+      "displayName": "Common",
+      "kind": "attribute"
     },
     {
       "name": "psychedelic",
-      "description": "Psychedelics are drugs which alter the perception, causing a number of mental effects which manifest in many forms including altered states of consciousness, visual or tactile effects.",
+      "description": "Psychedelics",
       "url": "https://psychonautwiki.org/wiki/Psychedelics",
-      "color": 4287564543
+      "color": 4287564543,
+      "displayName": "Psychedelics",
+      "kind": "category"
     },
     {
       "name": "stimulant",
-      "description": "Stimulants excite the nervous system and increase physiological function.",
+      "description": "Stimulants",
       "url": "https://psychonautwiki.org/wiki/Stimulants",
-      "color": 4278246860
+      "color": 4278246860,
+      "displayName": "Stimulants",
+      "kind": "category"
     },
     {
       "name": "entactogen",
-      "description": "Entactogens (also known as empathogens) are a class of psychoactive substances that produce distinctive emotional and social effects similar to those of MDMA.",
+      "description": "Entactogens",
       "url": "https://psychonautwiki.org/wiki/Entactogens",
-      "color": 4294904442
+      "color": 4294904442,
+      "displayName": "Entactogens",
+      "kind": "category"
     },
     {
       "name": "depressant",
-      "description": "Depressants are drugs which reduce arousal and stimulation in the user, characterised by a depressing of mental and physical functions.",
+      "description": "Depressants",
       "url": "https://psychonautwiki.org/wiki/Depressant",
-      "color": 4294606340
+      "color": 4294606340,
+      "displayName": "Depressants",
+      "kind": "category"
     },
     {
       "name": "opioid",
-      "description": "Opioids are pain-killing depressants which may also cause euphoria.",
+      "description": "Opioids",
       "url": "https://psychonautwiki.org/wiki/Opioids",
-      "color": 4294955889
+      "color": 4294955889,
+      "displayName": "Opioids",
+      "kind": "category"
     },
     {
       "name": "habit-forming",
-      "description": "These drugs pose a higher risk of causing habit forming behaviour, take particular care with the amount and frequency they are taken.",
-      "color": 4291698538
+      "description": "Dependence risk",
+      "color": 4291698538,
+      "displayName": "Dependence risk",
+      "kind": "attribute"
     },
     {
       "name": "research-chemical",
-      "description": "Research chemicals are drugs with relatively little history of human use, and thus particular care should be taken if choosing to ingest them.",
+      "description": "Research substance",
       "url": "https://psychonautwiki.org/wiki/Research_chemicals",
-      "color": 4286350333
+      "color": 4286350333,
+      "displayName": "Research substance",
+      "kind": "attribute"
     },
     {
       "name": "tentative",
-      "description": "Tentative means that there is not much reliable information about it. This is often because the drug is very new. Information listed under these drugs should not be entirely trusted.",
-      "color": 4287054400
+      "description": "Limited information",
+      "color": 4287054400,
+      "displayName": "Limited information",
+      "kind": "attribute"
     },
     {
       "name": "dissociative",
-      "description": "Dissociatives are mostly NMDA receptor antagonists, these substances are hallucinogenic but different than psychedelics. As per the name, these substances create a distance between the user and reality.",
+      "description": "Dissociatives",
       "url": "https://psychonautwiki.org/wiki/Dissociatives",
-      "color": 4294928359
+      "color": 4294928359,
+      "displayName": "Dissociatives",
+      "kind": "category"
     },
     {
       "name": "benzodiazepine",
-      "description": "Benzodiazepines are generally hypnotic or anxiolytic depressant drugs.",
+      "description": "Benzodiazepines",
       "url": "https://psychonautwiki.org/wiki/Benzodiazepines",
-      "color": 4291603072
+      "color": 4291603072,
+      "displayName": "Benzodiazepines",
+      "kind": "category"
     },
     {
       "name": "cannabinoid",
-      "description": "A cannabinoid is one of a class of diverse chemical compounds that act on cannabinoid receptors on cells that alter neurotransmitter functioning in the brain.",
+      "description": "Cannabinoids",
       "url": "https://psychonautwiki.org/wiki/Cannabinoid",
-      "color": 4282175310
+      "color": 4282175310,
+      "displayName": "Cannabinoids",
+      "kind": "category"
     },
     {
       "name": "nootropic",
-      "description": "Nootropics (also referred to as smart drugs, neuro enhancers, and cognitive enhancers) are substances that purportedly improve cognitive functions such as memory, motivation, attention, and concentration, in healthy individuals.",
+      "description": "Other cognition-related substances",
       "url": "https://psychonautwiki.org/wiki/Nootropic",
-      "color": 4282309616
+      "color": 4282309616,
+      "displayName": "Other cognition-related substances",
+      "kind": "category"
     },
     {
       "name": "deliriant",
-      "description": "Deliriants are considered to be true hallucinogens, because the visuals they produce are hard or impossible to tell apart from reality; they are also known for negative physical effects.",
+      "description": "Deliriants",
       "url": "https://psychonautwiki.org/wiki/Deliriant",
-      "color": 4278452378
+      "color": 4278452378,
+      "displayName": "Deliriants",
+      "kind": "category"
     },
     {
       "name": "barbiturate",
-      "description": "Barbiturates (also known as barbs and barbies) are a class of psychoactive substances that act as depressants of the central nervous system. They produce a variety of sedative-hypnotic effects including sedation, anxiety suppression, muscle relaxation, and seizure suppression when administered.",
+      "description": "Barbiturates",
       "url": "https://psychonautwiki.org/wiki/Barbiturates",
-      "color": 4279550862
+      "color": 4279550862,
+      "displayName": "Barbiturates",
+      "kind": "category"
     },
     {
       "name": "eugeroic",
-      "description": "Eugeroics, also known as wakefulness-promoting agents and wakefulness-promoting drugs, are a class of psychoactive substances that promote wakefulness and alertness. The best-known member of this class is modafinil.",
+      "description": "Eugeroics",
       "url": "https://psychonautwiki.org/wiki/Eugeroics",
-      "color": 4283267071
+      "color": 4283267071,
+      "displayName": "Eugeroics",
+      "kind": "category"
     },
     {
       "name": "hallucinogen",
-      "description": "Hallucinogens are a class of psychoactive substances that produce powerful alterations in perception, mood, and various cognitive processes. Hallucinogens can be classified into psychedelics, dissociatives and deliriants",
+      "description": "Other hallucinogens",
       "url": "https://psychonautwiki.org/wiki/Hallucinogens",
-      "color": 4294554120
+      "color": 4294554120,
+      "displayName": "Other hallucinogens",
+      "kind": "category"
     },
     {
       "name": "antipsychotic",
-      "description": "Antipsychotics (also known as neuroleptics or major tranquilizers) are a class of psychiatric medication primarily used to manage psychosis (including delusions, hallucinations, or disordered thought), particularly in schizophrenia and bipolar disorder.",
+      "description": "Antipsychotics",
       "url": "https://psychonautwiki.org/wiki/Antipsychotic",
-      "color": 4293455940
+      "color": 4293455940,
+      "displayName": "Antipsychotics",
+      "kind": "category"
     },
     {
       "name": "antidepressant",
-      "description": "Antidepressants are a class of psychoactive substances that are prescribed to treat psychiatric disorders, most commonly major depressive disorder and some forms of anxiety disorders.",
+      "description": "Antidepressants",
       "url": "https://psychonautwiki.org/wiki/Antidepressants",
-      "color": 4294954702
+      "color": 4294954702,
+      "displayName": "Antidepressants",
+      "kind": "category"
     },
     {
       "name": "atc-b01",
-      "description": "B01 抗血栓药物 / Antithrombotic agents. ATC 分类用于学习索引，不替代本地批准适应证或说明书。",
+      "description": "Antithrombotics",
       "color": 4284513675,
-      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01"
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01",
+      "displayName": "Antithrombotics",
+      "kind": "category"
     },
     {
       "name": "atc-c01",
-      "description": "C01 心脏治疗药物 / Cardiac therapy. ATC 分类用于学习索引，不替代本地批准适应证或说明书。",
+      "description": "Cardiac medicines",
       "color": 4280391411,
-      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01"
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C01",
+      "displayName": "Cardiac medicines",
+      "kind": "category"
     },
     {
       "name": "atc-c02",
-      "description": "C02 抗高血压药 / Antihypertensives. ATC 分类用于学习索引，不替代本地批准适应证或说明书。",
+      "description": "Antihypertensives",
       "color": 4284374622,
-      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02"
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C02",
+      "displayName": "Antihypertensives",
+      "kind": "category"
     },
     {
       "name": "atc-c03",
-      "description": "C03 利尿剂 / Diuretics. ATC 分类用于学习索引，不替代本地批准适应证或说明书。",
+      "description": "Diuretics",
       "color": 4287792575,
-      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03"
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03",
+      "displayName": "Diuretics",
+      "kind": "category"
     },
     {
       "name": "atc-c04",
-      "description": "C04 外周血管扩张剂 / Peripheral vasodilators. ATC 分类用于学习索引，不替代本地批准适应证或说明书。",
+      "description": "Peripheral circulation medicines",
       "color": 4283215696,
-      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C04"
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C04",
+      "displayName": "Peripheral circulation medicines",
+      "kind": "category"
     },
     {
       "name": "atc-c05",
-      "description": "C05 血管保护药 / Vasoprotectives. ATC 分类用于学习索引，不替代本地批准适应证或说明书。",
+      "description": "Vascular protective medicines",
       "color": 4288454041,
-      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C05"
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C05",
+      "displayName": "Vascular protective medicines",
+      "kind": "category"
     },
     {
       "name": "atc-c07",
-      "description": "C07 β受体阻滞剂 / Beta blocking agents. ATC 分类用于学习索引，不替代本地批准适应证或说明书。",
+      "description": "Beta blockers",
       "color": 4282551504,
-      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07"
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C07",
+      "displayName": "Beta blockers",
+      "kind": "category"
     },
     {
       "name": "atc-c08",
-      "description": "C08 钙通道阻滞剂 / Calcium channel blockers. ATC 分类用于学习索引，不替代本地批准适应证或说明书。",
+      "description": "Calcium channel blockers",
       "color": 4286578688,
-      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08"
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08",
+      "displayName": "Calcium channel blockers",
+      "kind": "category"
     },
     {
       "name": "atc-c09",
-      "description": "C09 肾素-血管紧张素系统药物 / Agents acting on the renin-angiotensin system. ATC 分类用于学习索引，不替代本地批准适应证或说明书。",
+      "description": "Renin-angiotensin system medicines",
       "color": 4280063111,
-      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09"
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C09",
+      "displayName": "Renin-angiotensin system medicines",
+      "kind": "category"
     },
     {
       "name": "atc-c10",
-      "description": "C10 调脂药 / Lipid modifying agents. ATC 分类用于学习索引，不替代本地批准适应证或说明书。",
+      "description": "Lipid-lowering medicines",
       "color": 4289959458,
-      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10"
+      "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C10",
+      "displayName": "Lipid-lowering medicines",
+      "kind": "category"
     },
     {
       "name": "cardiovascular",
-      "description": "Cardiovascular medicines and reference entries for clinical pharmacology learning.",
+      "description": "Cardiovascular and blood",
       "color": 4280391411,
-      "url": null
+      "url": null,
+      "displayName": "Cardiovascular and blood",
+      "kind": "domain"
     },
     {
       "name": "antithrombotic",
-      "description": "Medicines that affect thrombosis, coagulation, or platelet function.",
+      "description": "Antithrombotics",
       "color": 4284513675,
-      "url": null
+      "url": null,
+      "displayName": "Antithrombotics",
+      "kind": "category"
     },
     {
       "name": "peripheral-circulation",
-      "description": "Medicines relevant to peripheral circulation and vasomotor disorders.",
+      "description": "Peripheral circulation medicines",
       "color": 4284374622,
-      "url": null
+      "url": null,
+      "displayName": "Peripheral circulation medicines",
+      "kind": "category"
     },
     {
       "name": "prescription-medicine",
-      "description": "Prescription medicine reference entries for educational indexing only.",
+      "description": "Prescription medicine",
       "color": 4287792575,
-      "url": null
+      "url": null,
+      "displayName": "Prescription medicine",
+      "kind": "attribute"
     },
     {
       "name": "endocrine",
-      "description": "Endocrine medicines and hormone pharmacology reference entries.",
+      "description": "HRT and endocrine",
       "color": 4283215696,
-      "url": null
+      "url": null,
+      "displayName": "HRT and endocrine",
+      "kind": "domain"
     },
     {
       "name": "hrt-related",
-      "description": "Medicines relevant to hormone therapy data indexing and future model research.",
+      "description": "HRT and endocrine",
       "color": 4288423856,
-      "url": null
+      "url": null,
+      "displayName": "HRT and endocrine",
+      "kind": "domain"
     },
     {
       "name": "neurology",
-      "description": "神经系统用药",
-      "color": 4284513675
+      "description": "Mental and neurological",
+      "color": 4284513675,
+      "displayName": "Mental and neurological",
+      "kind": "domain"
     },
     {
       "name": "antiparkinsonian",
-      "description": "抗帕金森药",
-      "color": 4284513675
+      "description": "Antiparkinson medicines",
+      "color": 4284513675,
+      "displayName": "Antiparkinson medicines",
+      "kind": "category"
     },
     {
       "name": "anticholinergic",
-      "description": "抗胆碱药",
-      "color": 4284513675
+      "description": "Anticholinergic",
+      "color": 4284513675,
+      "displayName": "Anticholinergic",
+      "kind": "mechanism"
     },
     {
       "name": "clinical-psychiatry",
-      "description": "Clinical psychiatry and neuropsychiatry medicines indexed separately from recreational psychoactive categories.",
+      "description": "Mental and neurological",
       "color": 4282339765,
-      "url": null
+      "url": null,
+      "displayName": "Mental and neurological",
+      "kind": "domain"
     },
     {
       "name": "anxiolytic",
-      "description": "Medicines used in anxiety-related clinical contexts.",
+      "description": "Anxiolytics",
       "color": 4285297077,
-      "url": null
+      "url": null,
+      "displayName": "Anxiolytics",
+      "kind": "category"
     },
     {
       "name": "sedative-hypnotic",
-      "description": "Medicines used in sedative or hypnotic clinical contexts.",
+      "description": "Sleep medicines",
       "color": 4287467926,
-      "url": null
+      "url": null,
+      "displayName": "Sleep medicines",
+      "kind": "category"
     },
     {
       "name": "adhd-medication",
-      "description": "Medicines used in attention-deficit/hyperactivity disorder clinical contexts.",
+      "description": "ADHD medicines",
       "color": 4280668390,
-      "url": null
+      "url": null,
+      "displayName": "ADHD medicines",
+      "kind": "category"
     },
     {
       "name": "wakefulness-promoting-agent",
-      "description": "Medicines used in wakefulness-promoting or sleep-disorder clinical contexts.",
+      "description": "Wakefulness medicines",
       "color": 4281558732,
-      "url": null
+      "url": null,
+      "displayName": "Wakefulness medicines",
+      "kind": "category"
     },
     {
       "name": "cognitive-disorder-medication",
-      "description": "Medicines used in dementia or cognitive-disorder clinical contexts.",
+      "description": "Cognitive disorder medicines",
       "color": 4283453520,
-      "url": null
+      "url": null,
+      "displayName": "Cognitive disorder medicines",
+      "kind": "category"
     },
     {
       "name": "substance-use-disorder-treatment",
-      "description": "Medicines used in substance-use-disorder treatment or overdose reversal contexts.",
+      "description": "Substance use disorder treatment",
       "color": 4288059027,
-      "url": null
+      "url": null,
+      "displayName": "Substance use disorder treatment",
+      "kind": "category"
     },
     {
       "name": "mood-stabilizer",
-      "description": "Medicines used in bipolar disorder or mood-stabilization clinical contexts.",
+      "description": "Mood stabilizers",
       "color": 4287732651,
-      "url": null
+      "url": null,
+      "displayName": "Mood stabilizers",
+      "kind": "category"
+    },
+    {
+      "name": "hrt-estrogens",
+      "color": 4287985101,
+      "description": "Estrogens",
+      "displayName": "Estrogens",
+      "kind": "category"
+    },
+    {
+      "name": "hrt-antiandrogens",
+      "color": 4287985101,
+      "description": "Antiandrogens",
+      "displayName": "Antiandrogens",
+      "kind": "category"
+    },
+    {
+      "name": "hrt-progestogens",
+      "color": 4287985101,
+      "description": "Progestogens",
+      "displayName": "Progestogens",
+      "kind": "category"
+    },
+    {
+      "name": "gnrh-agonist",
+      "color": 4287985101,
+      "description": "GnRH agonist",
+      "displayName": "GnRH agonist",
+      "kind": "mechanism"
+    },
+    {
+      "name": "gnrh-antagonist",
+      "color": 4287985101,
+      "description": "GnRH antagonist",
+      "displayName": "GnRH antagonist",
+      "kind": "mechanism"
     }
   ],
   "substances": [
@@ -33659,10 +33786,8 @@
       "commonNames": [
         "Acetazolamide",
         "乙酰唑胺",
-        "C03 利尿剂",
         "碳酸酐酶抑制剂",
-        "C03BA01",
-        "ATC-C03"
+        "C03BA01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acetazolamide",
       "isApproved": true,
@@ -33858,6 +33983,10 @@
           "accessedDate": "2026-06-23",
           "evidenceLevel": "TERMINOLOGY"
         }
+      ],
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂"
       ]
     },
     {
@@ -33866,10 +33995,8 @@
       "commonNames": [
         "Mannitol",
         "甘露醇",
-        "C03 利尿剂",
         "渗透性利尿剂",
-        "C03DA05",
-        "ATC-C03"
+        "C03DA05"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Mannitol",
       "isApproved": true,
@@ -34058,6 +34185,10 @@
           "accessedDate": "2026-06-23",
           "evidenceLevel": "TERMINOLOGY"
         }
+      ],
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂"
       ]
     },
     {
@@ -34067,12 +34198,7 @@
         "Prinivil",
         "Zestril",
         "赖诺普利",
-        "ACE inhibitor",
-        "ACEI",
-        "C09 肾素-血管紧张素系统药物",
-        "Agents acting on the renin-angiotensin system",
-        "C09",
-        "ATC-C09"
+        "ACEI"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
       "isApproved": true,
@@ -34287,7 +34413,14 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:b611b198884b90c468ea"
+      "id": "pw:b611b198884b90c468ea",
+      "searchTerms": [
+        "ACE inhibitor",
+        "ATC-C09",
+        "Agents acting on the renin-angiotensin system",
+        "C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Losartan",
@@ -34296,12 +34429,7 @@
         "Cozaar",
         "Losartan potassium",
         "氯沙坦",
-        "ARB",
-        "Angiotensin receptor blocker",
-        "C09 肾素-血管紧张素系统药物",
-        "Agents acting on the renin-angiotensin system",
-        "C09",
-        "ATC-C09"
+        "Angiotensin receptor blocker"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
       "isApproved": true,
@@ -34519,7 +34647,14 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:45d05d0346e389768e2a"
+      "id": "pw:45d05d0346e389768e2a",
+      "searchTerms": [
+        "ARB",
+        "ATC-C09",
+        "Agents acting on the renin-angiotensin system",
+        "C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Lidocaine",
@@ -34527,12 +34662,7 @@
         "Lidocaine",
         "Lignocaine",
         "Xylocaine",
-        "利多卡因",
-        "Class Ib antiarrhythmic",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "利多卡因"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
       "isApproved": true,
@@ -34763,7 +34893,14 @@
           "evidenceLevel": "LABORATORY_CATALOG"
         }
       ],
-      "id": "pw:e81bacb25b591d24ea5b"
+      "id": "pw:e81bacb25b591d24ea5b",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Class Ib antiarrhythmic"
+      ]
     },
     {
       "name": "Procainamide",
@@ -34772,12 +34909,7 @@
         "Pronestyl",
         "N-acetylprocainamide",
         "NAPA",
-        "普鲁卡因胺",
-        "Class Ia antiarrhythmic",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "普鲁卡因胺"
       ],
       "url": "https://www.mayocliniclabs.com/test-catalog/overview/8683",
       "isApproved": true,
@@ -35098,19 +35230,21 @@
           "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:d44430122072213057f7"
+      "id": "pw:d44430122072213057f7",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Class Ia antiarrhythmic"
+      ]
     },
     {
       "name": "Flecainide",
       "commonNames": [
         "Flecainide",
         "Tambocor",
-        "氟卡尼",
-        "Class Ic antiarrhythmic",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "氟卡尼"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5b33e96a-8336-46c4-aac7-4a6c0039cc80",
       "isApproved": true,
@@ -35340,7 +35474,14 @@
           "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:3d68fa1dcd033ea1d240"
+      "id": "pw:3d68fa1dcd033ea1d240",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Class Ic antiarrhythmic"
+      ]
     },
     {
       "name": "Amiodarone",
@@ -35350,12 +35491,7 @@
         "Pacerone",
         "Desethylamiodarone",
         "DEA",
-        "胺碘酮",
-        "Class III antiarrhythmic",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "胺碘酮"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0caedb97-56fd-4ec0-bfb2-c7683b8f5f1b",
       "isApproved": true,
@@ -35638,19 +35774,21 @@
           "evidenceLevel": "LABORATORY_CATALOG"
         }
       ],
-      "id": "pw:f984607a31fefd3c5639"
+      "id": "pw:f984607a31fefd3c5639",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Class III antiarrhythmic"
+      ]
     },
     {
       "name": "Quinidine",
       "commonNames": [
         "Quinidine",
         "Quinidine sulfate",
-        "奎尼丁",
-        "Class Ia antiarrhythmic",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "奎尼丁"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b0d6341b-d880-4f0b-8844-bc788c03004a",
       "isApproved": true,
@@ -35890,19 +36028,21 @@
           "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:ce94623c1088f259d5da"
+      "id": "pw:ce94623c1088f259d5da",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Class Ia antiarrhythmic"
+      ]
     },
     {
       "name": "Disopyramide",
       "commonNames": [
         "Disopyramide",
         "Norpace",
-        "丙吡胺",
-        "Class Ia antiarrhythmic",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "丙吡胺"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=31e79459-107f-4d69-a163-90014f1c4772",
       "isApproved": true,
@@ -36121,19 +36261,21 @@
           "evidenceLevel": "LABORATORY_CATALOG"
         }
       ],
-      "id": "pw:eaaa4c7259be9a4ce8f1"
+      "id": "pw:eaaa4c7259be9a4ce8f1",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Class Ia antiarrhythmic"
+      ]
     },
     {
       "name": "Mexiletine",
       "commonNames": [
         "Mexiletine",
         "Mexitil",
-        "美西律",
-        "Class Ib antiarrhythmic",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "美西律"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a61a07f6-0b48-4dcd-ad42-5d90f6e69ab1",
       "isApproved": true,
@@ -36359,19 +36501,21 @@
           "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:73d860c5e927c9573463"
+      "id": "pw:73d860c5e927c9573463",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Class Ib antiarrhythmic"
+      ]
     },
     {
       "name": "Propafenone",
       "commonNames": [
         "Propafenone",
         "Rythmol",
-        "普罗帕酮",
-        "Class Ic antiarrhythmic",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "普罗帕酮"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2ecd6452-ccc3-493f-9a4a-69f0fbf67a42",
       "isApproved": true,
@@ -36576,21 +36720,21 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:d6ed2a2bdddb2cd84afe"
+      "id": "pw:d6ed2a2bdddb2cd84afe",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Class Ic antiarrhythmic"
+      ]
     },
     {
       "name": "Sotalol",
       "commonNames": [
         "Sotalol",
         "Betapace",
-        "索他洛尔",
-        "Class III antiarrhythmic",
-        "Class II antiarrhythmic",
-        "Beta blocker",
-        "C07 β受体阻滞剂",
-        "Beta blocking agents",
-        "C07",
-        "ATC-C07"
+        "索他洛尔"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c824f6b2-80c5-45a6-a491-4c14c9f5e33d",
       "isApproved": true,
@@ -36837,7 +36981,16 @@
           "evidenceLevel": "LABORATORY_CATALOG"
         }
       ],
-      "id": "pw:3dd4807a8eef93e3bccc"
+      "id": "pw:3dd4807a8eef93e3bccc",
+      "searchTerms": [
+        "ATC-C07",
+        "Beta blocker",
+        "Beta blocking agents",
+        "C07",
+        "C07 β受体阻滞剂",
+        "Class II antiarrhythmic",
+        "Class III antiarrhythmic"
+      ]
     },
     {
       "name": "Dofetilide",
@@ -36845,12 +36998,7 @@
         "Dofetilide",
         "Tikosyn",
         "多非利特",
-        "Class III antiarrhythmic",
-        "IKr blocker",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "IKr blocker"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=26de5f8c-8cec-46f6-a468-69451758a278",
       "isApproved": true,
@@ -37059,19 +37207,21 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:9e9ef2d96217c65c246e"
+      "id": "pw:9e9ef2d96217c65c246e",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Class III antiarrhythmic"
+      ]
     },
     {
       "name": "Ibutilide",
       "commonNames": [
         "Ibutilide",
         "Corvert",
-        "伊布利特",
-        "Class III antiarrhythmic",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "伊布利特"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0",
       "isApproved": true,
@@ -37265,7 +37415,14 @@
           "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:07728a873d080ff201b8"
+      "id": "pw:07728a873d080ff201b8",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Class III antiarrhythmic"
+      ]
     },
     {
       "name": "Adenosine",
@@ -37274,11 +37431,7 @@
         "Adenocard",
         "腺苷",
         "AV nodal blocker",
-        "Supraventricular tachycardia medicine",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "Supraventricular tachycardia medicine"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48d72391-b3d4-bd97-e063-6294a90a9d6f",
       "isApproved": true,
@@ -37478,7 +37631,13 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:5ac4b8721f9a81d94318"
+      "id": "pw:5ac4b8721f9a81d94318",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy"
+      ]
     },
     {
       "name": "Nifedipine ER",
@@ -37488,8 +37647,7 @@
         "硝苯地平缓释/控释片",
         "Adalat CC",
         "Procardia XL",
-        "DHP CCB",
-        "CCB"
+        "DHP CCB"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
       "isApproved": true,
@@ -37666,20 +37824,17 @@
           "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:0eb91a54d08f477c2e05"
+      "id": "pw:0eb91a54d08f477c2e05",
+      "searchTerms": [
+        "CCB"
+      ]
     },
     {
       "name": "Clopidogrel",
       "commonNames": [
         "Clopidogrel",
         "Plavix",
-        "氯吡格雷",
-        "P2Y12 inhibitor",
-        "Antiplatelet",
-        "B01 抗血栓药物",
-        "Antithrombotic agents",
-        "B01",
-        "ATC-B01"
+        "氯吡格雷"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
       "isApproved": true,
@@ -37876,21 +38031,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:f12cf86f6e5e473f5c0a"
+      "id": "pw:f12cf86f6e5e473f5c0a",
+      "searchTerms": [
+        "ATC-B01",
+        "Antiplatelet",
+        "Antithrombotic agents",
+        "B01",
+        "B01 抗血栓药物",
+        "P2Y12 inhibitor"
+      ]
     },
     {
       "name": "Apixaban",
       "commonNames": [
         "Apixaban",
         "Eliquis",
-        "阿哌沙班",
-        "DOAC",
-        "Direct oral anticoagulant",
-        "Factor Xa inhibitor",
-        "B01 抗血栓药物",
-        "Antithrombotic agents",
-        "B01",
-        "ATC-B01"
+        "阿哌沙班"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a454cd24-0c6d-46e8-b1e4-197388606175",
       "isApproved": true,
@@ -38089,7 +38245,16 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:c2857e724862c929ac51"
+      "id": "pw:c2857e724862c929ac51",
+      "searchTerms": [
+        "ATC-B01",
+        "Antithrombotic agents",
+        "B01",
+        "B01 抗血栓药物",
+        "DOAC",
+        "Direct oral anticoagulant",
+        "Factor Xa inhibitor"
+      ]
     },
     {
       "name": "Warfarin",
@@ -38099,11 +38264,7 @@
         "Jantoven",
         "华法林",
         "INR",
-        "Vitamin K antagonist",
-        "B01 抗血栓药物",
-        "Antithrombotic agents",
-        "B01",
-        "ATC-B01"
+        "Vitamin K antagonist"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b6233f92-0d92-44d0-82cb-bacccb61d970",
       "isApproved": true,
@@ -38309,7 +38470,13 @@
           "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:64e7d4ecaf0f4ae0005e"
+      "id": "pw:64e7d4ecaf0f4ae0005e",
+      "searchTerms": [
+        "ATC-B01",
+        "Antithrombotic agents",
+        "B01",
+        "B01 抗血栓药物"
+      ]
     },
     {
       "name": "Digitoxin",
@@ -38317,10 +38484,8 @@
         "Digitoxin",
         "Digitalis glycoside",
         "洋地黄毒苷",
-        "C01 心脏治疗药物",
         "强心苷",
-        "C01AA04",
-        "ATC-C01"
+        "C01AA04"
       ],
       "url": "https://experts.arizona.edu/en/publications/clinical-pharmacokinetics-of-digitoxin/",
       "isApproved": true,
@@ -38540,7 +38705,11 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:5cc762fb9aa6f1ddafda"
+      "id": "pw:5cc762fb9aa6f1ddafda",
+      "searchTerms": [
+        "ATC-C01",
+        "C01 心脏治疗药物"
+      ]
     },
     {
       "name": "Dronedarone",
@@ -38548,10 +38717,8 @@
         "Dronedarone",
         "Multaq",
         "决奈达隆",
-        "C01 心脏治疗药物",
         "III类抗心律失常药",
-        "C01BD07",
-        "ATC-C01"
+        "C01BD07"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dronedarone",
       "isApproved": true,
@@ -38750,7 +38917,11 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:035b1196a4ec4afbb113"
+      "id": "pw:035b1196a4ec4afbb113",
+      "searchTerms": [
+        "ATC-C01",
+        "C01 心脏治疗药物"
+      ]
     },
     {
       "name": "Ivabradine",
@@ -38758,10 +38929,8 @@
         "Ivabradine",
         "Corlanor",
         "伊伐布雷定",
-        "C01 心脏治疗药物",
         "窦房结 If 电流抑制剂",
-        "C01EB17",
-        "ATC-C01"
+        "C01EB17"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ivabradine",
       "isApproved": true,
@@ -38953,7 +39122,11 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:88bbe45c998ce8bb7994"
+      "id": "pw:88bbe45c998ce8bb7994",
+      "searchTerms": [
+        "ATC-C01",
+        "C01 心脏治疗药物"
+      ]
     },
     {
       "name": "Dobutamine",
@@ -38961,10 +39134,8 @@
         "Dobutamine",
         "Beta-1 agonist",
         "多巴酚丁胺",
-        "C01 心脏治疗药物",
         "正性肌力药",
-        "C01CA07",
-        "ATC-C01"
+        "C01CA07"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dobutamine",
       "isApproved": true,
@@ -39156,17 +39327,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:f96ef4fbe20c29bf9adb"
+      "id": "pw:f96ef4fbe20c29bf9adb",
+      "searchTerms": [
+        "ATC-C01",
+        "C01 心脏治疗药物"
+      ]
     },
     {
       "name": "Dopamine",
       "commonNames": [
         "Dopamine",
         "多巴胺",
-        "C01 心脏治疗药物",
         "儿茶酚胺类血管活性药",
-        "C01CA04",
-        "ATC-C01"
+        "C01CA04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dopamine",
       "isApproved": true,
@@ -39358,17 +39531,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:cc77c8fdd78c32ef1a17"
+      "id": "pw:cc77c8fdd78c32ef1a17",
+      "searchTerms": [
+        "ATC-C01",
+        "C01 心脏治疗药物"
+      ]
     },
     {
       "name": "Milrinone",
       "commonNames": [
         "Milrinone",
         "米力农",
-        "C01 心脏治疗药物",
         "磷酸二酯酶3抑制剂",
-        "C01CE02",
-        "ATC-C01"
+        "C01CE02"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Milrinone",
       "isApproved": true,
@@ -39560,18 +39735,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:348d53de491ee1bed498"
+      "id": "pw:348d53de491ee1bed498",
+      "searchTerms": [
+        "ATC-C01",
+        "C01 心脏治疗药物"
+      ]
     },
     {
       "name": "Vericiguat",
       "commonNames": [
         "Vericiguat",
-        "sGC stimulator",
         "维立西呱",
-        "C01 心脏治疗药物",
         "可溶性鸟苷酸环化酶刺激剂",
-        "C01DX22",
-        "ATC-C01"
+        "C01DX22"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vericiguat",
       "isApproved": true,
@@ -39765,17 +39941,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:6eda79ffc516f863ab22"
+      "id": "pw:6eda79ffc516f863ab22",
+      "searchTerms": [
+        "ATC-C01",
+        "C01 心脏治疗药物",
+        "sGC stimulator"
+      ]
     },
     {
       "name": "Clonidine",
       "commonNames": [
         "Clonidine",
         "可乐定",
-        "C02 抗高血压药",
         "中枢性α2受体激动剂",
-        "C02AC01",
-        "ATC-C02"
+        "C02AC01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clonidine",
       "isApproved": true,
@@ -39965,17 +40144,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:bcd56ba5fe80ac2a788c"
+      "id": "pw:bcd56ba5fe80ac2a788c",
+      "searchTerms": [
+        "ATC-C02",
+        "C02 抗高血压药"
+      ]
     },
     {
       "name": "Methyldopa",
       "commonNames": [
         "Methyldopa",
         "甲基多巴",
-        "C02 抗高血压药",
         "中枢性抗高血压药",
-        "C02AB01",
-        "ATC-C02"
+        "C02AB01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Methyldopa",
       "isApproved": true,
@@ -40167,17 +40348,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:fc6e16360aa45a88c162"
+      "id": "pw:fc6e16360aa45a88c162",
+      "searchTerms": [
+        "ATC-C02",
+        "C02 抗高血压药"
+      ]
     },
     {
       "name": "Moxonidine",
       "commonNames": [
         "Moxonidine",
         "莫索尼定",
-        "C02 抗高血压药",
         "咪唑啉受体激动剂",
-        "C02AC05",
-        "ATC-C02"
+        "C02AC05"
       ],
       "url": "https://www.medicines.org.uk/emc/product/4140/smpc",
       "isApproved": true,
@@ -40404,17 +40587,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:eca8aaec48666acf0ec2"
+      "id": "pw:eca8aaec48666acf0ec2",
+      "searchTerms": [
+        "ATC-C02",
+        "C02 抗高血压药"
+      ]
     },
     {
       "name": "Prazosin",
       "commonNames": [
         "Prazosin",
         "哌唑嗪",
-        "C02 抗高血压药",
-        "α1受体阻滞剂",
-        "C02CA01",
-        "ATC-C02"
+        "C02CA01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Prazosin",
       "isApproved": true,
@@ -40606,17 +40790,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:8e733cd16a62969287e6"
+      "id": "pw:8e733cd16a62969287e6",
+      "searchTerms": [
+        "ATC-C02",
+        "C02 抗高血压药",
+        "α1受体阻滞剂"
+      ]
     },
     {
       "name": "Doxazosin",
       "commonNames": [
         "Doxazosin",
         "多沙唑嗪",
-        "C02 抗高血压药",
-        "α1受体阻滞剂",
-        "C02CA04",
-        "ATC-C02"
+        "C02CA04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Doxazosin",
       "isApproved": true,
@@ -40808,17 +40994,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:8863be3da2ee034057b8"
+      "id": "pw:8863be3da2ee034057b8",
+      "searchTerms": [
+        "ATC-C02",
+        "C02 抗高血压药",
+        "α1受体阻滞剂"
+      ]
     },
     {
       "name": "Terazosin",
       "commonNames": [
         "Terazosin",
         "特拉唑嗪",
-        "C02 抗高血压药",
-        "α1受体阻滞剂",
-        "C02CA03",
-        "ATC-C02"
+        "C02CA03"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Terazosin",
       "isApproved": true,
@@ -41010,17 +41198,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:a3b2503f6b93fb328221"
+      "id": "pw:a3b2503f6b93fb328221",
+      "searchTerms": [
+        "ATC-C02",
+        "C02 抗高血压药",
+        "α1受体阻滞剂"
+      ]
     },
     {
       "name": "Bosentan",
       "commonNames": [
         "Bosentan",
         "波生坦",
-        "C02 抗高血压药",
         "内皮素受体拮抗剂",
-        "C02KX01",
-        "ATC-C02"
+        "C02KX01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bosentan",
       "isApproved": true,
@@ -41217,17 +41408,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:d65e16eeee716a6dbb1f"
+      "id": "pw:d65e16eeee716a6dbb1f",
+      "searchTerms": [
+        "ATC-C02",
+        "C02 抗高血压药"
+      ]
     },
     {
       "name": "Sodium Nitroprusside",
       "commonNames": [
         "Sodium Nitroprusside",
         "硝普钠",
-        "C02 抗高血压药",
-        "直接血管扩张剂",
-        "C02DD01",
-        "ATC-C02"
+        "C02DD01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Sodium%20Nitroprusside",
       "isApproved": true,
@@ -41419,17 +41611,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:6704e66e3392629b13fe"
+      "id": "pw:6704e66e3392629b13fe",
+      "searchTerms": [
+        "ATC-C02",
+        "C02 抗高血压药",
+        "直接血管扩张剂"
+      ]
     },
     {
       "name": "Amiloride",
       "commonNames": [
         "Amiloride",
         "阿米洛利",
-        "C03 利尿剂",
-        "保钾利尿剂",
-        "C03DB01",
-        "ATC-C03"
+        "C03DB01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Amiloride",
       "isApproved": true,
@@ -41628,17 +41822,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:8b03999a38e54a29e38c"
+      "id": "pw:8b03999a38e54a29e38c",
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂",
+        "保钾利尿剂"
+      ]
     },
     {
       "name": "Triamterene",
       "commonNames": [
         "Triamterene",
         "氨苯蝶啶",
-        "C03 利尿剂",
-        "保钾利尿剂",
-        "C03DB02",
-        "ATC-C03"
+        "C03DB02"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Triamterene",
       "isApproved": true,
@@ -41837,17 +42033,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:9b594823178274530fa4"
+      "id": "pw:9b594823178274530fa4",
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂",
+        "保钾利尿剂"
+      ]
     },
     {
       "name": "Metolazone",
       "commonNames": [
         "Metolazone",
         "美托拉宗",
-        "C03 利尿剂",
-        "噻嗪样利尿剂",
-        "C03BA08",
-        "ATC-C03"
+        "C03BA08"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Metolazone",
       "isApproved": true,
@@ -42046,17 +42244,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:b4d753b1cd5ad95e8b33"
+      "id": "pw:b4d753b1cd5ad95e8b33",
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂",
+        "噻嗪样利尿剂"
+      ]
     },
     {
       "name": "Ethacrynic Acid",
       "commonNames": [
         "Ethacrynic Acid",
         "依他尼酸",
-        "C03 利尿剂",
-        "袢利尿剂",
-        "C03CC01",
-        "ATC-C03"
+        "C03CC01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ethacrynic%20Acid",
       "isApproved": true,
@@ -42248,17 +42448,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:e3cf05af95e51a9069fd"
+      "id": "pw:e3cf05af95e51a9069fd",
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂",
+        "袢利尿剂"
+      ]
     },
     {
       "name": "Chlorothiazide",
       "commonNames": [
         "Chlorothiazide",
         "氯噻嗪",
-        "C03 利尿剂",
-        "噻嗪类利尿剂",
-        "C03AA04",
-        "ATC-C03"
+        "C03AA04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Chlorothiazide",
       "isApproved": true,
@@ -42450,17 +42652,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:7db269ab67d0445deb15"
+      "id": "pw:7db269ab67d0445deb15",
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂",
+        "噻嗪类利尿剂"
+      ]
     },
     {
       "name": "Bendroflumethiazide",
       "commonNames": [
         "Bendroflumethiazide",
         "苄氟噻嗪",
-        "C03 利尿剂",
-        "噻嗪类利尿剂",
-        "C03AA01",
-        "ATC-C03"
+        "C03AA01"
       ],
       "url": "https://docetp.mpa.se/LMF/Bendroflumetiazid%20Evolan%20tablet%20ENG%20SmPC_09001bee807a0c7b.pdf",
       "isApproved": true,
@@ -42695,17 +42899,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:5c78e6aece7ea72e0582"
+      "id": "pw:5c78e6aece7ea72e0582",
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂",
+        "噻嗪类利尿剂"
+      ]
     },
     {
       "name": "Xipamide",
       "commonNames": [
         "Xipamide",
         "希帕胺",
-        "C03 利尿剂",
-        "噻嗪样利尿剂",
-        "C03BA10",
-        "ATC-C03"
+        "C03BA10"
       ],
       "url": "https://pubmed.ncbi.nlm.nih.gov/3905333/",
       "isApproved": true,
@@ -42942,17 +43148,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:0b11563ae4b8de5cb097"
+      "id": "pw:0b11563ae4b8de5cb097",
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂",
+        "噻嗪样利尿剂"
+      ]
     },
     {
       "name": "Canrenone",
       "commonNames": [
         "Canrenone",
         "坎利酮",
-        "C03 利尿剂",
         "醛固酮拮抗剂",
-        "C03DA02",
-        "ATC-C03"
+        "C03DA02"
       ],
       "url": "https://pubmed.ncbi.nlm.nih.gov/6653638/",
       "isApproved": true,
@@ -43178,17 +43387,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:03598ed3a18722c476d3"
+      "id": "pw:03598ed3a18722c476d3",
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂"
+      ]
     },
     {
       "name": "Finerenone",
       "commonNames": [
         "Finerenone",
         "非奈利酮",
-        "C03 利尿剂",
         "非甾体盐皮质激素受体拮抗剂",
-        "C03DA05",
-        "ATC-C03"
+        "C03DA05"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Finerenone",
       "isApproved": true,
@@ -43380,17 +43591,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:36b605669fbf39613bb3"
+      "id": "pw:36b605669fbf39613bb3",
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂"
+      ]
     },
     {
       "name": "Tolvaptan",
       "commonNames": [
         "Tolvaptan",
         "托伐普坦",
-        "C03 利尿剂",
         "加压素V2受体拮抗剂/利尿剂",
-        "C03XA01",
-        "ATC-C03"
+        "C03XA01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tolvaptan",
       "isApproved": true,
@@ -43582,17 +43795,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:791059210e041b8c25b5"
+      "id": "pw:791059210e041b8c25b5",
+      "searchTerms": [
+        "ATC-C03",
+        "C03 利尿剂"
+      ]
     },
     {
       "name": "Pentoxifylline",
       "commonNames": [
         "Pentoxifylline",
         "己酮可可碱",
-        "C04 外周血管扩张剂",
         "外周血管扩张剂/血液流变改善药",
-        "C04AD03",
-        "ATC-C04"
+        "C04AD03"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Pentoxifylline",
       "isApproved": true,
@@ -43788,17 +44003,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:9a5f32860afbf07db50f"
+      "id": "pw:9a5f32860afbf07db50f",
+      "searchTerms": [
+        "ATC-C04",
+        "C04 外周血管扩张剂"
+      ]
     },
     {
       "name": "Naftidrofuryl",
       "commonNames": [
         "Naftidrofuryl",
         "萘呋胺",
-        "C04 外周血管扩张剂",
         "外周血管扩张剂",
-        "C04AX21",
-        "ATC-C04"
+        "C04AX21"
       ],
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7766335/",
       "isApproved": true,
@@ -43998,17 +44215,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:6fd1b85567271605bd36"
+      "id": "pw:6fd1b85567271605bd36",
+      "searchTerms": [
+        "ATC-C04",
+        "C04 外周血管扩张剂"
+      ]
     },
     {
       "name": "Nicergoline",
       "commonNames": [
         "Nicergoline",
         "尼麦角林",
-        "C04 外周血管扩张剂",
         "麦角生物碱类血管活性药",
-        "C04AE02",
-        "ATC-C04"
+        "C04AE02"
       ],
       "url": "https://ec.europa.eu/health/documents/community-register/2013/20130927126534/anx_126534_en.pdf",
       "isApproved": true,
@@ -44235,17 +44454,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:3df3214210d154828f29"
+      "id": "pw:3df3214210d154828f29",
+      "searchTerms": [
+        "ATC-C04",
+        "C04 外周血管扩张剂"
+      ]
     },
     {
       "name": "Phentolamine",
       "commonNames": [
         "Phentolamine",
         "酚妥拉明",
-        "C04 外周血管扩张剂",
         "α受体阻滞性血管扩张剂",
-        "C04AB01",
-        "ATC-C04"
+        "C04AB01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Phentolamine",
       "isApproved": true,
@@ -44438,7 +44659,11 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:0137129a49fdd2de3c66"
+      "id": "pw:0137129a49fdd2de3c66",
+      "searchTerms": [
+        "ATC-C04",
+        "C04 外周血管扩张剂"
+      ]
     },
     {
       "name": "Nicotinyl Alcohol",
@@ -44447,10 +44672,8 @@
         "Nicotinic acid derivative",
         "Roniacol",
         "烟醇",
-        "C04 外周血管扩张剂",
         "烟酸衍生物类外周血管扩张剂",
-        "C04AC02",
-        "ATC-C04"
+        "C04AC02"
       ],
       "url": "https://drugcentral.org/drugcard/1921",
       "isApproved": true,
@@ -44665,17 +44888,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:dbd254eddc5f1ad417f5"
+      "id": "pw:dbd254eddc5f1ad417f5",
+      "searchTerms": [
+        "ATC-C04",
+        "C04 外周血管扩张剂"
+      ]
     },
     {
       "name": "Diosmin",
       "commonNames": [
         "Diosmin",
         "地奥司明",
-        "C05 血管保护药",
-        "生物类黄酮血管保护药",
-        "C05CA03",
-        "ATC-C05"
+        "C05CA03"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Diosmin",
       "isApproved": true,
@@ -44867,17 +45091,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:8b27ebe1faf5c267c9b9"
+      "id": "pw:8b27ebe1faf5c267c9b9",
+      "searchTerms": [
+        "ATC-C05",
+        "C05 血管保护药",
+        "生物类黄酮血管保护药"
+      ]
     },
     {
       "name": "Hesperidin",
       "commonNames": [
         "Hesperidin",
         "橙皮苷",
-        "C05 血管保护药",
-        "生物类黄酮血管保护药",
-        "C05CA53",
-        "ATC-C05"
+        "C05CA53"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Hesperidin",
       "isApproved": true,
@@ -45069,17 +45295,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:0299dbfeea3d277cddcb"
+      "id": "pw:0299dbfeea3d277cddcb",
+      "searchTerms": [
+        "ATC-C05",
+        "C05 血管保护药",
+        "生物类黄酮血管保护药"
+      ]
     },
     {
       "name": "Troxerutin",
       "commonNames": [
         "Troxerutin",
         "曲克芦丁",
-        "C05 血管保护药",
         "毛细血管稳定剂",
-        "C05CA04",
-        "ATC-C05"
+        "C05CA04"
       ],
       "url": "https://doi.org/10.1002/rcm.2764",
       "isApproved": true,
@@ -45271,17 +45500,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:162c52cdab40f561f4db"
+      "id": "pw:162c52cdab40f561f4db",
+      "searchTerms": [
+        "ATC-C05",
+        "C05 血管保护药"
+      ]
     },
     {
       "name": "Calcium Dobesilate",
       "commonNames": [
         "Calcium Dobesilate",
         "羟苯磺酸钙",
-        "C05 血管保护药",
         "血管保护药",
-        "C05BX01",
-        "ATC-C05"
+        "C05BX01"
       ],
       "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0284576",
       "isApproved": true,
@@ -45506,17 +45737,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:9f14b23b4e9f236639fd"
+      "id": "pw:9f14b23b4e9f236639fd",
+      "searchTerms": [
+        "ATC-C05",
+        "C05 血管保护药"
+      ]
     },
     {
       "name": "Rutoside",
       "commonNames": [
         "Rutoside",
         "芦丁",
-        "C05 血管保护药",
-        "生物类黄酮血管保护药",
-        "C05CA01",
-        "ATC-C05"
+        "C05CA01"
       ],
       "url": "https://pubmed.ncbi.nlm.nih.gov/11151743/",
       "isApproved": true,
@@ -45737,17 +45969,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:f2c8c40c34e618b95bdf"
+      "id": "pw:f2c8c40c34e618b95bdf",
+      "searchTerms": [
+        "ATC-C05",
+        "C05 血管保护药",
+        "生物类黄酮血管保护药"
+      ]
     },
     {
       "name": "Acebutolol",
       "commonNames": [
         "Acebutolol",
         "醋丁洛尔",
-        "C07 β受体阻滞剂",
-        "β1选择性阻滞剂",
-        "C07AB04",
-        "ATC-C07"
+        "C07AB04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Acebutolol",
       "isApproved": true,
@@ -45939,17 +46173,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:95faa1b3bf0618ec39af"
+      "id": "pw:95faa1b3bf0618ec39af",
+      "searchTerms": [
+        "ATC-C07",
+        "C07 β受体阻滞剂",
+        "β1选择性阻滞剂"
+      ]
     },
     {
       "name": "Betaxolol",
       "commonNames": [
         "Betaxolol",
         "倍他洛尔",
-        "C07 β受体阻滞剂",
-        "β1选择性阻滞剂",
-        "C07AB05",
-        "ATC-C07"
+        "C07AB05"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Betaxolol",
       "isApproved": true,
@@ -46141,17 +46377,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:34bb0de719a4385ff43f"
+      "id": "pw:34bb0de719a4385ff43f",
+      "searchTerms": [
+        "ATC-C07",
+        "C07 β受体阻滞剂",
+        "β1选择性阻滞剂"
+      ]
     },
     {
       "name": "Nadolol",
       "commonNames": [
         "Nadolol",
         "纳多洛尔",
-        "C07 β受体阻滞剂",
-        "非选择性β受体阻滞剂",
-        "C07AA12",
-        "ATC-C07"
+        "C07AA12"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nadolol",
       "isApproved": true,
@@ -46343,17 +46581,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:e9cda9e874fa9f1fb1ea"
+      "id": "pw:e9cda9e874fa9f1fb1ea",
+      "searchTerms": [
+        "ATC-C07",
+        "C07 β受体阻滞剂",
+        "非选择性β受体阻滞剂"
+      ]
     },
     {
       "name": "Pindolol",
       "commonNames": [
         "Pindolol",
         "吲哚洛尔",
-        "C07 β受体阻滞剂",
-        "非选择性β受体阻滞剂",
-        "C07AA03",
-        "ATC-C07"
+        "C07AA03"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Pindolol",
       "isApproved": true,
@@ -46545,17 +46785,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:718d26aa7e189a779fe6"
+      "id": "pw:718d26aa7e189a779fe6",
+      "searchTerms": [
+        "ATC-C07",
+        "C07 β受体阻滞剂",
+        "非选择性β受体阻滞剂"
+      ]
     },
     {
       "name": "Timolol",
       "commonNames": [
         "Timolol",
         "噻吗洛尔",
-        "C07 β受体阻滞剂",
-        "非选择性β受体阻滞剂",
-        "C07AA06",
-        "ATC-C07"
+        "C07AA06"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Timolol",
       "isApproved": true,
@@ -46747,17 +46989,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:ecb7b881c29d41f5de74"
+      "id": "pw:ecb7b881c29d41f5de74",
+      "searchTerms": [
+        "ATC-C07",
+        "C07 β受体阻滞剂",
+        "非选择性β受体阻滞剂"
+      ]
     },
     {
       "name": "Felodipine",
       "commonNames": [
         "Felodipine",
         "非洛地平",
-        "C08 钙通道阻滞剂",
-        "二氢吡啶类钙通道阻滞剂",
-        "C08CA02",
-        "ATC-C08"
+        "C08CA02"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Felodipine",
       "isApproved": true,
@@ -46949,17 +47193,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:cccc39199afc02918965"
+      "id": "pw:cccc39199afc02918965",
+      "searchTerms": [
+        "ATC-C08",
+        "C08 钙通道阻滞剂",
+        "二氢吡啶类钙通道阻滞剂"
+      ]
     },
     {
       "name": "Isradipine",
       "commonNames": [
         "Isradipine",
         "伊拉地平",
-        "C08 钙通道阻滞剂",
-        "二氢吡啶类钙通道阻滞剂",
-        "C08CA03",
-        "ATC-C08"
+        "C08CA03"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Isradipine",
       "isApproved": true,
@@ -47151,17 +47397,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:449dc96bbafd8878409b"
+      "id": "pw:449dc96bbafd8878409b",
+      "searchTerms": [
+        "ATC-C08",
+        "C08 钙通道阻滞剂",
+        "二氢吡啶类钙通道阻滞剂"
+      ]
     },
     {
       "name": "Nicardipine",
       "commonNames": [
         "Nicardipine",
         "尼卡地平",
-        "C08 钙通道阻滞剂",
-        "二氢吡啶类钙通道阻滞剂",
-        "C08CA04",
-        "ATC-C08"
+        "C08CA04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicardipine",
       "isApproved": true,
@@ -47353,17 +47601,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:26357835a96bd2133897"
+      "id": "pw:26357835a96bd2133897",
+      "searchTerms": [
+        "ATC-C08",
+        "C08 钙通道阻滞剂",
+        "二氢吡啶类钙通道阻滞剂"
+      ]
     },
     {
       "name": "Nimodipine",
       "commonNames": [
         "Nimodipine",
         "尼莫地平",
-        "C08 钙通道阻滞剂",
-        "二氢吡啶类钙通道阻滞剂",
-        "C08CA06",
-        "ATC-C08"
+        "C08CA06"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nimodipine",
       "isApproved": true,
@@ -47555,17 +47805,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:fc75a8ff4805f7a0b43b"
+      "id": "pw:fc75a8ff4805f7a0b43b",
+      "searchTerms": [
+        "ATC-C08",
+        "C08 钙通道阻滞剂",
+        "二氢吡啶类钙通道阻滞剂"
+      ]
     },
     {
       "name": "Lercanidipine",
       "commonNames": [
         "Lercanidipine",
         "乐卡地平",
-        "C08 钙通道阻滞剂",
-        "二氢吡啶类钙通道阻滞剂",
-        "C08CA13",
-        "ATC-C08"
+        "C08CA13"
       ],
       "url": "https://www.geneesmiddeleninformatiebank.nl/pars/h102333.pdf",
       "isApproved": true,
@@ -47792,17 +48044,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:eed8429dda2643c74d51"
+      "id": "pw:eed8429dda2643c74d51",
+      "searchTerms": [
+        "ATC-C08",
+        "C08 钙通道阻滞剂",
+        "二氢吡啶类钙通道阻滞剂"
+      ]
     },
     {
       "name": "Clevidipine",
       "commonNames": [
         "Clevidipine",
         "氯维地平",
-        "C08 钙通道阻滞剂",
         "静脉二氢吡啶类钙通道阻滞剂",
-        "C08CA16",
-        "ATC-C08"
+        "C08CA16"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Clevidipine",
       "isApproved": true,
@@ -47994,17 +48249,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:f3461e20513ecefac87d"
+      "id": "pw:f3461e20513ecefac87d",
+      "searchTerms": [
+        "ATC-C08",
+        "C08 钙通道阻滞剂"
+      ]
     },
     {
       "name": "Nisoldipine",
       "commonNames": [
         "Nisoldipine",
         "尼索地平",
-        "C08 钙通道阻滞剂",
-        "二氢吡啶类钙通道阻滞剂",
-        "C08CA07",
-        "ATC-C08"
+        "C08CA07"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nisoldipine",
       "isApproved": true,
@@ -48196,17 +48452,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:013b40326e41f2bbc386"
+      "id": "pw:013b40326e41f2bbc386",
+      "searchTerms": [
+        "ATC-C08",
+        "C08 钙通道阻滞剂",
+        "二氢吡啶类钙通道阻滞剂"
+      ]
     },
     {
       "name": "Perindopril",
       "commonNames": [
         "Perindopril",
         "培哚普利",
-        "C09 肾素-血管紧张素系统药物",
-        "ACE抑制剂",
-        "C09AA04",
-        "ATC-C09"
+        "C09AA04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Perindopril",
       "isApproved": true,
@@ -48403,17 +48661,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:f92599043219204541ad"
+      "id": "pw:f92599043219204541ad",
+      "searchTerms": [
+        "ACE抑制剂",
+        "ATC-C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Benazepril",
       "commonNames": [
         "Benazepril",
         "贝那普利",
-        "C09 肾素-血管紧张素系统药物",
-        "ACE抑制剂",
-        "C09AA07",
-        "ATC-C09"
+        "C09AA07"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Benazepril",
       "isApproved": true,
@@ -48605,17 +48865,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:9cd0ca16d2674823d1ac"
+      "id": "pw:9cd0ca16d2674823d1ac",
+      "searchTerms": [
+        "ACE抑制剂",
+        "ATC-C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Fosinopril",
       "commonNames": [
         "Fosinopril",
         "福辛普利",
-        "C09 肾素-血管紧张素系统药物",
-        "ACE抑制剂",
-        "C09AA09",
-        "ATC-C09"
+        "C09AA09"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fosinopril",
       "isApproved": true,
@@ -48807,17 +49069,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:4cb67665bb8cc6fb0cc7"
+      "id": "pw:4cb67665bb8cc6fb0cc7",
+      "searchTerms": [
+        "ACE抑制剂",
+        "ATC-C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Quinapril",
       "commonNames": [
         "Quinapril",
         "喹那普利",
-        "C09 肾素-血管紧张素系统药物",
-        "ACE抑制剂",
-        "C09AA06",
-        "ATC-C09"
+        "C09AA06"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Quinapril",
       "isApproved": true,
@@ -49009,17 +49273,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:1edbe0be5d50ace0a1e0"
+      "id": "pw:1edbe0be5d50ace0a1e0",
+      "searchTerms": [
+        "ACE抑制剂",
+        "ATC-C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Trandolapril",
       "commonNames": [
         "Trandolapril",
         "群多普利",
-        "C09 肾素-血管紧张素系统药物",
-        "ACE抑制剂",
-        "C09AA10",
-        "ATC-C09"
+        "C09AA10"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Trandolapril",
       "isApproved": true,
@@ -49211,17 +49477,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:6712ccb8cc921a2a6373"
+      "id": "pw:6712ccb8cc921a2a6373",
+      "searchTerms": [
+        "ACE抑制剂",
+        "ATC-C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Azilsartan",
       "commonNames": [
         "Azilsartan",
         "阿齐沙坦",
-        "C09 肾素-血管紧张素系统药物",
-        "ARB 血管紧张素II受体拮抗剂",
-        "C09CA09",
-        "ATC-C09"
+        "C09CA09"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Azilsartan",
       "isApproved": true,
@@ -49413,7 +49681,12 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:578ecce51d07e8402b6b"
+      "id": "pw:578ecce51d07e8402b6b",
+      "searchTerms": [
+        "ARB 血管紧张素II受体拮抗剂",
+        "ATC-C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Sacubitril/Valsartan",
@@ -49422,10 +49695,8 @@
         "Entresto",
         "ARNI",
         "沙库巴曲/缬沙坦",
-        "C09 肾素-血管紧张素系统药物",
         "ARNI 血管紧张素受体-脑啡肽酶抑制剂",
-        "C09DX04",
-        "ATC-C09"
+        "C09DX04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=000dc81d-ab91-450c-8eae-8eb74e72296f",
       "isApproved": true,
@@ -49667,17 +49938,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:8605dac98887bb6c4c2e"
+      "id": "pw:8605dac98887bb6c4c2e",
+      "searchTerms": [
+        "ATC-C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Aliskiren",
       "commonNames": [
         "Aliskiren",
         "阿利吉仑",
-        "C09 肾素-血管紧张素系统药物",
         "直接肾素抑制剂",
-        "C09XA02",
-        "ATC-C09"
+        "C09XA02"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Aliskiren",
       "isApproved": true,
@@ -49871,17 +50144,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:be6ed4f69da267d01f92"
+      "id": "pw:be6ed4f69da267d01f92",
+      "searchTerms": [
+        "ATC-C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Eprosartan",
       "commonNames": [
         "Eprosartan",
         "依普罗沙坦",
-        "C09 肾素-血管紧张素系统药物",
-        "ARB 血管紧张素II受体拮抗剂",
-        "C09CA02",
-        "ATC-C09"
+        "C09CA02"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=b1dfcac3-ef66-4d3e-9d58-37d3f516eb31",
       "isApproved": true,
@@ -50109,17 +50383,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:01fb9fff082f005c0526"
+      "id": "pw:01fb9fff082f005c0526",
+      "searchTerms": [
+        "ARB 血管紧张素II受体拮抗剂",
+        "ATC-C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Moexipril",
       "commonNames": [
         "Moexipril",
         "莫昔普利",
-        "C09 肾素-血管紧张素系统药物",
-        "ACE抑制剂",
-        "C09AA13",
-        "ATC-C09"
+        "C09AA13"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Moexipril",
       "isApproved": true,
@@ -50311,17 +50587,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:051951b112e6e719a94f"
+      "id": "pw:051951b112e6e719a94f",
+      "searchTerms": [
+        "ACE抑制剂",
+        "ATC-C09",
+        "C09 肾素-血管紧张素系统药物"
+      ]
     },
     {
       "name": "Evolocumab",
       "commonNames": [
         "Evolocumab",
         "依洛尤单抗",
-        "C10 调脂药",
-        "PCSK9抑制剂",
-        "C10AX13",
-        "ATC-C10"
+        "C10AX13"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Evolocumab",
       "isApproved": true,
@@ -50517,17 +50795,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:6aca487daaa1d2a75580"
+      "id": "pw:6aca487daaa1d2a75580",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药",
+        "PCSK9抑制剂"
+      ]
     },
     {
       "name": "Alirocumab",
       "commonNames": [
         "Alirocumab",
         "阿利西尤单抗",
-        "C10 调脂药",
-        "PCSK9抑制剂",
-        "C10AX14",
-        "ATC-C10"
+        "C10AX14"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alirocumab",
       "isApproved": true,
@@ -50723,17 +51003,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:fa5b03dc8993239287c1"
+      "id": "pw:fa5b03dc8993239287c1",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药",
+        "PCSK9抑制剂"
+      ]
     },
     {
       "name": "Inclisiran",
       "commonNames": [
         "Inclisiran",
         "英克司兰",
-        "C10 调脂药",
         "PCSK9 siRNA 调脂药",
-        "C10AX16",
-        "ATC-C10"
+        "C10AX16"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Inclisiran",
       "isApproved": true,
@@ -50929,17 +51212,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:018139a25eb9a8d152d5"
+      "id": "pw:018139a25eb9a8d152d5",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药"
+      ]
     },
     {
       "name": "Bempedoic Acid",
       "commonNames": [
         "Bempedoic Acid",
         "贝派地酸",
-        "C10 调脂药",
         "ATP柠檬酸裂解酶抑制剂",
-        "C10AX15",
-        "ATC-C10"
+        "C10AX15"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bempedoic%20Acid",
       "isApproved": true,
@@ -51135,17 +51420,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:a220ed85975a220b0e57"
+      "id": "pw:a220ed85975a220b0e57",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药"
+      ]
     },
     {
       "name": "Fenofibrate",
       "commonNames": [
         "Fenofibrate",
         "非诺贝特",
-        "C10 调脂药",
-        "贝特类调脂药",
-        "C10AB05",
-        "ATC-C10"
+        "C10AB05"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fenofibrate",
       "isApproved": true,
@@ -51341,17 +51627,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:9992491e1427a96aa87a"
+      "id": "pw:9992491e1427a96aa87a",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药",
+        "贝特类调脂药"
+      ]
     },
     {
       "name": "Gemfibrozil",
       "commonNames": [
         "Gemfibrozil",
         "吉非罗齐",
-        "C10 调脂药",
-        "贝特类调脂药",
-        "C10AB04",
-        "ATC-C10"
+        "C10AB04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Gemfibrozil",
       "isApproved": true,
@@ -51547,17 +51835,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:e7ee3382597acf6d3d1a"
+      "id": "pw:e7ee3382597acf6d3d1a",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药",
+        "贝特类调脂药"
+      ]
     },
     {
       "name": "Cholestyramine",
       "commonNames": [
         "Cholestyramine",
         "考来烯胺",
-        "C10 调脂药",
-        "胆汁酸螯合剂",
-        "C10AC01",
-        "ATC-C10"
+        "C10AC01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Cholestyramine",
       "isApproved": true,
@@ -51748,17 +52038,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:7ee1267681a148b01311"
+      "id": "pw:7ee1267681a148b01311",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药",
+        "胆汁酸螯合剂"
+      ]
     },
     {
       "name": "Colesevelam",
       "commonNames": [
         "Colesevelam",
         "考来维仑",
-        "C10 调脂药",
-        "胆汁酸螯合剂",
-        "C10AC04",
-        "ATC-C10"
+        "C10AC04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Colesevelam",
       "isApproved": true,
@@ -51949,17 +52241,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:817160f2814535603149"
+      "id": "pw:817160f2814535603149",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药",
+        "胆汁酸螯合剂"
+      ]
     },
     {
       "name": "Fluvastatin",
       "commonNames": [
         "Fluvastatin",
         "氟伐他汀",
-        "C10 调脂药",
-        "他汀类 HMG-CoA还原酶抑制剂",
-        "C10AA04",
-        "ATC-C10"
+        "C10AA04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fluvastatin",
       "isApproved": true,
@@ -52158,17 +52452,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:8cae3a63e2a82c64955e"
+      "id": "pw:8cae3a63e2a82c64955e",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药",
+        "他汀类 HMG-CoA还原酶抑制剂"
+      ]
     },
     {
       "name": "Lovastatin",
       "commonNames": [
         "Lovastatin",
         "洛伐他汀",
-        "C10 调脂药",
-        "他汀类 HMG-CoA还原酶抑制剂",
-        "C10AA02",
-        "ATC-C10"
+        "C10AA02"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Lovastatin",
       "isApproved": true,
@@ -52360,17 +52656,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:bc2428ba53097a941995"
+      "id": "pw:bc2428ba53097a941995",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药",
+        "他汀类 HMG-CoA还原酶抑制剂"
+      ]
     },
     {
       "name": "Pitavastatin",
       "commonNames": [
         "Pitavastatin",
         "匹伐他汀",
-        "C10 调脂药",
-        "他汀类 HMG-CoA还原酶抑制剂",
-        "C10AA08",
-        "ATC-C10"
+        "C10AA08"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Pitavastatin",
       "isApproved": true,
@@ -52569,17 +52867,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:bbd060d7bd815d39d004"
+      "id": "pw:bbd060d7bd815d39d004",
+      "searchTerms": [
+        "ATC-C10",
+        "C10 调脂药",
+        "他汀类 HMG-CoA还原酶抑制剂"
+      ]
     },
     {
       "name": "Heparin",
       "commonNames": [
         "Heparin",
         "肝素",
-        "B01 抗血栓药物",
         "普通肝素抗凝药",
-        "B01AB01",
-        "ATC-B01"
+        "B01AB01"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Heparin",
       "isApproved": true,
@@ -52779,17 +53080,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:22c53f91d4b5b3e0a88b"
+      "id": "pw:22c53f91d4b5b3e0a88b",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物"
+      ]
     },
     {
       "name": "Dalteparin",
       "commonNames": [
         "Dalteparin",
         "达肝素",
-        "B01 抗血栓药物",
-        "低分子肝素",
-        "B01AB04",
-        "ATC-B01"
+        "B01AB04"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dalteparin",
       "isApproved": true,
@@ -52989,17 +53291,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:03d10c2dea64932259f5"
+      "id": "pw:03d10c2dea64932259f5",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物",
+        "低分子肝素"
+      ]
     },
     {
       "name": "Fondaparinux",
       "commonNames": [
         "Fondaparinux",
         "磺达肝癸钠",
-        "B01 抗血栓药物",
         "选择性Xa因子抑制剂",
-        "B01AX05",
-        "ATC-B01"
+        "B01AX05"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Fondaparinux",
       "isApproved": true,
@@ -53192,7 +53497,11 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:954b4d1f1559bba5906b"
+      "id": "pw:954b4d1f1559bba5906b",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物"
+      ]
     },
     {
       "name": "Aspirin",
@@ -53201,10 +53510,8 @@
         "Acetylsalicylic acid",
         "ASA",
         "阿司匹林",
-        "B01 抗血栓药物",
         "抗血小板药",
-        "B01AC06",
-        "ATC-B01"
+        "B01AC06"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Aspirin",
       "isApproved": true,
@@ -53408,17 +53715,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:a836b1c47482f0a33428"
+      "id": "pw:a836b1c47482f0a33428",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物"
+      ]
     },
     {
       "name": "Ticlopidine",
       "commonNames": [
         "Ticlopidine",
         "噻氯匹定",
-        "B01 抗血栓药物",
         "P2Y12受体抑制剂",
-        "B01AC05",
-        "ATC-B01"
+        "B01AC05"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=TICLOPIDINE",
       "isApproved": true,
@@ -53654,17 +53963,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:f90266d59611d047e21d"
+      "id": "pw:f90266d59611d047e21d",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物"
+      ]
     },
     {
       "name": "Dipyridamole",
       "commonNames": [
         "Dipyridamole",
         "双嘧达莫",
-        "B01 抗血栓药物",
         "抗血小板/磷酸二酯酶抑制剂",
-        "B01AC07",
-        "ATC-B01"
+        "B01AC07"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Dipyridamole",
       "isApproved": true,
@@ -53861,17 +54172,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:9b078046af4ea7641f48"
+      "id": "pw:9b078046af4ea7641f48",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物"
+      ]
     },
     {
       "name": "Tirofiban",
       "commonNames": [
         "Tirofiban",
         "替罗非班",
-        "B01 抗血栓药物",
-        "GPIIb/IIIa受体拮抗剂",
-        "B01AC17",
-        "ATC-B01"
+        "B01AC17"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tirofiban",
       "isApproved": true,
@@ -54068,17 +54380,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:e764310a0c7e22e8bb5a"
+      "id": "pw:e764310a0c7e22e8bb5a",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物",
+        "GPIIb/IIIa受体拮抗剂"
+      ]
     },
     {
       "name": "Eptifibatide",
       "commonNames": [
         "Eptifibatide",
         "依替巴肽",
-        "B01 抗血栓药物",
-        "GPIIb/IIIa受体拮抗剂",
-        "B01AC16",
-        "ATC-B01"
+        "B01AC16"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Eptifibatide",
       "isApproved": true,
@@ -54275,17 +54589,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:7928c566157c265ff8d7"
+      "id": "pw:7928c566157c265ff8d7",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物",
+        "GPIIb/IIIa受体拮抗剂"
+      ]
     },
     {
       "name": "Abciximab",
       "commonNames": [
         "Abciximab",
         "阿昔单抗",
-        "B01 抗血栓药物",
-        "GPIIb/IIIa受体拮抗剂",
-        "B01AC13",
-        "ATC-B01"
+        "B01AC13"
       ],
       "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/1997/abcicen110597-lab.pdf",
       "isApproved": true,
@@ -54531,17 +54847,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:c02bb3c24c0242cb88b8"
+      "id": "pw:c02bb3c24c0242cb88b8",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物",
+        "GPIIb/IIIa受体拮抗剂"
+      ]
     },
     {
       "name": "Cangrelor",
       "commonNames": [
         "Cangrelor",
         "坎格雷洛",
-        "B01 抗血栓药物",
         "静脉P2Y12受体抑制剂",
-        "B01AC25",
-        "ATC-B01"
+        "B01AC25"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Cangrelor",
       "isApproved": true,
@@ -54738,17 +55057,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:503a187ef1c09a64ea7b"
+      "id": "pw:503a187ef1c09a64ea7b",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物"
+      ]
     },
     {
       "name": "Alteplase",
       "commonNames": [
         "Alteplase",
         "阿替普酶",
-        "B01 抗血栓药物",
-        "纤溶酶原激活剂/溶栓药",
-        "B01AD02",
-        "ATC-B01"
+        "B01AD02"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Alteplase",
       "isApproved": true,
@@ -54946,17 +55266,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:3d98ded53fa76e242c86"
+      "id": "pw:3d98ded53fa76e242c86",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物",
+        "纤溶酶原激活剂/溶栓药"
+      ]
     },
     {
       "name": "Tenecteplase",
       "commonNames": [
         "Tenecteplase",
         "替奈普酶",
-        "B01 抗血栓药物",
-        "纤溶酶原激活剂/溶栓药",
-        "B01AD11",
-        "ATC-B01"
+        "B01AD11"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Tenecteplase",
       "isApproved": true,
@@ -55154,17 +55476,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:84523bfda7101f911a0e"
+      "id": "pw:84523bfda7101f911a0e",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物",
+        "纤溶酶原激活剂/溶栓药"
+      ]
     },
     {
       "name": "Argatroban",
       "commonNames": [
         "Argatroban",
         "阿加曲班",
-        "B01 抗血栓药物",
-        "直接凝血酶抑制剂",
-        "B01AE03",
-        "ATC-B01"
+        "B01AE03"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Argatroban",
       "isApproved": true,
@@ -55360,17 +55684,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:23fef99082e166e694fe"
+      "id": "pw:23fef99082e166e694fe",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物",
+        "直接凝血酶抑制剂"
+      ]
     },
     {
       "name": "Bivalirudin",
       "commonNames": [
         "Bivalirudin",
         "比伐芦定",
-        "B01 抗血栓药物",
-        "直接凝血酶抑制剂",
-        "B01AE06",
-        "ATC-B01"
+        "B01AE06"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Bivalirudin",
       "isApproved": true,
@@ -55566,17 +55892,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:191e2d6ab32d0385c834"
+      "id": "pw:191e2d6ab32d0385c834",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物",
+        "直接凝血酶抑制剂"
+      ]
     },
     {
       "name": "Vorapaxar",
       "commonNames": [
         "Vorapaxar",
         "沃拉帕沙",
-        "B01 抗血栓药物",
         "PAR-1受体拮抗剂",
-        "B01AC26",
-        "ATC-B01"
+        "B01AC26"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f001f406-8cf1-40a4-bbf5-1775fe020122",
       "isApproved": true,
@@ -55775,17 +56104,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:2352881c5da104ea30ff"
+      "id": "pw:2352881c5da104ea30ff",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物"
+      ]
     },
     {
       "name": "Betrixaban",
       "commonNames": [
         "Betrixaban",
         "贝曲沙班",
-        "B01 抗血栓药物",
         "直接Xa因子抑制剂",
-        "B01AF04",
-        "ATC-B01"
+        "B01AF04"
       ],
       "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
       "isApproved": true,
@@ -55998,17 +56329,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:0e4a3b0c45c0bb63fc94"
+      "id": "pw:0e4a3b0c45c0bb63fc94",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物"
+      ]
     },
     {
       "name": "Acenocoumarol",
       "commonNames": [
         "Acenocoumarol",
         "醋硝香豆素",
-        "B01 抗血栓药物",
-        "维生素K拮抗剂",
-        "B01AA07",
-        "ATC-B01"
+        "B01AA07"
       ],
       "url": "https://www.medicines.org.uk/emc/product/2058/smpc",
       "isApproved": true,
@@ -56253,17 +56585,19 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:fa0c54970c960d08b66a"
+      "id": "pw:fa0c54970c960d08b66a",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物",
+        "维生素K拮抗剂"
+      ]
     },
     {
       "name": "Phenprocoumon",
       "commonNames": [
         "Phenprocoumon",
         "苯丙香豆素",
-        "B01 抗血栓药物",
-        "维生素K拮抗剂",
-        "B01AA04",
-        "ATC-B01"
+        "B01AA04"
       ],
       "url": "https://pubmed.ncbi.nlm.nih.gov/36422567/",
       "isApproved": true,
@@ -56495,7 +56829,12 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:bb7e31f21b1a5515c6b1"
+      "id": "pw:bb7e31f21b1a5515c6b1",
+      "searchTerms": [
+        "ATC-B01",
+        "B01 抗血栓药物",
+        "维生素K拮抗剂"
+      ]
     },
     {
       "name": "Metoprolol",
@@ -56503,13 +56842,7 @@
         "Metoprolol",
         "Lopressor",
         "Toprol XL",
-        "美托洛尔",
-        "Beta blocker",
-        "Beta-1 selective blocker",
-        "C07 β受体阻滞剂",
-        "Beta blocking agents",
-        "C07",
-        "ATC-C07"
+        "美托洛尔"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=95b95aab-0733-4189-b4c0-429a1046c534",
       "isApproved": true,
@@ -56756,20 +57089,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:7b825b10476fc4c844ca"
+      "id": "pw:7b825b10476fc4c844ca",
+      "searchTerms": [
+        "ATC-C07",
+        "Beta blocker",
+        "Beta blocking agents",
+        "Beta-1 selective blocker",
+        "C07",
+        "C07 β受体阻滞剂"
+      ]
     },
     {
       "name": "Propranolol",
       "commonNames": [
         "Propranolol",
         "Inderal",
-        "普萘洛尔",
-        "Nonselective beta blocker",
-        "Class II antiarrhythmic",
-        "C07 β受体阻滞剂",
-        "Beta blocking agents",
-        "C07",
-        "ATC-C07"
+        "普萘洛尔"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=54154f18-2f15-d247-e063-6294a90a7412",
       "isApproved": true,
@@ -56974,20 +57309,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:623695b13d7c680f9dda"
+      "id": "pw:623695b13d7c680f9dda",
+      "searchTerms": [
+        "ATC-C07",
+        "Beta blocking agents",
+        "C07",
+        "C07 β受体阻滞剂",
+        "Class II antiarrhythmic",
+        "Nonselective beta blocker"
+      ]
     },
     {
       "name": "Atenolol",
       "commonNames": [
         "Atenolol",
         "Tenormin",
-        "阿替洛尔",
-        "Beta-1 selective blocker",
-        "Class II antiarrhythmic",
-        "C07 β受体阻滞剂",
-        "Beta blocking agents",
-        "C07",
-        "ATC-C07"
+        "阿替洛尔"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7f8304a4-93de-774f-e053-2a91aa0aa5b5",
       "isApproved": true,
@@ -57188,7 +57525,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:591d2f4d7dcc6ed8a96c"
+      "id": "pw:591d2f4d7dcc6ed8a96c",
+      "searchTerms": [
+        "ATC-C07",
+        "Beta blocking agents",
+        "Beta-1 selective blocker",
+        "C07",
+        "C07 β受体阻滞剂",
+        "Class II antiarrhythmic"
+      ]
     },
     {
       "name": "Carvedilol",
@@ -57196,12 +57541,7 @@
         "Carvedilol",
         "Coreg",
         "卡维地洛",
-        "Alpha beta blocker",
-        "Nonselective beta blocker",
-        "C07 β受体阻滞剂",
-        "Beta blocking agents",
-        "C07",
-        "ATC-C07"
+        "Alpha beta blocker"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
       "isApproved": true,
@@ -57409,7 +57749,14 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:20eb55533d9fe0c5b04a"
+      "id": "pw:20eb55533d9fe0c5b04a",
+      "searchTerms": [
+        "ATC-C07",
+        "Beta blocking agents",
+        "C07",
+        "C07 β受体阻滞剂",
+        "Nonselective beta blocker"
+      ]
     },
     {
       "name": "Esmolol",
@@ -57417,13 +57764,7 @@
         "Esmolol",
         "Brevibloc",
         "艾司洛尔",
-        "Short acting beta blocker",
-        "Beta-1 selective blocker",
-        "Class II antiarrhythmic",
-        "C07 β受体阻滞剂",
-        "Beta blocking agents",
-        "C07",
-        "ATC-C07"
+        "Short acting beta blocker"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ad7942-99c3-40ee-9cfb-272fb6c44e2b",
       "isApproved": true,
@@ -57628,7 +57969,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:817727c1a38224957b2c"
+      "id": "pw:817727c1a38224957b2c",
+      "searchTerms": [
+        "ATC-C07",
+        "Beta blocking agents",
+        "Beta-1 selective blocker",
+        "C07",
+        "C07 β受体阻滞剂",
+        "Class II antiarrhythmic"
+      ]
     },
     {
       "name": "Diltiazem",
@@ -57637,12 +57986,7 @@
         "Cardizem",
         "Tiazac",
         "地尔硫卓",
-        "Non-dihydropyridine calcium channel blocker",
-        "CCB",
-        "C08 钙通道阻滞剂",
-        "Calcium channel blockers",
-        "C08",
-        "ATC-C08"
+        "Non-dihydropyridine calcium channel blocker"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=465dbab3-f201-4441-8f55-92a843b5134f",
       "isApproved": true,
@@ -57849,7 +58193,14 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:f51b37dcb49a9cff0113"
+      "id": "pw:f51b37dcb49a9cff0113",
+      "searchTerms": [
+        "ATC-C08",
+        "C08",
+        "C08 钙通道阻滞剂",
+        "CCB",
+        "Calcium channel blockers"
+      ]
     },
     {
       "name": "Cilostazol",
@@ -57857,13 +58208,7 @@
         "Cilostazol",
         "Pletal",
         "西洛他唑",
-        "Peripheral vasodilator",
-        "PDE3 inhibitor",
-        "Antiplatelet",
-        "B01 抗血栓药物",
-        "Antithrombotic agents",
-        "B01",
-        "ATC-B01"
+        "PDE3 inhibitor"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
       "isApproved": true,
@@ -58056,7 +58401,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:918d4f90a6c23464e97d"
+      "id": "pw:918d4f90a6c23464e97d",
+      "searchTerms": [
+        "ATC-B01",
+        "Antiplatelet",
+        "Antithrombotic agents",
+        "B01",
+        "B01 抗血栓药物",
+        "Peripheral vasodilator"
+      ]
     },
     {
       "name": "Digoxin",
@@ -58066,11 +58419,7 @@
         "Digitalis",
         "Cardiac glycoside",
         "地高辛",
-        "洋地黄",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "洋地黄"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=ca595f0c-5bf0-4feb-8183-47832ee8c820",
       "isApproved": true,
@@ -58382,20 +58731,20 @@
           "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:85db15c1578f0734af48"
+      "id": "pw:85db15c1578f0734af48",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy"
+      ]
     },
     {
       "name": "Captopril",
       "commonNames": [
         "Captopril",
         "Capoten",
-        "卡托普利",
-        "ACE抑制剂",
-        "血管紧张素转换酶抑制剂",
-        "C09 肾素-血管紧张素系统药物",
-        "Agents acting on the renin-angiotensin system",
-        "C09",
-        "ATC-C09"
+        "卡托普利"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=captopril%20tablet",
       "isApproved": true,
@@ -58579,20 +58928,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:50bd907c61060f86803e"
+      "id": "pw:50bd907c61060f86803e",
+      "searchTerms": [
+        "ACE抑制剂",
+        "ATC-C09",
+        "Agents acting on the renin-angiotensin system",
+        "C09",
+        "C09 肾素-血管紧张素系统药物",
+        "血管紧张素转换酶抑制剂"
+      ]
     },
     {
       "name": "Ramipril",
       "commonNames": [
         "Ramipril",
         "Altace",
-        "雷米普利",
-        "ACE抑制剂",
-        "血管紧张素转换酶抑制剂",
-        "C09 肾素-血管紧张素系统药物",
-        "Agents acting on the renin-angiotensin system",
-        "C09",
-        "ATC-C09"
+        "雷米普利"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ramipril%20capsule",
       "isApproved": true,
@@ -58781,7 +59132,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:1665c0c39ba33c2c5b2e"
+      "id": "pw:1665c0c39ba33c2c5b2e",
+      "searchTerms": [
+        "ACE抑制剂",
+        "ATC-C09",
+        "Agents acting on the renin-angiotensin system",
+        "C09",
+        "C09 肾素-血管紧张素系统药物",
+        "血管紧张素转换酶抑制剂"
+      ]
     },
     {
       "name": "Olmesartan",
@@ -58789,13 +59148,7 @@
         "Olmesartan",
         "Benicar",
         "Olmesartan medoxomil",
-        "奥美沙坦",
-        "ARB",
-        "血管紧张素II受体阻滞剂",
-        "C09 肾素-血管紧张素系统药物",
-        "Agents acting on the renin-angiotensin system",
-        "C09",
-        "ATC-C09"
+        "奥美沙坦"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=olmesartan%20medoxomil%20tablet",
       "isApproved": true,
@@ -58981,20 +59334,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:29bf1d6a8a07fa9fabe2"
+      "id": "pw:29bf1d6a8a07fa9fabe2",
+      "searchTerms": [
+        "ARB",
+        "ATC-C09",
+        "Agents acting on the renin-angiotensin system",
+        "C09",
+        "C09 肾素-血管紧张素系统药物",
+        "血管紧张素II受体阻滞剂"
+      ]
     },
     {
       "name": "Irbesartan",
       "commonNames": [
         "Irbesartan",
         "Avapro",
-        "厄贝沙坦",
-        "ARB",
-        "血管紧张素II受体阻滞剂",
-        "C09 肾素-血管紧张素系统药物",
-        "Agents acting on the renin-angiotensin system",
-        "C09",
-        "ATC-C09"
+        "厄贝沙坦"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=irbesartan%20tablet",
       "isApproved": true,
@@ -59179,20 +59534,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:9cb31321de16cdad2612"
+      "id": "pw:9cb31321de16cdad2612",
+      "searchTerms": [
+        "ARB",
+        "ATC-C09",
+        "Agents acting on the renin-angiotensin system",
+        "C09",
+        "C09 肾素-血管紧张素系统药物",
+        "血管紧张素II受体阻滞剂"
+      ]
     },
     {
       "name": "Telmisartan",
       "commonNames": [
         "Telmisartan",
         "Micardis",
-        "替米沙坦",
-        "ARB",
-        "血管紧张素II受体阻滞剂",
-        "C09 肾素-血管紧张素系统药物",
-        "Agents acting on the renin-angiotensin system",
-        "C09",
-        "ATC-C09"
+        "替米沙坦"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=telmisartan%20tablet",
       "isApproved": true,
@@ -59387,7 +59744,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:51605383a889a6fc95e6"
+      "id": "pw:51605383a889a6fc95e6",
+      "searchTerms": [
+        "ARB",
+        "ATC-C09",
+        "Agents acting on the renin-angiotensin system",
+        "C09",
+        "C09 肾素-血管紧张素系统药物",
+        "血管紧张素II受体阻滞剂"
+      ]
     },
     {
       "name": "Candesartan",
@@ -59395,13 +59760,7 @@
         "Candesartan",
         "Atacand",
         "Candesartan cilexetil",
-        "坎地沙坦",
-        "ARB",
-        "血管紧张素II受体阻滞剂",
-        "C09 肾素-血管紧张素系统药物",
-        "Agents acting on the renin-angiotensin system",
-        "C09",
-        "ATC-C09"
+        "坎地沙坦"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=candesartan%20cilexetil%20tablet",
       "isApproved": true,
@@ -59579,20 +59938,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:d3ec175357b7652b6710"
+      "id": "pw:d3ec175357b7652b6710",
+      "searchTerms": [
+        "ARB",
+        "ATC-C09",
+        "Agents acting on the renin-angiotensin system",
+        "C09",
+        "C09 肾素-血管紧张素系统药物",
+        "血管紧张素II受体阻滞剂"
+      ]
     },
     {
       "name": "Chlorthalidone",
       "commonNames": [
         "Chlorthalidone",
         "Thalitone",
-        "氯噻酮",
-        "利尿剂",
-        "噻嗪样利尿剂",
-        "C03 利尿剂",
-        "Diuretics",
-        "C03",
-        "ATC-C03"
+        "氯噻酮"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorthalidone%20tablet",
       "isApproved": true,
@@ -59778,20 +60139,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:ebf7629ff8cf09be8560"
+      "id": "pw:ebf7629ff8cf09be8560",
+      "searchTerms": [
+        "ATC-C03",
+        "C03",
+        "C03 利尿剂",
+        "Diuretics",
+        "利尿剂",
+        "噻嗪样利尿剂"
+      ]
     },
     {
       "name": "Indapamide",
       "commonNames": [
         "Indapamide",
         "Lozol",
-        "吲达帕胺",
-        "利尿剂",
-        "噻嗪样利尿剂",
-        "C03 利尿剂",
-        "Diuretics",
-        "C03",
-        "ATC-C03"
+        "吲达帕胺"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=indapamide%20tablet",
       "isApproved": true,
@@ -59973,20 +60336,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:d3ccfa47bd7acf2ea69f"
+      "id": "pw:d3ccfa47bd7acf2ea69f",
+      "searchTerms": [
+        "ATC-C03",
+        "C03",
+        "C03 利尿剂",
+        "Diuretics",
+        "利尿剂",
+        "噻嗪样利尿剂"
+      ]
     },
     {
       "name": "Bumetanide",
       "commonNames": [
         "Bumetanide",
         "Bumex",
-        "布美他尼",
-        "利尿剂",
-        "袢利尿剂",
-        "C03 利尿剂",
-        "Diuretics",
-        "C03",
-        "ATC-C03"
+        "布美他尼"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bumetanide%20tablet%20injection",
       "isApproved": true,
@@ -60251,7 +60616,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:34a70daf946c9655212a"
+      "id": "pw:34a70daf946c9655212a",
+      "searchTerms": [
+        "ATC-C03",
+        "C03",
+        "C03 利尿剂",
+        "Diuretics",
+        "利尿剂",
+        "袢利尿剂"
+      ]
     },
     {
       "name": "Eplerenone",
@@ -60260,11 +60633,7 @@
         "Inspra",
         "依普利酮",
         "醛固酮受体拮抗剂",
-        "盐皮质激素受体拮抗剂",
-        "C03 利尿剂",
-        "Diuretics",
-        "C03",
-        "ATC-C03"
+        "盐皮质激素受体拮抗剂"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eplerenone%20tablet",
       "isApproved": true,
@@ -60447,20 +60816,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:990d5aa94a95b9c12ba7"
+      "id": "pw:990d5aa94a95b9c12ba7",
+      "searchTerms": [
+        "ATC-C03",
+        "C03",
+        "C03 利尿剂",
+        "Diuretics"
+      ]
     },
     {
       "name": "Hydralazine",
       "commonNames": [
         "Hydralazine",
         "Apresoline",
-        "肼屈嗪",
-        "直接血管扩张剂",
-        "Peripheral vasodilator",
-        "C02 抗高血压药",
-        "Antihypertensives",
-        "C02",
-        "ATC-C02"
+        "肼屈嗪"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydralazine%20hydrochloride%20tablet%20injection",
       "isApproved": true,
@@ -60742,7 +61111,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:c21aa4b56eca87031895"
+      "id": "pw:c21aa4b56eca87031895",
+      "searchTerms": [
+        "ATC-C02",
+        "Antihypertensives",
+        "C02",
+        "C02 抗高血压药",
+        "Peripheral vasodilator",
+        "直接血管扩张剂"
+      ]
     },
     {
       "name": "Isosorbide Mononitrate",
@@ -60750,13 +61127,7 @@
         "Isosorbide Mononitrate",
         "Isosorbide mononitrate",
         "Imdur",
-        "单硝酸异山梨酯",
-        "硝酸酯类",
-        "Nitrate",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "单硝酸异山梨酯"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20mononitrate%20tablet",
       "isApproved": true,
@@ -60984,7 +61355,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:3a1a66686a232837c503"
+      "id": "pw:3a1a66686a232837c503",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Nitrate",
+        "硝酸酯类"
+      ]
     },
     {
       "name": "Isosorbide Dinitrate",
@@ -60992,13 +61371,7 @@
         "Isosorbide Dinitrate",
         "Isordil",
         "Isosorbide dinitrate",
-        "硝酸异山梨酯",
-        "硝酸酯类",
-        "Nitrate",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "硝酸异山梨酯"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide%20dinitrate%20tablet%20sublingual",
       "isApproved": true,
@@ -61258,20 +61631,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:4e2167518fd946e6cd35"
+      "id": "pw:4e2167518fd946e6cd35",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Nitrate",
+        "硝酸酯类"
+      ]
     },
     {
       "name": "Minoxidil",
       "commonNames": [
         "Minoxidil",
         "Loniten",
-        "米诺地尔",
-        "直接血管扩张剂",
-        "Peripheral vasodilator",
-        "C02 抗高血压药",
-        "Antihypertensives",
-        "C02",
-        "ATC-C02"
+        "米诺地尔"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=minoxidil%20tablet",
       "isApproved": true,
@@ -61451,20 +61826,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:8041b095334dc7e40c57"
+      "id": "pw:8041b095334dc7e40c57",
+      "searchTerms": [
+        "ATC-C02",
+        "Antihypertensives",
+        "C02",
+        "C02 抗高血压药",
+        "Peripheral vasodilator",
+        "直接血管扩张剂"
+      ]
     },
     {
       "name": "Pravastatin",
       "commonNames": [
         "Pravastatin",
         "Pravachol",
-        "普伐他汀",
-        "他汀类",
-        "HMG-CoA还原酶抑制剂",
-        "C10 调脂药",
-        "Lipid modifying agents",
-        "C10",
-        "ATC-C10"
+        "普伐他汀"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pravastatin%20sodium%20tablet",
       "isApproved": true,
@@ -61644,20 +62021,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:3d86e2eae5678a8946ad"
+      "id": "pw:3d86e2eae5678a8946ad",
+      "searchTerms": [
+        "ATC-C10",
+        "C10",
+        "C10 调脂药",
+        "HMG-CoA还原酶抑制剂",
+        "Lipid modifying agents",
+        "他汀类"
+      ]
     },
     {
       "name": "Simvastatin",
       "commonNames": [
         "Simvastatin",
         "Zocor",
-        "辛伐他汀",
-        "他汀类",
-        "HMG-CoA还原酶抑制剂",
-        "C10 调脂药",
-        "Lipid modifying agents",
-        "C10",
-        "ATC-C10"
+        "辛伐他汀"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin%20tablet",
       "isApproved": true,
@@ -61838,7 +62217,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:835f4dc2894e00f595f2"
+      "id": "pw:835f4dc2894e00f595f2",
+      "searchTerms": [
+        "ATC-C10",
+        "C10",
+        "C10 调脂药",
+        "HMG-CoA还原酶抑制剂",
+        "Lipid modifying agents",
+        "他汀类"
+      ]
     },
     {
       "name": "Ezetimibe",
@@ -61847,11 +62234,7 @@
         "Zetia",
         "依折麦布",
         "胆固醇吸收抑制剂",
-        "Cholesterol absorption inhibitor",
-        "C10 调脂药",
-        "Lipid modifying agents",
-        "C10",
-        "ATC-C10"
+        "Cholesterol absorption inhibitor"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ezetimibe%20tablet",
       "isApproved": true,
@@ -62029,20 +62412,20 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:94efe09bf146a48df474"
+      "id": "pw:94efe09bf146a48df474",
+      "searchTerms": [
+        "ATC-C10",
+        "C10",
+        "C10 调脂药",
+        "Lipid modifying agents"
+      ]
     },
     {
       "name": "Ticagrelor",
       "commonNames": [
         "Ticagrelor",
         "Brilinta",
-        "替格瑞洛",
-        "P2Y12抑制剂",
-        "P2Y12 inhibitor",
-        "B01 抗血栓药物",
-        "Antithrombotic agents",
-        "B01",
-        "ATC-B01"
+        "替格瑞洛"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ticagrelor%20tablet",
       "isApproved": true,
@@ -62224,20 +62607,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:c03d22b7f26a25216457"
+      "id": "pw:c03d22b7f26a25216457",
+      "searchTerms": [
+        "ATC-B01",
+        "Antithrombotic agents",
+        "B01",
+        "B01 抗血栓药物",
+        "P2Y12 inhibitor",
+        "P2Y12抑制剂"
+      ]
     },
     {
       "name": "Prasugrel",
       "commonNames": [
         "Prasugrel",
         "Effient",
-        "普拉格雷",
-        "P2Y12抑制剂",
-        "P2Y12 inhibitor",
-        "B01 抗血栓药物",
-        "Antithrombotic agents",
-        "B01",
-        "ATC-B01"
+        "普拉格雷"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prasugrel%20tablet",
       "isApproved": true,
@@ -62418,7 +62803,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:edd54b3bd9cb09fa590a"
+      "id": "pw:edd54b3bd9cb09fa590a",
+      "searchTerms": [
+        "ATC-B01",
+        "Antithrombotic agents",
+        "B01",
+        "B01 抗血栓药物",
+        "P2Y12 inhibitor",
+        "P2Y12抑制剂"
+      ]
     },
     {
       "name": "Edoxaban",
@@ -62426,13 +62819,7 @@
         "Edoxaban",
         "Savaysa",
         "Lixiana",
-        "依度沙班",
-        "直接口服抗凝药",
-        "Xa因子抑制剂",
-        "B01 抗血栓药物",
-        "Antithrombotic agents",
-        "B01",
-        "ATC-B01"
+        "依度沙班"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=edoxaban%20tablet",
       "isApproved": true,
@@ -62617,7 +63004,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:9d59daa08cc957fcbc62"
+      "id": "pw:9d59daa08cc957fcbc62",
+      "searchTerms": [
+        "ATC-B01",
+        "Antithrombotic agents",
+        "B01",
+        "B01 抗血栓药物",
+        "Xa因子抑制剂",
+        "直接口服抗凝药"
+      ]
     },
     {
       "name": "Enoxaparin",
@@ -62626,12 +63021,7 @@
         "Lovenox",
         "Enoxaparin sodium",
         "依诺肝素",
-        "低分子肝素",
-        "Low molecular weight heparin",
-        "B01 抗血栓药物",
-        "Antithrombotic agents",
-        "B01",
-        "ATC-B01"
+        "Low molecular weight heparin"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enoxaparin%20sodium%20injection",
       "isApproved": true,
@@ -62816,7 +63206,14 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:3b71cfc3474ec037a6fa"
+      "id": "pw:3b71cfc3474ec037a6fa",
+      "searchTerms": [
+        "ATC-B01",
+        "Antithrombotic agents",
+        "B01",
+        "B01 抗血栓药物",
+        "低分子肝素"
+      ]
     },
     {
       "name": "Ranolazine",
@@ -62825,11 +63222,7 @@
         "Ranexa",
         "雷诺嗪",
         "抗心绞痛药",
-        "Late sodium current inhibitor",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "Late sodium current inhibitor"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranolazine%20extended-release%20tablet",
       "isApproved": true,
@@ -63010,7 +63403,13 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:10680a6422d4a243e3bd"
+      "id": "pw:10680a6422d4a243e3bd",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy"
+      ]
     },
     {
       "name": "Amlodipine",
@@ -63019,12 +63418,7 @@
         "Norvasc",
         "氨氯地平",
         "Amlodipine besylate",
-        "CCB",
-        "Calcium channel blocker",
-        "C08 钙通道阻滞剂",
-        "Calcium channel blockers",
-        "C08",
-        "ATC-C08"
+        "Calcium channel blocker"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=8157ca93-d926-4264-b606-f73b2b38842a&type=display",
       "isApproved": true,
@@ -63221,7 +63615,14 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:f622a52e80c2986d9d43"
+      "id": "pw:f622a52e80c2986d9d43",
+      "searchTerms": [
+        "ATC-C08",
+        "C08",
+        "C08 钙通道阻滞剂",
+        "CCB",
+        "Calcium channel blockers"
+      ]
     },
     {
       "name": "Nitroglycerin",
@@ -63230,12 +63631,7 @@
         "Glyceryl trinitrate",
         "GTN",
         "硝酸甘油",
-        "Nitrostat",
-        "Nitrate",
-        "C01 心脏治疗药物",
-        "Cardiac therapy",
-        "C01",
-        "ATC-C01"
+        "Nitrostat"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
       "isApproved": true,
@@ -63581,7 +63977,14 @@
           "evidenceLevel": "SOURCE_REFERENCE"
         }
       ],
-      "id": "pw:2b334d5d2bee748f2ee1"
+      "id": "pw:2b334d5d2bee748f2ee1",
+      "searchTerms": [
+        "ATC-C01",
+        "C01",
+        "C01 心脏治疗药物",
+        "Cardiac therapy",
+        "Nitrate"
+      ]
     },
     {
       "name": "Bisoprolol",
@@ -63589,14 +63992,7 @@
         "Bisoprolol",
         "Zebeta",
         "Concor",
-        "比索洛尔",
-        "β1选择性阻滞剂",
-        "Beta blocker",
-        "Beta-1 selective blocker",
-        "C07 β受体阻滞剂",
-        "Beta blocking agents",
-        "C07",
-        "ATC-C07"
+        "比索洛尔"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
       "isApproved": true,
@@ -63799,7 +64195,16 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:59c7f1049b6c23fd6942"
+      "id": "pw:59c7f1049b6c23fd6942",
+      "searchTerms": [
+        "ATC-C07",
+        "Beta blocker",
+        "Beta blocking agents",
+        "Beta-1 selective blocker",
+        "C07",
+        "C07 β受体阻滞剂",
+        "β1选择性阻滞剂"
+      ]
     },
     {
       "name": "Nebivolol",
@@ -63808,14 +64213,7 @@
         "Bystolic",
         "Nebilet",
         "奈必洛尔",
-        "奈比洛尔",
-        "β1选择性阻滞剂",
-        "Beta blocker",
-        "Beta-1 selective blocker",
-        "C07 β受体阻滞剂",
-        "Beta blocking agents",
-        "C07",
-        "ATC-C07"
+        "奈比洛尔"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=07ed02ff-523f-437e-bddc-5c41a4bb0062",
       "isApproved": true,
@@ -63997,7 +64395,16 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:032936a9e3cf5ead6045"
+      "id": "pw:032936a9e3cf5ead6045",
+      "searchTerms": [
+        "ATC-C07",
+        "Beta blocker",
+        "Beta blocking agents",
+        "Beta-1 selective blocker",
+        "C07",
+        "C07 β受体阻滞剂",
+        "β1选择性阻滞剂"
+      ]
     },
     {
       "name": "Labetalol",
@@ -64007,12 +64414,7 @@
         "Normodyne",
         "拉贝洛尔",
         "α/β受体阻滞剂",
-        "Beta blocker",
-        "Alpha and beta blocker",
-        "C07 β受体阻滞剂",
-        "Beta blocking agents",
-        "C07",
-        "ATC-C07"
+        "Alpha and beta blocker"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
       "isApproved": true,
@@ -64258,20 +64660,21 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:68df61549f8980052f43"
+      "id": "pw:68df61549f8980052f43",
+      "searchTerms": [
+        "ATC-C07",
+        "Beta blocker",
+        "Beta blocking agents",
+        "C07",
+        "C07 β受体阻滞剂"
+      ]
     },
     {
       "name": "Enalapril",
       "commonNames": [
         "Enalapril",
         "Vasotec",
-        "依那普利",
-        "ACE inhibitor",
-        "血管紧张素转换酶抑制剂",
-        "C09 肾素-血管紧张素系统药物",
-        "Agents acting on the renin-angiotensin system",
-        "C09",
-        "ATC-C09"
+        "依那普利"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=a88902bd-742f-4ea6-b625-cc9df1709efc&type=display",
       "isApproved": true,
@@ -64474,7 +64877,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:5fbd80df4dd25d57426c"
+      "id": "pw:5fbd80df4dd25d57426c",
+      "searchTerms": [
+        "ACE inhibitor",
+        "ATC-C09",
+        "Agents acting on the renin-angiotensin system",
+        "C09",
+        "C09 肾素-血管紧张素系统药物",
+        "血管紧张素转换酶抑制剂"
+      ]
     },
     {
       "name": "Valsartan",
@@ -64482,13 +64893,7 @@
         "Valsartan",
         "Diovan",
         "缬沙坦",
-        "ARB",
-        "Angiotensin II receptor blocker",
-        "血管紧张素II受体阻滞剂",
-        "C09 肾素-血管紧张素系统药物",
-        "Agents acting on the renin-angiotensin system",
-        "C09",
-        "ATC-C09"
+        "Angiotensin II receptor blocker"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=8478a05f-38fd-412d-af49-69a73a787c8f",
       "isApproved": true,
@@ -64695,7 +65100,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:33333be38f74957efcb0"
+      "id": "pw:33333be38f74957efcb0",
+      "searchTerms": [
+        "ARB",
+        "ATC-C09",
+        "Agents acting on the renin-angiotensin system",
+        "C09",
+        "C09 肾素-血管紧张素系统药物",
+        "血管紧张素II受体阻滞剂"
+      ]
     },
     {
       "name": "Verapamil",
@@ -64706,12 +65119,7 @@
         "Verelan",
         "维拉帕米",
         "非二氢吡啶类钙通道阻滞剂",
-        "Non-dihydropyridine CCB",
-        "CCB",
-        "C08 钙通道阻滞剂",
-        "Calcium channel blockers",
-        "C08",
-        "ATC-C08"
+        "Non-dihydropyridine CCB"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f00c1caf-68b6-40c1-a1fa-72d17d2cf44f",
       "isApproved": true,
@@ -64988,7 +65396,14 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:c0f69edc6f2a38203c6f"
+      "id": "pw:c0f69edc6f2a38203c6f",
+      "searchTerms": [
+        "ATC-C08",
+        "C08",
+        "C08 钙通道阻滞剂",
+        "CCB",
+        "Calcium channel blockers"
+      ]
     },
     {
       "name": "Nifedipine",
@@ -64997,13 +65412,7 @@
         "Adalat",
         "Procardia",
         "硝苯地平",
-        "二氢吡啶类钙通道阻滞剂",
-        "Dihydropyridine CCB",
-        "CCB",
-        "C08 钙通道阻滞剂",
-        "Calcium channel blockers",
-        "C08",
-        "ATC-C08"
+        "Dihydropyridine CCB"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cc236dc-95fa-49cc-aeb8-6590de157585",
       "isApproved": true,
@@ -65262,7 +65671,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:fda79b253ac2b19ead4f"
+      "id": "pw:fda79b253ac2b19ead4f",
+      "searchTerms": [
+        "ATC-C08",
+        "C08",
+        "C08 钙通道阻滞剂",
+        "CCB",
+        "Calcium channel blockers",
+        "二氢吡啶类钙通道阻滞剂"
+      ]
     },
     {
       "name": "Hydrochlorothiazide",
@@ -65271,12 +65688,7 @@
         "HCTZ",
         "Microzide",
         "氢氯噻嗪",
-        "噻嗪类利尿剂",
-        "Thiazide diuretic",
-        "C03 利尿剂",
-        "Diuretics",
-        "C03",
-        "ATC-C03"
+        "Thiazide diuretic"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=9416208e-e3fe-4213-a4c1-2ea6ebdc5795&type=display",
       "isApproved": true,
@@ -65479,7 +65891,14 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:411cc50a7aede9ed7be8"
+      "id": "pw:411cc50a7aede9ed7be8",
+      "searchTerms": [
+        "ATC-C03",
+        "C03",
+        "C03 利尿剂",
+        "Diuretics",
+        "噻嗪类利尿剂"
+      ]
     },
     {
       "name": "Torsemide",
@@ -65487,13 +65906,7 @@
         "Torsemide",
         "Torasemide",
         "Demadex",
-        "托拉塞米",
-        "袢利尿剂",
-        "Loop diuretic",
-        "C03 利尿剂",
-        "Diuretics",
-        "C03",
-        "ATC-C03"
+        "托拉塞米"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f1439b9c-c01c-a6d4-594b-d92b8e0af26e",
       "isApproved": true,
@@ -65690,23 +66103,22 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:138e8a22acf83b35f364"
+      "id": "pw:138e8a22acf83b35f364",
+      "searchTerms": [
+        "ATC-C03",
+        "C03",
+        "C03 利尿剂",
+        "Diuretics",
+        "Loop diuretic",
+        "袢利尿剂"
+      ]
     },
     {
       "name": "Rivaroxaban",
       "commonNames": [
         "Rivaroxaban",
         "Xarelto",
-        "利伐沙班",
-        "DOAC",
-        "Direct oral anticoagulant",
-        "Factor Xa inhibitor",
-        "Xa因子抑制剂",
-        "直接口服抗凝药",
-        "B01 抗血栓药物",
-        "Antithrombotic agents",
-        "B01",
-        "ATC-B01"
+        "利伐沙班"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10db92f9-2300-4a80-836b-673e1ae91610",
       "isApproved": true,
@@ -65907,7 +66319,18 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:2a989b9114f5203ee002"
+      "id": "pw:2a989b9114f5203ee002",
+      "searchTerms": [
+        "ATC-B01",
+        "Antithrombotic agents",
+        "B01",
+        "B01 抗血栓药物",
+        "DOAC",
+        "Direct oral anticoagulant",
+        "Factor Xa inhibitor",
+        "Xa因子抑制剂",
+        "直接口服抗凝药"
+      ]
     },
     {
       "name": "Dabigatran",
@@ -65917,15 +66340,7 @@
         "Pradaxa",
         "达比加群",
         "达比加群酯",
-        "DOAC",
-        "Direct oral anticoagulant",
-        "Direct thrombin inhibitor",
-        "直接凝血酶抑制剂",
-        "直接口服抗凝药",
-        "B01 抗血栓药物",
-        "Antithrombotic agents",
-        "B01",
-        "ATC-B01"
+        "Direct thrombin inhibitor"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=80637981-d5a7-48cb-b7b2-f50807a8ab20",
       "isApproved": true,
@@ -66159,22 +66574,24 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:fab59f8d7dabb9b4b621"
+      "id": "pw:fab59f8d7dabb9b4b621",
+      "searchTerms": [
+        "ATC-B01",
+        "Antithrombotic agents",
+        "B01",
+        "B01 抗血栓药物",
+        "DOAC",
+        "Direct oral anticoagulant",
+        "直接凝血酶抑制剂",
+        "直接口服抗凝药"
+      ]
     },
     {
       "name": "Rosuvastatin",
       "commonNames": [
         "Rosuvastatin",
         "Crestor",
-        "瑞舒伐他汀",
-        "Statin",
-        "HMG-CoA reductase inhibitor",
-        "他汀类",
-        "HMG-CoA还原酶抑制剂",
-        "C10 调脂药",
-        "Lipid modifying agents",
-        "C10",
-        "ATC-C10"
+        "瑞舒伐他汀"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=94245f53-2892-4209-8c94-c32c87d5b106",
       "isApproved": true,
@@ -66362,7 +66779,17 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:695909dac4b9f3dc4491"
+      "id": "pw:695909dac4b9f3dc4491",
+      "searchTerms": [
+        "ATC-C10",
+        "C10",
+        "C10 调脂药",
+        "HMG-CoA reductase inhibitor",
+        "HMG-CoA还原酶抑制剂",
+        "Lipid modifying agents",
+        "Statin",
+        "他汀类"
+      ]
     },
     {
       "name": "Furosemide",
@@ -66370,12 +66797,7 @@
         "Furosemide",
         "Lasix",
         "呋塞米",
-        "速尿",
-        "Loop diuretic",
-        "C03 利尿剂",
-        "Diuretics",
-        "C03",
-        "ATC-C03"
+        "速尿"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
       "isApproved": true,
@@ -66592,7 +67014,14 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:0a0d256b20d879264a1b"
+      "id": "pw:0a0d256b20d879264a1b",
+      "searchTerms": [
+        "ATC-C03",
+        "C03",
+        "C03 利尿剂",
+        "Diuretics",
+        "Loop diuretic"
+      ]
     },
     {
       "name": "Spironolactone",
@@ -66602,11 +67031,7 @@
         "螺内酯",
         "Mineralocorticoid receptor antagonist",
         "Potassium-sparing diuretic",
-        "MRA",
-        "C03 利尿剂",
-        "Diuretics",
-        "C03",
-        "ATC-C03"
+        "MRA"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c23b6b9b-aec3-48a8-a518-76e4097f6479",
       "isApproved": true,
@@ -66957,7 +67382,13 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:45b6242b911394941b80"
+      "id": "pw:45b6242b911394941b80",
+      "searchTerms": [
+        "ATC-C03",
+        "C03",
+        "C03 利尿剂",
+        "Diuretics"
+      ]
     },
     {
       "name": "Dapagliflozin",
@@ -66965,10 +67396,7 @@
         "Dapagliflozin",
         "达格列净",
         "Farxiga",
-        "Forxiga",
-        "SGLT2 inhibitor",
-        "SGLT2i",
-        "HF"
+        "Forxiga"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01f90c94-71cb-4a1f-81ff-8004b850529b",
       "isApproved": true,
@@ -67122,17 +67550,19 @@
         }
       ],
       "roas": [],
-      "id": "pw:9ede3a86467570c78ee0"
+      "id": "pw:9ede3a86467570c78ee0",
+      "searchTerms": [
+        "HF",
+        "SGLT2 inhibitor",
+        "SGLT2i"
+      ]
     },
     {
       "name": "Empagliflozin",
       "commonNames": [
         "Empagliflozin",
         "恩格列净",
-        "Jardiance",
-        "SGLT2 inhibitor",
-        "SGLT2i",
-        "HF"
+        "Jardiance"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1782b947-4a72-4feb-a488-1469d9af82bd",
       "isApproved": true,
@@ -67286,7 +67716,12 @@
         }
       ],
       "roas": [],
-      "id": "pw:51cf2f9aeff6cdc6c0cb"
+      "id": "pw:51cf2f9aeff6cdc6c0cb",
+      "searchTerms": [
+        "HF",
+        "SGLT2 inhibitor",
+        "SGLT2i"
+      ]
     },
     {
       "name": "Icosapent Ethyl",
@@ -67452,13 +67887,7 @@
       "commonNames": [
         "Atorvastatin",
         "Lipitor",
-        "阿托伐他汀",
-        "Statin",
-        "HMG-CoA reductase inhibitor",
-        "C10 调脂药",
-        "Lipid modifying agents",
-        "C10",
-        "ATC-C10"
+        "阿托伐他汀"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=606368de-dea3-4871-aa61-c00e77ed386f",
       "isApproved": true,
@@ -67655,7 +68084,15 @@
           "evidenceLevel": "TERMINOLOGY"
         }
       ],
-      "id": "pw:3a7f6de3c9c708aa24f9"
+      "id": "pw:3a7f6de3c9c708aa24f9",
+      "searchTerms": [
+        "ATC-C10",
+        "C10",
+        "C10 调脂药",
+        "HMG-CoA reductase inhibitor",
+        "Lipid modifying agents",
+        "Statin"
+      ]
     },
     {
       "name": "Alprostadil",
@@ -68199,10 +68636,7 @@
       "commonNames": [
         "Ambrisentan",
         "安立生坦",
-        "Letairis",
-        "ERA",
-        "Endothelin receptor antagonist",
-        "PAH"
+        "Letairis"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=725d4e73-6c83-477a-adc6-0ae4a133a844",
       "isApproved": true,
@@ -68366,17 +68800,19 @@
         }
       ],
       "roas": [],
-      "id": "pw:e6d81d451451f3c43764"
+      "id": "pw:e6d81d451451f3c43764",
+      "searchTerms": [
+        "ERA",
+        "Endothelin receptor antagonist",
+        "PAH"
+      ]
     },
     {
       "name": "Macitentan",
       "commonNames": [
         "Macitentan",
         "马昔腾坦",
-        "Opsumit",
-        "ERA",
-        "Endothelin receptor antagonist",
-        "PAH"
+        "Opsumit"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e484a50-55db-4b85-8c57-6cd1b0353abd",
       "isApproved": true,
@@ -68530,16 +68966,19 @@
         }
       ],
       "roas": [],
-      "id": "pw:7e707f76457ad5a797ec"
+      "id": "pw:7e707f76457ad5a797ec",
+      "searchTerms": [
+        "ERA",
+        "Endothelin receptor antagonist",
+        "PAH"
+      ]
     },
     {
       "name": "Sildenafil",
       "commonNames": [
         "Sildenafil",
         "西地那非",
-        "Revatio",
-        "PDE5 inhibitor",
-        "PAH"
+        "Revatio"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3bb9363e-b28d-4019-8aae-539233dca214",
       "isApproved": true,
@@ -68699,16 +69138,18 @@
         }
       ],
       "roas": [],
-      "id": "pw:5d3cffc0909119ebc7d0"
+      "id": "pw:5d3cffc0909119ebc7d0",
+      "searchTerms": [
+        "PAH",
+        "PDE5 inhibitor"
+      ]
     },
     {
       "name": "Tadalafil",
       "commonNames": [
         "Tadalafil",
         "他达拉非",
-        "Adcirca",
-        "PDE5 inhibitor",
-        "PAH"
+        "Adcirca"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff61b237-be8e-461b-8114-78c52a8ad0ae",
       "isApproved": true,
@@ -68869,7 +69310,11 @@
         }
       ],
       "roas": [],
-      "id": "pw:bc4aff7f7ad0586f07d6"
+      "id": "pw:bc4aff7f7ad0586f07d6",
+      "searchTerms": [
+        "PAH",
+        "PDE5 inhibitor"
+      ]
     },
     {
       "name": "Riociguat",
@@ -68877,8 +69322,6 @@
         "Riociguat",
         "利奥西呱",
         "Adempas",
-        "sGC stimulator",
-        "PAH",
         "CTEPH"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b57509a-3d5d-41d4-8fed-1471e26372a3",
@@ -69046,7 +69489,11 @@
         }
       ],
       "roas": [],
-      "id": "pw:932a5eb9ab191782c8d0"
+      "id": "pw:932a5eb9ab191782c8d0",
+      "searchTerms": [
+        "PAH",
+        "sGC stimulator"
+      ]
     },
     {
       "name": "Epoprostenol",
@@ -69056,8 +69503,7 @@
         "Veletri",
         "Flolan",
         "Prostacyclin",
-        "PGI2",
-        "PAH"
+        "PGI2"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=df502787-46ec-4dd1-a2c0-be90f6d95a5d",
       "isApproved": true,
@@ -69214,7 +69660,10 @@
         }
       ],
       "roas": [],
-      "id": "pw:9c940acf1a4f273f7d6c"
+      "id": "pw:9c940acf1a4f273f7d6c",
+      "searchTerms": [
+        "PAH"
+      ]
     },
     {
       "name": "Iloprost",
@@ -69222,9 +69671,7 @@
         "Iloprost",
         "伊洛前列素",
         "Ventavis",
-        "Prostacyclin analog",
-        "PGI2 analog",
-        "PAH"
+        "PGI2 analog"
       ],
       "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/021779s014lbl.pdf",
       "isApproved": true,
@@ -69384,7 +69831,11 @@
         }
       ],
       "roas": [],
-      "id": "pw:e19e80cef0035e6c7f32"
+      "id": "pw:e19e80cef0035e6c7f32",
+      "searchTerms": [
+        "PAH",
+        "Prostacyclin analog"
+      ]
     },
     {
       "name": "Treprostinil",
@@ -69393,9 +69844,7 @@
         "曲前列尼尔",
         "Remodulin",
         "Tyvaso",
-        "Orenitram",
-        "Prostacyclin analog",
-        "PAH"
+        "Orenitram"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6c80bb38-e8db-4138-9f0d-dbbf9c673185",
       "isApproved": true,
@@ -69548,7 +69997,11 @@
         }
       ],
       "roas": [],
-      "id": "pw:1952d0dd05fb673d2232"
+      "id": "pw:1952d0dd05fb673d2232",
+      "searchTerms": [
+        "PAH",
+        "Prostacyclin analog"
+      ]
     },
     {
       "name": "Selexipag",
@@ -69556,8 +70009,7 @@
         "Selexipag",
         "司来帕格",
         "Uptravi",
-        "IP receptor agonist",
-        "PAH"
+        "IP receptor agonist"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a7a23b87-f892-4e2c-8e2e-ebf841220f90",
       "isApproved": true,
@@ -69725,7 +70177,10 @@
         }
       ],
       "roas": [],
-      "id": "pw:c40c70b7c252b3c78288"
+      "id": "pw:c40c70b7c252b3c78288",
+      "searchTerms": [
+        "PAH"
+      ]
     },
     {
       "name": "Chlormadinone Acetate",
@@ -69733,10 +70188,9 @@
       "commonNames": [
         "Chlormadinone Acetate",
         "CMA",
-        "醋酸氯地孕酮",
-        "Chlormadinone"
+        "醋酸氯地孕酮"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
+      "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -69748,197 +70202,147 @@
       "categories": [
         "endocrine",
         "hrt-related",
+        "hrt-progestogens",
+        "hrt-antiandrogens",
         "prescription-medicine"
       ],
-      "summary": "醋酸氯地孕酮是合成孕激素；其抗促性腺激素或抗雄相关作用须按具体制剂、适应证和证据谨慎解释。",
+      "summary": "A synthetic progestogen with antiandrogenic activity.",
       "clinicalInfo": {
         "atcCodes": [
           "G03DB06"
         ],
         "drugClass": [
-          "Progestin",
-          "Steroidal antiandrogen",
-          "Antigonadotropin"
+          "Synthetic progestogen; antiandrogen"
         ],
         "indications": [
-          "Approved gynecologic or contraceptive indications vary by product",
-          "Feminizing hormone therapy evidence is limited"
+          "France: selected gynecological disorders when alternatives are inappropriate.",
+          "Japan: prostatic hyperplasia or prostate cancer, subject to label restrictions."
         ],
         "contraindications": [
-          "Use product-specific contraindications"
+          "France: meningioma/history, active thrombosis, severe hepatic dysfunction, unexplained genital bleeding, hypersensitivity.",
+          "Japan: severe liver impairment/disease."
         ],
         "majorWarnings": [
-          "Mood changes and fatigue",
-          "Bleeding-pattern changes",
-          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
-          "Evidence for benefits in feminizing HRT is limited and context-dependent"
+          "Meningioma risk increases with cumulative exposure; hepatic, thrombotic, mood and glucose risks."
         ],
         "majorInteractions": [
-          "Enzyme-inducing drugs may reduce exposure",
-          "Combined estrogen products have additional interaction and thrombotic-risk considerations"
+          "Enzyme inducers may reduce progestogenic effects."
         ],
         "monitoring": [
-          "Clinical response and adverse effects",
-          "Bleeding pattern when relevant",
-          "Mood symptoms",
-          "Blood pressure and cardiometabolic risk factors when clinically indicated"
+          "Liver function, glucose, meningioma symptoms and imaging per local labeling."
         ],
         "sourceRefs": [
           {
-            "title": "Pharmacokinetics of chlormadinone acetate following single and multiple dosing",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
-            "sourceType": "human-pk-study",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "HUMAN_STUDY"
+            "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
           },
           {
-            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-            "sourceType": "systematic-review",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "SYSTEMATIC_REVIEW"
+            "title": "PMDA: Chlormadinone acetate tablets 25 mg YD (Japan)",
+            "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2026-04 v3; 2; 4; 8; 11; 18–19"
+          },
+          {
+            "title": "EMA: Nomegestrol/chlormadinone safety measures",
+            "url": "https://www.ema.europa.eu/en/news/new-measures-minimise-risk-meningioma-medicines-containing-nomegestrol-or-chlormadinone",
+            "sourceType": "regulatory-safety-communication",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
           "Progestin",
-          "Steroidal antiandrogen",
-          "Antigonadotropin"
+          "Steroidal antiandrogen"
         ],
         "mechanisms": [
-          "Progesterone receptor agonism",
-          "Possible suppression of gonadotropin secretion"
-        ],
-        "affectedHormones": [
-          "LH",
-          "FSH",
-          "Total testosterone indirectly"
-        ],
-        "monitoringLabs": [
-          "Clinical response and adverse effects",
-          "Bleeding pattern when relevant",
-          "Mood symptoms",
-          "Blood pressure and cardiometabolic risk factors when clinically indicated"
-        ],
-        "assayCaveats": [
-          "Routine serum progestin concentration monitoring is generally not established for these entries.",
-          "Hormone results must be interpreted with indication, formulation, timing, and co-administered estrogen."
-        ],
-        "safetySignals": [
-          "Mood changes and fatigue",
-          "Bleeding-pattern changes",
-          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
-          "Evidence for benefits in feminizing HRT is limited and context-dependent"
-        ],
-        "modelRoles": [
-          "progestin",
-          "possible-gonadotropin-suppressor",
-          "testosterone-suppression-candidate"
+          "Progestogenic activity, androgen antagonism and gonadotropin suppression."
         ],
         "sourceRefs": [
           {
-            "title": "Pharmacokinetics of chlormadinone acetate following single and multiple dosing",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
-            "sourceType": "human-pk-study",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "HUMAN_STUDY"
+            "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
           },
           {
-            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-            "sourceType": "systematic-review",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "SYSTEMATIC_REVIEW"
+            "title": "PMDA: Chlormadinone acetate tablets 25 mg YD (Japan)",
+            "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2026-04 v3; 2; 4; 8; 11; 18–19"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "tablet",
-          "depotRelease": false,
-          "injectionIntervalSensitive": false,
-          "assayTimingSensitive": true,
-          "notes": [
-            "Evidence for use in a testosterone-suppression model is limited and context-dependent.",
-            "Pharmacodynamic gonadotropin effects do not equal plasma Tmax."
-          ],
-          "sourceRefs": [
-            {
-              "title": "Pharmacokinetics of chlormadinone acetate following single and multiple dosing",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/16904418/",
-              "sourceType": "human-pk-study",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "HUMAN_STUDY"
-            },
-            {
-              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-              "sourceType": "systematic-review",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SYSTEMATIC_REVIEW"
-            }
-          ],
+          "formulation": "French-labeled oral tablets",
           "tmax": {
-            "min": 1,
-            "max": 2,
+            "min": 2,
+            "max": 3,
             "unit": "h",
-            "basis": "plasma concentration"
+            "basis": "Single oral dose"
           },
           "eliminationHalfLife": {
-            "min": 25,
-            "max": 39,
+            "min": 36,
+            "max": 36,
             "unit": "h",
-            "basis": "literature or label pharmacokinetics"
+            "basis": "Label mean"
           },
-          "timeToSteadyState": {
-            "min": 7,
-            "max": 15,
-            "unit": "day",
-            "basis": "label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+          "sourceRefs": [
+            {
+              "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+            }
+          ]
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Component dose in a cited combined oral contraceptive product",
-          "population": "Adults; product- and indication-specific",
+          "indication": "French label: endometriosis",
+          "population": "Adults",
           "route": "oral",
-          "formulation": "tablet",
-          "amountText": "2 mg chlormadinone acetate component per active tablet",
-          "scheduleText": "One active tablet daily for 21 days followed by a 7-day break",
+          "formulation": "Tablets",
+          "amountText": "10 mg daily, continuous treatment.",
+          "scheduleText": "Daily",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "sourceRefs": [
-            {
-              "title": "Belara chlormadinone acetate/ethinylestradiol product information",
-              "url": "https://mohpublic.z6.web.core.windows.net/IsraelDrugs/Rishum01_7_88033023.pdf",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "Posology and method of administration"
-            }
-          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "ANSM RCP 2022-12-12, section4.2 endometriosis",
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 10,
+              "max": 10,
               "unit": "mg",
-              "basis": "component-dose",
-              "frequency": "once daily for 21 days",
-              "rangeKind": "label-regimen",
-              "label": "Chlormadinone component",
-              "components": [
-                {
-                  "substance": "chlormadinone acetate",
-                  "min": 2,
-                  "max": 2,
-                  "unit": "mg"
-                }
-              ]
+              "basis": "daily-total",
+              "frequency": "Daily",
+              "rangeKind": "label-regimen"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
             }
           ]
         }
@@ -69988,7 +70392,57 @@
           }
         ]
       },
-      "roas": []
+      "roas": [
+        {
+          "name": "oral"
+        }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "sourceRefs": [
+        {
+          "title": "ANSM: Chlormadinone Viatris 10 mg (France)",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64783616/extrait",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "RCP 2022-12-12; 4.1–4.5; 5.1–5.2"
+        },
+        {
+          "title": "PMDA: Chlormadinone acetate tablets 25 mg YD (Japan)",
+          "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/830001_2478001F2373_1_07",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2026-04 v3; 2; 4; 8; 11; 18–19"
+        },
+        {
+          "title": "EMA: Nomegestrol/chlormadinone safety measures",
+          "url": "https://www.ema.europa.eu/en/news/new-measures-minimise-risk-meningioma-medicines-containing-nomegestrol-or-chlormadinone",
+          "sourceType": "regulatory-safety-communication",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ],
+      "interactions": null,
+      "tdm": null,
+      "formulationIds": [
+        "form:tablet"
+      ],
+      "searchTerms": [
+        "孕激素",
+        "Progestogen",
+        "抗雄激素",
+        "Antiandrogen"
+      ],
+      "displayName": "Chlormadinone Acetate",
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Cyproterone Acetate",
@@ -70007,269 +70461,140 @@
       "categories": [
         "endocrine",
         "hrt-related",
+        "hrt-antiandrogens",
+        "hrt-progestogens",
         "prescription-medicine"
       ],
-      "summary": "醋酸环丙孕酮（CPA）兼具甾体抗雄激素、孕激素和抗促性腺激素作用。",
+      "summary": "An androgen receptor blocker with progestogenic activity.",
       "clinicalInfo": {
         "atcCodes": [
           "G03HA01"
         ],
         "drugClass": [
-          "Steroidal antiandrogen",
-          "Progestin",
-          "Antigonadotropin"
+          "Steroidal antiandrogen; progestogen"
         ],
         "indications": [
-          "Androgen-dependent indications defined by local approved labeling",
-          "Feminizing hormone therapy literature context"
+          "UK Androcur: selected severe hypersexuality when alternatives are inappropriate.",
+          "UK Cyprostat: selected prostate cancer treatment and associated hot flushes.",
+          "Antiandrogen in feminizing hormone therapy (WPATH)."
         ],
         "contraindications": [
-          "Current or previous meningioma",
-          "Severe liver disease",
-          "Use other product-specific contraindications"
+          "Androcur label: liver disease/tumors, meningioma/history, thrombosis/history, severe depression, severe vascular diabetes, sickle-cell anemia, wasting disease, non-prostate malignancy or hypersensitivity; excludes under-18s."
         ],
-        "majorWarnings": [],
+        "majorWarnings": [
+          "Meningioma with cumulative exposure; serious liver injury, thrombosis and long-term bone loss."
+        ],
         "majorInteractions": [
-          "Other hepatotoxic drugs can increase liver-safety concern",
-          "Combined estrogen therapy changes the overall thromboembolic risk context"
+          "CYP3A4 inhibitors/inducers affect exposure; high doses with some statins increase myopathy risk."
         ],
         "monitoring": [
-          "Total testosterone",
-          "Estradiol",
-          "LH",
-          "FSH",
-          "Prolactin",
-          "AST",
-          "ALT",
-          "Bilirubin",
-          "Metabolic markers when clinically indicated"
+          "Liver function, blood count, meningioma symptoms; glucose in diabetes."
         ],
         "sourceRefs": [
           {
-            "title": "Androcur 50 mg tablets SmPC",
+            "title": "Androcur 50 mg SmPC (UK)",
             "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "5.2 Pharmacokinetic properties"
+            "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
           },
           {
-            "title": "EMA referral: cyproterone-containing medicinal products",
-            "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
-            "sourceType": "regulatory-safety-communication",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_SAFETY"
+            "title": "Cyprostat 50 mg SmPC (UK)",
+            "url": "https://www.medicines.org.uk/emc/product/15997/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "2024-10; 4.1"
           },
           {
-            "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/34176757/",
-            "sourceType": "clinical-study",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "HUMAN_STUDY"
-          },
-          {
-            "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
-            "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
+            "title": "WPATH SOC8 (2022), Appendix C Table 4",
+            "url": "https://doi.org/10.1080/26895269.2022.2100644",
             "sourceType": "clinical-guideline",
-            "accessedDate": "2026-06-24",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "CLINICAL_GUIDELINE",
-            "labelSection": "Feminizing hormone therapy: anti-androgens"
+            "labelSection": "S254, adult regimens and footnotes"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
           "Steroidal antiandrogen",
-          "Progestin",
-          "Antigonadotropin"
+          "Progestin"
         ],
         "mechanisms": [
-          "Androgen receptor antagonism",
-          "Progestogenic suppression of gonadotropins",
-          "Reduction of gonadal testosterone production"
-        ],
-        "affectedHormones": [
-          "Total testosterone",
-          "LH",
-          "FSH",
-          "Prolactin",
-          "Estradiol indirectly when combined with estrogen therapy"
-        ],
-        "monitoringLabs": [
-          "Total testosterone",
-          "Estradiol",
-          "LH",
-          "FSH",
-          "Prolactin",
-          "AST",
-          "ALT",
-          "Bilirubin",
-          "Metabolic markers when clinically indicated"
-        ],
-        "assayCaveats": [
-          "Routine serum progestin concentration monitoring is generally not established for these entries.",
-          "Hormone results must be interpreted with indication, formulation, timing, and co-administered estrogen."
-        ],
-        "safetySignals": [
-          "Meningioma risk related to higher dose and cumulative exposure",
-          "Hepatotoxicity, including severe hepatic injury",
-          "Hyperprolactinemia, mood changes, fatigue, sexual-function changes, and thromboembolic risk context with combined estrogen therapy"
-        ],
-        "modelRoles": [
-          "testosterone-suppressor",
-          "lh-fsh-suppressor",
-          "prolactin-risk"
+          "Androgen receptor blockade and gonadotropin suppression."
         ],
         "sourceRefs": [
           {
-            "title": "Androcur 50 mg tablets SmPC",
+            "title": "Androcur 50 mg SmPC (UK)",
             "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "5.2 Pharmacokinetic properties"
-          },
-          {
-            "title": "EMA referral: cyproterone-containing medicinal products",
-            "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
-            "sourceType": "regulatory-safety-communication",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_SAFETY"
-          },
-          {
-            "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/34176757/",
-            "sourceType": "clinical-study",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "HUMAN_STUDY"
-          },
-          {
-            "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
-            "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
-            "sourceType": "clinical-guideline",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "CLINICAL_GUIDELINE",
-            "labelSection": "Feminizing hormone therapy: anti-androgens"
-          },
-          {
-            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-            "sourceType": "systematic-review",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "SYSTEMATIC_REVIEW"
+            "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "tablet",
-          "depotRelease": false,
-          "injectionIntervalSensitive": false,
-          "assayTimingSensitive": true,
-          "notes": [
-            "Testosterone suppression is delayed relative to plasma concentration.",
-            "Terminal half-life and accumulation vary with dose and repeated exposure."
-          ],
-          "sourceRefs": [
-            {
-              "title": "Androcur 50 mg tablets SmPC",
-              "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "5.2 Pharmacokinetic properties"
-            },
-            {
-              "title": "EMA referral: cyproterone-containing medicinal products",
-              "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
-              "sourceType": "regulatory-safety-communication",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_SAFETY"
-            },
-            {
-              "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/34176757/",
-              "sourceType": "clinical-study",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "HUMAN_STUDY"
-            },
-            {
-              "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
-              "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
-              "sourceType": "clinical-guideline",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE",
-              "labelSection": "Feminizing hormone therapy: anti-androgens"
-            }
-          ],
+          "formulation": "50 mg tablets; single100 mg oral study",
           "tmax": {
-            "min": 1.5,
-            "max": 2,
+            "min": 3,
+            "max": 3,
             "unit": "h",
-            "basis": "plasma concentration"
+            "basis": "Approximate"
           },
           "eliminationHalfLife": {
-            "min": 1.7,
-            "max": 2.3,
-            "unit": "day",
-            "basis": "literature or label pharmacokinetics"
+            "min": 43.9,
+            "max": 43.9,
+            "unit": "h",
+            "basis": "Terminal mean"
           },
-          "timeToSteadyState": {
-            "min": 8,
-            "max": 16,
-            "unit": "day",
-            "basis": "label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+          "sourceRefs": [
+            {
+              "title": "Androcur 50 mg SmPC (UK)",
+              "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
+            }
+          ]
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Feminizing hormone therapy in the cited clinical guideline",
+          "indication": "Feminizing hormone therapy (WPATH SOC8 Table4)",
           "population": "Adults",
           "route": "oral",
-          "formulation": "tablet",
-          "amountText": "12.5-50 mg cyproterone acetate total daily in the cited guideline",
-          "scheduleText": "Oral daily administration; the cited guideline lists 12.5-25 mg as usual and 50 mg as the maximum",
+          "formulation": "Oral tablets",
+          "amountText": "Table-listed regimen:10 mg/day.",
+          "scheduleText": "Daily",
           "sourceType": "clinical-guideline",
           "evidenceLevel": "CLINICAL_GUIDELINE",
-          "sourceRefs": [
-            {
-              "title": "Rainbow Health Ontario Guidelines for Gender-Affirming Primary Care",
-              "url": "https://www.rainbowhealthontario.ca/TransHealthGuide/gp-femht.html",
-              "sourceType": "clinical-guideline",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE",
-              "labelSection": "Feminizing hormone therapy: anti-androgens"
-            },
-            {
-              "title": "Low-Dose Cyproterone Acetate Treatment for Transgender Women",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/34176757/",
-              "sourceType": "clinical-study",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "HUMAN_STUDY"
-            },
-            {
-              "title": "EMA referral: cyproterone-containing medicinal products",
-              "url": "https://www.ema.europa.eu/en/medicines/human/referrals/cyproterone-containing-medicinal-products",
-              "sourceType": "regulatory-safety-communication",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_SAFETY"
-            }
-          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SOC8 AppendixC Table4 pS254; numeric fact; footnotes reviewed",
           "ranges": [
             {
-              "min": 12.5,
-              "max": 50,
+              "min": 10,
+              "max": 10,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "once daily",
-              "rangeKind": "guideline-regimen",
-              "label": "HRT guideline range",
-              "components": [],
-              "note": "The cited guideline notes that the 50 mg maximum is rarely required or used."
+              "frequency": "Daily",
+              "rangeKind": "guideline-regimen"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "title": "WPATH SOC8 (2022), Appendix C Table 4",
+              "url": "https://doi.org/10.1080/26895269.2022.2100644",
+              "sourceType": "clinical-guideline",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "CLINICAL_GUIDELINE",
+              "labelSection": "S254, adult regimens and footnotes"
             }
           ]
         }
@@ -70338,7 +70663,65 @@
           }
         ]
       },
-      "roas": []
+      "roas": [
+        {
+          "name": "oral"
+        }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:tablet"
+      ],
+      "sourceRefs": [
+        {
+          "title": "Androcur 50 mg SmPC (UK)",
+          "url": "https://www.medicines.org.uk/emc/product/15996/smpc",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2024-10; 4.1–4.5; 5.1–5.2"
+        },
+        {
+          "title": "Cyprostat 50 mg SmPC (UK)",
+          "url": "https://www.medicines.org.uk/emc/product/15997/smpc",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "2024-10; 4.1"
+        },
+        {
+          "title": "WPATH SOC8 (2022), Appendix C Table 4",
+          "url": "https://doi.org/10.1080/26895269.2022.2100644",
+          "sourceType": "clinical-guideline",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
+          "labelSection": "S254, adult regimens and footnotes"
+        },
+        {
+          "title": "药学数据中心：醋酸环丙孕酮片",
+          "url": "https://pharm.ncmi.cn/zysjk/ypgcyp/202312/t20231205_411706.html",
+          "sourceType": "regulatory-registration",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REFERENCE_DATABASE"
+        }
+      ],
+      "interactions": null,
+      "tdm": null,
+      "searchTerms": [
+        "抗雄激素",
+        "Antiandrogen",
+        "孕激素",
+        "Progestogen"
+      ],
+      "displayName": "Cyproterone Acetate",
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Medroxyprogesterone Acetate",
@@ -70864,10 +71247,12 @@
       "name": "Conjugated Estrogens",
       "id": "pw:b7371f4396b00a2a6db0",
       "commonNames": [
+        "Conjugated Estrogens",
+        "结合雌激素",
         "Conjugated equine estrogens",
         "CEE",
-        "结合雌激素",
-        "Premarin"
+        "Premarin",
+        "普力马林"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
       "isApproved": true,
@@ -70880,187 +71265,157 @@
       "categories": [
         "endocrine",
         "hrt-related",
+        "hrt-estrogens",
         "prescription-medicine"
       ],
-      "summary": "结合雌激素是雌激素相关制剂，但不能当作普通 17β-雌二醇血清暴露解释。",
+      "summary": "An estrogen mixture; information here concerns Premarin oral tablets.",
       "clinicalInfo": {
         "atcCodes": [
           "G03CA57"
         ],
         "drugClass": [
-          "Conjugated estrogen mixture",
-          "Estrogenic agent"
+          "Estrogen mixture"
         ],
         "indications": [
-          "Approved indications depend on product"
+          "US Premarin: menopausal symptoms, selected hypoestrogenic conditions, osteoporosis prevention and selected cancer palliation."
         ],
         "contraindications": [
-          "Use product-specific estrogen contraindications"
+          "Unexplained genital bleeding, estrogen-dependent cancer, thrombosis/history, thrombophilia, liver disease or severe allergy; breast cancer/history except selected metastatic treatment."
         ],
         "majorWarnings": [
-          "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
-          "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
-          "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+          "Thrombotic, cardiovascular, breast and endometrial risks. Not indicated in pregnancy."
         ],
         "majorInteractions": [
-          "Enzyme inducers or inhibitors can alter exposure depending on route and formulation.",
-          "Estrogens can alter thyroid-binding globulin and may affect interpretation or requirements of thyroid therapy.",
-          "Estrogens can reduce lamotrigine concentrations in some contexts."
+          "CYP3A4 inducers/inhibitors alter exposure."
         ],
         "monitoring": [
-          "Clinical response and adverse effects",
-          "Estradiol and total testosterone when clinically indicated",
-          "Blood pressure",
-          "Cardiometabolic risk factors when clinically indicated",
-          "Prolactin only when symptoms, regimen, or local guidance indicate"
+          "Abnormal bleeding; thyroid function during thyroid replacement."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Premarin label",
+            "title": "DailyMed: Premarin oral tablets (US)",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics"
-          },
-          {
-            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
-            "sourceType": "assay-study",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "HUMAN_STUDY",
-            "note": "Assay bias can depend on formulation and assay platform."
+            "labelSection": "1–8; 11; 12.3 Table2"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
-          "Estrogen",
-          "Estrogen receptor agonist"
+          "Estrogen"
         ],
         "mechanisms": [
-          "Estrogen receptor alpha and beta agonism",
-          "Feedback effects on hypothalamic-pituitary-gonadal signaling"
-        ],
-        "affectedHormones": [
-          "Estradiol",
-          "Estrone",
-          "LH",
-          "FSH",
-          "Total testosterone",
-          "SHBG"
-        ],
-        "monitoringLabs": [
-          "Clinical response and adverse effects",
-          "Estradiol and total testosterone when clinically indicated",
-          "Blood pressure",
-          "Cardiometabolic risk factors when clinically indicated",
-          "Prolactin only when symptoms, regimen, or local guidance indicate"
+          "Estrogen receptor activity."
         ],
         "assayCaveats": [
-          "Sampling time, route, formulation, and time since last dose can materially change measured estradiol.",
-          "Immunoassays and LC-MS/MS methods may not agree, particularly at low concentrations or with oral estrogen metabolites.",
-          "The laboratory method and local reference interval must be recorded with each result."
-        ],
-        "safetySignals": [
-          "Venous thromboembolism and cardiovascular risk context",
-          "Blood pressure and migraine changes",
-          "Breast and endometrial safety context",
-          "Liver and gallbladder adverse effects"
-        ],
-        "modelRoles": [
-          "estrogenic-agent",
-          "not-compatible-with-standard-e2-assay-model"
+          "Estradiol assays do not capture the complete mixture."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Premarin label",
+            "title": "DailyMed: Premarin oral tablets (US)",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics"
+            "labelSection": "1–8; 11; 12.3 Table2"
           },
           {
-            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
-            "sourceType": "assay-study",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "HUMAN_STUDY",
-            "note": "Assay bias can depend on formulation and assay platform."
+            "title": "UCSF: Feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Estrogens"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "tablet",
-          "depotRelease": false,
-          "injectionIntervalSensitive": false,
-          "assayTimingSensitive": true,
-          "notes": [
-            "The product is a mixture; component-specific half-lives differ.",
-            "Ordinary serum estradiol is not a complete measure of estrogenic exposure."
-          ],
+          "formulation": "Premarin 0.625 mg single dose; analyte: Baseline-adjusted unconjugated estrone",
+          "tmax": {
+            "min": 9.6,
+            "max": 9.6,
+            "unit": "h",
+            "basis": "Table2 mean; healthy postmenopausal women"
+          },
+          "eliminationHalfLife": {
+            "min": 20.2,
+            "max": 20.2,
+            "unit": "h",
+            "basis": "Baseline-adjusted unconjugated estrone"
+          },
           "sourceRefs": [
             {
-              "title": "DailyMed Premarin label",
+              "title": "DailyMed: Premarin oral tablets (US)",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
+              "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
+              "labelSection": "1–8; 11; 12.3 Table2"
             }
-          ],
-          "eliminationHalfLife": {
-            "min": 11,
-            "max": 17,
+          ]
+        },
+        {
+          "route": "oral",
+          "formulation": "Premarin 0.625 mg single dose; analyte: Equilin",
+          "tmax": {
+            "min": 7.9,
+            "max": 7.9,
             "unit": "h",
-            "basis": "literature or label pharmacokinetics"
+            "basis": "Table2 mean; healthy postmenopausal women"
           },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+          "eliminationHalfLife": {
+            "min": 12.9,
+            "max": 12.9,
+            "unit": "h",
+            "basis": "Equilin"
+          },
+          "sourceRefs": [
+            {
+              "title": "DailyMed: Premarin oral tablets (US)",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "1–8; 11; 12.3 Table2"
+            }
+          ]
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Female hypogonadism in the cited label",
-          "population": "Adults; product- and indication-specific",
+          "indication": "US Premarin label: menopausal vasomotor symptoms",
+          "population": "Postmenopausal women",
           "route": "oral",
-          "formulation": "tablet",
-          "amountText": "0.3-0.625 mg conjugated estrogens daily",
-          "scheduleText": "Cyclic administration is described in the cited label",
+          "formulation": "Oral tablets",
+          "amountText": "Initial 0.3 mg once daily.",
+          "scheduleText": "Daily; subsequent clinician-directed adjustment",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "sourceRefs": [
-            {
-              "title": "DailyMed Premarin label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
-            },
-            {
-              "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
-              "sourceType": "assay-study",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "HUMAN_STUDY",
-              "note": "Assay bias can depend on formulation and assay platform."
-            }
-          ],
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL37; section2.1",
           "ranges": [
             {
               "min": 0.3,
-              "max": 0.625,
+              "max": 0.3,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "daily, cyclic regimen",
-              "rangeKind": "label-regimen",
-              "label": "Label regimen",
-              "components": [],
-              "note": "This mixture must not be interpreted as ordinary serum estradiol exposure."
+              "frequency": "Daily",
+              "rangeKind": "initial"
+            }
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed: Premarin oral tablets (US)",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "1–8; 11; 12.3 Table2"
             }
           ]
         }
@@ -71097,7 +71452,56 @@
           }
         ]
       },
-      "roas": []
+      "roas": [
+        {
+          "name": "oral"
+        }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:tablet"
+      ],
+      "sourceRefs": [
+        {
+          "title": "DailyMed: Premarin oral tablets (US)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=258e1602-a3cf-4ccc-ca80-73dbbfb812ff",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "1–8; 11; 12.3 Table2"
+        },
+        {
+          "title": "Pfizer：普力马林锭 0.625 mg（台湾）",
+          "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=17308",
+          "sourceType": "manufacturer-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "卫署药输字第022533号；成分及适应症"
+        },
+        {
+          "title": "UCSF: Feminizing hormone therapy",
+          "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+          "sourceType": "clinical-guideline",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
+          "labelSection": "Estrogens"
+        }
+      ],
+      "interactions": null,
+      "tdm": null,
+      "searchTerms": [
+        "雌激素",
+        "Estrogen"
+      ],
+      "displayName": "Conjugated Estrogens",
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Estetrol",
@@ -74466,182 +74870,158 @@
         "Bicalutamide",
         "Casodex",
         "比卡鲁胺",
-        "比卡魯胺"
+        "康士得",
+        "比卡鲁氨"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
       "isApproved": true,
       "categories": [
         "endocrine",
         "hrt-related",
-        "prescription-medicine",
-        "antiandrogen"
+        "hrt-antiandrogens",
+        "prescription-medicine"
       ],
-      "summary": "比卡鲁胺是非甾体雄激素受体抑制剂。它阻断雄激素作用，但单药使用时不会可靠降低血清睾酮；女性化 HRT 语境的证据有限，并存在严重肝损伤风险。",
+      "summary": "A nonsteroidal androgen receptor inhibitor.",
       "clinicalInfo": {
         "atcCodes": [
           "L02BB03"
         ],
         "drugClass": [
-          "Nonsteroidal androgen receptor inhibitor",
-          "Antiandrogen"
+          "Nonsteroidal androgen receptor inhibitor"
         ],
         "indications": [
-          "Metastatic prostate cancer in combination with an LHRH analogue under the cited label",
-          "Feminizing HRT has limited evidence and is not an approved indication"
+          "US label: metastatic prostate cancer, combined with an LHRH analog."
         ],
         "contraindications": [
-          "Product-label contraindications apply",
-          "Pregnancy"
+          "Hypersensitivity; pregnancy. The US label excludes use in women."
         ],
         "majorWarnings": [
-          "Severe liver injury, including hepatic failure, has been reported.",
-          "Serum testosterone may remain high or rise because androgen production is not directly suppressed."
+          "Serious liver injury; breast symptoms; impaired glucose tolerance with LHRH agonists."
         ],
         "majorInteractions": [
-          "CYP3A4 substrate interactions may alter exposure.",
-          "Coumarin anticoagulant effects and prothrombin time can increase."
+          "Coumarin anticoagulants: bleeding risk. CYP3A4 substrates: increased exposure."
         ],
         "monitoring": [
-          "AST",
-          "ALT",
-          "Bilirubin",
-          "Clinical signs of liver injury",
-          "Total testosterone and estradiol for context only"
+          "Liver function; INR with anticoagulants; glucose with LHRH agonists."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed CASODEX (bicalutamide) label",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+            "title": "DailyMed: Bicalutamide tablets (US)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "5.1 Hepatitis; 12.3 Pharmacokinetics"
+            "labelSection": "1–7; 12.1; 12.3 (Table 3)"
           },
           {
-            "title": "UCSF Overview of feminizing hormone therapy",
+            "title": "药学数据中心：比卡鲁胺片",
+            "url": "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399682.html",
+            "sourceType": "regulatory-registration",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REFERENCE_DATABASE"
+          },
+          {
+            "title": "WHO ATC: Bicalutamide L02BB03",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BB03",
+            "sourceType": "classification",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REFERENCE_DATABASE"
+          },
+          {
+            "title": "UCSF: Feminizing hormone therapy",
             "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
             "sourceType": "clinical-guideline",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "CLINICAL_GUIDELINE"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Antiandrogens – other approaches"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
-          "Nonsteroidal antiandrogen",
-          "Androgen receptor inhibitor"
+          "Nonsteroidal antiandrogen"
         ],
         "mechanisms": [
-          "Competitive inhibition of androgen receptor signaling"
-        ],
-        "affectedHormones": [
-          "Androgen receptor signaling",
-          "Total testosterone may remain unchanged or increase",
-          "Estradiol may increase"
-        ],
-        "monitoringLabs": [
-          "AST",
-          "ALT",
-          "Bilirubin",
-          "Total testosterone",
-          "Estradiol"
-        ],
-        "assayCaveats": [
-          "Serum testosterone does not measure androgen-receptor blockade and is not useful for titrating bicalutamide exposure."
-        ],
-        "safetySignals": [
-          "Severe liver injury",
-          "Gynecomastia",
-          "Anemia",
-          "Drug interactions"
-        ],
-        "modelRoles": [
-          "androgen-receptor-antagonist",
-          "not-a-testosterone-production-suppressor",
-          "liver-risk"
+          "Androgen receptor blockade."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed CASODEX (bicalutamide) label",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+            "title": "DailyMed: Bicalutamide tablets (US)",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+          },
+          {
+            "title": "UCSF: Feminizing hormone therapy",
+            "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+            "sourceType": "clinical-guideline",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "CLINICAL_GUIDELINE",
+            "labelSection": "Antiandrogens – other approaches"
           }
         ]
       },
       "timeCourse": [
         {
           "route": "oral",
-          "formulation": "film-coated tablet",
+          "formulation": "tablets",
           "tmax": {
-            "min": 16.7,
-            "max": 45.9,
+            "min": 31.3,
+            "max": 31.3,
             "unit": "h",
-            "basis": "label pharmacokinetics",
-            "note": "Mean 31.3 hours with SD 14.6 hours for the active enantiomer."
+            "basis": "Active R-enantiomer, single-dose mean"
           },
           "eliminationHalfLife": {
-            "min": 3.51,
-            "max": 8.09,
+            "min": 5.8,
+            "max": 5.8,
             "unit": "day",
-            "basis": "label pharmacokinetics",
-            "note": "Mean 5.8 days with SD 2.29 days for the active enantiomer."
+            "basis": "Active R-enantiomer, mean"
           },
-          "timeToSteadyState": {
-            "min": 28,
-            "max": 42,
-            "unit": "day",
-            "basis": "literature estimate",
-            "note": "Approximate accumulation window; not a clinical-effect endpoint."
-          },
-          "notes": [
-            "Androgen-receptor blockade must not be interpreted as testosterone production suppression."
-          ],
           "sourceRefs": [
             {
-              "title": "DailyMed CASODEX (bicalutamide) label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+              "title": "DailyMed: Bicalutamide tablets (US)",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
+              "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
+              "labelSection": "1–7; 12.1; 12.3 (Table 3)"
             }
-          ],
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+          ]
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Metastatic prostate cancer in combination with an LHRH analogue under the cited label",
-          "population": "Adults in the approved oncology context",
+          "indication": "US label: metastatic prostate cancer",
+          "population": "Adult men",
           "route": "oral",
-          "formulation": "film-coated tablet",
-          "amountText": "50 mg bicalutamide per dose",
-          "scheduleText": "Once daily with an LHRH analogue in the cited label",
+          "formulation": "tablets",
+          "amountText": "50 mg once daily with an LHRH analog.",
+          "scheduleText": "Once daily",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL v3, effective 2026-02-27, section 2.1",
+          "sourceRefs": [
+            {
+              "title": "DailyMed: Bicalutamide tablets (US)",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+            }
+          ],
           "ranges": [
             {
               "min": 50,
               "max": 50,
               "unit": "mg",
-              "basis": "per-dose",
-              "frequency": "once daily",
-              "rangeKind": "label-regimen",
-              "label": "Oncology label regimen"
-            }
-          ],
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This oncology label regimen is not a feminizing HRT recommendation.",
-          "sourceRefs": [
-            {
-              "title": "DailyMed CASODEX (bicalutamide) label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "2 Dosage and Administration"
+              "basis": "daily-total",
+              "frequency": "Once daily",
+              "rangeKind": "label-regimen"
             }
           ]
         }
@@ -74680,15 +75060,61 @@
           }
         ]
       },
-      "roas": [],
+      "roas": [
+        {
+          "name": "oral"
+        }
+      ],
       "sourceRefs": [
         {
-          "title": "DailyMed CASODEX (bicalutamide) label",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5bd7e54e-8497-4bc4-8964-151943db0626",
+          "title": "DailyMed: Bicalutamide tablets (US)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a08d88b-051a-4c16-9560-12685c500c58",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-24",
-          "evidenceLevel": "REGULATORY_LABEL"
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "1–7; 12.1; 12.3 (Table 3)"
+        },
+        {
+          "title": "药学数据中心：比卡鲁胺片",
+          "url": "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399682.html",
+          "sourceType": "regulatory-registration",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REFERENCE_DATABASE"
+        },
+        {
+          "title": "WHO ATC: Bicalutamide L02BB03",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BB03",
+          "sourceType": "classification",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REFERENCE_DATABASE"
+        },
+        {
+          "title": "UCSF: Feminizing hormone therapy",
+          "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
+          "sourceType": "clinical-guideline",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "CLINICAL_GUIDELINE",
+          "labelSection": "Antiandrogens – other approaches"
         }
+      ],
+      "interactions": null,
+      "tdm": null,
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:tablet"
+      ],
+      "searchTerms": [
+        "抗雄激素",
+        "Antiandrogen"
+      ],
+      "displayName": "Bicalutamide",
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
       ]
     },
     {
@@ -74698,8 +75124,7 @@
         "Leuprolide",
         "Lupron Depot-PED",
         "亮丙瑞林",
-        "醋酸亮丙瑞林",
-        "GnRHa"
+        "醋酸亮丙瑞林"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
       "isApproved": true,
@@ -74919,6 +75344,9 @@
           "accessedDate": "2026-06-24",
           "evidenceLevel": "REGULATORY_LABEL"
         }
+      ],
+      "searchTerms": [
+        "GnRHa"
       ]
     },
     {
@@ -75370,8 +75798,7 @@
       "commonNames": [
         "Triptorelin pamoate",
         "Triptodur",
-        "曲普瑞林",
-        "GnRHa"
+        "曲普瑞林"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
       "isApproved": true,
@@ -75579,6 +76006,9 @@
           "accessedDate": "2026-06-24",
           "evidenceLevel": "REGULATORY_LABEL"
         }
+      ],
+      "searchTerms": [
+        "GnRHa"
       ]
     },
     {

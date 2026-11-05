@@ -38,6 +38,7 @@ fun SearchScreen(
     val includeReferences by searchViewModel.includeReferences.collectAsState()
     val selectedDomains by searchViewModel.selectedDomains.collectAsState()
     val selectedMechanisms by searchViewModel.selectedMechanisms.collectAsState()
+    val customOnly by searchViewModel.isShowingCustomSubstancesFlow.collectAsState()
     val categoryChips by searchViewModel.chipCategoriesFlow.collectAsState()
     val selectedCategoryIds = categoryChips.filter { it.isActive }.map { it.chipName }.toSet()
     val locale = LocalConfiguration.current.locales[0]
@@ -181,6 +182,8 @@ fun SearchScreen(
     }
     if (filtersOpen) AlertDialog(onDismissRequest = { filtersOpen = false }, title = { Text(stringResource(R.string.medication_filter)) }, text = {
         LazyColumn(Modifier.heightIn(max = 400.dp)) {
+            item { FilterOptionRow(stringResource(R.string.medication_custom_only), customOnly, searchViewModel::toggleCustomOnly) }
+            if (!customOnly) {
             item { Text(stringResource(R.string.medication_category), style = MaterialTheme.typography.titleMedium) }
             items(searchViewModel.categoryOptions.filter { searchViewModel.categoryIsInSelectedDomain(it.id) }, key = { "category:${it.id}" }) { category ->
                 FilterOptionRow(category.label(locale), category.id in selectedCategoryIds) { searchViewModel.onFilterTapped(category.id) }
@@ -191,21 +194,22 @@ fun SearchScreen(
                     searchViewModel.selectedMechanisms.value = if (mechanism.id in selectedMechanisms) selectedMechanisms - mechanism.id else selectedMechanisms + mechanism.id
                 }
             }
-            item { Text("给药途径", style = MaterialTheme.typography.titleMedium) }
+            item { Text(stringResource(R.string.administration_route), style = MaterialTheme.typography.titleMedium) }
             items(searchViewModel.routeOptions) { route ->
                 FilterOptionRow(com.isaakhanimann.journal.data.substances.AdministrationRoute.valueOf(route).displayText, route in selectedRoutes) {
                     searchViewModel.selectedRoutes.value = if (route in selectedRoutes) selectedRoutes - route else selectedRoutes + route
                 }
             }
-            item { Text("剂型", style = MaterialTheme.typography.titleMedium) }
+            item { Text(stringResource(R.string.medication_formulations), style = MaterialTheme.typography.titleMedium) }
             items(searchViewModel.formulationOptions) { form ->
                 FilterOptionRow(com.isaakhanimann.journal.data.substances.classes.formulationLabel(form), form in selectedForms) {
                     searchViewModel.selectedFormulations.value = if (form in selectedForms) selectedForms - form else selectedForms + form
                 }
             }
+            }
         }
-    }, confirmButton = { TextButton({ filtersOpen = false }) { Text("完成") } }, dismissButton = {
-        TextButton(searchViewModel::clearFilters) { Text("清除") }
+    }, confirmButton = { TextButton({ filtersOpen = false }) { Text(stringResource(R.string.done)) } }, dismissButton = {
+        TextButton(searchViewModel::clearFilters) { Text(stringResource(R.string.clear)) }
     })
 }
 

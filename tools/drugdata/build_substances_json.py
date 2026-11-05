@@ -3,6 +3,7 @@ import argparse
 import json
 from copy import deepcopy
 from pathlib import Path
+from build_medication_catalog import normalized
 
 
 DEFAULT_BASE = Path("app/src/main/res/raw/substances_base.json")
@@ -271,9 +272,14 @@ def build(
     overrides = (
         load_json(overrides_path).get("entries", {}) if overrides_path.exists() else {}
     )
+    alias_path = source_dir / "alias_review.json"
+    alias_policy = (
+        load_json(alias_path).get("entries", {}) if alias_path.exists() else {}
+    )
     locale = "zh-CN" if "zh" in base_path.parent.name else "en"
     for item in substances:
         identifier = item.get("id")
+        old_aliases = item.get("commonNames", [])
         override = overrides.get(identifier, {})
         fields = {
             **override.get("fields", {}),
@@ -289,6 +295,24 @@ def build(
                     target[part] = {}
                 target = target[part]
             target[parts[-1]] = deepcopy(value)
+        keyword_aliases = {
+            alias
+            for alias in ([] if "searchTerms" in fields else old_aliases)
+            + item.get("commonNames", [])
+            if (decision := alias_policy.get(normalized(alias), {})).get("status")
+            == "reviewed"
+            and decision.get("kind") == "search_keyword"
+            and identifier in decision.get("affectedIds", [])
+        }
+        if keyword_aliases:
+            item["commonNames"] = [
+                alias
+                for alias in item.get("commonNames", [])
+                if alias not in keyword_aliases
+            ]
+            item["searchTerms"] = sorted(
+                set(item.get("searchTerms", [])) | keyword_aliases
+            )
         reviewed = manifest.get(identifier, {}).get("fields", {})
         locked = [
             field
@@ -298,6 +322,17 @@ def build(
         ]
         if locked:
             item["reviewedFields"] = locked
+    taxonomy_path = source_dir / "medication_taxonomy.json"
+    if taxonomy_path.exists():
+        definitions = {category["name"]: category for category in categories}
+        for node in load_json(taxonomy_path)["nodes"]:
+            label = node["labelZh"] if locale == "zh-CN" else node["labelEn"]
+            for category_id in [node["id"], *node["legacyIds"]]:
+                category = definitions.setdefault(
+                    category_id, {"name": category_id, "color": 4287985101}
+                )
+                category.update(description=label, displayName=label, kind=node["kind"])
+        categories = list(definitions.values())
     categories = filter_categories_by_usage(categories, substances)
     data["categories"] = categories
     data["substances"] = substances
@@ -312,6 +347,11 @@ def build_default_resources(source_dir: Path) -> None:
     for localized_base, localized_output in DEFAULT_LOCALIZED_BASES:
         if localized_base.exists():
             build(localized_base, source_dir, localized_output, hybrid=True)
+    taxonomy_path = source_dir / "medication_taxonomy.json"
+    if taxonomy_path.exists():
+        (DEFAULT_OUTPUT.parent / "medication_taxonomy.json").write_bytes(
+            taxonomy_path.read_bytes()
+        )
 
 
 def main() -> None:

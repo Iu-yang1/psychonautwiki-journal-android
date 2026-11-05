@@ -58,7 +58,8 @@ class MedicationTaxonomy(file: MedicationTaxonomyFile) {
     fun apply(file: SubstanceFile, locale: Locale): SubstanceFile {
         val categories = file.categories.map { category ->
             val node = node(category.name)
-            category.copy(displayName = node?.label(locale), kind = node?.kind ?: "attribute")
+            category.copy(description = node?.label(locale) ?: category.description,
+                displayName = node?.label(locale), kind = node?.kind ?: "attribute")
         } + nodes.map { node ->
             Category(node.id, node.label(locale), null, Color(0xFF9575CD), node.label(locale), node.kind)
         }
