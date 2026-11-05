@@ -54,7 +54,7 @@ fun HrtScreen(onOpenJournal: () -> Unit, viewModel: HrtViewModel = hiltViewModel
     Column(Modifier.fillMaxSize().statusBarsPadding()) {
         Row(Modifier.fillMaxWidth().padding(start = 20.dp, end = 8.dp, top = 8.dp), verticalAlignment = Alignment.CenterVertically) {
             Text("HRT", style = MaterialTheme.typography.titleLarge, modifier = Modifier.weight(1f))
-            TextButton(onOpenJournal) { Text("打开日记") }
+            TextButton(onOpenJournal) { Text("打开日志") }
             Box {
                 IconButton({ managementMenu = true }) { Icon(Icons.Outlined.MoreVert, "HRT 管理") }
                 DropdownMenu(managementMenu, { managementMenu = false }) {
