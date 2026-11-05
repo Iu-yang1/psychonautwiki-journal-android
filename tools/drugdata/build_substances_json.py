@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import json
+from copy import deepcopy
 from pathlib import Path
 
 
@@ -188,16 +189,16 @@ def sanitize_clinical_psychiatry_categories(items: list[dict]) -> list[dict]:
     return items
 
 
-def filter_categories_by_usage(categories: list[dict], substances: list[dict]) -> list[dict]:
+def filter_categories_by_usage(
+    categories: list[dict], substances: list[dict]
+) -> list[dict]:
     used_categories = {
         category
         for substance in substances
         for category in substance.get("categories", [])
     }
     return [
-        category
-        for category in categories
-        if category.get("name") in used_categories
+        category for category in categories if category.get("name") in used_categories
     ]
 
 
@@ -211,11 +212,14 @@ def iter_source_files(source_dir: Path) -> list[Path]:
 
 def is_data_pack(data: object) -> bool:
     return isinstance(data, dict) and any(
-        key in data for key in ("buildConfig", "categories", "substances", "substancePatches")
+        key in data
+        for key in ("buildConfig", "categories", "substances", "substancePatches")
     )
 
 
-def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = False) -> None:
+def build(
+    base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = False
+) -> None:
     data = load_json(base_path)
     categories = data.get("categories", [])
     substances = data.get("substances", [])
@@ -234,7 +238,6 @@ def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = F
             source_data.get("substancePatches", []),
         )
 
-    substances = filter_by_retain_categories(substances, retain_categories)
     substances = sanitize_clinical_psychiatry_categories(substances)
     registry_path = source_dir / "medication_ids.json"
     if registry_path.exists():
@@ -243,8 +246,58 @@ def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = F
             identifier = registry.get(substance["name"])
             if identifier:
                 if substance.get("id", identifier) != identifier:
-                    raise ValueError(f"Medication identity changed: {substance['name']}")
+                    raise ValueError(
+                        f"Medication identity changed: {substance['name']}"
+                    )
                 substance["id"] = identifier
+    baseline_path = source_dir / "library_baseline.json"
+    frozen_ids = (
+        {entry["id"] for entry in load_json(baseline_path)["entries"]}
+        if baseline_path.exists()
+        else set()
+    )
+    substances = [
+        item
+        for item in substances
+        if item.get("id") in frozen_ids
+        or not retain_categories
+        or retain_categories.intersection(item.get("categories", []))
+    ]
+    manifest_path = source_dir / "review_manifest.json"
+    manifest = (
+        load_json(manifest_path).get("entries", {}) if manifest_path.exists() else {}
+    )
+    overrides_path = source_dir / "library_overrides.json"
+    overrides = (
+        load_json(overrides_path).get("entries", {}) if overrides_path.exists() else {}
+    )
+    locale = "zh-CN" if "zh" in base_path.parent.name else "en"
+    for item in substances:
+        identifier = item.get("id")
+        override = overrides.get(identifier, {})
+        fields = {
+            **override.get("fields", {}),
+            **override.get("locales", {}).get(locale, {}),
+        }
+        if "name" in fields or "id" in fields:
+            raise ValueError(f"Cannot override immutable identity: {identifier}")
+        for path, value in fields.items():
+            target = item
+            parts = path.split(".")
+            for part in parts[:-1]:
+                if not isinstance(target.get(part), dict):
+                    target[part] = {}
+                target = target[part]
+            target[parts[-1]] = deepcopy(value)
+        reviewed = manifest.get(identifier, {}).get("fields", {})
+        locked = [
+            field
+            for field in ("commonNames", "categories", "roas", "interactions")
+            if reviewed.get(field, {}).get("status")
+            in {"verified", "not_applicable", "evidence_unavailable"}
+        ]
+        if locked:
+            item["reviewedFields"] = locked
     categories = filter_categories_by_usage(categories, substances)
     data["categories"] = categories
     data["substances"] = substances

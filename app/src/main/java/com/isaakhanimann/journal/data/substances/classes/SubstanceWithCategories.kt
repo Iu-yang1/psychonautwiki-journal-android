@@ -30,10 +30,12 @@ data class SubstanceWithCategories(
         SubstanceModel(
             id = substance.id,
             name = substance.name,
+            displayName = substance.displayName,
             commonNames = substance.commonNames,
             categories = categories.map { category ->
                 CategoryModel(
-                    name = category.name, color = category.color
+                    name = category.name, color = category.color,
+                    displayName = category.displayName ?: com.isaakhanimann.journal.ui.tabs.search.localizedCategoryDisplayName(category.name)
                 )
             },
             hasSaferUse = substance.saferUse.isNotEmpty(),

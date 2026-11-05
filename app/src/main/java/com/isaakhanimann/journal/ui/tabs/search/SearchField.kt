@@ -59,7 +59,8 @@ fun SearchField(
     onChange: (searchText: String) -> Unit,
     categories: List<CategoryChipModel>,
     onFilterTapped: (filterName: String) -> Unit,
-    isShowingFilter: Boolean
+    isShowingFilter: Boolean,
+    onOpenFilters: (() -> Unit)? = null,
 ) {
     val focusManager = LocalFocusManager.current
     TextField(
@@ -94,7 +95,7 @@ fun SearchField(
                     val activeFilters = categories.filter { it.isActive }
                     BadgedBox(
                         modifier = Modifier
-                            .clickable(onClick = { isExpanded = true })
+                            .clickable(onClick = { if (onOpenFilters != null) onOpenFilters() else isExpanded = true })
                             .padding(horizontal = 16.dp), badge = {
                             if (activeFilters.isNotEmpty()) {
                                 Badge { Text(activeFilters.size.toString()) }

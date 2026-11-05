@@ -25,4 +25,5 @@ data class SubstanceModel(
     val hasSaferUse: Boolean,
     val hasInteractions: Boolean,
     val id: String? = null,
+    val displayName: String = name,
 )

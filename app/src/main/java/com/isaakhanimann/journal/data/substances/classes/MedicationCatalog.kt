@@ -20,7 +20,7 @@ data class MedicationCatalogFile(val version: Int, val entries: List<MedicationC
 fun Substance.searchFormulations(): Set<String> = (listOfNotNull(identity?.formulationId) + timeCourse.mapNotNull { it.formulation }).toSet()
 
 fun Substance.localizedSortName(locale: Locale = Locale.getDefault()): String =
-    if (locale.language == "zh") commonNames.firstOrNull { name -> name.any { it in '\u4e00'..'\u9fff' } } ?: name else name
+    if (displayName != name) displayName else if (locale.language == "zh") commonNames.firstOrNull { name -> name.any { it in '\u4e00'..'\u9fff' } } ?: name else name
 
 fun formulationLabel(value: String): String = when (value) {
     "form:oral-solid" -> "口服固体制剂"
@@ -37,9 +37,14 @@ fun mergeMedicationFiles(primary: SubstanceFile, baseline: SubstanceFile): Subst
     val old = baseline.substances.associateBy { it.id }
     val merged = primary.substances.map { current ->
         val previous = old[current.id] ?: return@map current
-        current.copy(commonNames = (current.commonNames + previous.commonNames + previous.name).filter { it != current.name }.distinct(),
-            categories = (current.categories + previous.categories).distinct(),
-            roas = current.roas.ifEmpty { previous.roas }, interactions = current.interactions ?: previous.interactions)
+        current.copy(
+            commonNames = if ("commonNames" in current.reviewedFields) current.commonNames else
+                (current.commonNames + previous.commonNames + previous.name).filter { it != current.name }.distinct(),
+            categories = if ("categories" in current.reviewedFields) current.categories else
+                (current.categories + previous.categories).distinct(),
+            roas = if ("roas" in current.reviewedFields) current.roas else current.roas.ifEmpty { previous.roas },
+            interactions = if ("interactions" in current.reviewedFields) current.interactions else current.interactions ?: previous.interactions
+        )
     }
     return SubstanceFile((primary.categories + baseline.categories).distinctBy { it.name },
         (merged + baseline.substances).distinctBy { it.id })

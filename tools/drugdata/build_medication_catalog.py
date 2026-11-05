@@ -15,8 +15,15 @@ def build():
     entries = {}
     for name, identifier in registry.items():
         entries.setdefault(identifier, {"id": identifier, "aliases": [], "sourceUrls": []})["aliases"].append(name)
-    for path in sorted((ROOT / "app/src/main/res").glob("raw*/substances*.json")):
-        for substance in json.loads(path.read_text(encoding="utf-8")).get("substances", []):
+    for directory in sorted((ROOT / "app/src/main/res").glob("raw*")):
+        primary_path = directory / "substances.json"
+        if not primary_path.exists():
+            continue
+        primary = json.loads(primary_path.read_text(encoding="utf-8")).get("substances", [])
+        authoritative = {sub["id"] for sub in primary if "commonNames" in sub.get("reviewedFields", [])}
+        baseline_path = directory / "substances_base.json"
+        baseline = json.loads(baseline_path.read_text(encoding="utf-8")).get("substances", []) if baseline_path.exists() else []
+        for substance in primary + [sub for sub in baseline if sub["id"] not in authoritative]:
             entry = entries[substance["id"]]
             entry["aliases"] += [substance["name"], *substance.get("commonNames", [])]
             if substance.get("url"):

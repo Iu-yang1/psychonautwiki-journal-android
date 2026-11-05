@@ -61,22 +61,6 @@ fun DoseUseReferenceSection(
             modifier = Modifier.padding(horizontal = horizontalPadding),
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
-            Text(
-                text = stringResource(R.string.dose_use_references_disclaimer),
-                style = MaterialTheme.typography.bodySmall
-            )
-            if (isCardiovascular) {
-                Text(
-                    text = stringResource(R.string.dose_reference_cardiovascular_caveat),
-                    style = MaterialTheme.typography.bodySmall
-                )
-            }
-            if (isEndocrine) {
-                Text(
-                    text = stringResource(R.string.dose_reference_endocrine_caveat),
-                    style = MaterialTheme.typography.bodySmall
-                )
-            }
             references.forEach { reference ->
                 ReferenceRegimenCard(reference = reference)
             }
@@ -108,14 +92,6 @@ fun ReferenceRegimenCard(reference: DoseUseReference) {
             reference.formulation?.let {
                 ReferenceLine(stringResource(R.string.dose_reference_formulation), it)
             }
-            ReferenceLine(
-                stringResource(R.string.dose_reference_source_type),
-                reference.sourceType
-            )
-            ReferenceLine(
-                stringResource(R.string.dose_reference_evidence_level),
-                reference.evidenceLevel
-            )
             val groupedRanges = reference.ranges.groupBy { it.basis to it.unit }
             val hasDrawableRange = reference.ranges.any { range ->
                 range.components.isEmpty() && (range.min != null || range.max != null)
@@ -141,9 +117,6 @@ fun ReferenceRegimenCard(reference: DoseUseReference) {
             }
             reference.ranges.filter { it.components.isNotEmpty() }.forEach { range ->
                 ComponentDoseRange(range = range)
-            }
-            if (hasDrawableRange) {
-                ReferenceSources(sourceRefs = reference.sourceRefs)
             }
         }
     }
@@ -231,7 +204,6 @@ fun ReferenceRegimenBar(
     HorizontalDivider()
     ReferenceLine(stringResource(R.string.dose_reference_amount), amountText)
     scheduleText?.let { ReferenceLine(stringResource(R.string.dose_reference_schedule), it) }
-    ReferenceLine(stringResource(R.string.dose_reference_evidence_level), evidenceLevel)
     note?.withoutDoseDisclaimerBoilerplate()?.let {
         Text(text = it, style = MaterialTheme.typography.bodySmall)
     }
@@ -249,7 +221,6 @@ fun ReferenceRegimenTextOnly(
     note?.withoutDoseDisclaimerBoilerplate()?.let {
         Text(text = it, style = MaterialTheme.typography.bodySmall)
     }
-    ReferenceSources(sourceRefs = sourceRefs)
 }
 
 @Composable
@@ -277,29 +248,6 @@ private fun ComponentDoseRange(range: DoseRange) {
     }
     range.note?.withoutDoseDisclaimerBoilerplate()?.let {
         Text(text = it, style = MaterialTheme.typography.bodySmall)
-    }
-}
-
-@Composable
-private fun ReferenceSources(sourceRefs: List<SourceRef>) {
-    if (sourceRefs.isEmpty()) return
-    val uriHandler = LocalUriHandler.current
-    Text(
-        text = stringResource(R.string.sources),
-        style = MaterialTheme.typography.labelMedium,
-        fontWeight = FontWeight.Bold
-    )
-    sourceRefs.forEach { source ->
-        TextButton(onClick = { uriHandler.openUri(source.url) }) {
-            Text(
-                text = stringResource(
-                    R.string.source_ref_format,
-                    source.title,
-                    source.sourceType,
-                    source.accessedDate
-                )
-            )
-        }
     }
 }
 

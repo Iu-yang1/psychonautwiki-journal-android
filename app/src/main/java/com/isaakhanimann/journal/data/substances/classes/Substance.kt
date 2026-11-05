@@ -49,6 +49,8 @@ data class Substance(
     val sourceRefs: List<SourceRef> = emptyList(),
     val id: String = name,
     val identity: MedicationCatalogIdentity? = null,
+    val displayName: String = name,
+    val reviewedFields: Set<String> = emptySet(),
 ) {
     fun getRoa(route: AdministrationRoute): Roa? {
         return roas.firstOrNull { it.route == route }

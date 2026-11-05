@@ -24,5 +24,7 @@ data class Category(
     val name: String,
     val description: String,
     val url: String?,
-    val color: Color
+    val color: Color,
+    val displayName: String? = null,
+    val kind: String? = null,
 )

@@ -25,7 +25,12 @@ class SubstanceFile(
     val substancesMap: Map<String, Substance> = substances.associateBy { it.name }
     val withCategories: List<SubstanceWithCategories> by lazy {
         val byName = categories.associateBy { it.name }
-        substances.map { substance -> SubstanceWithCategories(substance, substance.categories.mapNotNull(byName::get)) }
+        substances.map { substance ->
+            val matched = substance.categories.mapNotNull(byName::get)
+            val visible = matched.filter { it.kind == null || it.kind == "category" }
+                .distinctBy { it.displayName ?: it.name }
+            SubstanceWithCategories(substance, visible.ifEmpty { matched.filter { it.kind == "domain" } })
+        }
     }
     private val names by lazy { substances.groupBy { com.isaakhanimann.journal.data.hrt.MedicationIdentity.normalize(it.name) } }
     private val aliases by lazy {

@@ -13,6 +13,8 @@ data class MedicationSearchEntry(
     val formulations: Set<String> = emptySet(),
     val referenceText: String = "",
     val sortName: String = name,
+    val domains: Set<String> = categories.filter { it.startsWith("domain:") }.toSet(),
+    val mechanisms: Set<String> = emptySet(),
 )
 
 data class MedicationSearchRequest(
@@ -22,6 +24,8 @@ data class MedicationSearchRequest(
     val formulations: Set<String> = emptySet(),
     val includeReferences: Boolean = false,
     val sort: String = "default",
+    val domains: Set<String> = emptySet(),
+    val mechanisms: Set<String> = emptySet(),
 )
 
 data class MedicationSearchRanking(
@@ -52,7 +56,9 @@ class MedicationSearchIndex(entries: List<MedicationSearchEntry>, locale: Locale
         val matched = indexed.mapNotNull { item ->
             checkActive()
             val entry = item.entry
-            if (!entry.categories.containsAll(request.categories)) return@mapNotNull null
+            if (request.categories.isNotEmpty() && entry.categories.none { it in request.categories }) return@mapNotNull null
+            if (request.domains.isNotEmpty() && entry.domains.none { it in request.domains }) return@mapNotNull null
+            if (request.mechanisms.isNotEmpty() && entry.mechanisms.none { it in request.mechanisms }) return@mapNotNull null
             if (request.routes.isNotEmpty() && entry.routes.none { it in request.routes }) return@mapNotNull null
             if (request.formulations.isNotEmpty() && entry.formulations.none { it in request.formulations }) return@mapNotNull null
             val name = item.name

@@ -70,7 +70,7 @@ fun CategoryScreen(category: Category?) {
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text(category.name.replaceFirstChar { it.uppercase() }) },
+                    title = { Text(category.displayName ?: category.name.replaceFirstChar { it.uppercase() }) },
                     actions = {
                         if (category.url != null) {
                             TextButton(

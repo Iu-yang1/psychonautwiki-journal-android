@@ -17,6 +17,7 @@ import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -35,6 +36,11 @@ fun SearchScreen(
     val selectedRoutes by searchViewModel.selectedRoutes.collectAsState()
     val selectedForms by searchViewModel.selectedFormulations.collectAsState()
     val includeReferences by searchViewModel.includeReferences.collectAsState()
+    val selectedDomains by searchViewModel.selectedDomains.collectAsState()
+    val selectedMechanisms by searchViewModel.selectedMechanisms.collectAsState()
+    val categoryChips by searchViewModel.chipCategoriesFlow.collectAsState()
+    val selectedCategoryIds = categoryChips.filter { it.isActive }.map { it.chipName }.toSet()
+    val locale = LocalConfiguration.current.locales[0]
     val searchError by searchViewModel.errorMessage.collectAsState()
     val focusRequester = remember { FocusRequester() }
     var isFocused by remember { mutableStateOf(false) }
@@ -53,7 +59,8 @@ fun SearchScreen(
                     onChange = { searchViewModel.filterSubstances(searchText = it) },
                     categories = searchViewModel.chipCategoriesFlow.collectAsState().value,
                     onFilterTapped = searchViewModel::onFilterTapped,
-                    isShowingFilter = true
+                    isShowingFilter = true,
+                    onOpenFilters = { filtersOpen = true }
                 )
             }
         }
@@ -64,8 +71,13 @@ fun SearchScreen(
         val filteredCustomSubstances = searchViewModel.filteredCustomSubstancesFlow.collectAsState().value
 
         Column(modifier = Modifier.padding(padding)) {
+            LazyRow(contentPadding = PaddingValues(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                items(searchViewModel.domainOptions, key = { it.id }) { domain ->
+                    FilterChip(selected = domain.id in selectedDomains, onClick = { searchViewModel.toggleDomain(domain.id) }, label = { Text(domain.label(locale)) })
+                }
+            }
             Row(Modifier.padding(horizontal = 16.dp), verticalAlignment = Alignment.CenterVertically) {
-                TextButton({ filtersOpen = true }) { Text("途径 / 剂型 (${selectedRoutes.size + selectedForms.size})") }
+                TextButton({ filtersOpen = true }) { Text(stringResource(R.string.medication_filter_count, selectedCategoryIds.size + selectedMechanisms.size + selectedRoutes.size + selectedForms.size)) }
                 Checkbox(includeReferences, { searchViewModel.includeReferences.value = it })
                 Text("资料全文")
             }
@@ -167,26 +179,42 @@ fun SearchScreen(
             }
         }
     }
-    if (filtersOpen) AlertDialog(onDismissRequest = { filtersOpen = false }, title = { Text("途径和剂型") }, text = {
+    if (filtersOpen) AlertDialog(onDismissRequest = { filtersOpen = false }, title = { Text(stringResource(R.string.medication_filter)) }, text = {
         LazyColumn(Modifier.heightIn(max = 400.dp)) {
+            item { Text(stringResource(R.string.medication_category), style = MaterialTheme.typography.titleMedium) }
+            items(searchViewModel.categoryOptions.filter { searchViewModel.categoryIsInSelectedDomain(it.id) }, key = { "category:${it.id}" }) { category ->
+                FilterOptionRow(category.label(locale), category.id in selectedCategoryIds) { searchViewModel.onFilterTapped(category.id) }
+            }
+            item { Text(stringResource(R.string.medication_mechanisms), style = MaterialTheme.typography.titleMedium) }
+            items(searchViewModel.mechanismOptions, key = { "mechanism:${it.id}" }) { mechanism ->
+                FilterOptionRow(mechanism.label(locale), mechanism.id in selectedMechanisms) {
+                    searchViewModel.selectedMechanisms.value = if (mechanism.id in selectedMechanisms) selectedMechanisms - mechanism.id else selectedMechanisms + mechanism.id
+                }
+            }
             item { Text("给药途径", style = MaterialTheme.typography.titleMedium) }
             items(searchViewModel.routeOptions) { route ->
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Checkbox(route in selectedRoutes, { searchViewModel.selectedRoutes.value = if (route in selectedRoutes) selectedRoutes - route else selectedRoutes + route })
-                    Text(com.isaakhanimann.journal.data.substances.AdministrationRoute.valueOf(route).displayText)
+                FilterOptionRow(com.isaakhanimann.journal.data.substances.AdministrationRoute.valueOf(route).displayText, route in selectedRoutes) {
+                    searchViewModel.selectedRoutes.value = if (route in selectedRoutes) selectedRoutes - route else selectedRoutes + route
                 }
             }
             item { Text("剂型", style = MaterialTheme.typography.titleMedium) }
             items(searchViewModel.formulationOptions) { form ->
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Checkbox(form in selectedForms, { searchViewModel.selectedFormulations.value = if (form in selectedForms) selectedForms - form else selectedForms + form })
-                    Text(com.isaakhanimann.journal.data.substances.classes.formulationLabel(form))
+                FilterOptionRow(com.isaakhanimann.journal.data.substances.classes.formulationLabel(form), form in selectedForms) {
+                    searchViewModel.selectedFormulations.value = if (form in selectedForms) selectedForms - form else selectedForms + form
                 }
             }
         }
     }, confirmButton = { TextButton({ filtersOpen = false }) { Text("完成") } }, dismissButton = {
-        TextButton({ searchViewModel.selectedRoutes.value = emptySet(); searchViewModel.selectedFormulations.value = emptySet() }) { Text("清除") }
+        TextButton(searchViewModel::clearFilters) { Text("清除") }
     })
+}
+
+@Composable
+private fun FilterOptionRow(label: String, checked: Boolean, onToggle: () -> Unit) {
+    Row(Modifier.fillMaxWidth().clickable(onClick = onToggle).padding(vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
+        Checkbox(checked = checked, onCheckedChange = null)
+        Text(label, modifier = Modifier.padding(start = 12.dp))
+    }
 }
 
 @Composable

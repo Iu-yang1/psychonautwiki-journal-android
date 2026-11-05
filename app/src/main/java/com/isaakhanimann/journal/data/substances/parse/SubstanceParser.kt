@@ -148,6 +148,8 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             hrtModelInfo = hrtModelInfo,
             sourceRefs = sourceRefs,
             id = jsonSubstance.optString("id", name),
+            displayName = jsonSubstance.getOptionalString("displayName") ?: name,
+            reviewedFields = parseJsonArrayToStringArray(jsonSubstance.getOptionalJSONArray("reviewedFields")).toSet(),
         )
     }
 

@@ -28,6 +28,7 @@ import com.isaakhanimann.journal.data.substances.classes.Category
 import com.isaakhanimann.journal.data.substances.classes.Substance
 import com.isaakhanimann.journal.data.substances.classes.SubstanceFile
 import com.isaakhanimann.journal.data.substances.classes.SubstanceWithCategories
+import com.isaakhanimann.journal.data.substances.classes.MedicationTaxonomy
 import com.isaakhanimann.journal.data.substances.parse.SubstanceParserInterface
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
@@ -42,6 +43,8 @@ class SubstanceRepository @Inject constructor(
     private val substanceParser: SubstanceParserInterface,
 ) : SubstanceRepositoryInterface {
 
+    val taxonomy = appContext.resources.openRawResource(R.raw.medication_taxonomy).bufferedReader().use { MedicationTaxonomy.parse(it.readText()) }
+
     private val _substanceFileFlow = MutableStateFlow(parseSubstanceFile())
 
     fun refreshSubstance() {
@@ -54,7 +57,7 @@ class SubstanceRepository @Inject constructor(
         val catalog = appContext.resources.openRawResource(R.raw.medication_catalog).bufferedReader().use { Json.decodeFromString<MedicationCatalogFile>(it.readText()) }
         require(catalog.version == 1 && catalog.entries.map { it.id }.distinct().size == catalog.entries.size)
         val identities = catalog.entries.associateBy { it.id }
-        val combined = mergeMedicationFiles(primary, base).withHrtTaxonomy()
+        val combined = taxonomy.apply(mergeMedicationFiles(primary, base).withHrtTaxonomy(), appContext.resources.configuration.locales[0])
         return SubstanceFile(combined.categories, combined.substances.map { substance ->
             val identity = identities[substance.id]
             substance.copy(identity = identity, commonNames = (substance.commonNames + identity?.aliases.orEmpty()).distinct())
@@ -96,12 +99,7 @@ class SubstanceRepository @Inject constructor(
     }
 
     override fun getSubstanceWithCategories(substanceName: String): SubstanceWithCategories? {
-        val currentSubstanceFile = _substanceFileFlow.value
-        val substance =
-            getSubstance(substanceName) ?: return null
-        return SubstanceWithCategories(
-            substance = substance,
-            categories = currentSubstanceFile.categories.filter { substance.categories.contains(it.name) }
-        )
+        val substance = getSubstance(substanceName) ?: return null
+        return _substanceFileFlow.value.withCategories.firstOrNull { it.substance.id == substance.id }
     }
 }

@@ -29,6 +29,12 @@ class SearchRepository @Inject constructor(
     private val preferences = context.getSharedPreferences("medication_search", 0)
     private val modes = setOf("default", "recent", "name")
     val sortMode = MutableStateFlow(preferences.getString("sort", "default")?.takeIf { it in modes } ?: "default")
+    val selectedCategories = MutableStateFlow(preferences.getStringSet("categories", emptySet()).orEmpty().toSet())
+    val selectedDomains = MutableStateFlow(preferences.getStringSet("domains", emptySet()).orEmpty().toSet())
+    val selectedMechanisms = MutableStateFlow(preferences.getStringSet("mechanisms", emptySet()).orEmpty().toSet())
+    val selectedRoutes = MutableStateFlow(preferences.getStringSet("routes", emptySet()).orEmpty().toSet())
+    val selectedFormulations = MutableStateFlow(preferences.getStringSet("formulations", emptySet()).orEmpty().toSet())
+    val includeReferences = MutableStateFlow(preferences.getBoolean("references", false))
     val favorites = database.hrtDao().settings().map { settings -> settings.filter { it.id.startsWith("favorite:") && it.payload == "true" }.map { it.id.removePrefix("favorite:") }.toSet() }
         .distinctUntilChanged().stateIn(applicationScope, SharingStarted.Eagerly, emptySet())
 
@@ -56,20 +62,26 @@ class SearchRepository @Inject constructor(
         )
     }.distinctUntilChanged().flowOn(Dispatchers.Default).stateIn(applicationScope, SharingStarted.Eagerly, MedicationSearchRanking())
 
-    private class PreparedCatalog(val substances: List<SubstanceWithCategories>, val locale: Locale) {
+    private class PreparedCatalog(val substances: List<SubstanceWithCategories>, val locale: Locale, taxonomy: MedicationTaxonomy) {
         val byId = substances.associateBy { it.substance.id }
         val index = MedicationSearchIndex(substances.map { item ->
             val sub = item.substance
-            MedicationSearchEntry(sub.id, sub.name, sub.commonNames, sub.categories.toSet(), sub.availableRoutesForIngestion().map { it.name }.toSet(),
-                sub.searchFormulations(), sub.referenceSearchText(), sub.localizedSortName(locale))
+            MedicationSearchEntry(sub.id, sub.name, (sub.commonNames + sub.displayName).distinct(), sub.categories.toSet(), sub.availableRoutesForIngestion().map { it.name }.toSet(),
+                sub.searchFormulations(), sub.referenceSearchText(), sub.localizedSortName(locale),
+                mechanisms = sub.categories.filter { taxonomy.node(it)?.kind == "mechanism" }.toSet())
         }, locale)
     }
     @Volatile private var prepared: PreparedCatalog? = null
     @Synchronized private fun prepare(substances: List<SubstanceWithCategories>): PreparedCatalog {
         val locale = context.resources.configuration.locales[0]
-        return prepared?.takeIf { it.substances === substances && it.locale == locale } ?: PreparedCatalog(substances, locale).also { prepared = it }
+        return prepared?.takeIf { it.substances === substances && it.locale == locale } ?: PreparedCatalog(substances, locale, substanceRepo.taxonomy).also { prepared = it }
     }
     init {
+        listOf("categories" to selectedCategories, "domains" to selectedDomains,
+            "mechanisms" to selectedMechanisms, "routes" to selectedRoutes, "formulations" to selectedFormulations).forEach { (key, flow) ->
+            applicationScope.launch { flow.collect { preferences.edit().putStringSet(key, it.toSet()).apply() } }
+        }
+        applicationScope.launch { includeReferences.collect { preferences.edit().putBoolean("references", it).apply() } }
         applicationScope.launch(Dispatchers.Default) {
             substanceRepo.getAllSubstancesWithCategoriesFlow().collect { prepare(it) }
         }
@@ -88,11 +100,14 @@ class SearchRepository @Inject constructor(
         database.hrtDao().save(HrtModelSetting(key, (!old).toString()))
     }
 
-    fun observe(text: Flow<String>, categories: Flow<List<String>> = flowOf(emptyList()), routes: Flow<Set<String>> = flowOf(emptySet()), formulations: Flow<Set<String>> = flowOf(emptySet()), references: Flow<Boolean> = flowOf(false)): Flow<List<SubstanceWithCategories>> {
+    fun observe(text: Flow<String>, categories: Flow<List<String>> = flowOf(emptyList()), routes: Flow<Set<String>> = flowOf(emptySet()), formulations: Flow<Set<String>> = flowOf(emptySet()), references: Flow<Boolean> = flowOf(false), domains: Flow<Set<String>> = flowOf(emptySet()), mechanisms: Flow<Set<String>> = flowOf(emptySet())): Flow<List<SubstanceWithCategories>> {
         val requests = combine(text, categories, routes, formulations, references) { query, category, route, formulation, include ->
             MedicationSearchRequest(query, category.toSet(), route, formulation, include)
         }
-        return combine(requests, sortMode, ranking, substanceRepo.getAllSubstancesWithCategoriesFlow()) { request, mode, context, substances ->
+        val facetedRequests = combine(requests, domains, mechanisms) { request, domain, mechanism ->
+            request.copy(categories = request.categories.map { substanceRepo.taxonomy.node(it)?.id ?: it }.toSet(), domains = domain, mechanisms = mechanism)
+        }
+        return combine(facetedRequests, sortMode, ranking, substanceRepo.getAllSubstancesWithCategoriesFlow()) { request, mode, context, substances ->
             Triple(request.copy(sort = mode), context, substances)
         }.mapLatest { (request, context, substances) ->
             withContext(Dispatchers.Default) {
@@ -114,7 +129,8 @@ class SearchRepository @Inject constructor(
 
     private fun search(substances: List<SubstanceWithCategories>, request: MedicationSearchRequest, ranking: MedicationSearchRanking): List<SubstanceWithCategories> {
         val catalog = prepare(substances)
-        return catalog.index.rank(request, ranking).map { catalog.byId.getValue(it) }
+        val normalized = request.copy(categories = request.categories.map { substanceRepo.taxonomy.node(it)?.id ?: it }.toSet())
+        return catalog.index.rank(normalized, ranking).map { catalog.byId.getValue(it) }
     }
 
 }

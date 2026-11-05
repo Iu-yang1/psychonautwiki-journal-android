@@ -39,7 +39,6 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ChevronRight
-import androidx.compose.material.icons.filled.GppBad
 import androidx.compose.material.icons.filled.Update
 import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.ButtonDefaults
@@ -73,7 +72,6 @@ import com.isaakhanimann.journal.data.substances.AdministrationRoute
 import com.isaakhanimann.journal.data.substances.classes.Category
 import com.isaakhanimann.journal.data.substances.classes.ClinicalInfo
 import com.isaakhanimann.journal.data.substances.classes.EndocrineInfo
-import com.isaakhanimann.journal.data.substances.classes.HrtModelInfo
 import com.isaakhanimann.journal.data.substances.classes.SourceRef
 import com.isaakhanimann.journal.data.substances.classes.SubstanceWithCategories
 import com.isaakhanimann.journal.data.substances.classes.TherapeuticDrugMonitoring
@@ -174,7 +172,7 @@ fun SubstanceScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(substance.name) },
+                title = { Text(substance.displayName) },
                 actions = {
                     TextButton(
                         onClick = { uriHandler.openUri(substance.url) },
@@ -190,27 +188,6 @@ fun SubstanceScreen(
                 .verticalScroll(rememberScrollState())
                 .padding(padding)
         ) {
-            if (!substance.isApproved) {
-                ElevatedCard(
-                    modifier = Modifier
-                        .padding(
-                            horizontal = horizontalPadding,
-                            vertical = verticalPaddingCards
-                        )
-                        .fillMaxWidth()
-                ) {
-                    Row(
-                        modifier = Modifier.padding(
-                            vertical = 5.dp,
-                            horizontal = horizontalPadding
-                        )
-                    ) {
-                        Icon(imageVector = Icons.Default.GppBad, contentDescription = "Verified")
-                        Spacer(Modifier.size(ButtonDefaults.IconSpacing))
-                        Text(text = stringResource(R.string.info_is_not_approved))
-                    }
-                }
-            }
             val categories = substanceWithCategories.categories
             if (substance.summary != null || categories.isNotEmpty()) {
                 VerticalSpace()
@@ -259,9 +236,6 @@ fun SubstanceScreen(
                     isEndocrine =
                         "endocrine" in substance.categories || "hrt-related" in substance.categories
                 )
-            }
-            if (substance.hrtModelInfo != null) {
-                HrtModelReadinessSection(hrtModelInfo = substance.hrtModelInfo)
             }
             if (substance.tdm != null) {
                 TherapeuticDrugMonitoringSection(tdm = substance.tdm)
@@ -574,6 +548,7 @@ fun SubstanceScreen(
                     }
                 }
             }
+            MedicationSources(substance)
             Spacer(modifier = Modifier.height(70.dp))
         }
     }
@@ -581,18 +556,22 @@ fun SubstanceScreen(
 
 @Composable
 fun ClinicalInformationSection(clinicalInfo: ClinicalInfo) {
-    SectionWithTitle(title = stringResource(R.string.clinical_information_title)) {
+    if (clinicalInfo.indications.isNotEmpty()) SectionWithTitle(title = stringResource(R.string.medication_uses)) {
         Column(Modifier.padding(horizontal = horizontalPadding)) {
-            ClinicalInfoListRow(stringResource(R.string.clinical_atc_code), clinicalInfo.atcCodes)
-            ClinicalInfoListRow(stringResource(R.string.clinical_drug_class), clinicalInfo.drugClass)
-            ClinicalInfoListRow(stringResource(R.string.clinical_main_indications), clinicalInfo.indications)
+            BulletPoints(clinicalInfo.indications)
+        }
+    }
+    if (clinicalInfo.contraindications.isNotEmpty() || clinicalInfo.majorWarnings.isNotEmpty()) SectionWithTitle(title = stringResource(R.string.medication_cautions)) {
+        Column(Modifier.padding(horizontal = horizontalPadding)) {
             ClinicalInfoListRow(stringResource(R.string.clinical_contraindications), clinicalInfo.contraindications)
             ClinicalInfoListRow(stringResource(R.string.clinical_major_warnings), clinicalInfo.majorWarnings)
-            ClinicalInfoListRow(stringResource(R.string.clinical_major_interactions), clinicalInfo.majorInteractions)
-            ClinicalInfoListRow(stringResource(R.string.clinical_monitoring), clinicalInfo.monitoring)
-            SourceRefs(sourceRefs = clinicalInfo.sourceRefs)
-            VerticalSpace()
         }
+    }
+    if (clinicalInfo.majorInteractions.isNotEmpty()) SectionWithTitle(title = stringResource(R.string.medication_interactions)) {
+        Column(Modifier.padding(horizontal = horizontalPadding)) { BulletPoints(clinicalInfo.majorInteractions) }
+    }
+    if (clinicalInfo.monitoring.isNotEmpty()) SectionWithTitle(title = stringResource(R.string.medication_monitoring)) {
+        Column(Modifier.padding(horizontal = horizontalPadding)) { BulletPoints(clinicalInfo.monitoring) }
     }
 }
 
@@ -628,7 +607,6 @@ fun EndocrineInformationSection(endocrineInfo: EndocrineInfo) {
                 stringResource(R.string.endocrine_model_roles),
                 endocrineInfo.modelRoles
             )
-            SourceRefs(sourceRefs = endocrineInfo.sourceRefs)
             VerticalSpace()
         }
     }
@@ -676,54 +654,11 @@ fun TimeCourseSection(timeCourses: List<TimeCourse>) {
                         BooleanInfoRow(stringResource(R.string.time_course_assay_timing_sensitive))
                     }
                     ClinicalInfoListRow(stringResource(R.string.time_course_notes), timeCourse.notes)
-                    SourceRefs(sourceRefs = timeCourse.sourceRefs)
                 }
                 if (index < timeCourses.size - 1) {
                     HorizontalDivider()
                 }
             }
-            VerticalSpace()
-        }
-    }
-}
-
-@Composable
-fun HrtModelReadinessSection(hrtModelInfo: HrtModelInfo) {
-    SectionWithTitle(title = stringResource(R.string.hrt_model_readiness_title)) {
-        Column(Modifier.padding(horizontal = horizontalPadding)) {
-            Text(
-                text = stringResource(R.string.hrt_model_readiness_disclaimer),
-                style = MaterialTheme.typography.bodySmall
-            )
-            Spacer(modifier = Modifier.height(8.dp))
-            InfoLabel(stringResource(R.string.hrt_model_compatible))
-            Text(
-                text = stringResource(
-                    if (hrtModelInfo.modelCompatible) R.string.label_yes else R.string.label_no
-                )
-            )
-            VerticalSpace()
-            ClinicalInfoListRow(
-                stringResource(R.string.hrt_model_roles),
-                hrtModelInfo.modelRoles
-            )
-            ClinicalInfoListRow(
-                stringResource(R.string.hrt_primary_modeled_analytes),
-                hrtModelInfo.primaryModeledAnalytes
-            )
-            ClinicalInfoListRow(
-                stringResource(R.string.hrt_required_event_fields),
-                hrtModelInfo.requiredEventFields
-            )
-            ClinicalInfoListRow(
-                stringResource(R.string.hrt_required_lab_fields),
-                hrtModelInfo.requiredLabFields
-            )
-            ClinicalInfoListRow(
-                stringResource(R.string.hrt_model_caveats),
-                hrtModelInfo.caveats
-            )
-            SourceRefs(sourceRefs = hrtModelInfo.sourceRefs)
             VerticalSpace()
         }
     }
@@ -751,7 +686,6 @@ fun TherapeuticDrugMonitoringSection(tdm: TherapeuticDrugMonitoring) {
             ToxicityThresholdRows(stringResource(R.string.tdm_critical_values), tdm.criticalValues)
             ClinicalInfoTextRow(stringResource(R.string.tdm_assay_method), tdm.assayMethod)
             ClinicalInfoListRow(stringResource(R.string.tdm_interpretation_caveats), tdm.interpretationCaveats)
-            SourceRefs(sourceRefs = tdm.sourceRefs)
             VerticalSpace()
         }
     }
@@ -833,34 +767,6 @@ private fun BooleanInfoRow(label: String) {
     VerticalSpace()
 }
 
-@Composable
-private fun SourceRefs(sourceRefs: List<SourceRef>) {
-    if (sourceRefs.isEmpty()) return
-    val uriHandler = LocalUriHandler.current
-    InfoLabel(stringResource(R.string.sources))
-    sourceRefs.forEach { sourceRef ->
-        TextButton(onClick = { uriHandler.openUri(sourceRef.url) }) {
-            Text(stringResource(R.string.source_ref_format, sourceRef.title, sourceRef.sourceType, sourceRef.accessedDate))
-        }
-        sourceRef.evidenceLevel?.let {
-            Text(
-                text = stringResource(R.string.source_evidence_level, it),
-                style = MaterialTheme.typography.bodySmall
-            )
-        }
-        sourceRef.labelSection?.let {
-            Text(
-                text = stringResource(R.string.source_label_section, it),
-                style = MaterialTheme.typography.bodySmall
-            )
-        }
-        sourceRef.note?.let {
-            Text(text = it, style = MaterialTheme.typography.bodySmall)
-        }
-    }
-    VerticalSpace()
-}
-
 private fun TimeValue.toReadableText(notSpecifiedText: String): String {
     val minText = min?.toReadableString()
     val maxText = max?.toReadableString()
@@ -927,7 +833,7 @@ fun CategoryChipFromSubstanceScreen(
             .padding(horizontal = 12.dp)
 
     ) {
-        Text(text = localizedCategoryDisplayName(category.name))
+        Text(text = category.displayName ?: localizedCategoryDisplayName(category.name))
         Spacer(modifier = Modifier.width(3.dp))
         Icon(
             imageVector = Icons.Default.ChevronRight,

@@ -27,9 +27,29 @@ class SearchViewModel @Inject constructor(
     val sortMode = searchRepository.sortMode
     fun setSortMode(mode: String) = searchRepository.setSortMode(mode)
 
-    val selectedRoutes = MutableStateFlow(emptySet<String>())
-    val selectedFormulations = MutableStateFlow(emptySet<String>())
-    val includeReferences = MutableStateFlow(false)
+    val selectedRoutes = searchRepository.selectedRoutes
+    val selectedFormulations = searchRepository.selectedFormulations
+    val includeReferences = searchRepository.includeReferences
+    val selectedDomains = searchRepository.selectedDomains
+    val selectedMechanisms = searchRepository.selectedMechanisms
+    val taxonomy = substanceRepo.taxonomy
+    val domainOptions = taxonomy.nodes.filter { it.kind == "domain" }
+    val categoryOptions = taxonomy.nodes.filter { it.kind == "category" }
+    val mechanismOptions = taxonomy.nodes.filter { it.kind == "mechanism" }
+    fun categoryIsInSelectedDomain(id: String): Boolean = selectedDomains.value.isEmpty() ||
+        taxonomy.tags(listOf(id)).any { it in selectedDomains.value }
+    fun toggleDomain(id: String) {
+        val selected = selectedDomains.value
+        selectedDomains.value = if (id in selected) selected - id else selected + id
+        searchRepository.selectedCategories.value = searchRepository.selectedCategories.value.filter(::categoryIsInSelectedDomain).toSet()
+    }
+    fun clearFilters() {
+        selectedDomains.value = emptySet()
+        searchRepository.selectedCategories.value = emptySet()
+        selectedMechanisms.value = emptySet()
+        selectedRoutes.value = emptySet()
+        selectedFormulations.value = emptySet()
+    }
     val favorites = searchRepository.favorites
     val routeOptions = substanceRepo.getAllSubstances().flatMap { it.availableRoutesForIngestion() }.distinct().map { it.name }
     val formulationOptions = substanceRepo.getAllSubstances().flatMap { it.searchFormulations() }.distinct().sorted()
@@ -47,7 +67,7 @@ class SearchViewModel @Inject constructor(
     private val _searchTextFlow = MutableStateFlow("")
     val searchTextFlow = _searchTextFlow.asStateFlow()
 
-    private val filtersFlow = MutableStateFlow(emptyList<String>())
+    private val filtersFlow = searchRepository.selectedCategories.map { it.toList() }
 
     private val customChipName: String = application.getString(R.string.custom)
 
@@ -57,25 +77,26 @@ class SearchViewModel @Inject constructor(
                 isShowingCustomSubstancesFlow.emit(isShowingCustomSubstancesFlow.value.not())
                 return@launch
             }
-            val filters = filtersFlow.value.toMutableList()
+            val filters = searchRepository.selectedCategories.value.toMutableSet()
             if (filters.contains(filterName)) {
                 filters.remove(filterName)
             } else {
                 filters.add(filterName)
             }
-            filtersFlow.emit(filters)
+            searchRepository.selectedCategories.value = filters
         }
     }
 
     private val isShowingCustomSubstancesFlow = MutableStateFlow(false)
 
     val chipCategoriesFlow: StateFlow<List<CategoryChipModel>> = filtersFlow.map { filters ->
-        substanceRepo.getAllCategories().map { category ->
+        substanceRepo.getAllCategories().filter { category -> taxonomy.node(category.name)?.let { it.kind == "category" && it.id == category.name } == true }.map { category ->
             val isActive = filters.contains(category.name)
             CategoryChipModel(
                 chipName = category.name,
                 color = category.color,
-                isActive = isActive
+                isActive = isActive,
+                displayName = category.displayName ?: localizedCategoryDisplayName(category.name)
             )
         }
     }.combine(isShowingCustomSubstancesFlow) { chips, isShowingCustom ->
@@ -95,7 +116,7 @@ class SearchViewModel @Inject constructor(
         started = SharingStarted.WhileSubscribed(5000)
     )
 
-    val filteredSubstancesFlow = searchRepository.observe(searchTextFlow, filtersFlow, selectedRoutes, selectedFormulations, includeReferences)
+    val filteredSubstancesFlow = searchRepository.observe(searchTextFlow, filtersFlow, selectedRoutes, selectedFormulations, includeReferences, selectedDomains, selectedMechanisms)
         .map { matches -> matches.map { it.toSubstanceModel() } }
         .flowOn(Dispatchers.Default)
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())

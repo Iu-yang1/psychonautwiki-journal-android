@@ -1,0 +1,644 @@
+{
+  "version": 1,
+  "nodes": [
+    {
+      "id": "domain:hrt-endocrine",
+      "labelZh": "HRT 与内分泌",
+      "labelEn": "HRT and endocrine",
+      "parentId": null,
+      "kind": "domain",
+      "order": 0,
+      "legacyIds": [
+        "endocrine",
+        "hrt-related",
+        "内分泌"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "domain:mental-neurological",
+      "labelZh": "精神与神经系统",
+      "labelEn": "Mental and neurological",
+      "parentId": null,
+      "kind": "domain",
+      "order": 1,
+      "legacyIds": [
+        "clinical-psychiatry",
+        "neurology"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "domain:cardiovascular-blood",
+      "labelZh": "心血管与血液",
+      "labelEn": "Cardiovascular and blood",
+      "parentId": null,
+      "kind": "domain",
+      "order": 2,
+      "legacyIds": [
+        "cardiovascular"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "domain:other",
+      "labelZh": "其他药物与物质",
+      "labelEn": "Other medicines and substances",
+      "parentId": null,
+      "kind": "domain",
+      "order": 3,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "hrt-estrogens",
+      "labelZh": "雌激素",
+      "labelEn": "Estrogens",
+      "parentId": "domain:hrt-endocrine",
+      "kind": "category",
+      "order": 4,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "hrt-antiandrogens",
+      "labelZh": "抗雄激素",
+      "labelEn": "Antiandrogens",
+      "parentId": "domain:hrt-endocrine",
+      "kind": "category",
+      "order": 5,
+      "legacyIds": [
+        "antiandrogen"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "hrt-progestogens",
+      "labelZh": "孕激素",
+      "labelEn": "Progestogens",
+      "parentId": "domain:hrt-endocrine",
+      "kind": "category",
+      "order": 6,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "hrt-gnrh",
+      "labelZh": "GnRH 类",
+      "labelEn": "GnRH medicines",
+      "parentId": "domain:hrt-endocrine",
+      "kind": "category",
+      "order": 7,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "hrt-other",
+      "labelZh": "其他内分泌用药",
+      "labelEn": "Other endocrine medicines",
+      "parentId": "domain:hrt-endocrine",
+      "kind": "category",
+      "order": 8,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "antidepressant",
+      "labelZh": "抗抑郁药",
+      "labelEn": "Antidepressants",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 9,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "antipsychotic",
+      "labelZh": "抗精神病药",
+      "labelEn": "Antipsychotics",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 10,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "mood-stabilizer",
+      "labelZh": "心境稳定剂",
+      "labelEn": "Mood stabilizers",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 11,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "anxiolytic",
+      "labelZh": "抗焦虑药",
+      "labelEn": "Anxiolytics",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 12,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "sedative-hypnotic",
+      "labelZh": "睡眠用药",
+      "labelEn": "Sleep medicines",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 13,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "adhd-medication",
+      "labelZh": "ADHD 用药",
+      "labelEn": "ADHD medicines",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 14,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "antiparkinsonian",
+      "labelZh": "抗帕金森药",
+      "labelEn": "Antiparkinson medicines",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 15,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "cognitive-disorder-medication",
+      "labelZh": "认知障碍用药",
+      "labelEn": "Cognitive disorder medicines",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 16,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "substance-use-disorder-treatment",
+      "labelZh": "物质使用障碍治疗药",
+      "labelEn": "Substance use disorder treatment",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 17,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "wakefulness-promoting-agent",
+      "labelZh": "促醒药",
+      "labelEn": "Wakefulness medicines",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 18,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "other-neurological",
+      "labelZh": "其他精神与神经用药",
+      "labelEn": "Other mental and neurological medicines",
+      "parentId": "domain:mental-neurological",
+      "kind": "category",
+      "order": 19,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "antithrombotic",
+      "labelZh": "抗血栓药",
+      "labelEn": "Antithrombotics",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 20,
+      "legacyIds": [
+        "atc-b01"
+      ],
+      "atcCodes": [
+        "B01"
+      ]
+    },
+    {
+      "id": "cardiac-treatment",
+      "labelZh": "心脏治疗药",
+      "labelEn": "Cardiac medicines",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 21,
+      "legacyIds": [
+        "atc-c01"
+      ],
+      "atcCodes": [
+        "C01"
+      ]
+    },
+    {
+      "id": "antihypertensive",
+      "labelZh": "降压药",
+      "labelEn": "Antihypertensives",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 22,
+      "legacyIds": [
+        "atc-c02"
+      ],
+      "atcCodes": [
+        "C02"
+      ]
+    },
+    {
+      "id": "diuretic",
+      "labelZh": "利尿药",
+      "labelEn": "Diuretics",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 23,
+      "legacyIds": [
+        "atc-c03"
+      ],
+      "atcCodes": [
+        "C03"
+      ]
+    },
+    {
+      "id": "peripheral-circulation",
+      "labelZh": "外周循环用药",
+      "labelEn": "Peripheral circulation medicines",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 24,
+      "legacyIds": [
+        "atc-c04"
+      ],
+      "atcCodes": [
+        "C04"
+      ]
+    },
+    {
+      "id": "vascular-protective",
+      "labelZh": "血管保护药",
+      "labelEn": "Vascular protective medicines",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 25,
+      "legacyIds": [
+        "atc-c05"
+      ],
+      "atcCodes": [
+        "C05"
+      ]
+    },
+    {
+      "id": "beta-blocker",
+      "labelZh": "β受体阻滞药",
+      "labelEn": "Beta blockers",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 26,
+      "legacyIds": [
+        "atc-c07"
+      ],
+      "atcCodes": [
+        "C07"
+      ]
+    },
+    {
+      "id": "calcium-channel-blocker",
+      "labelZh": "钙通道阻滞药",
+      "labelEn": "Calcium channel blockers",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 27,
+      "legacyIds": [
+        "atc-c08"
+      ],
+      "atcCodes": [
+        "C08"
+      ]
+    },
+    {
+      "id": "ras-medicine",
+      "labelZh": "肾素-血管紧张素系统用药",
+      "labelEn": "Renin-angiotensin system medicines",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 28,
+      "legacyIds": [
+        "atc-c09"
+      ],
+      "atcCodes": [
+        "C09"
+      ]
+    },
+    {
+      "id": "lipid-lowering",
+      "labelZh": "调脂药",
+      "labelEn": "Lipid-lowering medicines",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 29,
+      "legacyIds": [
+        "atc-c10"
+      ],
+      "atcCodes": [
+        "C10"
+      ]
+    },
+    {
+      "id": "antiarrhythmic",
+      "labelZh": "抗心律失常药",
+      "labelEn": "Antiarrhythmics",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 30,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "heart-failure",
+      "labelZh": "心衰用药",
+      "labelEn": "Heart failure medicines",
+      "parentId": "domain:cardiovascular-blood",
+      "kind": "category",
+      "order": 31,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "psychedelic",
+      "labelZh": "经典致幻物质",
+      "labelEn": "Psychedelics",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 32,
+      "legacyIds": [
+        "迷幻剂"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "stimulant",
+      "labelZh": "兴奋类物质",
+      "labelEn": "Stimulants",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 33,
+      "legacyIds": [
+        "兴奋剂"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "depressant",
+      "labelZh": "抑制类物质",
+      "labelEn": "Depressants",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 34,
+      "legacyIds": [
+        "抑制剂"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "opioid",
+      "labelZh": "阿片类物质",
+      "labelEn": "Opioids",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 35,
+      "legacyIds": [
+        "阿片类物质"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "dissociative",
+      "labelZh": "解离类物质",
+      "labelEn": "Dissociatives",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 36,
+      "legacyIds": [
+        "分离剂"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "cannabinoid",
+      "labelZh": "大麻素类",
+      "labelEn": "Cannabinoids",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 37,
+      "legacyIds": [
+        "大麻素"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "entactogen",
+      "labelZh": "共情类物质",
+      "labelEn": "Entactogens",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 38,
+      "legacyIds": [
+        "同感剂"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "deliriant",
+      "labelZh": "谵妄类物质",
+      "labelEn": "Deliriants",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 39,
+      "legacyIds": [
+        "谵妄剂"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "hallucinogen",
+      "labelZh": "其他致幻物质",
+      "labelEn": "Other hallucinogens",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 40,
+      "legacyIds": [
+        "致幻剂"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "oneirogen",
+      "labelZh": "致梦类物质",
+      "labelEn": "Oneirogens",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 41,
+      "legacyIds": [
+        "致梦剂"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "nootropic",
+      "labelZh": "其他认知相关物质",
+      "labelEn": "Other cognition-related substances",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 42,
+      "legacyIds": [
+        "益智药"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "benzodiazepine",
+      "labelZh": "苯二氮䓬类",
+      "labelEn": "Benzodiazepines",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 43,
+      "legacyIds": [
+        "苯二氮䓬类"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "barbiturate",
+      "labelZh": "巴比妥类",
+      "labelEn": "Barbiturates",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 44,
+      "legacyIds": [
+        "巴比妥类"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "eugeroic",
+      "labelZh": "促醒类物质",
+      "labelEn": "Eugeroics",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 45,
+      "legacyIds": [
+        "促醒剂"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "hypnotic",
+      "labelZh": "催眠类物质",
+      "labelEn": "Hypnotics",
+      "parentId": "domain:other",
+      "kind": "category",
+      "order": 46,
+      "legacyIds": [
+        "催眠药"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "anticholinergic",
+      "labelZh": "抗胆碱作用",
+      "labelEn": "Anticholinergic",
+      "parentId": null,
+      "kind": "mechanism",
+      "order": 47,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "gnrh-agonist",
+      "labelZh": "GnRH 激动剂",
+      "labelEn": "GnRH agonist",
+      "parentId": null,
+      "kind": "mechanism",
+      "order": 48,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "gnrh-antagonist",
+      "labelZh": "GnRH 拮抗剂",
+      "labelEn": "GnRH antagonist",
+      "parentId": null,
+      "kind": "mechanism",
+      "order": 49,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "prescription-medicine",
+      "labelZh": "处方药",
+      "labelEn": "Prescription medicine",
+      "parentId": null,
+      "kind": "attribute",
+      "order": 50,
+      "legacyIds": [],
+      "atcCodes": []
+    },
+    {
+      "id": "common",
+      "labelZh": "常见物质",
+      "labelEn": "Common",
+      "parentId": null,
+      "kind": "attribute",
+      "order": 51,
+      "legacyIds": [
+        "常见的"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "habit-forming",
+      "labelZh": "依赖风险",
+      "labelEn": "Dependence risk",
+      "parentId": null,
+      "kind": "attribute",
+      "order": 52,
+      "legacyIds": [
+        "易成瘾"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "research-chemical",
+      "labelZh": "研究物质",
+      "labelEn": "Research substance",
+      "parentId": null,
+      "kind": "attribute",
+      "order": 53,
+      "legacyIds": [
+        "研究性化学品"
+      ],
+      "atcCodes": []
+    },
+    {
+      "id": "tentative",
+      "labelZh": "资料有限",
+      "labelEn": "Limited information",
+      "parentId": null,
+      "kind": "attribute",
+      "order": 54,
+      "legacyIds": [
+        "信息不确定"
+      ],
+      "atcCodes": []
+    }
+  ]
+}

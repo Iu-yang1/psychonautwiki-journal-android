@@ -85,7 +85,7 @@ fun SubstanceRow(
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(text = substanceModel.name, style = MaterialTheme.typography.titleMedium,
+                Text(text = substanceModel.displayName, style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.SemiBold, modifier = Modifier.weight(1f))
                 if (onFavoriteToggle != null) IconButton(onFavoriteToggle) {
                     Icon(if (favorite) Icons.Filled.Star else Icons.Outlined.StarBorder,

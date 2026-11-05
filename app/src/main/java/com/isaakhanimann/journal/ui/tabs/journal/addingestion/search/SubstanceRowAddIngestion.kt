@@ -29,7 +29,7 @@ fun SubstanceRowAddIngestion(
     ListItem(
         headlineContent = {
             Text(
-                text = substanceModel.name,
+                text = substanceModel.displayName,
                 style = MaterialTheme.typography.bodyLarge,
             )
         },
