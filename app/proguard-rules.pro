@@ -47,6 +47,12 @@
 # @Serializable and @Polymorphic are used at runtime for polymorphic serialization.
 -keepattributes RuntimeVisibleAnnotations,AnnotationDefault
 
+# Typed Navigation looks up route serializers via KClass. A hidden legacy route
+# may no longer reference INSTANCE directly, so conditional object rules miss it.
+-keep @kotlinx.serialization.Serializable class com.isaakhanimann.journal.ui.main.navigation.** { *; }
+-keep class com.isaakhanimann.journal.ui.main.navigation.**$$serializer { *; }
+-keep class com.isaakhanimann.journal.ui.main.navigation.**$Companion { *; }
+
 # Serializer for classes with named companion objects are retrieved using `getDeclaredClasses`.
 # If you have any, uncomment and replace classes with those containing named companion objects.
 #-keepattributes InnerClasses # Needed for `getDeclaredClasses`.
