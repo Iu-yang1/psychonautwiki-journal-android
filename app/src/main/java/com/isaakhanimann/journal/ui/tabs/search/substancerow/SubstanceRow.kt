@@ -27,6 +27,12 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
+import androidx.compose.ui.Alignment
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.outlined.StarBorder
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CircleShape
@@ -37,7 +43,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
+import androidx.compose.runtime.remember
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
@@ -60,6 +67,8 @@ fun SubstanceRowPreview(
 @Composable
 fun SubstanceRow(
     substanceModel: SubstanceModel,
+    favorite: Boolean = false,
+    onFavoriteToggle: (() -> Unit)? = null,
     onTap: (substanceName: String) -> Unit
 ) {
     ElevatedCard(
@@ -75,18 +84,23 @@ fun SubstanceRow(
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            Text(
-                text = substanceModel.name,
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.SemiBold
-            )
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(text = substanceModel.name, style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold, modifier = Modifier.weight(1f))
+                if (onFavoriteToggle != null) IconButton(onFavoriteToggle) {
+                    Icon(if (favorite) Icons.Filled.Star else Icons.Outlined.StarBorder,
+                        contentDescription = if (favorite) "取消收藏" else "收藏")
+                }
+            }
             
             if (substanceModel.commonNames.isNotEmpty()) {
-                val commaSeparatedNames = substanceModel.commonNames.joinToString(separator = ", ")
+                val commaSeparatedNames = remember(substanceModel.commonNames) { substanceModel.commonNames.joinToString(separator = ", ") }
                 Text(
                     text = commaSeparatedNames,
                     style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
                 )
             }
             

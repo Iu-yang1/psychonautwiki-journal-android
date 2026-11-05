@@ -21,6 +21,7 @@ package com.isaakhanimann.journal.ui.main
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffold
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -28,6 +29,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
+import androidx.navigation.compose.composable
+import com.isaakhanimann.journal.ui.main.navigation.HrtTopLevelRoute
+import com.isaakhanimann.journal.ui.tabs.hrt.HrtScreen
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
@@ -44,6 +48,8 @@ fun MainScreen(
     viewModel: MainScreenViewModel = hiltViewModel()
 ) {
     if (viewModel.isAcceptedFlow.collectAsState().value) {
+        val startupPreferences = LocalContext.current.getSharedPreferences("hrt_navigation", 0)
+        val startup: Any = if (startupPreferences.getBoolean("journalFirst", false)) JournalTopLevelRoute else HrtTopLevelRoute
         val navController = rememberNavController()
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val topLevelRoutes = topLevelRoutes
@@ -91,8 +97,15 @@ fun MainScreen(
         ) {
             NavHost(
                 navController,
-                startDestination = JournalTopLevelRoute
+                startDestination = startup
             ) {
+                composable<HrtTopLevelRoute> { HrtScreen(onOpenJournal = {
+                    navController.navigate(JournalTopLevelRoute) {
+                        popUpTo(navController.graph.findStartDestination().id) { saveState = true }
+                        launchSingleTop = true
+                        restoreState = true
+                    }
+                }) }
                 journalGraph(navController)
                 statsGraph(navController)
                 searchGraph(navController)

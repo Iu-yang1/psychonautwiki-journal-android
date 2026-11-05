@@ -1,0 +1,118 @@
+{
+  "version": "2026-11-05.1",
+  "scope": "numerical and population-reference anchors; not individual clinical validation",
+  "checks": [
+    {
+      "name": "ev_peak",
+      "actual": 666.9999999999993,
+      "expected": 667,
+      "tolerance": 0.001,
+      "source": "rothman2024",
+      "passed": true
+    },
+    {
+      "name": "ev_tmax",
+      "actual": 52.799996969925246,
+      "expected": 52.8,
+      "tolerance": 0.001,
+      "source": "rothman2024",
+      "passed": true
+    },
+    {
+      "name": "ec_peak",
+      "actual": 337.0000000000002,
+      "expected": 337,
+      "tolerance": 0.001,
+      "source": "rothman2024",
+      "passed": true
+    },
+    {
+      "name": "ec_tmax",
+      "actual": 93.600000171747,
+      "expected": 93.6,
+      "tolerance": 0.001,
+      "source": "rothman2024",
+      "passed": true
+    },
+    {
+      "name": "oral_observed_peak",
+      "actual": 34.999999999999986,
+      "expected": 35,
+      "tolerance": 1e-08,
+      "source": "doll2022",
+      "passed": true
+    },
+    {
+      "name": "sl_observed_peak",
+      "actual": 143.9999999999998,
+      "expected": 144,
+      "tolerance": 1e-08,
+      "source": "doll2022",
+      "passed": true
+    },
+    {
+      "name": "sl_oral_auc8_ratio",
+      "actual": 1.799999999999995,
+      "expected": 1.8,
+      "tolerance": 1e-07,
+      "source": "doll2022",
+      "passed": true
+    },
+    {
+      "name": "gel_auc_day14",
+      "actual": 572.4799999999999,
+      "expected": 572.48,
+      "tolerance": 0.001,
+      "source": "estrogel_fda",
+      "passed": true
+    },
+    {
+      "name": "gel_auc_day1_within_reported_sd",
+      "actual": 201.8580655248553,
+      "expected": 97.71,
+      "tolerance": 112.27,
+      "source": "estrogel_fda",
+      "passed": true
+    },
+    {
+      "name": "gel_peak_day14_within_reported_sd",
+      "actual": 27.663378674883887,
+      "expected": 42.83,
+      "tolerance": 26.95,
+      "source": "estrogel_fda",
+      "passed": true
+    },
+    {
+      "name": "patch_baseline_adjusted_average",
+      "actual": 45.2999999999999,
+      "expected": 45.3,
+      "tolerance": 0.001,
+      "source": "patch_label",
+      "passed": true
+    },
+    {
+      "name": "patch_baseline_adjusted_trough",
+      "actual": 29.300000000001884,
+      "expected": 29.3,
+      "tolerance": 0.001,
+      "source": "patch_label",
+      "passed": true
+    },
+    {
+      "name": "patch_peak_within_reported_sd",
+      "actual": 57.56717453386758,
+      "expected": 71.3,
+      "tolerance": 41,
+      "source": "patch_label",
+      "passed": true
+    },
+    {
+      "name": "patch_post_removal_half_life",
+      "actual": 7.0,
+      "expected": 7,
+      "tolerance": 0.001,
+      "source": "patch_label",
+      "passed": true
+    }
+  ]
+}

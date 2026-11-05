@@ -30,6 +30,12 @@ fun SearchScreen(
     onCustomSubstanceTap: (customSubstanceId: Int) -> Unit,
     navigateToAddCustomSubstanceScreen: () -> Unit,
 ) {
+    var filtersOpen by remember { mutableStateOf(false) }
+    val favoriteIds by searchViewModel.favorites.collectAsState()
+    val selectedRoutes by searchViewModel.selectedRoutes.collectAsState()
+    val selectedForms by searchViewModel.selectedFormulations.collectAsState()
+    val includeReferences by searchViewModel.includeReferences.collectAsState()
+    val searchError by searchViewModel.errorMessage.collectAsState()
     val focusRequester = remember { FocusRequester() }
     var isFocused by remember { mutableStateOf(false) }
 
@@ -58,6 +64,18 @@ fun SearchScreen(
         val filteredCustomSubstances = searchViewModel.filteredCustomSubstancesFlow.collectAsState().value
 
         Column(modifier = Modifier.padding(padding)) {
+            Row(Modifier.padding(horizontal = 16.dp), verticalAlignment = Alignment.CenterVertically) {
+                TextButton({ filtersOpen = true }) { Text("途径 / 剂型 (${selectedRoutes.size + selectedForms.size})") }
+                Checkbox(includeReferences, { searchViewModel.includeReferences.value = it })
+                Text("资料全文")
+            }
+            searchError?.let { Text(it, color = MaterialTheme.colorScheme.error) }
+            Row(Modifier.padding(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                val sortMode by searchViewModel.sortMode.collectAsState()
+                listOf("default" to "默认", "recent" to "最近使用", "name" to "名称").forEach { (mode, label) ->
+                    FilterChip(selected = sortMode == mode, onClick = { searchViewModel.setSortMode(mode) }, label = { Text(label) })
+                }
+            }
             if (activeFilters.isNotEmpty()) {
                 LazyRow(
                     contentPadding = PaddingValues(horizontal = 16.dp),
@@ -105,7 +123,7 @@ fun SearchScreen(
                     verticalArrangement = Arrangement.spacedBy(8.dp),
                     contentPadding = PaddingValues(vertical = 8.dp)
                 ) {
-                    items(filteredCustomSubstances) { customSubstance ->
+                    items(filteredCustomSubstances, key = { "custom:${it.id}" }, contentType = { "custom" }) { customSubstance ->
                         SubstanceRow(
                             substanceModel = SubstanceModel(
                                 name = customSubstance.name,
@@ -121,8 +139,10 @@ fun SearchScreen(
                                 onCustomSubstanceTap(customSubstance.id)
                             })
                     }
-                    items(filteredSubstances) { substance ->
-                        SubstanceRow(substanceModel = substance, onTap = {
+                    items(filteredSubstances, key = { "drug:${it.id ?: it.name}" }, contentType = { "drug" }) { substance ->
+                        SubstanceRow(substanceModel = substance,
+                            favorite = substance.id in favoriteIds,
+                            onFavoriteToggle = { searchViewModel.toggleFavorite(substance.name) }, onTap = {
                             onSubstanceTap(substance)
                         })
                     }
@@ -147,6 +167,26 @@ fun SearchScreen(
             }
         }
     }
+    if (filtersOpen) AlertDialog(onDismissRequest = { filtersOpen = false }, title = { Text("途径和剂型") }, text = {
+        LazyColumn(Modifier.heightIn(max = 400.dp)) {
+            item { Text("给药途径", style = MaterialTheme.typography.titleMedium) }
+            items(searchViewModel.routeOptions) { route ->
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Checkbox(route in selectedRoutes, { searchViewModel.selectedRoutes.value = if (route in selectedRoutes) selectedRoutes - route else selectedRoutes + route })
+                    Text(com.isaakhanimann.journal.data.substances.AdministrationRoute.valueOf(route).displayText)
+                }
+            }
+            item { Text("剂型", style = MaterialTheme.typography.titleMedium) }
+            items(searchViewModel.formulationOptions) { form ->
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Checkbox(form in selectedForms, { searchViewModel.selectedFormulations.value = if (form in selectedForms) selectedForms - form else selectedForms + form })
+                    Text(com.isaakhanimann.journal.data.substances.classes.formulationLabel(form))
+                }
+            }
+        }
+    }, confirmButton = { TextButton({ filtersOpen = false }) { Text("完成") } }, dismissButton = {
+        TextButton({ searchViewModel.selectedRoutes.value = emptySet(); searchViewModel.selectedFormulations.value = emptySet() }) { Text("清除") }
+    })
 }
 
 @Composable

@@ -18,6 +18,10 @@
 
 package com.isaakhanimann.journal.data.substances.repositories
 
+import com.isaakhanimann.journal.data.hrt.withHrtTaxonomy
+import com.isaakhanimann.journal.data.substances.classes.MedicationCatalogFile
+import com.isaakhanimann.journal.data.substances.classes.mergeMedicationFiles
+import kotlinx.serialization.json.Json
 import android.content.Context
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.substances.classes.Category
@@ -45,7 +49,16 @@ class SubstanceRepository @Inject constructor(
     }
 
     private fun parseSubstanceFile(): SubstanceFile {
-        return substanceParser.parseSubstanceFile(string = getAssetsSubstanceFileContent())
+        val primary = substanceParser.parseSubstanceFile(string = getAssetsSubstanceFileContent())
+        val base = appContext.resources.openRawResource(R.raw.substances_base).bufferedReader().use { substanceParser.parseSubstanceFile(it.readText()) }
+        val catalog = appContext.resources.openRawResource(R.raw.medication_catalog).bufferedReader().use { Json.decodeFromString<MedicationCatalogFile>(it.readText()) }
+        require(catalog.version == 1 && catalog.entries.map { it.id }.distinct().size == catalog.entries.size)
+        val identities = catalog.entries.associateBy { it.id }
+        val combined = mergeMedicationFiles(primary, base).withHrtTaxonomy()
+        return SubstanceFile(combined.categories, combined.substances.map { substance ->
+            val identity = identities[substance.id]
+            substance.copy(identity = identity, commonNames = (substance.commonNames + identity?.aliases.orEmpty()).distinct())
+        })
     }
 
     private fun getAssetsSubstanceFileContent(): String {
@@ -63,28 +76,11 @@ class SubstanceRepository @Inject constructor(
     }
 
     override fun getAllSubstancesWithCategories(): List<SubstanceWithCategories> {
-        val currentSubstanceFile = _substanceFileFlow.value
-        return currentSubstanceFile.substances.map { substance ->
-            SubstanceWithCategories(
-                substance = substance,
-                categories = currentSubstanceFile.categories.filter { category ->
-                    substance.categories.contains(category.name)
-                }
-            )
-        }
+        return _substanceFileFlow.value.withCategories
     }
 
     fun getAllSubstancesWithCategoriesFlow(): Flow<List<SubstanceWithCategories>> {
-        return _substanceFileFlow.map { substanceFile ->
-            substanceFile.substances.map { substance ->
-                SubstanceWithCategories(
-                    substance = substance,
-                    categories = substanceFile.categories.filter { category ->
-                        substance.categories.contains(category.name)
-                    }
-                )
-            }
-        }
+        return _substanceFileFlow.map { it.withCategories }
     }
 
     override fun getAllCategories(): List<Category> {
@@ -92,7 +88,7 @@ class SubstanceRepository @Inject constructor(
     }
 
     override fun getSubstance(substanceName: String): Substance? {
-        return _substanceFileFlow.value.substancesMap.getOrDefault(key = substanceName, defaultValue = null)
+        return _substanceFileFlow.value.find(substanceName)
     }
 
     override fun getCategory(categoryName: String): Category? {
@@ -102,7 +98,7 @@ class SubstanceRepository @Inject constructor(
     override fun getSubstanceWithCategories(substanceName: String): SubstanceWithCategories? {
         val currentSubstanceFile = _substanceFileFlow.value
         val substance =
-            currentSubstanceFile.substances.firstOrNull { it.name == substanceName } ?: return null
+            getSubstance(substanceName) ?: return null
         return SubstanceWithCategories(
             substance = substance,
             categories = currentSubstanceFile.categories.filter { substance.categories.contains(it.name) }

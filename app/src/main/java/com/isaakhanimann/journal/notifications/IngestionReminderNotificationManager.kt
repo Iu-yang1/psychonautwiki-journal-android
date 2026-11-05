@@ -68,7 +68,7 @@ class IngestionReminderNotificationManager @Inject constructor(
     /**
      * Schedule a reminder notification
      */
-    fun scheduleReminder(reminder: IngestionReminder) {
+    fun scheduleReminder(reminder: IngestionReminder, userAction: Boolean = false) {
         if (!reminder.isEnabled) return
 
         val intent = Intent(context, ReminderBroadcastReceiver::class.java).apply {
@@ -86,30 +86,15 @@ class IngestionReminderNotificationManager @Inject constructor(
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
 
-        val now = LocalDateTime.now()
-        val today = now.toLocalDate()
-        val reminderDateTime = LocalDateTime.of(today, reminder.reminderTime)
-        
-        val scheduledTime = if (reminderDateTime.isBefore(now) || reminderDateTime.isEqual(now)) {
-            reminderDateTime.plusDays(1)
+        val runtime = context.getSharedPreferences("legacy-reminder-runtime", 0)
+        val key = "once-anchor:${reminder.id}"
+        if (userAction && reminder.repeatMode == com.isaakhanimann.journal.data.room.experiences.entities.RepeatMode.ONCE) runtime.edit().putLong(key, System.currentTimeMillis()).apply()
+        val effective = if (reminder.repeatMode == com.isaakhanimann.journal.data.room.experiences.entities.RepeatMode.ONCE) reminder.copy(createdAt = runtime.getLong(key, reminder.createdAt)) else reminder
+        val triggerAtMillis = LegacyReminderSchedule.next(effective, System.currentTimeMillis()) ?: return
+        if (Build.VERSION.SDK_INT < 31 || alarmManager.canScheduleExactAlarms()) {
+            alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, triggerAtMillis, pendingIntent)
         } else {
-            reminderDateTime
-        }
-        
-        val triggerAtMillis = scheduledTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli()
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            alarmManager.setExactAndAllowWhileIdle(
-                AlarmManager.RTC_WAKEUP,
-                triggerAtMillis,
-                pendingIntent
-            )
-        } else {
-            alarmManager.setExact(
-                AlarmManager.RTC_WAKEUP,
-                triggerAtMillis,
-                pendingIntent
-            )
+            alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, triggerAtMillis, pendingIntent)
         }
     }
 

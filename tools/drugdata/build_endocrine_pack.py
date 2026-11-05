@@ -1528,8 +1528,10 @@ def build_entries() -> list[tuple[Path, dict, list[dict]]]:
 
 def main() -> None:
     entries = build_entries()
+    identity_registry = json.loads((Path(__file__).parent / "medication_ids.json").read_text(encoding="utf-8"))
     for path, substance, categories in entries:
         path.parent.mkdir(parents=True, exist_ok=True)
+        substance["id"] = identity_registry[substance["name"]]
         payload = {"substances": [substance]}
         if categories:
             payload["categories"] = categories

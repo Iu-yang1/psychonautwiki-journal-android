@@ -23,5 +23,6 @@ data class SubstanceModel(
     val commonNames: List<String>,
     val categories: List<CategoryModel>,
     val hasSaferUse: Boolean,
-    val hasInteractions: Boolean
+    val hasInteractions: Boolean,
+    val id: String? = null,
 )

@@ -48,7 +48,7 @@ class AddCustomRecipeViewModel @Inject constructor(
     ) { predefined, custom ->
         val predefinedNames = predefined.map { it.substance.name }
         val customNames = custom.map { it.name }
-        (predefinedNames + customNames).distinct().sorted()
+        (predefinedNames + customNames.sorted()).distinct()
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5000),

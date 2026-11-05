@@ -11,3 +11,10 @@ local.properties
 release/*
 !release/
 !release/signing.properties.example
+
+__pycache__/
+*.pyc
+
+/.codex/
+/docs/
+/verification.md

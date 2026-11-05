@@ -55,7 +55,7 @@ class RemindersViewModel @Inject constructor(
             experienceRepository.update(updated)
             
             if (isEnabled) {
-                notificationManager.scheduleReminder(updated)
+                notificationManager.scheduleReminder(updated, userAction = true)
             } else {
                 notificationManager.cancelReminder(reminder.id)
             }

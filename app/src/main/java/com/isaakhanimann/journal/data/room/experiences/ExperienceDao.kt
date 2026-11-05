@@ -276,6 +276,7 @@ interface ExperienceDao {
 
     @Transaction
     suspend fun deleteEverything() {
+        deleteAllReminders()
         deleteAllIngestions()
         deleteAllTimedNotes()
         deleteAllExperiences()
@@ -336,7 +337,7 @@ interface ExperienceDao {
     suspend fun deleteAllCustomSubstances()
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(ingestion: Ingestion)
+    suspend fun insert(ingestion: Ingestion): Long
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(rating: ShulginRating)
@@ -365,7 +366,7 @@ interface ExperienceDao {
     @Transaction
     suspend fun insertEverythingWithProgress(
         journalExport: JournalExport,
-        imageExportHelper: com.isaakhanimann.journal.ui.tabs.settings.ImageExportHelper,
+        preparedPhotos: Map<String, String>,
         onProgressUpdate: (Float, String) -> Unit
     ) {
         // ID映射表，用于维护旧ID到新ID的关系
@@ -510,6 +511,7 @@ interface ExperienceDao {
                     recipeId = newRecipeId, // Use the new recipe ID
                     substanceName = subcomponentSerializable.substanceName,
                     customUnitId = newSubUnitId,
+                    customUnitDose = subcomponentSerializable.customUnitDose,
                     dose = subcomponentSerializable.dose,
                     estimatedDoseStandardDeviation = subcomponentSerializable.estimatedDoseStandardDeviation,
                     isEstimate = subcomponentSerializable.isEstimate,
@@ -570,6 +572,7 @@ interface ExperienceDao {
                     println("[IMPORT] Ingestion: substance='${ingestionSerializable.substanceName}', oldCustomUnitId=$oldCustomUnitId, newCustomUnitId=$newCustomUnitId")
                     
                     val newIngestion = Ingestion(
+                        id = if (journalExport.formatVersion >= 2) ingestionSerializable.id ?: 0 else 0,
                         substanceName = ingestionSerializable.substanceName,
                         time = ingestionSerializable.time,
                         endTime = ingestionSerializable.endTime,
@@ -587,12 +590,14 @@ interface ExperienceDao {
                         customRecipeId = newCustomRecipeId,
                         recipeGroupId = ingestionSerializable.recipeGroupId
                     )
-                    insert(newIngestion)
+                    val newId = insert(newIngestion).toInt()
+                    ingestionSerializable.hrtLink?.let { importLink(it.copy(ingestionId = newId)) }
+                    ingestionSerializable.hrtDetail?.let { importDetail(it.copy(ingestionId = newId)) }
                 }
             }
             
             // Import timed notes with photos
-            experienceSerializable.timedNotes.forEach { timedNoteSerializable ->
+            experienceSerializable.timedNotes.forEachIndexed { indexNote, timedNoteSerializable ->
                 val newTimedNote = TimedNote(
                     time = timedNoteSerializable.time,
                     creationDate = timedNoteSerializable.creationDate,
@@ -604,27 +609,12 @@ interface ExperienceDao {
                 )
                 val timedNoteId = insert(newTimedNote)
                 
-                // Import photos for this timed note
-                timedNoteSerializable.photos.forEach { photoSerializable ->
-                    if (photoSerializable.imageBase64.isNotEmpty()) {
-                        val fileName = imageExportHelper.generateUniqueFileName(photoSerializable.originalFileName)
-                        val filePath = imageExportHelper.base64ToImage(
-                            photoSerializable.imageBase64,
-                            fileName,
-                            imageExportHelper.getImagesDirectory()
-                        )
-                        
-                        if (filePath != null) {
-                            val newPhoto = TimedNotePhoto(
-                                timedNoteId = timedNoteId.toInt(),
-                                filePath = filePath,
-                                creationDate = photoSerializable.creationDate,
-                                caption = photoSerializable.caption
-                            )
-                            insert(newPhoto)
-                        }
-                    }
+                timedNoteSerializable.photos.forEachIndexed { indexPhoto, photoSerializable ->
+                    val filePath = preparedPhotos.getValue(com.isaakhanimann.journal.data.hrt.attachmentKey(indexExperience, indexNote, indexPhoto))
+                    insert(TimedNotePhoto(timedNoteId = timedNoteId.toInt(), filePath = filePath,
+                        creationDate = photoSerializable.creationDate, caption = photoSerializable.caption))
                 }
+
             }
             
             // Import ratings
@@ -686,6 +676,7 @@ interface ExperienceDao {
             experienceSerializable.ingestions.forEach { ingestionSerializable ->
                 if (ingestionSerializable.substanceName != null) {
                     val newIngestion = Ingestion(
+                        id = if (journalExport.formatVersion >= 2) ingestionSerializable.id ?: 0 else 0,
                         substanceName = ingestionSerializable.substanceName,
                         time = ingestionSerializable.time,
                         endTime = ingestionSerializable.endTime,
@@ -703,7 +694,9 @@ interface ExperienceDao {
                         customRecipeId = ingestionSerializable.customRecipeId,
                         recipeGroupId = ingestionSerializable.recipeGroupId
                     )
-                    insert(newIngestion)
+                    val newId = insert(newIngestion).toInt()
+                    ingestionSerializable.hrtLink?.let { importLink(it.copy(ingestionId = newId)) }
+                    ingestionSerializable.hrtDetail?.let { importDetail(it.copy(ingestionId = newId)) }
                 }
             }
             experienceSerializable.timedNotes.forEach { timedNoteSerializable ->
@@ -938,6 +931,12 @@ interface ExperienceDao {
     @Delete
     suspend fun delete(reminder: com.isaakhanimann.journal.data.room.experiences.entities.IngestionReminder)
 
+
+    @Insert suspend fun importLink(link: com.isaakhanimann.journal.data.hrt.MedicationLink)
+    @Insert suspend fun importDetail(detail: com.isaakhanimann.journal.data.hrt.HrtEventDetail)
+    @Query("DELETE FROM ingestion_reminders")
+    suspend fun deleteAllReminders()
+
     @Query("SELECT * FROM ingestion_reminders ORDER BY reminderTime ASC")
     fun getAllRemindersFlow(): Flow<List<com.isaakhanimann.journal.data.room.experiences.entities.IngestionReminder>>
 
@@ -952,4 +951,7 @@ interface ExperienceDao {
     
     @Query("SELECT * FROM TimedNote WHERE experienceId = :experienceId")
     suspend fun getTimedNotesWithPhotos(experienceId: Int): List<com.isaakhanimann.journal.data.room.experiences.relations.TimedNoteWithPhotos>
+    @Query("SELECT filePath FROM TimedNotePhoto UNION SELECT thumbnailPath FROM TimedNotePhoto WHERE thumbnailPath IS NOT NULL")
+    suspend fun allPhotoPaths(): List<String>
+
 }

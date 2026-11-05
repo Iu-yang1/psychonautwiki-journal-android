@@ -36,6 +36,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -54,6 +55,7 @@ import com.isaakhanimann.journal.data.substances.repositories.SearchRepository
 import com.isaakhanimann.journal.di.SubstanceResultHolder
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
 import javax.inject.Inject
@@ -73,13 +75,10 @@ class SubstancePickerViewModel @Inject constructor(
             initialValue = emptyList()
         )
 
-    fun getMatchingSubstanceNames(searchText: String): List<String> {
-        return searchRepository.getMatchingSubstances(
-            searchText = searchText,
-            filterCategories = emptyList(),
-            recentlyUsedSubstanceNamesSorted = emptyList()
-        ).map { it.substance.name }
-    }
+    private val query = kotlinx.coroutines.flow.MutableStateFlow("")
+    fun filter(text: String) { query.value = text }
+    val matchingNames = searchRepository.observe(query).map { matches -> matches.map { it.substance.name } }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     fun selectSubstance(substanceName: String) {
         resultHolder.postResult(substanceName)
@@ -95,9 +94,8 @@ fun SubstancePickerScreen(
     val customSubstances by viewModel.customSubstancesFlow.collectAsState()
     var searchText by remember { mutableStateOf("") }
 
-    val filteredSubstances = remember(searchText) {
-        viewModel.getMatchingSubstanceNames(searchText)
-    }
+    LaunchedEffect(searchText) { viewModel.filter(searchText) }
+    val filteredSubstances by viewModel.matchingNames.collectAsState()
 
     val filteredCustomSubstances = remember(searchText, customSubstances) {
         if (searchText.isBlank()) {

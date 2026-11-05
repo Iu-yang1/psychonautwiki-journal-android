@@ -21,21 +21,26 @@ import com.isaakhanimann.journal.data.room.experiences.relations.IngestionWithEx
 import com.isaakhanimann.journal.data.room.experiences.relations.CustomRecipeWithSubcomponents
 import com.isaakhanimann.journal.ui.tabs.settings.JournalExport
 import kotlinx.coroutines.Dispatchers
+import com.isaakhanimann.journal.data.hrt.MedicationPreferences
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.conflate
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.withContext
 import java.time.Instant
+import androidx.room.withTransaction
+import com.isaakhanimann.journal.data.hrt.HrtRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class ExperienceRepository @Inject constructor(private val experienceDao: ExperienceDao) {
+class ExperienceRepository @Inject constructor(private val experienceDao: ExperienceDao, private val hrtRepository: HrtRepository) {
     suspend fun insert(rating: ShulginRating) = experienceDao.insert(rating)
     suspend fun insert(customUnit: CustomUnit) = experienceDao.insert(customUnit).toInt()
     suspend fun insert(timedNote: TimedNote) = experienceDao.insert(timedNote)
     suspend fun update(experience: Experience) = experienceDao.update(experience)
-    suspend fun update(ingestion: Ingestion) = experienceDao.update(ingestion)
+    suspend fun update(ingestion: Ingestion) = hrtRepository.database.withTransaction { hrtRepository.reconcileStock(ingestion); experienceDao.update(ingestion) }
     suspend fun update(rating: ShulginRating) = experienceDao.update(rating)
     suspend fun update(customUnit: CustomUnit) = experienceDao.update(customUnit)
     suspend fun update(timedNote: TimedNote) = experienceDao.update(timedNote)
@@ -56,12 +61,6 @@ class ExperienceRepository @Inject constructor(private val experienceDao: Experi
         journalExport: JournalExport
     ) = experienceDao.insertEverything(journalExport)
     
-    suspend fun insertEverythingWithProgress(
-        journalExport: JournalExport,
-        imageExportHelper: com.isaakhanimann.journal.ui.tabs.settings.ImageExportHelper,
-        onProgressUpdate: (Float, String) -> Unit
-    ) = experienceDao.insertEverythingWithProgress(journalExport, imageExportHelper, onProgressUpdate)
-
     suspend fun insertIngestionAndCompanion(
         ingestion: Ingestion,
         substanceCompanion: SubstanceCompanion
@@ -70,20 +69,28 @@ class ExperienceRepository @Inject constructor(private val experienceDao: Experi
         substanceCompanion
     )
 
-    suspend fun deleteEverything() = experienceDao.deleteEverything()
+    suspend fun deleteEverything() = hrtRepository.database.withTransaction {
+        experienceDao.deleteEverything()
+        val hrt = hrtRepository.dao
+        hrt.clearPlans(); hrt.clearMovements(); hrt.clearStock(); hrt.clearLabs(); hrt.clearSettings()
+    }
 
-    suspend fun delete(ingestion: Ingestion) = experienceDao.delete(ingestion)
+    suspend fun delete(ingestion: Ingestion) = hrtRepository.database.withTransaction { hrtRepository.reconcileStock(ingestion, deleting = true); experienceDao.delete(ingestion) }
     suspend fun delete(customUnit: CustomUnit) = experienceDao.delete(customUnit)
 
     suspend fun deleteIngestionsByRecipeGroupId(recipeGroupId: String) {
-        experienceDao.deleteIngestionsByRecipeGroupId(recipeGroupId)
+        hrtRepository.database.withTransaction {
+            experienceDao.getIngestionsSortedDescendingFlow().first().filter { it.recipeGroupId == recipeGroupId }.forEach { hrtRepository.reconcileStock(it, deleting = true) }
+            experienceDao.deleteIngestionsByRecipeGroupId(recipeGroupId)
+        }
     }
 
-    suspend fun deleteEverythingOfExperience(experienceId: Int) =
+    suspend fun deleteEverythingOfExperience(experienceId: Int) = hrtRepository.database.withTransaction {
+        experienceDao.getIngestionsSortedDescendingFlow().first().filter { it.experienceId == experienceId }.forEach { hrtRepository.reconcileStock(it, deleting = true) }
         experienceDao.deleteEverythingOfExperience(experienceId)
+    }
 
-    suspend fun delete(experience: Experience) =
-        experienceDao.delete(experience)
+    suspend fun delete(experience: Experience) = deleteEverythingOfExperience(experience.id)
 
     suspend fun delete(rating: ShulginRating) =
         experienceDao.delete(rating)
@@ -91,8 +98,7 @@ class ExperienceRepository @Inject constructor(private val experienceDao: Experi
     suspend fun delete(timedNote: TimedNote) =
         experienceDao.delete(timedNote)
 
-    suspend fun delete(experienceWithIngestions: ExperienceWithIngestions) =
-        experienceDao.deleteExperienceWithIngestions(experienceWithIngestions)
+    suspend fun delete(experienceWithIngestions: ExperienceWithIngestions) = deleteEverythingOfExperience(experienceWithIngestions.experience.id)
 
     suspend fun deleteUnusedSubstanceCompanions() =
         experienceDao.deleteUnusedSubstanceCompanions()
@@ -209,8 +215,13 @@ class ExperienceRepository @Inject constructor(private val experienceDao: Experi
     suspend fun delete(substanceCompanion: SubstanceCompanion) =
         experienceDao.delete(substanceCompanion)
 
-    suspend fun update(substanceCompanion: SubstanceCompanion) =
-        experienceDao.update(substanceCompanion)
+    suspend fun update(substanceCompanion: SubstanceCompanion) = hrtRepository.database.withTransaction {
+        val customNames = experienceDao.getAllCustomSubstances().map { it.name }.toSet()
+        val companions = experienceDao.getAllSubstanceCompanions()
+        val matches = companions.filter { MedicationPreferences.sameIdentity(substanceCompanion.substanceName, it.substanceName, customNames) { name -> hrtRepository.substances.getSubstance(name)?.id } }
+        if (matches.isEmpty()) experienceDao.insert(substanceCompanion)
+        else matches.forEach { experienceDao.update(it.copy(color = substanceCompanion.color, customColor = substanceCompanion.customColor)) }
+    }
 
     suspend fun insert(customSubstance: CustomSubstance): Int =
         experienceDao.insert(customSubstance).toInt()
@@ -265,17 +276,18 @@ class ExperienceRepository @Inject constructor(private val experienceDao: Experi
         .flowOn(Dispatchers.IO)
         .conflate()
 
-    fun getUnArchivedCustomUnitsFlow(substanceName: String) =
-        experienceDao.getSortedCustomUnitsFlowBasedOnName(substanceName, false)
-            .flowOn(Dispatchers.IO)
-            .conflate()
+    fun getUnArchivedCustomUnitsFlow(substanceName: String) = combine(experienceDao.getSortedCustomUnitsFlow(false), experienceDao.getCustomSubstancesFlow()) { units, custom ->
+        val names = custom.map { it.name }.toSet()
+        units.filter { MedicationPreferences.sameIdentity(substanceName, it.substanceName, names) { name -> hrtRepository.substances.getSubstance(name)?.id } }
+    }.flowOn(Dispatchers.IO).conflate()
 
     fun getAllCustomUnitsFlow() = experienceDao.getAllCustomUnitsFlow()
         .flowOn(Dispatchers.IO)
         .conflate()
 
-    fun getSubstanceCompanionFlow(substanceName: String) =
-        experienceDao.getSubstanceCompanionFlow(substanceName)
+    fun getSubstanceCompanionFlow(substanceName: String) = combine(experienceDao.getAllSubstanceCompanionsFlow(), experienceDao.getCustomSubstancesFlow()) { companions, custom ->
+        MedicationPreferences.color(substanceName, companions, custom.map { it.name }.toSet()) { name -> hrtRepository.substances.getSubstance(name)?.id }
+    }
 
     suspend fun insert(customRecipe: CustomRecipe) = experienceDao.insert(customRecipe)
     suspend fun insert(recipeSubcomponent: RecipeSubcomponent) = experienceDao.insert(recipeSubcomponent)

@@ -41,6 +41,7 @@ import javax.inject.Inject
  */
 @AndroidEntryPoint
 class ReminderActionReceiver : BroadcastReceiver() {
+    @Inject lateinit var databaseStartup: com.isaakhanimann.journal.data.hrt.DatabaseStartup
 
     @Inject
     lateinit var notificationManager: IngestionReminderNotificationManager
@@ -61,6 +62,7 @@ class ReminderActionReceiver : BroadcastReceiver() {
                 
                 // Create ingestion entry automatically
                 CoroutineScope(Dispatchers.IO).launch {
+                    if (kotlinx.coroutines.withTimeoutOrNull(8000) { databaseStartup.awaitReady() } != true) return@launch
                     try {
                         // Get or create today's experience
                         val now = Instant.now()

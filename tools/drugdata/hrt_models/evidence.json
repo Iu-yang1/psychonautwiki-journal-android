@@ -1,0 +1,131 @@
+{
+  "version": "2026-11-05.1",
+  "sources": {
+    "doll2022": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+      "kind": "human-pk-study",
+      "population": "10 transgender women, single 1 mg micronized E2; LC-MS/MS; sampling through 8 h",
+      "anchors": {
+        "oral_peak_pg_ml": 35,
+        "oral_sample_peak_h": 8,
+        "sl_peak_pg_ml": 144,
+        "sl_sample_peak_h": 1,
+        "sl_oral_auc_0_8_ratio": 1.8
+      },
+      "baseline": "reported concentrations; baseline correction not available in abstract"
+    },
+    "oral_smpc": {
+      "url": "https://www.medicines.org.uk/emc/product/1347/smpc",
+      "kind": "regulatory-label",
+      "anchors": {
+        "oral_terminal_half_life_h": [
+          10,
+          16
+        ]
+      }
+    },
+    "oriowo1980": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7389356/",
+      "kind": "human-pk-study",
+      "population": "single 5 mg ester IM in 1 mL arachis oil",
+      "anchors": {
+        "ev_peak_day_approx": 2,
+        "ec_peak_day_approx": 4
+      }
+    },
+    "rothman2024": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11669617/",
+      "kind": "peer-reviewed-source-review",
+      "original_doi": "10.1016/0010-7824(80)80018-7",
+      "anchors": {
+        "ev_peak_pg_ml": 667,
+        "ev_peak_ci": [
+          457,
+          983
+        ],
+        "ev_tmax_h": 52.8,
+        "ec_peak_pg_ml": 337,
+        "ec_peak_ci": [
+          207,
+          550
+        ],
+        "ec_tmax_h": 93.6
+      },
+      "notes": "Peak values transcribed from authors review of Oriowo; period geometric mean is not treated as a time-integrated AUC."
+    },
+    "estrogel_fda": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2004/21166_Estrogel%20Gel_biopharmr.PDF",
+      "kind": "regulatory-review",
+      "pdf_pages": [
+        16,
+        17
+      ],
+      "population": "UMD-01-078, 0.75 mg E2 in 1.25 g 0.06% gel on one arm; not washed; baseline-adjusted",
+      "anchors": {
+        "single_auc_0_24": 97.71,
+        "single_auc_sd": 112.27,
+        "single_cmax": 11.42,
+        "single_cmax_sd": 12.39,
+        "day14_auc_0_24": 572.48,
+        "day14_auc_sd": 349.04,
+        "day14_cmax": 42.83,
+        "day14_cmax_sd": 26.95
+      },
+      "pdf_sha256": "4d54f38758e43df13737003e2d28f5af162fd20466180cfcf99e750419537987",
+      "reference_version": "NDA 21-166 biopharmaceutics review, February 2004"
+    },
+    "estrogel_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=762ac371-bb8b-47e7-b48f-e80d452c9dd4",
+      "kind": "regulatory-label",
+      "anchors": {
+        "apparent_terminal_half_life_h": 36
+      }
+    },
+    "patch_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0500ee9b-bf4a-4432-9afe-20a7d60a6fe5&type=display",
+      "kind": "regulatory-label",
+      "population": "Original twice-weekly formulation, abdomen; 50 microgram/day; Table 2 footnote: 80 h",
+      "anchors": {
+        "baseline_pg_ml": 11.7,
+        "cavg_pg_ml": 57,
+        "cavg_sd": 23,
+        "cmin_pg_ml": 41,
+        "cmin_sd": 11,
+        "cmax_pg_ml": 83,
+        "cmax_sd": 41,
+        "reference_wear_h": 80,
+        "post_removal_half_life_h": [
+          5.9,
+          7.7
+        ]
+      }
+    },
+    "estrannaise_temporal_priors": {
+      "url": "https://github.com/WHSAH/estrannaise.js/blob/47198c4e0738849e9ac5b51605a477a5a6a1e814/src/modeldata.js",
+      "kind": "open-model-data",
+      "license": "MIT; alix 2025",
+      "notes": "Only injection transfer and effective turnover temporal priors are reused; amplitude and depot absorption refitted to reported study peaks. These are effective rates, not physiological E2 clearance."
+    },
+    "molecular_weights": {
+      "urls": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2984bce2-89bf-4768-a1ca-ccf03b1197be",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C313064&Units=SI"
+      ],
+      "kind": "regulatory-label-and-nist",
+      "anchors": {
+        "estradiol": 272.38,
+        "valerate": 356.5,
+        "cypionate": 396.5622
+      }
+    }
+  },
+  "assumptions": [
+    "Population reference responses, not a patient-specific or clinically validated prediction.",
+    "Linear superposition and dose scaling are modelling assumptions; no endogenous production, suppression or individualized fitting is inferred.",
+    "Reported unadjusted oral/sublingual and injection peaks cannot isolate baseline; they calibrate an effective response and may bias repeated-dose extrapolation.",
+    "Gel and patch models use the explicitly baseline-adjusted reference anchors; reference study baselines are not automatically added to user curves.",
+    "The gel model assumes absorption-limited 36 h terminal behavior and a 1 h systemic turnover prior; reported uncertainty is large.",
+    "Patch model uses nominal release rate as an empirical reservoir driver; it never interprets patch total drug loading as delivered dose.",
+    "Only listed chemical forms, formulations and administration routes are admitted; IM is not automatically applied to SC."
+  ]
+}

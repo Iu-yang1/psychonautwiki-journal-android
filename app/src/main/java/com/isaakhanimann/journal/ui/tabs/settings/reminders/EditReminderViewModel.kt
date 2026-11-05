@@ -168,7 +168,7 @@ class EditReminderViewModel @Inject constructor(
                 
                 // Schedule new notification if enabled
                 if (_isEnabled.value) {
-                    notificationManager.scheduleReminder(updatedReminder)
+                    notificationManager.scheduleReminder(updatedReminder, userAction = true)
                 }
 
                 _isSaving.value = false

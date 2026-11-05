@@ -52,20 +52,9 @@ class AddIngestionSearchViewModel @Inject constructor(
         }
     }
 
-    val filteredSubstancesFlow = combine(
-        searchTextFlow,
-        experienceRepo.getSortedLastUsedSubstanceNamesFlow(limit = 200)
-    ) { searchText, recents ->
-        return@combine searchRepo.getMatchingSubstances(
-            searchText = searchText,
-            filterCategories = emptyList(),
-            recentlyUsedSubstanceNamesSorted = recents
-        ).map { it.toSubstanceModel() }
-    }.stateIn(
-        initialValue = emptyList(),
-        scope = viewModelScope,
-        started = SharingStarted.WhileSubscribed(5000)
-    )
+    val filteredSubstancesFlow = searchRepo.observe(searchTextFlow)
+        .map { matches -> matches.map { it.toSubstanceModel() } }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     private val customUnitsFlow = experienceRepo.getCustomUnitsFlow(false)
 

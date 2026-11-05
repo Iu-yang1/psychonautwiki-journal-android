@@ -27,7 +27,8 @@ import kotlin.math.min
 fun Substance.availableRoutesForIngestion(): List<AdministrationRoute> {
     val roaRoutes = roas.map { it.route }
     val timeCourseRoutes = timeCourse.flatMap { it.matchingAdministrationRoutes() }
-    return (roaRoutes + timeCourseRoutes).distinct()
+    val identityRoutes = identity?.administrationRoutes.orEmpty().mapNotNull { name -> AdministrationRoute.entries.singleOrNull { it.name == name } }
+    return (roaRoutes + timeCourseRoutes + identityRoutes).distinct()
 }
 
 fun Substance.derivedRoaDurationForRoute(route: AdministrationRoute): RoaDuration? {
@@ -52,7 +53,7 @@ fun TimeCourse.matchingAdministrationRoutes(): Set<AdministrationRoute> {
         val aliases = routeAliases.getValue(route)
         normalizedRoute == routeText ||
             normalizedRoute in aliases ||
-            aliases.any { alias -> alias in routeWords || normalizedRoute.contains(alias) }
+            aliases.any { alias -> alias in routeWords || Regex("(?<![\\p{L}\\p{N}])${Regex.escape(alias)}(?![\\p{L}\\p{N}])").containsMatchIn(normalizedRoute) }
     }.toSet()
 }
 

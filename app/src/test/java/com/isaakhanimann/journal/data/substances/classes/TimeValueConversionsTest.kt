@@ -52,7 +52,7 @@ class TimeValueConversionsTest {
     }
 
     @Test
-    fun timelineUsesMidpointsForEveryTimeRange() {
+    fun timelineUsesMidpointsForPhasesAndUpperBoundForEnd() {
         val duration = TimeCourse(
             route = "oral",
             onset = TimeValue(min = 1.0, max = 3.0, unit = "h"),
@@ -62,6 +62,6 @@ class TimeValueConversionsTest {
 
         assertEquals(2f, duration?.onset?.min)
         assertEquals(3f, duration?.comeup?.min)
-        assertEquals(10f, duration?.total?.min)
+        assertEquals(12f, duration?.total?.min)
     }
 }

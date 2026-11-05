@@ -23,4 +23,18 @@ class SubstanceFile(
     val substances: List<Substance>
 ) {
     val substancesMap: Map<String, Substance> = substances.associateBy { it.name }
+    val withCategories: List<SubstanceWithCategories> by lazy {
+        val byName = categories.associateBy { it.name }
+        substances.map { substance -> SubstanceWithCategories(substance, substance.categories.mapNotNull(byName::get)) }
+    }
+    private val names by lazy { substances.groupBy { com.isaakhanimann.journal.data.hrt.MedicationIdentity.normalize(it.name) } }
+    private val aliases by lazy {
+        substances.flatMap { substance -> substance.commonNames.map { com.isaakhanimann.journal.data.hrt.MedicationIdentity.normalize(it) to substance } }
+            .groupBy({ it.first }, { it.second }).mapValues { (_, items) -> items.distinctBy { it.id } }
+    }
+    fun find(name: String): Substance? {
+        substancesMap[name]?.let { return it }
+        val key = com.isaakhanimann.journal.data.hrt.MedicationIdentity.normalize(name)
+        return (names[key] ?: aliases[key]).orEmpty().singleOrNull()
+    }
 }

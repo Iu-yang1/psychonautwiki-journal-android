@@ -134,7 +134,7 @@ class AddReminderViewModel @Inject constructor(
                 
                 if (_isEnabled.value) {
                     val savedReminder = reminder.copy(id = reminderId.toInt())
-                    notificationManager.scheduleReminder(savedReminder)
+                    notificationManager.scheduleReminder(savedReminder, userAction = true)
                 }
 
                 _isSaving.value = false

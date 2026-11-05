@@ -26,8 +26,9 @@ data class SubstanceWithCategories(
 
 
 ) {
-    fun toSubstanceModel(): SubstanceModel {
-        return SubstanceModel(
+    private val model by lazy {
+        SubstanceModel(
+            id = substance.id,
             name = substance.name,
             commonNames = substance.commonNames,
             categories = categories.map { category ->
@@ -39,4 +40,5 @@ data class SubstanceWithCategories(
             hasInteractions = substance.hasInteractions
         )
     }
+    fun toSubstanceModel(): SubstanceModel = model
 }

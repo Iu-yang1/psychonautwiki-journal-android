@@ -1,0 +1,168 @@
+{
+  "version": "2026-11-05.2",
+  "scope": "population-reference reconstruction, not personal clinical validation",
+  "checks": [
+    {
+      "name": "oral_ev_peak",
+      "actual": 42.9,
+      "expected": 42.9,
+      "tolerance": 1e-06,
+      "source": "kuhnz1998",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "oral_ev_tmax",
+      "actual": 10.00000000000635,
+      "expected": 10,
+      "tolerance": 0.001,
+      "source": "kuhnz1998",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "en_absorption_half_days",
+      "actual": 0.46056291067106003,
+      "expected": 0.46,
+      "tolerance": 0.005,
+      "source": "wiemeyer1986",
+      "calibration": false,
+      "passed": true
+    },
+    {
+      "name": "en_terminal_half_days",
+      "actual": 5.5696840543185635,
+      "expected": 5.57,
+      "tolerance": 0.01,
+      "source": "wiemeyer1986",
+      "calibration": false,
+      "passed": true
+    },
+    {
+      "name": "divigel_ss_auc",
+      "actual": 732.0,
+      "expected": 732,
+      "tolerance": 0.001,
+      "source": "divigel_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "divigel_ss_peak",
+      "actual": 51.50000000000001,
+      "expected": 51.5,
+      "tolerance": 0.001,
+      "source": "divigel_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "spray1_auc",
+      "actual": 470.99999999999994,
+      "expected": 471,
+      "tolerance": 0.001,
+      "source": "evamist_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "spray1_peak",
+      "actual": 36.400000000003196,
+      "expected": 36.4,
+      "tolerance": 0.001,
+      "source": "evamist_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "spray2_auc",
+      "actual": 735.9999999999999,
+      "expected": 736,
+      "tolerance": 0.001,
+      "source": "evamist_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "spray2_peak",
+      "actual": 57.40000000000321,
+      "expected": 57.4,
+      "tolerance": 0.001,
+      "source": "evamist_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "spray3_auc",
+      "actual": 742.0000000000001,
+      "expected": 742,
+      "tolerance": 0.001,
+      "source": "evamist_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "spray3_peak",
+      "actual": 54.10000000007926,
+      "expected": 54.1,
+      "tolerance": 0.001,
+      "source": "evamist_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "ee_fitted_summary_residual",
+      "actual": 1.1287252502204586e-05,
+      "expected": 0,
+      "tolerance": 0.001,
+      "source": "ee_smpc",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "e4_summary_log_residual",
+      "actual": 0.03036483303439854,
+      "expected": 0,
+      "tolerance": 0.05,
+      "source": "e4_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "cee_E1_auc",
+      "actual": 1723.0,
+      "expected": 1723,
+      "tolerance": 0.001,
+      "source": "cee_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "cee_E1_peak_within_cv",
+      "actual": 42.53002213362192,
+      "expected": 64,
+      "tolerance": 26.88,
+      "source": "cee_label",
+      "calibration": false,
+      "passed": true
+    },
+    {
+      "name": "cee_EQUILIN_auc",
+      "actual": 602.0,
+      "expected": 602,
+      "tolerance": 0.001,
+      "source": "cee_label",
+      "calibration": true,
+      "passed": true
+    },
+    {
+      "name": "cee_EQUILIN_peak_within_cv",
+      "actual": 21.1582887267135,
+      "expected": 31,
+      "tolerance": 11.78,
+      "source": "cee_label",
+      "calibration": false,
+      "passed": true
+    }
+  ]
+}

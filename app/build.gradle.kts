@@ -26,11 +26,13 @@ android {
         applicationId = "com.huanli233.journal.open"
         minSdk = 26
         targetSdk = 36
-        versionCode = 77
-        versionName = "11.17.5"
+        versionCode = 82
+        versionName = "11.18.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    sourceSets.getByName("androidTest").assets.srcDir("$projectDir/schemas")
 
     room {
         schemaDirectory("$projectDir/schemas")
@@ -84,6 +86,17 @@ android {
     buildFeatures {
         compose = true
     }
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+        unitTests.all { task ->
+            listOf("http.proxyHost", "http.proxyPort", "https.proxyHost", "https.proxyPort", "robolectric.dependency.repo.url").forEach { property ->
+                System.getProperty(property)?.let { task.systemProperty(property, it) }
+            }
+        }
+    }
+    sourceSets.getByName("test").resources.srcDir("$projectDir/schemas")
+    sourceSets.getByName("test").resources.srcDir("$projectDir/src/main/res/raw")
+    sourceSets.getByName("test").resources.srcDir("$rootDir/tools/drugdata/hrt_models")
 }
 
 autoResConfig {
@@ -106,6 +119,8 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.material3.adaptive.navigation.suite.android)
     testImplementation(libs.junit)
+    testImplementation(libs.androidx.ui.test.junit4)
+    testImplementation("org.robolectric:robolectric:4.17")
     testImplementation("org.json:json:20260522")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

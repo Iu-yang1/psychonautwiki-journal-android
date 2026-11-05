@@ -1,5 +1,8 @@
 package com.isaakhanimann.journal
 
+import android.content.Context
+import com.isaakhanimann.journal.data.hrt.*
+import kotlinx.coroutines.launch
 import android.app.Application
 import android.text.TextUtils
 import androidx.appcompat.app.AppCompatDelegate
@@ -16,6 +19,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.runBlocking
 import java.util.Locale
@@ -23,6 +27,14 @@ import javax.inject.Inject
 
 @HiltAndroidApp
 class JournalApp : Application() {
+    @Inject lateinit var legacyReminders: com.isaakhanimann.journal.notifications.LegacyReminderCoordinator
+    @Inject lateinit var databaseStartup: DatabaseStartup
+
+    override fun attachBaseContext(base: Context) {
+        super.attachBaseContext(base)
+        DatabaseRecovery.beforeApplicationStarts(base)
+    }
+    @Inject lateinit var hrtNotifications: com.isaakhanimann.journal.notifications.HrtPlanNotifications
 
     @Inject
     lateinit var userPreferences: UserPreferences
@@ -44,6 +56,8 @@ class JournalApp : Application() {
         super.onCreate()
         updateLocale()
         substanceRepository.refreshSubstance()
+        databaseStartup.start()
+        applicationScope.launch { databaseStartup.state.collect { if (it == DatabaseStartupState.Ready) { hrtNotifications.start(); legacyReminders.start() } } }
     }
 
     fun updateLocale() {
@@ -71,9 +85,8 @@ class JournalApp : Application() {
     }
 
     fun getLocale(): Locale? {
-        val tag: String = runBlocking {
-            languageStateFlow.first { it != null }!!
-        }
+        val tag: String = runBlocking { kotlinx.coroutines.withTimeoutOrNull(2000) { languageStateFlow.first { it != null } } }
+            ?: "SYSTEM".also { android.util.Log.w("JournalApp", "Locale preferences unavailable before startup recovery") }
         return getLocale(tag)
     }
 

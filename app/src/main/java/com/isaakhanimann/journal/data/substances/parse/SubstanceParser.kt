@@ -147,6 +147,7 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             doseUseReferences = doseUseReferences,
             hrtModelInfo = hrtModelInfo,
             sourceRefs = sourceRefs,
+            id = jsonSubstance.optString("id", name),
         )
     }
 

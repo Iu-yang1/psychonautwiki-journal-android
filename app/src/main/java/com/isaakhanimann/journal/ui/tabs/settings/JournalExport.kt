@@ -31,6 +31,8 @@ import java.time.LocalTime
 
 @Serializable
 data class JournalExport(
+    val formatVersion: Int = 1,
+    val hrt: com.isaakhanimann.journal.data.hrt.HrtBackup = com.isaakhanimann.journal.data.hrt.HrtBackup(),
     val experiences: List<ExperienceSerializable> = emptyList(),
     val substanceCompanions: List<SubstanceCompanion> = emptyList(),
     val customSubstances: List<CustomSubstance> = emptyList(),
@@ -44,6 +46,7 @@ data class RecipeSubcomponentSerializable(
     val id: Int = 0,
     val substanceName: String?,
     val customUnitId: Int? = null,
+    val customUnitDose: Double? = null,
     val dose: Double?,
     var estimatedDoseStandardDeviation: Double?,
     var isEstimate: Boolean,
@@ -103,6 +106,9 @@ data class RatingSerializable(
 
 @Serializable
 data class IngestionSerializable(
+    val id: Int? = null,
+    val hrtLink: com.isaakhanimann.journal.data.hrt.MedicationLink? = null,
+    val hrtDetail: com.isaakhanimann.journal.data.hrt.HrtEventDetail? = null,
     val substanceName: String? = null,
     @Serializable(with= InstantSerializer::class) var time: Instant,
     @Serializable(with= InstantSerializer::class) var endTime: Instant?,

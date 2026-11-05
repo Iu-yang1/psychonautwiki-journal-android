@@ -73,7 +73,10 @@ object AppModule {
             MIGRATION_14_15,
             MIGRATION_15_16,
             MIGRATION_16_17,
-            MIGRATION_17_18
+            MIGRATION_17_18,
+            AppDatabase.MIGRATION_18_19,
+            AppDatabase.MIGRATION_19_20,
+            AppDatabase.MIGRATION_20_21
         ).build()
 
     @Singleton

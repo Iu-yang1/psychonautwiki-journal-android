@@ -1,207 +1,129 @@
-/*
- * Copyright (c) 2023. Isaak Hanimann.
- * This file is part of PsychonautWiki Journal.
- *
- * PsychonautWiki Journal is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or (at
- * your option) any later version.
- *
- * PsychonautWiki Journal is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with PsychonautWiki Journal.  If not, see https://www.gnu.org/licenses/gpl-3.0.en.html.
- */
-
 package com.isaakhanimann.journal.data.substances.repositories
 
-import com.isaakhanimann.journal.data.substances.classes.SubstanceWithCategories
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.map
+import android.content.Context
+import androidx.room.withTransaction
+import com.isaakhanimann.journal.applicationScope
+import com.isaakhanimann.journal.data.hrt.*
+import com.isaakhanimann.journal.data.room.AppDatabase
+import com.isaakhanimann.journal.data.substances.classes.*
+import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.currentCoroutineContext
+import kotlinx.coroutines.ensureActive
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import kotlinx.coroutines.flow.*
 import javax.inject.Inject
 import javax.inject.Singleton
+import java.util.Locale
 
 @Singleton
+@OptIn(ExperimentalCoroutinesApi::class)
 class SearchRepository @Inject constructor(
-    val substanceRepo: SubstanceRepository
+    @param:ApplicationContext private val context: Context,
+    val substanceRepo: SubstanceRepository,
+    private val database: AppDatabase,
 ) : SearchRepositoryInterface {
+    private val preferences = context.getSharedPreferences("medication_search", 0)
+    private val modes = setOf("default", "recent", "name")
+    val sortMode = MutableStateFlow(preferences.getString("sort", "default")?.takeIf { it in modes } ?: "default")
+    val favorites = database.hrtDao().settings().map { settings -> settings.filter { it.id.startsWith("favorite:") && it.payload == "true" }.map { it.id.removePrefix("favorite:") }.toSet() }
+        .distinctUntilChanged().stateIn(applicationScope, SharingStarted.Eagerly, emptySet())
 
-    override fun getMatchingSubstances(
-        searchText: String,
-        filterCategories: List<String>,
-        recentlyUsedSubstanceNamesSorted: List<String>,
-    ): List<SubstanceWithCategories> {
-        val substancesMatchingCategories = getSubstancesMatchingCategories(filterCategories)
-        val substancesFilteredWithText = getSubstancesMatchingSearchText(searchText, prefilteredSubstances = substancesMatchingCategories)
-        return getSubstancesSorted(prefilteredSubstances = substancesFilteredWithText, recentlyUsedSubstanceNamesSorted = recentlyUsedSubstanceNamesSorted)
+    private val clock = flow { while (true) { emit(System.currentTimeMillis()); delay(60000) } }
+    private val dataRanking = combine(
+        database.experienceDao().getIngestionsSortedDescendingFlow(),
+        database.hrtDao().plans(), database.hrtDao().settings(), database.hrtDao().links(),
+        database.experienceDao().getCustomSubstancesFlow()
+    ) { events, plans, settings, links, custom ->
+        val catalog = substanceRepo.getAllSubstances().map { IdentityEntry(it.id, it.name, it.commonNames, it.availableRoutesForIngestion().map { route -> route.name }.toSet()) }
+        val linkMap = links.associateBy { it.ingestionId }
+        val customNames = custom.map { it.name }.toSet()
+        val index = MedicationIdentityIndex(catalog, customNames)
+        val recent = events.sortedByDescending { it.time }.mapNotNull { event ->
+            if (event.id in linkMap) linkMap.getValue(event.id).medicationId
+            else index.resolve(event.substanceName, event.administrationRoute.name)
+        }.distinct()
+        Triple(plans, settings, recent)
+    }.flowOn(Dispatchers.Default)
+    val ranking = combine(dataRanking, clock) { (plans, settings, recent), now ->
+        MedicationSearchRanking(
+            settings.filter { it.id.startsWith("favorite:") && it.payload == "true" }.map { it.id.removePrefix("favorite:") }.toSet(),
+            plans.filter { !it.paused && it.start <= now && (PlanSchedule.read(it, settings).end ?: Long.MAX_VALUE) >= now }.map { it.medicationId }.toSet(),
+            recent,
+        )
+    }.distinctUntilChanged().flowOn(Dispatchers.Default).stateIn(applicationScope, SharingStarted.Eagerly, MedicationSearchRanking())
+
+    private class PreparedCatalog(val substances: List<SubstanceWithCategories>, val locale: Locale) {
+        val byId = substances.associateBy { it.substance.id }
+        val index = MedicationSearchIndex(substances.map { item ->
+            val sub = item.substance
+            MedicationSearchEntry(sub.id, sub.name, sub.commonNames, sub.categories.toSet(), sub.availableRoutesForIngestion().map { it.name }.toSet(),
+                sub.searchFormulations(), sub.referenceSearchText(), sub.localizedSortName(locale))
+        }, locale)
     }
-
-    // --- NEW METHOD ADDED ---
-    /**
-     * A reactive version of getMatchingSubstances that returns a Flow.
-     * This is ideal for observing substance data changes in a UI.
-     * Note: This implementation does not include category filtering or recent-based sorting
-     * for simplicity, as it's primarily used for the substance selector which needs all substances.
-     *
-     * @param searchText The text to filter substances by.
-     * @return A Flow emitting the list of matching substances.
-     */
-    fun getMatchingSubstancesFlow(searchText: String): Flow<List<SubstanceWithCategories>> {
-        // Assumption: substanceRepo provides a method to get all substances as a Flow.
-        // This is a common pattern with Room DB.
-        val allSubstancesFlow = substanceRepo.getAllSubstancesWithCategoriesFlow()
-
-        return allSubstancesFlow.map { allSubstances ->
-            // Reuse the existing text filtering logic within the flow's map operator.
-            getSubstancesMatchingSearchText(searchText, allSubstances)
+    @Volatile private var prepared: PreparedCatalog? = null
+    @Synchronized private fun prepare(substances: List<SubstanceWithCategories>): PreparedCatalog {
+        val locale = context.resources.configuration.locales[0]
+        return prepared?.takeIf { it.substances === substances && it.locale == locale } ?: PreparedCatalog(substances, locale).also { prepared = it }
+    }
+    init {
+        applicationScope.launch(Dispatchers.Default) {
+            substanceRepo.getAllSubstancesWithCategoriesFlow().collect { prepare(it) }
         }
     }
 
-    private fun getSubstancesMatchingCategories(filterCategories: List<String>): List<SubstanceWithCategories> {
-        return substanceRepo.getAllSubstancesWithCategories().filter { substanceWithCategories ->
-            filterCategories.all { substanceWithCategories.substance.categories.contains(it) }
+    fun setSortMode(mode: String) {
+        require(mode in modes)
+        preferences.edit().putString("sort", mode).apply()
+        sortMode.value = mode
+    }
+
+    suspend fun toggleFavorite(id: String) = database.withTransaction {
+        require(substanceRepo.getAllSubstances().any { it.id == id })
+        val key = "favorite:$id"
+        val old = database.hrtDao().setting(key)?.payload == "true"
+        database.hrtDao().save(HrtModelSetting(key, (!old).toString()))
+    }
+
+    fun observe(text: Flow<String>, categories: Flow<List<String>> = flowOf(emptyList()), routes: Flow<Set<String>> = flowOf(emptySet()), formulations: Flow<Set<String>> = flowOf(emptySet()), references: Flow<Boolean> = flowOf(false)): Flow<List<SubstanceWithCategories>> {
+        val requests = combine(text, categories, routes, formulations, references) { query, category, route, formulation, include ->
+            MedicationSearchRequest(query, category.toSet(), route, formulation, include)
         }
-    }
-
-    private fun getSubstancesMatchingSearchText(searchText: String, prefilteredSubstances: List<SubstanceWithCategories>): List<SubstanceWithCategories> {
-        return if (searchText.isEmpty()) {
-            prefilteredSubstances
-        } else {
-            val searchString = searchText.normalizedForSearch()
-            // substances whose primary name begins with the search string
-            val mainPrefixMatches = prefilteredSubstances.filter { substanceWithCategories ->
-                substanceWithCategories.substance.name.normalizedForSearch().startsWith(
-                    prefix = searchString, ignoreCase = true
-                )
+        return combine(requests, sortMode, ranking, substanceRepo.getAllSubstancesWithCategoriesFlow()) { request, mode, context, substances ->
+            Triple(request.copy(sort = mode), context, substances)
+        }.mapLatest { (request, context, substances) ->
+            withContext(Dispatchers.Default) {
+                val cancellation = currentCoroutineContext()
+                val catalog = prepare(substances)
+                catalog.index.rank(request, context) { cancellation.ensureActive() }.map { catalog.byId.getValue(it) }
             }
-            // substances with any searchable field beginning with the search string
-            val prefixMatches = prefilteredSubstances.filter { substanceWithCategories ->
-                substanceWithCategories.searchableTerms().any { term ->
-                    term.normalizedForSearch().startsWith(
-                        prefix = searchString, ignoreCase = true
-                    )
-                }
-            }
-            // substances containing the search string in any searchable field
-            val matches = prefilteredSubstances.filter { substanceWithCategories ->
-                substanceWithCategories.searchableTerms().any { term ->
-                    term.normalizedForSearch().contains(
-                        other = searchString, ignoreCase = true
-                    )
-                }
-            }
-            return (mainPrefixMatches + prefixMatches + matches).distinctBy { it.substance.name }
-        }
+        }.distinctUntilChanged()
     }
 
-    private fun getSubstancesSorted(
-        prefilteredSubstances: List<SubstanceWithCategories>,
-        recentlyUsedSubstanceNamesSorted: List<String>
-    ): List<SubstanceWithCategories> {
-        val recentNames = recentlyUsedSubstanceNamesSorted.distinct()
-        val recentlyUsedMatches =
-            recentNames.filter { recent -> prefilteredSubstances.any { it.substance.name == recent } }
-                .mapNotNull {
-                    substanceRepo.getSubstanceWithCategories(
-                        substanceName = it
-                    )
-                }
-        val commonSubstanceMatches =
-            prefilteredSubstances.filter { sub -> sub.categories.any { cat -> cat.name == "common" } }
-        return (recentlyUsedMatches + commonSubstanceMatches + prefilteredSubstances).distinctBy { it.substance.name }
+    override fun getMatchingSubstances(searchText: String, filterCategories: List<String>, recentlyUsedSubstanceNamesSorted: List<String>): List<SubstanceWithCategories> {
+        val recent = recentlyUsedSubstanceNamesSorted.mapNotNull { substanceRepo.getSubstance(it)?.id }
+        val context = ranking.value
+        return search(substanceRepo.getAllSubstancesWithCategories(), MedicationSearchRequest(searchText, filterCategories.toSet(), sort = sortMode.value),
+            if (recent.isEmpty()) context else context.copy(recentIds = (recent + context.recentIds).distinct()))
     }
 
-    private fun SubstanceWithCategories.searchableTerms(): List<String> {
-        val currentSubstance = substance
-        val clinicalInfo = currentSubstance.clinicalInfo
-        val tdm = currentSubstance.tdm
-        val endocrineInfo = currentSubstance.endocrineInfo
-        val hrtModelInfo = currentSubstance.hrtModelInfo
-        return currentSubstance.commonNames +
-            currentSubstance.name +
-            currentSubstance.categories +
-            categories.map { it.name } +
-            currentSubstance.sourceRefs.flatMap { source ->
-                listOf(source.title, source.sourceType)
-            } +
-            clinicalInfo?.atcCodes.orEmpty() +
-            clinicalInfo?.drugClass.orEmpty() +
-            clinicalInfo?.indications.orEmpty() +
-            clinicalInfo?.contraindications.orEmpty() +
-            clinicalInfo?.majorWarnings.orEmpty() +
-            clinicalInfo?.majorInteractions.orEmpty() +
-            clinicalInfo?.monitoring.orEmpty() +
-            listOfNotNull(tdm?.monitoringType, tdm?.reason, tdm?.specimen, tdm?.samplingTime, tdm?.assayMethod) +
-            tdm?.analytes.orEmpty() +
-            tdm?.therapeuticRanges.orEmpty().flatMap { range ->
-                listOfNotNull(range.indication, range.range, range.unit, range.note)
-            } +
-            tdm?.toxicityThresholds.orEmpty().flatMap { threshold ->
-                listOfNotNull(threshold.threshold, threshold.unit, threshold.note)
-            } +
-            tdm?.criticalValues.orEmpty().flatMap { threshold ->
-                listOfNotNull(threshold.threshold, threshold.unit, threshold.note)
-            } +
-            tdm?.interpretationCaveats.orEmpty() +
-            currentSubstance.timeCourse.flatMap { timeCourse ->
-                listOfNotNull(timeCourse.route, timeCourse.formulation) +
-                    listOf("Tmax", "half-life").filter { term ->
-                        when (term) {
-                            "Tmax" -> timeCourse.tmax != null
-                            else -> timeCourse.eliminationHalfLife != null
-                        }
-                    } +
-                    timeCourse.notes
-            } +
-            endocrineInfo?.hormoneClass.orEmpty() +
-            endocrineInfo?.mechanisms.orEmpty() +
-            endocrineInfo?.affectedHormones.orEmpty() +
-            endocrineInfo?.monitoringLabs.orEmpty() +
-            endocrineInfo?.assayCaveats.orEmpty() +
-            endocrineInfo?.safetySignals.orEmpty() +
-            endocrineInfo?.modelRoles.orEmpty() +
-            currentSubstance.doseUseReferences.flatMap { reference ->
-                listOfNotNull(
-                    reference.indication,
-                    reference.population,
-                    reference.route,
-                    reference.formulation,
-                    reference.amountText,
-                    reference.scheduleText,
-                    reference.scheduleReviewStatus,
-                    reference.scheduleReviewedDate,
-                    reference.reviewedLabelMatch,
-                    reference.sourceType,
-                    reference.evidenceLevel,
-                    reference.note
-                ) +
-                    reference.ranges.flatMap { range ->
-                        listOfNotNull(
-                            range.unit,
-                            range.basis,
-                            range.frequency,
-                            range.rangeKind,
-                            range.label,
-                            range.note
-                        ) + range.components.flatMap { component ->
-                            listOf(component.substance, component.unit)
-                        }
-                    } +
-                    reference.sourceRefs.flatMap { source ->
-                        listOf(source.title, source.sourceType)
-                    }
-            } +
-            hrtModelInfo?.modelRoles.orEmpty() +
-            hrtModelInfo?.primaryModeledAnalytes.orEmpty() +
-            hrtModelInfo?.requiredEventFields.orEmpty() +
-            hrtModelInfo?.requiredLabFields.orEmpty() +
-            hrtModelInfo?.caveats.orEmpty()
+    fun getMatchingSubstancesFlow(searchText: String): Flow<List<SubstanceWithCategories>> = observe(flowOf(searchText))
+
+    private fun search(substances: List<SubstanceWithCategories>, request: MedicationSearchRequest, ranking: MedicationSearchRanking): List<SubstanceWithCategories> {
+        val catalog = prepare(substances)
+        return catalog.index.rank(request, ranking).map { catalog.byId.getValue(it) }
     }
 
-    private fun String.normalizedForSearch(): String {
-        return replace(Regex("[- ]"), "")
-    }
 }
+
+internal fun Substance.referenceSearchText(): String = listOfNotNull(
+        summary, effectsSummary, dosageRemark, generalRisks, longtermRisks,
+        clinicalInfo?.let { (it.atcCodes + it.drugClass + it.indications + it.contraindications + it.majorWarnings + it.majorInteractions + it.monitoring).joinToString(" ") },
+        endocrineInfo?.let { (it.hormoneClass + it.mechanisms + it.affectedHormones + it.monitoringLabs + it.assayCaveats).joinToString(" ") },
+        sourceRefs.joinToString(" ") { it.title },
+        timeCourse.joinToString(" ") { (it.notes + listOfNotNull(it.formulation)).joinToString(" ") },
+        doseUseReferences.joinToString(" ") { listOfNotNull(it.indication, it.note, it.amountText, it.scheduleText).joinToString(" ") },
+    ).joinToString(" ")

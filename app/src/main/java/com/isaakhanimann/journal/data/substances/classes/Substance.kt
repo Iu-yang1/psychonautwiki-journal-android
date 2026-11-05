@@ -47,6 +47,8 @@ data class Substance(
     val doseUseReferences: List<DoseUseReference> = emptyList(),
     val hrtModelInfo: HrtModelInfo? = null,
     val sourceRefs: List<SourceRef> = emptyList(),
+    val id: String = name,
+    val identity: MedicationCatalogIdentity? = null,
 ) {
     fun getRoa(route: AdministrationRoute): Roa? {
         return roas.firstOrNull { it.route == route }

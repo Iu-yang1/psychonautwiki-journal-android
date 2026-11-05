@@ -17,6 +17,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -35,6 +36,7 @@ import com.isaakhanimann.journal.di.RecipeResultHolder
 import com.isaakhanimann.journal.di.SubstanceResultHolder
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
@@ -47,6 +49,7 @@ sealed class SubstanceOrUnit {
 
 @HiltViewModel
 class SubstanceSelectorViewModel @Inject constructor(
+    private val searchRepository: com.isaakhanimann.journal.data.substances.repositories.SearchRepository,
     private val resultHolder: RecipeResultHolder,
     private val substanceResultHolder: SubstanceResultHolder,
     experienceRepository: ExperienceRepository
@@ -59,6 +62,11 @@ class SubstanceSelectorViewModel @Inject constructor(
             started = SharingStarted.WhileSubscribed(5000),
             initialValue = emptyList()
         )
+
+    private val query = kotlinx.coroutines.flow.MutableStateFlow("")
+    fun filter(text: String) { query.value = text }
+    val matchingNames = searchRepository.observe(query).map { entries -> entries.map { it.substance.name } }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     private var pendingSubcomponentIndex: Int? = null
 
@@ -100,12 +108,14 @@ fun SubstanceSelectorScreen(
     val customUnits by viewModel.customUnitsFlow.collectAsState()
     var searchText by remember { mutableStateOf("") }
 
-    val filteredCustomUnits = remember(searchText, customUnits) {
+    LaunchedEffect(searchText) { viewModel.filter(searchText) }
+    val matchingNames by viewModel.matchingNames.collectAsState()
+    val filteredCustomUnits = remember(searchText, customUnits, matchingNames) {
         if (searchText.isBlank()) {
             customUnits
         } else {
             customUnits.filter { unit ->
-                unit.name.contains(searchText, ignoreCase = true) ||
+                unit.substanceName in matchingNames || unit.name.contains(searchText, ignoreCase = true) ||
                         unit.substanceName.contains(searchText, ignoreCase = true) ||
                         unit.note.contains(searchText, ignoreCase = true)
             }
@@ -161,6 +171,12 @@ fun SubstanceSelectorScreen(
                 )
             }
 
+            items(matchingNames.filter { it in allSubstances }) { name ->
+                ListItem(headlineContent = { Text(name) }, modifier = Modifier.clickable {
+                    viewModel.selectSubstance(subcomponentIndex, name)
+                    onSubstanceSelected()
+                })
+            }
             if (filteredCustomUnits.isNotEmpty()) {
                 item {
                     ListItem(

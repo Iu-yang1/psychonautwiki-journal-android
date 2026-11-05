@@ -1,0 +1,726 @@
+{
+  "version": "2026-11-05.2",
+  "sources": {
+    "doll2022": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+      "kind": "human-pk-study",
+      "population": "10 transgender women, single 1 mg micronized E2; LC-MS/MS; sampling through 8 h",
+      "anchors": {
+        "oral_peak_pg_ml": 35,
+        "oral_sample_peak_h": 8,
+        "sl_peak_pg_ml": 144,
+        "sl_sample_peak_h": 1,
+        "sl_oral_auc_0_8_ratio": 1.8
+      },
+      "baseline": "reported concentrations; baseline correction not available in abstract"
+    },
+    "oral_smpc": {
+      "url": "https://www.medicines.org.uk/emc/product/1347/smpc",
+      "kind": "regulatory-label",
+      "anchors": {
+        "oral_terminal_half_life_h": [
+          10,
+          16
+        ]
+      }
+    },
+    "oriowo1980": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7389356/",
+      "kind": "human-pk-study",
+      "population": "single 5 mg ester IM in 1 mL arachis oil",
+      "anchors": {
+        "ev_peak_day_approx": 2,
+        "ec_peak_day_approx": 4
+      }
+    },
+    "rothman2024": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11669617/",
+      "kind": "peer-reviewed-source-review",
+      "original_doi": "10.1016/0010-7824(80)80018-7",
+      "anchors": {
+        "ev_peak_pg_ml": 667,
+        "ev_peak_ci": [
+          457,
+          983
+        ],
+        "ev_tmax_h": 52.8,
+        "ec_peak_pg_ml": 337,
+        "ec_peak_ci": [
+          207,
+          550
+        ],
+        "ec_tmax_h": 93.6
+      },
+      "notes": "Peak values transcribed from authors review of Oriowo; period geometric mean is not treated as a time-integrated AUC."
+    },
+    "estrogel_fda": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2004/21166_Estrogel%20Gel_biopharmr.PDF",
+      "kind": "regulatory-review",
+      "pdf_pages": [
+        16,
+        17
+      ],
+      "population": "UMD-01-078, 0.75 mg E2 in 1.25 g 0.06% gel on one arm; not washed; baseline-adjusted",
+      "anchors": {
+        "single_auc_0_24": 97.71,
+        "single_auc_sd": 112.27,
+        "single_cmax": 11.42,
+        "single_cmax_sd": 12.39,
+        "day14_auc_0_24": 572.48,
+        "day14_auc_sd": 349.04,
+        "day14_cmax": 42.83,
+        "day14_cmax_sd": 26.95
+      },
+      "pdf_sha256": "4d54f38758e43df13737003e2d28f5af162fd20466180cfcf99e750419537987",
+      "reference_version": "NDA 21-166 biopharmaceutics review, February 2004"
+    },
+    "estrogel_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=762ac371-bb8b-47e7-b48f-e80d452c9dd4",
+      "kind": "regulatory-label",
+      "anchors": {
+        "apparent_terminal_half_life_h": 36
+      }
+    },
+    "patch_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0500ee9b-bf4a-4432-9afe-20a7d60a6fe5&type=display",
+      "kind": "regulatory-label",
+      "population": "Original twice-weekly formulation, abdomen; 50 microgram/day; Table 2 footnote: 80 h",
+      "anchors": {
+        "baseline_pg_ml": 11.7,
+        "cavg_pg_ml": 57,
+        "cavg_sd": 23,
+        "cmin_pg_ml": 41,
+        "cmin_sd": 11,
+        "cmax_pg_ml": 83,
+        "cmax_sd": 41,
+        "reference_wear_h": 80,
+        "post_removal_half_life_h": [
+          5.9,
+          7.7
+        ]
+      }
+    },
+    "estrannaise_temporal_priors": {
+      "url": "https://github.com/WHSAH/estrannaise.js/blob/47198c4e0738849e9ac5b51605a477a5a6a1e814/src/modeldata.js",
+      "kind": "open-model-data",
+      "license": "MIT; alix 2025",
+      "notes": "Only injection transfer and effective turnover temporal priors are reused; amplitude and depot absorption refitted to reported study peaks. These are effective rates, not physiological E2 clearance."
+    },
+    "molecular_weights": {
+      "urls": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2984bce2-89bf-4768-a1ca-ccf03b1197be",
+        "https://webbook.nist.gov/cgi/cbook.cgi?ID=C313064&Units=SI"
+      ],
+      "kind": "regulatory-label-and-nist",
+      "anchors": {
+        "estradiol": 272.38,
+        "valerate": 356.5,
+        "cypionate": 396.5622
+      }
+    },
+    "kuhnz1998": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9793623/",
+      "kind": "human-single-dose-pk",
+      "population": "绝经后女性，4mg口服EV交叉试验；参考制剂组。"
+    },
+    "wiemeyer1986": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3814225/",
+      "kind": "published-apparent-pk-parameters",
+      "population": "绝经后女性，单次10mg EN肌注，RIA；按摘要表观参数重建。"
+    },
+    "en_mass": {
+      "url": "https://comptox.epa.gov/dashboard/chemical/details/DTXSID3023001",
+      "kind": "molecular-mass"
+    },
+    "divigel_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59e610dc-883e-4f07-9ec6-a5841b0bf9fb",
+      "kind": "regulatory-label",
+      "population": "0.1% Divigel，上大腿，14天，表2未校正基线。"
+    },
+    "divigel2026": {
+      "url": "https://link.springer.com/article/10.1007/s40268-026-00552-x",
+      "kind": "comparison-study-not-pooled",
+      "population": "日本绝经后女性10人，400cm²；其70.1h终末时间未与旧标签10h混用。"
+    },
+    "evamist_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a0aa631-133d-406b-9d32-8a1a99af4e50",
+      "kind": "regulatory-label",
+      "population": "绝经后女性，第14天前臂喷雾，1/2/3喷分别建模。"
+    },
+    "evamist_fda": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2007/022014s000_PharmR.pdf",
+      "kind": "regulatory-review"
+    },
+    "ee_smpc": {
+      "url": "https://www.medicines.org.uk/emc/product/1131/smpc",
+      "kind": "manufacturer-smpc",
+      "population": "Microgynon30复方中的EE成分；不推算复方的LNG或抑制作用。"
+    },
+    "e4_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a",
+      "kind": "regulatory-label",
+      "population": "NEXTSTELLIS空腹研究的无水E4成分，非单药研究；不推算DRSP作用。"
+    },
+    "cee_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fcd61a8-1a67-4785-a51a-45fca6fbb32b",
+      "kind": "regulatory-label",
+      "population": "绝经后女性，Premarin0.625mg混合物；分别输出基线校正E1与未结合Equilin。"
+    }
+  },
+  "assumptions": [
+    "Population reference responses, not a patient-specific or clinically validated prediction.",
+    "Linear superposition and dose scaling are modelling assumptions; no endogenous production, suppression or individualized fitting is inferred.",
+    "Reported unadjusted oral/sublingual and injection peaks cannot isolate baseline; they calibrate an effective response and may bias repeated-dose extrapolation.",
+    "Gel and patch models use the explicitly baseline-adjusted reference anchors; reference study baselines are not automatically added to user curves.",
+    "The gel model assumes absorption-limited 36 h terminal behavior and a 1 h systemic turnover prior; reported uncertainty is large.",
+    "Patch model uses nominal release rate as an empirical reservoir driver; it never interprets patch total drug loading as delivered dose.",
+    "Only listed chemical forms, formulations and administration routes are admitted; IM is not automatically applied to SC."
+  ],
+  "models": [
+    {
+      "id": "e2-im-ev-reference-v1",
+      "name": "EV 油剂肌注研究参考",
+      "medicationId": "pw:697a950f39ef007ec498",
+      "route": "INJECTION",
+      "administrationRoutes": [
+        "INTRAMUSCULAR"
+      ],
+      "chemicalFormId": "chemical:estradiol-valerate",
+      "formulationId": "form:oil-injection",
+      "kernel": "THREE_STAGE",
+      "absorptionPerHour": 0.00605635308560678,
+      "eliminationPerHour": 0.051666666666666666,
+      "transferPerHour": 0.2020833333333333,
+      "responseScale": 1989.369052506955,
+      "activeFraction": 0.764039270687237,
+      "version": "2026-11-05.1",
+      "sources": [
+        "oriowo1980",
+        "rothman2024",
+        "estrannaise_temporal_priors",
+        "molecular_weights"
+      ],
+      "assumptions": [
+        "油剂肌注；不外推皮下注射或水性悬浮剂。",
+        "转运/周转时间常数为开放模型先验；吸收率与幅度按报告峰值重拟合，不能解释为生理清除率。",
+        "峰值资料未分离个体基线；重复给药为线性研究外推。"
+      ],
+      "reviewed": true,
+      "driverUnit": "ACTIVE_E2_MG"
+    },
+    {
+      "id": "e2-im-ec-reference-v1",
+      "name": "EC 油剂肌注研究参考",
+      "medicationId": "pw:b4e7f7147b2a297d1bec",
+      "route": "INJECTION",
+      "administrationRoutes": [
+        "INTRAMUSCULAR"
+      ],
+      "chemicalFormId": "chemical:estradiol-cypionate",
+      "formulationId": "form:oil-injection",
+      "kernel": "THREE_STAGE",
+      "absorptionPerHour": 0.0033878393288097933,
+      "eliminationPerHour": 0.027875,
+      "transferPerHour": 0.14875,
+      "responseScale": 1083.424227799652,
+      "activeFraction": 0.6868531594791435,
+      "version": "2026-11-05.1",
+      "sources": [
+        "oriowo1980",
+        "rothman2024",
+        "estrannaise_temporal_priors",
+        "molecular_weights"
+      ],
+      "assumptions": [
+        "油剂肌注；不外推皮下注射或水性悬浮剂。",
+        "转运/周转时间常数为开放模型先验；吸收率与幅度按报告峰值重拟合，不能解释为生理清除率。",
+        "峰值资料未分离个体基线；重复给药为线性研究外推。"
+      ],
+      "reviewed": true,
+      "driverUnit": "ACTIVE_E2_MG"
+    },
+    {
+      "id": "e2-oral-reference-v1",
+      "name": "微粒化 E2 口服研究参考",
+      "medicationId": "pw:98ab6b0f8f3207ab787c",
+      "route": "ORAL",
+      "administrationRoutes": [
+        "ORAL"
+      ],
+      "chemicalFormId": "chemical:estradiol",
+      "formulationId": "form:oral-solid",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 0.2523485156580854,
+      "eliminationPerHour": 0.05,
+      "transferPerHour": null,
+      "responseScale": 52.21386441744446,
+      "activeFraction": 1,
+      "version": "2026-11-05.1",
+      "sources": [
+        "doll2022",
+        "oral_smpc"
+      ],
+      "assumptions": [
+        "以单次 1 mg 研究观测峰值拟合；表观半衰期先验约 13.9 小时。",
+        "8 小时是该研究最后采样点，不能据此断言真实峰值恰在 8 小时。",
+        "未建模内源性分泌或个体首过代谢。"
+      ],
+      "reviewed": true,
+      "driverUnit": "ACTIVE_E2_MG",
+      "compatibleMedicationIds": [
+        "pw:b84f5f32996f9da13201"
+      ]
+    },
+    {
+      "id": "e2-sl-reference-v1",
+      "name": "微粒化 E2 舌下研究参考",
+      "medicationId": "pw:4202d238dd1a07149f19",
+      "route": "SUBLINGUAL",
+      "administrationRoutes": [
+        "SUBLINGUAL"
+      ],
+      "chemicalFormId": "chemical:estradiol",
+      "formulationId": "form:oral-solid",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 1.8,
+      "eliminationPerHour": 0.724615860757686,
+      "transferPerHour": null,
+      "responseScale": 269.5099012465306,
+      "activeFraction": 1,
+      "version": "2026-11-05.1",
+      "sources": [
+        "doll2022"
+      ],
+      "assumptions": [
+        "按 1 小时采样值及 0–8 小时暴露比拟合，不将连续峰值时间冒充实测时间。",
+        "口腔颊黏膜、吞咽比例与含服时长不作自动等效换算。"
+      ],
+      "reviewed": true,
+      "driverUnit": "ACTIVE_E2_MG",
+      "compatibleMedicationIds": [
+        "pw:b84f5f32996f9da13201"
+      ]
+    },
+    {
+      "id": "e2-gel006-reference-v1",
+      "name": "EstroGel 0.06% 上臂研究参考",
+      "medicationId": "pw:2bc9549e0287e2a6906f",
+      "route": "GEL",
+      "administrationRoutes": [
+        "TRANSDERMAL"
+      ],
+      "chemicalFormId": "chemical:estradiol",
+      "formulationId": "form:gel",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 0.01925408834888737,
+      "eliminationPerHour": 0.6931471805599453,
+      "transferPerHour": null,
+      "responseScale": 529.9288288829597,
+      "activeFraction": 1,
+      "version": "2026-11-05.1",
+      "sources": [
+        "estrogel_fda",
+        "estrogel_label"
+      ],
+      "assumptions": [
+        "按 0.75 mg、上臂、不清洗的基线校正资料拟合。",
+        "假设终末 36 小时主要反映皮肤吸收，系统周转先验为 1 小时；不是独立测得的清除率。",
+        "研究变异很大；部位、清洗、防晒、其他浓度或载体均不自动等效。"
+      ],
+      "reviewed": true,
+      "driverUnit": "ACTIVE_E2_MG",
+      "compatibleMedicationIds": [
+        "pw:b84f5f32996f9da13201"
+      ]
+    },
+    {
+      "id": "e2-patch-tw-reference-v1",
+      "name": "原始每周两次贴片腹部研究参考",
+      "medicationId": "pw:c8c4379438eea61f506d",
+      "route": "PATCH",
+      "administrationRoutes": [
+        "TRANSDERMAL"
+      ],
+      "chemicalFormId": "chemical:estradiol",
+      "formulationId": "form:patch",
+      "kernel": "PATCH_DEPOT",
+      "absorptionPerHour": 0.013315008411209715,
+      "eliminationPerHour": 0.09902102579427789,
+      "transferPerHour": null,
+      "responseScale": 262838.69279881363,
+      "activeFraction": 1,
+      "version": "2026-11-05.1",
+      "sources": [
+        "patch_label"
+      ],
+      "assumptions": [
+        "名义释放率为经验储库驱动，不使用贴片总装载量。",
+        "50 μg/天参考组的平均值和谷值按标签脚注 80 小时处理；已减去研究基线 11.7 pg/mL。",
+        "实际贴上/移除区间决定输入；不能自动等同每周一次贴片或不同部位。"
+      ],
+      "reviewed": true,
+      "driverUnit": "NOMINAL_E2_MG_PER_HOUR",
+      "compatibleMedicationIds": [
+        "pw:b84f5f32996f9da13201"
+      ]
+    },
+    {
+      "id": "e2-oral-ev-reference-v1",
+      "name": "口服EV · Kuhnz1998参考",
+      "medicationId": "pw:3e8d9ced68e3d18c0218",
+      "route": "ORAL",
+      "administrationRoutes": [
+        "ORAL"
+      ],
+      "chemicalFormId": "chemical:estradiol-valerate",
+      "formulationId": "form:oral-solid",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 0.184839248149127,
+      "eliminationPerHour": 0.046209812037329684,
+      "responseScale": 17.024876282363934,
+      "activeFraction": 0.764039270687237,
+      "driverUnit": "CHEMICAL_FORM_MG",
+      "version": "2026-11-05.2",
+      "sources": [
+        "kuhnz1998"
+      ],
+      "assumptions": [
+        "以参考组4mg酯剂量的峰值、峰时及15小时终末时间重建，输入为EV酯mg。",
+        "有效参考响应未分离个人基线，未复现肠肝循环的每个次峰；不能替代实测。",
+        "剂量缩放与多次叠加为研究外推。白蛋白/SHBG和内源分泌未个体化。"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "e2-im-en-reference-v1",
+      "name": "EN单用肌注 · Wiemeyer1986表观参数",
+      "medicationId": "pw:3c12f5c0485c68b3d23e",
+      "route": "INJECTION",
+      "administrationRoutes": [
+        "INTRAMUSCULAR"
+      ],
+      "chemicalFormId": "chemical:estradiol-enanthate",
+      "formulationId": "form:oil-injection",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 0.06270833333333332,
+      "eliminationPerHour": 0.005185416666666667,
+      "responseScale": 196.57951641438962,
+      "activeFraction": 0.7082899937591013,
+      "driverUnit": "CHEMICAL_FORM_MG",
+      "version": "2026-11-05.2",
+      "sources": [
+        "wiemeyer1986",
+        "en_mass"
+      ],
+      "assumptions": [
+        "按论文摘要给出的吸收、消除速率及5087L表观容积重建，剂量口径为实际EN酯mg。",
+        "该容积为给定剂量口径的表观拟合值，不是实测生理分布容积；未从原图独立复核峰值。",
+        "研究为EN单用肌注与RIA检测，不套用DHPA复方、皮下途径或自配载体。",
+        "基线及个体差异不作自动校正，重复叠加仅为研究外推。"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "e2-divigel-reference-v1",
+      "name": "Divigel0.1% · 上大腿标签参考",
+      "medicationId": "pw:2bc9549e0287e2a6906f",
+      "route": "GEL",
+      "administrationRoutes": [
+        "TRANSDERMAL"
+      ],
+      "chemicalFormId": "chemical:estradiol",
+      "formulationId": "form:gel",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 0.9086671787324565,
+      "eliminationPerHour": 0.06931471805599453,
+      "responseScale": 50.73837361698799,
+      "activeFraction": 1.0,
+      "driverUnit": "CHEMICAL_FORM_MG",
+      "version": "2026-11-05.2",
+      "sources": [
+        "divigel_label",
+        "divigel2026"
+      ],
+      "assumptions": [
+        "采用旧标签1mg、第14天未校正基线的AUC/峰值及约10小时终末时间。",
+        "相位延迟由稳态峰时拟合，是经验参数，不是独立测量的皮肤吸收延迟。",
+        "2026年另一个400cm²研究报告更长终末时间，未将两组参数拼成同一模型。",
+        "限0.1%制剂、上大腿且未清洗条件；线性剂量缩放仅为近似，不能套用EstroGel或其他部位。",
+        "单次及非每日给药响应由稳态数据外推，未独立临床验证。"
+      ],
+      "reviewed": true,
+      "requiresProduct": true,
+      "lagHours": 5.184423190388733,
+      "referenceFamily": "divigel01",
+      "allowedSites": [
+        "upperthigh",
+        "leftupperthigh",
+        "rightupperthigh",
+        "上大腿",
+        "左上大腿",
+        "右上大腿"
+      ],
+      "compatibleMedicationIds": [
+        "pw:b84f5f32996f9da13201"
+      ]
+    },
+    {
+      "id": "e2-evamist-1-reference-v1",
+      "name": "Evamist · 1喷稳态参考",
+      "medicationId": "pw:c159600031b8ffa49688",
+      "route": "SPRAY",
+      "administrationRoutes": [
+        "TRANSDERMAL"
+      ],
+      "chemicalFormId": "chemical:estradiol",
+      "formulationId": "form:spray",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 0.2908293726949612,
+      "eliminationPerHour": 0.1454146863474806,
+      "responseScale": 44.76491324814598,
+      "activeFraction": 1.0,
+      "driverUnit": "CHEMICAL_FORM_MG",
+      "version": "2026-11-05.2",
+      "sources": [
+        "evamist_label",
+        "evamist_fda"
+      ],
+      "assumptions": [
+        "仅核对每日1喷、每喷1.53mg、前臂第14天的未校正基线数据。",
+        "吸收/周转速率及延迟为稳态形状的经验拟合，不是独立测量的生理半衰期。",
+        "单次和非每日响应属研究外推；标签与FDA评审不支持按喷数线性增加暴露。",
+        "其他剂量不套用此参数；1、2、3喷分别选择固定剂量响应，不外推到其他部位或载体。"
+      ],
+      "reviewed": true,
+      "requiresProduct": true,
+      "referenceFamily": "evamist",
+      "referenceDoseMg": 1.53,
+      "lagHours": 15.439932419218188,
+      "allowedSites": [
+        "forearm",
+        "leftforearm",
+        "rightforearm",
+        "前臂",
+        "左前臂",
+        "右前臂"
+      ],
+      "compatibleMedicationIds": [
+        "pw:b84f5f32996f9da13201"
+      ]
+    },
+    {
+      "id": "e2-evamist-2-reference-v1",
+      "name": "Evamist · 2喷稳态参考",
+      "medicationId": "pw:c159600031b8ffa49688",
+      "route": "SPRAY",
+      "administrationRoutes": [
+        "TRANSDERMAL"
+      ],
+      "chemicalFormId": "chemical:estradiol",
+      "formulationId": "form:spray",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 0.29420031828835225,
+      "eliminationPerHour": 0.14710015914417612,
+      "responseScale": 35.38095331049465,
+      "activeFraction": 1.0,
+      "driverUnit": "CHEMICAL_FORM_MG",
+      "version": "2026-11-05.2",
+      "sources": [
+        "evamist_label",
+        "evamist_fda"
+      ],
+      "assumptions": [
+        "仅核对每日2喷、每喷1.53mg、前臂第14天的未校正基线数据。",
+        "吸收/周转速率及延迟为稳态形状的经验拟合，不是独立测量的生理半衰期。",
+        "单次和非每日响应属研究外推；标签与FDA评审不支持按喷数线性增加暴露。",
+        "其他剂量不套用此参数；1、2、3喷分别选择固定剂量响应，不外推到其他部位或载体。"
+      ],
+      "reviewed": true,
+      "requiresProduct": true,
+      "referenceFamily": "evamist",
+      "referenceDoseMg": 3.06,
+      "lagHours": 13.484199716797862,
+      "allowedSites": [
+        "forearm",
+        "leftforearm",
+        "rightforearm",
+        "前臂",
+        "左前臂",
+        "右前臂"
+      ],
+      "compatibleMedicationIds": [
+        "pw:b84f5f32996f9da13201"
+      ]
+    },
+    {
+      "id": "e2-evamist-3-reference-v1",
+      "name": "Evamist · 3喷稳态参考",
+      "medicationId": "pw:c159600031b8ffa49688",
+      "route": "SPRAY",
+      "administrationRoutes": [
+        "TRANSDERMAL"
+      ],
+      "chemicalFormId": "chemical:estradiol",
+      "formulationId": "form:spray",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 0.2695456712541817,
+      "eliminationPerHour": 0.13477283562709086,
+      "responseScale": 21.786806979368503,
+      "activeFraction": 1.0,
+      "driverUnit": "CHEMICAL_FORM_MG",
+      "version": "2026-11-05.2",
+      "sources": [
+        "evamist_label",
+        "evamist_fda"
+      ],
+      "assumptions": [
+        "仅核对每日3喷、每喷1.53mg、前臂第14天的未校正基线数据。",
+        "吸收/周转速率及延迟为稳态形状的经验拟合，不是独立测量的生理半衰期。",
+        "单次和非每日响应属研究外推；标签与FDA评审不支持按喷数线性增加暴露。",
+        "其他剂量不套用此参数；1、2、3喷分别选择固定剂量响应，不外推到其他部位或载体。"
+      ],
+      "reviewed": true,
+      "requiresProduct": true,
+      "referenceFamily": "evamist",
+      "referenceDoseMg": 4.59,
+      "lagHours": 15.143496798801541,
+      "allowedSites": [
+        "forearm",
+        "leftforearm",
+        "rightforearm",
+        "前臂",
+        "左前臂",
+        "右前臂"
+      ],
+      "compatibleMedicationIds": [
+        "pw:b84f5f32996f9da13201"
+      ]
+    },
+    {
+      "id": "ee-oral-reference-v1",
+      "name": "炔雌醇EE · 独立分析物参考",
+      "medicationId": "pw:1d8ab06b60d265c3477d",
+      "route": "ORAL",
+      "administrationRoutes": [
+        "ORAL"
+      ],
+      "chemicalFormId": "chemical:ethinylestradiol",
+      "formulationId": "form:oral-solid",
+      "kernel": "BIPHASIC",
+      "absorptionPerHour": 1.2729231650195167,
+      "eliminationPerHour": 0.03465735902799726,
+      "responseScale": 5273.722382871449,
+      "activeFraction": 1.0,
+      "driverUnit": "CHEMICAL_FORM_MG",
+      "version": "2026-11-05.2",
+      "sources": [
+        "ee_smpc"
+      ],
+      "assumptions": [
+        "输入为EE成分mg，输出为EE的pg/mL；不能与E2浓度相加或按效力换算。",
+        "参考Microgynon30的EE成分；快相半衰期取报告1–2小时的中值1.5小时，慢相20小时。",
+        "峰时取报告1–2小时的中值，重复峰值增幅以30–40%的中点作有效拟合。",
+        "这些快慢相是经验分解；不模拟LNG、SHBG变化、药物相互作用或卵巢抑制。"
+      ],
+      "reviewed": true,
+      "analyteId": "EE",
+      "fastEliminationPerHour": 0.46209812037329684,
+      "fastFraction": 0.7060860377314879,
+      "requiresProduct": true
+    },
+    {
+      "id": "e4-oral-reference-v1",
+      "name": "雌四醇E4 · 无水成分参考",
+      "medicationId": "pw:59320dd0ce3ca32429cb",
+      "route": "ORAL",
+      "administrationRoutes": [
+        "ORAL"
+      ],
+      "chemicalFormId": "chemical:estetrol",
+      "formulationId": "form:oral-solid",
+      "kernel": "BIPHASIC",
+      "absorptionPerHour": 2.0513319287388425,
+      "eliminationPerHour": 0.025672117798516494,
+      "responseScale": 3121.307627235399,
+      "activeFraction": 1.0,
+      "driverUnit": "CHEMICAL_FORM_MG",
+      "version": "2026-11-05.2",
+      "sources": [
+        "e4_label"
+      ],
+      "assumptions": [
+        "输入无水E4成分mg，输出E4的pg/mL；15mg单水合物按标签等于14.2mg无水E4，不是E2当量。",
+        "采用NEXTSTELLIS空腹多次给药资料；不将DRSP视作E4，也不模拟其作用。",
+        "快相与比例由峰值、暴露和蓄积资料拟合；27小时终末时间来自标签，快相不是独立测得的清除率。",
+        "按报告均值近似重建，峰时、蓄积及稳态天数只是群体参考，不适合作为个体调量依据。"
+      ],
+      "reviewed": true,
+      "analyteId": "E4",
+      "fastEliminationPerHour": 2.0711071875831086,
+      "fastFraction": 0.9774515066977121,
+      "requiresProduct": true
+    },
+    {
+      "id": "cee-e1-reference-v1",
+      "name": "Premarin · E1成分响应",
+      "medicationId": "pw:b7371f4396b00a2a6db0",
+      "route": "ORAL",
+      "administrationRoutes": [
+        "ORAL"
+      ],
+      "chemicalFormId": "chemical:conjugated-estrogens",
+      "formulationId": "form:oral-solid",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 0.23452104947055538,
+      "eliminationPerHour": 0.03431421685940323,
+      "responseScale": 94.59743303800283,
+      "activeFraction": 1.0,
+      "driverUnit": "CHEMICAL_FORM_MG",
+      "version": "2026-11-05.2",
+      "sources": [
+        "cee_label"
+      ],
+      "assumptions": [
+        "输入为Premarin标示CEE混合物mg，不假定所有CEE品牌具有相同组成或暴露。",
+        "输出仅为E1的未结合成分浓度；不是总雌激素、总受体效力或E2浓度。",
+        "E1采用标签基线校正值，Equilin按其独立测量值；以AUC与峰时标定，峰值在报告变异内比较。",
+        "多次给药线性叠加为研究外推，不建模成分间的完整代谢转换。"
+      ],
+      "reviewed": true,
+      "analyteId": "E1",
+      "requiresProduct": true,
+      "referenceFamily": "premarin"
+    },
+    {
+      "id": "cee-equilin-reference-v1",
+      "name": "Premarin · EQUILIN成分响应",
+      "medicationId": "pw:b7371f4396b00a2a6db0",
+      "route": "ORAL",
+      "administrationRoutes": [
+        "ORAL"
+      ],
+      "chemicalFormId": "chemical:conjugated-estrogens",
+      "formulationId": "form:oral-solid",
+      "kernel": "TWO_STAGE",
+      "absorptionPerHour": 0.24662549410856843,
+      "eliminationPerHour": 0.05373233957829033,
+      "responseScale": 51.75498948180924,
+      "activeFraction": 1.0,
+      "driverUnit": "CHEMICAL_FORM_MG",
+      "version": "2026-11-05.2",
+      "sources": [
+        "cee_label"
+      ],
+      "assumptions": [
+        "输入为Premarin标示CEE混合物mg，不假定所有CEE品牌具有相同组成或暴露。",
+        "输出仅为EQUILIN的未结合成分浓度；不是总雌激素、总受体效力或E2浓度。",
+        "E1采用标签基线校正值，Equilin按其独立测量值；以AUC与峰时标定，峰值在报告变异内比较。",
+        "多次给药线性叠加为研究外推，不建模成分间的完整代谢转换。"
+      ],
+      "reviewed": true,
+      "analyteId": "EQUILIN",
+      "requiresProduct": true,
+      "referenceFamily": "premarin"
+    }
+  ]
+}

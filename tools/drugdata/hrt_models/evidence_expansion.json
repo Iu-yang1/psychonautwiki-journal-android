@@ -1,0 +1,54 @@
+{
+  "version": "2026-11-05.2",
+  "sources": {
+    "kuhnz1998": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9793623/",
+      "kind": "human-single-dose-pk",
+      "population": "绝经后女性，4mg口服EV交叉试验；参考制剂组。"
+    },
+    "wiemeyer1986": {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3814225/",
+      "kind": "published-apparent-pk-parameters",
+      "population": "绝经后女性，单次10mg EN肌注，RIA；按摘要表观参数重建。"
+    },
+    "en_mass": {
+      "url": "https://comptox.epa.gov/dashboard/chemical/details/DTXSID3023001",
+      "kind": "molecular-mass"
+    },
+    "divigel_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59e610dc-883e-4f07-9ec6-a5841b0bf9fb",
+      "kind": "regulatory-label",
+      "population": "0.1% Divigel，上大腿，14天，表2未校正基线。"
+    },
+    "divigel2026": {
+      "url": "https://link.springer.com/article/10.1007/s40268-026-00552-x",
+      "kind": "comparison-study-not-pooled",
+      "population": "日本绝经后女性10人，400cm²；其70.1h终末时间未与旧标签10h混用。"
+    },
+    "evamist_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a0aa631-133d-406b-9d32-8a1a99af4e50",
+      "kind": "regulatory-label",
+      "population": "绝经后女性，第14天前臂喷雾，1/2/3喷分别建模。"
+    },
+    "evamist_fda": {
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2007/022014s000_PharmR.pdf",
+      "kind": "regulatory-review"
+    },
+    "ee_smpc": {
+      "url": "https://www.medicines.org.uk/emc/product/1131/smpc",
+      "kind": "manufacturer-smpc",
+      "population": "Microgynon30复方中的EE成分；不推算复方的LNG或抑制作用。"
+    },
+    "e4_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a",
+      "kind": "regulatory-label",
+      "population": "NEXTSTELLIS空腹研究的无水E4成分，非单药研究；不推算DRSP作用。"
+    },
+    "cee_label": {
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fcd61a8-1a67-4785-a51a-45fca6fbb32b",
+      "kind": "regulatory-label",
+      "population": "绝经后女性，Premarin0.625mg混合物；分别输出基线校正E1与未结合Equilin。"
+    }
+  },
+  "method": "Fixed literature anchors and explicitly documented effective fits; preserve all legacy profile parameters."
+}

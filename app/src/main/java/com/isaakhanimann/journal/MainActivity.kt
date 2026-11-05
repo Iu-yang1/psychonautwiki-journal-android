@@ -32,9 +32,16 @@ import com.isaakhanimann.journal.ui.main.MainScreen
 import com.isaakhanimann.journal.ui.theme.JournalTheme
 import com.isaakhanimann.journal.util.LocaleDelegate
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import com.isaakhanimann.journal.data.hrt.DatabaseStartup
+import com.isaakhanimann.journal.data.hrt.DatabaseStartupState
+import com.isaakhanimann.journal.ui.main.RecoveryCenter
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    @Inject lateinit var databaseStartup: DatabaseStartup
 
     private val localeDelegate by lazy {
         LocaleDelegate()
@@ -59,7 +66,14 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MainScreen()
+                    val state by databaseStartup.state.collectAsState()
+                    when (val status = state) {
+                        DatabaseStartupState.Checking -> androidx.compose.foundation.layout.Box(Modifier.fillMaxSize(), contentAlignment = androidx.compose.ui.Alignment.Center) {
+                            androidx.compose.material3.CircularProgressIndicator()
+                        }
+                        DatabaseStartupState.Ready -> MainScreen()
+                        is DatabaseStartupState.Failed -> RecoveryCenter(status.message, { databaseStartup.start(retry = true) })
+                    }
                 }
             }
         }

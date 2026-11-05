@@ -38,10 +38,15 @@ import kotlinx.coroutines.launch
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+import androidx.room.withTransaction
+import com.isaakhanimann.journal.data.room.AppDatabase
+import com.isaakhanimann.journal.data.hrt.*
 import javax.inject.Inject
 
 @HiltViewModel
 class SettingsViewModel @Inject constructor(
+    private val database: AppDatabase,
+    private val importService: JournalImportService,
     private val application: Application,
     private val experienceRepository: ExperienceRepository,
     private val fileSystemConnection: FileSystemConnection,
@@ -136,24 +141,10 @@ class SettingsViewModel @Inject constructor(
                 val json = Json { ignoreUnknownKeys = true }
                 val journalExport = json.decodeFromString<JournalExport>(text)
                 
-                importProgress = 0.2f
-                progressMessage = "Clearing existing data..."
-                
-                experienceRepository.deleteEverything()
-                
-                importProgress = 0.3f
-                progressMessage = "Importing experiences..."
-                
-                // Import with progress tracking
-                experienceRepository.insertEverythingWithProgress(
-                    journalExport = journalExport,
-                    imageExportHelper = imageExportHelper,
-                    onProgressUpdate = { progress, message ->
-                        importProgress = 0.3f + (progress * 0.7f) // Scale to 30-100%
-                        progressMessage = message
-                    }
-                )
-                
+                importService.replace(journalExport) { progress, message ->
+                    importProgress = progress
+                    progressMessage = message
+                }
                 importProgress = 1f
                 progressMessage = "Import completed!"
                 
@@ -162,6 +153,7 @@ class SettingsViewModel @Inject constructor(
                     duration = SnackbarDuration.Short
                 )
             } catch (e: Throwable) {
+                if (e is kotlinx.coroutines.CancellationException) throw e;
                 val errorDetails = when (e) {
                     is java.lang.OutOfMemoryError -> {
                         "Out of memory - file too large: ${e.message}"
@@ -203,6 +195,7 @@ class SettingsViewModel @Inject constructor(
             progressMessage = "Loading data..."
             
             try {
+                val journalExport = database.withTransaction {
                 val experiencesWithIngestionsAndRatings =
                     experienceRepository.getAllExperiencesWithIngestionsTimedNotesAndRatingsSorted()
                 
@@ -230,7 +223,7 @@ class SettingsViewModel @Inject constructor(
                                 progressMessage = "Processing images... ($processedPhotos/$totalPhotos)"
                             }
                             
-                            val imageBase64 = imageExportHelper.imageToBase64(photo.filePath) ?: ""
+                            val imageBase64 = imageExportHelper.imageToBase64(photo.filePath)
                             TimedNotePhotoSerializable(
                                 id = photo.id,
                                 imageBase64 = imageBase64,
@@ -259,6 +252,9 @@ class SettingsViewModel @Inject constructor(
                         isFavorite = it.experience.isFavorite,
                         ingestions = it.ingestions.map { ingestion ->
                             IngestionSerializable(
+                                id = ingestion.id,
+                                hrtLink = database.hrtDao().link(ingestion.id),
+                                hrtDetail = database.hrtDao().detail(ingestion.id),
                                 substanceName = ingestion.substanceName,
                                 time = ingestion.time,
                                 endTime = ingestion.endTime,
@@ -357,10 +353,12 @@ class SettingsViewModel @Inject constructor(
                                 id = subcomponent.id,
                                 substanceName = subcomponent.substanceName,
                                 customUnitId = subcomponent.customUnitId,
+                                customUnitDose = subcomponent.customUnitDose,
                                 dose = subcomponent.dose,
                                 estimatedDoseStandardDeviation = subcomponent.estimatedDoseStandardDeviation,
                                 isEstimate = subcomponent.isEstimate,
-                                originalUnit = subcomponent.originalUnit
+                                originalUnit = subcomponent.originalUnit,
+                                creationDate = subcomponent.creationDate
                             )
                         }
                     )
@@ -387,7 +385,10 @@ class SettingsViewModel @Inject constructor(
                 exportProgress = 0.8f
                 progressMessage = "Creating export file..."
                 
-                val journalExport = JournalExport(
+                val hrtDao = database.hrtDao()
+                val snapshot = JournalExport(
+                    formatVersion = 2,
+                    hrt = HrtBackup(hrtDao.exportPlans(), hrtDao.exportStock(), hrtDao.exportMovements(), hrtDao.exportLabs(), hrtDao.exportSettings()),
                     experiences = experiencesSerializable,
                     substanceCompanions = experienceRepository.getAllSubstanceCompanions(),
                     customSubstances = experienceRepository.getAllCustomSubstances(),
@@ -396,6 +397,9 @@ class SettingsViewModel @Inject constructor(
                     ingestionReminders = remindersSerializable
                 )
                 
+                snapshot.validateForReplacement()
+                snapshot
+                }
                 exportProgress = 0.9f
                 progressMessage = "Saving file..."
                 

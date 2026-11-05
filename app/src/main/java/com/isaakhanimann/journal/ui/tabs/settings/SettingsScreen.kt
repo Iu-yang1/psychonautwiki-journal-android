@@ -19,6 +19,7 @@
 package com.isaakhanimann.journal.ui.tabs.settings
 
 import android.content.Intent
+import androidx.compose.material3.Surface
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -230,6 +231,12 @@ fun SettingsScreen(
     var showExportDialog by remember { mutableStateOf(false) }
     var showImportDialog by remember { mutableStateOf(false) }
     var showDeleteDialog by remember { mutableStateOf(false) }
+    var showRecovery by remember { mutableStateOf(false) }
+    if (showRecovery) androidx.compose.ui.window.Dialog(onDismissRequest = { showRecovery = false }, properties = androidx.compose.ui.window.DialogProperties(usePlatformDefaultWidth = false)) {
+        Surface(Modifier.fillMaxSize()) {
+            com.isaakhanimann.journal.ui.main.RecoveryCenter(null, {}, { showRecovery = false })
+        }
+    }
 
     Scaffold(
         topBar = {
@@ -245,6 +252,7 @@ fun SettingsScreen(
                 .fillMaxSize()
         ) {
             // UI Category
+            item { TextButton({ showRecovery = true }) { Text("本地恢复快照") } }
             item { PreferenceCategory(title = stringResource(R.string.ui)) }
 
             item {

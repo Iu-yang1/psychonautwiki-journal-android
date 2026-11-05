@@ -23,31 +23,33 @@ import android.content.Context
 import android.content.Intent
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
+import kotlinx.coroutines.launch
 
 /**
  * BroadcastReceiver that handles scheduled reminder alarms
  */
 @AndroidEntryPoint
 class ReminderBroadcastReceiver : BroadcastReceiver() {
+    @Inject lateinit var database: com.isaakhanimann.journal.data.room.AppDatabase
+    @Inject lateinit var startup: com.isaakhanimann.journal.data.hrt.DatabaseStartup
+    @Inject lateinit var coordinator: LegacyReminderCoordinator
 
     @Inject
     lateinit var notificationManager: IngestionReminderNotificationManager
 
     override fun onReceive(context: Context, intent: Intent) {
         val reminderId = intent.getIntExtra("reminder_id", -1)
-        val substanceName = intent.getStringExtra("substance_name") ?: return
-        val dose = intent.getDoubleExtra("dose", 0.0).takeIf { it != 0.0 }
-        val units = intent.getStringExtra("units")
-        val note = intent.getStringExtra("note") ?: ""
-
-        if (reminderId != -1) {
-            notificationManager.showReminderNotification(
-                reminderId = reminderId,
-                substanceName = substanceName,
-                dose = dose,
-                units = units,
-                note = note
-            )
+        val pending = goAsync()
+        kotlinx.coroutines.CoroutineScope(kotlinx.coroutines.Dispatchers.IO).launch {
+            try {
+                if (kotlinx.coroutines.withTimeoutOrNull(8000) { startup.awaitReady() } != true) return@launch
+                if (reminderId == -1) { coordinator.refresh(); return@launch }
+                val reminder = database.experienceDao().getReminderById(reminderId) ?: return@launch
+                if (!reminder.isEnabled) return@launch
+                notificationManager.showReminderNotification(reminder.id, reminder.substanceName, reminder.dose, reminder.units, reminder.note)
+                notificationManager.scheduleReminder(reminder)
+            } catch (exception: Exception) { android.util.Log.e("LegacyReminders", "Reminder delivery failed", exception) }
+            finally { pending.finish() }
         }
     }
 }
