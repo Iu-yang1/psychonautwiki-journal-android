@@ -22,6 +22,7 @@ data class HormoneChartData(
     val recognizedHrt: List<HormoneContextRecord> = emptyList(),
     val gelScenarios: List<GelStudyScenario> = emptyList(), val doseRecords: List<HormoneContextRecord> = emptyList(),
     val extrapolatedRecordIds: Set<String> = emptySet(),
+    val calibration: Map<String, LabAmplitudeFit> = emptyMap(),
 )
 
 /** Read-only projection. No DAO or mutation-capable repository enters this service. */
@@ -139,10 +140,18 @@ class HormoneChartService(private val catalog: HormoneReferenceCatalog) {
         }.sortedBy { it.original.time }
         val admitted = history.included.toSet()
         val forecastAdmitted = forecast?.included.orEmpty().toSet()
-        return HormoneChartData(request, from, now, through, history.samples, forecast?.samples.orEmpty(), measured,
+        val fit = LabCalibration.fit(data, request.consumer, request.analyteId, modeledActual, parameters, nowMillis)
+        fun scaled(samples: List<HormoneSample>, factor: Double) = samples.map { it.copy(pgMl = it.pgMl * factor) }.also { require(it.all { sample -> sample.pgMl.isFinite() }) }
+        val fits = mutableMapOf("history" to fit)
+        val fittedScenarios = scenarios.map { scenario ->
+            val result = LabCalibration.fit(data, request.consumer, request.analyteId, scenario.modelEvents, parameters, nowMillis)
+            fits[scenario.id] = result
+            scenario.copy(history = scaled(scenario.history, result.scale), forecast = scaled(scenario.forecast, result.scale))
+        }
+        return HormoneChartData(request, from, now, through, scaled(history.samples, fit.scale), scaled(forecast?.samples.orEmpty(), fit.scale), measured,
             history.included, projected.filter { it.id in forecastAdmitted }.map { it.id }, excluded,
             ((modeledActual.filter { it.id in admitted } + projected.filter { it.id in forecastAdmitted }).mapNotNull { it.profileId } + scenarios.flatMap { it.profileIds }).toSet(), assumptions,
             recognizedHrt.map { record -> record.copy(modelReason = if (record.id.toString() in bridgeIds) "sublingual_valerate_bridge" else if (record.id.toString() in scenarioIds) "gel_study_scenario" else excluded.firstOrNull { it.id == record.id.toString() }?.reason ?: record.modelReason) }.sortedByDescending { it.time },
-            scenarios, recognizedHrt.filter { record -> record.inVisibleRange && catalog.models.any { it.acceptsMedication(links[record.id]?.medicationId.orEmpty()) && it.analyteId == request.analyteId } }, bridgeIds)
+            fittedScenarios, recognizedHrt.filter { record -> record.inVisibleRange && catalog.models.any { it.acceptsMedication(links[record.id]?.medicationId.orEmpty()) && it.analyteId == request.analyteId } }, bridgeIds, fits)
     }
 }

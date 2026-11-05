@@ -18,6 +18,8 @@
 
 package com.isaakhanimann.journal.ui.main.navigation.graphs
 
+import androidx.compose.runtime.LaunchedEffect
+import com.isaakhanimann.journal.ui.main.navigation.HrtTopLevelRoute
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.navigation
@@ -39,29 +41,9 @@ fun NavGraphBuilder.saferGraph(navController: NavHostController) {
         startDestination = SaferUseScreenRoute
     ) {
         composableWithTransitions<SaferUseScreenRoute> {
-            SaferUseScreen(
-                navigateToDrugTestingScreen = {
-                    navController.navigate(DrugTestingRoute)
-                },
-                navigateToSaferHallucinogensScreen = {
-                    navController.navigate(SaferHallucinogensRoute)
-                },
-                navigateToVolumetricDosingScreen = {
-                    navController.navigate(VolumetricDosingOnSaferTabRoute)
-                },
-                navigateToDosageGuideScreen = {
-                    navController.navigate(DosageGuideRoute)
-                },
-                navigateToDosageClassificationScreen = {
-                    navController.navigate(DosageExplanationRouteOnSaferTab)
-                },
-                navigateToRouteExplanationScreen = {
-                    navController.navigate(AdministrationRouteExplanationRouteOnSaferTab)
-                },
-                navigateToReagentTestingScreen = {
-                    navController.navigate(ReagentTestingRoute)
-                }
-            )
+            LaunchedEffect(Unit) {
+                navController.navigate(HrtTopLevelRoute) { popUpTo<SaferUseTopLevelRoute> { inclusive = true } }
+            }
         }
         composableWithTransitions<SaferHallucinogensRoute> { SaferHallucinogensScreen() }
         composableWithTransitions<SaferStimulantsRoute> { SaferStimulantsScreen() }

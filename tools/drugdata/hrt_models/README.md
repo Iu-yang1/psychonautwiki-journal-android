@@ -98,3 +98,26 @@ conditions, without writing a guessed vehicle/site into the journal. These scena
 combine the other admitted estrogen events and clearly label any EV bridge component;
 they are neither bounds on personal exposure nor confidence intervals. Original dose
 timelines remain separate from concentration-reference series.
+
+## Lab amplitude calibration
+
+New E2 lab entries can store explicit consent, sampling time and the reported interval
+since the most recent actual estrogen dose. This metadata is separate from the raw lab
+and ingestion rows. It is included in the existing backup settings module without a
+schema change. Old labs lacking this context do not silently become calibration targets.
+
+For each displayed reference/scenario, eligible exact E2 observations are evaluated at
+their actual sampling time, using only prior actual doses. A non-negative one-parameter
+least-squares amplitude is calculated: sum(predicted*observed)/sum(predicted²). The
+published reference parameters themselves remain unchanged. This is not Bayesian
+individual PK estimation and does not identify absorption, clearance or endogenous
+baseline from a single point. T measurements remain measurements; no T suppression
+model is inferred. No dose recommendation is generated.
+
+Other patients, future samples, censored results, unconvertible units, missing dosing
+context or intervals inconsistent with the actual dose timestamps are excluded from
+this amplitude fit. Each reference scenario is fitted separately. Changing or deleting
+labs/doses recalculates the fit. Raw assay values and recorded doses are not rewritten.
+Sampling-time sensitivity is discussed in the primary simulation study
+https://pmc.ncbi.nlm.nih.gov/articles/PMC7063976/ ; its results are not asserted to
+validate an estradiol patient model. Calibration diagnostics are internal, not UI text.

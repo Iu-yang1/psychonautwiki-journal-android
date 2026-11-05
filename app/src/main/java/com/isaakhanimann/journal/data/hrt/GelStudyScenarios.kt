@@ -1,7 +1,7 @@
 package com.isaakhanimann.journal.data.hrt
 
 /** A research scenario never supplies an unknown vehicle/site to the stored journal. */
-data class GelStudyScenario(val id: String, val label: String, val history: List<HormoneSample>, val forecast: List<HormoneSample>, val recordIds: List<String>, val profileIds: Set<String>)
+data class GelStudyScenario(val id: String, val label: String, val history: List<HormoneSample>, val forecast: List<HormoneSample>, val recordIds: List<String>, val profileIds: Set<String>, val modelEvents: List<HormoneEvent> = emptyList())
 
 object GelStudyScenarios {
     fun calculate(data: HormoneJournalData, request: HormoneChartRequest, excluded: Map<String, String>, from: Double, now: Double, through: Double, catalog: HormoneReferenceCatalog, checkActive: () -> Unit, confirmedEvents: List<HormoneEvent> = emptyList()): List<GelStudyScenario> {
@@ -50,7 +50,7 @@ object GelStudyScenarios {
             val history = engine.simulate(confirmedEvents + events, parameters, from, now, now, points = 601, additionalTimes = fastTimes, checkActive = checkActive)
             val forecast = if (through > now) engine.simulate(confirmedEvents + events, parameters, now, through, now, points = 301, checkActive = checkActive).samples else emptyList()
             GelStudyScenario(target, if (target.contains("gel006")) "EstroGel上臂资料情景" else "Divigel上大腿资料情景", history.samples, forecast,
-                events.map { it.id }, events.mapNotNull { it.profileId }.toSet())
+                events.map { it.id }, events.mapNotNull { it.profileId }.toSet(), confirmedEvents + events)
         }
     }
 }

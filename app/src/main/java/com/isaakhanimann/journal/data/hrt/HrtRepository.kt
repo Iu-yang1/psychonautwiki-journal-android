@@ -120,6 +120,16 @@ class HrtRepository @Inject constructor(val database: AppDatabase, val substance
         LabTrends.normalize(lab)
         dao.save(lab)
     }
+    suspend fun saveLabs(labs: List<HrtLab>, contexts: List<LabDoseContext>) = database.withTransaction {
+        require(labs.isNotEmpty() && labs.map { it.id }.distinct().size == labs.size)
+        labs.forEach { LabTrends.normalize(it) }
+        contexts.forEach { require(it.labId in labs.map { lab -> lab.id }); require(it.elapsedHours == null || it.elapsedHours.isFinite() && it.elapsedHours >= 0) }
+        labs.forEach { dao.save(it) }
+        contexts.forEach { dao.save(it.setting()) }
+    }
+    suspend fun deleteLab(lab: HrtLab) = database.withTransaction {
+        dao.delete(lab); dao.deleteSetting("lab-dose:${lab.id}")
+    }
 
     suspend fun saveStock(stock: HrtStock, product: MedicationProduct?, opening: Double?) = database.withTransaction {
         require(stock.name.isNotBlank() && stock.unit.isNotBlank()) { "名称和单位不能为空" }

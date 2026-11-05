@@ -28,14 +28,13 @@ class HormoneChartUiTest {
         listOf(NormalizedLab(HrtLab("lab", null, "E2", 12*3600000L, 367.1, "pmol/L", "<"), "E2", 100.0, "pg/mL")),
         listOf("1"), listOf("plan:p:1"), excluded, setOf(catalog.models.first().id), emptySet())
 
-    @Test fun chartDistinguishesHistoryForecastAndMeasurementAndOpensSources() {
+    @Test fun chartDistinguishesHistoryForecastAndMeasurementAndOpensValues() {
         compose.setContent { MaterialTheme { Column(Modifier.verticalScroll(rememberScrollState())) { HormoneSimulationSummary(data(), "pg/mL", catalog, {}, {}) } } }
         compose.onNodeWithText("E2 用药 1 条 · 计划情景 1 次 · 实测 1 点").assertIsDisplayed()
         compose.onNodeWithContentDescription("历史模型实线、未来计划虚线、独立化验点；可点按查看时点").assertExists()
         compose.onNodeWithContentDescription("曲线详情").performScrollTo().performClick()
-        compose.onNodeWithText("支持范围、研究来源与假设").performClick()
-        compose.onNodeWithText("研究参考与支持范围").assertIsDisplayed()
-        compose.onNodeWithText("不等同个体临床验证", substring = true).assertIsDisplayed()
+        compose.onNodeWithText("数值表").performClick()
+        compose.onNodeWithText("数值表 · pg/mL").assertIsDisplayed()
     }
 
     @Test fun exclusionCorrectionCallbackAndOriginalRecordNavigationAreAvailable() {

@@ -62,7 +62,7 @@ fun HormoneSimulationPanel(parent: HrtViewModel, consumer: String?, onOpenRecord
     }
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
-            Text("激素曲线", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+            Text("激素曲线 · 估算", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
             IconButton({ optionsOpen = true }) { Icon(Icons.Outlined.Tune, "曲线设置") }
         }
         Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
@@ -104,13 +104,11 @@ fun HormoneSimulationPanel(parent: HrtViewModel, consumer: String?, onOpenRecord
             Text("单位")
             Row { (if (analyteId == "E2") listOf("pg/mL", "pmol/L") else listOf("pg/mL", "ng/mL")).forEach { label -> FilterChip(unit == label, { unit = label }, label = { Text(label) }) } }
             if (analyteId == "E2") {
-                Row { Checkbox(bridgeValerate, { bridgeValerate = it }); Text("含服EV桥接外推") }
-                Text("按酯质量换算母体E2，参考舌下E2时间型；不是经专属EV含服PK验证的浓度。", style = MaterialTheme.typography.bodySmall)
-                Text("凝胶mg直接按有效雌二醇质量使用")
-                listOf("compare" to "并列两个文献情景", "estrogel" to "EstroGel上臂资料情景", "divigel" to "Divigel上大腿资料情景", "confirmed" to "仅使用逐条明确的信息").forEach { (key, label) ->
+                Row { Checkbox(bridgeValerate, { bridgeValerate = it }); Text("含服戊酸雌二醇估算") }
+                Text("凝胶参考")
+                listOf("compare" to "比较两种凝胶参考", "estrogel" to "EstroGel上臂资料情景", "divigel" to "Divigel上大腿资料情景", "confirmed" to "仅使用逐条明确的信息").forEach { (key, label) ->
                     FilterChip(gelReference == key, { gelReference = key }, label = { Text(label) })
                 }
-                Text("未知制剂和部位不写入历史记录。情景只是公开研究条件下的对比，不是个体置信区间。", style = MaterialTheme.typography.bodySmall)
             }
         }
     }, confirmButton = { TextButton({ optionsOpen = false }) { Text("完成") } })
@@ -130,11 +128,10 @@ fun HormoneSimulationSummary(data: HormoneChartData, unit: String, catalog: Horm
     var detailsMenu by remember { mutableStateOf(false) }
     var timelineOpen by remember { mutableStateOf(false) }
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        if (data.extrapolatedRecordIds.isNotEmpty()) Text("含服EV桥接外推 · 研究估算", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         if (data.history.isEmpty() && data.gelScenarios.isEmpty()) Text("暂无可纳入 ${data.request.analyteId} 模型的历史用药记录")
         if (data.history.isNotEmpty() || data.forecast.isNotEmpty() || data.measured.isNotEmpty() || data.gelScenarios.isNotEmpty()) HormoneChart(data, unit)
         val scenarioCount = data.gelScenarios.flatMap { it.recordIds }.distinct().size
-        Text("${data.request.analyteId} 用药 ${data.includedActual.size + scenarioCount} 条${if (scenarioCount > 0) "（含参考情景）" else ""} · 计划情景 ${data.includedPlanned.size} 次 · 实测 ${data.measured.size} 点")
+        Text("${data.request.analyteId} 用药 ${data.includedActual.size + scenarioCount} 条${if (scenarioCount > 0) "" else ""} · 计划情景 ${data.includedPlanned.size} 次 · 实测 ${data.measured.size} 点")
         Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
             TextButton({ otherHrtOpen = true }) { Text("已识别 ${data.recognizedHrt.size} 条") }
             Spacer(Modifier.weight(1f))
@@ -145,7 +142,6 @@ fun HormoneSimulationSummary(data: HormoneChartData, unit: String, catalog: Horm
                     DropdownMenuItem(text = { Text("数值表") }, onClick = { detailsMenu = false; tableOpen = true })
                     DropdownMenuItem(text = { Text("原始剂量时间线") }, onClick = { detailsMenu = false; timelineOpen = true })
                     DropdownMenuItem(text = { Text("历史数据适配") }, onClick = { detailsMenu = false; onOpenRecords() })
-                    DropdownMenuItem(text = { Text("支持范围、研究来源与假设") }, onClick = { detailsMenu = false; sourcesOpen = true })
                 }
             }
         }
@@ -168,11 +164,11 @@ fun HormoneSimulationSummary(data: HormoneChartData, unit: String, catalog: Horm
                         if (!record.inVisibleRange) Text("当前图窗之外", style = MaterialTheme.typography.labelSmall)
                         Text(when (record.modelReason) {
                             null -> "已纳入 ${data.request.analyteId} 曲线"
-                            "gel_study_scenario" -> "有效mg已用于凝胶资料情景，未猜测实际制剂或部位"
-                            "sublingual_valerate_bridge" -> "含服记录已纳入母体E2质量桥接外推，原途径保留"
-                            "non_e2_record" -> "已记录，无该分析物的药代模型"
+                            "gel_study_scenario" -> "已按有效mg计入曲线"
+                            "sublingual_valerate_bridge" -> "已计入含服雌二醇估算"
+                            "non_e2_record" -> "已保存，不计入当前曲线"
                             "other_analyte_record" -> "已识别，请切换到对应成分曲线"
-                            else -> "模拟状态：${hormoneReason(record.modelReason)}"
+                            else -> "${hormoneReason(record.modelReason)}"
                         }, style = MaterialTheme.typography.bodySmall)
                         if (record.modelReason in setOf("needs_formulation", "select_reference_profile", "missing_application_site", "missing_patch_release_rate", "missing_patch_wear_interval", "ambiguous_gel_mass_basis") || record.modelReason?.startsWith("missing_dose_spec:") == true) {
                             TextButton({ otherHrtOpen = false; onEdit(record.id) }) { Text("补全模拟信息") }
@@ -278,7 +274,6 @@ fun HormoneChart(data: HormoneChartData, unit: String) {
         selected?.let { hit -> drawCircle(axis, 6.dp.toPx(), position(hit.time, hit.value), style = Stroke(1.dp.toPx())) }
     }
     Row { Text(modelTime(data.fromHours), style = MaterialTheme.typography.labelSmall); Spacer(Modifier.weight(1f)); Text(modelTime(data.throughHours), style = MaterialTheme.typography.labelSmall) }
-    Text("实线：历史参考 · 虚线：未来情景 · 点：实测（空心为不等式）", style = MaterialTheme.typography.labelSmall)
     data.gelScenarios.forEachIndexed { index, scenario -> Text(scenario.label.replace("资料情景", "参考"), color = scenarioColors[index % scenarioColors.size], style = MaterialTheme.typography.labelSmall) }
 
     selected?.let { Text("${modelTime(it.time)} · ${it.label} ${"%.6g".format(it.value*factor)} $unit") }

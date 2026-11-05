@@ -26,6 +26,18 @@ import java.time.format.DateTimeFormatter
 @Composable
 fun HrtScreen(onOpenJournal: () -> Unit, viewModel: HrtViewModel = hiltViewModel()) {
     val dashboard by viewModel.dashboard.collectAsState()
+    val chartStorage = LocalContext.current.getSharedPreferences("hormone_chart", 0)
+    val chartPreferences = remember(chartStorage) { HormoneChartPreferences(chartStorage) }
+    var e2Unit by remember { mutableStateOf(chartPreferences.unitFor("E2")) }
+    DisposableEffect(chartStorage) {
+        val listener = android.content.SharedPreferences.OnSharedPreferenceChangeListener { _, _ -> e2Unit = chartPreferences.unitFor("E2") }
+        chartStorage.registerOnSharedPreferenceChangeListener(listener)
+        onDispose { chartStorage.unregisterOnSharedPreferenceChangeListener(listener) }
+    }
+    val e2Display = dashboard.estradiol?.let { lab ->
+        val normalized = runCatching { com.isaakhanimann.journal.data.hrt.LabTrends.normalize(lab) }.getOrNull()
+        if (normalized?.unit == "pg/mL") lab.copy(value = normalized.value * if (e2Unit == "pmol/L") 3.671 else 1.0, unit = e2Unit) else lab
+    }
     val consumer by viewModel.consumer.collectAsState()
     var tab by rememberSaveable { mutableIntStateOf(0) }
     var consumerMenu by remember { mutableStateOf(false) }
@@ -81,9 +93,9 @@ fun HrtScreen(onOpenJournal: () -> Unit, viewModel: HrtViewModel = hiltViewModel
             LazyColumn(Modifier.weight(1f).fillMaxWidth(), contentPadding = PaddingValues(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
                 when (tab) {
                     0 -> {
-                        if (dashboard.estradiol != null || dashboard.testosterone != null) item {
+                        item {
                             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                                LatestLabCard("雌二醇 · E2", dashboard.estradiol, Modifier.weight(1f)) { tab = 1 }
+                                LatestLabCard("雌二醇 · E2", e2Display, Modifier.weight(1f)) { tab = 1 }
                                 LatestLabCard("总睾酮", dashboard.testosterone, Modifier.weight(1f)) { tab = 1 }
                             }
                         }

@@ -41,6 +41,11 @@ fun JournalExport.validateForReplacement() {
     MedicationProducts.all(hrt.settings).forEach { product -> require(hrt.settings.any { it.id == "product:${product.id}" }) { "Invalid product ID" } }
     hrt.settings.forEach { setting ->
         when {
+            setting.id.startsWith("lab-dose:") -> {
+                val context = Json.decodeFromString<LabDoseContext>(setting.payload)
+                require(setting.id == "lab-dose:${context.labId}" && hrt.labs.any { it.id == context.labId }) { "Missing lab for sampling context" }
+                require(context.elapsedHours == null || context.elapsedHours.isFinite() && context.elapsedHours >= 0) { "Invalid sampling interval" }
+            }
             setting.id.startsWith("link-batch:") -> {
                 val batch = Json.decodeFromString<MedicationLinkBatch>(setting.payload).also(MedicationLinkBatch::validate)
                 require(setting.id == "link-batch:${batch.id}") { "Batch ID mismatch" }

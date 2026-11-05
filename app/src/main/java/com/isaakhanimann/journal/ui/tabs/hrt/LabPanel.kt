@@ -59,9 +59,9 @@ fun LabPanel(viewModel: HrtViewModel, consumer: String?) {
             }
         }
     }
-    if (form) LabEditor(editing, consumer, viewModel.errorMessage, { form = false }) { lab -> viewModel.run { viewModel.repo.saveLab(lab); form = false } }
+    if (form) LabEditor(viewModel, editing, consumer, { form = false })
     deleting?.let { lab -> AlertDialog(onDismissRequest = { deleting = null }, title = { Text("删除这条化验结果？") }, confirmButton = {
-        TextButton({ viewModel.run { viewModel.repo.dao.delete(lab); deleting = null } }) { Text("删除") }
+        TextButton({ viewModel.run { viewModel.repo.deleteLab(lab); deleting = null } }) { Text("删除") }
     }, dismissButton = { TextButton({ deleting = null }) { Text("取消") } }) }
 }
 
@@ -99,37 +99,77 @@ fun LabTrendChart(points: List<NormalizedLab>) {
     Row { Text(format.format(Instant.ofEpochMilli(minTime)), style = MaterialTheme.typography.labelSmall); Spacer(Modifier.weight(1f)); Text(format.format(Instant.ofEpochMilli(maxTime)), style = MaterialTheme.typography.labelSmall) }
 }
 
+data class LabInputDraft(val id: String = UUID.randomUUID().toString(), val value: String = "", val unit: String = "pg/mL", val method: String = "", val range: String = "")
+
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun LabEditor(existing: HrtLab?, consumer: String?, operationError: String?, onClose: () -> Unit, onSave: (HrtLab) -> Unit) {
-    val format = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm")
-    var analyte by remember { mutableStateOf(existing?.analyte ?: "E2") }
-    var value by remember { mutableStateOf(existing?.let { "${if (it.comparison == "=") "" else it.comparison}${it.value}" } ?: "") }
-    var unit by remember { mutableStateOf(existing?.unit ?: "pg/mL") }
-    var time by remember { mutableStateOf(Instant.ofEpochMilli(existing?.time ?: System.currentTimeMillis()).atZone(ZoneId.systemDefault()).format(format)) }
-    var method by remember { mutableStateOf(existing?.method ?: "") }
-    var range by remember { mutableStateOf(existing?.referenceRange ?: "") }
+fun LabEditor(viewModel: HrtViewModel, existing: HrtLab?, consumer: String?, onClose: () -> Unit) {
+    val events by viewModel.events.collectAsState()
+    val links by viewModel.links.collectAsState()
+    val settings by viewModel.settings.collectAsState()
+    var analyte by remember(existing?.id) { mutableStateOf(existing?.analyte ?: "E2") }
+    val drafts = remember(existing?.id) { mutableStateMapOf<String, LabInputDraft>().apply {
+        if (existing != null) put(existing.analyte, LabInputDraft(existing.id, "${if (existing.comparison == "=") "" else existing.comparison}${existing.value}", existing.unit, existing.method, existing.referenceRange))
+    } }
+    val draft = drafts.getOrPut(analyte) { LabInputDraft(unit = labUnitPresets(analyte).first()) }
+    var sample by remember(existing?.id) { mutableStateOf(Instant.ofEpochMilli(existing?.time ?: System.currentTimeMillis()).atZone(ZoneId.systemDefault()).toLocalDateTime().withSecond(0).withNano(0)) }
+    val sampleMillis = sample.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli()
+    val effectiveConsumer = if (existing != null) existing.consumer else consumer
+    val ids = viewModel.medications.filter { it.identity?.ingredientId == "ingredient:estradiol" }.map { it.id }.toSet()
+    val linkMap = links.associateBy { it.ingestionId }
+    val lastDose = events.filter { it.consumerName == effectiveConsumer && it.time.toEpochMilli() <= sampleMillis && linkMap[it.id]?.medicationId in ids }.maxByOrNull { it.time }
+    val previous = existing?.let { LabDoseContext.read(it.id, settings) }
+    var elapsed by remember(sampleMillis, lastDose?.id) { mutableStateOf(previous?.takeIf { existing?.time == sampleMillis && it.lastDoseId == lastDose?.id }?.elapsedHours?.toString() ?: lastDose?.let { "%.3f".format(java.util.Locale.ROOT, (sampleMillis-it.time.toEpochMilli())/3600000.0) }.orEmpty()) }
+    var calibrate by remember(existing?.id) { mutableStateOf(previous?.calibrate ?: true) }
     var error by remember { mutableStateOf<String?>(null) }
     AlertDialog(onDismissRequest = onClose, title = { Text("化验结果") }, text = {
-        Column(Modifier.verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-            FlowRow { LabTrends.analytes.forEach { name -> FilterChip(analyte == name, { analyte = name }, label = { Text(name) }) } }
-            OutlinedTextField(analyte, { analyte = it }, label = { Text("指标（可自定义）") })
-            OutlinedTextField(value, { value = it }, label = { Text("结果，支持 <、>、<=、>=") })
-            OutlinedTextField(unit, { unit = it }, label = { Text("报告单位") })
-            OutlinedTextField(time, { time = it }, label = { Text("采样时间 · yyyy-MM-ddTHH:mm") })
-            OutlinedTextField(method, { method = it }, label = { Text("检测方法（可选）") })
-            OutlinedTextField(range, { range = it }, label = { Text("报告参考区间（可选）") })
+        Column(Modifier.heightIn(max = 520.dp).verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            LabResultFields(analyte, { analyte = it }, drafts)
+            Text("采样时间", style = MaterialTheme.typography.titleSmall)
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                com.isaakhanimann.journal.ui.tabs.journal.addingestion.time.DatePickerButton(sample, { sample = it.withSecond(0).withNano(0) }, sample.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")))
+                com.isaakhanimann.journal.ui.tabs.journal.addingestion.time.TimePickerButton(sample, { sample = it.withSecond(0).withNano(0) }, sample.format(DateTimeFormatter.ofPattern("HH:mm")))
+            }
+            if (LabTrends.analyteKey(analyte) == "E2") {
+                Row { Checkbox(calibrate, { calibrate = it }, enabled = lastDose != null); Text("按化验校准曲线") }
+                OutlinedTextField(elapsed, { elapsed = it }, label = { Text("距上次雌激素用药（小时）") })
+                if (lastDose != null) Text("上次用药：${lastDose.substanceName} · ${lastDose.time.atZone(ZoneId.systemDefault()).format(DateTimeFormatter.ofPattern("MM-dd HH:mm"))}", style = MaterialTheme.typography.bodySmall)
+            }
+            OutlinedTextField(draft.method, { drafts[analyte] = draft.copy(method = it) }, label = { Text("检测方法（可选）") })
+            OutlinedTextField(draft.range, { drafts[analyte] = draft.copy(range = it) }, label = { Text("报告参考区间（可选）") })
             error?.let { Text(it, color = MaterialTheme.colorScheme.error) }
-            operationError?.let { Text(it, color = MaterialTheme.colorScheme.error) }
+            viewModel.errorMessage?.let { Text(it, color = MaterialTheme.colorScheme.error) }
         }
     }, confirmButton = { TextButton({
         try {
-            val text = value.trim()
-            val comparison = listOf("<=", ">=", "<", ">", "=").firstOrNull { text.startsWith(it) } ?: "="
-            val number = if (text.startsWith(comparison)) text.removePrefix(comparison).trim() else text
-            val lab = HrtLab(existing?.id ?: UUID.randomUUID().toString(), existing?.consumer ?: consumer, analyte,
-                LocalDateTime.parse(time, format).atZone(ZoneId.systemDefault()).toInstant().toEpochMilli(), number.toDouble(), unit, comparison, method, range)
-            LabTrends.validate(lab); onSave(lab)
+            val labs = drafts.filterValues { it.value.isNotBlank() }.map { (name, input) ->
+                val text = input.value.trim().replace("≤", "<=").replace("≥", ">=")
+                val comparison = listOf("<=", ">=", "<", ">", "=").firstOrNull { text.startsWith(it) } ?: "="
+                val number = if (text.startsWith(comparison)) text.removePrefix(comparison).trim() else text
+                HrtLab(input.id, effectiveConsumer, name.trim(), sampleMillis, number.replace(',', '.').toDouble(), input.unit, comparison, input.method, input.range).also(LabTrends::validate)
+            }
+            require(labs.isNotEmpty()) { "请输入检测结果" }
+            val contexts = labs.map { lab ->
+                val enabled = LabTrends.analyteKey(lab.analyte) == "E2" && calibrate && lastDose != null && lab.comparison == "="
+                val hours = elapsed.takeIf { enabled }?.replace(',', '.')?.toDouble()
+                if (enabled) {
+                    require(hours != null && hours.isFinite() && hours >= 0) { "请填写距上次用药时间" }
+                    require(kotlin.math.abs(sampleMillis - requireNotNull(lastDose).time.toEpochMilli() - hours * 3600000) <= 60000) { "间隔与用药记录不一致，请核对时间" }
+                }
+                LabDoseContext(lab.id, hours, if (enabled) lastDose?.id else null, if (enabled) lastDose?.time?.toEpochMilli() else null, enabled)
+            }
+            viewModel.run { viewModel.repo.saveLabs(labs, contexts); onClose() }
         } catch (exception: RuntimeException) { error = exception.message ?: "输入无效" }
-    }) { Text("保存") } }, dismissButton = { TextButton(onClose) { Text("取消") } })
+    }) { Text(if (existing == null) "保存已填写项" else "保存") } }, dismissButton = { TextButton(onClose) { Text("取消") } })
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+fun LabResultFields(analyte: String, onAnalyte: (String) -> Unit, drafts: androidx.compose.runtime.snapshots.SnapshotStateMap<String, LabInputDraft>) {
+    val draft = drafts.getOrPut(analyte) { LabInputDraft(unit = labUnitPresets(analyte).first()) }
+            FlowRow { LabTrends.analytes.forEach { name -> FilterChip(analyte == name, { onAnalyte(name) }, label = { Text(name) }) } }
+            OutlinedTextField(analyte, { onAnalyte(it) }, label = { Text("指标") })
+            OutlinedTextField(draft.value, { drafts[analyte] = draft.copy(value = it) }, label = { Text("结果") }, supportingText = { Text("支持 <、>、≤、≥") })
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(4.dp)) { labUnitPresets(analyte).forEach { preset -> FilterChip(draft.unit == preset, { drafts[analyte] = draft.copy(unit = preset) }, label = { Text(preset) }) } }
+            OutlinedTextField(draft.unit, { drafts[analyte] = draft.copy(unit = it) }, label = { Text("报告单位") })
 }
