@@ -20,6 +20,16 @@ package com.isaakhanimann.journal.ui.main
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.text.PlatformTextStyle
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.material3.adaptive.navigationsuite.NavigationSuiteScaffold
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.runtime.Composable
@@ -63,10 +73,25 @@ fun MainScreen(
                         icon = {
                             Icon(
                                 if (selected) topLevelRoute.filledIcon else topLevelRoute.outlinedIcon,
-                                contentDescription = topLevelRoute.name
+                                contentDescription = topLevelRoute.name,
+                                modifier = Modifier.size(24.dp)
                             )
                         },
-                        label = { Text(topLevelRoute.name.toString()) },
+                        label = {
+                            Box(
+                                modifier = Modifier.height(with(LocalDensity.current) { 20.sp.toDp() }),
+                                contentAlignment = Alignment.Center
+                            ) {
+                                Text(
+                                    text = topLevelRoute.name.orEmpty(),
+                                    maxLines = 1,
+                                    style = MaterialTheme.typography.labelMedium.copy(
+                                        lineHeight = 20.sp,
+                                        platformStyle = PlatformTextStyle(includeFontPadding = false)
+                                    )
+                                )
+                            }
+                        },
                         selected = selected,
                         onClick = {
                             if (selected) {

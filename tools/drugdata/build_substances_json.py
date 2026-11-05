@@ -236,6 +236,15 @@ def build(base_path: Path, source_dir: Path, output_path: Path, hybrid: bool = F
 
     substances = filter_by_retain_categories(substances, retain_categories)
     substances = sanitize_clinical_psychiatry_categories(substances)
+    registry_path = source_dir / "medication_ids.json"
+    if registry_path.exists():
+        registry = load_json(registry_path)
+        for substance in substances:
+            identifier = registry.get(substance["name"])
+            if identifier:
+                if substance.get("id", identifier) != identifier:
+                    raise ValueError(f"Medication identity changed: {substance['name']}")
+                substance["id"] = identifier
     categories = filter_categories_by_usage(categories, substances)
     data["categories"] = categories
     data["substances"] = substances

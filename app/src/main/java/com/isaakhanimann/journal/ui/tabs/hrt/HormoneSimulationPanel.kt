@@ -130,8 +130,6 @@ fun HormoneSimulationSummary(data: HormoneChartData, unit: String, catalog: Horm
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         if (data.history.isEmpty() && data.gelScenarios.isEmpty()) Text("暂无可纳入 ${data.request.analyteId} 模型的历史用药记录")
         if (data.history.isNotEmpty() || data.forecast.isNotEmpty() || data.measured.isNotEmpty() || data.gelScenarios.isNotEmpty()) HormoneChart(data, unit)
-        val scenarioCount = data.gelScenarios.flatMap { it.recordIds }.distinct().size
-        Text("${data.request.analyteId} 用药 ${data.includedActual.size + scenarioCount} 条${if (scenarioCount > 0) "" else ""} · 计划情景 ${data.includedPlanned.size} 次 · 实测 ${data.measured.size} 点")
         Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
             TextButton({ otherHrtOpen = true }) { Text("已识别 ${data.recognizedHrt.size} 条") }
             Spacer(Modifier.weight(1f))

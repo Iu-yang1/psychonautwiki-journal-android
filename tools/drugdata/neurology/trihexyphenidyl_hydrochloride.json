@@ -1,0 +1,116 @@
+{
+  "buildConfig": {
+    "retainSubstanceCategories": [
+      "neurology"
+    ]
+  },
+  "categories": [
+    {
+      "name": "neurology",
+      "description": "神经系统用药",
+      "color": 4284513675
+    },
+    {
+      "name": "antiparkinsonian",
+      "description": "抗帕金森药",
+      "color": 4284513675
+    },
+    {
+      "name": "anticholinergic",
+      "description": "抗胆碱药",
+      "color": 4284513675
+    }
+  ],
+  "substances": [
+    {
+      "id": "pw:db3a77d67f9fec2d3d30",
+      "name": "Trihexyphenidyl Hydrochloride",
+      "commonNames": [
+        "盐酸苯海索",
+        "苯海索",
+        "Trihexyphenidyl HCl"
+      ],
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d4d473e-4f84-43e7-bb17-49e8dc1e97fd",
+      "summary": "抗胆碱药，用于帕金森综合征及部分药物引起的锥体外系症状。口服片剂；所引说明书规格为每片盐酸苯海索 2 mg 或 5 mg。",
+      "isApproved": true,
+      "categories": [
+        "neurology",
+        "antiparkinsonian",
+        "anticholinergic",
+        "prescription-medicine"
+      ],
+      "roas": [
+        {
+          "name": "oral",
+          "dose": {
+            "units": "mg"
+          }
+        }
+      ],
+      "clinicalInfo": {
+        "atcCodes": [
+          "N04AA01"
+        ],
+        "drugClass": [
+          "抗胆碱药"
+        ],
+        "indications": [
+          "帕金森综合征的辅助治疗",
+          "药物引起的锥体外系症状"
+        ],
+        "contraindications": [
+          "对本品或辅料过敏",
+          "窄角型青光眼"
+        ],
+        "majorWarnings": [
+          "可引起口干、视物模糊、便秘、尿潴留及认知障碍。",
+          "减少出汗可导致高热；避免突然停药。",
+          "可能加重迟发性运动障碍。"
+        ],
+        "majorInteractions": [
+          "酒精及其他中枢抑制药可增加镇静。",
+          "与单胺氧化酶抑制剂或三环类抗抑郁药合用，抗胆碱作用可能增强。"
+        ],
+        "monitoring": [
+          "眼压、视力变化",
+          "排尿、排便、出汗和体温",
+          "意识、记忆及不自主运动"
+        ],
+        "sourceRefs": [
+          {
+            "title": "DailyMed: Trihexyphenidyl Hydrochloride tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d4d473e-4f84-43e7-bb17-49e8dc1e97fd",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-05",
+            "evidenceLevel": "REGULATORY_LABEL",
+            "labelSection": "Indications; Contraindications; Warnings; Precautions; Adverse reactions; How supplied"
+          },
+          {
+            "title": "WHO ATC/DDD: N04AA01 trihexyphenidyl",
+            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04AA01",
+            "sourceType": "classification",
+            "accessedDate": "2026-11-05",
+            "evidenceLevel": "REFERENCE_DATABASE"
+          }
+        ]
+      },
+      "sourceRefs": [
+        {
+          "title": "DailyMed: Trihexyphenidyl Hydrochloride tablets",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d4d473e-4f84-43e7-bb17-49e8dc1e97fd",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-05",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "labelSection": "Indications; Contraindications; Warnings; Precautions; Adverse reactions; How supplied"
+        },
+        {
+          "title": "WHO ATC/DDD: N04AA01 trihexyphenidyl",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04AA01",
+          "sourceType": "classification",
+          "accessedDate": "2026-11-05",
+          "evidenceLevel": "REFERENCE_DATABASE"
+        }
+      ]
+    }
+  ]
+}

@@ -30,7 +30,7 @@ class HormoneChartUiTest {
 
     @Test fun chartDistinguishesHistoryForecastAndMeasurementAndOpensValues() {
         compose.setContent { MaterialTheme { Column(Modifier.verticalScroll(rememberScrollState())) { HormoneSimulationSummary(data(), "pg/mL", catalog, {}, {}) } } }
-        compose.onNodeWithText("E2 用药 1 条 · 计划情景 1 次 · 实测 1 点").assertIsDisplayed()
+        compose.onNodeWithText("E2 用药", substring = true).assertDoesNotExist()
         compose.onNodeWithContentDescription("历史模型实线、未来计划虚线、独立化验点；可点按查看时点").assertExists()
         compose.onNodeWithContentDescription("曲线详情").performScrollTo().performClick()
         compose.onNodeWithText("数值表").performClick()
@@ -55,7 +55,7 @@ class HormoneChartUiTest {
         val chart = data().copy(history = emptyList(), forecast = emptyList(), includedActual = emptyList(), includedPlanned = emptyList())
         compose.setContent { MaterialTheme { HormoneSimulationSummary(chart, "pmol/L", catalog, {}, {}) } }
         compose.onNodeWithText("暂无可纳入 E2 模型的历史用药记录").assertIsDisplayed()
-        compose.onNodeWithText("E2 用药 0 条 · 计划情景 0 次 · 实测 1 点").assertExists()
+        compose.onNodeWithText("E2 用药", substring = true).assertDoesNotExist()
         compose.onNodeWithText("pmol/L", substring = true).assertExists()
     }
 
@@ -73,7 +73,7 @@ class HormoneChartUiTest {
         val chart = data().copy(history = emptyList(), forecast = emptyList(), includedActual = emptyList(), gelScenarios = listOf(scenario))
         compose.setContent { MaterialTheme { Column(Modifier.verticalScroll(rememberScrollState())) { HormoneSimulationSummary(chart, "pg/mL", catalog, {}, {}) } } }
         compose.onNodeWithContentDescription("历史模型实线、未来计划虚线、独立化验点；可点按查看时点").assertExists()
-        compose.onNodeWithText("凝胶参考").assertExists()
+        compose.onNodeWithText("凝胶参考").assertDoesNotExist()
         compose.onNodeWithText("暂无可纳入 E2 模型的历史用药记录").assertDoesNotExist()
     }
 }

@@ -38,7 +38,10 @@ class MedicationSearchIndexTest {
             val sub = original.copy(identity = identities[original.id], commonNames = (original.commonNames + identities[original.id]?.aliases.orEmpty()).distinct())
             MedicationSearchEntry(sub.id, sub.name, sub.commonNames, sub.categories.toSet(), sub.availableRoutesForIngestion().map { it.name }.toSet(), sub.searchFormulations(), sub.referenceSearchText(), sub.localizedSortName(Locale.ENGLISH))
         }
-        assertEquals(594, entries.size)
+        assertEquals(595, entries.size)
+        val trihexyphenidyl = entries.single { it.name == "Trihexyphenidyl Hydrochloride" }
+        assertEquals(listOf(trihexyphenidyl.id), MedicationSearchIndex(entries).rank(MedicationSearchRequest("盐酸苯海索")))
+        assertEquals(setOf("ORAL"), trihexyphenidyl.routes)
         val requests = listOf(
             MedicationSearchRequest(routes = setOf("ORAL")),
             MedicationSearchRequest(formulations = setOf("form:gel")),
@@ -51,6 +54,6 @@ class MedicationSearchIndexTest {
         val repeatCount = 10
         val rebuild = measureNanoTime { repeat(repeatCount) { requests.forEach { MedicationSearch.rank(entries, it, locale = Locale.ENGLISH) } } }
         val reuse = measureNanoTime { repeat(repeatCount) { requests.forEach { index.rank(it) } } }
-        println("SEARCH_INDEX_594: rebuild=%.3f ms/query, reuse=%.3f ms/query; JVM microbenchmark, not device frame timing".format(rebuild / (repeatCount * requests.size * 1e6), reuse / (repeatCount * requests.size * 1e6)))
+        println("SEARCH_INDEX_595: rebuild=%.3f ms/query, reuse=%.3f ms/query; JVM microbenchmark, not device frame timing".format(rebuild / (repeatCount * requests.size * 1e6), reuse / (repeatCount * requests.size * 1e6)))
     }
 }
