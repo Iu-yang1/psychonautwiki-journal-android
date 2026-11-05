@@ -225,6 +225,7 @@ fun SettingsScreen(
     copyErrorToClipboard: () -> Unit,
 ) {
     val context = LocalContext.current
+    val installedVersion = remember(context) { context.packageManager.getPackageInfo(context.packageName, 0).versionName ?: VERSION_NAME }
     val uriHandler = LocalUriHandler.current
 
     // State for dialogs
@@ -533,7 +534,7 @@ fun SettingsScreen(
                 Preference(
                     title = stringResource(R.string.question_bug_report),
                     icon = Icons.AutoMirrored.Outlined.OpenInNew,
-                    onClick = { uriHandler.openUri("https://t.me/+ss8uZhBF6g00MTY8") }
+                    onClick = { uriHandler.openUri("https://github.com/Iu-yang1/psychonautwiki-journal-android/issues/new/choose") }
                 )
             }
             item {
@@ -559,7 +560,7 @@ fun SettingsScreen(
                 Preference(
                     title = stringResource(R.string.source_code),
                     icon = Icons.Outlined.Code,
-                    onClick = { uriHandler.openUri("https://github.com/huanli233/psychonautwiki-journal-android") }
+                    onClick = { uriHandler.openUri("https://github.com/Iu-yang1/psychonautwiki-journal-android") }
                 )
             }
             item {
@@ -593,7 +594,7 @@ fun SettingsScreen(
 
             item {
                 Preference(
-                    title = stringResource(R.string.version, VERSION_NAME),
+                    title = stringResource(R.string.version, installedVersion),
                     icon = Icons.Outlined.Info,
                     onClick = {}
                 )

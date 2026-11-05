@@ -1,6 +1,9 @@
 package com.isaakhanimann.journal.ui.tabs.hrt
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.ui.Alignment
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.MoreVert
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
@@ -28,32 +31,53 @@ fun InventoryPanel(viewModel: HrtViewModel) {
     var adjust by remember { mutableStateOf<HrtStock?>(null) }
     var ledger by remember { mutableStateOf<HrtStock?>(null) }
     val format = DateTimeFormatter.ofPattern("yyyy-MM-dd").withZone(ZoneId.systemDefault())
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Row {
+    var showArchived by remember { mutableStateOf(false) }
+    val balances = remember(movements) { movements.groupBy { it.stockId }.mapValues { InventoryLedger.balance(it.value) } }
+    Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+            Text("药品库存", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
             TextButton({ editingStock = null; stockForm = true }) { Text("添加库存") }
-            TextButton({ editingProduct = null; productForm = true }) { Text("添加药品规格") }
         }
-        if (decoded.isFailure) Text("规格数据无法读取：${decoded.exceptionOrNull()?.message}", color = MaterialTheme.colorScheme.error)
-        if (stocks.isEmpty()) Text("暂无库存")
-        stocks.forEach { stock ->
+        if (decoded.isFailure) Text("部分规格无法读取，请核对。", color = MaterialTheme.colorScheme.error)
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            FilterChip(showArchived, { showArchived = !showArchived }, label = { Text("显示归档") })
+        }
+        val visible = stocks.filter { stock -> showArchived || settings.none { it.id == "stock-status:${stock.id}" && it.payload == "archived" } }
+        if (visible.isEmpty()) Card(Modifier.fillMaxWidth()) { Text("暂无库存", Modifier.padding(20.dp), color = MaterialTheme.colorScheme.onSurfaceVariant) }
+        visible.forEach { stock ->
             val archived = settings.any { it.id == "stock-status:${stock.id}" && it.payload == "archived" }
             val product = MedicationProducts.forStock(stock.id, settings)
-            Card(Modifier.fillMaxWidth()) { Column(Modifier.padding(12.dp)) {
-                Text(stock.name, style = MaterialTheme.typography.titleMedium)
-                Text("${InventoryLedger.balance(movements.filter { it.stockId == stock.id })} ${stock.unit}${if (archived) " · 已归档" else ""}")
-                product?.let { Text("${it.name} · ${it.strengthMgPerUnit?.let { strength -> "$strength mg/${it.unit}" } ?: "含量待补充"}") }
-                stock.expires?.let { Text("有效期：${format.format(Instant.ofEpochMilli(it))}${if (it < System.currentTimeMillis()) " · 已过期" else ""}") }
-                Row {
-                    TextButton({ editingStock = stock; stockForm = true }) { Text("编辑") }
-                    TextButton({ adjust = stock }) { Text("入库 / 损耗 / 调整") }
-                    TextButton({ ledger = stock }) { Text("流水") }
+            var menu by remember(stock.id) { mutableStateOf(false) }
+            ElevatedCard(Modifier.fillMaxWidth()) { Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(stock.name, style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+                    Box {
+                        IconButton({ menu = true }) { Icon(Icons.Outlined.MoreVert, "库存操作") }
+                        DropdownMenu(menu, { menu = false }) {
+                            DropdownMenuItem(text = { Text("编辑") }, onClick = { menu = false; editingStock = stock; stockForm = true })
+                            DropdownMenuItem(text = { Text("入库 / 损耗 / 调整") }, onClick = { menu = false; adjust = stock })
+                            DropdownMenuItem(text = { Text("查看流水") }, onClick = { menu = false; ledger = stock })
+                            DropdownMenuItem(text = { Text(if (archived) "取消归档" else "归档") }, onClick = { menu = false; viewModel.run { viewModel.repo.dao.save(HrtModelSetting("stock-status:${stock.id}", if (archived) "active" else "archived")) } })
+                        }
+                    }
                 }
-                TextButton({ viewModel.run { viewModel.repo.dao.save(HrtModelSetting("stock-status:${stock.id}", if (archived) "active" else "archived")) } }) { Text(if (archived) "取消归档" else "归档") }
+                Text("${"%.6g".format(balances[stock.id] ?: 0.0)} ${stock.unit}", style = MaterialTheme.typography.headlineSmall)
+                product?.let { Text(it.name, style = MaterialTheme.typography.bodyMedium) }
+                stock.expires?.let { Text("有效期 ${format.format(Instant.ofEpochMilli(it))}", style = MaterialTheme.typography.bodySmall, color = if (it < System.currentTimeMillis()) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant) }
+                if (archived) Text("已归档", style = MaterialTheme.typography.labelSmall)
             } }
         }
-        Text("药品规格", style = MaterialTheme.typography.titleMedium)
-        products.forEach { product ->
-            TextButton({ editingProduct = product; productForm = true }) { Text("${product.name} · ${product.formulation} · ${product.strengthMgPerUnit?.toString() ?: "?"} mg/${product.unit}${if (product.archived) " · 已归档" else ""}") }
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text("药品规格", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+            TextButton({ editingProduct = null; productForm = true }) { Text("添加规格") }
+        }
+        products.filter { showArchived || !it.archived }.forEach { product ->
+            ElevatedCard(onClick = { editingProduct = product; productForm = true }, modifier = Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text(product.name, style = MaterialTheme.typography.titleSmall)
+                    Text(product.patchReleaseMcgDay?.let { "$it μg/天" } ?: product.strengthMgPerUnit?.let { "$it mg/${product.unit}" } ?: "含量未填写", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+            }
         }
     }
     if (productForm) ProductEditor(viewModel, editingProduct, { productForm = false }) { product ->

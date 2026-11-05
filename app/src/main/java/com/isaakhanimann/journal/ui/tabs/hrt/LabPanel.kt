@@ -1,5 +1,8 @@
 package com.isaakhanimann.journal.ui.tabs.hrt
 
+import androidx.compose.ui.Alignment
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.MoreVert
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -30,34 +33,55 @@ fun LabPanel(viewModel: HrtViewModel, consumer: String?) {
     var form by remember { mutableStateOf(false) }
     var deleting by remember { mutableStateOf<HrtLab?>(null) }
     val format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm").withZone(ZoneId.systemDefault())
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        TextButton({ editing = null; form = true }) { Text("添加化验") }
-        if (decoded.isFailure) {
-            Text("化验数据无法换算：${decoded.exceptionOrNull()?.message}", color = MaterialTheme.colorScheme.error)
-            labs.filter { it.consumer == consumer }.forEach { lab -> TextButton({ editing = lab; form = true }) { Text("修正：${lab.analyte} · ${lab.value} ${lab.unit}") } }
+    var indicatorMenu by remember { mutableStateOf(false) }
+    Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+            Text("化验记录", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+            TextButton({ editing = null; form = true }) { Text("添加化验") }
         }
-        if (series.isEmpty()) Text("暂无化验结果")
-        FlowRow(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-            series.keys.forEach { group -> FilterChip(group == key, { selected = group }, label = { Text("${group.first} · ${group.second}") }) }
-        }
+        if (decoded.isFailure) Text("部分化验数据无法换算，请编辑核对单位。", color = MaterialTheme.colorScheme.error)
+        if (series.isEmpty()) Card(Modifier.fillMaxWidth()) { Text("暂无化验结果", Modifier.padding(20.dp), color = MaterialTheme.colorScheme.onSurfaceVariant) }
         if (key != null) {
             val points = series.getValue(key)
-            Text("${key.first}（${key.second}）", style = MaterialTheme.typography.titleMedium)
-            LabTrendChart(points)
+            ElevatedCard(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Box(Modifier.weight(1f)) {
+                            TextButton({ indicatorMenu = true }) { Text("${key.first} ▾") }
+                            DropdownMenu(indicatorMenu, { indicatorMenu = false }) {
+                                series.keys.forEach { group -> DropdownMenuItem(text = { Text("${group.first} · ${group.second}") }, onClick = { selected = group; indicatorMenu = false }) }
+                            }
+                        }
+                        Text(key.second, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
+                    LabTrendChart(points)
+                }
+            }
             points.asReversed().forEach { point ->
                 val lab = point.original
-                Card(Modifier.fillMaxWidth()) { Column(Modifier.padding(12.dp)) {
-                    Text("${format.format(Instant.ofEpochMilli(lab.time))} · ${lab.comparison}${lab.value} ${lab.unit}")
-                    if (lab.unit != point.unit) Text("换算：${lab.comparison}${"%.6g".format(point.value)} ${point.unit}")
-                    if (lab.method.isNotBlank()) Text("检测方法：${lab.method}")
-                    if (lab.referenceRange.isNotBlank()) Text("报告参考区间：${lab.referenceRange}")
-                    Row {
-                        TextButton({ editing = lab; form = true }) { Text("编辑") }
-                        TextButton({ deleting = lab }) { Text("删除") }
+                var menu by remember(lab.id) { mutableStateOf(false) }
+                ElevatedCard(Modifier.fillMaxWidth()) { Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Column(Modifier.weight(1f)) {
+                            Text(lab.analyte, style = MaterialTheme.typography.titleSmall)
+                            Text(format.format(Instant.ofEpochMilli(lab.time)), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                        Box {
+                            IconButton({ menu = true }) { Icon(Icons.Outlined.MoreVert, "化验操作") }
+                            DropdownMenu(menu, { menu = false }) {
+                                DropdownMenuItem(text = { Text("编辑") }, onClick = { menu = false; editing = lab; form = true })
+                                DropdownMenuItem(text = { Text("删除") }, onClick = { menu = false; deleting = lab })
+                            }
+                        }
                     }
+                    Text("${lab.comparison.takeUnless { it == "=" }.orEmpty()}${"%.6g".format(lab.value)} ${lab.unit}", style = MaterialTheme.typography.titleLarge)
+                    if (lab.unit != point.unit) Text("${"%.6g".format(point.value)} ${point.unit}", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    if (lab.method.isNotBlank()) Text(lab.method, style = MaterialTheme.typography.bodySmall)
+                    if (lab.referenceRange.isNotBlank()) Text("参考区间 ${lab.referenceRange}", style = MaterialTheme.typography.bodySmall)
                 } }
             }
         }
+        if (decoded.isFailure) labs.filter { it.consumer == consumer }.forEach { lab -> TextButton({ editing = lab; form = true }) { Text("编辑 ${lab.analyte}") } }
     }
     if (form) LabEditor(viewModel, editing, consumer, { form = false })
     deleting?.let { lab -> AlertDialog(onDismissRequest = { deleting = null }, title = { Text("删除这条化验结果？") }, confirmButton = {

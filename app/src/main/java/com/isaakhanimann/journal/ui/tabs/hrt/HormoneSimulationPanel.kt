@@ -274,7 +274,6 @@ fun HormoneChart(data: HormoneChartData, unit: String) {
         selected?.let { hit -> drawCircle(axis, 6.dp.toPx(), position(hit.time, hit.value), style = Stroke(1.dp.toPx())) }
     }
     Row { Text(modelTime(data.fromHours), style = MaterialTheme.typography.labelSmall); Spacer(Modifier.weight(1f)); Text(modelTime(data.throughHours), style = MaterialTheme.typography.labelSmall) }
-    data.gelScenarios.forEachIndexed { index, scenario -> Text(scenario.label.replace("资料情景", "参考"), color = scenarioColors[index % scenarioColors.size], style = MaterialTheme.typography.labelSmall) }
 
     selected?.let { Text("${modelTime(it.time)} · ${it.label} ${"%.6g".format(it.value*factor)} $unit") }
 }
