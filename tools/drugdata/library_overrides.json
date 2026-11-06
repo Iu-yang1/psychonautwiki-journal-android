@@ -37943,6 +37943,4394 @@
           "endocrineInfo": null
         }
       }
+    },
+    "pw:eba8cc31d1eeec445313": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=066e25b2-8a1b-4b08-b585-ce36753bf104",
+        "commonNames": [
+          "Temazepam",
+          "Restoril",
+          "Normison",
+          "替马西泮"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "sedative-hypnotic"
+        ],
+        "roas": [
+          {
+            "name": "oral",
+            "duration": {
+              "onset": {
+                "min": 30,
+                "max": 60,
+                "units": "minutes"
+              },
+              "total": {
+                "min": 7,
+                "max": 8,
+                "units": "hours"
+              },
+              "afterglow": {
+                "min": 3.5,
+                "max": 18.4,
+                "units": "hours"
+              }
+            }
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:capsule"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Temazepam capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=066e25b2-8a1b-4b08-b585-ce36753bf104",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "替马西泮",
+          "summary": "所引制剂为替马西泮口服胶囊。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05CD07"
+            ],
+            "drugClass": [
+              "苯二氮䓬类催眠药"
+            ],
+            "indications": [
+              "通常 7–10 天的失眠短期治疗。"
+            ],
+            "contraindications": [
+              "对替马西泮或成分过敏等标签禁用情况。"
+            ],
+            "majorWarnings": [
+              "可发生镇静、遗忘、跌倒、依赖和戒断。"
+            ],
+            "majorInteractions": [
+              "阿片、酒精及其他中枢抑制剂增加呼吸风险。"
+            ],
+            "monitoring": [
+              "随访睡眠、次日警觉性、呼吸和依赖，持续失眠需复评。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Temazepam capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=066e25b2-8a1b-4b08-b585-ce36753bf104",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "胶囊",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Temazepam capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=066e25b2-8a1b-4b08-b585-ce36753bf104",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 3.5,
+                "max": 18.4,
+                "unit": "h",
+                "basis": "终末相范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "失眠短期治疗",
+              "population": "成人，老年人另有较低起始量",
+              "route": "Oral",
+              "formulation": "胶囊",
+              "amountText": "通常 15 mg",
+              "scheduleText": "睡前口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 104, 2024-12-11",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Temazepam capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=066e25b2-8a1b-4b08-b585-ce36753bf104",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 15,
+                  "max": 15,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Temazepam",
+          "summary": "The cited product is temazepam oral capsules.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05CD07"
+            ],
+            "drugClass": [
+              "Benzodiazepine hypnotic"
+            ],
+            "indications": [
+              "Short-term insomnia treatment, generally seven to ten days."
+            ],
+            "contraindications": [
+              "Hypersensitivity to temazepam or ingredients and other label restrictions."
+            ],
+            "majorWarnings": [
+              "Sedation, amnesia, falls, dependence and withdrawal may occur."
+            ],
+            "majorInteractions": [
+              "Opioids, alcohol and other CNS depressants add respiratory risk."
+            ],
+            "monitoring": [
+              "Follow sleep, next-day alertness, breathing and dependence. Reassess persistent insomnia."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Temazepam capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=066e25b2-8a1b-4b08-b585-ce36753bf104",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Capsule",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Temazepam capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=066e25b2-8a1b-4b08-b585-ce36753bf104",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 3.5,
+                "max": 18.4,
+                "unit": "h",
+                "basis": "Terminal-phase range"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Short-term insomnia treatment",
+              "population": "Adults, with lower initiation for older patients",
+              "route": "Oral",
+              "formulation": "Capsule",
+              "amountText": "Usually 15 mg",
+              "scheduleText": "Orally before bed",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 104, 2024-12-11",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Temazepam capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=066e25b2-8a1b-4b08-b585-ce36753bf104",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 15,
+                  "max": 15,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:99b52c1fdf1cefb4c617": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a96c618-1869-4cb6-b9f3-549e8581af72",
+        "commonNames": [
+          "Triazolam",
+          "三唑仑"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "sedative-hypnotic"
+        ],
+        "roas": [
+          {
+            "name": "oral",
+            "duration": {
+              "onset": {
+                "min": 20,
+                "max": 30,
+                "units": "minutes"
+              },
+              "peak": {
+                "min": 1,
+                "max": 2,
+                "units": "hours"
+              },
+              "offset": {
+                "min": 1,
+                "max": 3,
+                "units": "hours"
+              },
+              "total": {
+                "min": 3,
+                "max": 6,
+                "units": "hours"
+              },
+              "afterglow": {
+                "min": 1,
+                "max": 12,
+                "units": "hours"
+              }
+            }
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Triazolam tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a96c618-1869-4cb6-b9f3-549e8581af72",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "三唑仑",
+          "summary": "所引制剂是普通口服片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05CD05"
+            ],
+            "drugClass": [
+              "苯二氮䓬类催眠药"
+            ],
+            "indications": [
+              "成人失眠短期治疗，通常 7–10 天。"
+            ],
+            "contraindications": [
+              "苯二氮䓬相关过敏或合用强 CYP3A 抑制剂。"
+            ],
+            "majorWarnings": [
+              "关注遗忘、异常行为、次日警觉性、依赖及戒断。"
+            ],
+            "majorInteractions": [
+              "强 CYP3A 抑制剂明显升高暴露，酒精及阿片增加镇静呼吸风险。"
+            ],
+            "monitoring": [
+              "随访睡眠及异常行为，核对相互作用并逐步停药。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Triazolam tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a96c618-1869-4cb6-b9f3-549e8581af72",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Triazolam tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a96c618-1869-4cb6-b9f3-549e8581af72",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 1.5,
+                "max": 5.5,
+                "unit": "h",
+                "basis": "血浆平均消除半衰期范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "失眠短期治疗",
+              "population": "成人，老年及低体重者另有较低量",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "通常 0.25 mg",
+              "scheduleText": "睡前口服一次",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 1, 2025-11-26",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Triazolam tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a96c618-1869-4cb6-b9f3-549e8581af72",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 0.25,
+                  "max": 0.25,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Triazolam",
+          "summary": "The cited product is standard oral tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05CD05"
+            ],
+            "drugClass": [
+              "Benzodiazepine hypnotic"
+            ],
+            "indications": [
+              "Short-term adult insomnia treatment, generally seven to ten days."
+            ],
+            "contraindications": [
+              "Benzodiazepine-related hypersensitivity or concomitant strong CYP3A inhibitors."
+            ],
+            "majorWarnings": [
+              "Watch for amnesia, abnormal behavior, next-day impairment, dependence and withdrawal."
+            ],
+            "majorInteractions": [
+              "Strong CYP3A inhibitors raise exposure. Alcohol and opioids add sedation and respiratory risk."
+            ],
+            "monitoring": [
+              "Follow sleep and abnormal behavior, review interactions and taper on withdrawal."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Triazolam tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a96c618-1869-4cb6-b9f3-549e8581af72",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Triazolam tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a96c618-1869-4cb6-b9f3-549e8581af72",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 1.5,
+                "max": 5.5,
+                "unit": "h",
+                "basis": "Range of mean plasma elimination half-lives"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Short-term insomnia treatment",
+              "population": "Adults, with lower dosing for older or low-weight patients",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Usually 0.25 mg",
+              "scheduleText": "Orally once before bed",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 1, 2025-11-26",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Triazolam tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a96c618-1869-4cb6-b9f3-549e8581af72",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 0.25,
+                  "max": 0.25,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:55dd731d9b96237cc538": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00179766-980b-44b0-99d3-1fee2bb27e37",
+        "commonNames": [
+          "Sertraline",
+          "舍曲林",
+          "左洛复"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antidepressant",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Sertraline hydrochloride tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00179766-980b-44b0-99d3-1fee2bb27e37",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "舍曲林",
+          "summary": "所引资料为舍曲林普通口服片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AB06"
+            ],
+            "drugClass": [
+              "选择性血清素再摄取抑制剂"
+            ],
+            "indications": [
+              "抑郁、强迫、惊恐、创伤后应激及社交焦虑等标签适应证。"
+            ],
+            "contraindications": [
+              "相关过敏、规定的 MAOI 禁用期或合用匹莫齐特。"
+            ],
+            "majorWarnings": [
+              "关注血清素综合征、出血、低钠和停药症状。"
+            ],
+            "majorInteractions": [
+              "其他促血清素药和抗凝药增加相应风险。"
+            ],
+            "monitoring": [
+              "随访情绪、疗效、性功能及耐受，按风险检查血钠。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Sertraline hydrochloride tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00179766-980b-44b0-99d3-1fee2bb27e37",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Sertraline hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00179766-980b-44b0-99d3-1fee2bb27e37",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 26,
+                "max": 26,
+                "unit": "h",
+                "basis": "血浆终末值约数"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "成人抑郁症",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始每日 50 mg",
+              "scheduleText": "每日一次口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 2, 2019-11-01",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Sertraline hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00179766-980b-44b0-99d3-1fee2bb27e37",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 50,
+                  "max": 50,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Sertraline",
+          "summary": "These details concern standard sertraline tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AB06"
+            ],
+            "drugClass": [
+              "Selective serotonin reuptake inhibitor"
+            ],
+            "indications": [
+              "Labeled uses include depression, OCD, panic, posttraumatic stress and social anxiety."
+            ],
+            "contraindications": [
+              "Related hypersensitivity, specified MAOI washouts or concomitant pimozide."
+            ],
+            "majorWarnings": [
+              "Watch for serotonin syndrome, bleeding, hyponatremia and discontinuation symptoms."
+            ],
+            "majorInteractions": [
+              "Other serotonergic medicines and anticoagulants add related risks."
+            ],
+            "monitoring": [
+              "Follow mood, response, sexual function and tolerance, checking sodium when indicated."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Sertraline hydrochloride tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00179766-980b-44b0-99d3-1fee2bb27e37",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Sertraline hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00179766-980b-44b0-99d3-1fee2bb27e37",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 26,
+                "max": 26,
+                "unit": "h",
+                "basis": "Approximate terminal plasma value"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Adult depression",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initial 50 mg per day",
+              "scheduleText": "Orally once daily",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 2, 2019-11-01",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Sertraline hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00179766-980b-44b0-99d3-1fee2bb27e37",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 50,
+                  "max": 50,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:97d3de8ff5ab23939f61": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=017a84aa-0e1f-f560-e063-6294a90a9069",
+        "commonNames": [
+          "Venlafaxine",
+          "文拉法辛",
+          "怡诺思"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antidepressant",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Venlafaxine immediate-release tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=017a84aa-0e1f-f560-e063-6294a90a9069",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "文拉法辛",
+          "summary": "此处资料对应文拉法辛即释片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AX16"
+            ],
+            "drugClass": [
+              "血清素及去甲肾上腺素再摄取抑制剂"
+            ],
+            "indications": [
+              "重性抑郁障碍。"
+            ],
+            "contraindications": [
+              "过敏或处于规定的 MAOI 禁用期。"
+            ],
+            "majorWarnings": [
+              "可发生血压升高、血清素综合征、低钠、出血和停药症状。"
+            ],
+            "majorInteractions": [
+              "促血清素药和抗凝药可增加相关风险。"
+            ],
+            "monitoring": [
+              "监测血压、情绪及耐受，按肝肾功能核对剂量。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Venlafaxine immediate-release tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=017a84aa-0e1f-f560-e063-6294a90a9069",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Venlafaxine immediate-release tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=017a84aa-0e1f-f560-e063-6294a90a9069",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 5,
+                "max": 5,
+                "unit": "h",
+                "basis": "母药均值，活性 ODV 约 11 小时"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "重性抑郁障碍",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始每日 75 mg",
+              "scheduleText": "即释片分两次或三次随餐口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 3, 2025-02-04",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Venlafaxine immediate-release tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=017a84aa-0e1f-f560-e063-6294a90a9069",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 75,
+                  "max": 75,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Venlafaxine",
+          "summary": "These details concern venlafaxine immediate-release tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AX16"
+            ],
+            "drugClass": [
+              "Serotonin and norepinephrine reuptake inhibitor"
+            ],
+            "indications": [
+              "Major depressive disorder."
+            ],
+            "contraindications": [
+              "Hypersensitivity or a specified MAOI washout."
+            ],
+            "majorWarnings": [
+              "Increased blood pressure, serotonin syndrome, hyponatremia, bleeding and discontinuation symptoms may occur."
+            ],
+            "majorInteractions": [
+              "Serotonergic medicines and anticoagulants can add related risks."
+            ],
+            "monitoring": [
+              "Monitor blood pressure, mood and tolerance, checking dosing against organ function."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Venlafaxine immediate-release tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=017a84aa-0e1f-f560-e063-6294a90a9069",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Venlafaxine immediate-release tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=017a84aa-0e1f-f560-e063-6294a90a9069",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 5,
+                "max": 5,
+                "unit": "h",
+                "basis": "Parent-drug mean, versus about 11 hours for active ODV"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Major depressive disorder",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initial 75 mg per day",
+              "scheduleText": "Immediate-release tablets in two or three divided doses with food",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 3, 2025-02-04",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Venlafaxine immediate-release tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=017a84aa-0e1f-f560-e063-6294a90a9069",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 75,
+                  "max": 75,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:c8b0bbb9b26d21f06ba7": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=007f38e0-653b-43e4-a1c1-b59997b2762a",
+        "commonNames": [
+          "Trazodone",
+          "曲唑酮"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antidepressant",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Trazodone hydrochloride tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=007f38e0-653b-43e4-a1c1-b59997b2762a",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "曲唑酮",
+          "summary": "所引普通片含盐酸曲唑酮，可产生镇静。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AX05"
+            ],
+            "drugClass": [
+              "血清素调节型抗抑郁药"
+            ],
+            "indications": [
+              "重性抑郁障碍。"
+            ],
+            "contraindications": [
+              "规定的 MAOI 禁用期。"
+            ],
+            "majorWarnings": [
+              "关注低血压、晕厥、QT 延长、血清素综合征和持续勃起。"
+            ],
+            "majorInteractions": [
+              "促血清素药、CYP3A4 调节剂和中枢抑制剂需核对。"
+            ],
+            "monitoring": [
+              "随访情绪、血压、镇静和心脏症状，持续勃起需及时就医。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Trazodone hydrochloride tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=007f38e0-653b-43e4-a1c1-b59997b2762a",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "抑郁症",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "建议起始每日 150 mg",
+              "scheduleText": "分次口服，餐后或点心后服用",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 4, 2026-07-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Trazodone hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=007f38e0-653b-43e4-a1c1-b59997b2762a",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 150,
+                  "max": 150,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Trazodone",
+          "summary": "Cited standard tablets contain trazodone hydrochloride and may cause sedation.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AX05"
+            ],
+            "drugClass": [
+              "Serotonin-modulating antidepressant"
+            ],
+            "indications": [
+              "Major depressive disorder."
+            ],
+            "contraindications": [
+              "Specified MAOI washouts."
+            ],
+            "majorWarnings": [
+              "Watch for hypotension, syncope, QT prolongation, serotonin syndrome and priapism."
+            ],
+            "majorInteractions": [
+              "Check serotonergic medicines, CYP3A4 modulators and CNS depressants."
+            ],
+            "monitoring": [
+              "Follow mood, blood pressure, sedation and cardiac symptoms. Persistent erection requires prompt medical care."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Trazodone hydrochloride tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=007f38e0-653b-43e4-a1c1-b59997b2762a",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "Depression",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Suggested initial 150 mg per day",
+              "scheduleText": "Orally in divided doses after a meal or snack",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 4, 2026-07-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Trazodone hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=007f38e0-653b-43e4-a1c1-b59997b2762a",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 150,
+                  "max": 150,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:f9de2e52da0ed10e8183": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c14a558-2df4-4d93-97dd-640dec6ee785",
+        "commonNames": [
+          "Tranylcypromine",
+          "反苯环丙胺"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antidepressant",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Tranylcypromine tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c14a558-2df4-4d93-97dd-640dec6ee785",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "反苯环丙胺",
+          "summary": "口服 MAOI，需要严格核对饮食和相互作用。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AF04"
+            ],
+            "drugClass": [
+              "单胺氧化酶抑制剂"
+            ],
+            "indications": [
+              "其他抗抑郁药反应不足的成人重性抑郁障碍。"
+            ],
+            "contraindications": [
+              "嗜铬细胞瘤等分泌儿茶酚胺肿瘤及标签列出的禁忌药物或换药间隔。"
+            ],
+            "majorWarnings": [
+              "可发生高血压危象、体位性低血压、血清素综合征和肝损伤。"
+            ],
+            "majorInteractions": [
+              "避免高酪胺食物和规定的促血清素或拟交感药物。"
+            ],
+            "monitoring": [
+              "监测血压、情绪和肝损伤症状，持续核对用药。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Tranylcypromine tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c14a558-2df4-4d93-97dd-640dec6ee785",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "重性抑郁障碍",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "通常每日 30 mg",
+              "scheduleText": "分次口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 3, 2024-12-20",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Tranylcypromine tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c14a558-2df4-4d93-97dd-640dec6ee785",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 30,
+                  "max": 30,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Tranylcypromine",
+          "summary": "Oral MAOI requiring dietary and interaction review.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AF04"
+            ],
+            "drugClass": [
+              "Monoamine oxidase inhibitor"
+            ],
+            "indications": [
+              "Adult major depression inadequately responsive to other antidepressants."
+            ],
+            "contraindications": [
+              "Pheochromocytoma or related catecholamine-secreting tumors, and contraindicated medicines or switching intervals."
+            ],
+            "majorWarnings": [
+              "Hypertensive crisis, orthostatic hypotension, serotonin syndrome and hepatic injury can occur."
+            ],
+            "majorInteractions": [
+              "Avoid high-tyramine food and specified serotonergic or sympathomimetic medicines."
+            ],
+            "monitoring": [
+              "Monitor blood pressure, mood and hepatic symptoms, reviewing medicines regularly."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Tranylcypromine tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c14a558-2df4-4d93-97dd-640dec6ee785",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "Major depressive disorder",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Usually 30 mg per day",
+              "scheduleText": "Orally in divided doses",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 3, 2024-12-20",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Tranylcypromine tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3c14a558-2df4-4d93-97dd-640dec6ee785",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 30,
+                  "max": 30,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:07e93755a90c5d6b9361": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5b72731-1acb-45b7-9c13-290ad12d3951",
+        "commonNames": [
+          "Suvorexant",
+          "苏沃雷生"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "anxiolytic",
+          "sedative-hypnotic",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Belsomra tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5b72731-1acb-45b7-9c13-290ad12d3951",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "苏沃雷生",
+          "summary": "口服催眠药。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05CJ01"
+            ],
+            "drugClass": [
+              "双食欲素受体拮抗剂"
+            ],
+            "indications": [
+              "入睡或睡眠维持困难。"
+            ],
+            "contraindications": [
+              "发作性睡病。"
+            ],
+            "majorWarnings": [
+              "可发生次日警觉性受损、复杂睡眠行为及睡眠瘫痪。"
+            ],
+            "majorInteractions": [
+              "强 CYP3A 抑制剂显著升高暴露，酒精和中枢抑制剂增加镇静。"
+            ],
+            "monitoring": [
+              "随访睡眠、日间嗜睡、异常行为及情绪。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Belsomra tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5b72731-1acb-45b7-9c13-290ad12d3951",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Belsomra tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5b72731-1acb-45b7-9c13-290ad12d3951",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 2,
+                "max": 2,
+                "unit": "h",
+                "basis": "空腹中位数"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "失眠",
+              "population": "成人，无需相互作用减量",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "建议 10 mg",
+              "scheduleText": "每晚最多一次，睡前 30 分钟内服，距起床至少 7 小时",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 21, 2025-03-10",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Belsomra tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5b72731-1acb-45b7-9c13-290ad12d3951",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Suvorexant",
+          "summary": "Oral hypnotic.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05CJ01"
+            ],
+            "drugClass": [
+              "Dual orexin receptor antagonist"
+            ],
+            "indications": [
+              "Difficulty initiating or maintaining sleep."
+            ],
+            "contraindications": [
+              "Narcolepsy."
+            ],
+            "majorWarnings": [
+              "Impaired next-day alertness, complex sleep behaviors and sleep paralysis may occur."
+            ],
+            "majorInteractions": [
+              "Strong CYP3A inhibitors raise exposure. Alcohol and CNS depressants add sedation."
+            ],
+            "monitoring": [
+              "Follow sleep, daytime somnolence, abnormal behavior and mood."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Belsomra tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5b72731-1acb-45b7-9c13-290ad12d3951",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Belsomra tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5b72731-1acb-45b7-9c13-290ad12d3951",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 2,
+                "max": 2,
+                "unit": "h",
+                "basis": "Fasting median"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Insomnia",
+              "population": "Adults without interaction-related reduction",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Recommended 10 mg",
+              "scheduleText": "At most once nightly within 30 minutes before bed, allowing at least seven hours before awakening",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 21, 2025-03-10",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Belsomra tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5b72731-1acb-45b7-9c13-290ad12d3951",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:6c02e3dbabc6e529f571": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46b09064-a675-92d5-24a7-dac0410f77ae",
+        "commonNames": [
+          "Tasimelteon",
+          "他司美琼"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "anxiolytic",
+          "sedative-hypnotic",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:capsule"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Tasimelteon capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46b09064-a675-92d5-24a7-dac0410f77ae",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "他司美琼",
+          "summary": "所引胶囊与口服混悬液不能直接替换。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05CH03"
+            ],
+            "drugClass": [
+              "褪黑素受体激动剂"
+            ],
+            "indications": [
+              "成人非 24 小时睡眠觉醒节律障碍。"
+            ],
+            "contraindications": [
+              "所引美国标签未列禁忌。"
+            ],
+            "majorWarnings": [
+              "可出现嗜睡及警觉性下降。"
+            ],
+            "majorInteractions": [
+              "避免强 CYP1A2 抑制剂和强 CYP3A4 诱导剂。"
+            ],
+            "monitoring": [
+              "随访睡眠节律和日间警觉性，保持每天同一用药时间。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Tasimelteon capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46b09064-a675-92d5-24a7-dac0410f77ae",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "胶囊",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Tasimelteon capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46b09064-a675-92d5-24a7-dac0410f77ae",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 1.3,
+                "max": 1.3,
+                "unit": "h",
+                "basis": "母药平均终末值"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "非 24 小时节律障碍",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "胶囊",
+              "amountText": "20 mg",
+              "scheduleText": "每日同一时间睡前 1 小时口服，空腹",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 3, 2026-09-18",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Tasimelteon capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46b09064-a675-92d5-24a7-dac0410f77ae",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 20,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Tasimelteon",
+          "summary": "The cited capsules are not directly interchangeable with oral suspension.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05CH03"
+            ],
+            "drugClass": [
+              "Melatonin receptor agonist"
+            ],
+            "indications": [
+              "Adult non-24-hour sleep-wake disorder."
+            ],
+            "contraindications": [
+              "The cited US label lists none."
+            ],
+            "majorWarnings": [
+              "Somnolence and impaired alertness can occur."
+            ],
+            "majorInteractions": [
+              "Avoid strong CYP1A2 inhibitors and strong CYP3A4 inducers."
+            ],
+            "monitoring": [
+              "Follow sleep rhythm and daytime alertness, keeping a consistent daily dosing time."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Tasimelteon capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46b09064-a675-92d5-24a7-dac0410f77ae",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Capsule",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Tasimelteon capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46b09064-a675-92d5-24a7-dac0410f77ae",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 1.3,
+                "max": 1.3,
+                "unit": "h",
+                "basis": "Mean terminal parent-drug value"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Non-24-hour disorder",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Capsule",
+              "amountText": "20 mg",
+              "scheduleText": "Orally at the same time nightly, one hour before bed, without food",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 3, 2026-09-18",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Tasimelteon capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=46b09064-a675-92d5-24a7-dac0410f77ae",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 20,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:5e082804bb8601255d67": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=362f206b-73e7-4009-8c34-5a9df55679ab",
+        "commonNames": [
+          "Solriamfetol",
+          "索利安非托"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "adhd-medication",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Sunosi tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=362f206b-73e7-4009-8c34-5a9df55679ab",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "索利氨酯",
+          "summary": "所引片剂按索利氨酯计量。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06BA14"
+            ],
+            "drugClass": [
+              "促觉醒药"
+            ],
+            "indications": [
+              "成人发作性睡病或阻塞性睡眠呼吸暂停相关嗜睡。"
+            ],
+            "contraindications": [
+              "MAOI 合用或停药后 14 天内。"
+            ],
+            "majorWarnings": [
+              "可升高血压和心率，或出现焦虑、失眠及精神症状。"
+            ],
+            "majorInteractions": [
+              "其他升压药及多巴胺相关药物需谨慎核对。"
+            ],
+            "monitoring": [
+              "开始前控制血压，随访血压心率、觉醒和精神症状，并按肾功能调整。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Sunosi tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=362f206b-73e7-4009-8c34-5a9df55679ab",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Sunosi tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=362f206b-73e7-4009-8c34-5a9df55679ab",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 7.1,
+                "max": 7.1,
+                "unit": "h",
+                "basis": "表观平均终末消除"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "发作性睡病相关嗜睡",
+              "population": "成人，肾功能无需调整",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始 75 mg",
+              "scheduleText": "醒来后口服一次",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 6, 2026-05-05",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Sunosi tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=362f206b-73e7-4009-8c34-5a9df55679ab",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 75,
+                  "max": 75,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Solriamfetol",
+          "summary": "Cited tablet strength is expressed as solriamfetol.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06BA14"
+            ],
+            "drugClass": [
+              "Wakefulness-promoting medicine"
+            ],
+            "indications": [
+              "Adult sleepiness associated with narcolepsy or obstructive sleep apnea."
+            ],
+            "contraindications": [
+              "Concurrent MAOI use or within 14 days of discontinuation."
+            ],
+            "majorWarnings": [
+              "Can raise blood pressure and pulse or cause anxiety, insomnia and psychiatric symptoms."
+            ],
+            "majorInteractions": [
+              "Review other pressor or dopaminergic medicines carefully."
+            ],
+            "monitoring": [
+              "Control blood pressure before treatment and follow pressure, pulse, wakefulness and psychiatric symptoms, adjusting for renal function."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Sunosi tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=362f206b-73e7-4009-8c34-5a9df55679ab",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Sunosi tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=362f206b-73e7-4009-8c34-5a9df55679ab",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 7.1,
+                "max": 7.1,
+                "unit": "h",
+                "basis": "Mean apparent terminal elimination"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Narcolepsy-associated sleepiness",
+              "population": "Adults without renal adjustment",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initially 75 mg",
+              "scheduleText": "Orally once on awakening",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 6, 2026-05-05",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Sunosi tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=362f206b-73e7-4009-8c34-5a9df55679ab",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 75,
+                  "max": 75,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:586f3f137622b0651ef9": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0004a0bb-87c0-46f8-b36a-95c98107395d",
+        "commonNames": [
+          "Varenicline",
+          "伐尼克兰"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "substance-use-disorder-treatment",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Varenicline tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0004a0bb-87c0-46f8-b36a-95c98107395d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "伐尼克兰",
+          "summary": "所引产品为伐尼克兰普通片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N07BA03"
+            ],
+            "drugClass": [
+              "戒烟治疗药"
+            ],
+            "indications": [
+              "辅助戒烟。"
+            ],
+            "contraindications": [
+              "既往严重过敏或与本药相关的严重皮肤反应。"
+            ],
+            "majorWarnings": [
+              "可出现恶心、异常梦境、情绪行为变化及少见惊厥。"
+            ],
+            "majorInteractions": [
+              "酒精反应可能改变，戒烟本身可改变某些合用药物需要量。"
+            ],
+            "monitoring": [
+              "随访戒烟反应、情绪和耐受，按肾功能核对剂量。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Varenicline tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0004a0bb-87c0-46f8-b36a-95c98107395d",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Varenicline tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0004a0bb-87c0-46f8-b36a-95c98107395d",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "约值"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "戒烟",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "第 1–3 天每日 0.5 mg",
+              "scheduleText": "随餐后用水口服，之后按标签滴定",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 1, 2025-05-08",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Varenicline tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0004a0bb-87c0-46f8-b36a-95c98107395d",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 0.5,
+                  "max": 0.5,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Varenicline",
+          "summary": "The cited product is standard varenicline tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N07BA03"
+            ],
+            "drugClass": [
+              "Smoking-cessation medicine"
+            ],
+            "indications": [
+              "Aid to smoking cessation."
+            ],
+            "contraindications": [
+              "Prior serious hypersensitivity or serious drug-related skin reactions."
+            ],
+            "majorWarnings": [
+              "Nausea, abnormal dreams, mood or behavioral changes and rare seizures can occur."
+            ],
+            "majorInteractions": [
+              "Alcohol responses may change. Smoking cessation itself can alter requirements for other medicines."
+            ],
+            "monitoring": [
+              "Follow cessation response, mood and tolerance, checking dose against renal function."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Varenicline tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0004a0bb-87c0-46f8-b36a-95c98107395d",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Varenicline tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0004a0bb-87c0-46f8-b36a-95c98107395d",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Approximate value"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Smoking cessation",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "0.5 mg daily on days one through three",
+              "scheduleText": "Orally with water after food, then titrate per label",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 1, 2025-05-08",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Varenicline tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0004a0bb-87c0-46f8-b36a-95c98107395d",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 0.5,
+                  "max": 0.5,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:fd1048dcce12d33b6079": {
+      "fields": {
+        "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+        "commonNames": [
+          "Sulpiride",
+          "舒必利"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antipsychotic",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "Sulpiride 200 mg tablets SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "舒必利",
+          "summary": "所引资料为舒必利普通口服片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05AL01"
+            ],
+            "drugClass": [
+              "苯甲酰胺类抗精神病药"
+            ],
+            "indications": [
+              "急性和慢性精神分裂症。"
+            ],
+            "contraindications": [
+              "过敏、嗜铬细胞瘤、急性卟啉病、泌乳素依赖性肿瘤或合用左旋多巴等抗帕金森药。"
+            ],
+            "majorWarnings": [
+              "关注泌乳素升高、异常运动、QT 延长及恶性综合征。"
+            ],
+            "majorInteractions": [
+              "多巴胺激动药可相互拮抗，其他延长 QT 药物增加风险。"
+            ],
+            "monitoring": [
+              "按肾功能核对剂量，随访心律、运动及泌乳素症状。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "Sulpiride 200 mg tablets SmPC",
+                "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Sulpiride 200 mg tablets SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 3,
+                "max": 6,
+                "unit": "h",
+                "basis": "口服后血清峰值"
+              },
+              "eliminationHalfLife": {
+                "min": 8,
+                "max": 8,
+                "unit": "h",
+                "basis": "约值"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "精神分裂症",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始每日 400–800 mg",
+              "scheduleText": "早晨及傍晚分两次口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2019-11-08",
+              "sourceRefs": [
+                {
+                  "title": "Sulpiride 200 mg tablets SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 400,
+                  "max": 800,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Sulpiride",
+          "summary": "These details concern standard sulpiride oral tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05AL01"
+            ],
+            "drugClass": [
+              "Benzamide antipsychotic"
+            ],
+            "indications": [
+              "Acute and chronic schizophrenia."
+            ],
+            "contraindications": [
+              "Hypersensitivity, pheochromocytoma, acute porphyria, prolactin-dependent tumors or concomitant levodopa and specified antiparkinsonian drugs."
+            ],
+            "majorWarnings": [
+              "Watch for elevated prolactin, abnormal movements, QT prolongation and neuroleptic malignant syndrome."
+            ],
+            "majorInteractions": [
+              "Dopamine agonists can oppose effects. Other QT-prolonging medicines add risk."
+            ],
+            "monitoring": [
+              "Check dosing against renal function and follow cardiac, movement and prolactin symptoms."
+            ],
+            "sourceRefs": [
+              {
+                "title": "Sulpiride 200 mg tablets SmPC",
+                "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Sulpiride 200 mg tablets SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 3,
+                "max": 6,
+                "unit": "h",
+                "basis": "Serum peak after oral dosing"
+              },
+              "eliminationHalfLife": {
+                "min": 8,
+                "max": 8,
+                "unit": "h",
+                "basis": "Approximate value"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Schizophrenia",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initial 400–800 mg per day",
+              "scheduleText": "Orally in two doses, morning and early evening",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2019-11-08",
+              "sourceRefs": [
+                {
+                  "title": "Sulpiride 200 mg tablets SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/2430/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 400,
+                  "max": 800,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:c5a9a092f2ab20312dec": {
+      "fields": {
+        "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+        "commonNames": [
+          "Trifluoperazine",
+          "三氟拉嗪"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antipsychotic",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-liquid"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "Trifluoperazine 5 mg/5 mL oral solution SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "三氟拉嗪",
+          "summary": "所引制剂为三氟拉嗪口服液。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05AB06"
+            ],
+            "drugClass": [
+              "吩噻嗪类药物"
+            ],
+            "indications": [
+              "精神分裂症等精神病性症状，以及标签所列低剂量短期用途。"
+            ],
+            "contraindications": [
+              "过敏、昏迷、血液病、肝损害或未控制的心功能失代偿。"
+            ],
+            "majorWarnings": [
+              "可发生异常运动、迟发性运动障碍、低血压及恶性综合征。"
+            ],
+            "majorInteractions": [
+              "其他中枢抑制剂可增强镇静，核对延长 QT 用药。"
+            ],
+            "monitoring": [
+              "随访疗效、运动、血压及必要的血液和心脏检查。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "Trifluoperazine 5 mg/5 mL oral solution SmPC",
+                "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "口服溶液",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Trifluoperazine 5 mg/5 mL oral solution SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 22,
+                "max": 22,
+                "unit": "h",
+                "basis": "终末相约值，区别于早期相"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "精神分裂症",
+              "population": "身体状况良好的成人",
+              "route": "Oral",
+              "formulation": "口服溶液",
+              "amountText": "起始每次 5 mg",
+              "scheduleText": "每日两次口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2025-06-10",
+              "sourceRefs": [
+                {
+                  "title": "Trifluoperazine 5 mg/5 mL oral solution SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 5,
+                  "max": 5,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Trifluoperazine",
+          "summary": "The cited product is trifluoperazine oral solution.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05AB06"
+            ],
+            "drugClass": [
+              "Phenothiazine medicine"
+            ],
+            "indications": [
+              "Schizophrenia and other psychotic symptoms, plus labeled low-dose short-term uses."
+            ],
+            "contraindications": [
+              "Hypersensitivity, coma, blood disorders, hepatic damage or uncontrolled cardiac decompensation."
+            ],
+            "majorWarnings": [
+              "Abnormal movements, tardive dyskinesia, hypotension and neuroleptic malignant syndrome may occur."
+            ],
+            "majorInteractions": [
+              "Other CNS depressants intensify sedation. Check QT-prolonging medicines."
+            ],
+            "monitoring": [
+              "Follow response, movement, blood pressure and indicated blood or cardiac tests."
+            ],
+            "sourceRefs": [
+              {
+                "title": "Trifluoperazine 5 mg/5 mL oral solution SmPC",
+                "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Oral solution",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Trifluoperazine 5 mg/5 mL oral solution SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 22,
+                "max": 22,
+                "unit": "h",
+                "basis": "Approximate terminal-phase value, distinct from the early phase"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Schizophrenia",
+              "population": "Physically fit adults",
+              "route": "Oral",
+              "formulation": "Oral solution",
+              "amountText": "Initially 5 mg per dose",
+              "scheduleText": "Orally twice daily",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2025-06-10",
+              "sourceRefs": [
+                {
+                  "title": "Trifluoperazine 5 mg/5 mL oral solution SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/1546/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 5,
+                  "max": 5,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:8de0bdaa7307895d09de": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fd16a99-e856-4a37-9dae-c443714fac14",
+        "commonNames": [
+          "Thioridazine",
+          "硫利达嗪"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antipsychotic",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Thioridazine hydrochloride tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fd16a99-e856-4a37-9dae-c443714fac14",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "硫利达嗪",
+          "summary": "心律风险限制使用的口服抗精神病药。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05AC02"
+            ],
+            "drugClass": [
+              "吩噻嗪类抗精神病药"
+            ],
+            "indications": [
+              "其他抗精神病药反应不足的精神分裂症。"
+            ],
+            "contraindications": [
+              "长 QT、心律失常病史、低 CYP2D6 活性或相关抑制剂、其他延长 QT 药物及标签禁忌。"
+            ],
+            "majorWarnings": [
+              "可发生严重 QT 延长、尖端扭转型室速和异常运动。"
+            ],
+            "majorInteractions": [
+              "氟西汀等 CYP2D6 抑制剂及其他延长 QT 药物可造成严重心律风险。"
+            ],
+            "monitoring": [
+              "开始前及调量时按标签评估心电图、电解质及合用药。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Thioridazine hydrochloride tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fd16a99-e856-4a37-9dae-c443714fac14",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "难治性精神分裂症",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始每次 50–100 mg",
+              "scheduleText": "每日三次口服，按反应及心律监测调整",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 2, 2026-03-02",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Thioridazine hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fd16a99-e856-4a37-9dae-c443714fac14",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 50,
+                  "max": 100,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Thioridazine",
+          "summary": "Oral antipsychotic whose use is limited by cardiac risk.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05AC02"
+            ],
+            "drugClass": [
+              "Phenothiazine antipsychotic"
+            ],
+            "indications": [
+              "Schizophrenia inadequately responsive to other antipsychotics."
+            ],
+            "contraindications": [
+              "Long QT, prior arrhythmia, reduced CYP2D6 activity or relevant inhibitors, other QT-prolonging drugs and labeled restrictions."
+            ],
+            "majorWarnings": [
+              "Serious QT prolongation, torsades and abnormal movements can occur."
+            ],
+            "majorInteractions": [
+              "CYP2D6 inhibitors such as fluoxetine and other QT-prolonging medicines can cause serious cardiac risk."
+            ],
+            "monitoring": [
+              "Assess ECG, electrolytes and combinations before treatment and during titration per label."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Thioridazine hydrochloride tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fd16a99-e856-4a37-9dae-c443714fac14",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "Refractory schizophrenia",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initially 50–100 mg per dose",
+              "scheduleText": "Orally three times daily, adjusted to response and cardiac monitoring",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 2, 2026-03-02",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Thioridazine hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fd16a99-e856-4a37-9dae-c443714fac14",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 50,
+                  "max": 100,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:43c1b52f4cad7c579a6e": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=326ef804-8d3a-425e-8513-8c9811856aa0",
+        "commonNames": [
+          "Trimipramine",
+          "曲米帕明"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antidepressant",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:capsule"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Trimipramine maleate capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=326ef804-8d3a-425e-8513-8c9811856aa0",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "曲米帕明",
+          "summary": "所引胶囊含马来酸曲米帕明，强度以曲米帕明计。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AA06"
+            ],
+            "drugClass": [
+              "三环类抗抑郁药"
+            ],
+            "indications": [
+              "抑郁症状。"
+            ],
+            "contraindications": [
+              "相关过敏、MAOI 合用及规定停药间隔、急性心肌梗死恢复期。"
+            ],
+            "majorWarnings": [
+              "关注镇静、抗胆碱反应、心律异常及过量毒性。"
+            ],
+            "majorInteractions": [
+              "中枢抑制剂、抗胆碱药及 CYP2D6 抑制剂增加相关风险。"
+            ],
+            "monitoring": [
+              "随访情绪、血压和心脏及抗胆碱症状。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Trimipramine maleate capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=326ef804-8d3a-425e-8513-8c9811856aa0",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "抑郁症状",
+              "population": "成人门诊患者",
+              "route": "Oral",
+              "formulation": "胶囊",
+              "amountText": "起始每日 75 mg",
+              "scheduleText": "分次口服，之后按反应调整",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 100, 2023-06-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Trimipramine maleate capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=326ef804-8d3a-425e-8513-8c9811856aa0",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 75,
+                  "max": 75,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Trimipramine",
+          "summary": "Cited capsules contain trimipramine maleate with strength expressed as trimipramine.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AA06"
+            ],
+            "drugClass": [
+              "Tricyclic antidepressant"
+            ],
+            "indications": [
+              "Depressive symptoms."
+            ],
+            "contraindications": [
+              "Related hypersensitivity, MAOI combinations or specified washouts, and acute recovery after myocardial infarction."
+            ],
+            "majorWarnings": [
+              "Watch for sedation, anticholinergic effects, arrhythmias and overdose toxicity."
+            ],
+            "majorInteractions": [
+              "CNS depressants, anticholinergics and CYP2D6 inhibitors add related risks."
+            ],
+            "monitoring": [
+              "Follow mood, blood pressure, cardiac and anticholinergic symptoms."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Trimipramine maleate capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=326ef804-8d3a-425e-8513-8c9811856aa0",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "Depressive symptoms",
+              "population": "Adult outpatients",
+              "route": "Oral",
+              "formulation": "Capsule",
+              "amountText": "Initial 75 mg per day",
+              "scheduleText": "Orally in divided doses, then adjust to response",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 100, 2023-06-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Trimipramine maleate capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=326ef804-8d3a-425e-8513-8c9811856aa0",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 75,
+                  "max": 75,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:b4736e550eef976f80f2": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b891bd9f-fdb8-4862-89c5-ecdd700398a3",
+        "commonNames": [
+          "Selegiline",
+          "司来吉兰"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antidepressant",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "transdermal"
+          }
+        ],
+        "recordingUnits": {
+          "TRANSDERMAL": "mg"
+        },
+        "formulationIds": [
+          "form:patch"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Emsam transdermal system",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b891bd9f-fdb8-4862-89c5-ecdd700398a3",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "司来吉兰",
+          "summary": "此处为用于抑郁症的司来吉兰透皮贴剂。口服抗帕金森产品另查。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AF05"
+            ],
+            "drugClass": [
+              "单胺氧化酶抑制剂"
+            ],
+            "indications": [
+              "成人重性抑郁障碍。"
+            ],
+            "contraindications": [
+              "嗜铬细胞瘤、12 岁以下及多种禁忌合用药或换药间隔。"
+            ],
+            "majorWarnings": [
+              "关注血清素综合征、高血压危象、低血压及贴敷反应。"
+            ],
+            "majorInteractions": [
+              "其他抗抑郁药及特定阿片等禁忌合用，较高规格贴剂需按标签限制酪胺。"
+            ],
+            "monitoring": [
+              "随访血压、情绪、皮肤反应及相互作用，避免外部热源。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Emsam transdermal system",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b891bd9f-fdb8-4862-89c5-ecdd700398a3",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Transdermal",
+              "formulation": "贴剂",
+              "notes": [
+                "透皮给药减少首过代谢。标签将静脉给药后母药及三种代谢物的平均半衰期合并报告为 18–25 小时。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Emsam transdermal system",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b891bd9f-fdb8-4862-89c5-ecdd700398a3",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "重性抑郁障碍",
+              "population": "成人",
+              "route": "Transdermal",
+              "formulation": "贴剂",
+              "amountText": "起始释放量 6 mg/24 h",
+              "scheduleText": "每日更换一片，移除旧贴片并轮换部位",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 17, 2020-05-15",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Emsam transdermal system",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b891bd9f-fdb8-4862-89c5-ecdd700398a3",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 6,
+                  "max": 6,
+                  "unit": "mg/24 h",
+                  "basis": "patch-delivery-rate",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Selegiline",
+          "summary": "These details concern selegiline transdermal patches for depression. Oral Parkinson products have separate labeling.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AF05"
+            ],
+            "drugClass": [
+              "Monoamine oxidase inhibitor"
+            ],
+            "indications": [
+              "Major depressive disorder in adults."
+            ],
+            "contraindications": [
+              "Pheochromocytoma, age under 12, and numerous interacting medicines or switching periods."
+            ],
+            "majorWarnings": [
+              "Watch for serotonin syndrome, hypertensive crisis, hypotension and application-site reactions."
+            ],
+            "majorInteractions": [
+              "Other antidepressants and specified opioids are contraindicated. Higher-strength patches require label tyramine restrictions."
+            ],
+            "monitoring": [
+              "Follow blood pressure, mood, skin reactions and interactions. Avoid external heat."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Emsam transdermal system",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b891bd9f-fdb8-4862-89c5-ecdd700398a3",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Transdermal",
+              "formulation": "Transdermal patch",
+              "notes": [
+                "Transdermal delivery reduces first-pass metabolism. The label reports the means for parent and three metabolites after intravenous dosing collectively as 18–25 hours."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Emsam transdermal system",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b891bd9f-fdb8-4862-89c5-ecdd700398a3",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Major depressive disorder",
+              "population": "Adults",
+              "route": "Transdermal",
+              "formulation": "Transdermal patch",
+              "amountText": "Initial delivery of 6 mg per 24 hours",
+              "scheduleText": "Replace daily, removing the old patch and rotating sites",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 17, 2020-05-15",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Emsam transdermal system",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b891bd9f-fdb8-4862-89c5-ecdd700398a3",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 6,
+                  "max": 6,
+                  "unit": "mg/24 h",
+                  "basis": "patch-delivery-rate",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:4d169718371b7b4e2075": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1286ab49-fa34-488e-e063-6394a90ad582",
+        "commonNames": [
+          "Valproate",
+          "Valproic acid",
+          "Sodium valproate",
+          "丙戊酸",
+          "丙戊酸钠"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "mood-stabilizer",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-liquid"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Valproic acid oral solution",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1286ab49-fa34-488e-e063-6394a90ad582",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "丙戊酸",
+          "summary": "所引口服液含丙戊酸钠，强度按丙戊酸当量。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N03AG01"
+            ],
+            "drugClass": [
+              "丙戊酸类抗癫痫药"
+            ],
+            "indications": [
+              "标签所列局灶和失神等癫痫发作。"
+            ],
+            "contraindications": [
+              "显著肝病、规定的 POLG 线粒体病、尿素循环障碍或相关过敏。"
+            ],
+            "majorWarnings": [
+              "有肝毒性、胰腺炎、胎儿损伤、高氨及血小板减少风险。"
+            ],
+            "majorInteractions": [
+              "可升高拉莫三嗪暴露，碳青霉烯类可降低丙戊酸浓度。"
+            ],
+            "monitoring": [
+              "监测肝功能、血象及临床反应，必要时测血药及血氨。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Valproic acid oral solution",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1286ab49-fa34-488e-e063-6394a90ad582",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "口服溶液",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Valproic acid oral solution",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1286ab49-fa34-488e-e063-6394a90ad582",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 9,
+                "max": 16,
+                "unit": "h",
+                "basis": "口服丙戊酸单药范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "复杂局灶性发作",
+              "population": "成人及 10 岁以上患者",
+              "route": "Oral",
+              "formulation": "口服溶液",
+              "amountText": "起始每日 10–15 mg/kg（丙戊酸当量）",
+              "scheduleText": "口服，日总量超过 250 mg 时分次，按标签滴定",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 1, 2024-05-27",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Valproic acid oral solution",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1286ab49-fa34-488e-e063-6394a90ad582",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 15,
+                  "unit": "mg/kg/day",
+                  "basis": "weight-based-daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Valproate",
+          "summary": "The cited solution contains sodium valproate with strength expressed as valproic acid equivalent.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N03AG01"
+            ],
+            "drugClass": [
+              "Valproate antiseizure medicine"
+            ],
+            "indications": [
+              "Labeled partial, absence and selected other seizures."
+            ],
+            "contraindications": [
+              "Significant hepatic disease, specified POLG-related mitochondrial disease, urea-cycle disorders or related hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Risks include hepatotoxicity, pancreatitis, fetal harm, hyperammonemia and thrombocytopenia."
+            ],
+            "majorInteractions": [
+              "Can raise lamotrigine exposure. Carbapenems can lower valproate concentrations."
+            ],
+            "monitoring": [
+              "Monitor hepatic function, blood counts and response, measuring drug or ammonia levels when indicated."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Valproic acid oral solution",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1286ab49-fa34-488e-e063-6394a90ad582",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Oral solution",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Valproic acid oral solution",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1286ab49-fa34-488e-e063-6394a90ad582",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 9,
+                "max": 16,
+                "unit": "h",
+                "basis": "Range during oral valproate monotherapy"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Complex partial seizures",
+              "population": "Adults and patients aged ten or older",
+              "route": "Oral",
+              "formulation": "Oral solution",
+              "amountText": "Initial 10–15 mg/kg/day, as valproic acid equivalent",
+              "scheduleText": "Orally in divided doses above 250 mg/day, titrating per label",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 1, 2024-05-27",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Valproic acid oral solution",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1286ab49-fa34-488e-e063-6394a90ad582",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 15,
+                  "unit": "mg/kg/day",
+                  "basis": "weight-based-daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:ad688def904e69e828ce": {
+      "fields": {
+        "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65411280/extrait",
+        "commonNames": [
+          "Tianeptine",
+          "Stablon",
+          "Coaxil",
+          "Tatinol",
+          "噻奈普汀"
+        ],
+        "categories": [
+          "antidepressant",
+          "clinical-psychiatry"
+        ],
+        "roas": [
+          {
+            "name": "oral",
+            "duration": {
+              "onset": {
+                "min": 30,
+                "max": 60,
+                "units": "minutes"
+              },
+              "comeup": {
+                "min": 15,
+                "max": 30,
+                "units": "minutes"
+              },
+              "peak": {
+                "min": 60,
+                "max": 90,
+                "units": "minutes"
+              },
+              "offset": {
+                "min": 30,
+                "max": 60,
+                "units": "minutes"
+              },
+              "total": {
+                "min": 2,
+                "max": 3,
+                "units": "hours"
+              }
+            }
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "ANSM · Stablon 12.5 mg RCP",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65411280/extrait",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "噻奈普汀",
+          "summary": "所引片剂含噻奈普汀钠。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AX14"
+            ],
+            "drugClass": [
+              "抗抑郁药"
+            ],
+            "indications": [
+              "重性抑郁发作。"
+            ],
+            "contraindications": [
+              "过敏及 15 岁以下，MAOI 合用需遵守标签停药间隔。"
+            ],
+            "majorWarnings": [
+              "有滥用、依赖及戒断风险，关注自杀意念和低钠。"
+            ],
+            "majorInteractions": [
+              "非选择性 MAOI 可造成严重反应，避免酒精。"
+            ],
+            "monitoring": [
+              "随访情绪、剂量使用及依赖，特殊人群按标签减量。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "ANSM · Stablon 12.5 mg RCP",
+                "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65411280/extrait",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "ANSM · Stablon 12.5 mg RCP",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65411280/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 3,
+                "max": 3,
+                "unit": "h",
+                "basis": "母药终末约值，活性代谢物另计"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "重性抑郁发作",
+              "population": "成人，特殊人群另有减量",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "每次 12.5 mg 钠盐",
+              "scheduleText": "三餐开始时各口服一次",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2019-07-09",
+              "sourceRefs": [
+                {
+                  "title": "ANSM · Stablon 12.5 mg RCP",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65411280/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 12.5,
+                  "max": 12.5,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Tianeptine",
+          "summary": "The cited tablets contain tianeptine sodium.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N06AX14"
+            ],
+            "drugClass": [
+              "Antidepressant"
+            ],
+            "indications": [
+              "Major depressive episodes."
+            ],
+            "contraindications": [
+              "Hypersensitivity or age below 15. MAOI combinations require label washout precautions."
+            ],
+            "majorWarnings": [
+              "Misuse, dependence and withdrawal are risks. Watch for suicidal thoughts and hyponatremia."
+            ],
+            "majorInteractions": [
+              "Nonselective MAOIs can cause serious reactions. Avoid alcohol."
+            ],
+            "monitoring": [
+              "Follow mood, dose use and dependence, reducing doses for specified populations."
+            ],
+            "sourceRefs": [
+              {
+                "title": "ANSM · Stablon 12.5 mg RCP",
+                "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65411280/extrait",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "ANSM · Stablon 12.5 mg RCP",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65411280/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 3,
+                "max": 3,
+                "unit": "h",
+                "basis": "Approximate terminal parent-drug value, distinct from active metabolite"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Major depressive episodes",
+              "population": "Adults, with reduction for specified populations",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "12.5 mg sodium salt per dose",
+              "scheduleText": "Orally at the start of each main meal",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2019-07-09",
+              "sourceRefs": [
+                {
+                  "title": "ANSM · Stablon 12.5 mg RCP",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65411280/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 12.5,
+                  "max": 12.5,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:dc76083d842fab73f9fb": {
+      "fields": {
+        "url": "https://www.geneesmiddeleninformatiebank.nl/smpc/h20612_smpc.pdf",
+        "commonNames": [
+          "Sertindole",
+          "舍吲哚"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antipsychotic",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "CBG · Serdolect SmPC",
+            "url": "https://www.geneesmiddeleninformatiebank.nl/smpc/h20612_smpc.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "舍吲哚",
+          "summary": "口服抗精神病药，使用受心血管安全要求限制。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05AE03"
+            ],
+            "drugClass": [
+              "第二代抗精神病药"
+            ],
+            "indications": [
+              "至少一种其他抗精神病药不耐受患者的精神分裂症。"
+            ],
+            "contraindications": [
+              "QT 延长、特定心脏病、未纠正低钾低镁、严重肝损害及禁忌合用药等。"
+            ],
+            "majorWarnings": [
+              "可能延长 QT 和引起体位性低血压。"
+            ],
+            "majorInteractions": [
+              "其他延长 QT 或强 CYP3A 抑制剂等禁忌合用。"
+            ],
+            "monitoring": [
+              "按标签在治疗前及治疗中监测心电图、电解质和血压。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "CBG · Serdolect SmPC",
+                "url": "https://www.geneesmiddeleninformatiebank.nl/smpc/h20612_smpc.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "CBG · Serdolect SmPC",
+                  "url": "https://www.geneesmiddeleninformatiebank.nl/smpc/h20612_smpc.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 72,
+                "max": 72,
+                "unit": "h",
+                "basis": "平均约 3 天"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "精神分裂症",
+              "population": "符合心脏安全条件的成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始每日 4 mg",
+              "scheduleText": "每日一次口服，每 4–5 天按标签逐步加量",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2021-04-23",
+              "sourceRefs": [
+                {
+                  "title": "CBG · Serdolect SmPC",
+                  "url": "https://www.geneesmiddeleninformatiebank.nl/smpc/h20612_smpc.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 4,
+                  "max": 4,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Sertindole",
+          "summary": "Oral antipsychotic with cardiovascular safety restrictions.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05AE03"
+            ],
+            "drugClass": [
+              "Second-generation antipsychotic"
+            ],
+            "indications": [
+              "Schizophrenia in patients intolerant of at least one other antipsychotic."
+            ],
+            "contraindications": [
+              "Contraindications include QT prolongation, specified cardiac disease, uncorrected low potassium or magnesium, severe hepatic impairment and interacting drugs."
+            ],
+            "majorWarnings": [
+              "May prolong QT and cause orthostatic hypotension."
+            ],
+            "majorInteractions": [
+              "Other QT-prolonging drugs or strong CYP3A inhibitors are among contraindicated combinations."
+            ],
+            "monitoring": [
+              "Monitor ECG, electrolytes and blood pressure before and during treatment per label."
+            ],
+            "sourceRefs": [
+              {
+                "title": "CBG · Serdolect SmPC",
+                "url": "https://www.geneesmiddeleninformatiebank.nl/smpc/h20612_smpc.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "CBG · Serdolect SmPC",
+                  "url": "https://www.geneesmiddeleninformatiebank.nl/smpc/h20612_smpc.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 72,
+                "max": 72,
+                "unit": "h",
+                "basis": "Mean about three days"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Schizophrenia",
+              "population": "Adults meeting cardiac safety criteria",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initial 4 mg per day",
+              "scheduleText": "Orally once daily, with label titration every four to five days",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2021-04-23",
+              "sourceRefs": [
+                {
+                  "title": "CBG · Serdolect SmPC",
+                  "url": "https://www.geneesmiddeleninformatiebank.nl/smpc/h20612_smpc.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 4,
+                  "max": 4,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:02502fc529c54a30baa5": {
+      "fields": {
+        "url": "https://cima.aemps.es/cima/dochtml/ft/54279/FT_54279.html",
+        "commonNames": [
+          "Tiapride",
+          "硫必利"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "antipsychotic",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "AEMPS · Tiaprizal 100 mg tablets",
+            "url": "https://cima.aemps.es/cima/dochtml/ft/54279/FT_54279.html",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "硫必利",
+          "summary": "所引片剂含盐酸硫必利，强度按硫必利计。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05AL03"
+            ],
+            "drugClass": [
+              "苯甲酰胺类药物"
+            ],
+            "indications": [
+              "酒精相关患者激越攻击性的短期治疗及重度亨廷顿舞蹈病。"
+            ],
+            "contraindications": [
+              "过敏、泌乳素依赖性肿瘤、嗜铬细胞瘤或合用左旋多巴等多巴胺药。"
+            ],
+            "majorWarnings": [
+              "关注 QT 延长、异常运动、泌乳素升高及恶性综合征。"
+            ],
+            "majorInteractions": [
+              "延长 QT 或影响电解质的药物可增加心律风险，酒精增加镇静。"
+            ],
+            "monitoring": [
+              "按肾功能减量，随访心律、运动及疗效。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "AEMPS · Tiaprizal 100 mg tablets",
+                "url": "https://cima.aemps.es/cima/dochtml/ft/54279/FT_54279.html",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "AEMPS · Tiaprizal 100 mg tablets",
+                  "url": "https://cima.aemps.es/cima/dochtml/ft/54279/FT_54279.html",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 3,
+                "max": 5,
+                "unit": "h",
+                "basis": "健康年轻志愿者口服资料"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "标签所列激越或攻击性",
+              "population": "老年患者，按肾功能另行调整",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始每日 100 mg",
+              "scheduleText": "口服，按反应逐步调整及限制疗程",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2023-09",
+              "sourceRefs": [
+                {
+                  "title": "AEMPS · Tiaprizal 100 mg tablets",
+                  "url": "https://cima.aemps.es/cima/dochtml/ft/54279/FT_54279.html",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 100,
+                  "max": 100,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Tiapride",
+          "summary": "Cited tablets contain tiapride hydrochloride with strength expressed as tiapride.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05AL03"
+            ],
+            "drugClass": [
+              "Benzamide medicine"
+            ],
+            "indications": [
+              "Short-term agitation or aggression in alcoholic patients and severe Huntington chorea."
+            ],
+            "contraindications": [
+              "Hypersensitivity, prolactin-dependent tumors, pheochromocytoma or concomitant levodopa and specified dopamine drugs."
+            ],
+            "majorWarnings": [
+              "Watch for QT prolongation, abnormal movements, elevated prolactin and neuroleptic malignant syndrome."
+            ],
+            "majorInteractions": [
+              "QT-prolonging or electrolyte-altering drugs add cardiac risk. Alcohol adds sedation."
+            ],
+            "monitoring": [
+              "Reduce doses for renal impairment and follow cardiac risk, movement and response."
+            ],
+            "sourceRefs": [
+              {
+                "title": "AEMPS · Tiaprizal 100 mg tablets",
+                "url": "https://cima.aemps.es/cima/dochtml/ft/54279/FT_54279.html",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "AEMPS · Tiaprizal 100 mg tablets",
+                  "url": "https://cima.aemps.es/cima/dochtml/ft/54279/FT_54279.html",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 3,
+                "max": 5,
+                "unit": "h",
+                "basis": "Oral data in healthy young volunteers"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Labeled agitation or aggression",
+              "population": "Older patients, with further renal adjustment",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initial 100 mg per day",
+              "scheduleText": "Orally, titrating to response and observing duration limits",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2023-09",
+              "sourceRefs": [
+                {
+                  "title": "AEMPS · Tiaprizal 100 mg tablets",
+                  "url": "https://cima.aemps.es/cima/dochtml/ft/54279/FT_54279.html",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 100,
+                  "max": 100,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:f98f93e5582be54bba0f": {
+      "fields": {
+        "url": "https://www.sukl.sk/hlavna-stranka/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=795703&dok_sec=97cca78f757f3c7df469cb7cfaec88a3&page_id=637",
+        "commonNames": [
+          "Tofisopam",
+          "托非索泮"
+        ],
+        "categories": [
+          "clinical-psychiatry",
+          "anxiolytic",
+          "sedative-hypnotic",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "SUKL · Grandaxin 50 mg approved leaflet",
+            "url": "https://www.sukl.sk/hlavna-stranka/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=795703&dok_sec=97cca78f757f3c7df469cb7cfaec88a3&page_id=637",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "托非索泮",
+          "summary": "所引制剂为托非索泮 50 mg 口服片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05BA23"
+            ],
+            "drugClass": [
+              "苯二氮䓬类相关抗焦虑药"
+            ],
+            "indications": [
+              "伴紧张、焦虑、自主神经症状的心理或躯体疾病，以及酒精戒断相关自主神经症状。"
+            ],
+            "contraindications": [
+              "相关过敏、失代偿性呼吸功能不全、睡眠呼吸暂停或昏迷病史，以及合用他克莫司、西罗莫司或环孢素。"
+            ],
+            "majorWarnings": [
+              "可出现激越、失眠、胃肠不适及呼吸抑制，癫痫者可能诱发发作。"
+            ],
+            "majorInteractions": [
+              "上述免疫抑制剂禁忌合用，阿片及其他中枢抑制剂可增加呼吸风险。"
+            ],
+            "monitoring": [
+              "随访焦虑、激越及呼吸，核对肝肾功能和合用药。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "SUKL · Grandaxin 50 mg approved leaflet",
+                "url": "https://www.sukl.sk/hlavna-stranka/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=795703&dok_sec=97cca78f757f3c7df469cb7cfaec88a3&page_id=637",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "标签所列焦虑相关状态",
+              "population": "18 岁及以上成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "每次 50–100 mg",
+              "scheduleText": "每日口服 1–3 次，按临床反应调整",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2023/03594-Z1B",
+              "sourceRefs": [
+                {
+                  "title": "SUKL · Grandaxin 50 mg approved leaflet",
+                  "url": "https://www.sukl.sk/hlavna-stranka/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=795703&dok_sec=97cca78f757f3c7df469cb7cfaec88a3&page_id=637",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 50,
+                  "max": 100,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Tofisopam",
+          "summary": "The cited product is tofisopam 50 mg oral tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N05BA23"
+            ],
+            "drugClass": [
+              "Benzodiazepine-related anxiolytic"
+            ],
+            "indications": [
+              "Psychological or somatic conditions with tension, anxiety or autonomic symptoms, and autonomic symptoms of alcohol withdrawal."
+            ],
+            "contraindications": [
+              "Related hypersensitivity, decompensated respiratory insufficiency, sleep-apnea or coma history, or concomitant tacrolimus, sirolimus or cyclosporine."
+            ],
+            "majorWarnings": [
+              "Agitation, insomnia, gastrointestinal symptoms or respiratory depression may occur. Seizures can be provoked in epilepsy."
+            ],
+            "majorInteractions": [
+              "The listed immunosuppressants are contraindicated. Opioids and other CNS depressants add respiratory risk."
+            ],
+            "monitoring": [
+              "Follow anxiety, agitation and breathing, checking hepatic or renal status and concurrent medicines."
+            ],
+            "sourceRefs": [
+              {
+                "title": "SUKL · Grandaxin 50 mg approved leaflet",
+                "url": "https://www.sukl.sk/hlavna-stranka/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=795703&dok_sec=97cca78f757f3c7df469cb7cfaec88a3&page_id=637",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "Labeled anxiety-related conditions",
+              "population": "Adults aged 18 or older",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "50–100 mg per dose",
+              "scheduleText": "Orally one to three times daily, individualized to response",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2023/03594-Z1B",
+              "sourceRefs": [
+                {
+                  "title": "SUKL · Grandaxin 50 mg approved leaflet",
+                  "url": "https://www.sukl.sk/hlavna-stranka/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=795703&dok_sec=97cca78f757f3c7df469cb7cfaec88a3&page_id=637",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 50,
+                  "max": 100,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
     }
   }
 }
