@@ -29197,7 +29197,7 @@
         "唑吡坦",
         "思诺思"
       ],
-      "url": "https://psychonautwiki.org/wiki/Zolpidem",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=021153ce-fe27-4ed1-8d88-b4157b0ed734",
       "isApproved": true,
       "crossTolerances": [],
       "addictionPotential": "moderately addictive",
@@ -29209,17 +29209,10 @@
         "clinical-psychiatry",
         "sedative-hypnotic"
       ],
-      "summary": "Commonly prescribed for insomnia, Ambien (zolpidem) can cause realistic hallucinations similar to those of deliriants, and is very likely to cause amnesia at higher doses. Take care when using this drug, as it tends to lower inhibitions to a level which causes the user to do things they might not normally do when sober.",
+      "summary": "所引制剂为酒石酸唑吡坦即释片。",
       "roas": [
         {
           "name": "oral",
-          "dose": {
-            "units": "mg",
-            "lightMin": 5,
-            "commonMin": 20,
-            "strongMin": 30,
-            "heavyMin": 50
-          },
           "duration": {
             "onset": {
               "min": 15,
@@ -29259,209 +29252,115 @@
           "N05CF02"
         ],
         "drugClass": [
-          "Anxiolytic or hypnotic"
+          "非苯二氮䓬类催眠药"
         ],
         "indications": [
-          "Anxiety or insomnia-related indications depending on local labeling"
+          "短期治疗入睡困难。"
         ],
         "contraindications": [
-          "See current product-specific label and local approved labeling."
+          "既往用药后发生复杂睡眠行为，或对唑吡坦过敏。"
         ],
         "majorWarnings": [
-          "Sedatives can impair driving and respiration; avoid combining with alcohol, opioids, or other CNS depressants unless specifically supervised."
+          "可能出现睡眠驾驶等复杂睡眠行为、次日警觉性下降、依赖及戒断。"
         ],
         "majorInteractions": [
-          "Drug-specific CYP, QT, serotonergic, CNS depressant, or other interaction risks require product-specific label review."
+          "酒精及其他中枢抑制剂可增加镇静。"
         ],
         "monitoring": [
-          "Sedation",
-          "Falls",
-          "Respiratory depression risk",
-          "Dependence/withdrawal risk",
-          "Cognitive impairment"
+          "随访睡眠、异常行为及次日警觉性，持续失眠需复评。"
         ],
         "sourceRefs": [
           {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Zolpidem",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:021153ce-fe27-4ed1-8d88-b4157b0ed734",
+            "title": "DailyMed · Zolpidem tartrate tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=021153ce-fe27-4ed1-8d88-b4157b0ed734",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
+          "route": "Oral",
+          "formulation": "片剂",
           "notes": [
-            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
-            "Values can vary by formulation, population, organ function, and interacting medicines."
+            "所引说明书的药代资料。"
           ],
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Zolpidem",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:021153ce-fe27-4ed1-8d88-b4157b0ed734",
+              "title": "DailyMed · Zolpidem tartrate tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=021153ce-fe27-4ed1-8d88-b4157b0ed734",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "tmax": {
-            "min": 1.6,
-            "max": 1.6,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "eliminationHalfLife": {
             "min": 1.4,
             "max": 4.5,
             "unit": "h",
-            "basis": "label pharmacokinetics"
+            "basis": "5 mg 即释片研究范围，均值 2.6 小时"
           }
         }
       ],
-      "tdm": {
-        "isRoutinelyMonitored": false,
-        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
-        "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
-        "pharmacokineticParametersAvailable": true,
-        "interpretationCaveats": [
-          "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-          "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method."
-        ],
-        "sourceRefs": [
-          {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Zolpidem",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:021153ce-fe27-4ed1-8d88-b4157b0ed734",
-            "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem"
-          }
-        ]
-      },
+      "tdm": null,
       "doseUseReferences": [
         {
-          "indication": "Insomnia label context",
-          "population": "Adults unless product-specific label states otherwise",
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
-          "amountText": "5 to 10 mg once nightly in cited immediate-release label context",
-          "scheduleText": "immediately before bedtime with 7 to 8 hours before awakening",
+          "indication": "入睡困难",
+          "population": "成年女性",
+          "route": "Oral",
+          "formulation": "片剂",
+          "amountText": "起始 5 mg",
+          "scheduleText": "临睡前单次口服，保证至少 7–8 小时睡眠",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL 7, 2023-11-16",
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Zolpidem tartrate tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=021153ce-fe27-4ed1-8d88-b4157b0ed734",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
           "ranges": [
             {
               "min": 5,
-              "max": 10,
+              "max": 5,
               "unit": "mg",
-              "basis": "daily-total",
-              "frequency": "immediately before bedtime with 7 to 8 hours before awakening",
-              "rangeKind": "label-regimen",
-              "label": "Label/literature regimen range",
-              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
-            }
-          ],
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": [
-            {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Zolpidem",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:021153ce-fe27-4ed1-8d88-b4157b0ed734",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem"
+              "basis": "per-dose",
+              "rangeKind": "label-regimen"
             }
           ]
         }
       ],
       "sourceRefs": [
         {
-          "title": "WHO ATC/DDD Index N05 Psycholeptics",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-          "sourceType": "classification",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "国家基本药物目录 2018",
-          "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-          "sourceType": "national-essential-medicines-list",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "openFDA drug label: Zolpidem",
-          "url": "https://api.fda.gov/drug/label.json?search=set_id:021153ce-fe27-4ed1-8d88-b4157b0ed734",
+          "title": "DailyMed · Zolpidem tartrate tablets",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=021153ce-fe27-4ed1-8d88-b4157b0ed734",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zolpidem"
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid",
+        "form:tablet"
+      ],
+      "interactions": null,
+      "displayName": "唑吡坦",
+      "endocrineInfo": null,
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
       ]
     },
     {
@@ -29473,7 +29372,7 @@
         "Zopiclone",
         "佐匹克隆"
       ],
-      "url": "https://psychonautwiki.org/wiki/Zopiclone",
+      "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
       "isApproved": true,
       "tolerance": {
         "full": "within a couple of weeks of daily use",
@@ -29491,17 +29390,10 @@
         "clinical-psychiatry",
         "sedative-hypnotic"
       ],
-      "summary": "A nonbenzodiazepine sedative sleep aid (Z-drug), which can have hallucinogenic effects if taken while awake. Often causes users to have a metallic taste in the mouth for ~12h. Has been reported in some cases to cause certain users to black out, redose excessively and undertake dangerous activities such as driving.",
+      "summary": "所引英国制剂为佐匹克隆口服片。",
       "roas": [
         {
           "name": "oral",
-          "dose": {
-            "units": "mg",
-            "lightMin": 2,
-            "commonMin": 5,
-            "strongMin": 7.5,
-            "heavyMin": 15
-          },
           "duration": {
             "onset": {
               "min": 10,
@@ -29526,209 +29418,115 @@
           "N05CF01"
         ],
         "drugClass": [
-          "Anxiolytic or hypnotic"
+          "非苯二氮䓬类催眠药"
         ],
         "indications": [
-          "Anxiety or insomnia-related indications depending on local labeling"
+          "成人失眠短期治疗。"
         ],
         "contraindications": [
-          "See current product-specific label and local approved labeling."
+          "重症肌无力、呼吸衰竭、严重睡眠呼吸暂停或肝功能不全、相关过敏及既往复杂睡眠行为。"
         ],
         "majorWarnings": [
-          "Sedatives can impair driving and respiration; avoid combining with alcohol, opioids, or other CNS depressants unless specifically supervised."
+          "可出现嗜睡、记忆损害、复杂睡眠行为、依赖及戒断。"
         ],
         "majorInteractions": [
-          "Drug-specific CYP, QT, serotonergic, CNS depressant, or other interaction risks require product-specific label review."
+          "酒精、阿片及其他中枢抑制剂增加镇静与呼吸风险。"
         ],
         "monitoring": [
-          "Sedation",
-          "Falls",
-          "Respiratory depression risk",
-          "Dependence/withdrawal risk",
-          "Cognitive impairment"
+          "随访睡眠、次日警觉性、呼吸及依赖，治疗前安排停药方案。"
         ],
         "sourceRefs": [
           {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
+            "title": "Zimovane 7.5 mg tablets SmPC",
             "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
-            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
+          "route": "Oral",
+          "formulation": "片剂",
           "notes": [
-            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
-            "Values can vary by formulation, population, organ function, and interacting medicines."
+            "所引说明书的药代资料。"
           ],
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
+              "title": "Zimovane 7.5 mg tablets SmPC",
               "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
-              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "tmax": {
-            "min": 1.5,
-            "max": 2,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "eliminationHalfLife": {
             "min": 5,
             "max": 5,
             "unit": "h",
-            "basis": "label pharmacokinetics"
+            "basis": "平均约值"
           }
         }
       ],
-      "tdm": {
-        "isRoutinelyMonitored": false,
-        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
-        "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
-        "pharmacokineticParametersAvailable": true,
-        "interpretationCaveats": [
-          "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-          "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method."
-        ],
-        "sourceRefs": [
-          {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
-            "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
-            "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
-            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
-          }
-        ]
-      },
+      "tdm": null,
       "doseUseReferences": [
         {
-          "indication": "Insomnia oral SmPC context",
-          "population": "Adults unless product-specific label states otherwise",
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
-          "amountText": "3.75 to 7.5 mg at night in cited SmPC context",
-          "scheduleText": "single bedtime dose; lower dose in older adults or impaired hepatic/renal/respiratory function in cited SmPC context",
-          "ranges": [
-            {
-              "min": 3.75,
-              "max": 7.5,
-              "unit": "mg",
-              "basis": "daily-total",
-              "frequency": "single bedtime dose; lower dose in older adults or impaired hepatic/renal/respiratory function in cited SmPC context",
-              "rangeKind": "label-regimen",
-              "label": "Label/literature regimen range",
-              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
-            }
-          ],
+          "indication": "失眠短期治疗",
+          "population": "成人，老年及肝肾呼吸功能异常另有减量",
+          "route": "Oral",
+          "formulation": "片剂",
+          "amountText": "7.5 mg",
+          "scheduleText": "睡前单次口服，当晚不再重复",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "2026-02-18",
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
+              "title": "Zimovane 7.5 mg tablets SmPC",
               "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
-              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 7.5,
+              "max": 7.5,
+              "unit": "mg",
+              "basis": "per-dose",
+              "rangeKind": "label-regimen"
             }
           ]
         }
       ],
       "sourceRefs": [
         {
-          "title": "WHO ATC/DDD Index N05 Psycholeptics",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-          "sourceType": "classification",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "国家基本药物目录 2018",
-          "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-          "sourceType": "national-essential-medicines-list",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "UK eMC SmPC: Zimovane 7.5 mg film-coated tablets",
+          "title": "Zimovane 7.5 mg tablets SmPC",
           "url": "https://www.medicines.org.uk/emc/product/2855/smpc",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
-          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid",
+        "form:tablet"
+      ],
+      "interactions": null,
+      "displayName": "佐匹克隆",
+      "endocrineInfo": null,
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
       ]
     },
     {
@@ -73930,241 +73728,135 @@
         "Ziprasidone",
         "齐拉西酮"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ziprasidone",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0071a228-21cc-56a6-dcc9-a7a6ceea758c",
       "isApproved": true,
       "categories": [
         "clinical-psychiatry",
         "antipsychotic",
         "prescription-medicine"
       ],
-      "summary": "Ziprasidone is indexed as a clinical psychiatry medicine. This entry is for clinical reference indexing and education; product-specific labeling should be checked before adding exact pharmacokinetic or regimen values.",
+      "summary": "所引胶囊含盐酸齐拉西酮，强度按齐拉西酮计。",
       "clinicalInfo": {
         "atcCodes": [
           "N05AE04"
         ],
         "drugClass": [
-          "Antipsychotic"
+          "第二代抗精神病药"
         ],
         "indications": [
-          "Schizophrenia spectrum disorders",
-          "Bipolar disorder or agitation contexts depending on local labeling"
+          "精神分裂症及双相躁狂或混合发作等标签用途。"
         ],
         "contraindications": [
-          "See current product-specific label and local approved labeling."
+          "已知 QT 延长、近期心肌梗死、未代偿心衰、相关过敏及合用延长 QT 的药物。"
         ],
         "majorWarnings": [
-          "Extrapyramidal symptoms, metabolic effects, sedation, QT prolongation, and neuroleptic malignant syndrome are class-relevant safety concerns."
+          "可延长 QT，引起低血压、异常运动及恶性综合征。"
         ],
         "majorInteractions": [
-          "Drug-specific CYP, QT, serotonergic, CNS depressant, or other interaction risks require product-specific label review."
+          "其他延长 QT 药物增加心律风险。"
         ],
         "monitoring": [
-          "EPS/akathisia",
-          "Sedation",
-          "Weight/BMI",
-          "Glucose/HbA1c",
-          "Lipids",
-          "Blood pressure",
-          "QT/ECG when clinically indicated"
+          "评估心电图和电解质，随访体重、代谢及运动症状。"
         ],
         "sourceRefs": [
           {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Ziprasidone",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:0071a228-21cc-56a6-dcc9-a7a6ceea758c",
+            "title": "DailyMed · Ziprasidone capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0071a228-21cc-56a6-dcc9-a7a6ceea758c",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ziprasidone"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
+          "route": "Oral",
+          "formulation": "胶囊",
           "notes": [
-            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
-            "Values can vary by formulation, population, organ function, and interacting medicines."
+            "所引说明书的药代资料。"
           ],
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Ziprasidone",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:0071a228-21cc-56a6-dcc9-a7a6ceea758c",
+              "title": "DailyMed · Ziprasidone capsules",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0071a228-21cc-56a6-dcc9-a7a6ceea758c",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ziprasidone"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "tmax": {
-            "min": 6,
-            "max": 8,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "eliminationHalfLife": {
             "min": 7,
             "max": 7,
             "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "basis": "平均终末值"
+          }
         }
       ],
-      "tdm": {
-        "isRoutinelyMonitored": false,
-        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
-        "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
-        "pharmacokineticParametersAvailable": true,
-        "interpretationCaveats": [
-          "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-          "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method."
-        ],
-        "sourceRefs": [
-          {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Ziprasidone",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:0071a228-21cc-56a6-dcc9-a7a6ceea758c",
-            "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ziprasidone"
-          }
-        ]
-      },
+      "tdm": null,
       "doseUseReferences": [
         {
-          "indication": "Schizophrenia / bipolar mania oral capsule label contexts",
-          "population": "Adults unless product-specific label states otherwise",
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
-          "amountText": "40 to 160 mg/day across cited adult label contexts",
-          "scheduleText": "twice daily with food in cited label",
-          "ranges": [
-            {
-              "min": 40,
-              "max": 160,
-              "unit": "mg",
-              "basis": "daily-total",
-              "frequency": "twice daily with food in cited label",
-              "rangeKind": "label-regimen",
-              "label": "Label/literature regimen range",
-              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
-            }
-          ],
+          "indication": "精神分裂症",
+          "population": "成人",
+          "route": "Oral",
+          "formulation": "胶囊",
+          "amountText": "起始每次 20 mg",
+          "scheduleText": "每日两次随餐口服",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL 11, 2026-06-01",
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Ziprasidone",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:0071a228-21cc-56a6-dcc9-a7a6ceea758c",
+              "title": "DailyMed · Ziprasidone capsules",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0071a228-21cc-56a6-dcc9-a7a6ceea758c",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ziprasidone"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 20,
+              "max": 20,
+              "unit": "mg",
+              "basis": "per-dose",
+              "rangeKind": "label-regimen"
             }
           ]
         }
       ],
       "roas": [
         {
-          "name": "oral",
-          "dose": {
-            "units": "mg",
-            "lightMin": 20,
-            "commonMin": 40,
-            "strongMin": 80,
-            "heavyMin": 160
-          }
+          "name": "oral"
         }
       ],
       "sourceRefs": [
         {
-          "title": "WHO ATC/DDD Index N05 Psycholeptics",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-          "sourceType": "classification",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "国家基本药物目录 2018",
-          "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-          "sourceType": "national-essential-medicines-list",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "openFDA drug label: Ziprasidone",
-          "url": "https://api.fda.gov/drug/label.json?search=set_id:0071a228-21cc-56a6-dcc9-a7a6ceea758c",
+          "title": "DailyMed · Ziprasidone capsules",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0071a228-21cc-56a6-dcc9-a7a6ceea758c",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Ziprasidone"
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:d1afd215bc673fc6c040"
+      "id": "pw:d1afd215bc673fc6c040",
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid",
+        "form:capsule"
+      ],
+      "interactions": null,
+      "displayName": "齐拉西酮",
+      "endocrineInfo": null,
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Lurasidone",
@@ -75496,241 +75188,135 @@
         "Zuclopenthixol",
         "珠氯噻醇"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zuclopenthixol",
+      "url": "https://www.medicines.org.uk/emc/product/994/smpc",
       "isApproved": true,
       "categories": [
         "clinical-psychiatry",
         "antipsychotic",
         "prescription-medicine"
       ],
-      "summary": "Zuclopenthixol is indexed as a clinical psychiatry medicine. This entry is for clinical reference indexing and education; product-specific labeling should be checked before adding exact pharmacokinetic or regimen values.",
+      "summary": "此处资料针对口服片，长效注射产品另查。",
       "clinicalInfo": {
         "atcCodes": [
           "N05AF05"
         ],
         "drugClass": [
-          "Antipsychotic"
+          "噻吨类抗精神病药"
         ],
         "indications": [
-          "Schizophrenia spectrum disorders",
-          "Bipolar disorder or agitation contexts depending on local labeling"
+          "精神病性障碍，尤其精神分裂症。"
         ],
         "contraindications": [
-          "See current product-specific label and local approved labeling."
+          "相关过敏、循环衰竭、意识抑制或昏迷。"
         ],
         "majorWarnings": [
-          "Extrapyramidal symptoms, metabolic effects, sedation, QT prolongation, and neuroleptic malignant syndrome are class-relevant safety concerns."
+          "关注镇静、体位性低血压、异常运动和恶性综合征。"
         ],
         "majorInteractions": [
-          "Drug-specific CYP, QT, serotonergic, CNS depressant, or other interaction risks require product-specific label review."
+          "酒精及中枢抑制剂增加镇静，延长 QT 的药物增加心律风险。"
         ],
         "monitoring": [
-          "EPS/akathisia",
-          "Sedation",
-          "Weight/BMI",
-          "Glucose/HbA1c",
-          "Lipids",
-          "Blood pressure",
-          "QT/ECG when clinically indicated"
+          "随访血压、运动和心脏风险，按说明书评估疗效。"
         ],
         "sourceRefs": [
           {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "UK eMC SmPC: Clopixol 2 mg film-coated tablets",
+            "title": "Clopixol 10 mg tablets SmPC",
             "url": "https://www.medicines.org.uk/emc/product/994/smpc",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
-            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
+          "route": "Oral",
+          "formulation": "片剂",
           "notes": [
-            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
-            "Values can vary by formulation, population, organ function, and interacting medicines."
+            "所引说明书的药代资料。"
           ],
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "UK eMC SmPC: Clopixol 2 mg film-coated tablets",
+              "title": "Clopixol 10 mg tablets SmPC",
               "url": "https://www.medicines.org.uk/emc/product/994/smpc",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
-              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "tmax": {
-            "min": 3,
-            "max": 6,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "eliminationHalfLife": {
-            "min": 1,
-            "max": 1,
-            "unit": "day",
-            "basis": "label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "口服后生物半衰期约 1 天"
+          }
         }
       ],
-      "tdm": {
-        "isRoutinelyMonitored": false,
-        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
-        "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
-        "pharmacokineticParametersAvailable": true,
-        "interpretationCaveats": [
-          "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-          "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method."
-        ],
-        "sourceRefs": [
-          {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "UK eMC SmPC: Clopixol 2 mg film-coated tablets",
-            "url": "https://www.medicines.org.uk/emc/product/994/smpc",
-            "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
-            "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
-          }
-        ]
-      },
+      "tdm": null,
       "doseUseReferences": [
         {
-          "indication": "Psychotic disorder oral SmPC context",
-          "population": "Adults unless product-specific label states otherwise",
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
-          "amountText": "4 to 150 mg/day in cited adult oral SmPC context",
-          "scheduleText": "divided doses; usual initial and maintenance ranges are narrower in cited SmPC",
-          "ranges": [
-            {
-              "min": 4,
-              "max": 150,
-              "unit": "mg",
-              "basis": "daily-total",
-              "frequency": "divided doses; usual initial and maintenance ranges are narrower in cited SmPC",
-              "rangeKind": "label-regimen",
-              "label": "Label/literature regimen range",
-              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
-            }
-          ],
+          "indication": "精神病性障碍",
+          "population": "成人，老年患者需减量",
+          "route": "Oral",
+          "formulation": "片剂",
+          "amountText": "通常起始每日 20–30 mg",
+          "scheduleText": "分次口服",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "2026-08-07",
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "UK eMC SmPC: Clopixol 2 mg film-coated tablets",
+              "title": "Clopixol 10 mg tablets SmPC",
               "url": "https://www.medicines.org.uk/emc/product/994/smpc",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
-              "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 20,
+              "max": 30,
+              "unit": "mg",
+              "basis": "daily-total",
+              "rangeKind": "label-regimen"
             }
           ]
         }
       ],
       "roas": [
         {
-          "name": "oral",
-          "dose": {
-            "units": "mg",
-            "lightMin": 2,
-            "commonMin": 4,
-            "strongMin": 50,
-            "heavyMin": 150
-          }
+          "name": "oral"
         }
       ],
       "sourceRefs": [
         {
-          "title": "WHO ATC/DDD Index N05 Psycholeptics",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-          "sourceType": "classification",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "国家基本药物目录 2018",
-          "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-          "sourceType": "national-essential-medicines-list",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "UK eMC SmPC: Clopixol 2 mg film-coated tablets",
+          "title": "Clopixol 10 mg tablets SmPC",
           "url": "https://www.medicines.org.uk/emc/product/994/smpc",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "4.2 Posology and method of administration; 5.2 Pharmacokinetic properties",
-          "note": "UK electronic Medicines Compendium Summary of Product Characteristics."
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:d20a4865226a826c7207"
+      "id": "pw:d20a4865226a826c7207",
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid",
+        "form:tablet"
+      ],
+      "interactions": null,
+      "displayName": "珠氯噻醇",
+      "endocrineInfo": null,
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Loxapine",
@@ -77513,307 +77099,141 @@
         "Zotepine",
         "佐替平"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zotepine",
+      "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/171911_1179024C1033_4_08",
       "isApproved": true,
       "categories": [
         "clinical-psychiatry",
         "antipsychotic",
         "prescription-medicine"
       ],
-      "summary": "Zotepine is indexed as a clinical psychiatry medicine. This entry is for clinical reference indexing and education; product-specific labeling should be checked before adding exact pharmacokinetic or regimen values.",
+      "summary": "所引日本制剂为佐替平片剂及细粒。",
       "clinicalInfo": {
         "atcCodes": [
           "N05AX11"
         ],
         "drugClass": [
-          "Antipsychotic"
+          "抗精神病药"
         ],
         "indications": [
-          "Schizophrenia spectrum disorders",
-          "Bipolar disorder or agitation contexts depending on local labeling"
+          "精神分裂症。"
         ],
         "contraindications": [
-          "See current product-specific label and local approved labeling."
+          "昏迷或循环衰竭、处于强中枢抑制剂影响下、相关过敏，以及标签规定的肾上腺素合用禁忌。"
         ],
         "majorWarnings": [
-          "Extrapyramidal symptoms, metabolic effects, sedation, QT prolongation, and neuroleptic malignant syndrome are class-relevant safety concerns."
+          "关注镇静、异常运动、低血压、心电图异常及恶性综合征。"
         ],
         "majorInteractions": [
-          "Drug-specific CYP, QT, serotonergic, CNS depressant, or other interaction risks require product-specific label review."
+          "中枢抑制剂和酒精可增强镇静。肾上腺素合用有标签所列紧急抢救及牙科例外。"
         ],
         "monitoring": [
-          "EPS/akathisia",
-          "Sedation",
-          "Weight/BMI",
-          "Glucose/HbA1c",
-          "Lipids",
-          "Blood pressure",
-          "QT/ECG when clinically indicated"
+          "随访运动症状、警觉性、血压、心脏及血液异常。"
         ],
         "sourceRefs": [
           {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "DailyMed label search: Zotepine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zotepine",
-            "sourceType": "regulatory-label-search",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
-          },
-          {
-            "title": "PubMed: Zotepine steady-state pharmacokinetics",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/9485566/",
-            "sourceType": "pharmacokinetic-study",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "PHARMACOKINETIC_STUDY"
-          },
-          {
-            "title": "WHO ATC/DDD index: Zotepine",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05AX11",
-            "sourceType": "drug-classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "DRUG_CLASSIFICATION"
+            "title": "PMDA · Lodopin tablets and granules",
+            "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/171911_1179024C1033_4_08",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
+          "route": "Oral",
+          "formulation": "片剂",
           "notes": [
-            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
-            "Values can vary by formulation, population, organ function, and interacting medicines."
+            "所引说明书的药代资料。"
           ],
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "DailyMed label search: Zotepine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zotepine",
-              "sourceType": "regulatory-label-search",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
-            },
-            {
-              "title": "PubMed: Zotepine steady-state pharmacokinetics",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/9485566/",
-              "sourceType": "pharmacokinetic-study",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "PHARMACOKINETIC_STUDY"
-            },
-            {
-              "title": "WHO ATC/DDD index: Zotepine",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05AX11",
-              "sourceType": "drug-classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "DRUG_CLASSIFICATION"
+              "title": "PMDA · Lodopin tablets and granules",
+              "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/171911_1179024C1033_4_08",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "tmax": {
-            "min": 2,
+            "min": 1,
             "max": 4,
             "unit": "h",
-            "basis": "literature estimate"
+            "basis": "5 名精神分裂症患者单次口服 100 mg"
           },
           "eliminationHalfLife": {
-            "min": 13,
-            "max": 15,
+            "min": 8,
+            "max": 8,
             "unit": "h",
-            "basis": "literature estimate",
-            "note": "Approximate steady-state PK literature value; active metabolite context may differ."
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "basis": "同一小样本研究约值"
+          }
         }
       ],
-      "tdm": {
-        "isRoutinelyMonitored": false,
-        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
-        "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
-        "pharmacokineticParametersAvailable": true,
-        "interpretationCaveats": [
-          "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-          "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method."
-        ],
-        "sourceRefs": [
-          {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "DailyMed label search: Zotepine",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zotepine",
-            "sourceType": "regulatory-label-search",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-            "note": "Use the current product-specific label before entering numeric PK or regimen values."
-          },
-          {
-            "title": "PubMed: Zotepine steady-state pharmacokinetics",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/9485566/",
-            "sourceType": "pharmacokinetic-study",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "PHARMACOKINETIC_STUDY"
-          },
-          {
-            "title": "WHO ATC/DDD index: Zotepine",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05AX11",
-            "sourceType": "drug-classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "DRUG_CLASSIFICATION"
-          }
-        ]
-      },
+      "tdm": null,
       "doseUseReferences": [
         {
-          "indication": "Schizophrenia oral literature/label context",
-          "population": "Adults unless product-specific label states otherwise",
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
-          "amountText": "75 to 450 mg/day across cited oral clinical-use contexts",
-          "scheduleText": "divided dosing; country-specific label should be checked",
+          "indication": "精神分裂症",
+          "population": "成人",
+          "route": "Oral",
+          "formulation": "片剂",
+          "amountText": "通常每日 75–150 mg",
+          "scheduleText": "分次口服，按反应调整",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "2025-04, edition 5",
+          "sourceRefs": [
+            {
+              "title": "PMDA · Lodopin tablets and granules",
+              "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/171911_1179024C1033_4_08",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
           "ranges": [
             {
               "min": 75,
-              "max": 450,
+              "max": 150,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "divided dosing; country-specific label should be checked",
-              "rangeKind": "label-regimen",
-              "label": "Label/literature regimen range",
-              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
-            }
-          ],
-          "sourceType": "literature-or-label",
-          "evidenceLevel": "REVIEWED_REFERENCE",
-          "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": [
-            {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "DailyMed label search: Zotepine",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zotepine",
-              "sourceType": "regulatory-label-search",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-              "note": "Use the current product-specific label before entering numeric PK or regimen values."
-            },
-            {
-              "title": "PubMed: Zotepine steady-state pharmacokinetics",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/9485566/",
-              "sourceType": "pharmacokinetic-study",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "PHARMACOKINETIC_STUDY"
-            },
-            {
-              "title": "WHO ATC/DDD index: Zotepine",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05AX11",
-              "sourceType": "drug-classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "DRUG_CLASSIFICATION"
+              "rangeKind": "label-regimen"
             }
           ]
         }
       ],
       "roas": [
         {
-          "name": "oral",
-          "dose": {
-            "units": "mg",
-            "lightMin": 25,
-            "commonMin": 75,
-            "strongMin": 150,
-            "heavyMin": 450
-          }
+          "name": "oral"
         }
       ],
       "sourceRefs": [
         {
-          "title": "WHO ATC/DDD Index N05 Psycholeptics",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-          "sourceType": "classification",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "国家基本药物目录 2018",
-          "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-          "sourceType": "national-essential-medicines-list",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "DailyMed label search: Zotepine",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zotepine",
-          "sourceType": "regulatory-label-search",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL_SEARCH",
-          "note": "Use the current product-specific label before entering numeric PK or regimen values."
-        },
-        {
-          "title": "PubMed: Zotepine steady-state pharmacokinetics",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/9485566/",
-          "sourceType": "pharmacokinetic-study",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "PHARMACOKINETIC_STUDY"
-        },
-        {
-          "title": "WHO ATC/DDD index: Zotepine",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05AX11",
-          "sourceType": "drug-classification",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "DRUG_CLASSIFICATION"
+          "title": "PMDA · Lodopin tablets and granules",
+          "url": "https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/171911_1179024C1033_4_08",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:9d0c942f9b5ecefd2423"
+      "id": "pw:9d0c942f9b5ecefd2423",
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid",
+        "form:tablet"
+      ],
+      "interactions": null,
+      "displayName": "佐替平",
+      "endocrineInfo": null,
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Iloperidone",
@@ -79853,232 +79273,135 @@
         "Vortioxetine",
         "伏硫西汀"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vortioxetine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a5b68e2-14d0-419d-9ec6-1ca97145e838",
       "isApproved": true,
       "categories": [
         "clinical-psychiatry",
         "antidepressant",
         "prescription-medicine"
       ],
-      "summary": "Vortioxetine is indexed as a clinical psychiatry medicine. This entry is for clinical reference indexing and education; product-specific labeling should be checked before adding exact pharmacokinetic or regimen values.",
+      "summary": "所引片剂含氢溴酸伏硫西汀，强度按伏硫西汀计。",
       "clinicalInfo": {
         "atcCodes": [
           "N06AX26"
         ],
         "drugClass": [
-          "Antidepressant"
+          "血清素调节型抗抑郁药"
         ],
         "indications": [
-          "Major depressive disorder and anxiety-related indications depending on local labeling"
+          "成人重性抑郁障碍。"
         ],
         "contraindications": [
-          "See current product-specific label and local approved labeling."
+          "相关过敏或规定的 MAOI 禁用期。"
         ],
         "majorWarnings": [
-          "Do not combine serotonergic medicines or MAOIs without label-specific review; monitor for activation, suicidality, and serotonin toxicity."
+          "关注血清素综合征、出血、低钠、情绪变化及性功能不良。"
         ],
         "majorInteractions": [
-          "Drug-specific CYP, QT, serotonergic, CNS depressant, or other interaction risks require product-specific label review."
+          "强 CYP2D6 抑制剂可升高暴露，其他促血清素药增加血清素综合征风险。"
         ],
         "monitoring": [
-          "Mood symptoms",
-          "Suicidality especially early in treatment",
-          "Activation/mania switch",
-          "Serotonin syndrome symptoms",
-          "Hyponatremia risk when clinically indicated"
+          "随访情绪、疗效和耐受，核对换药间隔及相互作用。"
         ],
         "sourceRefs": [
           {
-            "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Vortioxetine",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:1a5b68e2-14d0-419d-9ec6-1ca97145e838",
+            "title": "DailyMed · Trintellix tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a5b68e2-14d0-419d-9ec6-1ca97145e838",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vortioxetine"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
+          "route": "Oral",
+          "formulation": "片剂",
           "notes": [
-            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
-            "Values can vary by formulation, population, organ function, and interacting medicines."
+            "所引说明书的药代资料。"
           ],
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Vortioxetine",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:1a5b68e2-14d0-419d-9ec6-1ca97145e838",
+              "title": "DailyMed · Trintellix tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a5b68e2-14d0-419d-9ec6-1ca97145e838",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vortioxetine"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "eliminationHalfLife": {
             "min": 66,
             "max": 66,
             "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "basis": "平均终末值"
+          }
         }
       ],
-      "tdm": {
-        "isRoutinelyMonitored": false,
-        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
-        "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
-        "pharmacokineticParametersAvailable": true,
-        "interpretationCaveats": [
-          "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-          "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method."
-        ],
-        "sourceRefs": [
-          {
-            "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Vortioxetine",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:1a5b68e2-14d0-419d-9ec6-1ca97145e838",
-            "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vortioxetine"
-          }
-        ]
-      },
+      "tdm": null,
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder adult label context",
-          "population": "Adults unless product-specific label states otherwise",
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
-          "amountText": "5 to 20 mg/day across cited adult label contexts",
-          "scheduleText": "once daily without regard to meals in cited label",
-          "ranges": [
-            {
-              "min": 5,
-              "max": 20,
-              "unit": "mg",
-              "basis": "daily-total",
-              "frequency": "once daily without regard to meals in cited label",
-              "rangeKind": "label-regimen",
-              "label": "Label/literature regimen range",
-              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
-            }
-          ],
+          "indication": "重性抑郁障碍",
+          "population": "成人",
+          "route": "Oral",
+          "formulation": "片剂",
+          "amountText": "起始每日 10 mg",
+          "scheduleText": "每日一次口服",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL 18, 2025-03-05",
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Vortioxetine",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:1a5b68e2-14d0-419d-9ec6-1ca97145e838",
+              "title": "DailyMed · Trintellix tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a5b68e2-14d0-419d-9ec6-1ca97145e838",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vortioxetine"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 10,
+              "max": 10,
+              "unit": "mg",
+              "basis": "daily-total",
+              "rangeKind": "label-regimen"
             }
           ]
         }
       ],
       "roas": [
         {
-          "name": "oral",
-          "dose": {
-            "units": "mg",
-            "lightMin": 5,
-            "commonMin": 10,
-            "strongMin": 15,
-            "heavyMin": 20
-          }
+          "name": "oral"
         }
       ],
       "sourceRefs": [
         {
-          "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-          "sourceType": "classification",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "国家基本药物目录 2018",
-          "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-          "sourceType": "national-essential-medicines-list",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "openFDA drug label: Vortioxetine",
-          "url": "https://api.fda.gov/drug/label.json?search=set_id:1a5b68e2-14d0-419d-9ec6-1ca97145e838",
+          "title": "DailyMed · Trintellix tablets",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a5b68e2-14d0-419d-9ec6-1ca97145e838",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vortioxetine"
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:3ca593a91d2e5f53f0dc"
+      "id": "pw:3ca593a91d2e5f53f0dc",
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid",
+        "form:tablet"
+      ],
+      "interactions": null,
+      "displayName": "伏硫西汀",
+      "endocrineInfo": null,
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Vilazodone",
@@ -80086,244 +79409,135 @@
         "Vilazodone",
         "维拉佐酮"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vilazodone",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
       "isApproved": true,
       "categories": [
         "clinical-psychiatry",
         "antidepressant",
         "prescription-medicine"
       ],
-      "summary": "Vilazodone is indexed as a clinical psychiatry medicine. This entry is for clinical reference indexing and education; product-specific labeling should be checked before adding exact pharmacokinetic or regimen values.",
+      "summary": "所引口服片含盐酸维拉佐酮，需随餐服用。",
       "clinicalInfo": {
         "atcCodes": [
           "N06AX24"
         ],
         "drugClass": [
-          "Antidepressant"
+          "血清素调节型抗抑郁药"
         ],
         "indications": [
-          "Major depressive disorder and anxiety-related indications depending on local labeling"
+          "成人重性抑郁障碍。"
         ],
         "contraindications": [
-          "See current product-specific label and local approved labeling."
+          "规定的 MAOI 禁用期。"
         ],
         "majorWarnings": [
-          "Do not combine serotonergic medicines or MAOIs without label-specific review; monitor for activation, suicidality, and serotonin toxicity."
+          "可出现腹泻、恶心、出血、低钠、血清素综合征及停药症状。"
         ],
         "majorInteractions": [
-          "Drug-specific CYP, QT, serotonergic, CNS depressant, or other interaction risks require product-specific label review."
+          "促血清素药增加血清素综合征风险，CYP3A4 调节剂可改变暴露。"
         ],
         "monitoring": [
-          "Mood symptoms",
-          "Suicidality especially early in treatment",
-          "Activation/mania switch",
-          "Serotonin syndrome symptoms",
-          "Hyponatremia risk when clinically indicated"
+          "随访情绪、胃肠耐受和停药症状，核对合用药。"
         ],
         "sourceRefs": [
           {
-            "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Vilazodone",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
+            "title": "DailyMed · Vilazodone hydrochloride tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vilazodone"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
+          "route": "Oral",
+          "formulation": "片剂",
           "notes": [
-            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
-            "Values can vary by formulation, population, organ function, and interacting medicines."
+            "所引说明书的药代资料。"
           ],
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Vilazodone",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
+              "title": "DailyMed · Vilazodone hydrochloride tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vilazodone"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "tmax": {
-            "min": 4,
-            "max": 5,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "eliminationHalfLife": {
             "min": 25,
             "max": 25,
             "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
-          "timeToSteadyState": {
-            "min": 3,
-            "max": 3,
-            "unit": "day",
-            "basis": "label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "basis": "平均终末值"
+          }
         }
       ],
-      "tdm": {
-        "isRoutinelyMonitored": false,
-        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
-        "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
-        "pharmacokineticParametersAvailable": true,
-        "interpretationCaveats": [
-          "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-          "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method."
-        ],
-        "sourceRefs": [
-          {
-            "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Vilazodone",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
-            "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vilazodone"
-          }
-        ]
-      },
+      "tdm": null,
       "doseUseReferences": [
         {
-          "indication": "Major depressive disorder label context",
-          "population": "Adults unless product-specific label states otherwise",
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
-          "amountText": "20 to 40 mg/day in cited target-dose label context",
-          "scheduleText": "once daily with food after label titration",
-          "ranges": [
-            {
-              "min": 20,
-              "max": 40,
-              "unit": "mg",
-              "basis": "daily-total",
-              "frequency": "once daily with food after label titration",
-              "rangeKind": "label-regimen",
-              "label": "Label/literature regimen range",
-              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
-            }
-          ],
+          "indication": "重性抑郁障碍",
+          "population": "成人",
+          "route": "Oral",
+          "formulation": "片剂",
+          "amountText": "首 7 天每日 10 mg",
+          "scheduleText": "随餐每日一次口服，之后按标签滴定",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL 2, 2023-01-30",
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Vilazodone",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
+              "title": "DailyMed · Vilazodone hydrochloride tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vilazodone"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 10,
+              "max": 10,
+              "unit": "mg",
+              "basis": "daily-total",
+              "rangeKind": "label-regimen"
             }
           ]
         }
       ],
       "roas": [
         {
-          "name": "oral",
-          "dose": {
-            "units": "mg",
-            "lightMin": 10,
-            "commonMin": 20,
-            "strongMin": 40,
-            "heavyMin": 40
-          }
+          "name": "oral"
         }
       ],
       "sourceRefs": [
         {
-          "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-          "sourceType": "classification",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "国家基本药物目录 2018",
-          "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-          "sourceType": "national-essential-medicines-list",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "openFDA drug label: Vilazodone",
-          "url": "https://api.fda.gov/drug/label.json?search=set_id:0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
+          "title": "DailyMed · Vilazodone hydrochloride tablets",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0374fbb1-b0fb-4150-b1e7-92e2b0d32ecf",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Vilazodone"
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:5fde37f1da8d85f9c6ba"
+      "id": "pw:5fde37f1da8d85f9c6ba",
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid",
+        "form:tablet"
+      ],
+      "interactions": null,
+      "displayName": "维拉佐酮",
+      "endocrineInfo": null,
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Amitriptyline",
@@ -84853,7 +84067,7 @@
         "Tofisopam",
         "托非索泮"
       ],
-      "url": "https://www.sukl.sk/hlavna-stranka/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=795703&dok_sec=97cca78f757f3c7df469cb7cfaec88a3&page_id=637",
+      "url": "https://www.sukl.sk/hlavna-stranka-1/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=826215&dok_sec=609e6c7e50d0654746bca0d6ca42dbdd&page_id=637",
       "isApproved": true,
       "categories": [
         "clinical-psychiatry",
@@ -84886,15 +84100,44 @@
         ],
         "sourceRefs": [
           {
-            "title": "SUKL · Grandaxin 50 mg approved leaflet",
-            "url": "https://www.sukl.sk/hlavna-stranka/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=795703&dok_sec=97cca78f757f3c7df469cb7cfaec88a3&page_id=637",
+            "title": "SUKL · Grandaxin 50 mg SmPC",
+            "url": "https://www.sukl.sk/hlavna-stranka-1/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=826215&dok_sec=609e6c7e50d0654746bca0d6ca42dbdd&page_id=637",
             "sourceType": "regulatory-label",
             "accessedDate": "2026-11-06",
             "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
-      "timeCourse": [],
+      "timeCourse": [
+        {
+          "route": "Oral",
+          "formulation": "片剂",
+          "notes": [
+            "所引说明书的药代资料。"
+          ],
+          "sourceRefs": [
+            {
+              "title": "SUKL · Grandaxin 50 mg SmPC",
+              "url": "https://www.sukl.sk/hlavna-stranka-1/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=826215&dok_sec=609e6c7e50d0654746bca0d6ca42dbdd&page_id=637",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "tmax": {
+            "min": 1,
+            "max": 1.5,
+            "unit": "h",
+            "basis": "口服后血浆峰值"
+          },
+          "eliminationHalfLife": {
+            "min": 6,
+            "max": 8,
+            "unit": "h",
+            "basis": "生物半衰期"
+          }
+        }
+      ],
       "tdm": null,
       "doseUseReferences": [
         {
@@ -84908,11 +84151,11 @@
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-11-06",
-          "reviewedLabelMatch": "2023/03594-Z1B",
+          "reviewedLabelMatch": "2024/02014-Z1A, 2024-05",
           "sourceRefs": [
             {
-              "title": "SUKL · Grandaxin 50 mg approved leaflet",
-              "url": "https://www.sukl.sk/hlavna-stranka/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=795703&dok_sec=97cca78f757f3c7df469cb7cfaec88a3&page_id=637",
+              "title": "SUKL · Grandaxin 50 mg SmPC",
+              "url": "https://www.sukl.sk/hlavna-stranka-1/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=826215&dok_sec=609e6c7e50d0654746bca0d6ca42dbdd&page_id=637",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
@@ -84936,8 +84179,8 @@
       ],
       "sourceRefs": [
         {
-          "title": "SUKL · Grandaxin 50 mg approved leaflet",
-          "url": "https://www.sukl.sk/hlavna-stranka/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=795703&dok_sec=97cca78f757f3c7df469cb7cfaec88a3&page_id=637",
+          "title": "SUKL · Grandaxin 50 mg SmPC",
+          "url": "https://www.sukl.sk/hlavna-stranka-1/slovenska-verzia/pomocne-stranky/save-dokument?dok_id=826215&dok_sec=609e6c7e50d0654746bca0d6ca42dbdd&page_id=637",
           "sourceType": "regulatory-label",
           "accessedDate": "2026-11-06",
           "evidenceLevel": "REGULATORY_LABEL"
@@ -84967,7 +84210,7 @@
         "Zaleplon",
         "扎来普隆"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zaleplon",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2cc7adee-2c4c-4fed-9914-545e70dba773",
       "isApproved": true,
       "categories": [
         "clinical-psychiatry",
@@ -84975,231 +84218,128 @@
         "sedative-hypnotic",
         "prescription-medicine"
       ],
-      "summary": "Zaleplon is indexed as a clinical psychiatry medicine. This entry is for clinical reference indexing and education; product-specific labeling should be checked before adding exact pharmacokinetic or regimen values.",
+      "summary": "所引产品为扎来普隆口服胶囊。",
       "clinicalInfo": {
         "atcCodes": [
           "N05CF03"
         ],
         "drugClass": [
-          "Anxiolytic or hypnotic"
+          "非苯二氮䓬类催眠药"
         ],
         "indications": [
-          "Anxiety or insomnia-related indications depending on local labeling"
+          "失眠短期治疗，主要研究入睡时间。"
         ],
         "contraindications": [
-          "See current product-specific label and local approved labeling."
+          "既往本药引起复杂睡眠行为或相关过敏。"
         ],
         "majorWarnings": [
-          "Sedatives can impair driving and respiration; avoid combining with alcohol, opioids, or other CNS depressants unless specifically supervised."
+          "可能发生嗜睡、异常睡眠行为、依赖和戒断。"
         ],
         "majorInteractions": [
-          "Drug-specific CYP, QT, serotonergic, CNS depressant, or other interaction risks require product-specific label review."
+          "酒精及其他中枢抑制剂增加镇静与呼吸风险。"
         ],
         "monitoring": [
-          "Sedation",
-          "Falls",
-          "Respiratory depression risk",
-          "Dependence/withdrawal risk",
-          "Cognitive impairment"
+          "随访睡眠及异常行为，持续失眠需复评。"
         ],
         "sourceRefs": [
           {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Zaleplon",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:2cc7adee-2c4c-4fed-9914-545e70dba773",
+            "title": "DailyMed · Zaleplon capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2cc7adee-2c4c-4fed-9914-545e70dba773",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zaleplon"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
+          "route": "Oral",
+          "formulation": "胶囊",
           "notes": [
-            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
-            "Values can vary by formulation, population, organ function, and interacting medicines."
+            "所引说明书的药代资料。"
           ],
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Zaleplon",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:2cc7adee-2c4c-4fed-9914-545e70dba773",
+              "title": "DailyMed · Zaleplon capsules",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2cc7adee-2c4c-4fed-9914-545e70dba773",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zaleplon"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "tmax": {
-            "min": 1,
-            "max": 1,
-            "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
           "eliminationHalfLife": {
             "min": 1,
             "max": 1,
             "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "basis": "终末相约值"
+          }
         }
       ],
-      "tdm": {
-        "isRoutinelyMonitored": false,
-        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
-        "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
-        "pharmacokineticParametersAvailable": true,
-        "interpretationCaveats": [
-          "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-          "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method."
-        ],
-        "sourceRefs": [
-          {
-            "title": "WHO ATC/DDD Index N05 Psycholeptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "国家基本药物目录 2018",
-            "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-            "sourceType": "national-essential-medicines-list",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Zaleplon",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:2cc7adee-2c4c-4fed-9914-545e70dba773",
-            "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zaleplon"
-          }
-        ]
-      },
+      "tdm": null,
       "doseUseReferences": [
         {
-          "indication": "Insomnia oral label context",
-          "population": "Adults unless product-specific label states otherwise",
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
-          "amountText": "5 to 20 mg/night across cited adult label contexts",
-          "scheduleText": "immediately before bedtime or after difficulty falling asleep in cited label",
-          "ranges": [
-            {
-              "min": 5,
-              "max": 20,
-              "unit": "mg",
-              "basis": "daily-total",
-              "frequency": "immediately before bedtime or after difficulty falling asleep in cited label",
-              "rangeKind": "label-regimen",
-              "label": "Label/literature regimen range",
-              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
-            }
-          ],
+          "indication": "失眠",
+          "population": "成人，老年或肝功能异常另有减量",
+          "route": "Oral",
+          "formulation": "胶囊",
+          "amountText": "通常 10 mg",
+          "scheduleText": "临睡前口服单次",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
-          "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL 17, 2025-10-16",
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N05 Psycholeptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "国家基本药物目录 2018",
-              "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-              "sourceType": "national-essential-medicines-list",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Zaleplon",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:2cc7adee-2c4c-4fed-9914-545e70dba773",
+              "title": "DailyMed · Zaleplon capsules",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2cc7adee-2c4c-4fed-9914-545e70dba773",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zaleplon"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 10,
+              "max": 10,
+              "unit": "mg",
+              "basis": "per-dose",
+              "rangeKind": "label-regimen"
             }
           ]
         }
       ],
       "roas": [
         {
-          "name": "oral",
-          "dose": {
-            "units": "mg",
-            "lightMin": 5,
-            "commonMin": 10,
-            "strongMin": 20,
-            "heavyMin": 20
-          }
+          "name": "oral"
         }
       ],
       "sourceRefs": [
         {
-          "title": "WHO ATC/DDD Index N05 Psycholeptics",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05&showdescription=yes",
-          "sourceType": "classification",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "国家基本药物目录 2018",
-          "url": "https://www.nhc.gov.cn/wjw/jbywml/201810/8b68d28bd3754898b339e06da8c7d907/files/1733375109455_35909.pdf",
-          "sourceType": "national-essential-medicines-list",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "openFDA drug label: Zaleplon",
-          "url": "https://api.fda.gov/drug/label.json?search=set_id:2cc7adee-2c4c-4fed-9914-545e70dba773",
+          "title": "DailyMed · Zaleplon capsules",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2cc7adee-2c4c-4fed-9914-545e70dba773",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Zaleplon"
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:0b5d5f48a6d8069d167b"
+      "id": "pw:0b5d5f48a6d8069d167b",
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid",
+        "form:capsule"
+      ],
+      "interactions": null,
+      "displayName": "扎来普隆",
+      "endocrineInfo": null,
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Ramelteon",
@@ -87084,205 +86224,135 @@
         "Viloxazine",
         "维洛沙秦"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Viloxazine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aedf408d-0f84-418d-9416-7c39ddb0d29a",
       "isApproved": true,
       "categories": [
         "clinical-psychiatry",
         "adhd-medication",
         "prescription-medicine"
       ],
-      "summary": "Viloxazine is indexed as a clinical psychiatry medicine. This entry is for clinical reference indexing and education; product-specific labeling should be checked before adding exact pharmacokinetic or regimen values.",
+      "summary": "所引美国制剂为盐酸维洛沙嗪缓释胶囊。",
       "clinicalInfo": {
         "atcCodes": [
-          "N06AX09"
+          "N06BA16"
         ],
         "drugClass": [
-          "ADHD medication"
+          "非兴奋剂类 ADHD 药"
         ],
         "indications": [
-          "Attention-deficit/hyperactivity disorder depending on local labeling"
+          "成人及 6 岁以上儿童 ADHD。"
         ],
         "contraindications": [
-          "See current product-specific label and local approved labeling."
+          "MAOI 合用或规定停药期，以及敏感或治疗范围窄的 CYP1A2 底物合用。"
         ],
         "majorWarnings": [
-          "Cardiovascular, psychiatric activation, sleep, appetite, and misuse risks are formulation- and patient-specific."
+          "关注自杀意念、心率血压升高、嗜睡和躁狂激活。"
         ],
         "majorInteractions": [
-          "Drug-specific CYP, QT, serotonergic, CNS depressant, or other interaction risks require product-specific label review."
+          "抑制 CYP1A2，禁忌合用规定底物，其他药物需核对。"
         ],
         "monitoring": [
-          "Blood pressure",
-          "Heart rate",
-          "Sleep",
-          "Appetite/weight",
-          "Misuse/diversion risk for stimulants"
+          "治疗前后检查血压心率，随访情绪、睡眠和疗效。"
         ],
         "sourceRefs": [
           {
-            "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Viloxazine",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:aedf408d-0f84-418d-9416-7c39ddb0d29a",
+            "title": "DailyMed · Qelbree extended-release capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aedf408d-0f84-418d-9416-7c39ddb0d29a",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Viloxazine"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
+          "route": "Oral",
+          "formulation": "缓释胶囊",
           "notes": [
-            "Tmax, half-life, steady-state, and duration are label pharmacokinetic parameters and are not equivalent to clinical response timing.",
-            "Values can vary by formulation, population, organ function, and interacting medicines."
+            "所引说明书的药代资料。"
           ],
           "sourceRefs": [
             {
-              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Viloxazine",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:aedf408d-0f84-418d-9416-7c39ddb0d29a",
+              "title": "DailyMed · Qelbree extended-release capsules",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aedf408d-0f84-418d-9416-7c39ddb0d29a",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Viloxazine"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "tmax": {
-            "min": 3,
-            "max": 9,
-            "unit": "h",
-            "basis": "label pharmacokinetics",
-            "note": "Median Tmax about 5 hours with a 3 to 9 hour range."
-          },
           "eliminationHalfLife": {
-            "min": 2.28,
-            "max": 11.76,
+            "min": 7.02,
+            "max": 7.02,
             "unit": "h",
-            "basis": "label pharmacokinetics",
-            "note": "Mean half-life 7.02 +/- 4.74 hours in the cited label."
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "basis": "母药平均值"
+          }
         }
       ],
-      "tdm": {
-        "isRoutinelyMonitored": false,
-        "monitoringType": "drug-specific clinical/laboratory monitoring; serum concentration only for selected medicines",
-        "reason": "Psychiatry medicines are generally monitored by clinical response and safety labs; selected medicines such as lithium and some anticonvulsants may use serum concentration monitoring.",
-        "pharmacokineticParametersAvailable": true,
-        "interpretationCaveats": [
-          "Monitoring type is drug-specific and should not be interpreted as universal TDM.",
-          "Interpretation depends on indication, formulation, timing, organ function, comedications, and local laboratory method."
-        ],
-        "sourceRefs": [
-          {
-            "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-            "sourceType": "classification",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REFERENCE_DATABASE"
-          },
-          {
-            "title": "openFDA drug label: Viloxazine",
-            "url": "https://api.fda.gov/drug/label.json?search=set_id:aedf408d-0f84-418d-9416-7c39ddb0d29a",
-            "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-27",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-            "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Viloxazine"
-          }
-        ]
-      },
+      "tdm": null,
       "doseUseReferences": [
         {
-          "indication": "ADHD adult extended-release label context",
-          "population": "Adults unless product-specific label states otherwise",
-          "route": "oral",
-          "formulation": "product-specific oral formulation",
-          "amountText": "200 to 600 mg/day in cited adult label context",
-          "scheduleText": "once daily; weekly 200 mg titration increments in cited label",
+          "indication": "ADHD",
+          "population": "成人",
+          "route": "Oral",
+          "formulation": "缓释胶囊",
+          "amountText": "起始每日 200 mg",
+          "scheduleText": "每日一次口服，按标签每周调整",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL 16, 2026-10-05",
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Qelbree extended-release capsules",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aedf408d-0f84-418d-9416-7c39ddb0d29a",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
           "ranges": [
             {
               "min": 200,
-              "max": 600,
+              "max": 200,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "once daily; weekly 200 mg titration increments in cited label",
-              "rangeKind": "label-regimen",
-              "label": "Label/literature regimen range",
-              "note": "Label/literature regimen range for reference indexing; not a dosing recommendation."
-            }
-          ],
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "Dose use references are not recommendations and must not be used for self-medication or dose adjustment.",
-          "sourceRefs": [
-            {
-              "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-              "sourceType": "classification",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REFERENCE_DATABASE"
-            },
-            {
-              "title": "openFDA drug label: Viloxazine",
-              "url": "https://api.fda.gov/drug/label.json?search=set_id:aedf408d-0f84-418d-9416-7c39ddb0d29a",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-27",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-              "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Viloxazine"
+              "rangeKind": "label-regimen"
             }
           ]
         }
       ],
       "roas": [
         {
-          "name": "oral",
-          "dose": {
-            "units": "mg",
-            "lightMin": 100,
-            "commonMin": 200,
-            "strongMin": 400,
-            "heavyMin": 600
-          }
+          "name": "oral"
         }
       ],
       "sourceRefs": [
         {
-          "title": "WHO ATC/DDD Index N06 Psychoanaleptics",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N06&showdescription=yes",
-          "sourceType": "classification",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REFERENCE_DATABASE"
-        },
-        {
-          "title": "openFDA drug label: Viloxazine",
-          "url": "https://api.fda.gov/drug/label.json?search=set_id:aedf408d-0f84-418d-9416-7c39ddb0d29a",
+          "title": "DailyMed · Qelbree extended-release capsules",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=aedf408d-0f84-418d-9416-7c39ddb0d29a",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-27",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "12.3 Pharmacokinetics; 2 Dosage and Administration",
-          "note": "openFDA SPL label record; DailyMed search query: https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Viloxazine"
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
-      "id": "pw:c0f09baec6f894c4d8b8"
+      "id": "pw:c0f09baec6f894c4d8b8",
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid",
+        "form:capsule"
+      ],
+      "interactions": null,
+      "displayName": "维洛沙嗪",
+      "endocrineInfo": null,
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Pitolisant",
