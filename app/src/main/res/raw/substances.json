@@ -32527,7 +32527,7 @@
           "Dihydropyridine calcium-channel blocker"
         ],
         "indications": [
-          "The approved indication for the cited product is a cardiovascular condition appropriate for nifedipine; verify the exact brand labeling."
+          "Hypertension in adults, alone or in combination with other antihypertensive agents."
         ],
         "contraindications": [
           "Strong CYP3A4 inducers such as rifampin, cardiogenic shock and hypersensitivity."
@@ -32551,7 +32551,36 @@
           }
         ]
       },
-      "timeCourse": [],
+      "timeCourse": [
+        {
+          "route": "Oral",
+          "formulation": "Extended-release tablet",
+          "notes": [
+            "Under fasting conditions the main peak occurs about 2.5 to 5 hours after dosing, with a second small peak or shoulder about 6 to 12 hours post-dose; the half-life is longer than with immediate-release capsules."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Nifedipine extended-release tablets",
+              "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "tmax": {
+            "min": 2.5,
+            "max": 5,
+            "unit": "h",
+            "basis": "Primary peak after the extended-release tablet under fasting conditions; a second small peak or shoulder occurs about 6 to 12 hours after dosing"
+          },
+          "eliminationHalfLife": {
+            "min": 7,
+            "max": 7,
+            "unit": "h",
+            "basis": "About seven hours for the extended-release tablet versus about two hours for the immediate-release capsule"
+          }
+        }
+      ],
       "tdm": null,
       "roas": [
         {
@@ -32560,12 +32589,12 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Chronic cardiovascular disease appropriate for nifedipine",
+          "indication": "Hypertension",
           "population": "Adults",
           "route": "Oral",
           "formulation": "Extended-release tablet",
           "amountText": "Initial 30 mg once daily",
-          "scheduleText": "Usual 30 to 60 mg once daily, generally not above 90 mg, taken whole on an empty stomach",
+          "scheduleText": "Titrate at 7 to 14 day intervals; usual 30 to 60 mg once daily, with doses above 90 mg daily not recommended; take whole on an empty stomach",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
@@ -33992,7 +34021,7 @@
       ],
       "id": "pw:348d53de491ee1bed498",
       "recordingUnits": {
-        "INTRAVENOUS": "mcg/kg"
+        "INTRAVENOUS": "mg"
       },
       "formulationIds": [
         "form:injection"
@@ -34598,7 +34627,7 @@
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-11-06",
-          "reviewedLabelMatch": "SmPC current at access",
+          "reviewedLabelMatch": "SmPC dated 2020-10-29; emc updated 2020-11-16",
           "sourceRefs": [
             {
               "title": "MHRA · Moxonidine 200 microgram film-coated tablets SmPC",
@@ -37231,7 +37260,8 @@
           "May increase bleeding risk; reduce dose in severe renal impairment, dosing is not established in hepatic impairment and stop for new retinal hemorrhage."
         ],
         "majorInteractions": [
-          "Use cautiously with anticoagulants, antiplatelets and drugs increasing bleeding risk; methylxanthines may add stimulant effects."
+          "Theophylline concentrations and toxicity can increase; monitor theophylline when starting or changing pentoxifylline. Strong CYP1A2 inhibitors such as ciprofloxacin or fluvoxamine can raise pentoxifylline exposure.",
+          "Cimetidine increases steady-state parent drug by about 25% and metabolite I by about 30%; vitamin K antagonists such as warfarin increase bleeding risk and require more frequent coagulation monitoring."
         ],
         "monitoring": [
           "Monitor bleeding, renal function, tolerance and walking improvement; take with meals and swallow whole."
@@ -37262,11 +37292,17 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
+          "tmax": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "Time to peak parent drug and metabolites after a 400 mg extended-release tablet"
+          },
           "eliminationHalfLife": {
             "min": 0.4,
             "max": 0.8,
             "unit": "h",
-            "basis": "Parent-drug half-life; active metabolites persist longer"
+            "basis": "Apparent plasma half-life of parent drug; metabolites are about 1 to 1.6 hours and clinical duration does not equal the parent half-life"
           }
         }
       ],
@@ -37415,7 +37451,7 @@
           "tmax": {
             "min": 0.5,
             "max": 0.5,
-            "unit": "min",
+            "unit": "h",
             "basis": "Peak concentrations about thirty minutes after oral dosing"
           },
           "eliminationHalfLife": {
@@ -39926,7 +39962,7 @@
           "route": "Oral",
           "formulation": "Capsule",
           "notes": [
-            "Pharmacokinetics from the cited label."
+            "Nicardipine is detectable 20 minutes after oral dosing and peaks at about one hour on average; steady state takes two to three days. The terminal half-life averages about 8.6 hours, but most drug is eliminated during the first eight hours, so the early 2 to 4 hour half-life is more representative."
           ],
           "sourceRefs": [
             {
@@ -39937,11 +39973,17 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
+          "tmax": {
+            "min": 0.5,
+            "max": 2,
+            "unit": "h",
+            "basis": "Mean Tmax about one hour, with a range of 0.5 to 2 hours after dosing"
+          },
           "eliminationHalfLife": {
             "min": 2,
             "max": 4,
             "unit": "h",
-            "basis": "Elimination half-life range after oral dosing"
+            "basis": "Predominant elimination half-life during the first eight hours; the mean terminal half-life at steady state is about 8.6 hours but represents less than 5% of absorbed drug"
           }
         }
       ],
@@ -40533,11 +40575,17 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "eliminationHalfLife": {
-            "min": 9,
-            "max": 12,
+          "tmax": {
+            "min": 4.1,
+            "max": 14.3,
             "unit": "h",
-            "basis": "Elimination half-life range reported by the label"
+            "basis": "Peak concentration at 9.2 ± 5.1 hours after fasting administration (mean ± SD)"
+          },
+          "eliminationHalfLife": {
+            "min": 9.4,
+            "max": 18,
+            "unit": "h",
+            "basis": "Terminal elimination half-life 13.7 ± 4.3 hours (mean ± SD)"
           }
         }
       ],
@@ -40553,8 +40601,8 @@
           "population": "Adults",
           "route": "Oral",
           "formulation": "Extended-release tablet",
-          "amountText": "Usually start 17 mg daily; no more than 8.5 mg in older adults or hepatic impairment",
-          "scheduleText": "Adjust weekly or more slowly; usual 17 to 34 mg daily, maximum 34 mg",
+          "amountText": "Usually start 17 mg daily; start at no more than 8.5 mg daily in adults over 65 or with hepatic impairment",
+          "scheduleText": "Increase by 8.5 mg weekly or less often; usual 17 to 34 mg daily, maximum 34 mg; swallow whole on an empty stomach",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
@@ -50404,7 +50452,7 @@
             "min": 3,
             "max": 5,
             "unit": "h",
-            "basis": "Plasma half-life about four hours; antihypertensive effect lasts longer"
+            "basis": "Label reports a mean plasma half-life of about 4.2 hours; the antihypertensive effect lasts substantially longer"
           }
         }
       ],
@@ -52119,7 +52167,36 @@
           }
         ]
       },
-      "timeCourse": [],
+      "timeCourse": [
+        {
+          "route": "Sublingual",
+          "formulation": "Sublingual tablet",
+          "notes": [
+            "Vasodilation begins about one to three minutes after sublingual dosing, peaks by about five minutes and persists for at least 25 minutes; the parent-drug plasma half-life does not represent clinical duration."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Nitroglycerin sublingual tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "tmax": {
+            "min": 6,
+            "max": 7,
+            "unit": "min",
+            "basis": "Mean peak plasma concentration about six to seven minutes after sublingual dosing"
+          },
+          "eliminationHalfLife": {
+            "min": 2,
+            "max": 3,
+            "unit": "min",
+            "basis": "Mean parent-drug elimination half-life; plasma concentration does not represent antianginal duration"
+          }
+        }
+      ],
       "tdm": null,
       "roas": [
         {
@@ -52138,8 +52215,8 @@
           "population": "Adults",
           "route": "Sublingual",
           "formulation": "Sublingual tablet",
-          "amountText": "Usually 0.3 to 0.4 mg dissolved under the tongue or in the buccal pouch",
-          "scheduleText": "Repeat about every five minutes; three tablets maximum in 15 minutes before urgent care",
+          "amountText": "Tablets are supplied as 0.3, 0.4 or 0.6 mg; dissolve one tablet of the prescribed strength under the tongue or in the buccal pouch",
+          "scheduleText": "Repeat about every five minutes, with a maximum of three tablets in 15 minutes; the same dose may be used five to ten minutes before activity likely to provoke angina",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
@@ -52157,20 +52234,20 @@
           "ranges": [
             {
               "min": 0.3,
-              "max": 0.4,
+              "max": 0.6,
               "unit": "mg",
-              "basis": "per-dose",
+              "basis": "available-tablet-strength",
               "rangeKind": "label-regimen"
             }
           ]
         },
         {
-          "indication": "心绞痛预防 | Angina prevention",
-          "population": "成人 | Adults",
+          "indication": "Angina prevention",
+          "population": "Adults",
           "route": "Transdermal",
-          "formulation": "贴片 | Patch",
-          "amountText": "起始 0.2–0.4 mg/h，可用 0.4–0.8 mg/h | Start 0.2 to 0.4 mg/h; use may extend to 0.4 to 0.8 mg/h",
-          "scheduleText": "每日一次，佩戴 12–14 小时后移除 10–12 小时 | Apply once daily for 12 to 14 hours, then keep off for 10 to 12 hours",
+          "formulation": "Patch",
+          "amountText": "Start 0.2 to 0.4 mg/h; use may extend to 0.4 to 0.8 mg/h",
+          "scheduleText": "Apply once daily for 12 to 14 hours, then keep off for 10 to 12 hours",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
@@ -66905,7 +66982,7 @@
           "route": "Oral",
           "formulation": "Capsule",
           "notes": [
-            "Pharmacokinetics from the cited label."
+            "The label reports a terminal half-life of about 8 to 9 hours, but early elimination is much faster and corresponds to a 1 to 2 hour half-life; this is why dosing is required every four hours."
           ],
           "sourceRefs": [
             {

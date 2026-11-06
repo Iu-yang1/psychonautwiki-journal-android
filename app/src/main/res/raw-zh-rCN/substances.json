@@ -32528,7 +32528,7 @@
           "二氢吡啶类钙通道阻滞剂"
         ],
         "indications": [
-          "所引缓释制剂的获批适应证为适用硝苯地平的心血管疾病；使用前须核对具体品牌说明书。"
+          "成人高血压，可单用或与其他降压药合用。"
         ],
         "contraindications": [
           "强 CYP3A4 诱导药如利福平、心源性休克和对任一成分过敏。"
@@ -32552,7 +32552,36 @@
           }
         ]
       },
-      "timeCourse": [],
+      "timeCourse": [
+        {
+          "route": "Oral",
+          "formulation": "缓释片",
+          "notes": [
+            "空腹给药时主峰约在 2.5–5 小时，约 6–12 小时可见第二个小峰；半衰期明显长于即释胶囊。"
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Nifedipine extended-release tablets",
+              "url": "https://www.dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=16e58a0a-b79b-46b9-ac14-9b1a0578eeab&type=display",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "tmax": {
+            "min": 2.5,
+            "max": 5,
+            "unit": "h",
+            "basis": "空腹服缓释片后主峰浓度时间；6–12 小时另有小峰或肩峰"
+          },
+          "eliminationHalfLife": {
+            "min": 7,
+            "max": 7,
+            "unit": "h",
+            "basis": "缓释片消除半衰期约 7 小时，即释胶囊约 2 小时"
+          }
+        }
+      ],
       "tdm": null,
       "roas": [
         {
@@ -32561,12 +32590,12 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "符合硝苯地平适应证的慢性心血管疾病",
+          "indication": "高血压",
           "population": "成人",
           "route": "Oral",
           "formulation": "缓释片",
           "amountText": "起始每日一次 30 mg",
-          "scheduleText": "常用每日 30–60 mg，通常不滴定至超过 90 mg，空腹整片吞服",
+          "scheduleText": "通常以 7–14 天间隔调整；常用每日 30–60 mg，不建议超过每日 90 mg，空腹整片吞服",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
@@ -33993,7 +34022,7 @@
       ],
       "id": "pw:348d53de491ee1bed498",
       "recordingUnits": {
-        "INTRAVENOUS": "mcg/kg"
+        "INTRAVENOUS": "mg"
       },
       "formulationIds": [
         "form:injection"
@@ -34556,7 +34585,7 @@
           "中枢性咪唑啉 I1 受体激动剂"
         ],
         "indications": [
-          "原发性或原发性高血压。"
+          "原发性高血压。"
         ],
         "contraindications": [
           "药物过敏、病态窦房结综合征、静息心率低于 50 次/分、二度或三度房室传导阻滞及心功能不全。"
@@ -34599,7 +34628,7 @@
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
           "scheduleReviewedDate": "2026-11-06",
-          "reviewedLabelMatch": "SmPC current at access",
+          "reviewedLabelMatch": "SmPC dated 2020-10-29; emc updated 2020-11-16",
           "sourceRefs": [
             {
               "title": "MHRA · Moxonidine 200 microgram film-coated tablets SmPC",
@@ -37232,7 +37261,8 @@
           "可能增加出血风险；严重肾功能损害需降低剂量，肝损害者剂量无法可靠给出，新发视网膜出血应停药。"
         ],
         "majorInteractions": [
-          "抗凝药、抗血小板药及出血风险增高的药物需谨慎合用；与茶碱类可能叠加中枢兴奋作用。"
+          "茶碱浓度可升高并出现茶碱毒性，开始或调整本品时监测茶碱浓度；环丙沙星、氟伏沙明等强 CYP1A2 抑制剂可升高本品暴露。",
+          "西咪替丁可使母药稳态浓度约升高 25%、代谢物 I 约升高 30%；与华法林等维生素 K 拮抗剂合用增加出血风险，需更频繁监测凝血。"
         ],
         "monitoring": [
           "监测出血迹象、肾功能、耐受性和行走症状改善；与餐同服并整片吞服。"
@@ -37263,11 +37293,17 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
+          "tmax": {
+            "min": 2,
+            "max": 4,
+            "unit": "h",
+            "basis": "400 mg 缓释片给药后母药及代谢物达峰时间"
+          },
           "eliminationHalfLife": {
             "min": 0.4,
             "max": 0.8,
             "unit": "h",
-            "basis": "母体药物半衰期；活性代谢物持续时间更长"
+            "basis": "母体药物表观血浆半衰期；代谢物约为 1–1.6 小时，临床作用持续时间不等同于母药半衰期"
           }
         }
       ],
@@ -37416,7 +37452,7 @@
           "tmax": {
             "min": 0.5,
             "max": 0.5,
-            "unit": "min",
+            "unit": "h",
             "basis": "口服后约 30 分钟达到峰浓度"
           },
           "eliminationHalfLife": {
@@ -39938,11 +39974,17 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
+          "tmax": {
+            "min": 0.5,
+            "max": 2,
+            "unit": "h",
+            "basis": "平均 Tmax 约 1 小时，范围为给药后 0.5–2 小时"
+          },
           "eliminationHalfLife": {
             "min": 2,
             "max": 4,
             "unit": "h",
-            "basis": "口服给药的消除半衰期范围"
+            "basis": "最初 8 小时的主要消除半衰期；稳态终末半衰期平均约 8.6 小时，仅代表不足 5% 吸收药物的消除"
           }
         }
       ],
@@ -40534,11 +40576,17 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "eliminationHalfLife": {
-            "min": 9,
-            "max": 12,
+          "tmax": {
+            "min": 4.1,
+            "max": 14.3,
             "unit": "h",
-            "basis": "说明书报告的消除半衰期范围"
+            "basis": "空腹给药峰浓度时间 9.2 ± 5.1 小时（均值 ± 标准差）"
+          },
+          "eliminationHalfLife": {
+            "min": 9.4,
+            "max": 18,
+            "unit": "h",
+            "basis": "终末消除半衰期 13.7 ± 4.3 小时（均值 ± 标准差）"
           }
         }
       ],
@@ -40554,8 +40602,8 @@
           "population": "成人",
           "route": "Oral",
           "formulation": "缓释片",
-          "amountText": "通常起始每日 17 mg；老年或肝损害者不超过 8.5 mg",
-          "scheduleText": "每周或更慢调整，常用每日 17–34 mg，最大每日 34 mg",
+          "amountText": "通常起始每日 17 mg；65 岁以上或肝损害者起始不超过每日 8.5 mg",
+          "scheduleText": "每周或更长时间增加 8.5 mg；常用每日 17–34 mg，最大每日 34 mg；空腹整片吞服",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
@@ -50405,7 +50453,7 @@
             "min": 3,
             "max": 5,
             "unit": "h",
-            "basis": "血浆半衰期约 4 小时，降压作用持续更久"
+            "basis": "说明书报告平均血浆半衰期约 4.2 小时；降压作用持续时间明显更久"
           }
         }
       ],
@@ -52120,7 +52168,36 @@
           }
         ]
       },
-      "timeCourse": [],
+      "timeCourse": [
+        {
+          "route": "Sublingual",
+          "formulation": "舌下片",
+          "notes": [
+            "给药后约 1–3 分钟起效，约 5 分钟达最大血管扩张效应，作用至少持续 25 分钟；母药血浆半衰期不能代表临床持续时间。"
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Nitroglycerin sublingual tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "tmax": {
+            "min": 6,
+            "max": 7,
+            "unit": "min",
+            "basis": "舌下给药平均血药峰浓度时间约 6–7 分钟"
+          },
+          "eliminationHalfLife": {
+            "min": 2,
+            "max": 3,
+            "unit": "min",
+            "basis": "母药平均消除半衰期；血浆浓度不代表抗心绞痛作用持续时间"
+          }
+        }
+      ],
       "tdm": null,
       "roas": [
         {
@@ -52139,8 +52216,8 @@
           "population": "成人",
           "route": "Sublingual",
           "formulation": "舌下片",
-          "amountText": "每片通常 0.3–0.4 mg 舌下或颊部溶解",
-          "scheduleText": "约每 5 分钟重复；15 分钟内最多 3 片，未缓解立即就医",
+          "amountText": "规格为 0.3、0.4 或 0.6 mg；按所配规格一片舌下或颊部溶解",
+          "scheduleText": "急性发作时约每 5 分钟重复，15 分钟内最多 3 片；也可在可能诱发发作的活动前 5–10 分钟使用",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
@@ -52158,20 +52235,20 @@
           "ranges": [
             {
               "min": 0.3,
-              "max": 0.4,
+              "max": 0.6,
               "unit": "mg",
-              "basis": "per-dose",
+              "basis": "available-tablet-strength",
               "rangeKind": "label-regimen"
             }
           ]
         },
         {
-          "indication": "心绞痛预防 | Angina prevention",
-          "population": "成人 | Adults",
+          "indication": "心绞痛预防",
+          "population": "成人",
           "route": "Transdermal",
-          "formulation": "贴片 | Patch",
-          "amountText": "起始 0.2–0.4 mg/h，可用 0.4–0.8 mg/h | Start 0.2 to 0.4 mg/h; use may extend to 0.4 to 0.8 mg/h",
-          "scheduleText": "每日一次，佩戴 12–14 小时后移除 10–12 小时 | Apply once daily for 12 to 14 hours, then keep off for 10 to 12 hours",
+          "formulation": "贴片",
+          "amountText": "起始 0.2–0.4 mg/h，可用 0.4–0.8 mg/h",
+          "scheduleText": "每日一次，佩戴 12–14 小时后移除 10–12 小时",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
           "scheduleReviewStatus": "reviewed",
@@ -66906,7 +66983,7 @@
           "route": "Oral",
           "formulation": "胶囊",
           "notes": [
-            "所引说明书的药代资料。"
+            "说明书报告终末消除半衰期约 8–9 小时，但早期消除快，等效半衰期约 1–2 小时，因此需每 4 小时给药。"
           ],
           "sourceRefs": [
             {
@@ -77259,7 +77336,7 @@
           "route": "Oral",
           "formulation": "胶囊",
           "notes": [
-            "所引说明书的药代资料。"
+            "口服后 20 分钟即可检出，平均约 1 小时达峰；稳态约需 2–3 天。终末半衰期约 8.6 小时，但多数药物在最初 8 小时内清除，临床上以早期 2–4 小时半衰期描述更合适。"
           ],
           "sourceRefs": [
             {
