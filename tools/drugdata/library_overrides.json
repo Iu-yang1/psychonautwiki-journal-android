@@ -48987,6 +48987,4509 @@
           "endocrineInfo": null
         }
       }
+    },
+    "pw:f12cf86f6e5e473f5c0a": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+        "commonNames": [
+          "Clopidogrel",
+          "Plavix",
+          "氯吡格雷"
+        ],
+        "categories": [
+          "cardiovascular",
+          "antithrombotic",
+          "prescription-medicine",
+          "atc-b01"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Clopidogrel tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "氯吡格雷",
+          "summary": "口服抗血小板前药，作用依赖 CYP2C19 活化。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "B01AC04"
+            ],
+            "drugClass": [
+              "P2Y12 受体抑制剂"
+            ],
+            "indications": [
+              "急性冠状动脉综合征，以及近期心梗、卒中或外周动脉病等标签用途。"
+            ],
+            "contraindications": [
+              "活动性病理性出血或严重过敏。"
+            ],
+            "majorWarnings": [
+              "可发生严重出血，罕见血栓性血小板减少性紫癜。"
+            ],
+            "majorInteractions": [
+              "奥美拉唑和埃索美拉唑可降低活化。其他抗凝或抗血小板药增加出血风险。"
+            ],
+            "monitoring": [
+              "随访出血及血栓症状，评估 CYP2C19 功能及拟手术情况。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Clopidogrel tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Clopidogrel tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 6,
+                "max": 6,
+                "unit": "h",
+                "basis": "母药约值，活性代谢物约 30 分钟"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "近期心梗、卒中或外周动脉病",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "每日 75 mg",
+              "scheduleText": "每日一次口服，无需负荷剂量",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 9, 2026-06-01",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Clopidogrel tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 75,
+                  "max": 75,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Clopidogrel",
+          "summary": "Oral antiplatelet prodrug requiring CYP2C19 activation.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "B01AC04"
+            ],
+            "drugClass": [
+              "P2Y12 receptor inhibitor"
+            ],
+            "indications": [
+              "Acute coronary syndrome and labeled use after recent myocardial infarction, stroke or established peripheral arterial disease."
+            ],
+            "contraindications": [
+              "Active pathological bleeding or serious hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Serious bleeding and rare thrombotic thrombocytopenic purpura may occur."
+            ],
+            "majorInteractions": [
+              "Omeprazole and esomeprazole can reduce activation. Anticoagulants or other antiplatelets add bleeding risk."
+            ],
+            "monitoring": [
+              "Follow bleeding and thrombotic symptoms, assessing CYP2C19 function and planned procedures."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Clopidogrel tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Clopidogrel tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 6,
+                "max": 6,
+                "unit": "h",
+                "basis": "Approximate parent value, versus about 30 minutes for active metabolite"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Recent myocardial infarction, stroke or peripheral arterial disease",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "75 mg per day",
+              "scheduleText": "Orally once daily without a loading dose",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 9, 2026-06-01",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Clopidogrel tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db1161c9-6efd-4361-a766-6a37c241ccee",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 75,
+                  "max": 75,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:20eb55533d9fe0c5b04a": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+        "commonNames": [
+          "Carvedilol",
+          "Coreg",
+          "卡维地洛",
+          "Alpha beta blocker"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c07"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Carvedilol tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "卡维地洛",
+          "summary": "所引资料对应卡维地洛普通片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C07AG02"
+            ],
+            "drugClass": [
+              "α/β 肾上腺素受体阻滞剂"
+            ],
+            "indications": [
+              "心衰、心梗后左室功能障碍及高血压。"
+            ],
+            "contraindications": [
+              "哮喘或支气管痉挛、无起搏器的高级传导阻滞或严重心动过缓、心源性休克、需静脉正性肌力药的失代偿心衰及严重肝损害。"
+            ],
+            "majorWarnings": [
+              "可发生体位性低血压、心动过缓及心衰暂时恶化。"
+            ],
+            "majorInteractions": [
+              "其他减慢心率或传导药可叠加效应。"
+            ],
+            "monitoring": [
+              "逐步加量时监测血压、心率、体重及液体潴留。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Carvedilol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Carvedilol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 7,
+                "max": 10,
+                "unit": "h",
+                "basis": "终末范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "稳定心衰",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始每次 3.125 mg",
+              "scheduleText": "每日两次随餐口服，至少两周后按耐受加量",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 104, 2026-06-18",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Carvedilol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 3.125,
+                  "max": 3.125,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Carvedilol",
+          "summary": "These details concern standard carvedilol tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C07AG02"
+            ],
+            "drugClass": [
+              "Alpha- and beta-adrenergic blocker"
+            ],
+            "indications": [
+              "Heart failure, left ventricular dysfunction after myocardial infarction and hypertension."
+            ],
+            "contraindications": [
+              "Asthma or bronchospasm, high-grade block or severe bradycardia without a pacemaker, cardiogenic shock, decompensated failure requiring IV inotropes and severe hepatic impairment."
+            ],
+            "majorWarnings": [
+              "Orthostatic hypotension, bradycardia and transient worsening of heart failure can occur."
+            ],
+            "majorInteractions": [
+              "Other heart-rate or conduction-slowing drugs add effects."
+            ],
+            "monitoring": [
+              "Monitor blood pressure, pulse, weight and fluid retention during gradual titration."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Carvedilol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Carvedilol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 7,
+                "max": 10,
+                "unit": "h",
+                "basis": "Terminal range"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Stable heart failure",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initially 3.125 mg per dose",
+              "scheduleText": "Orally twice daily with food, increasing after at least two weeks if tolerated",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 104, 2026-06-18",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Carvedilol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=45233e64-26ee-4117-a896-24363b435fc2",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 3.125,
+                  "max": 3.125,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:918d4f90a6c23464e97d": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+        "commonNames": [
+          "Cilostazol",
+          "Pletal",
+          "西洛他唑",
+          "PDE3 inhibitor"
+        ],
+        "categories": [
+          "cardiovascular",
+          "peripheral-circulation",
+          "antithrombotic",
+          "prescription-medicine",
+          "atc-b01"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Cilostazol tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "西洛他唑",
+          "summary": "所引制剂为西洛他唑口服片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "B01AC23"
+            ],
+            "drugClass": [
+              "磷酸二酯酶 3 抑制剂"
+            ],
+            "indications": [
+              "改善间歇性跛行症状和步行距离。"
+            ],
+            "contraindications": [
+              "任何程度的心衰或相关过敏。"
+            ],
+            "majorWarnings": [
+              "关注心动过速、心悸、出血及头痛。"
+            ],
+            "majorInteractions": [
+              "CYP3A4 或 CYP2C19 抑制剂可升高暴露，需按标签减量。"
+            ],
+            "monitoring": [
+              "随访步行症状、出血和心率，三个月无改善需复评。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Cilostazol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Cilostazol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 11,
+                "max": 13,
+                "unit": "h",
+                "basis": "母药及活性代谢物报告的表观范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "间歇性跛行",
+              "population": "成人，无需相互作用减量",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "每次 100 mg",
+              "scheduleText": "每日两次，餐前至少半小时或餐后两小时",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 3, 2026-01-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Cilostazol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 100,
+                  "max": 100,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Cilostazol",
+          "summary": "The cited product is cilostazol oral tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "B01AC23"
+            ],
+            "drugClass": [
+              "Phosphodiesterase-3 inhibitor"
+            ],
+            "indications": [
+              "Improves symptoms and walking distance in intermittent claudication."
+            ],
+            "contraindications": [
+              "Heart failure of any severity or related hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Watch for tachycardia, palpitations, bleeding and headache."
+            ],
+            "majorInteractions": [
+              "CYP3A4 or CYP2C19 inhibitors can raise exposure and require label dose reduction."
+            ],
+            "monitoring": [
+              "Follow walking symptoms, bleeding and pulse. Reassess if unimproved after three months."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Cilostazol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Cilostazol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 11,
+                "max": 13,
+                "unit": "h",
+                "basis": "Reported apparent range for parent drug and active metabolites"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Intermittent claudication",
+              "population": "Adults without interaction-related dose reduction",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "100 mg per dose",
+              "scheduleText": "Twice daily, at least 30 minutes before or two hours after meals",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 3, 2026-01-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Cilostazol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=dc7c2c25-36a1-e3fd-e053-2995a90adabc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 100,
+                  "max": 100,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:59c7f1049b6c23fd6942": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+        "commonNames": [
+          "Bisoprolol",
+          "Zebeta",
+          "Concor",
+          "比索洛尔"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c07"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Bisoprolol fumarate tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "比索洛尔",
+          "summary": "所引普通片含富马酸比索洛尔。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C07AB07"
+            ],
+            "drugClass": [
+              "β1 受体阻滞剂"
+            ],
+            "indications": [
+              "高血压。"
+            ],
+            "contraindications": [
+              "心源性休克、明显心衰、二或三度房室阻滞及显著窦性心动过缓。"
+            ],
+            "majorWarnings": [
+              "可出现心动过缓、低血压或心衰恶化。"
+            ],
+            "majorInteractions": [
+              "其他减慢心率及传导的药物可叠加效应。"
+            ],
+            "monitoring": [
+              "随访血压、心率及心衰症状，肝肾损害时核对剂量。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Bisoprolol fumarate tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bisoprolol fumarate tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 9,
+                "max": 12,
+                "unit": "h",
+                "basis": "血浆消除范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "高血压",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "通常起始每日 5 mg",
+              "scheduleText": "每日一次口服，部分患者可从 2.5 mg 起始",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 11, 2022-10-28",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bisoprolol fumarate tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 5,
+                  "max": 5,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Bisoprolol",
+          "summary": "The cited standard tablets contain bisoprolol fumarate.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C07AB07"
+            ],
+            "drugClass": [
+              "Beta-1 blocker"
+            ],
+            "indications": [
+              "Hypertension."
+            ],
+            "contraindications": [
+              "Cardiogenic shock, overt heart failure, second- or third-degree AV block and marked sinus bradycardia."
+            ],
+            "majorWarnings": [
+              "Bradycardia, hypotension or worsening heart failure can occur."
+            ],
+            "majorInteractions": [
+              "Other medicines slowing pulse or conduction add effects."
+            ],
+            "monitoring": [
+              "Follow blood pressure, pulse and heart-failure symptoms, checking dose in hepatic or renal impairment."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Bisoprolol fumarate tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bisoprolol fumarate tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 9,
+                "max": 12,
+                "unit": "h",
+                "basis": "Plasma elimination range"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Hypertension",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Usual initial 5 mg per day",
+              "scheduleText": "Orally once daily; 2.5 mg may be appropriate initially for some patients",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 11, 2022-10-28",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bisoprolol fumarate tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4f20df45-3f9c-4a91-b394-e93a08111ec3",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 5,
+                  "max": 5,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:d65e16eeee716a6dbb1f": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8444da17-6c31-492b-8842-93740f083d9d",
+        "commonNames": [
+          "Bosentan",
+          "波生坦",
+          "内皮素受体拮抗剂",
+          "C02KX01"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c02"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Bosentan coated tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8444da17-6c31-492b-8842-93740f083d9d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "波生坦",
+          "summary": "所引制剂为波生坦口服片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C02KX01"
+            ],
+            "drugClass": [
+              "内皮素受体拮抗剂"
+            ],
+            "indications": [
+              "肺动脉高压，用于改善运动能力并降低临床恶化。"
+            ],
+            "contraindications": [
+              "妊娠、相关过敏或合用环孢素及格列本脲。"
+            ],
+            "majorWarnings": [
+              "可引起严重肝损伤和胎儿损害，也可能发生液体潴留或血红蛋白下降。"
+            ],
+            "majorInteractions": [
+              "可降低激素避孕药及多种 CYP 底物暴露，环孢素和格列本脲禁忌合用。"
+            ],
+            "monitoring": [
+              "按标签在治疗前及每月检查肝功能，遵守妊娠检测及避孕要求，监测血红蛋白。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Bosentan coated tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8444da17-6c31-492b-8842-93740f083d9d",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bosentan coated tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8444da17-6c31-492b-8842-93740f083d9d",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 5,
+                "max": 5,
+                "unit": "h",
+                "basis": "终末消除约值"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "肺动脉高压",
+              "population": "成人及 12 岁以上患者，按体重及肝功能核对",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "首 4 周每次 62.5 mg",
+              "scheduleText": "每日两次口服，后续按标签调整",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-06-02",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bosentan coated tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8444da17-6c31-492b-8842-93740f083d9d",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 62.5,
+                  "max": 62.5,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Bosentan",
+          "summary": "The cited product is bosentan oral tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C02KX01"
+            ],
+            "drugClass": [
+              "Endothelin receptor antagonist"
+            ],
+            "indications": [
+              "Pulmonary arterial hypertension to improve exercise ability and reduce clinical worsening."
+            ],
+            "contraindications": [
+              "Pregnancy, related hypersensitivity or concomitant cyclosporine or glyburide."
+            ],
+            "majorWarnings": [
+              "Can cause serious hepatic injury and fetal harm, as well as fluid retention or decreased hemoglobin."
+            ],
+            "majorInteractions": [
+              "Can reduce exposure to hormonal contraceptives and many CYP substrates. Cyclosporine and glyburide are contraindicated."
+            ],
+            "monitoring": [
+              "Check liver tests before treatment and monthly, follow pregnancy-testing and contraception requirements, and monitor hemoglobin."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Bosentan coated tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8444da17-6c31-492b-8842-93740f083d9d",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bosentan coated tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8444da17-6c31-492b-8842-93740f083d9d",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 5,
+                "max": 5,
+                "unit": "h",
+                "basis": "Approximate terminal elimination"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Pulmonary arterial hypertension",
+              "population": "Adults and patients over 12, checking weight and hepatic function",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "62.5 mg per dose during the first four weeks",
+              "scheduleText": "Orally twice daily, with subsequent adjustment per label",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-06-02",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bosentan coated tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8444da17-6c31-492b-8842-93740f083d9d",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 62.5,
+                  "max": 62.5,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:503a187ef1c09a64ea7b": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88b434fa-8891-4fd5-9d86-7ea64667c08f",
+        "commonNames": [
+          "Cangrelor",
+          "坎格雷洛",
+          "静脉P2Y12受体抑制剂",
+          "B01AC25"
+        ],
+        "categories": [
+          "cardiovascular",
+          "antithrombotic",
+          "prescription-medicine",
+          "atc-b01"
+        ],
+        "roas": [
+          {
+            "name": "INTRAVENOUS"
+          }
+        ],
+        "recordingUnits": {
+          "INTRAVENOUS": "mg"
+        },
+        "formulationIds": [
+          "form:injection"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Kengreal injection",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88b434fa-8891-4fd5-9d86-7ea64667c08f",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "坎格瑞洛",
+          "summary": "所引产品为坎格瑞洛静脉注射剂。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "B01AC25"
+            ],
+            "drugClass": [
+              "P2Y12 受体抑制剂"
+            ],
+            "indications": [
+              "符合标签条件的经皮冠状动脉介入患者降低围手术期血栓事件风险。"
+            ],
+            "contraindications": [
+              "显著活动性出血或相关严重过敏。"
+            ],
+            "majorWarnings": [
+              "可发生严重出血。"
+            ],
+            "majorInteractions": [
+              "氯吡格雷和普拉格雷需在输注结束后按标签给药，其他抗栓药可增加出血。"
+            ],
+            "monitoring": [
+              "监测出血和血流动力学，转换口服 P2Y12 抑制剂时核对时机。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Kengreal injection",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88b434fa-8891-4fd5-9d86-7ea64667c08f",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Intravenous",
+              "formulation": "注射剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Kengreal injection",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88b434fa-8891-4fd5-9d86-7ea64667c08f",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 3,
+                "max": 6,
+                "unit": "min",
+                "basis": "平均消除分钟范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "冠脉介入抗血小板",
+              "population": "符合标签条件的成人",
+              "route": "Intravenous",
+              "formulation": "注射剂",
+              "amountText": "静脉负荷 30 微克/kg",
+              "scheduleText": "负荷后立即以 4 微克/kg/min 持续输注，按标签决定时长",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2025-10-21",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Kengreal injection",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88b434fa-8891-4fd5-9d86-7ea64667c08f",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 30,
+                  "max": 30,
+                  "unit": "mcg/kg",
+                  "basis": "weight-based-per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Cangrelor",
+          "summary": "The cited product is intravenous cangrelor.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "B01AC25"
+            ],
+            "drugClass": [
+              "P2Y12 receptor inhibitor"
+            ],
+            "indications": [
+              "Reduces periprocedural thrombotic events in eligible patients undergoing percutaneous coronary intervention."
+            ],
+            "contraindications": [
+              "Significant active bleeding or related serious hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Serious bleeding can occur."
+            ],
+            "majorInteractions": [
+              "Give clopidogrel or prasugrel after infusion per label. Other antithrombotics add bleeding risk."
+            ],
+            "monitoring": [
+              "Monitor bleeding and hemodynamics, checking timing when transitioning to oral P2Y12 inhibitors."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Kengreal injection",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88b434fa-8891-4fd5-9d86-7ea64667c08f",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Intravenous",
+              "formulation": "Injection",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Kengreal injection",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88b434fa-8891-4fd5-9d86-7ea64667c08f",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 3,
+                "max": 6,
+                "unit": "min",
+                "basis": "Mean elimination range in minutes"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Antiplatelet treatment during PCI",
+              "population": "Eligible adults under the label",
+              "route": "Intravenous",
+              "formulation": "Injection",
+              "amountText": "IV bolus 30 micrograms/kg",
+              "scheduleText": "Immediately follow the bolus with 4 micrograms/kg/min infusion for the labeled duration",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2025-10-21",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Kengreal injection",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=88b434fa-8891-4fd5-9d86-7ea64667c08f",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 30,
+                  "max": 30,
+                  "unit": "mcg/kg",
+                  "basis": "weight-based-per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:191e2d6ab32d0385c834": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e574d04f-67b4-4a84-9d66-8c2d54f95120",
+        "commonNames": [
+          "Bivalirudin",
+          "比伐芦定",
+          "B01AE06"
+        ],
+        "categories": [
+          "cardiovascular",
+          "antithrombotic",
+          "prescription-medicine",
+          "atc-b01"
+        ],
+        "roas": [
+          {
+            "name": "INTRAVENOUS"
+          }
+        ],
+        "recordingUnits": {
+          "INTRAVENOUS": "mg"
+        },
+        "formulationIds": [
+          "form:injection"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Bivalirudin for injection",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e574d04f-67b4-4a84-9d66-8c2d54f95120",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "比伐卢定",
+          "summary": "所引产品为复溶后静脉给药的比伐卢定。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "B01AE06"
+            ],
+            "drugClass": [
+              "直接凝血酶抑制剂"
+            ],
+            "indications": [
+              "经皮冠状动脉介入患者的抗凝，包括肝素诱导血小板减少症患者。"
+            ],
+            "contraindications": [
+              "显著活动性出血或相关严重过敏。"
+            ],
+            "majorWarnings": [
+              "可发生严重出血，部分急性心梗介入患者需关注早期支架血栓。"
+            ],
+            "majorInteractions": [
+              "其他抗凝药、抗血小板或溶栓药可增加出血风险。"
+            ],
+            "monitoring": [
+              "监测出血、ACT 和肾功能，按标签调整肾损害患者的输注速率。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Bivalirudin for injection",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e574d04f-67b4-4a84-9d66-8c2d54f95120",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Intravenous",
+              "formulation": "注射剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bivalirudin for injection",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e574d04f-67b4-4a84-9d66-8c2d54f95120",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 25,
+                "max": 25,
+                "unit": "min",
+                "basis": "肾功能正常的介入患者，分钟"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "冠脉介入抗凝",
+              "population": "符合标签条件的成人",
+              "route": "Intravenous",
+              "formulation": "注射剂",
+              "amountText": "负荷 0.75 mg/kg",
+              "scheduleText": "静脉推注后立即以 1.75 mg/kg/h 输注，手术期持续",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-07-10, SPL 9",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bivalirudin for injection",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e574d04f-67b4-4a84-9d66-8c2d54f95120",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 0.75,
+                  "max": 0.75,
+                  "unit": "mg/kg",
+                  "basis": "weight-based-per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Bivalirudin",
+          "summary": "The cited product is bivalirudin reconstituted for IV administration.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "B01AE06"
+            ],
+            "drugClass": [
+              "Direct thrombin inhibitor"
+            ],
+            "indications": [
+              "Anticoagulation during PCI, including patients with heparin-induced thrombocytopenia."
+            ],
+            "contraindications": [
+              "Significant active bleeding or related serious hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Serious bleeding can occur. Early stent thrombosis requires attention in selected acute-MI interventions."
+            ],
+            "majorInteractions": [
+              "Other anticoagulants, antiplatelets or thrombolytics add bleeding risk."
+            ],
+            "monitoring": [
+              "Monitor bleeding, ACT and renal function, adjusting infusion rate for renal impairment per label."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Bivalirudin for injection",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e574d04f-67b4-4a84-9d66-8c2d54f95120",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Intravenous",
+              "formulation": "Injection",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bivalirudin for injection",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e574d04f-67b4-4a84-9d66-8c2d54f95120",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 25,
+                "max": 25,
+                "unit": "min",
+                "basis": "Minutes in intervention patients with normal renal function"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Anticoagulation during PCI",
+              "population": "Eligible adults under the label",
+              "route": "Intravenous",
+              "formulation": "Injection",
+              "amountText": "Bolus 0.75 mg/kg",
+              "scheduleText": "IV bolus followed immediately by 1.75 mg/kg/h infusion during the procedure",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-07-10, SPL 9",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bivalirudin for injection",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e574d04f-67b4-4a84-9d66-8c2d54f95120",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 0.75,
+                  "max": 0.75,
+                  "unit": "mg/kg",
+                  "basis": "weight-based-per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:9cd0ca16d2674823d1ac": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff732cfa-9ded-4226-b464-19c90a6865ae",
+        "commonNames": [
+          "Benazepril",
+          "贝那普利",
+          "C09AA07"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c09"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Benazepril hydrochloride tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff732cfa-9ded-4226-b464-19c90a6865ae",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "贝那普利",
+          "summary": "所引片剂含盐酸贝那普利。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C09AA07"
+            ],
+            "drugClass": [
+              "血管紧张素转换酶抑制剂"
+            ],
+            "indications": [
+              "高血压。"
+            ],
+            "contraindications": [
+              "ACE 抑制剂相关或遗传性血管性水肿、糖尿病患者合用阿利吉仑，以及标签所列沙库巴曲缬沙坦换药间隔。"
+            ],
+            "majorWarnings": [
+              "妊娠可造成胎儿损害，也可发生血管性水肿、肾损伤及高钾。"
+            ],
+            "majorInteractions": [
+              "其他肾素–血管紧张素系统抑制剂、NSAID 和补钾药增加相关风险。"
+            ],
+            "monitoring": [
+              "随访血压、血钾和肾功能，核对妊娠及面唇肿胀。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Benazepril hydrochloride tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff732cfa-9ded-4226-b464-19c90a6865ae",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Benazepril hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff732cfa-9ded-4226-b464-19c90a6865ae",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 10,
+                "max": 11,
+                "unit": "h",
+                "basis": "活性贝那普利拉重复给药后的有效半衰期"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "高血压",
+              "population": "成人，未服利尿剂",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始每日 10 mg",
+              "scheduleText": "每日一次口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-08-19",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Benazepril hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff732cfa-9ded-4226-b464-19c90a6865ae",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Benazepril",
+          "summary": "The cited tablets contain benazepril hydrochloride.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C09AA07"
+            ],
+            "drugClass": [
+              "ACE inhibitor"
+            ],
+            "indications": [
+              "Hypertension."
+            ],
+            "contraindications": [
+              "ACE-inhibitor-related or hereditary angioedema, aliskiren coadministration in diabetes, and labeled sacubitril/valsartan washouts."
+            ],
+            "majorWarnings": [
+              "Can cause fetal harm during pregnancy, angioedema, renal injury and hyperkalemia."
+            ],
+            "majorInteractions": [
+              "Other renin–angiotensin inhibitors, NSAIDs and potassium supplements add related risks."
+            ],
+            "monitoring": [
+              "Follow blood pressure, potassium and renal function, checking pregnancy and facial or lip swelling."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Benazepril hydrochloride tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff732cfa-9ded-4226-b464-19c90a6865ae",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Benazepril hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff732cfa-9ded-4226-b464-19c90a6865ae",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 10,
+                "max": 11,
+                "unit": "h",
+                "basis": "Effective half-life of active benazeprilat after repeated dosing"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Hypertension",
+              "population": "Adults not taking a diuretic",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initial 10 mg per day",
+              "scheduleText": "Orally once daily",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-08-19",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Benazepril hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ff732cfa-9ded-4226-b464-19c90a6865ae",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:d3ec175357b7652b6710": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9da86c48-5911-4512-8c71-eca4a6418cf6",
+        "commonNames": [
+          "Candesartan",
+          "Atacand",
+          "Candesartan cilexetil",
+          "坎地沙坦"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c09"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Candesartan cilexetil tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9da86c48-5911-4512-8c71-eca4a6418cf6",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "坎地沙坦",
+          "summary": "所引片剂含坎地沙坦酯，吸收时水解为活性坎地沙坦。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C09CA06"
+            ],
+            "drugClass": [
+              "血管紧张素 II 受体拮抗剂"
+            ],
+            "indications": [
+              "高血压及标签所列成人心衰。"
+            ],
+            "contraindications": [
+              "成分过敏，或糖尿病患者合用阿利吉仑。"
+            ],
+            "majorWarnings": [
+              "妊娠可造成胎儿损害，亦可发生低血压、肾功能异常和高钾。"
+            ],
+            "majorInteractions": [
+              "其他肾素–血管紧张素系统抑制剂、NSAID 及补钾药增加相关风险。"
+            ],
+            "monitoring": [
+              "随访血压、血钾和肾功能，核对妊娠情况。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Candesartan cilexetil tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9da86c48-5911-4512-8c71-eca4a6418cf6",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Candesartan cilexetil tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9da86c48-5911-4512-8c71-eca4a6418cf6",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 9,
+                "max": 9,
+                "unit": "h",
+                "basis": "活性坎地沙坦约值"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "高血压",
+              "population": "成人，单药且未发生容量不足",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "通常起始每日 16 mg 坎地沙坦酯",
+              "scheduleText": "每日一次口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-09-07",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Candesartan cilexetil tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9da86c48-5911-4512-8c71-eca4a6418cf6",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 16,
+                  "max": 16,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Candesartan",
+          "summary": "Cited tablets contain candesartan cilexetil, hydrolyzed to active candesartan during absorption.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C09CA06"
+            ],
+            "drugClass": [
+              "Angiotensin II receptor blocker"
+            ],
+            "indications": [
+              "Hypertension and labeled adult heart failure."
+            ],
+            "contraindications": [
+              "Ingredient hypersensitivity or aliskiren coadministration in diabetes."
+            ],
+            "majorWarnings": [
+              "Can cause fetal harm during pregnancy, hypotension, renal dysfunction and hyperkalemia."
+            ],
+            "majorInteractions": [
+              "Other renin–angiotensin inhibitors, NSAIDs and potassium supplements add related risks."
+            ],
+            "monitoring": [
+              "Follow blood pressure, potassium and renal function, checking pregnancy status."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Candesartan cilexetil tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9da86c48-5911-4512-8c71-eca4a6418cf6",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Candesartan cilexetil tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9da86c48-5911-4512-8c71-eca4a6418cf6",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 9,
+                "max": 9,
+                "unit": "h",
+                "basis": "Approximate value for active candesartan"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Hypertension",
+              "population": "Adults on monotherapy without volume depletion",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Usual initial 16 mg candesartan cilexetil per day",
+              "scheduleText": "Orally once daily",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-09-07",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Candesartan cilexetil tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9da86c48-5911-4512-8c71-eca4a6418cf6",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 16,
+                  "max": 16,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:50bd907c61060f86803e": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1395ba5b-2fc9-41ff-9c43-e0740d781dee",
+        "commonNames": [
+          "Captopril",
+          "Capoten",
+          "卡托普利"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c09"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Captopril tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1395ba5b-2fc9-41ff-9c43-e0740d781dee",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "卡托普利",
+          "summary": "所引制剂为卡托普利口服片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C09AA01"
+            ],
+            "drugClass": [
+              "血管紧张素转换酶抑制剂"
+            ],
+            "indications": [
+              "高血压、心衰、心梗后左室功能障碍及特定糖尿病肾病。"
+            ],
+            "contraindications": [
+              "ACE 抑制剂相关血管性水肿及其他标签禁忌，包括糖尿病患者合用阿利吉仑。"
+            ],
+            "majorWarnings": [
+              "妊娠可造成胎儿损害，可发生血管性水肿、肾损伤、高钾及血液异常。"
+            ],
+            "majorInteractions": [
+              "补钾药、其他肾素–血管紧张素系统抑制剂及 NSAID 可增加相关风险。"
+            ],
+            "monitoring": [
+              "随访血压、血钾和肾功能，按风险监测血象。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Captopril tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1395ba5b-2fc9-41ff-9c43-e0740d781dee",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Captopril tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1395ba5b-2fc9-41ff-9c43-e0740d781dee",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": null,
+                "max": 2,
+                "unit": "h",
+                "basis": "母药半衰期无法准确测定，标签估计小于 2 小时"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "高血压",
+              "population": "成人，肾功能及利尿剂情况需评估",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始每次 25 mg",
+              "scheduleText": "餐前一小时每日两次或三次口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-09-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Captopril tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1395ba5b-2fc9-41ff-9c43-e0740d781dee",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 25,
+                  "max": 25,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Captopril",
+          "summary": "The cited product is captopril oral tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C09AA01"
+            ],
+            "drugClass": [
+              "ACE inhibitor"
+            ],
+            "indications": [
+              "Hypertension, heart failure, post-infarction left ventricular dysfunction and selected diabetic nephropathy."
+            ],
+            "contraindications": [
+              "ACE-inhibitor-related angioedema and other label restrictions including aliskiren coadministration in diabetes."
+            ],
+            "majorWarnings": [
+              "Can cause fetal harm in pregnancy, angioedema, renal injury, hyperkalemia and hematologic abnormalities."
+            ],
+            "majorInteractions": [
+              "Potassium supplements, other renin–angiotensin inhibitors and NSAIDs add related risks."
+            ],
+            "monitoring": [
+              "Follow blood pressure, potassium and renal function, monitoring blood counts by risk."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Captopril tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1395ba5b-2fc9-41ff-9c43-e0740d781dee",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Captopril tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1395ba5b-2fc9-41ff-9c43-e0740d781dee",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": null,
+                "max": 2,
+                "unit": "h",
+                "basis": "Unchanged-drug half-life could not be accurately determined; label estimates under two hours"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Hypertension",
+              "population": "Adults, with assessment of renal function and diuretic use",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initially 25 mg per dose",
+              "scheduleText": "Orally two or three times daily one hour before meals",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-09-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Captopril tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1395ba5b-2fc9-41ff-9c43-e0740d781dee",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 25,
+                  "max": 25,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:34a70daf946c9655212a": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06745425-e7e7-4413-b9ff-22b121f0ea9a",
+        "commonNames": [
+          "Bumetanide",
+          "Bumex",
+          "布美他尼"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c03"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          },
+          {
+            "name": "INTRAVENOUS"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Bumetanide tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06745425-e7e7-4413-b9ff-22b121f0ea9a",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "布美他尼",
+          "summary": "所引产品为布美他尼口服片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C03CA02"
+            ],
+            "drugClass": [
+              "袢利尿药"
+            ],
+            "indications": [
+              "治疗心衰、肝病及肾病相关水肿。"
+            ],
+            "contraindications": [
+              "无尿、肝昏迷、严重电解质耗竭或相关过敏。"
+            ],
+            "majorWarnings": [
+              "过度利尿可导致脱水、电解质紊乱和低血压，也可能出现听力损害。"
+            ],
+            "majorInteractions": [
+              "其他耳毒性药、锂剂或降压药可增加相关风险。"
+            ],
+            "monitoring": [
+              "监测体重、血压、电解质及肾功能。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Bumetanide tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06745425-e7e7-4413-b9ff-22b121f0ea9a",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bumetanide tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06745425-e7e7-4413-b9ff-22b121f0ea9a",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 1,
+                "max": 1.5,
+                "unit": "h",
+                "basis": "成人口服或肠外给药范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "水肿",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "通常每日 0.5–2 mg",
+              "scheduleText": "多数患者每日单次口服，按反应调整",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-01-27",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bumetanide tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06745425-e7e7-4413-b9ff-22b121f0ea9a",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 0.5,
+                  "max": 2,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Bumetanide",
+          "summary": "The cited product is bumetanide oral tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C03CA02"
+            ],
+            "drugClass": [
+              "Loop diuretic"
+            ],
+            "indications": [
+              "Edema associated with cardiac, hepatic or renal disease."
+            ],
+            "contraindications": [
+              "Anuria, hepatic coma, severe electrolyte depletion or related hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Excess diuresis can cause dehydration, electrolyte disturbances and hypotension. Hearing impairment can also occur."
+            ],
+            "majorInteractions": [
+              "Ototoxic medicines, lithium or antihypertensives can add related risks."
+            ],
+            "monitoring": [
+              "Monitor weight, blood pressure, electrolytes and renal function."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Bumetanide tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06745425-e7e7-4413-b9ff-22b121f0ea9a",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bumetanide tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06745425-e7e7-4413-b9ff-22b121f0ea9a",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 1,
+                "max": 1.5,
+                "unit": "h",
+                "basis": "Adult oral or parenteral range"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Edema",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Usually 0.5–2 mg per day",
+              "scheduleText": "Orally as one daily dose in most patients, adjusted to response",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-01-27",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Bumetanide tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=06745425-e7e7-4413-b9ff-22b121f0ea9a",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 0.5,
+                  "max": 2,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:34bb0de719a4385ff43f": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf716efe-0a9f-43b1-9d8a-c69330b82e18",
+        "commonNames": [
+          "Betaxolol",
+          "倍他洛尔",
+          "C07AB05"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c07"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Betaxolol tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf716efe-0a9f-43b1-9d8a-c69330b82e18",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "倍他洛尔",
+          "summary": "所引制剂为倍他洛尔口服片。滴眼剂适应证及用量另查。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C07AB05"
+            ],
+            "drugClass": [
+              "β1 受体阻滞剂"
+            ],
+            "indications": [
+              "高血压。"
+            ],
+            "contraindications": [
+              "心源性休克、明显心衰、二或三度房室阻滞、显著窦性心动过缓或过敏。"
+            ],
+            "majorWarnings": [
+              "可发生心动过缓、低血压及心衰恶化。"
+            ],
+            "majorInteractions": [
+              "与其他减慢心率和传导的药物合用可叠加效应。"
+            ],
+            "monitoring": [
+              "随访血压、心率和心衰症状，严重肾功能损害时核对起始量。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Betaxolol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf716efe-0a9f-43b1-9d8a-c69330b82e18",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Betaxolol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf716efe-0a9f-43b1-9d8a-c69330b82e18",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 14,
+                "max": 22,
+                "unit": "h",
+                "basis": "健康受试者单次口服后平均值范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "高血压",
+              "population": "成人，严重肾损害或老年人另有较低起始量",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "通常起始每日 10 mg",
+              "scheduleText": "每日一次口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2023-12-20",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Betaxolol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf716efe-0a9f-43b1-9d8a-c69330b82e18",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Betaxolol",
+          "summary": "The cited product is oral betaxolol tablets. Eye drops have separate indications and dosing.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C07AB05"
+            ],
+            "drugClass": [
+              "Beta-1 blocker"
+            ],
+            "indications": [
+              "Hypertension."
+            ],
+            "contraindications": [
+              "Cardiogenic shock, overt heart failure, second- or third-degree AV block, marked sinus bradycardia or hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Bradycardia, hypotension and worsening heart failure can occur."
+            ],
+            "majorInteractions": [
+              "Other medicines slowing heart rate or conduction can add effects."
+            ],
+            "monitoring": [
+              "Follow blood pressure, pulse and heart-failure symptoms, checking the initial dose in severe renal impairment."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Betaxolol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf716efe-0a9f-43b1-9d8a-c69330b82e18",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Betaxolol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf716efe-0a9f-43b1-9d8a-c69330b82e18",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 14,
+                "max": 22,
+                "unit": "h",
+                "basis": "Range of study means after single oral doses in healthy volunteers"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Hypertension",
+              "population": "Adults, with lower initiation in severe renal impairment or older age",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Usual initial 10 mg per day",
+              "scheduleText": "Orally once daily",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2023-12-20",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Betaxolol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bf716efe-0a9f-43b1-9d8a-c69330b82e18",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 10,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:ebf7629ff8cf09be8560": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6fa12f0-a2bc-456a-9f25-f69bb31fdb60",
+        "commonNames": [
+          "Chlorthalidone",
+          "Thalitone",
+          "氯噻酮"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c03"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Chlorthalidone tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6fa12f0-a2bc-456a-9f25-f69bb31fdb60",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "氯噻酮",
+          "summary": "所引制剂为长效口服氯噻酮片。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C03BA04"
+            ],
+            "drugClass": [
+              "噻嗪样利尿药"
+            ],
+            "indications": [
+              "高血压及标签所列水肿。"
+            ],
+            "contraindications": [
+              "无尿或对氯噻酮及磺胺类衍生物过敏。"
+            ],
+            "majorWarnings": [
+              "可发生低钠、低钾、脱水、高尿酸及血糖变化。"
+            ],
+            "majorInteractions": [
+              "其他降压药可叠加低血压，锂排泄减少可增加锂毒性。"
+            ],
+            "monitoring": [
+              "监测血压、电解质、肾功能及尿酸。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Chlorthalidone tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6fa12f0-a2bc-456a-9f25-f69bb31fdb60",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Chlorthalidone tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6fa12f0-a2bc-456a-9f25-f69bb31fdb60",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 40,
+                "max": 40,
+                "unit": "h",
+                "basis": "50–200 mg 给药后的平均值"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "高血压",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始每日 25 mg",
+              "scheduleText": "早晨随餐单次口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-09-21",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Chlorthalidone tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6fa12f0-a2bc-456a-9f25-f69bb31fdb60",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 25,
+                  "max": 25,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Chlorthalidone",
+          "summary": "The cited product is long-acting oral chlorthalidone tablets.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C03BA04"
+            ],
+            "drugClass": [
+              "Thiazide-like diuretic"
+            ],
+            "indications": [
+              "Hypertension and labeled edema indications."
+            ],
+            "contraindications": [
+              "Anuria or hypersensitivity to chlorthalidone or sulfonamide-derived drugs."
+            ],
+            "majorWarnings": [
+              "Hyponatremia, hypokalemia, dehydration, hyperuricemia and glucose changes can occur."
+            ],
+            "majorInteractions": [
+              "Other antihypertensives add hypotension. Reduced lithium clearance can increase lithium toxicity."
+            ],
+            "monitoring": [
+              "Monitor blood pressure, electrolytes, renal function and uric acid."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Chlorthalidone tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6fa12f0-a2bc-456a-9f25-f69bb31fdb60",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Chlorthalidone tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6fa12f0-a2bc-456a-9f25-f69bb31fdb60",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 40,
+                "max": 40,
+                "unit": "h",
+                "basis": "Mean after 50–200 mg doses"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Hypertension",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initial 25 mg per day",
+              "scheduleText": "One oral dose in the morning with food",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-09-21",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Chlorthalidone tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a6fa12f0-a2bc-456a-9f25-f69bb31fdb60",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 25,
+                  "max": 25,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:7ee1267681a148b01311": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=430ac07e-8524-4dec-a599-b7ebc56d9563",
+        "commonNames": [
+          "Cholestyramine",
+          "考来烯胺",
+          "C10AC01"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c10"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:powder"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Cholestyramine powder for oral suspension",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=430ac07e-8524-4dec-a599-b7ebc56d9563",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "考来烯胺",
+          "summary": "所引产品是用于配制口服混悬液的考来烯胺树脂粉剂。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C10AC01"
+            ],
+            "drugClass": [
+              "胆汁酸结合树脂"
+            ],
+            "indications": [
+              "降低特定原发性高胆固醇血症患者 LDL 胆固醇，以及部分胆汁淤积相关瘙痒。"
+            ],
+            "contraindications": [
+              "完全胆道梗阻或对成分过敏。"
+            ],
+            "majorWarnings": [
+              "便秘较常见，可影响脂溶性维生素吸收并加重肠梗阻风险。"
+            ],
+            "majorInteractions": [
+              "可结合多种口服药物，需按标签错开给药时间。"
+            ],
+            "monitoring": [
+              "监测血脂、排便和必要的维生素或凝血情况，粉剂须先混合液体。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Cholestyramine powder for oral suspension",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=430ac07e-8524-4dec-a599-b7ebc56d9563",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "高胆固醇血症",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "口服混悬粉剂",
+              "amountText": "起始每次 4 g 无水树脂",
+              "scheduleText": "每日一次或两次，混合液体后口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-07-10",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Cholestyramine powder for oral suspension",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=430ac07e-8524-4dec-a599-b7ebc56d9563",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 4,
+                  "max": 4,
+                  "unit": "g",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Cholestyramine",
+          "summary": "The cited product is cholestyramine resin powder for oral suspension.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C10AC01"
+            ],
+            "drugClass": [
+              "Bile acid sequestrant"
+            ],
+            "indications": [
+              "Lowers LDL cholesterol in selected primary hypercholesterolemia and relieves selected cholestatic pruritus."
+            ],
+            "contraindications": [
+              "Complete biliary obstruction or ingredient hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Constipation is common. Fat-soluble vitamin absorption can be impaired and bowel obstruction risk increased."
+            ],
+            "majorInteractions": [
+              "Can bind many oral drugs. Separate administration as specified in the label."
+            ],
+            "monitoring": [
+              "Monitor lipids, bowel function and vitamins or coagulation when indicated. Mix powder with liquid before use."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Cholestyramine powder for oral suspension",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=430ac07e-8524-4dec-a599-b7ebc56d9563",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "Hypercholesterolemia",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Powder for oral suspension",
+              "amountText": "Initial 4 g anhydrous resin per dose",
+              "scheduleText": "Once or twice daily orally after mixing with liquid",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-07-10",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Cholestyramine powder for oral suspension",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=430ac07e-8524-4dec-a599-b7ebc56d9563",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 4,
+                  "max": 4,
+                  "unit": "g",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:f3461e20513ecefac87d": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6",
+        "commonNames": [
+          "Clevidipine",
+          "氯维地平",
+          "静脉二氢吡啶类钙通道阻滞剂",
+          "C08CA16"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c08"
+        ],
+        "roas": [
+          {
+            "name": "INTRAVENOUS"
+          }
+        ],
+        "recordingUnits": {
+          "INTRAVENOUS": "mg"
+        },
+        "formulationIds": [
+          "form:injection"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Cleviprex injectable emulsion",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "氯维地平",
+          "summary": "所引产品为氯维地平静脉乳剂。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C08CA16"
+            ],
+            "drugClass": [
+              "二氢吡啶类钙通道阻滞剂"
+            ],
+            "indications": [
+              "口服治疗不可行或不适合时降低血压。"
+            ],
+            "contraindications": [
+              "对大豆、豆制品、鸡蛋或辅料过敏、脂质代谢异常及严重主动脉瓣狭窄等标签禁忌。"
+            ],
+            "majorWarnings": [
+              "可发生低血压、反射性心动过速及血脂负荷。"
+            ],
+            "majorInteractions": [
+              "其他降压药可叠加低血压，需考虑乳剂脂质总量。"
+            ],
+            "monitoring": [
+              "输注期间持续监测血压及心率，停药过渡时按标签监测反跳性高血压。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Cleviprex injectable emulsion",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Intravenous",
+              "formulation": "注射剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Cleviprex injectable emulsion",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": null,
+                "max": 1,
+                "unit": "min",
+                "basis": "初始相小于 1 分钟，终末相另计"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "需静脉控制血压",
+              "population": "成人",
+              "route": "Intravenous",
+              "formulation": "注射剂",
+              "amountText": "起始输注 1–2 mg/h",
+              "scheduleText": "持续静脉输注，按血压密切滴定",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2025-07",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Cleviprex injectable emulsion",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1,
+                  "max": 2,
+                  "unit": "mg/h",
+                  "basis": "infusion-rate",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Clevidipine",
+          "summary": "The cited product is clevidipine intravenous emulsion.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C08CA16"
+            ],
+            "drugClass": [
+              "Dihydropyridine calcium-channel blocker"
+            ],
+            "indications": [
+              "Blood pressure reduction when oral therapy is not feasible or desirable."
+            ],
+            "contraindications": [
+              "Hypersensitivity to soy, soy products, eggs or ingredients, defective lipid metabolism, severe aortic stenosis and other label restrictions."
+            ],
+            "majorWarnings": [
+              "Hypotension, reflex tachycardia and lipid load can occur."
+            ],
+            "majorInteractions": [
+              "Other antihypertensives add hypotension. Account for total emulsion lipid load."
+            ],
+            "monitoring": [
+              "Continuously monitor blood pressure and pulse during infusion, checking rebound hypertension during transition per label."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Cleviprex injectable emulsion",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Intravenous",
+              "formulation": "Injection",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Cleviprex injectable emulsion",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": null,
+                "max": 1,
+                "unit": "min",
+                "basis": "Initial phase under one minute, distinct from the terminal phase"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Blood pressure control requiring IV therapy",
+              "population": "Adults",
+              "route": "Intravenous",
+              "formulation": "Injection",
+              "amountText": "Initial infusion 1–2 mg/h",
+              "scheduleText": "Continuous IV infusion, closely titrated to blood pressure",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2025-07",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Cleviprex injectable emulsion",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f9290625-b723-4eda-bab8-a97bef6041f6",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1,
+                  "max": 2,
+                  "unit": "mg/h",
+                  "basis": "infusion-rate",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:7db269ab67d0445deb15": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bd936e35-1af8-42da-bcc0-f22489d68574",
+        "commonNames": [
+          "Chlorothiazide",
+          "氯噻嗪",
+          "C03AA04"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c03"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-liquid"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Diuril oral suspension",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bd936e35-1af8-42da-bcc0-f22489d68574",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "氯噻嗪",
+          "summary": "所引口服混悬液含氯噻嗪 250 mg/5 mL。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C03AA04"
+            ],
+            "drugClass": [
+              "噻嗪类利尿药"
+            ],
+            "indications": [
+              "高血压及标签所列心、肝、肾疾病相关水肿。"
+            ],
+            "contraindications": [
+              "无尿或对本品及磺胺衍生物过敏。"
+            ],
+            "majorWarnings": [
+              "可出现电解质紊乱、脱水、高尿酸及血糖变化。"
+            ],
+            "majorInteractions": [
+              "锂清除减少可增加锂毒性，其他降压药可增加低血压风险。"
+            ],
+            "monitoring": [
+              "监测血压、电解质及肾功能。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Diuril oral suspension",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bd936e35-1af8-42da-bcc0-f22489d68574",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "口服混悬液",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Diuril oral suspension",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bd936e35-1af8-42da-bcc0-f22489d68574",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 0.75,
+                "max": 2,
+                "unit": "h",
+                "basis": "血浆 45–120 分钟"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "高血压",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "口服混悬液",
+              "amountText": "通常起始每日 500–1000 mg",
+              "scheduleText": "口服混悬液，一次或分次服用",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2021-11",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Diuril oral suspension",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bd936e35-1af8-42da-bcc0-f22489d68574",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 500,
+                  "max": 1000,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Chlorothiazide",
+          "summary": "The cited oral suspension contains chlorothiazide 250 mg per 5 mL.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C03AA04"
+            ],
+            "drugClass": [
+              "Thiazide diuretic"
+            ],
+            "indications": [
+              "Hypertension and labeled edema associated with cardiac, hepatic or renal disease."
+            ],
+            "contraindications": [
+              "Anuria or hypersensitivity to the product or sulfonamide-derived drugs."
+            ],
+            "majorWarnings": [
+              "Electrolyte disturbances, dehydration, hyperuricemia and glucose changes can occur."
+            ],
+            "majorInteractions": [
+              "Reduced lithium clearance can increase lithium toxicity. Other antihypertensives add hypotension risk."
+            ],
+            "monitoring": [
+              "Monitor blood pressure, electrolytes and renal function."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Diuril oral suspension",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bd936e35-1af8-42da-bcc0-f22489d68574",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Oral suspension",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Diuril oral suspension",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bd936e35-1af8-42da-bcc0-f22489d68574",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 0.75,
+                "max": 2,
+                "unit": "h",
+                "basis": "Plasma range of 45–120 minutes"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Hypertension",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Oral suspension",
+              "amountText": "Usual initial 500–1000 mg per day",
+              "scheduleText": "Oral suspension as one or divided doses",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2021-11",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Diuril oral suspension",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bd936e35-1af8-42da-bcc0-f22489d68574",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 500,
+                  "max": 1000,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:5c78e6aece7ea72e0582": {
+      "fields": {
+        "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+        "commonNames": [
+          "Bendroflumethiazide",
+          "苄氟噻嗪",
+          "C03AA01"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c03"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "Medsafe · Arrow Bendrofluazide tablets",
+            "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "苄氟噻嗪",
+          "summary": "所引新西兰产品又称 bendrofluazide。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C03AA01"
+            ],
+            "drugClass": [
+              "噻嗪类利尿药"
+            ],
+            "indications": [
+              "原发性高血压及部分心、肝、肾病相关水肿。"
+            ],
+            "contraindications": [
+              "严重肝肾功能不全、特定电解质异常、Addison 病、糖尿病酮症酸中毒、合用锂或相关过敏。"
+            ],
+            "majorWarnings": [
+              "可发生低钾、低钠、高尿酸及脱水。"
+            ],
+            "majorInteractions": [
+              "新西兰标签禁忌与锂合用，其他降压药可叠加低血压。"
+            ],
+            "monitoring": [
+              "监测血压、电解质及肾功能，按风险复查尿酸。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "Medsafe · Arrow Bendrofluazide tablets",
+                "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Medsafe · Arrow Bendrofluazide tablets",
+                  "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 3,
+                "max": 4,
+                "unit": "h",
+                "basis": "血浆估计值，生物效应更持久"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "原发性高血压",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "每日 2.5–10 mg，较高剂量少有必要",
+              "scheduleText": "每日一次口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2021-09-20, version 1.3",
+              "sourceRefs": [
+                {
+                  "title": "Medsafe · Arrow Bendrofluazide tablets",
+                  "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 2.5,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Bendroflumethiazide",
+          "summary": "The cited New Zealand product is also called bendrofluazide.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C03AA01"
+            ],
+            "drugClass": [
+              "Thiazide diuretic"
+            ],
+            "indications": [
+              "Essential hypertension and edema associated with selected cardiac, hepatic or renal disease."
+            ],
+            "contraindications": [
+              "Severe hepatic or renal impairment, specified electrolyte abnormalities, Addison disease, diabetic ketoacidosis, lithium treatment or related hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Hypokalemia, hyponatremia, hyperuricemia and dehydration can occur."
+            ],
+            "majorInteractions": [
+              "The New Zealand label contraindicates lithium coadministration. Other antihypertensives add hypotension."
+            ],
+            "monitoring": [
+              "Monitor blood pressure, electrolytes and renal function, checking uric acid by risk."
+            ],
+            "sourceRefs": [
+              {
+                "title": "Medsafe · Arrow Bendrofluazide tablets",
+                "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Medsafe · Arrow Bendrofluazide tablets",
+                  "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 3,
+                "max": 4,
+                "unit": "h",
+                "basis": "Estimated plasma value, with a longer biological effect"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Essential hypertension",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "2.5–10 mg daily, with doses above 2.5 mg rarely needed",
+              "scheduleText": "Orally once daily",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2021-09-20, version 1.3",
+              "sourceRefs": [
+                {
+                  "title": "Medsafe · Arrow Bendrofluazide tablets",
+                  "url": "https://www.medsafe.govt.nz/profs/datasheet/a/arrow-bendrofluazidetab.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 2.5,
+                  "max": 10,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:9f14b23b4e9f236639fd": {
+      "fields": {
+        "url": "https://cima.aemps.es/cima/dochtml/ft/54553/FT_54553.html",
+        "commonNames": [
+          "Calcium Dobesilate",
+          "羟苯磺酸钙",
+          "血管保护药",
+          "C05BX01"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c05"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:capsule"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "AEMPS · Doxium Fuerte 500 mg capsules",
+            "url": "https://cima.aemps.es/cima/dochtml/ft/54553/FT_54553.html",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "羟苯磺酸钙",
+          "summary": "所引胶囊含羟苯磺酸钙一水合物。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C05BX01"
+            ],
+            "drugClass": [
+              "微血管保护药"
+            ],
+            "indications": [
+              "西班牙标签用于非增殖性糖尿病视网膜病变。"
+            ],
+            "contraindications": [
+              "对成分或辅料过敏。"
+            ],
+            "majorWarnings": [
+              "罕见粒细胞缺乏及严重过敏。"
+            ],
+            "majorInteractions": [
+              "可干扰酶法肌酐检测，使结果偏低。"
+            ],
+            "monitoring": [
+              "发热或口咽部感染症状时按标签检查血象，肾功能减退需评估剂量。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "AEMPS · Doxium Fuerte 500 mg capsules",
+                "url": "https://cima.aemps.es/cima/dochtml/ft/54553/FT_54553.html",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "胶囊",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "AEMPS · Doxium Fuerte 500 mg capsules",
+                  "url": "https://cima.aemps.es/cima/dochtml/ft/54553/FT_54553.html",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 4,
+                "max": 6,
+                "unit": "h",
+                "basis": "健康受试者单次口服 500 mg"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "非增殖性糖尿病视网膜病变",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "胶囊",
+              "amountText": "每日 1500–2000 mg 一水合物",
+              "scheduleText": "分两次口服，宜餐后",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "Product registration 54553, sections 4–5",
+              "sourceRefs": [
+                {
+                  "title": "AEMPS · Doxium Fuerte 500 mg capsules",
+                  "url": "https://cima.aemps.es/cima/dochtml/ft/54553/FT_54553.html",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1500,
+                  "max": 2000,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Calcium dobesilate",
+          "summary": "The cited capsules contain calcium dobesilate monohydrate.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C05BX01"
+            ],
+            "drugClass": [
+              "Microvascular medicine"
+            ],
+            "indications": [
+              "The Spanish label covers nonproliferative diabetic retinopathy."
+            ],
+            "contraindications": [
+              "Hypersensitivity to the active substance or ingredients."
+            ],
+            "majorWarnings": [
+              "Rare agranulocytosis and serious hypersensitivity can occur."
+            ],
+            "majorInteractions": [
+              "Can interfere with enzymatic creatinine assays and cause falsely low results."
+            ],
+            "monitoring": [
+              "Check blood counts with fever or oropharyngeal infection symptoms per label. Assess dosing in renal impairment."
+            ],
+            "sourceRefs": [
+              {
+                "title": "AEMPS · Doxium Fuerte 500 mg capsules",
+                "url": "https://cima.aemps.es/cima/dochtml/ft/54553/FT_54553.html",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Capsule",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "AEMPS · Doxium Fuerte 500 mg capsules",
+                  "url": "https://cima.aemps.es/cima/dochtml/ft/54553/FT_54553.html",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 4,
+                "max": 6,
+                "unit": "h",
+                "basis": "Healthy volunteers after one oral 500 mg dose"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Nonproliferative diabetic retinopathy",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Capsule",
+              "amountText": "1500–2000 mg monohydrate per day",
+              "scheduleText": "Orally in two doses, preferably after meals",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "Product registration 54553, sections 4–5",
+              "sourceRefs": [
+                {
+                  "title": "AEMPS · Doxium Fuerte 500 mg capsules",
+                  "url": "https://cima.aemps.es/cima/dochtml/ft/54553/FT_54553.html",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1500,
+                  "max": 2000,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:0e4a3b0c45c0bb63fc94": {
+      "fields": {
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+        "commonNames": [
+          "Betrixaban",
+          "贝曲沙班",
+          "直接Xa因子抑制剂",
+          "B01AF04"
+        ],
+        "categories": [
+          "cardiovascular",
+          "antithrombotic",
+          "prescription-medicine",
+          "atc-b01"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:capsule"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "FDA · Bevyxxa historical label",
+            "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "贝曲沙班",
+          "summary": "所引资料为 2020 年美国贝曲沙班胶囊说明书。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "B01AF04"
+            ],
+            "drugClass": [
+              "直接 Xa 因子抑制剂"
+            ],
+            "indications": [
+              "预防符合标签条件、活动受限的急性内科住院患者静脉血栓。"
+            ],
+            "contraindications": [
+              "活动性病理性出血或严重过敏。"
+            ],
+            "majorWarnings": [
+              "可发生严重出血，脊髓或硬膜外操作存在血肿风险。"
+            ],
+            "majorInteractions": [
+              "P-gp 抑制剂增加暴露并需按标签减量，其他抗栓药增加出血。"
+            ],
+            "monitoring": [
+              "监测出血、肾肝功能及合并用药。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "FDA · Bevyxxa historical label",
+                "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "胶囊",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "FDA · Bevyxxa historical label",
+                  "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 19,
+                "max": 27,
+                "unit": "h",
+                "basis": "有效半衰期范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "住院急性内科患者静脉血栓预防",
+              "population": "成人，无严重肾损害或合用 P-gp 抑制剂",
+              "route": "Oral",
+              "formulation": "胶囊",
+              "amountText": "首剂 160 mg，随后每日 80 mg",
+              "scheduleText": "随餐口服，疗程 35–42 天",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2020-08, reference ID 4660781",
+              "sourceRefs": [
+                {
+                  "title": "FDA · Bevyxxa historical label",
+                  "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 160,
+                  "max": 160,
+                  "unit": "mg",
+                  "basis": "loading-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Betrixaban",
+          "summary": "The cited information is the 2020 US betrixaban capsule label.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "B01AF04"
+            ],
+            "drugClass": [
+              "Direct factor Xa inhibitor"
+            ],
+            "indications": [
+              "Venous-thromboembolism prophylaxis in eligible acutely ill hospitalized adults with restricted mobility."
+            ],
+            "contraindications": [
+              "Active pathological bleeding or serious hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Serious bleeding and spinal or epidural hematoma around neuraxial procedures can occur."
+            ],
+            "majorInteractions": [
+              "P-gp inhibitors increase exposure and require label dose reduction. Other antithrombotics add bleeding."
+            ],
+            "monitoring": [
+              "Monitor bleeding, renal and hepatic function and concurrent medicines."
+            ],
+            "sourceRefs": [
+              {
+                "title": "FDA · Bevyxxa historical label",
+                "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Capsule",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "FDA · Bevyxxa historical label",
+                  "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 19,
+                "max": 27,
+                "unit": "h",
+                "basis": "Effective half-life range"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Venous-thromboembolism prophylaxis in acutely ill hospitalized patients",
+              "population": "Adults without severe renal impairment or concomitant P-gp inhibitors",
+              "route": "Oral",
+              "formulation": "Capsule",
+              "amountText": "Initial 160 mg, then 80 mg daily",
+              "scheduleText": "Orally with food for 35–42 days",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2020-08, reference ID 4660781",
+              "sourceRefs": [
+                {
+                  "title": "FDA · Bevyxxa historical label",
+                  "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/208383s007lbl.pdf",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 160,
+                  "max": 160,
+                  "unit": "mg",
+                  "basis": "loading-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
+    },
+    "pw:03598ed3a18722c476d3": {
+      "fields": {
+        "url": "https://farmaco-info.it/luvion-143435/riassunto-delle-caratteristiche-del-prodotto",
+        "commonNames": [
+          "Canrenone",
+          "坎利酮",
+          "醛固酮拮抗剂",
+          "C03DA02"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c03"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:tablet"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "AIFA · Luvion product information (2021 mirror)",
+            "url": "https://farmaco-info.it/luvion-143435/riassunto-delle-caratteristiche-del-prodotto",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "Italian Official Gazette · Luvion authorization amendment",
+            "url": "https://www.gazzettaufficiale.it/eli/id/2025/07/30/25A04080/sg",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "坎利酮",
+          "summary": "所引意大利口服片含坎利酮。该产品的注射制剂含坎利酸钾，剂量不可直接等同。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C03DA03"
+            ],
+            "drugClass": [
+              "醛固酮拮抗剂"
+            ],
+            "indications": [
+              "原发性醛固酮增多症、继发性醛固酮增多相关水肿及特定难治性高血压。"
+            ],
+            "contraindications": [
+              "严重高钾或低钠、无尿、急性肾衰竭、严重慢性肾功能不全或过敏。"
+            ],
+            "majorWarnings": [
+              "可发生高钾、低钠、氮质血症及代谢性酸中毒。"
+            ],
+            "majorInteractions": [
+              "ACE 抑制剂及其他增加血钾的药物可增加高钾风险。"
+            ],
+            "monitoring": [
+              "定期检查血钾、血钠及肾功能。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "AIFA · Luvion product information (2021 mirror)",
+                "url": "https://farmaco-info.it/luvion-143435/riassunto-delle-caratteristiche-del-prodotto",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              },
+              {
+                "title": "Italian Official Gazette · Luvion authorization amendment",
+                "url": "https://www.gazzettaufficiale.it/eli/id/2025/07/30/25A04080/sg",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "醛固酮增多相关疾病",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "多数情况每日 50–200 mg 坎利酮",
+              "scheduleText": "一次或分次口服，依病情调整",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2021-04-20, AIFA document mirror",
+              "sourceRefs": [
+                {
+                  "title": "AIFA · Luvion product information (2021 mirror)",
+                  "url": "https://farmaco-info.it/luvion-143435/riassunto-delle-caratteristiche-del-prodotto",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 50,
+                  "max": 200,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Canrenone",
+          "summary": "The cited Italian oral tablets contain canrenone. The product’s injectable formulation contains potassium canrenoate and doses are not directly equivalent.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C03DA03"
+            ],
+            "drugClass": [
+              "Aldosterone antagonist"
+            ],
+            "indications": [
+              "Primary hyperaldosteronism, edema with secondary hyperaldosteronism and selected refractory hypertension."
+            ],
+            "contraindications": [
+              "Severe hyperkalemia or hyponatremia, anuria, acute renal failure, severe chronic renal impairment or hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Hyperkalemia, hyponatremia, azotemia and metabolic acidosis can occur."
+            ],
+            "majorInteractions": [
+              "ACE inhibitors and other potassium-raising drugs increase hyperkalemia risk."
+            ],
+            "monitoring": [
+              "Check potassium, sodium and renal function regularly."
+            ],
+            "sourceRefs": [
+              {
+                "title": "AIFA · Luvion product information (2021 mirror)",
+                "url": "https://farmaco-info.it/luvion-143435/riassunto-delle-caratteristiche-del-prodotto",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              },
+              {
+                "title": "Italian Official Gazette · Luvion authorization amendment",
+                "url": "https://www.gazzettaufficiale.it/eli/id/2025/07/30/25A04080/sg",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [],
+          "doseUseReferences": [
+            {
+              "indication": "Hyperaldosteronism-related conditions",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "50–200 mg canrenone per day in most cases",
+              "scheduleText": "Orally once daily or in divided doses, adjusted to condition",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2021-04-20, AIFA document mirror",
+              "sourceRefs": [
+                {
+                  "title": "AIFA · Luvion product information (2021 mirror)",
+                  "url": "https://farmaco-info.it/luvion-143435/riassunto-delle-caratteristiche-del-prodotto",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 50,
+                  "max": 200,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
     }
   }
 }
