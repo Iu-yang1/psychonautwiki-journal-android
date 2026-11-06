@@ -59,6 +59,7 @@ def validate(require_complete=False):
                 assert row.get("searches"), (identifier, field, "missing search record")
         pending_entries += entry_pending
     taxonomy = read(DATA / "medication_taxonomy.json")
+    assert taxonomy["version"] == 1, "Unsupported medication taxonomy format"
     nodes = {node["id"]: node for node in taxonomy["nodes"]}
     assert len(nodes) == len(taxonomy["nodes"])
     for node in nodes.values():
