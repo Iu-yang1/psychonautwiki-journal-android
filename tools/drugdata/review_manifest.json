@@ -33975,11 +33975,12 @@
           ]
         },
         "timeCourse": {
-          "status": "verified",
+          "status": "evidence_unavailable",
           "reviewedDate": "2026-11-06",
           "sourceIds": [
             "spl-358dd0c5"
-          ]
+          ],
+          "reason": "所引美国依他尼酸片说明书未提供可核对的母药消除半衰期。"
         },
         "sourceRefs": {
           "status": "verified",
@@ -34010,9 +34011,10 @@
           "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=358dd0c5-4d89-403e-9428-a785ec862869",
           "title": "DailyMed · Ethacrynic acid tablets",
           "region": "US",
-          "version": "2025-10-30",
+          "version": "SPL version 9, 2025-10-30",
           "accessedDate": "2026-11-06",
-          "sourceType": "regulatory-label"
+          "sourceType": "regulatory-label",
+          "sha256": "1e521d153479c35f8beb31d7a34604be7136acff700f6b1ca979f73e7715ea69"
         }
       ],
       "searches": [
@@ -34678,9 +34680,9 @@
         {
           "id": "spl-fc726765",
           "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fc726765-5d5a-4d6e-b037-b847bda9fb7c",
-          "title": "DailyMed · Kerendia tablets",
+          "title": "DailyMed · Kerendia finerenone tablets",
           "region": "US",
-          "version": "2026-09-21",
+          "version": "SPL version 13, 2026-09-21",
           "accessedDate": "2026-11-06",
           "sourceType": "regulatory-label"
         }
@@ -35910,53 +35912,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-76ddfd1bdfe8711760b9"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-76ddfd1bdfe8711760b9",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0",
+          "title": "DailyMed · Ibutilide fumarate injection",
+          "region": "US",
+          "version": "SPL version 5, 2025-11-04",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "9f304d91539f3c07bcf5aecb019ef5dd30b33ba83464b59afc540e90c152aab9"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Ibutilide primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cf8724a-f0d1-4ce2-b7c1-cf5fac345fd0"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:400357b5249c150b6244": {
@@ -35964,53 +36047,135 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "evidence_unavailable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ],
+          "reason": "所引胶囊说明书描述 EPA 的组织暴露和药效，但未提供可直接用于该盐/酯身份的数值消除半衰期。"
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c11e7a9f1a93268ec8ab"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-c11e7a9f1a93268ec8ab",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c1a2828-1583-4414-ab22-a60480e8e508",
+          "title": "DailyMed · Vascepa icosapent ethyl",
+          "region": "US",
+          "version": "SPL version 21, 2026-03-23",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "eeb7feda034cef87be5cd8579b63b161eeb2eb8cab7c2e844283fa4efcc517dd"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Icosapent Ethyl primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c1a2828-1583-4414-ab22-a60480e8e508"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:e19e80cef0035e6c7f32": {
@@ -36018,53 +36183,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "fda-ventavis-2013"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "fda-ventavis-2013",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/021779s014lbl.pdf",
+          "title": "FDA · Ventavis iloprost inhalation solution",
+          "region": "US",
+          "version": "FDA prescribing information, revised 2013-11",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "bf0b1d800e02086d8d6f92009d7516c79582f1d0d49b9875e25ffcf540596925"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Iloprost primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/021779s014lbl.pdf"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:018139a25eb9a8d152d5": {
@@ -36072,53 +36318,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2dc29b1ea4b3998888ad"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-2dc29b1ea4b3998888ad",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fc0afca-4513-4c35-b594-6544aee29a44",
+          "title": "DailyMed · Leqvio inclisiran",
+          "region": "US",
+          "version": "SPL version 13, 2026-08-19",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "d1454a0e4aff884b4d6789dc1b958f2d950f6f6ac81da46a5961e1de5512159d"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Inclisiran primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6fc0afca-4513-4c35-b594-6544aee29a44"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:d3ccfa47bd7acf2ea69f": {
@@ -36126,53 +36453,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3df687f7802e06f7957b"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-3df687f7802e06f7957b",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a8a4ec2c-9d4b-482b-ad29-88185c96db74",
+          "title": "DailyMed · Indapamide tablets",
+          "region": "US",
+          "version": "SPL version 18, 2022-10-01",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "ffcc9b5d19da43d9f5972f9917d613b8a80236d24d43bd9ae7caec1992353623"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Indapamide primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a8a4ec2c-9d4b-482b-ad29-88185c96db74"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:9cb31321de16cdad2612": {
@@ -36180,53 +36588,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f69ade81bd5545fe2659"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-f69ade81bd5545fe2659",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33416f1e-adee-4a45-b6fe-1fc39044e307",
+          "title": "DailyMed · Irbesartan tablets",
+          "region": "US",
+          "version": "SPL version 9, 2026-03-12",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "4ffbcccfc09695f58c8b415641b8afc1f5d6f5c6772686ae55ca4ec39888b350"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Irbesartan primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33416f1e-adee-4a45-b6fe-1fc39044e307"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:4e2167518fd946e6cd35": {
@@ -36234,53 +36723,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-61beb563a0d0d6758ceb"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-61beb563a0d0d6758ceb",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b166eb5b-bad8-4663-9c05-1c43539dab2c",
+          "title": "DailyMed · Isosorbide dinitrate tablets",
+          "region": "US",
+          "version": "SPL version 3, 2026-01-05",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "d82a2338b84273071ea0190dc1acd004398b56cee13e3e4a7bae0b3be4e70242"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Isosorbide Dinitrate primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b166eb5b-bad8-4663-9c05-1c43539dab2c"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:3a1a66686a232837c503": {
@@ -36288,53 +36858,135 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "evidence_unavailable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ],
+          "reason": "所引普通片说明书提供抗心绞痛作用时间，但未给出可直接展示的数值消除半衰期。"
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-f000d76bbf8fe22fc313"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-f000d76bbf8fe22fc313",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae8f74f0-e600-4452-8557-958b603e2709",
+          "title": "DailyMed · Isosorbide mononitrate tablets",
+          "region": "US",
+          "version": "SPL version 16, 2022-10-01",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "ca71d9a055b68017f29ccf27f7f75c535217c14e4b2a9c8f8b2df99bb6dd6dea"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Isosorbide Mononitrate primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ae8f74f0-e600-4452-8557-958b603e2709"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:449dc96bbafd8878409b": {
@@ -36342,53 +36994,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-d9541cbb95af084b4f25"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-d9541cbb95af084b4f25",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2f2b9a9-169f-4ccf-8974-58f21592c5bc",
+          "title": "DailyMed · Isradipine capsules",
+          "region": "US",
+          "version": "SPL version 3, 2012-03-09",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "26220a98fecd4f60424a7cb295daec1c65c7f991cfb228f989305849297b6409"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Isradipine primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e2f2b9a9-169f-4ccf-8974-58f21592c5bc"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:88bbe45c998ce8bb7994": {
@@ -36396,53 +37129,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-7273ca73fa72a670947c"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-7273ca73fa72a670947c",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=602d1c55-0e4d-452a-a087-888fdbaa7568",
+          "title": "DailyMed · Ivabradine tablets",
+          "region": "US",
+          "version": "SPL version 1, 2024-04-30",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "6bcd0579ef353b008096bd6088c1418d1688caf8e0a95be34efbcca2a6db2c23"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Ivabradine primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=602d1c55-0e4d-452a-a087-888fdbaa7568"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:68df61549f8980052f43": {
@@ -36450,53 +37264,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-79dd7b45342259c691e9"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-79dd7b45342259c691e9",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e",
+          "title": "DailyMed · Labetalol hydrochloride tablets",
+          "region": "US",
+          "version": "SPL version 1, 2021-09-30",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "674d7c3ff50efd505d9855c87df59ae9452a5404ab7d2c9034e36b6914facc2e"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Labetalol primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=b950655d-a9f8-4ace-bb56-0c7abbca231e"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:eed8429dda2643c74d51": {
@@ -36504,53 +37399,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "tga-zanidip-2022"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "tga-zanidip-2022",
+          "url": "https://medsinfo.com.au/api/documents/Zanidip_PI?format=pdf",
+          "title": "TGA · Zanidip Australian product information",
+          "region": "AU",
+          "version": "Australian product information, revised 2022-02-21",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "aef5eb396a1ebf1f2b0cb2de1914ce7af1f580d3af1dd544cc1e67a9db4d0aac"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Lercanidipine primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://medsinfo.com.au/api/documents/Zanidip_PI?format=pdf"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:e81bacb25b591d24ea5b": {
@@ -36558,53 +37534,135 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "evidence_unavailable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ],
+          "reason": "所引注射液说明书未提供可用于普通记录展示的固定母药消除半衰期；半衰期受给药部位、血管性和剂量影响。"
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-9e2faa40e1ddafca2719"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-9e2faa40e1ddafca2719",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b",
+          "title": "DailyMed · Lidocaine hydrochloride injection",
+          "region": "US",
+          "version": "SPL version 4, 2026-01-13",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "131ed0d6002d84e6324a5b0a6f72e9954d7abad5d7cd5424bf841b76ad02bae9"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Lidocaine primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=46480253-29b9-4d7f-98ed-10377929026b"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:b611b198884b90c468ea": {
@@ -36612,53 +37670,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-4343499a0a65b07ab0bf"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-4343499a0a65b07ab0bf",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c",
+          "title": "DailyMed · Lisinopril tablets",
+          "region": "US",
+          "version": "SPL version 6, 2026-06-11",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "054ea55dc5cf8fc126c7d008270b0a38aea051d4be63f474f5946ec87c2bfb73"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Lisinopril primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b6dc0d4-4acd-3606-e054-00144ff8d46c"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:45d05d0346e389768e2a": {
@@ -36666,53 +37805,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8ce4d9ed8098a9c4e873"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-8ce4d9ed8098a9c4e873",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16",
+          "title": "DailyMed · Losartan potassium tablets",
+          "region": "US",
+          "version": "SPL version 13, 2026-06-05",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "643b067491cc910fbbcf9f4e8555087a28268229ef7dc3e4329ad89f88e2c4ae"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Losartan primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b83d896a-c7e9-4508-814c-425b88a87b16"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:bc2428ba53097a941995": {
@@ -36720,53 +37940,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-c7d14ed5f6cf5c00b24e"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-c7d14ed5f6cf5c00b24e",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b86160d-74a9-4774-b5b3-5641e686991f",
+          "title": "DailyMed · Lovastatin tablets",
+          "region": "US",
+          "version": "SPL version 9, 2026-10-07",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "05172d95eb404547adf3b3c9d6b4a91fbc100adf4d241c4174097c12519a7cea"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Lovastatin primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7b86160d-74a9-4774-b5b3-5641e686991f"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:7e707f76457ad5a797ec": {
@@ -36774,53 +38075,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-8c2f4e48e4f298e62995"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-8c2f4e48e4f298e62995",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e484a50-55db-4b85-8c57-6cd1b0353abd",
+          "title": "DailyMed · Opsumit macitentan",
+          "region": "US",
+          "version": "SPL version 35, 2025-04-11",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "678eaa09070e9e7e13c135b8d6c8bc68643f35525db33190865e7fb24cf47641"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Macitentan primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e484a50-55db-4b85-8c57-6cd1b0353abd"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:5de291d093ba6df2618c": {
@@ -36828,53 +38210,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-5b0d5eeddb369a1daf6f"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-5b0d5eeddb369a1daf6f",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d914965-7001-45cb-ba51-d7c5964b05bc",
+          "title": "DailyMed · Osmitrol mannitol injection",
+          "region": "US",
+          "version": "SPL version 16, 2025-08-26",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "ec33f97fdacb61d2fb14d08ef5e19d8803c1e8eed4d4951436a96766aa89f6ed"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Mannitol primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0d914965-7001-45cb-ba51-d7c5964b05bc"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:fc6e16360aa45a88c162": {
@@ -36882,53 +38345,134 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-2f816f01a445976751a2"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-2f816f01a445976751a2",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e1114a58-9ab5-486e-85ed-360365b06396",
+          "title": "DailyMed · Methyldopa tablets",
+          "region": "US",
+          "version": "SPL version 3, 2025-03-26",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "fe5dbbaa9d0136c82798db4bd2adae4a907d4b8784652c017d2da3e2fc0d36de"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Methyldopa primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e1114a58-9ab5-486e-85ed-360365b06396"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:b4d753b1cd5ad95e8b33": {
@@ -36936,53 +38480,135 @@
       "batch": "cardiovascular-05",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "evidence_unavailable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ],
+          "reason": "所引美托拉宗片说明书强调不同制剂生物利用度差异，但未提供可统一用于该身份的数值消除半衰期。"
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-43870f64391cbeea6191"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-43870f64391cbeea6191",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e566c10-4498-4f79-8874-4cc8c4216213",
+          "title": "DailyMed · Metolazone tablets",
+          "region": "US",
+          "version": "SPL version 7, 2025-10-08",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "c45eb3835845674b3007e4592e9ca247de71738c7708e07bf2d197a3de8f3d28"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Metolazone primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e566c10-4498-4f79-8874-4cc8c4216213"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:7b825b10476fc4c844ca": {
