@@ -66,5 +66,29 @@ class StartupUiTest {
         compose.onNodeWithText(compose.activity.getString(R.string.medication_filter_count, 0)).performClick()
         compose.onNodeWithText(compose.activity.getString(R.string.medication_category)).assertExists()
         compose.onNodeWithText(compose.activity.getString(R.string.medication_custom_only)).assertExists()
+        compose.onNode(isDialog()).assertDoesNotExist()
+    }
+
+    @Test fun filterButtonTogglesPanelAndKeepsSelection() {
+        acceptConditions()
+        compose.waitUntil(15000) { compose.onAllNodesWithText("激素曲线 · 估算").fetchSemanticsNodes().isNotEmpty() }
+        compose.onNodeWithText(compose.activity.getString(R.string.drugs)).performClick()
+
+        val filterButton = compose.onNodeWithContentDescription("Filter")
+        val customOnly = compose.activity.getString(R.string.medication_custom_only)
+        val medicationCategory = compose.activity.getString(R.string.medication_category)
+
+        filterButton.performClick()
+        compose.onNodeWithText(customOnly).assertExists()
+        compose.onNodeWithText(customOnly).performClick()
+        compose.onNodeWithText(medicationCategory).assertDoesNotExist()
+
+        filterButton.performClick()
+        compose.onNodeWithText(customOnly).assertDoesNotExist()
+
+        filterButton.performClick()
+        compose.onNodeWithText(customOnly).assertExists()
+        compose.onNodeWithText(medicationCategory).assertDoesNotExist()
+        compose.onNodeWithText(customOnly).performClick()
     }
 }

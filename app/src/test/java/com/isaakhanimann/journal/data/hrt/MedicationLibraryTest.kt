@@ -29,7 +29,7 @@ class MedicationLibraryTest {
 
     @Test fun unreviewedMissingRoutesStillUseLegacyFallback() {
         val original = parser.parseSubstanceFile(raw("substances.json")).substances.first { it.roas.isNotEmpty() }
-        val primary = original.copy(roas = emptyList())
+        val primary = original.copy(roas = emptyList(), reviewedFields = emptySet())
         assertEquals(original.roas, mergeMedicationFiles(SubstanceFile(emptyList(), listOf(primary)), SubstanceFile(emptyList(), listOf(original))).substances.single().roas)
     }
 

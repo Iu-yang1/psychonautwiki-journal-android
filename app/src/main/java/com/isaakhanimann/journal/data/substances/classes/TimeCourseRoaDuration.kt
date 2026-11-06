@@ -92,7 +92,9 @@ private fun TimeCourse.totalEndHours(): Float? {
 }
 
 private fun TimeCourse.pkEstimatedEndHours(): Float? {
-    val halfLife = eliminationHalfLife?.representativeHours() ?: return null
+    val halfLife = eliminationHalfLife?.representativeHours()
+        ?: effectiveHalfLife?.representativeHours()
+        ?: return null
     val peak = pkPeakHours() ?: 0.25f
     return peak + halfLife * PK_HALF_LIVES_TO_LOW_LEVEL
 }
@@ -152,5 +154,5 @@ private val routeAliases = mapOf(
     AdministrationRoute.INTRAMUSCULAR to setOf("intramuscular", "im", "intramuscular injection"),
     AdministrationRoute.INTRAVENOUS to setOf("intravenous", "iv", "iv infusion", "infusion", "intravenous infusion"),
     AdministrationRoute.SMOKED to setOf("smoked", "vaporized"),
-    AdministrationRoute.INHALED to setOf("inhaled")
+    AdministrationRoute.INHALED to setOf("inhaled", "inhalation")
 )

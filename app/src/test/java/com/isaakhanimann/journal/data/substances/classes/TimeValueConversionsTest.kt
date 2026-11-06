@@ -19,6 +19,7 @@
 package com.isaakhanimann.journal.data.substances.classes
 
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull
 import org.junit.Test
 
@@ -63,5 +64,17 @@ class TimeValueConversionsTest {
         assertEquals(2f, duration?.onset?.min)
         assertEquals(3f, duration?.comeup?.min)
         assertEquals(12f, duration?.total?.min)
+    }
+
+    @Test
+    fun pkEstimateUsesEffectiveHalfLifeWhenEliminationHalfLifeIsMissing() {
+        val duration = TimeCourse(
+            route = "oral",
+            effectTimelineStatus = "pk-estimated",
+            effectiveHalfLife = TimeValue(min = 12.0, max = 12.0, unit = "h")
+        ).toRoaDurationForTimeline()
+
+        assertNotNull(duration)
+        assertEquals(61f, duration?.total?.min)
     }
 }

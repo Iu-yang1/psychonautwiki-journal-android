@@ -210,6 +210,7 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
                     peakEffect = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("peakEffect")),
                     durationOfAction = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("durationOfAction")),
                     eliminationHalfLife = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("eliminationHalfLife")),
+                    effectiveHalfLife = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("effectiveHalfLife")),
                     timeToSteadyState = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("timeToSteadyState")),
                     washout = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("washout")),
                     depotRelease = jsonTimeCourse.getOptionalBoolean("depotRelease") ?: false,

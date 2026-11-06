@@ -27,9 +27,15 @@ ROUTE_ALIASES = {
     "TRANSDERMAL": {"transdermal", "topical patch", "patch"},
     "SUBCUTANEOUS": {"subcutaneous", "sc", "subcut", "subcutaneous injection"},
     "INTRAMUSCULAR": {"intramuscular", "im", "intramuscular injection"},
-    "INTRAVENOUS": {"intravenous", "iv", "iv infusion", "infusion", "intravenous infusion"},
+    "INTRAVENOUS": {
+        "intravenous",
+        "iv",
+        "iv infusion",
+        "infusion",
+        "intravenous infusion",
+    },
     "SMOKED": {"smoked", "vaporized"},
-    "INHALED": {"inhaled"},
+    "INHALED": {"inhaled", "inhalation"},
 }
 
 
@@ -52,7 +58,9 @@ def route_matches(time_course_route: str | None, app_route: str) -> bool:
     return (
         normalized == route_text
         or normalized in aliases
-        or any(alias in words or alias in normalized for alias in aliases | {route_text})
+        or any(
+            alias in words or alias in normalized for alias in aliases | {route_text}
+        )
     )
 
 
@@ -64,11 +72,16 @@ def has_number(time_value: object) -> bool:
 
 
 def has_reliable_timeline_end(time_course: dict) -> bool:
-    return has_number(time_course.get("durationOfAction")) or has_number(time_course.get("washout"))
+    return has_number(time_course.get("durationOfAction")) or has_number(
+        time_course.get("washout")
+    )
 
 
 def has_handled_timeline_status(time_course: dict) -> bool:
-    return str(time_course.get("effectTimelineStatus") or "").strip().lower() in HANDLED_EFFECT_TIMELINE_STATUSES
+    return (
+        str(time_course.get("effectTimelineStatus") or "").strip().lower()
+        in HANDLED_EFFECT_TIMELINE_STATUSES
+    )
 
 
 def roa_has_duration(roa: dict) -> bool:
@@ -90,7 +103,10 @@ def app_routes_for_substance(substance: dict) -> list[str]:
     matched_routes = [
         app_route
         for app_route, aliases in ROUTE_ALIASES.items()
-        if any(route_name == normalize(app_route) or route_name in aliases for route_name in route_names)
+        if any(
+            route_name == normalize(app_route) or route_name in aliases
+            for route_name in route_names
+        )
     ]
     if matched_routes:
         return matched_routes
@@ -128,7 +144,9 @@ def find_missing_duration_sources(substances: list[dict]) -> list[dict]:
                     continue
                 if has_handled_timeline_status(time_course):
                     continue
-                if not has_number(time_course.get("eliminationHalfLife")):
+                if not has_number(
+                    time_course.get("eliminationHalfLife")
+                ) and not has_number(time_course.get("effectiveHalfLife")):
                     continue
                 rows.append(
                     {

@@ -509,13 +509,13 @@
       "reason": "药物类别、适应证或分类编码，不是具体药物的唯一身份名称；保留为检索词。"
     },
     "c03da05": {
-      "status": "pending",
-      "kind": "unresolved",
+      "status": "reviewed",
+      "kind": "search_keyword",
       "affectedIds": [
         "pw:36b605669fbf39613bb3",
         "pw:5de291d093ba6df2618c"
       ],
-      "reason": "需要核对真实共享别名或错配来源。"
+      "reason": "C03DA05 是非奈利酮的 ATC 编码，不作为甘露醇身份别名；保留为检索词。"
     },
     "c03利尿剂": {
       "status": "reviewed",
@@ -810,13 +810,13 @@
       "reason": "药物类别、适应证或分类编码，不是具体药物的唯一身份名称；保留为检索词。"
     },
     "dex": {
-      "status": "pending",
-      "kind": "unresolved",
+      "status": "reviewed",
+      "kind": "shared_alias_multiple_candidates",
       "affectedIds": [
         "pw:2617d283c6f112c0286d",
         "pw:feda19af0b87065dfe55"
       ],
-      "reason": "需要核对真实共享别名或错配来源。"
+      "reason": "Dex 可指右美沙芬或右旋苯丙胺；保留多候选，不自动合并。"
     },
     "directoralanticoagulant": {
       "status": "reviewed",
@@ -844,13 +844,13 @@
       "reason": "药物类别、适应证或分类编码，不是具体药物的唯一身份名称；保留为检索词。"
     },
     "dmt": {
-      "status": "pending",
-      "kind": "unresolved",
+      "status": "reviewed",
+      "kind": "shared_alias_multiple_candidates",
       "affectedIds": [
         "pw:874a326ec5571f86dc4c",
         "pw:f07ff226250f7aa4e20d"
       ],
-      "reason": "需要核对真实共享别名或错配来源。"
+      "reason": "DMT 是 N,N-二甲基色胺的常用缩写；与丁螺环酮仅存在检索文本误连，保留多候选且不做模糊合并。"
     },
     "doac": {
       "status": "reviewed",
@@ -863,13 +863,13 @@
       "reason": "药物类别、适应证或分类编码，不是具体药物的唯一身份名称；保留为检索词。"
     },
     "drone": {
-      "status": "pending",
-      "kind": "unresolved",
+      "status": "reviewed",
+      "kind": "shared_alias_multiple_candidates",
       "affectedIds": [
         "pw:3851b64d742aa53ce779",
         "pw:b9f506665de05c9dc637"
       ],
-      "reason": "需要核对真实共享别名或错配来源。"
+      "reason": "Drone 是甲氧麻黄酮与戊酮的共享俗称；保留多候选。"
     },
     "endothelinreceptorantagonist": {
       "status": "reviewed",
@@ -967,22 +967,22 @@
       "reason": "药物类别、适应证或分类编码，不是具体药物的唯一身份名称；保留为检索词。"
     },
     "methylguanidoaceticacid": {
-      "status": "pending",
-      "kind": "unresolved",
+      "status": "reviewed",
+      "kind": "shared_alias_multiple_candidates",
       "affectedIds": [
         "pw:71d446e13373bac52ee4",
         "pw:8b787b4baf8da831f36b"
       ],
-      "reason": "需要核对真实共享别名或错配来源。"
+      "reason": "甲基胍基乙酸是肌酸的同义词；SAM-e 与该名称不同，保留多候选且不自动合并。"
     },
     "mpa": {
-      "status": "pending",
-      "kind": "unresolved",
+      "status": "reviewed",
+      "kind": "shared_alias_multiple_candidates",
       "affectedIds": [
         "pw:9dbe59c16bb99c4c2271",
         "pw:e9050f7ce735d633324c"
       ],
-      "reason": "需要核对真实共享别名或错配来源。"
+      "reason": "MPA 同时是甲硫丙胺与醋酸甲羟孕酮的缩写；保留多候选。"
     },
     "nitrate": {
       "status": "reviewed",
@@ -1089,13 +1089,13 @@
       "reason": "药物类别、适应证或分类编码，不是具体药物的唯一身份名称；保留为检索词。"
     },
     "sally": {
-      "status": "pending",
-      "kind": "unresolved",
+      "status": "reviewed",
+      "kind": "shared_alias_multiple_candidates",
       "affectedIds": [
         "pw:44a6139d274067bfc271",
         "pw:5ae39936c6a05af14e48"
       ],
-      "reason": "需要核对真实共享别名或错配来源。"
+      "reason": "Sally 可为鼠尾草（Salvinorin A）或 MDA 的俗称；保留多候选。"
     },
     "sgcstimulator": {
       "status": "reviewed",
@@ -1125,13 +1125,13 @@
       "reason": "药物类别、适应证或分类编码，不是具体药物的唯一身份名称；保留为检索词。"
     },
     "speed": {
-      "status": "pending",
-      "kind": "unresolved",
+      "status": "reviewed",
+      "kind": "shared_alias_multiple_candidates",
       "affectedIds": [
         "pw:4f44c76e56569045e1b5",
         "pw:dff84e439ce999567dc1"
       ],
-      "reason": "需要核对真实共享别名或错配来源。"
+      "reason": "Speed 可指苯丙胺或甲基苯丙胺；保留多候选。"
     },
     "statin": {
       "status": "reviewed",

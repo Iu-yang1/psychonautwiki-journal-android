@@ -1,10 +1,14 @@
 package com.isaakhanimann.journal.ui.tabs.search
 
+import androidx.activity.compose.BackHandler
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.outlined.Add
@@ -46,6 +50,8 @@ fun SearchScreen(
     val focusRequester = remember { FocusRequester() }
     var isFocused by remember { mutableStateOf(false) }
 
+    BackHandler(enabled = filtersOpen) { filtersOpen = false }
+
     Scaffold(
         topBar = {
             Surface(shadowElevation = 2.dp) {
@@ -61,7 +67,7 @@ fun SearchScreen(
                     categories = searchViewModel.chipCategoriesFlow.collectAsState().value,
                     onFilterTapped = searchViewModel::onFilterTapped,
                     isShowingFilter = true,
-                    onOpenFilters = { filtersOpen = true }
+                    onOpenFilters = { filtersOpen = !filtersOpen }
                 )
             }
         }
@@ -78,9 +84,107 @@ fun SearchScreen(
                 }
             }
             Row(Modifier.padding(horizontal = 16.dp), verticalAlignment = Alignment.CenterVertically) {
-                TextButton({ filtersOpen = true }) { Text(stringResource(R.string.medication_filter_count, selectedCategoryIds.size + selectedMechanisms.size + selectedRoutes.size + selectedForms.size)) }
+                TextButton({ filtersOpen = !filtersOpen }) { Text(stringResource(R.string.medication_filter_count, selectedCategoryIds.size + selectedMechanisms.size + selectedRoutes.size + selectedForms.size)) }
                 Checkbox(includeReferences, { searchViewModel.includeReferences.value = it })
                 Text("资料全文")
+            }
+            AnimatedVisibility(visible = filtersOpen) {
+                Surface(
+                    modifier = Modifier.fillMaxWidth(),
+                    tonalElevation = 3.dp,
+                    shadowElevation = 2.dp
+                ) {
+                    Column(Modifier.fillMaxWidth()) {
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(start = 16.dp, top = 4.dp, end = 4.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                text = stringResource(R.string.medication_filter),
+                                style = MaterialTheme.typography.titleMedium
+                            )
+                            Spacer(Modifier.weight(1f))
+                            TextButton(onClick = searchViewModel::clearFilters) {
+                                Text(stringResource(R.string.clear))
+                            }
+                            TextButton(onClick = { filtersOpen = false }) {
+                                Text(stringResource(R.string.done))
+                            }
+                        }
+                        HorizontalDivider()
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .heightIn(max = 360.dp)
+                                .verticalScroll(rememberScrollState())
+                                .padding(horizontal = 16.dp)
+                                .padding(bottom = 8.dp)
+                        ) {
+                            FilterOptionRow(
+                                stringResource(R.string.medication_custom_only),
+                                customOnly,
+                                searchViewModel::toggleCustomOnly
+                            )
+                            if (!customOnly) {
+                                FilterSectionTitle(stringResource(R.string.medication_category))
+                                searchViewModel.categoryOptions
+                                    .filter { searchViewModel.categoryIsInSelectedDomain(it.id) }
+                                    .forEach { category ->
+                                        FilterOptionRow(
+                                            category.label(locale),
+                                            category.id in selectedCategoryIds
+                                        ) {
+                                            searchViewModel.onFilterTapped(category.id)
+                                        }
+                                    }
+                                FilterSectionTitle(stringResource(R.string.medication_mechanisms))
+                                searchViewModel.mechanismOptions.forEach { mechanism ->
+                                    FilterOptionRow(
+                                        mechanism.label(locale),
+                                        mechanism.id in selectedMechanisms
+                                    ) {
+                                        searchViewModel.selectedMechanisms.value =
+                                            if (mechanism.id in selectedMechanisms) {
+                                                selectedMechanisms - mechanism.id
+                                            } else {
+                                                selectedMechanisms + mechanism.id
+                                            }
+                                    }
+                                }
+                                FilterSectionTitle(stringResource(R.string.administration_route))
+                                searchViewModel.routeOptions.forEach { route ->
+                                    FilterOptionRow(
+                                        com.isaakhanimann.journal.data.substances.AdministrationRoute.valueOf(route).displayText,
+                                        route in selectedRoutes
+                                    ) {
+                                        searchViewModel.selectedRoutes.value =
+                                            if (route in selectedRoutes) {
+                                                selectedRoutes - route
+                                            } else {
+                                                selectedRoutes + route
+                                            }
+                                    }
+                                }
+                                FilterSectionTitle(stringResource(R.string.medication_formulations))
+                                searchViewModel.formulationOptions.forEach { form ->
+                                    FilterOptionRow(
+                                        com.isaakhanimann.journal.data.substances.classes.formulationLabel(form),
+                                        form in selectedForms
+                                    ) {
+                                        searchViewModel.selectedFormulations.value =
+                                            if (form in selectedForms) {
+                                                selectedForms - form
+                                            } else {
+                                                selectedForms + form
+                                            }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             searchError?.let { Text(it, color = MaterialTheme.colorScheme.error) }
             Row(Modifier.padding(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -180,37 +284,15 @@ fun SearchScreen(
             }
         }
     }
-    if (filtersOpen) AlertDialog(onDismissRequest = { filtersOpen = false }, title = { Text(stringResource(R.string.medication_filter)) }, text = {
-        LazyColumn(Modifier.heightIn(max = 400.dp)) {
-            item { FilterOptionRow(stringResource(R.string.medication_custom_only), customOnly, searchViewModel::toggleCustomOnly) }
-            if (!customOnly) {
-            item { Text(stringResource(R.string.medication_category), style = MaterialTheme.typography.titleMedium) }
-            items(searchViewModel.categoryOptions.filter { searchViewModel.categoryIsInSelectedDomain(it.id) }, key = { "category:${it.id}" }) { category ->
-                FilterOptionRow(category.label(locale), category.id in selectedCategoryIds) { searchViewModel.onFilterTapped(category.id) }
-            }
-            item { Text(stringResource(R.string.medication_mechanisms), style = MaterialTheme.typography.titleMedium) }
-            items(searchViewModel.mechanismOptions, key = { "mechanism:${it.id}" }) { mechanism ->
-                FilterOptionRow(mechanism.label(locale), mechanism.id in selectedMechanisms) {
-                    searchViewModel.selectedMechanisms.value = if (mechanism.id in selectedMechanisms) selectedMechanisms - mechanism.id else selectedMechanisms + mechanism.id
-                }
-            }
-            item { Text(stringResource(R.string.administration_route), style = MaterialTheme.typography.titleMedium) }
-            items(searchViewModel.routeOptions) { route ->
-                FilterOptionRow(com.isaakhanimann.journal.data.substances.AdministrationRoute.valueOf(route).displayText, route in selectedRoutes) {
-                    searchViewModel.selectedRoutes.value = if (route in selectedRoutes) selectedRoutes - route else selectedRoutes + route
-                }
-            }
-            item { Text(stringResource(R.string.medication_formulations), style = MaterialTheme.typography.titleMedium) }
-            items(searchViewModel.formulationOptions) { form ->
-                FilterOptionRow(com.isaakhanimann.journal.data.substances.classes.formulationLabel(form), form in selectedForms) {
-                    searchViewModel.selectedFormulations.value = if (form in selectedForms) selectedForms - form else selectedForms + form
-                }
-            }
-            }
-        }
-    }, confirmButton = { TextButton({ filtersOpen = false }) { Text(stringResource(R.string.done)) } }, dismissButton = {
-        TextButton(searchViewModel::clearFilters) { Text(stringResource(R.string.clear)) }
-    })
+}
+
+@Composable
+private fun FilterSectionTitle(text: String) {
+    Text(
+        text = text,
+        modifier = Modifier.padding(top = 12.dp, bottom = 4.dp),
+        style = MaterialTheme.typography.titleMedium
+    )
 }
 
 @Composable

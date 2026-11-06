@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import re
 from copy import deepcopy
 from pathlib import Path
 from tempfile import NamedTemporaryFile
@@ -117,6 +118,277 @@ def apply_substance_patches(items: list[dict], patches: list[dict]) -> list[dict
         for field_name, value in patch.get("fieldsSet", {}).items():
             item[field_name] = value
     return items
+
+
+TIMELINE_ROUTE_ALIASES = {
+    "ORAL": {"oral", "po", "by mouth"},
+    "SUBLINGUAL": {"sublingual", "sl"},
+    "BUCCAL": {"buccal"},
+    "INSUFFLATED": {"intranasal", "insufflated", "nasal", "nasal spray"},
+    "RECTAL": {"rectal"},
+    "TRANSDERMAL": {"transdermal", "topical patch", "patch"},
+    "SUBCUTANEOUS": {"subcutaneous", "sc", "subcut", "subcutaneous injection"},
+    "INTRAMUSCULAR": {"intramuscular", "im", "intramuscular injection"},
+    "INTRAVENOUS": {
+        "intravenous",
+        "iv",
+        "iv infusion",
+        "infusion",
+        "intravenous infusion",
+    },
+    "SMOKED": {"smoked", "vaporized"},
+    "INHALED": {"inhaled", "inhalation"},
+}
+
+
+def normalize_route(value: str | None) -> str:
+    return (value or "").strip().lower().replace("_", " ")
+
+
+def route_matches(time_course_route: str | None, app_route: str) -> bool:
+    normalized_route = normalize_route(time_course_route)
+    route_text = normalize_route(app_route)
+    aliases = TIMELINE_ROUTE_ALIASES[app_route]
+    return (
+        normalized_route == route_text
+        or normalized_route in aliases
+        or any(
+            re.search(rf"(?<!\w){re.escape(alias)}(?!\w)", normalized_route)
+            for alias in aliases | {route_text}
+        )
+    )
+
+
+def has_numeric_time(value: object) -> bool:
+    return isinstance(value, dict) and any(
+        isinstance(value.get(key), (int, float)) for key in ("min", "max")
+    )
+
+
+def has_numeric_duration(time_course: dict) -> bool:
+    return has_numeric_time(time_course.get("durationOfAction")) or has_numeric_time(
+        time_course.get("washout")
+    )
+
+
+def roa_has_numeric_duration(roa: dict) -> bool:
+    duration = roa.get("duration")
+    if not isinstance(duration, dict):
+        return False
+    return any(
+        has_numeric_time(duration.get(field_name))
+        for field_name in ("onset", "comeup", "peak", "offset", "total", "afterglow")
+    )
+
+
+def has_numeric_half_life(time_course: dict) -> bool:
+    return has_numeric_time(time_course.get("eliminationHalfLife")) or has_numeric_time(
+        time_course.get("effectiveHalfLife")
+    )
+
+
+def time_value(value: list | dict) -> dict:
+    if isinstance(value, dict):
+        return deepcopy(value)
+    if not isinstance(value, list) or len(value) != 3:
+        raise ValueError(f"Invalid time value: {value}")
+    return {
+        "min": value[0],
+        "max": value[1],
+        "unit": value[2],
+        "basis": "approximate published pharmacokinetics",
+    }
+
+
+TIMELINE_TIME_FIELDS = {
+    "tmax",
+    "onset",
+    "peakEffect",
+    "durationOfAction",
+    "washout",
+    "timeToSteadyState",
+    "peakWindow",
+    "troughWindow",
+}
+
+TIMELINE_END_FIELDS = {
+    "durationOfAction",
+    "washout",
+    "eliminationHalfLife",
+    "effectiveHalfLife",
+}
+
+
+def timeline_field(field_name: str, raw_value: object) -> tuple[str, object]:
+    if field_name == "halfLife":
+        return "eliminationHalfLife", time_value(raw_value)
+    if field_name in TIMELINE_TIME_FIELDS | {"effectiveHalfLife"}:
+        return field_name, time_value(raw_value)
+    if field_name == "status":
+        return "effectTimelineStatus", raw_value
+    if field_name == "note":
+        return "effectTimelineNote", raw_value
+    return field_name, deepcopy(raw_value)
+
+
+def merge_timeline_field(target: dict, field_name: str, raw_value: object) -> None:
+    target_field, value = timeline_field(field_name, raw_value)
+    if target_field in {"notes", "sourceRefs"}:
+        target[target_field] = append_unique(target.get(target_field, []), value)
+    elif target_field == "effectTimelineStatus":
+        if target.get(target_field) is None or value == "available":
+            target[target_field] = value
+    elif target_field in TIMELINE_END_FIELDS:
+        if not has_numeric_time(target.get(target_field)):
+            target[target_field] = value
+    elif target.get(target_field) in (None, "", [], {}):
+        target[target_field] = value
+
+
+def apply_timeline_patch(
+    item: dict, time_courses: list[dict], route_patch: dict
+) -> None:
+    route = route_patch.get("route")
+    target = next(
+        (
+            time_course
+            for time_course in time_courses
+            if route_matches(time_course.get("route"), route)
+        ),
+        None,
+    )
+    if target is None:
+        target = {"route": route}
+        source_refs = item.get("sourceRefs", [])
+        if source_refs:
+            target["sourceRefs"] = deepcopy(source_refs[:2])
+        time_courses.append(target)
+    for field_name, raw_value in route_patch.items():
+        if field_name != "route":
+            merge_timeline_field(target, field_name, raw_value)
+
+
+def clone_timeline_for_route(template: dict, route: str) -> dict:
+    cloned = {
+        "route": route,
+        "effectTimelineStatus": "pk-estimated",
+        "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+        "notes": [
+            "Approximate route-level timeline for visualization; not a dosing recommendation."
+        ],
+    }
+    for field_name in ("eliminationHalfLife", "effectiveHalfLife", "tmax"):
+        if template.get(field_name) is not None:
+            cloned[field_name] = deepcopy(template.get(field_name))
+    if template.get("sourceRefs"):
+        cloned["sourceRefs"] = deepcopy(template.get("sourceRefs"))
+    return cloned
+
+
+def infer_route_timelines(item: dict, time_courses: list[dict]) -> None:
+    template = next(
+        (
+            time_course
+            for time_course in time_courses
+            if has_numeric_half_life(time_course)
+        ),
+        None,
+    )
+    if template is None:
+        return
+    for roa in item.get("roas", []):
+        roa_name = normalize_route(roa.get("name"))
+        route = next(
+            (
+                app_route
+                for app_route, aliases in TIMELINE_ROUTE_ALIASES.items()
+                if roa_name == normalize_route(app_route) or roa_name in aliases
+            ),
+            None,
+        )
+        if not route or roa_has_numeric_duration(roa):
+            continue
+        if any(route_matches(tc.get("route"), route) for tc in time_courses):
+            continue
+        time_courses.append(clone_timeline_for_route(template, route))
+
+
+def mark_pk_estimates(time_courses: list[dict]) -> None:
+    for time_course in time_courses:
+        if (
+            not has_numeric_duration(time_course)
+            and has_numeric_half_life(time_course)
+            and time_course.get("effectTimelineStatus") in (None, "source-needed")
+        ):
+            time_course["effectTimelineStatus"] = "pk-estimated"
+            time_course["effectTimelineNote"] = (
+                time_course.get("effectTimelineNote")
+                or "Approximate pharmacokinetic timeline for effect visualization."
+            )
+
+
+def apply_timeline_coverage(items: list[dict], coverage: dict) -> list[dict]:
+    by_name = {item.get("name"): item for item in items}
+    for patch in coverage.get("timelineCoverage", []):
+        item = by_name.get(patch.get("name"))
+        if not item:
+            raise ValueError(
+                f"Timeline coverage identity not found: {patch.get('name')}"
+            )
+        time_courses = item.get("timeCourse")
+        if not isinstance(time_courses, list):
+            time_courses = []
+            item["timeCourse"] = time_courses
+        for route_patch in patch.get("routes", []):
+            apply_timeline_patch(item, time_courses, route_patch)
+
+    for item in items:
+        time_courses = item.get("timeCourse", [])
+        infer_route_timelines(item, time_courses)
+        mark_pk_estimates(time_courses)
+    return items
+
+
+def validate_timeline_coverage(items: list[dict]) -> list[str]:
+    missing = []
+    for item in items:
+        routes = set()
+        for roa in item.get("roas", []):
+            roa_name = normalize_route(roa.get("name"))
+            for app_route, aliases in TIMELINE_ROUTE_ALIASES.items():
+                if roa_name == normalize_route(app_route) or roa_name in aliases:
+                    routes.add(app_route)
+        for time_course in item.get("timeCourse", []):
+            for app_route in TIMELINE_ROUTE_ALIASES:
+                if route_matches(time_course.get("route"), app_route):
+                    routes.add(app_route)
+        for route in routes:
+            roa = next(
+                (
+                    roa
+                    for roa in item.get("roas", [])
+                    if route_matches(roa.get("name"), route)
+                ),
+                None,
+            )
+            if roa and roa_has_numeric_duration(roa):
+                continue
+            time_courses = [
+                time_course
+                for time_course in item.get("timeCourse", [])
+                if route_matches(time_course.get("route"), route)
+            ]
+            if any(
+                has_numeric_duration(time_course)
+                or (
+                    time_course.get("effectTimelineStatus") == "pk-estimated"
+                    and has_numeric_half_life(time_course)
+                )
+                for time_course in time_courses
+            ):
+                continue
+            missing.append(f"{item.get('name')} / {route}")
+    return missing
 
 
 def filter_by_retain_categories(
@@ -339,6 +611,16 @@ def build(
         ]
         if locked:
             item["reviewedFields"] = locked
+    timeline_coverage_path = source_dir / "timeline_coverage.json"
+    if timeline_coverage_path.exists():
+        substances = apply_timeline_coverage(
+            substances, load_json(timeline_coverage_path)
+        )
+        missing_timeline = validate_timeline_coverage(substances)
+        if missing_timeline:
+            raise ValueError(
+                "Timeline coverage is incomplete: " + ", ".join(missing_timeline[:20])
+            )
     taxonomy_path = source_dir / "medication_taxonomy.json"
     if taxonomy_path.exists():
         definitions = {category["name"]: category for category in categories}

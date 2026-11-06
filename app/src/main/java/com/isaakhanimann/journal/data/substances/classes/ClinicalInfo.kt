@@ -46,6 +46,7 @@ data class TimeCourse(
     val peakEffect: TimeValue? = null,
     val durationOfAction: TimeValue? = null,
     val eliminationHalfLife: TimeValue? = null,
+    val effectiveHalfLife: TimeValue? = null,
     val timeToSteadyState: TimeValue? = null,
     val washout: TimeValue? = null,
     val depotRelease: Boolean = false,

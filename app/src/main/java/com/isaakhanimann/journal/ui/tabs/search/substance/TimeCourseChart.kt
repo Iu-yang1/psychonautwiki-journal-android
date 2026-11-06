@@ -200,7 +200,8 @@ fun TimeCourseChart(timeCourse: TimeCourse) {
             val endPill = listOf(
                 stringResource(R.string.time_course_chart_duration) to timeCourse.durationOfAction,
                 stringResource(R.string.time_course_chart_clearance) to timeCourse.washout,
-                stringResource(R.string.time_course_chart_half_life) to timeCourse.eliminationHalfLife
+                stringResource(R.string.time_course_chart_half_life) to
+                    (timeCourse.eliminationHalfLife ?: timeCourse.effectiveHalfLife)
             ).firstOrNull { it.second != null }
             TimePill(stringResource(R.string.time_course_chart_onset), timeCourse.onset)
             TimePill(stringResource(R.string.time_course_tmax), timeCourse.tmax)
@@ -278,7 +279,9 @@ private fun TimeCourse.toChartModel(): TimeCourseChartModel? {
 
 private fun TimeCourse.pkEstimatedEndHours(): Float? {
     if (effectTimelineStatus != "pk-estimated") return null
-    val halfLife = eliminationHalfLife?.representativeHours() ?: return null
+    val halfLife = eliminationHalfLife?.representativeHours()
+        ?: effectiveHalfLife?.representativeHours()
+        ?: return null
     val peak = peakEffect?.representativeHours()
         ?: tmax?.representativeHours()
         ?: peakWindow?.representativeHours()
