@@ -4,6 +4,7 @@ import json
 from copy import deepcopy
 from pathlib import Path
 from tempfile import NamedTemporaryFile
+from time import sleep
 from build_medication_catalog import normalized
 
 
@@ -32,7 +33,14 @@ def write_json(path: Path, data: dict) -> None:
         with file:
             json.dump(data, file, ensure_ascii=False, indent=2)
             file.write("\n")
-        temporary.replace(path)
+        for attempt in range(20):
+            try:
+                temporary.replace(path)
+                break
+            except PermissionError:
+                if attempt == 19:
+                    raise
+                sleep(0.25)
     finally:
         temporary.unlink(missing_ok=True)
 
