@@ -2,7 +2,12 @@
   "pw:0a0d256b20d879264a1b": {
     "ingredientId": "ingredient:furosemide",
     "chemicalFormId": "chemical:furosemide",
-    "formulationId": "form:oral-solid"
+    "formulationId": null,
+    "administrationRoutes": [
+      "ORAL",
+      "INTRAVENOUS",
+      "INTRAMUSCULAR"
+    ]
   },
   "pw:45b6242b911394941b80": {
     "ingredientId": "ingredient:spironolactone",
@@ -123,13 +128,19 @@
   },
   "pw:68cc2ec5e078526d4d66": {
     "ingredientId": "ingredient:histrelin-implant",
-    "chemicalFormId": null,
-    "formulationId": "form:implant"
+    "chemicalFormId": "chemical:histrelin-acetate",
+    "formulationId": "form:implant",
+    "administrationRoutes": [
+      "SUBCUTANEOUS"
+    ]
   },
   "pw:65070f8f84349ff5212e": {
     "ingredientId": "ingredient:goserelin",
-    "chemicalFormId": null,
-    "formulationId": "form:implant"
+    "chemicalFormId": "chemical:goserelin-acetate",
+    "formulationId": "form:implant",
+    "administrationRoutes": [
+      "SUBCUTANEOUS"
+    ]
   },
   "pw:703896cd10db9b99691b": {
     "ingredientId": "ingredient:triptorelin",

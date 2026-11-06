@@ -710,53 +710,163 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "cn",
+            "atc"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "cn",
+            "atc"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "cn",
+            "atc"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "cn",
+            "atc"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "cn",
+            "atc"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ],
+          "reason": "相互作用在临床资料中独立记录。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "us",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b",
+          "title": "Firmagon US label",
+          "region": "US",
+          "version": "SPL18 2024-01-30",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "cn",
+          "url": "https://www.nhsa.gov.cn/attach/Ypsn/YPSW202200185-W1/YPSW202200185-W1.pdf",
+          "title": "注射用地加瑞克申报资料",
+          "region": "CN",
+          "version": "2022 NHS submission",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-registration"
+        },
+        {
+          "id": "atc",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BX02",
+          "title": "WHO ATC L02BX02",
+          "region": "international",
+          "version": "2026-01-20",
+          "accessedDate": "2026-11-06",
+          "sourceType": "classification"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Degarelix regulatory label and Chinese registration",
+          "result": "核对所列地区说明书与中文名称来源，按产品与人群记录。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b",
+            "https://www.nhsa.gov.cn/attach/Ypsn/YPSW202200185-W1/YPSW202200185-W1.pdf",
+            "https://atcddd.fhi.no/atc_ddd_index/?code=L02BX02"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:f5fe4940c1483bbd17c6": {
@@ -764,161 +874,480 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk",
+            "cn",
+            "registration"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk",
+            "cn",
+            "registration"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk",
+            "cn",
+            "registration"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "cn"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk",
+            "cn",
+            "registration"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk",
+            "cn",
+            "registration"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ],
+          "reason": "相互作用在临床资料中独立记录。"
         }
       },
-      "sources": [],
-      "searches": [],
-      "aliasDecisions": []
+      "sources": [
+        {
+          "id": "uk",
+          "url": "https://www.medicines.org.uk/emc/product/15543/smpc",
+          "title": "Sawis 2 mg UK SmPC",
+          "region": "UK",
+          "version": "2024-07-26",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "cn",
+          "url": "https://www.genscigroup.com/Public/Uploads/uploadfile/files/20240827/dinuoyunsupianshuomingshu48geyuedianzigao.pdf",
+          "title": "地诺孕素片说明书",
+          "region": "CN",
+          "version": "2021-10-26 approval, manufacturer PDF",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "registration",
+          "url": "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399684.html",
+          "title": "唯散宁 HJ20180090",
+          "region": "CN",
+          "version": "2022-11-16 registration",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-registration"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Dienogest regulatory label and Chinese registration",
+          "result": "核对所列地区说明书与中文名称来源，按产品与人群记录。",
+          "sourceUrls": [
+            "https://www.medicines.org.uk/emc/product/15543/smpc",
+            "https://www.genscigroup.com/Public/Uploads/uploadfile/files/20240827/dinuoyunsupianshuomingshu48geyuedianzigao.pdf",
+            "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399684.html"
+          ]
+        }
+      ],
+      "aliasDecisions": [
+        {
+          "alias": "地诺孕酮",
+          "decision": "retain_historical_spelling",
+          "reason": "旧内置名称用于历史查找，正式显示名采用地诺孕素。",
+          "sourceIds": [
+            "registration"
+          ]
+        }
+      ]
     },
     "pw:499a8b0a063e8610f58e": {
       "canonicalName": "Drospirenone",
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd",
+            "atc"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd",
+            "atc"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd",
+            "atc"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd",
+            "atc"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd",
+            "atc"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd",
+            "atc"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "slynd"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
-      "aliasDecisions": []
+      "sources": [
+        {
+          "id": "slynd",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db32bc55-f295-4d87-9dbb-0a2f45573dcf",
+          "title": "Slynd US label",
+          "region": "US",
+          "version": "SPL 9 effective 2026-08-27",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "atc",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03AC10&showdescription=no",
+          "title": "WHO ATC G03AC10",
+          "region": "International",
+          "version": "2026 index",
+          "accessedDate": "2026-11-06",
+          "sourceType": "classification"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Drospirenone primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db32bc55-f295-4d87-9dbb-0a2f45573dcf",
+            "https://atcddd.fhi.no/atc_ddd_index/?code=G03AC10&showdescription=no"
+          ]
+        }
+      ],
+      "aliasDecisions": [
+        {
+          "alias": "Yasmin",
+          "decision": "remove_combination_brand",
+          "reason": "复方商品名不作为单一屈螺酮的身份别名。",
+          "sourceIds": [
+            "slynd"
+          ]
+        }
+      ]
     },
     "pw:8137690ffc4a3c92208d": {
       "canonicalName": "Dydrogesterone",
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk",
+            "cn"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk",
+            "cn"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk",
+            "cn"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "cn"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk",
+            "cn"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk",
+            "cn"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "uk"
+          ],
+          "reason": "相互作用在临床资料中独立记录。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "uk",
+          "url": "https://www.medicines.org.uk/emc/product/101122/smpc",
+          "title": "Nalvee 10 mg UK SmPC",
+          "region": "UK",
+          "version": "2026-08-07",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "cn",
+          "url": "https://www.abbott.com.cn/content/dam/corp/abbott/cn-cn/2025_update/250725/%E5%9C%B0%E5%B1%88%E5%AD%95%E9%85%AE%E7%89%87.pdf",
+          "title": "达芙通地屈孕酮片说明书",
+          "region": "CN",
+          "version": "2025-02-20 revision",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Dydrogesterone regulatory label and Chinese registration",
+          "result": "核对所列地区说明书与中文名称来源，按产品与人群记录。",
+          "sourceUrls": [
+            "https://www.medicines.org.uk/emc/product/101122/smpc",
+            "https://www.abbott.com.cn/content/dam/corp/abbott/cn-cn/2025_update/250725/%E5%9C%B0%E5%B1%88%E5%AD%95%E9%85%AE%E7%89%87.pdf"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:59320dd0ce3ca32429cb": {
@@ -926,107 +1355,340 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu",
+            "combo",
+            "nextstellis"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu",
+            "combo",
+            "nextstellis"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu",
+            "combo",
+            "nextstellis"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu",
+            "combo",
+            "nextstellis"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu",
+            "combo",
+            "nextstellis"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu",
+            "combo",
+            "nextstellis"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "eu"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
-      "aliasDecisions": []
+      "sources": [
+        {
+          "id": "eu",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/fylrevy-epar-product-information_en.pdf",
+          "title": "EMA Fylrevy product information",
+          "region": "EU",
+          "version": "EU/1/26/2020, authorised 2026-03-26",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "combo",
+          "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/drovelis",
+          "title": "EMA Drovelis composition",
+          "region": "EU",
+          "version": "EPAR EU/1/21/1547",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "nextstellis",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a",
+          "title": "DailyMed Nextstellis composition",
+          "region": "US",
+          "version": "SPL 7 effective 2023-05-11",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Estetrol primary label, formulation and identity",
+          "result": "查到 2026 年欧盟单方 Fylrevy，核对标签的适应证、用量和药代。Nextstellis 与 Drovelis 为复方来源，药量和商品身份分别管理。",
+          "sourceUrls": [
+            "https://www.ema.europa.eu/en/documents/product-information/fylrevy-epar-product-information_en.pdf",
+            "https://www.ema.europa.eu/en/medicines/human/EPAR/drovelis",
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a"
+          ]
+        }
+      ],
+      "aliasDecisions": [
+        {
+          "alias": "Nextstellis",
+          "decision": "remove_combination_brand",
+          "reason": "屈螺酮与雌四醇复方商品名，单方成分身份不能沿用。",
+          "sourceIds": [
+            "nextstellis"
+          ]
+        }
+      ]
     },
     "pw:b84f5f32996f9da13201": {
       "canonicalName": "Estradiol",
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral",
+            "gel",
+            "atc"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral",
+            "gel",
+            "atc"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral",
+            "gel",
+            "atc"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral",
+            "gel",
+            "atc"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral",
+            "gel",
+            "atc"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral",
+            "gel",
+            "atc"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "oral"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "oral",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+          "title": "Estradiol USP tablets US label",
+          "region": "US",
+          "version": "Revised 2026-06",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "gel",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4a3606f-83b2-45df-bc77-faebfa796f9a",
+          "title": "Estradiol gel 0.1% US label",
+          "region": "US",
+          "version": "SPL 5 effective 2026-04-29",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "atc",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03CA03",
+          "title": "WHO ATC G03CA03",
+          "region": "International",
+          "version": "2026 index",
+          "accessedDate": "2026-11-06",
+          "sourceType": "classification"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Estradiol primary label, formulation and identity",
+          "result": "通用药物身份保留，来源明确限定口服制剂的用量与风险。不同给药途径的配方及生物利用度由对应制剂描述。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4a3606f-83b2-45df-bc77-faebfa796f9a",
+            "https://atcddd.fhi.no/atc_ddd_index/?code=G03CA03"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:b4e7f7147b2a297d1bec": {
@@ -1034,53 +1696,133 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "depo"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "depo",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a4229fd-fecd-4ac1-9c4f-6d442533457f",
+          "title": "Depo-Estradiol US label",
+          "region": "US",
+          "version": "SPL 9 effective 2024-02-28",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Estradiol Cypionate Injection primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a4229fd-fecd-4ac1-9c4f-6d442533457f"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:3c12f5c0485c68b3d23e": {
@@ -1088,53 +1830,150 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "pk",
+            "co"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "pk",
+            "co"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "pk",
+            "co"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "pk"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "pk"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "co"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "co"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "co"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "evidence_unavailable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "co"
+          ],
+          "reason": "所引注册文件未提供可直接用于庚酸雌二醇单药的相互作用资料。"
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "co"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "evidence_unavailable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "co"
+          ],
+          "reason": "找到复方用药资料与单成分药代资料，未取得可核验的单方治疗剂量。"
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "pk"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "pk",
+            "co"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "pk",
+            "co"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "pk"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "pk",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/3814225/",
+          "title": "Wiemeyer et al. estradiol enantate pharmacokinetics",
+          "region": "Argentina",
+          "version": "1986, PMID 3814225",
+          "accessedDate": "2026-11-06",
+          "sourceType": "human-study"
+        },
+        {
+          "id": "co",
+          "url": "https://invima.gov.co/biblioteca/download/123234",
+          "title": "INVIMA estradiol enantate and algestone product record",
+          "region": "CO",
+          "version": "Acta 49 de 2013, insert revision 2",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-registration"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Estradiol Enanthate Injection primary label, formulation and identity",
+          "result": "检索 PMID 3814225 及中国、美国、哥伦比亚和巴西公开标签。原始人群资料提供单次肌注药代，监管文件提供复方适应证与禁忌。",
+          "sourceUrls": [
+            "https://pubmed.ncbi.nlm.nih.gov/3814225/",
+            "https://invima.gov.co/biblioteca/download/123234"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:2bc9549e0287e2a6906f": {
@@ -1142,53 +1981,182 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel",
+            "estrogel",
+            "divigel",
+            "cn"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel",
+            "estrogel",
+            "divigel",
+            "cn"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel",
+            "estrogel",
+            "divigel",
+            "cn"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel",
+            "estrogel",
+            "divigel",
+            "cn"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel",
+            "estrogel"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel",
+            "estrogel",
+            "divigel",
+            "cn"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel",
+            "estrogel",
+            "divigel",
+            "cn"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-gel"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "us-gel",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4a3606f-83b2-45df-bc77-faebfa796f9a",
+          "title": "Estradiol gel 0.1% US label",
+          "region": "US",
+          "version": "SPL 5 effective 2026-04-29",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "estrogel",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=762ac371-bb8b-47e7-b48f-e80d452c9dd4",
+          "title": "EstroGel 0.06% US label",
+          "region": "US",
+          "version": "2026-05-29 update",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "divigel",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59e610dc-883e-4f07-9ec6-a5841b0bf9fb",
+          "title": "Divigel 0.1% US label",
+          "region": "US",
+          "version": "2026-02-27 update",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "cn",
+          "url": "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_400460.html",
+          "title": "爱斯妥雌二醇凝胶注册记录",
+          "region": "CN",
+          "version": "NCMI record 2023-12-05",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-registration"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Estradiol Gel primary label, formulation and identity",
+          "result": "区分 0.06% 定量泵凝胶与 0.1% 袋装凝胶。药代资料明确限定 0.1% 大腿涂抹制剂。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4a3606f-83b2-45df-bc77-faebfa796f9a",
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=762ac371-bb8b-47e7-b48f-e80d452c9dd4",
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59e610dc-883e-4f07-9ec6-a5841b0bf9fb",
+            "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_400460.html"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:c159600031b8ffa49688": {
@@ -1196,53 +2164,133 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "evamist"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "evamist",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a0aa631-133d-406b-9d32-8a1a99af4e50",
+          "title": "Evamist US label",
+          "region": "US",
+          "version": "SPL 9 effective 2024-10-29",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Estradiol Spray primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9a0aa631-133d-406b-9d32-8a1a99af4e50"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:c8c4379438eea61f506d": {
@@ -1250,53 +2298,133 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "climara"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "climara",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e9702c4-f2d7-4ea8-b6e8-7dca31671864",
+          "title": "Climara US label",
+          "region": "US",
+          "version": "SPL 25 effective 2026-03-26",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Estradiol Transdermal Patch primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e9702c4-f2d7-4ea8-b6e8-7dca31671864"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:697a950f39ef007ec498": {
@@ -1304,53 +2432,133 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ev"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "ev",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2e5c7559-7420-168d-6272-92bb4d20035d",
+          "title": "Estradiol valerate injection US label",
+          "region": "US",
+          "version": "SPL 10 effective 2026-07-06",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Estradiol Valerate Injection primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2e5c7559-7420-168d-6272-92bb4d20035d"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:1d8ab06b60d265c3477d": {
@@ -1358,53 +2566,183 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo",
+            "ca",
+            "pk",
+            "soc8"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo",
+            "ca",
+            "pk",
+            "soc8"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo",
+            "ca",
+            "pk",
+            "soc8"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo",
+            "ca",
+            "pk",
+            "soc8"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo",
+            "soc8"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "evidence_unavailable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo"
+          ],
+          "reason": "找到复方用药资料与单成分药代资料，未取得可核验的单方治疗剂量。"
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "pk"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo",
+            "ca",
+            "pk",
+            "soc8"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo",
+            "ca",
+            "pk",
+            "soc8"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "combo"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "combo",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6634d24-08af-44bc-8e76-e759619857fa",
+          "title": "Jinteli norethindrone acetate plus ethinyl estradiol label",
+          "region": "US",
+          "version": "SPL 1 effective 2011-02-15",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "ca",
+          "url": "https://produits-sante.canada.ca/dpd-bdpp/info?code=357&lang=eng",
+          "title": "Health Canada Estinyl 0.02 mg product record",
+          "region": "CA",
+          "version": "DPD product code 357",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-registration"
+        },
+        {
+          "id": "pk",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7418409/",
+          "title": "Serum levels after ethinylestradiol alone or in contraceptives",
+          "region": "International",
+          "version": "1980, PMID 7418409",
+          "accessedDate": "2026-11-06",
+          "sourceType": "human-study"
+        },
+        {
+          "id": "soc8",
+          "url": "https://doi.org/10.1080/26895269.2022.2100644",
+          "title": "WPATH SOC8 Statement 12.13",
+          "region": "International",
+          "version": "2022",
+          "accessedDate": "2026-11-06",
+          "sourceType": "clinical-guideline"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Ethinylestradiol primary label, formulation and identity",
+          "result": "核对加拿大单成分历史产品记录、美国复方标签和单成分人体药代。未取得可核验的单药治疗用量说明书。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6634d24-08af-44bc-8e76-e759619857fa",
+            "https://produits-sante.canada.ca/dpd-bdpp/info?code=357&lang=eng",
+            "https://pubmed.ncbi.nlm.nih.gov/7418409/",
+            "https://doi.org/10.1080/26895269.2022.2100644"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:0a0d256b20d879264a1b": {
@@ -1412,53 +2750,186 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ],
+          "note": "通用成分身份覆盖多种制剂，清除错误的唯一口服固体制剂绑定；不改变药物ID或历史事件。"
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "lasix",
+            "cn-terminology"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "who",
+            "us-oral",
+            "us-injection"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us-oral",
+            "us-injection"
+          ],
+          "reason": "临床相互作用单独表达，不生成精神活性物质混用矩阵。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "us-oral",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+          "title": "Furosemide tablets",
+          "region": "US",
+          "version": "SPL3 effective20260617",
+          "accessedDate": "2026-11-06",
+          "sha256": "86618b85b7334a2ae920aa71cb0c6a60b11d0f449d622a419d2e4744140c629e"
+        },
+        {
+          "id": "us-injection",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=aaced7a8-c3d7-4d66-8c07-aa407b8b3f35",
+          "title": "Furosemide Injection",
+          "region": "US",
+          "version": "SPL16 effective20260513",
+          "accessedDate": "2026-11-06",
+          "sha256": "fbd0cd3db7a2762fd7a9a2d32c8a508788855c11d5b3cd6bd5352b791dcbe769"
+        },
+        {
+          "id": "who",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C03CA01",
+          "title": "ATC C03CA01",
+          "region": "international",
+          "version": "2026-01-20",
+          "accessedDate": "2026-11-06"
+        },
+        {
+          "id": "lasix",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?lang=en&setid=2c9b4d8f-0770-482d-a9e6-9c616a440b1a",
+          "title": "Lasix furosemide tablets",
+          "region": "US",
+          "version": "retrieved2026-11-06 label record",
+          "accessedDate": "2026-11-06"
+        },
+        {
+          "id": "cn-terminology",
+          "url": "https://www.cznd.gov.cn/uploadfile/cznd/2024/1206/20241206165416_90678.pdf",
+          "title": "公开采购药品名称：呋塞米片及注射液（速尿）",
+          "region": "CN",
+          "version": "document2024-12-06",
+          "accessedDate": "2026-11-06",
+          "note": "仅用于历史中文别名核对，不作为临床剂量或适应证来源。"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "site.nmpa.gov.cn 呋塞米 说明书; site.nhc.gov.cn 呋塞米 速尿",
+          "result": "中国医院公开PDF无法稳定读取，不据此填临床字段。临床资料使用美国当前口服/注射两份SPL；中文历史别名仅另行核对，不挪用采购数量为剂量。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=462e8917-cbe0-f4f9-e063-6394a90ab4ff",
+            "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=aaced7a8-c3d7-4d66-8c07-aa407b8b3f35",
+            "https://www.cznd.gov.cn/uploadfile/cznd/2024/1206/20241206165416_90678.pdf"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:65070f8f84349ff5212e": {
@@ -1466,53 +2937,165 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36",
+            "us108",
+            "cn"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36",
+            "us108",
+            "cn"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36",
+            "us108",
+            "cn"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36",
+            "us108",
+            "cn"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36",
+            "us108",
+            "cn"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36",
+            "us108",
+            "cn"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us36"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "us36",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=294b168b-6e5f-4db9-bf70-d599271458b3",
+          "title": "Zoladex 3.6 mg US label",
+          "region": "US",
+          "version": "SPL 9 effective 2026-03-24",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "us108",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cb3c20-2738-400a-b522-3f36f71fe6c5",
+          "title": "Zoladex 10.8 mg US label",
+          "region": "US",
+          "version": "SPL 8 effective 2026-03-24",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "cn",
+          "url": "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399221.html",
+          "title": "诺雷得注册资料",
+          "region": "CN",
+          "version": "NCMI record published 2023-12-05",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-registration"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Goserelin primary label, formulation and identity",
+          "result": "核对两种美国植入剂说明书及中国名称注册记录。标签 mg 按戈舍瑞林计，植入剂实际化学形式为醋酸盐。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=294b168b-6e5f-4db9-bf70-d599271458b3",
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cb3c20-2738-400a-b522-3f36f71fe6c5",
+            "https://pharm.ncmi.cn/zysjk/ypjkyp/202312/t20231205_399221.html"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:68cc2ec5e078526d4d66": {
@@ -1520,53 +3103,149 @@
       "batch": "endocrine-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "us",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d8fb000e-3cc9-4803-b71d-2cc597661977",
+          "title": "Supprelin LA US label",
+          "region": "US",
+          "version": "SPL 38 effective 2025-09-25",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "atc",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02AE05&showdescription=no",
+          "title": "WHO ATC L02AE05",
+          "region": "International",
+          "version": "2026 index",
+          "accessedDate": "2026-11-06",
+          "sourceType": "classification"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Histrelin Implant primary label, formulation and identity",
+          "result": "核对美国醋酸组氨瑞林植入剂原始说明书。中文名按成分和剂型描述，未采用国内注册品牌。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d8fb000e-3cc9-4803-b71d-2cc597661977",
+            "https://atcddd.fhi.no/atc_ddd_index/?code=L02AE05&showdescription=no"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:dbb4ffb9b2d269d66f4a": {
@@ -1682,54 +3361,159 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera",
+            "atc"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera",
+            "atc"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera",
+            "atc"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera",
+            "atc"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera",
+            "atc"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera",
+            "atc"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "provera"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
-      "aliasDecisions": []
+      "sources": [
+        {
+          "id": "provera",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a586be28-96af-4fed-a13f-9b94fd4c7405",
+          "title": "Provera oral tablets US label",
+          "region": "US",
+          "version": "SPL 27 effective 2026-06-29",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "atc",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03DA02",
+          "title": "WHO ATC G03DA02",
+          "region": "International",
+          "version": "2026 index",
+          "accessedDate": "2026-11-06",
+          "sourceType": "classification"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Medroxyprogesterone Acetate primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a586be28-96af-4fed-a13f-9b94fd4c7405",
+            "https://atcddd.fhi.no/atc_ddd_index/?code=G03DA02"
+          ]
+        }
+      ],
+      "aliasDecisions": [
+        {
+          "alias": "Medroxyprogesterone",
+          "decision": "remove_unspecified_parent_form",
+          "reason": "未指明醋酸酯的名称保留为检索词，避免作为明确的酯身份。",
+          "sourceIds": [
+            "provera"
+          ]
+        }
+      ]
     },
     "pw:fdf9fb3e4a4c60000669": {
       "canonicalName": "Micronized Progesterone",
@@ -1844,53 +3628,166 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "brand",
+            "atc"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "brand",
+            "atc"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "brand",
+            "atc"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "brand",
+            "atc"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "evidence_unavailable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ],
+          "reason": "所引单方标签明确未进行其药代相互作用研究，本次未取得可直接填入单方条目的证据。"
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "brand",
+            "atc"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "brand",
+            "atc"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "us",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0a94321-eb60-4aa6-a429-f0156f9f8e01",
+          "title": "Norethindrone acetate 5 mg US label",
+          "region": "US",
+          "version": "SPL 10 effective 2026-01-29",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "brand",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2007/018405s023lbl.pdf",
+          "title": "FDA Aygestin historical brand label",
+          "region": "US",
+          "version": "July 2007, NDA 018405",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-registration"
+        },
+        {
+          "id": "atc",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03DC02",
+          "title": "WHO ATC G03DC02",
+          "region": "International",
+          "version": "2026 index",
+          "accessedDate": "2026-11-06",
+          "sourceType": "classification"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Norethisterone Acetate primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0a94321-eb60-4aa6-a429-f0156f9f8e01",
+            "https://www.accessdata.fda.gov/drugsatfda_docs/label/2007/018405s023lbl.pdf",
+            "https://atcddd.fhi.no/atc_ddd_index/?code=G03DC02"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:98ab6b0f8f3207ab787c": {
@@ -2006,53 +3903,149 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us",
+            "atc"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "us"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "us",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=077a92f6-9f1b-479a-87c7-c92b5db6aa9c",
+          "title": "Orgovyx US label",
+          "region": "US",
+          "version": "SPL 13 effective 2026-10-08",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "atc",
+          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L02BX04&showdescription=no",
+          "title": "WHO ATC L02BX04",
+          "region": "International",
+          "version": "2026 index",
+          "accessedDate": "2026-11-06",
+          "sourceType": "classification"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Relugolix primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=077a92f6-9f1b-479a-87c7-c92b5db6aa9c",
+            "https://atcddd.fhi.no/atc_ddd_index/?code=L02BX04&showdescription=no"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:4202d238dd1a07149f19": {

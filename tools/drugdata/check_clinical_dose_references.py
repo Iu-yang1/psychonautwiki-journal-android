@@ -51,6 +51,9 @@ def searchable_strings(value):
 
 def main() -> int:
     errors: list[str] = []
+    manifest = json.loads(
+        Path("tools/drugdata/review_manifest.json").read_text(encoding="utf-8")
+    )["entries"]
     for path in RAW_FILES:
         data = json.loads(path.read_text(encoding="utf-8"))
         clinical = [
@@ -61,11 +64,27 @@ def main() -> int:
         for substance in clinical:
             name = substance.get("name", "<unnamed>")
             prefix = f"{path}: {name}"
-            if any(isinstance(roa.get("dose"), dict) for roa in substance.get("roas", [])):
+            if any(
+                isinstance(roa.get("dose"), dict) for roa in substance.get("roas", [])
+            ):
                 errors.append(f"{prefix}: clinical roas.dose remains")
             references = substance.get("doseUseReferences", [])
+            decision = (
+                manifest.get(substance.get("id"), {})
+                .get("fields", {})
+                .get("doseUseReferences", {})
+            )
+            intentionally_empty = decision.get("status") in {
+                "not_applicable",
+                "evidence_unavailable",
+            } and decision.get("reason")
+            if intentionally_empty and references:
+                errors.append(
+                    f"{prefix}: doses remain despite a documented evidence gap"
+                )
             if not references:
-                errors.append(f"{prefix}: missing doseUseReferences")
+                if not intentionally_empty:
+                    errors.append(f"{prefix}: missing doseUseReferences")
                 continue
             for index, reference in enumerate(references):
                 reference_prefix = f"{prefix}: doseUseReferences[{index}]"
@@ -73,10 +92,14 @@ def main() -> int:
                 schedule = (reference.get("scheduleText") or "").lower()
                 refs = reference.get("sourceRefs", [])
                 if concrete_amount(amount) and not refs:
-                    errors.append(f"{reference_prefix}: concrete amountText missing sourceRefs")
+                    errors.append(
+                        f"{reference_prefix}: concrete amountText missing sourceRefs"
+                    )
                 if "cardiovascular" in set(substance.get("categories", [])):
                     if not schedule:
-                        errors.append(f"{reference_prefix}: missing cardiovascular scheduleText")
+                        errors.append(
+                            f"{reference_prefix}: missing cardiovascular scheduleText"
+                        )
                     elif "source needed" in schedule:
                         errors.append(
                             f"{reference_prefix}: cardiovascular scheduleText still needs review"
@@ -86,7 +109,8 @@ def main() -> int:
                         dose_range.get("max")
                     )
                     component_numeric = any(
-                        has_number(component.get("min")) or has_number(component.get("max"))
+                        has_number(component.get("min"))
+                        or has_number(component.get("max"))
                         for component in dose_range.get("components", [])
                     )
                     if (numeric or component_numeric) and not refs:
@@ -100,10 +124,12 @@ def main() -> int:
             categories = set(substance.get("categories", []))
             if "endocrine" in categories or "hrt-related" in categories:
                 injection_reference = any(
-                    "inject" in (
+                    "inject"
+                    in (
                         f"{reference.get('route', '')} {reference.get('formulation', '')}"
                     ).lower()
-                    or "depot" in (
+                    or "depot"
+                    in (
                         f"{reference.get('route', '')} {reference.get('formulation', '')}"
                     ).lower()
                     for reference in references
@@ -129,10 +155,18 @@ def main() -> int:
                         )
                     )
                     caveats = caveats.lower()
-                    if not any(term in caveats for term in ("timing", "interval", "peak")):
-                        errors.append(f"{prefix}: injectable/depot HRT missing timing caveat")
+                    if not any(
+                        term in caveats for term in ("timing", "interval", "peak")
+                    ):
+                        errors.append(
+                            f"{prefix}: injectable/depot HRT missing timing caveat"
+                        )
         print(f"{path}: checked {len(clinical)} clinical entries")
-        searchable = [text.lower() for substance in clinical for text in searchable_strings(substance)]
+        searchable = [
+            text.lower()
+            for substance in clinical
+            for text in searchable_strings(substance)
+        ]
         for term in SEARCH_TERMS:
             if not any(term.lower() in text for text in searchable):
                 errors.append(f"{path}: search term has no clinical match: {term}")

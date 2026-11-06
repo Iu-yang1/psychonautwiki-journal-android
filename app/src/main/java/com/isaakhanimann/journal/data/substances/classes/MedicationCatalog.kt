@@ -39,6 +39,7 @@ fun formulationLabel(value: String): String = when (value) {
     "form:tablet" -> "片剂"
     "form:capsule" -> "胶囊剂"
     "form:oral-liquid" -> "口服液体制剂"
+    "form:injection" -> "注射剂"
     "form:powder" -> "散剂 / 粉剂"
     "form:oil-injection" -> "油剂注射剂"
     "form:depot-injection" -> "长效注射剂"

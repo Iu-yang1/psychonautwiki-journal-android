@@ -399,7 +399,7 @@
         "醋酸炔诺酮"
       ],
       "sourceUrls": [
-        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=f73f9807-4af6-4faa-ba9a-656a47a4c5e0&type=display"
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0a94321-eb60-4aa6-a429-f0156f9f8e01"
       ],
       "ingredientId": "ingredient:norethisterone-acetate",
       "chemicalFormId": "chemical:norethisterone-acetate",
@@ -440,18 +440,24 @@
       ],
       "searchTerms": [
         "ATC-C03",
-        "C03",
-        "C03 利尿剂",
+        "C03CA01",
+        "Diuretic",
         "Diuretics",
-        "Loop diuretic"
+        "Loop diuretic",
+        "利尿剂",
+        "利尿药",
+        "袢利尿药"
       ],
       "ingredientId": "ingredient:furosemide",
       "chemicalFormId": "chemical:furosemide",
-      "formulationId": "form:oral-solid",
+      "formulationId": null,
+      "administrationRoutes": [
+        "ORAL",
+        "INTRAVENOUS",
+        "INTRAMUSCULAR"
+      ],
       "excludedAliases": [
         "ATC-C03",
-        "C03",
-        "C03 利尿剂",
         "Diuretics",
         "Loop diuretic"
       ]
@@ -991,10 +997,12 @@
         "EE",
         "Ethinyl estradiol",
         "Ethinylestradiol",
-        "乙炔雌二醇"
+        "Ethynylestradiol",
+        "炔雌二醇",
+        "炔雌醇"
       ],
       "sourceUrls": [
-        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e6634d24-08af-44bc-8e76-e759619857fa&type=display"
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e6634d24-08af-44bc-8e76-e759619857fa"
       ],
       "ingredientId": "ingredient:ethinylestradiol",
       "chemicalFormId": "chemical:ethinylestradiol",
@@ -1506,10 +1514,11 @@
         "Estradiol Gel",
         "Estradiol transdermal gel",
         "EstroGel",
+        "爱斯妥",
         "雌二醇凝胶"
       ],
       "sourceUrls": [
-        "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=d4a3606f-83b2-45df-bc77-faebfa796f9a"
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4a3606f-83b2-45df-bc77-faebfa796f9a"
       ],
       "ingredientId": "ingredient:estradiol",
       "chemicalFormId": "chemical:estradiol",
@@ -1966,8 +1975,9 @@
       "aliases": [
         "EEn",
         "Estradiol Enanthate Injection",
+        "Estradiol enantate",
         "Estradiol enanthate",
-        "estradiol enantate",
+        "庚酸雌二醇",
         "庚酸雌二醇注射剂"
       ],
       "sourceUrls": [
@@ -2203,11 +2213,16 @@
       "aliases": [
         "Degarelix",
         "Firmagon",
-        "GnRH antagonist",
         "地加瑞克"
       ],
       "sourceUrls": [
         "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ab11dd8a-0fd9-4013-89ab-e114557c7e4b"
+      ],
+      "searchTerms": [
+        "GnRH 拮抗剂",
+        "GnRH antagonist",
+        "GnRH 拮抗剂",
+        "GnRH antagonist"
       ],
       "ingredientId": "ingredient:degarelix",
       "chemicalFormId": "chemical:degarelix",
@@ -2479,11 +2494,10 @@
         "DRSP",
         "Drospirenone",
         "Slynd",
-        "Yasmin",
         "屈螺酮"
       ],
       "sourceUrls": [
-        "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0f8f8a21-cee8-462f-98b3-6c06f2f33e0d"
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=db32bc55-f295-4d87-9dbb-0a2f45573dcf"
       ],
       "ingredientId": "ingredient:drospirenone",
       "chemicalFormId": "chemical:drospirenone",
@@ -3007,11 +3021,11 @@
         "E4",
         "Estetrol",
         "Estetrol monohydrate",
-        "Nextstellis",
+        "Fylrevy",
         "雌四醇"
       ],
       "sourceUrls": [
-        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c5270073-d083-4109-ae4b-156986175e0a"
+        "https://www.ema.europa.eu/en/documents/product-information/fylrevy-epar-product-information_en.pdf"
       ],
       "ingredientId": "ingredient:estetrol",
       "chemicalFormId": "chemical:estetrol",
@@ -3528,14 +3542,18 @@
         "Goserelin acetate",
         "Zoladex",
         "戈舍瑞林",
+        "诺雷得",
         "醋酸戈舍瑞林"
       ],
       "sourceUrls": [
-        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e4cb3c20-2738-400a-b522-3f36f71fe6c5"
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=294b168b-6e5f-4db9-bf70-d599271458b3"
       ],
       "ingredientId": "ingredient:goserelin",
-      "chemicalFormId": null,
-      "formulationId": "form:implant"
+      "chemicalFormId": "chemical:goserelin-acetate",
+      "formulationId": "form:implant",
+      "administrationRoutes": [
+        "SUBCUTANEOUS"
+      ]
     },
     {
       "id": "pw:657acb2810bef72b6f8f",
@@ -3644,14 +3662,18 @@
         "Histrelin acetate",
         "Supprelin LA",
         "组氨瑞林植入剂",
-        "醋酸组氨瑞林"
+        "醋酸组氨瑞林",
+        "醋酸组氨瑞林植入剂"
       ],
       "sourceUrls": [
-        "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=histrelin"
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d8fb000e-3cc9-4803-b71d-2cc597661977"
       ],
       "ingredientId": "ingredient:histrelin-implant",
-      "chemicalFormId": null,
-      "formulationId": "form:implant"
+      "chemicalFormId": "chemical:histrelin-acetate",
+      "formulationId": "form:implant",
+      "administrationRoutes": [
+        "SUBCUTANEOUS"
+      ]
     },
     {
       "id": "pw:68df61549f8980052f43",
@@ -4474,11 +4496,11 @@
     {
       "id": "pw:8137690ffc4a3c92208d",
       "aliases": [
-        "DHD prodrug",
         "Duphaston",
         "Dydrogesterone",
         "Nalvee",
-        "地屈孕酮"
+        "地屈孕酮",
+        "达芙通"
       ],
       "sourceUrls": [
         "https://www.medicines.org.uk/emc/product/101122/smpc"
@@ -6360,7 +6382,7 @@
         "雌二醇"
       ],
       "sourceUrls": [
-        "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence"
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90"
       ],
       "ingredientId": "ingredient:estradiol",
       "chemicalFormId": "chemical:estradiol",
@@ -6973,14 +6995,16 @@
     {
       "id": "pw:c8c4379438eea61f506d",
       "aliases": [
+        "Climara",
         "E2 patch",
         "Estradiol Transdermal Patch",
         "Estradiol patch",
         "Transdermal E2",
-        "经皮雌二醇贴片"
+        "经皮雌二醇贴片",
+        "雌二醇经皮贴片"
       ],
       "sourceUrls": [
-        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=396686ba-ab8d-4223-80e7-9c4f7ddb7852"
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1e9702c4-f2d7-4ea8-b6e8-7dca31671864"
       ],
       "ingredientId": "ingredient:estradiol",
       "chemicalFormId": "chemical:estradiol",
@@ -7050,7 +7074,6 @@
     {
       "id": "pw:cc9db16150f35a86b6d0",
       "aliases": [
-        "Oral GnRH antagonist",
         "Orgovyx",
         "Relugolix",
         "瑞卢戈利",
@@ -7058,6 +7081,12 @@
       ],
       "sourceUrls": [
         "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=077a92f6-9f1b-479a-87c7-c92b5db6aa9c"
+      ],
+      "searchTerms": [
+        "Oral GnRH antagonist",
+        "口服 GnRH 拮抗剂",
+        "Oral GnRH antagonist",
+        "口服 GnRH 拮抗剂"
       ],
       "ingredientId": "ingredient:relugolix",
       "chemicalFormId": "chemical:relugolix",
@@ -7825,13 +7854,20 @@
       "id": "pw:e9050f7ce735d633324c",
       "aliases": [
         "MPA",
-        "Medroxyprogesterone",
         "Medroxyprogesterone Acetate",
         "Provera",
         "醋酸甲羟孕酮"
       ],
       "sourceUrls": [
-        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e5f5c46c-b8b7-4502-9d2b-8f12284d1a63"
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a586be28-96af-4fed-a13f-9b94fd4c7405"
+      ],
+      "searchTerms": [
+        "Medroxyprogesterone",
+        "孕激素",
+        "Progestogen",
+        "Medroxyprogesterone",
+        "孕激素",
+        "Progestogen"
       ],
       "ingredientId": "ingredient:medroxyprogesterone-acetate",
       "chemicalFormId": "chemical:medroxyprogesterone-acetate",
@@ -8275,7 +8311,9 @@
         "Dienogest",
         "Sawis",
         "Visanne",
-        "地诺孕素"
+        "唯散宁",
+        "地诺孕素",
+        "地诺孕酮"
       ],
       "sourceUrls": [
         "https://www.medicines.org.uk/emc/product/15543/smpc"

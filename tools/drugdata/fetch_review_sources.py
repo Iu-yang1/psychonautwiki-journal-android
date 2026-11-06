@@ -19,9 +19,19 @@ def fetch(source, directory, refresh=False):
     original_url = source["url"]
     query = urllib.parse.parse_qs(urllib.parse.urlparse(original_url).query)
     set_id = query.get("setid", [None])[0]
+    if urllib.parse.urlparse(original_url).hostname == "api.fda.gov":
+        match = re.fullmatch(
+            r'set_id:"?([0-9a-fA-F-]{36})"?', query.get("search", [""])[0]
+        )
+        set_id = match.group(1) if match else None
+    use_spl = bool(
+        set_id
+        and urllib.parse.urlparse(original_url).hostname
+        in {"dailymed.nlm.nih.gov", "www.dailymed.nlm.nih.gov", "api.fda.gov"}
+    )
     url = (
         f"https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/{set_id}.xml"
-        if set_id and "dailymed.nlm.nih.gov" in original_url
+        if use_spl
         else original_url
     )
     key = hashlib.sha256(original_url.encode()).hexdigest()[:20]
@@ -58,9 +68,47 @@ def fetch(source, directory, refresh=False):
         if data.startswith(b"%PDF"):
             text = None
             result["requiresPdfReview"] = True
-        elif set_id and "dailymed.nlm.nih.gov" in original_url:
+        elif use_spl:
             root = ET.fromstring(data)
             ns = {"s": "urn:hl7-org:v3"}
+            products = []
+            for product in root.findall(
+                ".//s:manufacturedProduct/s:manufacturedProduct", ns
+            ):
+                name = product.find("s:name", ns)
+                form = product.find("s:formCode", ns)
+                ingredients = []
+                for ingredient in product.findall(".//s:ingredient", ns):
+                    if not ingredient.get("classCode", "").startswith("ACTI"):
+                        continue
+                    substance = ingredient.find("s:ingredientSubstance/s:name", ns)
+                    numerator = ingredient.find("s:quantity/s:numerator", ns)
+                    denominator = ingredient.find("s:quantity/s:denominator", ns)
+                    basis = ingredient.find(
+                        "s:ingredientSubstance/s:asEquivalentEntity/s:definingSubstance/s:name",
+                        ns,
+                    )
+                    ingredients.append(
+                        {
+                            "name": substance.text if substance is not None else None,
+                            "numerator": dict(numerator.attrib)
+                            if numerator is not None
+                            else None,
+                            "denominator": dict(denominator.attrib)
+                            if denominator is not None
+                            else None,
+                            "strengthBasis": basis.text if basis is not None else None,
+                        }
+                    )
+                if ingredients:
+                    item = {
+                        "name": name.text if name is not None else None,
+                        "form": form.get("displayName") if form is not None else None,
+                        "ingredients": ingredients,
+                    }
+                    if item not in products:
+                        products.append(item)
+            result["products"] = products
             chunks = []
             for section in root.findall(".//s:section", ns):
                 title = section.find("s:title", ns)
@@ -127,7 +175,8 @@ def fetch(source, directory, refresh=False):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--batch", required=True)
+    parser.add_argument("--batch", required=True, action="append")
+    parser.add_argument("--labels-only", action="store_true")
     parser.add_argument(
         "--output-dir", type=Path, default=ROOT / "build/library-sources"
     )
@@ -148,18 +197,24 @@ def main():
     substances = json.loads(
         (ROOT / "app/src/main/res/raw/substances.json").read_text(encoding="utf-8")
     )["substances"]
-    members = [s for s in substances if manifest[s["id"]]["batch"] == args.batch]
-    assert members, "Unknown batch"
+    batches = {batch: {} for batch in args.batch}
+    members = [s for s in substances if manifest[s["id"]]["batch"] in batches]
+    assert set(args.batch) <= {manifest[s["id"]]["batch"] for s in members}, (
+        "Unknown batch"
+    )
     sources = {}
-    membership = {}
     for substance in members:
         refs = substance.get("sourceRefs", []) + substance.get("clinicalInfo", {}).get(
             "sourceRefs", []
         )
+        membership = batches[manifest[substance["id"]]["batch"]]
         membership[substance["id"]] = []
         for source in refs:
+            if args.labels_only and source.get("sourceType") != "regulatory-label":
+                continue
             sources[source["url"]] = source
-            membership[substance["id"]].append(source["url"])
+            if source["url"] not in membership[substance["id"]]:
+                membership[substance["id"]].append(source["url"])
     args.output_dir.mkdir(parents=True, exist_ok=True)
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         results = list(
@@ -168,12 +223,20 @@ def main():
                 sources.values(),
             )
         )
-    report = {"batch": args.batch, "membership": membership, "sources": results}
-    (args.output_dir / f"{args.batch}.json").write_text(
-        json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
-    for result in results:
-        print(result["status"], result["url"])
+    by_url = {source["url"]: source for source in results}
+    for batch, membership in batches.items():
+        urls = dict.fromkeys(
+            url for candidates in membership.values() for url in candidates
+        )
+        batch_sources = [by_url[url] for url in urls]
+        report = {"batch": batch, "membership": membership, "sources": batch_sources}
+        (args.output_dir / f"{batch}.json").write_text(
+            json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        readable = sum(source["status"] != "failed" for source in batch_sources)
+        print(
+            f"{batch}: {len(membership)} entries, {readable}/{len(batch_sources)} candidate documents retrieved"
+        )
 
 
 if __name__ == "__main__":
