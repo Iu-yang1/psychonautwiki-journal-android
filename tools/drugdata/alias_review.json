@@ -1067,13 +1067,17 @@
       "reason": "药物类别、适应证或分类编码，不是具体药物的唯一身份名称；保留为检索词。"
     },
     "progesterone": {
-      "status": "pending",
-      "kind": "unresolved",
+      "status": "reviewed",
+      "kind": "shared_ingredient",
       "affectedIds": [
         "pw:b678cd4d44fb42c1d6a9",
         "pw:fdf9fb3e4a4c60000669"
       ],
-      "reason": "需要核对真实共享别名或错配来源。"
+      "reason": "黄体酮是两条的共同成分，单凭成分名称无法确定微粒化制剂。保留旧通用身份及精确的制剂名称。",
+      "reviewedDate": "2026-11-06",
+      "sourceUrls": [
+        "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98"
+      ]
     },
     "prostacyclinanalog": {
       "status": "reviewed",

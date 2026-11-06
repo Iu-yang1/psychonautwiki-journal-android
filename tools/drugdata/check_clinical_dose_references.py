@@ -26,7 +26,6 @@ SEARCH_TERMS = (
     "label-regimen",
     "guideline-regimen",
     "study-regimen",
-    "source needed",
 )
 
 

@@ -3253,53 +3253,133 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-lupron-ped"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "dailymed-lupron-ped",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+          "title": "DailyMed · Lupron Depot-Ped",
+          "region": "US",
+          "version": "SPL 97, 2025-11-14",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Leuprolide Acetate primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:7c9c5f3a613e4a41f027": {
@@ -3307,53 +3387,149 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b",
+            "dailymed-plan-b-pk"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b",
+            "dailymed-plan-b-pk"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b",
+            "dailymed-plan-b-pk"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b",
+            "dailymed-plan-b-pk"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b-pk"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b",
+            "dailymed-plan-b-pk"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b",
+            "dailymed-plan-b-pk"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-plan-b"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "dailymed-plan-b",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+          "title": "DailyMed · Plan B One-Step Drug Facts",
+          "region": "US",
+          "version": "Drug Facts, set 6ce6b40e",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "dailymed-plan-b-pk",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+          "title": "DailyMed · Plan B One-Step prescribing information",
+          "region": "US",
+          "version": "SPL 2, 2013",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Levonorgestrel primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:e9050f7ce735d633324c": {
@@ -3520,53 +3696,133 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-micronized-progesterone"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "dailymed-micronized-progesterone",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+          "title": "DailyMed · Micronized progesterone capsules",
+          "region": "US",
+          "version": "SPL 1, 2025-12-17",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Micronized Progesterone primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:ef222562fa3e551554df": {
@@ -3574,54 +3830,159 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl",
+            "emc-zoely"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl",
+            "emc-zoely"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl",
+            "emc-zoely"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl",
+            "emc-zoely"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl",
+            "emc-zoely"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl",
+            "emc-zoely"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "ansm-lutenyl"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
-      "aliasDecisions": []
+      "sources": [
+        {
+          "id": "ansm-lutenyl",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+          "title": "ANSM · Lutényl 5 mg",
+          "region": "FR",
+          "version": "2025-12-22",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "emc-zoely",
+          "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+          "title": "Zoely SmPC",
+          "region": "UK",
+          "version": "§2",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Nomegestrol Acetate primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+            "https://www.medicines.org.uk/emc/product/3038/smpc"
+          ]
+        }
+      ],
+      "aliasDecisions": [
+        {
+          "alias": "Zoely",
+          "action": "remove",
+          "reason": "该商品为雌二醇和醋酸诺美孕酮的复方，不能解析为单药。",
+          "sourceIds": [
+            "emc-zoely"
+          ]
+        }
+      ]
     },
     "pw:0936b8cdb83112173074": {
       "canonicalName": "Norethisterone Acetate",
@@ -3795,53 +4156,133 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "dailymed-oral-estradiol",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+          "title": "DailyMed · Estradiol tablets",
+          "region": "US",
+          "version": "2026-06",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Oral Estradiol primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:3e8d9ced68e3d18c0218": {
@@ -3849,53 +4290,133 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "emc-progynova"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "emc-progynova",
+          "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+          "title": "Progynova 2 mg SmPC",
+          "region": "UK",
+          "version": "2026-09-07",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Oral Estradiol Valerate primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://www.medicines.org.uk/emc/product/1417/smpc"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:cc9db16150f35a86b6d0": {
@@ -4053,53 +4574,166 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol",
+            "doll-2022",
+            "gass-2004"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol",
+            "doll-2022",
+            "gass-2004"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol",
+            "doll-2022",
+            "gass-2004"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol",
+            "doll-2022",
+            "gass-2004"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "gass-2004"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "doll-2022",
+            "gass-2004"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol",
+            "doll-2022",
+            "gass-2004"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol",
+            "doll-2022",
+            "gass-2004"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-oral-estradiol"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "dailymed-oral-estradiol",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+          "title": "DailyMed · Estradiol tablets",
+          "region": "US",
+          "version": "2026-06",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "doll-2022",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+          "title": "Doll et al. · Sublingual and oral estradiol",
+          "region": "US",
+          "version": "2022, PMID 34781041",
+          "accessedDate": "2026-11-06",
+          "sourceType": "human-study"
+        },
+        {
+          "id": "gass-2004",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+          "title": "Gass et al. · Buccal estradiol tablets",
+          "region": "US",
+          "version": "2004, PMID 15474758",
+          "accessedDate": "2026-11-06",
+          "sourceType": "human-study"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Sublingual/Buccal Estradiol primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+            "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+            "https://pubmed.ncbi.nlm.nih.gov/15474758/"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:703896cd10db9b99691b": {
@@ -4107,53 +4741,133 @@
       "batch": "endocrine-02",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-triptodur"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "dailymed-triptodur",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+          "title": "DailyMed · Triptodur",
+          "region": "US",
+          "version": "SPL 16, 2025-09-14",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Triptorelin primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:db3a77d67f9fec2d3d30": {
@@ -4161,53 +4875,165 @@
       "batch": "neurology-01",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl",
+            "trihexyphenidyl-pk-1995",
+            "dailymed-trihexyphenidyl-solution"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl",
+            "trihexyphenidyl-pk-1995",
+            "dailymed-trihexyphenidyl-solution"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl",
+            "trihexyphenidyl-pk-1995",
+            "dailymed-trihexyphenidyl-solution"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl",
+            "trihexyphenidyl-pk-1995",
+            "dailymed-trihexyphenidyl-solution"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl-solution"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "trihexyphenidyl-pk-1995"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl",
+            "trihexyphenidyl-pk-1995",
+            "dailymed-trihexyphenidyl-solution"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl",
+            "trihexyphenidyl-pk-1995",
+            "dailymed-trihexyphenidyl-solution"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "dailymed-trihexyphenidyl"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "dailymed-trihexyphenidyl",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
+          "title": "DailyMed · Trihexyphenidyl hydrochloride tablets",
+          "region": "US",
+          "version": "SPL 13, 2026-07-23",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        },
+        {
+          "id": "trihexyphenidyl-pk-1995",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7658345/",
+          "title": "Lee et al. · Trihexyphenidyl pharmacokinetics",
+          "region": "CA",
+          "version": "1995, PMID 7658345",
+          "accessedDate": "2026-11-06",
+          "sourceType": "human-study"
+        },
+        {
+          "id": "dailymed-trihexyphenidyl-solution",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e8e2ac3b-80dc-4449-9365-2586d6d57e10&type=display",
+          "title": "DailyMed · Trihexyphenidyl hydrochloride oral solution",
+          "region": "US",
+          "version": "Set e8e2ac3b, Contraindications",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Trihexyphenidyl Hydrochloride primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
+            "https://pubmed.ncbi.nlm.nih.gov/7658345/",
+            "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e8e2ac3b-80dc-4449-9365-2586d6d57e10&type=display"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:936aaa1831eef05edb82": {

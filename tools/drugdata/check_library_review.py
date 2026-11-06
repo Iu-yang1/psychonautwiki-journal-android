@@ -70,6 +70,21 @@ def validate(require_complete=False):
             "substances"
         ]
         assert {entry["id"]: entry["name"] for entry in entries} == frozen, locale
+        for entry in entries:
+            identifier = entry["id"]
+            if any(
+                field["status"] == "pending"
+                for field in manifest[identifier]["fields"].values()
+            ):
+                continue
+            for course in entry.get("timeCourse", []):
+                notes = course.get("notes", [])
+                assert isinstance(notes, list) and all(
+                    isinstance(note, str) for note in notes
+                ), (locale, identifier, "timeCourse.notes must be a list of strings")
+            assert all(
+                value.startswith("form:") for value in entry.get("formulationIds", [])
+            ), (locale, identifier, "invalid formulation identifier")
     assert (DATA / "medication_taxonomy.json").read_bytes() == (
         ROOT / "app/src/main/res/raw/medication_taxonomy.json"
     ).read_bytes()

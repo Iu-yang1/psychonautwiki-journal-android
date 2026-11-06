@@ -70977,13 +70977,12 @@
       "name": "Nomegestrol Acetate",
       "id": "pw:ef222562fa3e551554df",
       "commonNames": [
-        "Nomegestrol Acetate",
         "NOMAC",
-        "醋酸诺美孕酮",
-        "Nomegestrol",
-        "Zoely"
+        "Lutényl",
+        "Lutenyl",
+        "醋酸诺美孕酮"
       ],
-      "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+      "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -70995,205 +70994,125 @@
       "categories": [
         "endocrine",
         "hrt-related",
-        "prescription-medicine"
+        "prescription-medicine",
+        "hrt-progestogens"
       ],
-      "summary": "醋酸诺美孕酮是合成孕激素；其抗促性腺激素或抗雄相关作用须按具体制剂、适应证和证据谨慎解释。",
+      "summary": "A single-ingredient oral synthetic progestogen.",
       "clinicalInfo": {
         "atcCodes": [
           "G03DB04"
         ],
         "drugClass": [
-          "Progestin",
-          "Antigonadotropin"
+          "Progestogen"
         ],
         "indications": [
-          "Approved gynecologic or contraceptive indications vary by product",
-          "Feminizing hormone therapy evidence is limited"
+          "When other options are unsuitable, selected premenopausal menstrual disorders related to progesterone deficiency or cyclic therapy with an estrogen after menopause."
         ],
         "contraindications": [
-          "Use product-specific contraindications"
+          "Meningioma or history of it, known or suspected breast cancer, estrogen-dependent tumors, unexplained genital bleeding, untreated endometrial hyperplasia, venous thrombosis or thrombophilia, active or recent arterial thromboembolism, liver disease with unresolved abnormalities, porphyria or hypersensitivity."
         ],
         "majorWarnings": [
-          "Mood changes and fatigue",
-          "Bleeding-pattern changes",
-          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
-          "Evidence for benefits in feminizing HRT is limited and context-dependent"
+          "Meningioma risk increases with cumulative exposure and duration."
         ],
         "majorInteractions": [
-          "Enzyme-inducing drugs may reduce exposure",
-          "Combined estrogen products have additional interaction and thrombotic-risk considerations"
+          "Enzyme inducers such as rifampicin and certain antiseizure drugs may reduce the progestogen effect."
         ],
         "monitoring": [
-          "Clinical response and adverse effects",
-          "Bleeding pattern when relevant",
-          "Mood symptoms",
-          "Blood pressure and cardiometabolic risk factors when clinically indicated"
+          "Periodically reassess need for therapy and follow the French label for meningioma risk assessment and MRI."
         ],
         "sourceRefs": [
+          {
+            "title": "ANSM · Lutényl 5 mg",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
           {
             "title": "Zoely SmPC",
             "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "5.2 Pharmacokinetic properties"
-          },
-          {
-            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-            "sourceType": "systematic-review",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "SYSTEMATIC_REVIEW"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
-          "Progestin",
-          "Antigonadotropin"
+          "Progestogen"
         ],
         "mechanisms": [
-          "Progesterone receptor agonism",
-          "Possible suppression of gonadotropin secretion"
-        ],
-        "affectedHormones": [
-          "LH",
-          "FSH",
-          "Total testosterone indirectly"
-        ],
-        "monitoringLabs": [
-          "Clinical response and adverse effects",
-          "Bleeding pattern when relevant",
-          "Mood symptoms",
-          "Blood pressure and cardiometabolic risk factors when clinically indicated"
-        ],
-        "assayCaveats": [
-          "Routine serum progestin concentration monitoring is generally not established for these entries.",
-          "Hormone results must be interpreted with indication, formulation, timing, and co-administered estrogen."
-        ],
-        "safetySignals": [
-          "Mood changes and fatigue",
-          "Bleeding-pattern changes",
-          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
-          "Evidence for benefits in feminizing HRT is limited and context-dependent"
-        ],
-        "modelRoles": [
-          "progestin",
-          "possible-gonadotropin-suppressor",
-          "testosterone-suppression-candidate"
+          "Activates progesterone receptors."
         ],
         "sourceRefs": [
           {
-            "title": "Zoely SmPC",
-            "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+            "title": "ANSM · Lutényl 5 mg",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "5.2 Pharmacokinetic properties"
-          },
-          {
-            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-            "sourceType": "systematic-review",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "SYSTEMATIC_REVIEW"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "tablet",
-          "depotRelease": false,
-          "injectionIntervalSensitive": false,
-          "assayTimingSensitive": true,
+          "route": "Oral",
+          "formulation": "Tablet",
           "notes": [
-            "Evidence for use in a testosterone-suppression model is limited and context-dependent.",
-            "Pharmacodynamic gonadotropin effects do not equal plasma Tmax."
+            "Pharmacokinetics from the French label."
           ],
           "sourceRefs": [
             {
-              "title": "Zoely SmPC",
-              "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+              "title": "ANSM · Lutényl 5 mg",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "5.2 Pharmacokinetic properties"
-            },
-            {
-              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-              "sourceType": "systematic-review",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SYSTEMATIC_REVIEW"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "tmax": {
-            "min": 1.5,
+            "min": 2,
             "max": 2,
             "unit": "h",
-            "basis": "plasma concentration"
+            "basis": "After an oral dose"
           },
           "eliminationHalfLife": {
-            "min": 28,
-            "max": 83,
+            "min": 40,
+            "max": 40,
             "unit": "h",
-            "basis": "literature or label pharmacokinetics"
-          },
-          "timeToSteadyState": {
-            "min": 5,
-            "max": 5,
-            "unit": "day",
-            "basis": "label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "basis": "Approximate label value"
+          }
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Component dose in the cited combined oral contraceptive SmPC",
-          "population": "Adults; product- and indication-specific",
-          "route": "oral",
-          "formulation": "tablet",
-          "amountText": "2.5 mg nomegestrol acetate component per active tablet",
-          "scheduleText": "One active tablet daily for 24 days followed by 4 placebo tablets",
+          "indication": "Premenopausal menstrual disorders related to progesterone deficiency",
+          "population": "Premenopausal women",
+          "route": "Oral",
+          "formulation": "Tablet",
+          "amountText": "Usually 5 mg",
+          "scheduleText": "Orally daily on cycle days 16 through 25",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "2025-12-22",
           "sourceRefs": [
             {
-              "title": "Zoely SmPC",
-              "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+              "title": "ANSM · Lutényl 5 mg",
+              "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "5.2 Pharmacokinetic properties"
-            },
-            {
-              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-              "sourceType": "systematic-review",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SYSTEMATIC_REVIEW"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "ranges": [
             {
-              "min": null,
-              "max": null,
+              "min": 5,
+              "max": 5,
               "unit": "mg",
-              "basis": "component-dose",
-              "frequency": "once daily for 24 active days",
-              "rangeKind": "label-regimen",
-              "label": "Nomegestrol component",
-              "components": [
-                {
-                  "substance": "nomegestrol acetate",
-                  "min": 2.5,
-                  "max": 2.5,
-                  "unit": "mg"
-                }
-              ]
+              "basis": "daily-total",
+              "rangeKind": "label-regimen"
             }
           ]
         }
@@ -71244,7 +71163,45 @@
           }
         ]
       },
-      "roas": []
+      "roas": [
+        {
+          "name": "Oral"
+        }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid"
+      ],
+      "interactions": null,
+      "tdm": null,
+      "sourceRefs": [
+        {
+          "title": "ANSM · Lutényl 5 mg",
+          "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "Zoely SmPC",
+          "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ],
+      "searchTerms": [
+        "Nomegestrol"
+      ],
+      "displayName": "Nomegestrol acetate",
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Conjugated Estrogens",
@@ -73492,7 +73449,7 @@
         "口服雌二醇",
         "E2 oral"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -73503,217 +73460,107 @@
       "categories": [
         "endocrine",
         "hrt-related",
-        "prescription-medicine"
+        "prescription-medicine",
+        "hrt-estrogens"
       ],
-      "summary": "E2 oral 的制剂专属资料条目，重点记录药代时间进程、采样时点和检测方法注意事项。",
+      "summary": "Estradiol tablets for swallowing.",
       "clinicalInfo": {
         "atcCodes": [
           "G03CA03"
         ],
         "drugClass": [
-          "Oral estrogen",
-          "17beta-estradiol"
+          "Estrogen"
         ],
         "indications": [
-          "Approved estrogen indications vary by product",
-          "Feminizing hormone therapy guideline or literature context"
+          "Menopausal vasomotor symptoms, vulvovaginal atrophy and certain hypoestrogenic states.",
+          "The US label also includes selected palliative oncology indications and osteoporosis prevention in appropriate patients."
         ],
         "contraindications": [
-          "Use product-specific estrogen contraindications"
+          "Pregnancy, unexplained genital bleeding, estrogen-dependent tumors, current or past venous thrombosis, recent arterial thrombosis, liver disease or hypersensitivity. Known, suspected or previous breast cancer is also contraindicated except for selected metastatic palliative use."
         ],
         "majorWarnings": [
-          "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
-          "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
-          "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+          "Systemic estrogen may increase thromboembolism and stroke risk. Unopposed estrogen raises endometrial cancer risk in people with a uterus."
         ],
         "majorInteractions": [
-          "Enzyme inducers or inhibitors can alter exposure depending on route and formulation.",
-          "Estrogens can alter thyroid-binding globulin and may affect interpretation or requirements of thyroid therapy.",
-          "Estrogens can reduce lamotrigine concentrations in some contexts."
+          "CYP3A4 inducers or inhibitors may alter estrogen exposure."
         ],
         "monitoring": [
-          "Clinical response and adverse effects",
-          "Estradiol and total testosterone when clinically indicated",
-          "Blood pressure",
-          "Cardiometabolic risk factors when clinically indicated",
-          "Prolactin only when symptoms, regimen, or local guidance indicate"
+          "Evaluate abnormal bleeding and reassess therapy periodically. Check thyroid function in patients taking thyroid replacement."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Activella label",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+            "title": "DailyMed · Estradiol tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics"
-          },
-          {
-            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-            "sourceType": "clinical-guideline",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "CLINICAL_GUIDELINE"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
-          "Estrogen",
-          "Estrogen receptor agonist"
+          "Estrogen"
         ],
         "mechanisms": [
-          "Estrogen receptor alpha and beta agonism",
-          "Feedback effects on hypothalamic-pituitary-gonadal signaling"
-        ],
-        "affectedHormones": [
-          "Estradiol",
-          "Estrone",
-          "LH",
-          "FSH",
-          "Total testosterone",
-          "SHBG"
-        ],
-        "monitoringLabs": [
-          "Clinical response and adverse effects",
-          "Estradiol and total testosterone when clinically indicated",
-          "Blood pressure",
-          "Cardiometabolic risk factors when clinically indicated",
-          "Prolactin only when symptoms, regimen, or local guidance indicate"
-        ],
-        "assayCaveats": [
-          "Sampling time, route, formulation, and time since last dose can materially change measured estradiol.",
-          "Immunoassays and LC-MS/MS methods may not agree, particularly at low concentrations or with oral estrogen metabolites.",
-          "The laboratory method and local reference interval must be recorded with each result."
-        ],
-        "safetySignals": [
-          "Venous thromboembolism and cardiovascular risk context",
-          "Blood pressure and migraine changes",
-          "Breast and endometrial safety context",
-          "Liver and gallbladder adverse effects"
-        ],
-        "modelRoles": [
-          "e2-source",
-          "estrogen-receptor-agonist",
-          "gonadotropin-suppressor"
+          "Acts through estrogen receptors."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Activella label",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+            "title": "DailyMed · Estradiol tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics"
-          },
-          {
-            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-            "sourceType": "clinical-guideline",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "CLINICAL_GUIDELINE"
-          },
-          {
-            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
-            "sourceType": "assay-study",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "HUMAN_STUDY",
-            "note": "Assay bias can depend on formulation and assay platform."
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "micronized tablet",
-          "depotRelease": false,
-          "injectionIntervalSensitive": false,
-          "assayTimingSensitive": true,
+          "route": "Oral",
+          "formulation": "Tablet",
           "notes": [
-            "Values are label-derived from an oral estradiol combination product and may vary by product.",
-            "First-pass metabolism produces substantial estrone and conjugated estrogen exposure."
+            "Swallowed estradiol undergoes hepatic first-pass metabolism and interconverts with estrone."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed Activella label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+              "title": "DailyMed · Estradiol tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
-          ],
-          "tmax": {
-            "min": 5,
-            "max": 8,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "eliminationHalfLife": {
-            "min": 12,
-            "max": 14,
-            "unit": "h",
-            "basis": "literature or label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+          ]
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Feminizing hormone therapy in the cited UCSF guideline",
-          "population": "Adults; product- and indication-specific",
-          "route": "oral",
-          "formulation": "micronized tablet",
-          "amountText": "1-8 mg estradiol total daily across the initial-low through maximum UCSF guideline entries",
-          "scheduleText": "Daily; divided twice-daily administration is listed above 2 mg",
-          "sourceType": "clinical-guideline",
-          "evidenceLevel": "CLINICAL_GUIDELINE",
+          "indication": "Menopausal vasomotor symptoms or vulvovaginal atrophy",
+          "population": "Postmenopausal women",
+          "route": "Oral",
+          "formulation": "Tablet",
+          "amountText": "Initial 1–2 mg",
+          "scheduleText": "Orally once daily with cyclic administration per label",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "2026-06",
           "sourceRefs": [
             {
-              "title": "UCSF Overview of feminizing hormone therapy",
-              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
-              "sourceType": "clinical-guideline",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE"
-            },
-            {
-              "title": "DailyMed Activella label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+              "title": "DailyMed · Estradiol tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
-            },
-            {
-              "title": "MtF.wiki: Estradiol tablets",
-              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol",
-              "sourceType": "community-reference",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
-              "note": "Used as a Chinese-language formulation and route index; numeric regimens require higher-authority corroboration."
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "ranges": [
             {
               "min": 1,
-              "max": 4,
+              "max": 2,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "daily",
-              "rangeKind": "guideline-regimen",
-              "label": "Initial-low through initial range",
-              "components": []
-            },
-            {
-              "min": 8,
-              "max": 8,
-              "unit": "mg",
-              "basis": "daily-total",
-              "frequency": "divided twice daily",
-              "rangeKind": "guideline-regimen",
-              "label": "Guideline maximum",
-              "components": []
+              "rangeKind": "initial"
             }
           ]
         }
@@ -73764,16 +73611,44 @@
           }
         ]
       },
-      "roas": []
+      "roas": [
+        {
+          "name": "Oral"
+        }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid"
+      ],
+      "interactions": null,
+      "tdm": null,
+      "sourceRefs": [
+        {
+          "title": "DailyMed · Estradiol tablets",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ],
+      "displayName": "Oral estradiol",
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Oral Estradiol Valerate",
       "id": "pw:3e8d9ced68e3d18c0218",
       "commonNames": [
+        "Progynova",
         "Estradiol valerate tablet",
         "Oral EV",
-        "口服戊酸雌二醇",
-        "Progynova"
+        "口服戊酸雌二醇"
       ],
       "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
       "isApproved": true,
@@ -73786,201 +73661,113 @@
       "categories": [
         "endocrine",
         "hrt-related",
-        "prescription-medicine"
+        "prescription-medicine",
+        "hrt-estrogens"
       ],
-      "summary": "口服戊酸雌二醇是雌二醇前药制剂；口服首过代谢、雌酮暴露和检测时点会影响化验解释。",
+      "summary": "Estradiol valerate is an estradiol ester. Oral strength is expressed as estradiol valerate.",
       "clinicalInfo": {
         "atcCodes": [
           "G03CA03"
         ],
         "drugClass": [
-          "Oral estrogen",
-          "Estradiol ester prodrug"
+          "Estrogen"
         ],
         "indications": [
-          "Approved estrogen indications vary by country and product",
-          "Feminizing hormone therapy literature context"
+          "Symptoms of estrogen deficiency after menopause.",
+          "Postmenopausal osteoporosis prevention in patients at high fracture risk when other approved medicines are unsuitable."
         ],
         "contraindications": [
-          "Use product-specific estrogen contraindications"
+          "Breast cancer or estrogen-dependent malignancy, unexplained genital bleeding, untreated endometrial hyperplasia, venous thromboembolism or thrombophilia, active or recent arterial thromboembolic disease, liver disease with unresolved abnormalities, porphyria or hypersensitivity."
         ],
         "majorWarnings": [
-          "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
-          "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
-          "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+          "Assess thrombotic and breast cancer risks before therapy. Evaluate endometrial protection in patients with a uterus."
         ],
         "majorInteractions": [
-          "Enzyme inducers or inhibitors can alter exposure depending on route and formulation.",
-          "Estrogens can alter thyroid-binding globulin and may affect interpretation or requirements of thyroid therapy.",
-          "Estrogens can reduce lamotrigine concentrations in some contexts."
+          "Enzyme inducers such as carbamazepine, rifampicin and St John’s wort may reduce estrogen exposure."
         ],
         "monitoring": [
-          "Clinical response and adverse effects",
-          "Estradiol and total testosterone when clinically indicated",
-          "Blood pressure",
-          "Cardiometabolic risk factors when clinically indicated",
-          "Prolactin only when symptoms, regimen, or local guidance indicate"
+          "Periodically reassess benefits and risks, and investigate persistent or new abnormal bleeding."
         ],
         "sourceRefs": [
           {
-            "title": "Progynova 2 mg tablets SmPC",
+            "title": "Progynova 2 mg SmPC",
             "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "5.2 Pharmacokinetic properties"
-          },
-          {
-            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-            "sourceType": "clinical-guideline",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "CLINICAL_GUIDELINE"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
-          "Estrogen",
-          "Estrogen receptor agonist"
+          "Estrogen"
         ],
         "mechanisms": [
-          "Estrogen receptor alpha and beta agonism",
-          "Feedback effects on hypothalamic-pituitary-gonadal signaling"
-        ],
-        "affectedHormones": [
-          "Estradiol",
-          "Estrone",
-          "LH",
-          "FSH",
-          "Total testosterone",
-          "SHBG"
-        ],
-        "monitoringLabs": [
-          "Clinical response and adverse effects",
-          "Estradiol and total testosterone when clinically indicated",
-          "Blood pressure",
-          "Cardiometabolic risk factors when clinically indicated",
-          "Prolactin only when symptoms, regimen, or local guidance indicate"
-        ],
-        "assayCaveats": [
-          "Sampling time, route, formulation, and time since last dose can materially change measured estradiol.",
-          "Immunoassays and LC-MS/MS methods may not agree, particularly at low concentrations or with oral estrogen metabolites.",
-          "The laboratory method and local reference interval must be recorded with each result."
-        ],
-        "safetySignals": [
-          "Venous thromboembolism and cardiovascular risk context",
-          "Blood pressure and migraine changes",
-          "Breast and endometrial safety context",
-          "Liver and gallbladder adverse effects"
-        ],
-        "modelRoles": [
-          "e2-source",
-          "estrogen-receptor-agonist",
-          "gonadotropin-suppressor"
+          "Hydrolyzed to estradiol."
         ],
         "sourceRefs": [
           {
-            "title": "Progynova 2 mg tablets SmPC",
+            "title": "Progynova 2 mg SmPC",
             "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "5.2 Pharmacokinetic properties"
-          },
-          {
-            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-            "sourceType": "clinical-guideline",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "CLINICAL_GUIDELINE"
-          },
-          {
-            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
-            "sourceType": "assay-study",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "HUMAN_STUDY",
-            "note": "Assay bias can depend on formulation and assay platform."
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "film-coated tablet",
-          "depotRelease": false,
-          "injectionIntervalSensitive": false,
-          "assayTimingSensitive": true,
+          "route": "Oral",
+          "formulation": "Tablet",
           "notes": [
-            "The cited 27-hour value is an excretion half-life reported in the SmPC and should not be treated as a universal plasma estradiol terminal half-life.",
-            "A reliable product-independent Tmax was not entered."
+            "A second peak may occur around 6–8 hours."
           ],
           "sourceRefs": [
             {
-              "title": "Progynova 2 mg tablets SmPC",
+              "title": "Progynova 2 mg SmPC",
               "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "5.2 Pharmacokinetic properties"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "eliminationHalfLife": {
-            "min": 27,
-            "max": 27,
+          "tmax": {
+            "min": 0.5,
+            "max": 3,
             "unit": "h",
-            "basis": "literature or label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "basis": "First plasma estradiol peak after swallowing"
+          }
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Menopausal symptoms in the cited SmPC",
-          "population": "Adults; product- and indication-specific",
-          "route": "oral",
-          "formulation": "film-coated tablet",
-          "amountText": "1-2 mg estradiol valerate daily",
-          "scheduleText": "Continuous once-daily administration in the cited SmPC",
+          "indication": "Postmenopausal estrogen deficiency symptoms",
+          "population": "Postmenopausal women",
+          "route": "Oral",
+          "formulation": "Tablet",
+          "amountText": "Initial 1 mg estradiol valerate",
+          "scheduleText": "Orally once daily, continuously",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "2026-09-07",
           "sourceRefs": [
             {
-              "title": "Progynova 2 mg tablets SmPC",
+              "title": "Progynova 2 mg SmPC",
               "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "5.2 Pharmacokinetic properties"
-            },
-            {
-              "title": "UCSF Overview of feminizing hormone therapy",
-              "url": "https://transcare.ucsf.edu/guidelines/feminizing-hormone-therapy",
-              "sourceType": "clinical-guideline",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE"
-            },
-            {
-              "title": "MtF.wiki: Oral estradiol valerate",
-              "url": "https://mtf.wiki/zh-cn/docs/medicine/estrogen/estradiol-valerate",
-              "sourceType": "community-reference",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SUPPLEMENTARY_REFERENCE",
-              "note": "Used as a Chinese-language formulation index; route-specific evidence remains limited."
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "ranges": [
             {
               "min": 1,
-              "max": 2,
+              "max": 1,
               "unit": "mg",
               "basis": "daily-total",
-              "frequency": "once daily",
-              "rangeKind": "label-regimen",
-              "label": "SmPC regimen",
-              "components": []
+              "rangeKind": "initial"
             }
           ]
         }
@@ -74031,19 +73818,50 @@
           }
         ]
       },
-      "roas": []
+      "roas": [
+        {
+          "name": "Oral"
+        }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid"
+      ],
+      "interactions": null,
+      "tdm": null,
+      "sourceRefs": [
+        {
+          "title": "Progynova 2 mg SmPC",
+          "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ],
+      "displayName": "Oral estradiol valerate",
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Sublingual/Buccal Estradiol",
       "id": "pw:4202d238dd1a07149f19",
       "commonNames": [
-        "Sublingual estradiol",
-        "Buccal estradiol",
-        "Sublingual E2",
+        "Sublingual Estradiol",
+        "Buccal Estradiol",
         "舌下雌二醇",
-        "颊含雌二醇"
+        "颊黏膜雌二醇",
+        "颊含雌二醇",
+        "含服雌二醇",
+        "Sublingual E2",
+        "Buccal E2"
       ],
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
       "isApproved": false,
       "crossTolerances": [],
       "toxicities": [
@@ -74054,196 +73872,143 @@
       "categories": [
         "endocrine",
         "hrt-related",
-        "prescription-medicine"
+        "prescription-medicine",
+        "hrt-estrogens"
       ],
-      "summary": "颊含雌二醇 的制剂专属资料条目，重点记录药代时间进程、采样时点和检测方法注意事项。",
+      "summary": "This entry records estradiol administered sublingually or buccally. Each route has separate study evidence.",
       "clinicalInfo": {
         "atcCodes": [
           "G03CA03"
         ],
         "drugClass": [
-          "Sublingual estrogen",
-          "Buccal estrogen",
-          "17beta-estradiol"
+          "Estrogen"
         ],
         "indications": [
-          "Approved estrogen indications vary by product",
-          "Feminizing hormone therapy guideline or literature context"
+          "Sublingual estradiol has been studied in a single-dose pharmacokinetic trial in transgender women.",
+          "Specific buccal tablets were studied in a short-term postmenopausal hot-flush trial."
         ],
         "contraindications": [
-          "Use product-specific estrogen contraindications"
+          "Systemic estrogen contraindications include pregnancy, thrombosis, unexplained genital bleeding, estrogen-dependent tumors, liver disease or hypersensitivity. Consult the specific product restrictions."
         ],
         "majorWarnings": [
-          "Thromboembolic and cardiovascular risk depends on patient factors, route, formulation, and indication.",
-          "Estrogen exposure can affect breast and endometrial tissue; product-specific contraindications and warnings apply.",
-          "Hepatic disease and hormone-sensitive malignancy require product-specific clinical review."
+          "Thrombosis and stroke are important systemic estrogen risks."
         ],
         "majorInteractions": [
-          "Enzyme inducers or inhibitors can alter exposure depending on route and formulation.",
-          "Estrogens can alter thyroid-binding globulin and may affect interpretation or requirements of thyroid therapy.",
-          "Estrogens can reduce lamotrigine concentrations in some contexts."
+          "The oral tablet label reports that CYP3A4 inducers or inhibitors can alter systemic exposure. The magnitude with mucosal products is uncertain."
         ],
         "monitoring": [
-          "Clinical response and adverse effects",
-          "Estradiol and total testosterone when clinically indicated",
-          "Blood pressure",
-          "Cardiometabolic risk factors when clinically indicated",
-          "Prolactin only when symptoms, regimen, or local guidance indicate"
+          "Assess systemic estrogen risks and abnormal bleeding as appropriate for the indication."
         ],
         "sourceRefs": [
           {
-            "title": "Pharmacokinetics of Sublingual Versus Oral Estradiol in Transgender Women",
+            "title": "DailyMed · Estradiol tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "Doll et al. · Sublingual and oral estradiol",
             "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
-            "sourceType": "human-pk-study",
-            "accessedDate": "2026-06-24",
+            "sourceType": "human-study",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "HUMAN_STUDY"
           },
           {
-            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-            "sourceType": "clinical-guideline",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "CLINICAL_GUIDELINE"
+            "title": "Gass et al. · Buccal estradiol tablets",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+            "sourceType": "human-study",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "HUMAN_STUDY"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
-          "Estrogen",
-          "Estrogen receptor agonist"
+          "Estrogen"
         ],
         "mechanisms": [
-          "Estrogen receptor alpha and beta agonism",
-          "Feedback effects on hypothalamic-pituitary-gonadal signaling"
-        ],
-        "affectedHormones": [
-          "Estradiol",
-          "Estrone",
-          "LH",
-          "FSH",
-          "Total testosterone",
-          "SHBG"
-        ],
-        "monitoringLabs": [
-          "Clinical response and adverse effects",
-          "Estradiol and total testosterone when clinically indicated",
-          "Blood pressure",
-          "Cardiometabolic risk factors when clinically indicated",
-          "Prolactin only when symptoms, regimen, or local guidance indicate"
-        ],
-        "assayCaveats": [
-          "Sampling time, route, formulation, and time since last dose can materially change measured estradiol.",
-          "Immunoassays and LC-MS/MS methods may not agree, particularly at low concentrations or with oral estrogen metabolites.",
-          "The laboratory method and local reference interval must be recorded with each result."
-        ],
-        "safetySignals": [
-          "Venous thromboembolism and cardiovascular risk context",
-          "Blood pressure and migraine changes",
-          "Breast and endometrial safety context",
-          "Liver and gallbladder adverse effects"
-        ],
-        "modelRoles": [
-          "e2-source",
-          "estrogen-receptor-agonist",
-          "gonadotropin-suppressor"
+          "Acts through estrogen receptors."
         ],
         "sourceRefs": [
           {
-            "title": "Pharmacokinetics of Sublingual Versus Oral Estradiol in Transgender Women",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
-            "sourceType": "human-pk-study",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "HUMAN_STUDY"
-          },
-          {
-            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-            "sourceType": "clinical-guideline",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "CLINICAL_GUIDELINE"
-          },
-          {
-            "title": "Oral estrogen leads to falsely low concentrations of estradiol in a common immunoassay",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/35015702/",
-            "sourceType": "assay-study",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "HUMAN_STUDY",
-            "note": "Assay bias can depend on formulation and assay platform."
+            "title": "DailyMed · Estradiol tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "sublingual",
-          "formulation": "micronized tablet",
-          "depotRelease": false,
-          "injectionIntervalSensitive": false,
-          "assayTimingSensitive": true,
+          "route": "Sublingual",
+          "formulation": "Sublingual estradiol",
           "notes": [
-            "Rapid peaks and steep early declines make sampling time especially important.",
-            "Some of the dose may be swallowed; exposure varies with technique and formulation."
+            "Sampling continued for 8 hours."
           ],
           "sourceRefs": [
             {
-              "title": "Pharmacokinetics of Sublingual Versus Oral Estradiol in Transgender Women",
+              "title": "Doll et al. · Sublingual and oral estradiol",
               "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
-              "sourceType": "human-pk-study",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "HUMAN_STUDY"
-            },
-            {
-              "title": "Pharmacokinetics after transbuccal administration to postmenopausal women",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/12841880/",
-              "sourceType": "human-pk-study",
-              "accessedDate": "2026-06-24",
+              "sourceType": "human-study",
+              "accessedDate": "2026-11-06",
               "evidenceLevel": "HUMAN_STUDY"
             }
           ],
           "tmax": {
-            "min": 0.5,
+            "min": 1,
             "max": 1,
             "unit": "h",
-            "basis": "plasma concentration"
+            "basis": "Observed LC–MS/MS sampling peak after one 1 mg dose in 10 transgender women"
           }
+        },
+        {
+          "route": "Buccal",
+          "formulation": "Investigational buccal tablet",
+          "notes": [
+            "The hot-flush trial lasted 28 days. Its abstract reports neither single-dose time to peak nor half-life."
+          ],
+          "sourceRefs": [
+            {
+              "title": "Gass et al. · Buccal estradiol tablets",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+              "sourceType": "human-study",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "HUMAN_STUDY"
+            }
+          ]
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Human pharmacokinetic study regimen",
-          "population": "Adults; product- and indication-specific",
-          "route": "sublingual",
-          "formulation": "micronized tablet used sublingually or buccally",
-          "amountText": "1 mg single sublingual estradiol dose in the cited PK study",
-          "scheduleText": "Single-dose crossover pharmacokinetic study",
-          "sourceType": "human-pk-study",
+          "indication": "Randomized trial of postmenopausal hot flushes",
+          "population": "99 postmenopausal women randomized",
+          "route": "Buccal",
+          "formulation": "Investigational 17β-estradiol buccal tablet",
+          "amountText": "Trial tablet strengths of 0.05, 0.1, 0.2 or 0.4 mg, plus placebo",
+          "scheduleText": "28-day treatment period; the abstract does not specify dose frequency",
+          "sourceType": "human-study",
           "evidenceLevel": "HUMAN_STUDY",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "2004, PMID 15474758",
           "sourceRefs": [
             {
-              "title": "Pharmacokinetics of Sublingual Versus Oral Estradiol in Transgender Women",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
-              "sourceType": "human-pk-study",
-              "accessedDate": "2026-06-24",
+              "title": "Gass et al. · Buccal estradiol tablets",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+              "sourceType": "human-study",
+              "accessedDate": "2026-11-06",
               "evidenceLevel": "HUMAN_STUDY"
-            },
-            {
-              "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-              "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-              "sourceType": "clinical-guideline",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "CLINICAL_GUIDELINE"
             }
           ],
           "ranges": [
             {
-              "min": 1,
-              "max": 1,
+              "min": 0.05,
+              "max": 0.4,
               "unit": "mg",
-              "basis": "per-dose",
-              "frequency": "single study dose",
-              "rangeKind": "study-regimen",
-              "label": "PK study regimen",
-              "components": [],
-              "note": "Rapid peak exposure makes sampling time essential."
+              "basis": "tablet-strength",
+              "rangeKind": "study-regimen"
             }
           ]
         }
@@ -74294,7 +74059,53 @@
           }
         ]
       },
-      "roas": []
+      "roas": [
+        {
+          "name": "Sublingual"
+        },
+        {
+          "name": "Buccal"
+        }
+      ],
+      "recordingUnits": {
+        "SUBLINGUAL": "mg",
+        "BUCCAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid"
+      ],
+      "interactions": null,
+      "tdm": null,
+      "sourceRefs": [
+        {
+          "title": "DailyMed · Estradiol tablets",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "Doll et al. · Sublingual and oral estradiol",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+          "sourceType": "human-study",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "HUMAN_STUDY"
+        },
+        {
+          "title": "Gass et al. · Buccal estradiol tablets",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+          "sourceType": "human-study",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "HUMAN_STUDY"
+        }
+      ],
+      "displayName": "Sublingual / buccal estradiol",
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Bicalutamide",
@@ -74555,9 +74366,11 @@
       "id": "pw:dbb4ffb9b2d269d66f4a",
       "commonNames": [
         "Leuprolide",
-        "Lupron Depot-PED",
-        "亮丙瑞林",
-        "醋酸亮丙瑞林"
+        "Leuprorelin",
+        "Leuprorelin acetate",
+        "Lupron Depot-Ped",
+        "醋酸亮丙瑞林",
+        "亮丙瑞林"
       ],
       "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
       "isApproved": true,
@@ -74565,161 +74378,112 @@
         "endocrine",
         "hrt-related",
         "prescription-medicine",
+        "hrt-gnrh",
         "gnrh-agonist"
       ],
-      "summary": "醋酸亮丙瑞林是 GnRH 激动剂；持续给药会先产生短暂刺激，随后下调受体并抑制 LH、FSH 和性腺类固醇。本条目区分产品标签的中枢性性早熟用途与青春期抑制/HRT 资料语境。",
+      "summary": "Intramuscular leuprolide acetate depots come in distinct strengths and administration intervals.",
       "clinicalInfo": {
         "atcCodes": [
           "L02AE02"
         ],
         "drugClass": [
-          "GnRH agonist",
-          "Gonadal-axis suppressor"
+          "GnRH agonist"
         ],
         "indications": [
-          "Central precocious puberty under the cited pediatric label",
-          "Puberty suppression requires specialist guideline-based care"
+          "Central precocious puberty"
         ],
         "contraindications": [
-          "Pregnancy",
-          "Hypersensitivity to GnRH-related products or formulation components"
+          "Pregnancy or hypersensitivity to GnRH, GnRH agonists or formulation ingredients."
         ],
         "majorWarnings": [
-          "Initial gonadotropin and sex-steroid flare",
-          "Psychiatric symptoms, seizures, and intracranial hypertension are product-label safety concerns."
+          "Hormones can rise transiently at initiation. Psychiatric symptoms, convulsions, severe skin reactions and intracranial hypertension in children have also been reported."
         ],
         "majorInteractions": [
-          "No routine plasma concentration TDM is established."
+          "The label reports no formal pharmacokinetic interaction studies. Consider seizure risk with concomitant medicines that may lower seizure threshold."
         ],
         "monitoring": [
-          "LH",
-          "FSH",
-          "Estradiol or testosterone",
-          "Pubertal stage",
-          "Growth velocity",
-          "Bone age"
+          "Check LH or sex steroids per the product label and follow height and bone age."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed LUPRON DEPOT-PED label",
+            "title": "DailyMed · Lupron Depot-Ped",
             "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
-          "GnRH agonist",
-          "Hypothalamic-pituitary-gonadal axis suppressor"
+          "GnRH agonist"
         ],
         "mechanisms": [
-          "Initial GnRH receptor stimulation followed by receptor downregulation and suppression of LH and FSH."
-        ],
-        "affectedHormones": [
-          "LH",
-          "FSH",
-          "Total testosterone",
-          "Estradiol"
-        ],
-        "monitoringLabs": [
-          "LH",
-          "FSH",
-          "Total testosterone or estradiol",
-          "Pubertal stage, growth velocity, and bone age"
-        ],
-        "assayCaveats": [
-          "Hormone results depend on depot formulation, time since injection, suppression phase, and assay method."
-        ],
-        "safetySignals": [
-          "Initial hormone flare",
-          "Bone-density effects with prolonged suppression",
-          "Mood or psychiatric symptoms",
-          "Injection-site reactions"
-        ],
-        "modelRoles": [
-          "gnrh-axis-suppressor",
-          "lh-fsh-suppressor",
-          "gonadal-sex-steroid-suppressor",
-          "initial-agonist-flare"
+          "Continued exposure downregulates the pituitary response to GnRH and reduces gonadotropin secretion."
         ],
         "sourceRefs": [
           {
-            "title": "Endocrine Treatment of Gender-Dysphoric/Gender-Incongruent Persons",
-            "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
-            "sourceType": "clinical-guideline",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "CLINICAL_GUIDELINE"
+            "title": "DailyMed · Lupron Depot-Ped",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "intramuscular",
-          "formulation": "1-, 3-, or 6-month depot injection",
-          "tmax": {
-            "min": 1,
-            "max": 4,
-            "unit": "h",
-            "basis": "label pharmacokinetics",
-            "note": "Product-specific peak times across cited depot formulations."
-          },
-          "durationOfAction": {
-            "min": 1,
-            "max": 6,
-            "unit": "month",
-            "basis": "formulation delivery or clinical effect"
-          },
-          "depotRelease": true,
-          "injectionIntervalSensitive": true,
-          "assayTimingSensitive": true,
+          "route": "Intramuscular",
+          "formulation": "7.5 mg monthly depot",
           "notes": [
-            "An initial agonist flare precedes sustained suppression.",
-            "Depot strengths and release characteristics are not interchangeable."
+            "Peak timing is from adults receiving the monthly depot."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed LUPRON DEPOT-PED label",
+              "title": "DailyMed · Lupron Depot-Ped",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 4,
+            "max": 4,
+            "unit": "h",
+            "basis": "Approximate mean after one adult IM dose. Assay also detected the major inactive metabolite."
+          }
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Central precocious puberty under the cited pediatric label",
-          "population": "Pediatric product-label population",
-          "route": "intramuscular",
-          "formulation": "product-specific depot injection",
-          "amountText": "7.5-45 mg across product-specific LUPRON DEPOT-PED strengths",
-          "scheduleText": "Every 1, 3, or 6 months according to the selected formulation",
+          "indication": "Central precocious puberty",
+          "population": "Children treated according to the US pediatric label",
+          "route": "Intramuscular",
+          "formulation": "45 mg intramuscular depot",
+          "amountText": "45 mg leuprolide acetate per injection",
+          "scheduleText": "Intramuscularly once every 24 weeks",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL 97, 2025-11-14",
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Lupron Depot-Ped",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
           "ranges": [
             {
-              "min": 7.5,
+              "min": 45,
               "max": 45,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "product-specific 1-, 3-, or 6-month interval",
-              "rangeKind": "label-regimen",
-              "label": "CPP label formulations",
-              "note": "Strengths and intervals are not interchangeable."
-            }
-          ],
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This pediatric label index is not an HRT dosing recommendation.",
-          "sourceRefs": [
-            {
-              "title": "DailyMed LUPRON DEPOT-PED label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL"
+              "rangeKind": "label-regimen"
             }
           ]
         }
@@ -74768,18 +74532,37 @@
           }
         ]
       },
-      "roas": [],
+      "roas": [
+        {
+          "name": "Intramuscular"
+        }
+      ],
       "sourceRefs": [
         {
-          "title": "DailyMed LUPRON DEPOT-PED label",
+          "title": "DailyMed · Lupron Depot-Ped",
           "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-24",
+          "accessedDate": "2026-11-06",
           "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
+      "recordingUnits": {
+        "INTRAMUSCULAR": "mg"
+      },
+      "formulationIds": [
+        "form:depot-injection"
+      ],
+      "interactions": null,
+      "tdm": null,
+      "displayName": "Leuprolide acetate",
       "searchTerms": [
         "GnRHa"
+      ],
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
       ]
     },
     {
@@ -75225,150 +75008,112 @@
         "endocrine",
         "hrt-related",
         "prescription-medicine",
+        "hrt-gnrh",
         "gnrh-agonist"
       ],
-      "summary": "曲普瑞林是长效 GnRH 激动剂。本条目采用 TRIPTODUR 中枢性性早熟产品标签记录 24 周制剂，并将青春期抑制语境单独标识。",
+      "summary": "The cited product is a triptorelin pamoate depot with labeled strength expressed as triptorelin.",
       "clinicalInfo": {
         "atcCodes": [
           "L02AE04"
         ],
         "drugClass": [
-          "GnRH agonist",
-          "Extended-release injection"
+          "GnRH agonist"
         ],
         "indications": [
-          "Central precocious puberty under the cited pediatric label",
-          "Puberty suppression requires specialist guideline-based care"
+          "Central precocious puberty"
         ],
         "contraindications": [
-          "Pregnancy",
-          "Hypersensitivity"
+          "Pregnancy or hypersensitivity to GnRH, GnRH agonists or formulation ingredients."
         ],
         "majorWarnings": [
-          "Initial hormone flare",
-          "Psychiatric symptoms, seizures, intracranial hypertension, and severe skin reactions are label concerns."
+          "Hormones can rise transiently at initiation. Psychiatric symptoms, convulsions, severe skin reactions and intracranial hypertension in children have also been reported."
         ],
-        "majorInteractions": [],
+        "majorInteractions": [
+          "The label cautions about concomitant use of drugs that raise prolactin."
+        ],
         "monitoring": [
-          "LH",
-          "FSH",
-          "Estradiol or testosterone",
-          "Pubertal stage",
-          "Growth and bone age"
+          "Check LH or sex steroids per the product label and follow height and bone age."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed TRIPTODUR label",
+            "title": "DailyMed · Triptodur",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
-          "GnRH agonist",
-          "Hypothalamic-pituitary-gonadal axis suppressor"
+          "GnRH agonist"
         ],
         "mechanisms": [
-          "Initial stimulation followed by receptor downregulation and suppression of LH and FSH."
-        ],
-        "affectedHormones": [
-          "LH",
-          "FSH",
-          "Total testosterone",
-          "Estradiol"
-        ],
-        "monitoringLabs": [
-          "LH",
-          "FSH",
-          "Total testosterone or estradiol",
-          "Pubertal stage and growth"
-        ],
-        "assayCaveats": [
-          "The 24-week depot interval and sample timing must be recorded."
-        ],
-        "safetySignals": [
-          "Initial hormone flare",
-          "Injection-site reactions",
-          "Bone-health context",
-          "Psychiatric symptoms"
-        ],
-        "modelRoles": [
-          "gnrh-axis-suppressor",
-          "lh-fsh-suppressor",
-          "gonadal-sex-steroid-suppressor",
-          "depot-release"
+          "Continued exposure downregulates the pituitary response to GnRH and reduces gonadotropin secretion."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed TRIPTODUR label",
+            "title": "DailyMed · Triptodur",
             "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "intramuscular",
-          "formulation": "24-week extended-release injection",
-          "durationOfAction": {
-            "min": 24,
-            "max": 24,
-            "unit": "week",
-            "basis": "formulation delivery or clinical effect"
-          },
-          "depotRelease": true,
-          "injectionIntervalSensitive": true,
-          "assayTimingSensitive": true,
+          "route": "Intramuscular",
+          "formulation": "22.5 mg IM depot",
           "notes": [
-            "Initial agonist flare precedes sustained suppression.",
-            "Renal or hepatic impairment can increase exposure to non-depot intravenous triptorelin; depot interpretation remains product-specific."
+            "Peak timing is from the pediatric study of this 24-week depot."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed TRIPTODUR label",
+              "title": "DailyMed · Triptodur",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
-          ]
+          ],
+          "tmax": {
+            "min": 4,
+            "max": 4,
+            "unit": "h",
+            "basis": "After IM dosing in children aged 2–9 with precocious puberty"
+          }
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Central precocious puberty under the cited pediatric label",
-          "population": "Pediatric patients 2 years and older under the cited label",
-          "route": "intramuscular",
-          "formulation": "extended-release injection",
-          "amountText": "22.5 mg triptorelin per injection",
-          "scheduleText": "Once every 24 weeks",
+          "indication": "Central precocious puberty",
+          "population": "Children aged 2 years and older",
+          "route": "Intramuscular",
+          "formulation": "Pamoate depot injection",
+          "amountText": "22.5 mg triptorelin, equivalent to about 31 mg triptorelin pamoate",
+          "scheduleText": "Intramuscularly once every 24 weeks",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL 16, 2025-09-14",
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Triptodur",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
           "ranges": [
             {
               "min": 22.5,
               "max": 22.5,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "every 24 weeks",
-              "rangeKind": "label-regimen",
-              "label": "TRIPTODUR label regimen"
-            }
-          ],
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This pediatric label index is not an HRT dosing recommendation.",
-          "sourceRefs": [
-            {
-              "title": "DailyMed TRIPTODUR label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL"
+              "rangeKind": "label-regimen"
             }
           ]
         }
@@ -75416,18 +75161,37 @@
           }
         ]
       },
-      "roas": [],
+      "roas": [
+        {
+          "name": "Intramuscular"
+        }
+      ],
       "sourceRefs": [
         {
-          "title": "DailyMed TRIPTODUR label",
+          "title": "DailyMed · Triptodur",
           "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-24",
+          "accessedDate": "2026-11-06",
           "evidenceLevel": "REGULATORY_LABEL"
         }
       ],
+      "recordingUnits": {
+        "INTRAMUSCULAR": "mg"
+      },
+      "formulationIds": [
+        "form:depot-injection"
+      ],
+      "interactions": null,
+      "tdm": null,
+      "displayName": "Triptorelin",
       "searchTerms": [
         "GnRHa"
+      ],
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
       ]
     },
     {
@@ -76632,13 +76396,13 @@
       "name": "Levonorgestrel",
       "id": "pw:7c9c5f3a613e4a41f027",
       "commonNames": [
-        "Levonorgestrel",
         "LNG",
-        "左炔诺孕酮",
         "Plan B",
-        "Levonorgestrel oral"
+        "Plan B One-Step",
+        "Levonorgestrel oral",
+        "左炔诺孕酮"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -76650,177 +76414,116 @@
       "categories": [
         "endocrine",
         "hrt-related",
-        "prescription-medicine"
+        "prescription-medicine",
+        "hrt-progestogens"
       ],
-      "summary": "左炔诺孕酮以药品资料记录为主；目前不默认纳入睾酮或雌二醇预测模型。",
+      "summary": "A synthetic progestogen. These details describe the single-ingredient 1.5 mg oral emergency contraceptive.",
       "clinicalInfo": {
         "atcCodes": [
-          "G03AC03"
+          "G03AD01"
         ],
         "drugClass": [
-          "Progestin",
-          "19-nortestosterone derivative"
+          "Progestogen"
         ],
         "indications": [
-          "Approved indications vary by product",
-          "Evidence for routine use in feminizing HRT is limited or context-dependent"
+          "Emergency contraception after unprotected intercourse or contraceptive failure."
         ],
         "contraindications": [
-          "Use product-specific contraindications"
+          "The product should not be used in established pregnancy or with hypersensitivity to levonorgestrel or product ingredients."
         ],
         "majorWarnings": [
-          "Mood changes and fatigue",
-          "Bleeding-pattern changes",
-          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
-          "Evidence for benefits in feminizing HRT is limited and context-dependent"
+          "Menstrual changes may occur. Evaluate for ectopic pregnancy if significant lower abdominal pain or pregnancy occurs after use."
         ],
         "majorInteractions": [
-          "Enzyme-inducing drugs may reduce exposure",
-          "Product-specific interactions apply"
+          "CYP3A4 inducers may reduce emergency contraceptive effectiveness."
         ],
         "monitoring": [
-          "Clinical response and adverse effects",
-          "Bleeding pattern when relevant",
-          "Mood symptoms",
-          "Blood pressure and cardiometabolic risk factors when clinically indicated"
+          "Evaluate for pregnancy if expected menses are delayed by more than a week."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed levonorgestrel tablet label",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+            "title": "DailyMed · Plan B One-Step Drug Facts",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
-            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-            "sourceType": "systematic-review",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "SYSTEMATIC_REVIEW"
+            "title": "DailyMed · Plan B One-Step prescribing information",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
-          "Progestin",
-          "19-nortestosterone derivative"
+          "Progestogen"
         ],
         "mechanisms": [
-          "Progesterone receptor agonism",
-          "Product-specific secondary receptor activity"
-        ],
-        "affectedHormones": [
-          "Progesterone-related signaling",
-          "LH and FSH may change depending on regimen"
-        ],
-        "monitoringLabs": [
-          "Clinical response and adverse effects",
-          "Bleeding pattern when relevant",
-          "Mood symptoms",
-          "Blood pressure and cardiometabolic risk factors when clinically indicated"
-        ],
-        "assayCaveats": [
-          "Routine serum progestin concentration monitoring is generally not established for these entries.",
-          "Hormone results must be interpreted with indication, formulation, timing, and co-administered estrogen."
-        ],
-        "safetySignals": [
-          "Mood changes and fatigue",
-          "Bleeding-pattern changes",
-          "Thromboembolic and cardiovascular risk depends on product and estrogen combination",
-          "Evidence for benefits in feminizing HRT is limited and context-dependent"
-        ],
-        "modelRoles": [
-          "progestin",
-          "limited-hrt-model-evidence"
+          "Acts primarily by inhibiting or delaying ovulation."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed levonorgestrel tablet label",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+            "title": "DailyMed · Plan B One-Step Drug Facts",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics"
-          },
-          {
-            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-            "sourceType": "systematic-review",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "SYSTEMATIC_REVIEW"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "tablet or capsule",
-          "depotRelease": false,
-          "injectionIntervalSensitive": false,
-          "assayTimingSensitive": false,
+          "route": "Oral",
+          "formulation": "Tablet",
           "notes": [
-            "PK values are formulation- and study-specific."
+            "Pharmacokinetics are for the oral tablet in the cited US label."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed levonorgestrel tablet label",
+              "title": "DailyMed · Plan B One-Step prescribing information",
               "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
-            },
-            {
-              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-              "sourceType": "systematic-review",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SYSTEMATIC_REVIEW"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "tmax": {
             "min": 1,
             "max": 4,
             "unit": "h",
-            "basis": "plasma concentration"
+            "basis": "Single 1.5 mg in healthy women. Range, median 1.7 hours."
           },
           "eliminationHalfLife": {
-            "min": 21.9,
-            "max": 33.1,
+            "min": 27.5,
+            "max": 27.5,
             "unit": "h",
-            "basis": "literature or label pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "basis": "Mean after one 1.5 mg dose"
+          }
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Emergency contraception in the cited label",
-          "population": "Adults; product- and indication-specific",
-          "route": "oral",
-          "formulation": "tablet or capsule",
-          "amountText": "1.5 mg levonorgestrel as a single oral dose",
-          "scheduleText": "As soon as possible within 72 hours in the cited label",
+          "indication": "Emergency contraception after unprotected intercourse or contraceptive failure.",
+          "population": "Population covered by the US OTC label",
+          "route": "Oral",
+          "formulation": "Tablet",
+          "amountText": "One 1.5 mg dose",
+          "scheduleText": "Take as soon as possible within 72 hours of unprotected sex or contraceptive failure",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "Drug Facts, set 6ce6b40e",
           "sourceRefs": [
             {
-              "title": "DailyMed levonorgestrel tablet label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+              "title": "DailyMed · Plan B One-Step Drug Facts",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
-            },
-            {
-              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-              "sourceType": "systematic-review",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SYSTEMATIC_REVIEW"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "ranges": [
@@ -76829,10 +76532,7 @@
               "max": 1.5,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "single dose",
-              "rangeKind": "label-regimen",
-              "label": "Label regimen",
-              "components": []
+              "rangeKind": "label-regimen"
             }
           ]
         }
@@ -76872,21 +76572,57 @@
           }
         ]
       },
-      "roas": []
+      "roas": [
+        {
+          "name": "Oral"
+        }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid"
+      ],
+      "interactions": null,
+      "tdm": null,
+      "sourceRefs": [
+        {
+          "title": "DailyMed · Plan B One-Step Drug Facts",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
+        },
+        {
+          "title": "DailyMed · Plan B One-Step prescribing information",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ],
+      "displayName": "Levonorgestrel",
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Micronized Progesterone",
       "id": "pw:fdf9fb3e4a4c60000669",
       "commonNames": [
-        "Micronized Progesterone",
         "Progesterone",
         "Natural progesterone",
-        "P4",
-        "微粒化黄体酮",
         "天然黄体酮",
-        "Prometrium"
+        "P4",
+        "Micronized P4",
+        "Prometrium",
+        "微粒化黄体酮",
+        "黄体酮胶囊"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6294a90aae98",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -76898,181 +76634,104 @@
       "categories": [
         "endocrine",
         "hrt-related",
-        "prescription-medicine"
+        "prescription-medicine",
+        "hrt-progestogens"
       ],
-      "summary": "Natural progesterone以药品资料记录为主；目前不默认纳入睾酮或雌二醇预测模型。",
+      "summary": "Oral capsules containing micronized progesterone.",
       "clinicalInfo": {
         "atcCodes": [
           "G03DA04"
         ],
         "drugClass": [
-          "Progesterone",
-          "Micronized natural progestogen",
-          "Neuroactive steroid precursor"
+          "Progestogen"
         ],
         "indications": [
-          "Approved indications vary by product",
-          "Evidence for routine use in feminizing HRT is limited or context-dependent"
+          "Prevention of endometrial hyperplasia in postmenopausal women with a uterus taking conjugated estrogens.",
+          "Secondary amenorrhea."
         ],
         "contraindications": [
-          "Use product-specific contraindications"
+          "Unexplained genital bleeding, known or suspected breast cancer, active or prior thrombosis, liver disease, known or suspected pregnancy or hypersensitivity. The cited capsules contain peanut oil."
         ],
         "majorWarnings": [
-          "Sedation and dizziness",
-          "Mood changes",
-          "Product excipients and allergy context",
-          "Evidence in feminizing HRT is limited"
+          "May cause drowsiness or dizziness. Assess risks including thrombosis when combined with estrogen."
         ],
         "majorInteractions": [
-          "Enzyme-inducing drugs may reduce exposure",
-          "Product-specific interactions apply"
+          "In vitro evidence suggests CYP3A4 inhibitors may increase exposure. Clinical magnitude is unknown."
         ],
         "monitoring": [
-          "Clinical response and adverse effects",
-          "Bleeding pattern when relevant",
-          "Mood symptoms",
-          "Blood pressure and cardiometabolic risk factors when clinically indicated"
+          "Evaluate abnormal bleeding, drowsiness or dizziness, and periodically reassess combined estrogen therapy."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed progesterone capsule label",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6294a90aae98",
+            "title": "DailyMed · Micronized progesterone capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics"
-          },
-          {
-            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-            "sourceType": "systematic-review",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "SYSTEMATIC_REVIEW"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "endocrineInfo": {
         "hormoneClass": [
-          "Progesterone",
-          "Micronized natural progestogen",
-          "Neuroactive steroid precursor"
+          "Progestogen"
         ],
         "mechanisms": [
-          "Progesterone receptor agonism",
-          "Product-specific secondary receptor activity"
-        ],
-        "affectedHormones": [
-          "Progesterone-related signaling",
-          "LH and FSH may change depending on regimen"
-        ],
-        "monitoringLabs": [
-          "Clinical response and adverse effects",
-          "Bleeding pattern when relevant",
-          "Mood symptoms",
-          "Blood pressure and cardiometabolic risk factors when clinically indicated"
-        ],
-        "assayCaveats": [
-          "Routine serum progestin concentration monitoring is generally not established for these entries.",
-          "Hormone results must be interpreted with indication, formulation, timing, and co-administered estrogen."
-        ],
-        "safetySignals": [
-          "Sedation and dizziness",
-          "Mood changes",
-          "Product excipients and allergy context",
-          "Evidence in feminizing HRT is limited"
-        ],
-        "modelRoles": [
-          "progestin",
-          "limited-hrt-model-evidence"
+          "Progesterone receptor agonism."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed progesterone capsule label",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6294a90aae98",
+            "title": "DailyMed · Micronized progesterone capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "12.3 Pharmacokinetics"
-          },
-          {
-            "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-            "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-            "sourceType": "systematic-review",
-            "accessedDate": "2026-06-24",
-            "evidenceLevel": "SYSTEMATIC_REVIEW"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "tablet or capsule",
-          "depotRelease": false,
-          "injectionIntervalSensitive": false,
-          "assayTimingSensitive": false,
+          "route": "Oral",
+          "formulation": "Oral micronized capsule",
           "notes": [
-            "PK values are formulation- and study-specific.",
-            "A reliable numeric value remains source needed for omitted fields."
+            "The label reports peaks within approximately three hours."
           ],
           "sourceRefs": [
             {
-              "title": "DailyMed progesterone capsule label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6294a90aae98",
+              "title": "DailyMed · Micronized progesterone capsules",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
-            },
-            {
-              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-              "sourceType": "systematic-review",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SYSTEMATIC_REVIEW"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "tmax": {
             "min": 1.5,
-            "max": 3,
+            "max": 1.5,
             "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "eliminationHalfLife": {
-            "min": 14.5,
-            "max": 20.3,
-            "unit": "h",
-            "basis": "label pharmacokinetics",
-            "note": "DailyMed progesterone capsule pharmacokinetic table reports mean half-life values around 16.8 to 18.3 hours with standard deviations; this range approximates those reported values."
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life."
+            "basis": "Day 5 mean after repeated 100 mg in postmenopausal women"
+          }
         }
       ],
       "doseUseReferences": [
         {
-          "indication": "Prevention of endometrial hyperplasia with estrogen in the cited label",
-          "population": "Adults; product- and indication-specific",
-          "route": "oral",
-          "formulation": "tablet or capsule",
-          "amountText": "200 mg micronized progesterone at bedtime",
-          "scheduleText": "12 consecutive days per 28-day cycle",
+          "indication": "Prevention of endometrial hyperplasia",
+          "population": "Postmenopausal women with a uterus taking conjugated estrogens",
+          "route": "Oral",
+          "formulation": "Oral micronized capsule",
+          "amountText": "200 mg",
+          "scheduleText": "At bedtime for 12 consecutive days of each 28-day cycle",
           "sourceType": "regulatory-label",
           "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL 1, 2025-12-17",
           "sourceRefs": [
             {
-              "title": "DailyMed progesterone capsule label",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6294a90aae98",
+              "title": "DailyMed · Micronized progesterone capsules",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
               "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "REGULATORY_LABEL",
-              "labelSection": "12.3 Pharmacokinetics"
-            },
-            {
-              "title": "Progestogen Use in Gender-Affirming Hormone Therapy: A Systematic Review",
-              "url": "https://pubmed.ncbi.nlm.nih.gov/36007714/",
-              "sourceType": "systematic-review",
-              "accessedDate": "2026-06-24",
-              "evidenceLevel": "SYSTEMATIC_REVIEW"
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
           "ranges": [
@@ -77080,12 +76739,8 @@
               "min": 200,
               "max": 200,
               "unit": "mg",
-              "basis": "per-dose",
-              "frequency": "bedtime for 12 days per 28-day cycle",
-              "rangeKind": "label-regimen",
-              "label": "Label regimen",
-              "components": [],
-              "note": "Sedation and dizziness are clinically relevant."
+              "basis": "daily-total",
+              "rangeKind": "label-regimen"
             }
           ]
         }
@@ -77125,7 +76780,35 @@
           }
         ]
       },
-      "roas": []
+      "roas": [
+        {
+          "name": "Oral"
+        }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid"
+      ],
+      "interactions": null,
+      "tdm": null,
+      "sourceRefs": [
+        {
+          "title": "DailyMed · Micronized progesterone capsules",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
+        }
+      ],
+      "displayName": "Micronized progesterone",
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
+      ]
     },
     {
       "name": "Norethisterone Acetate",
@@ -77357,12 +77040,15 @@
       "id": "pw:db3a77d67f9fec2d3d30",
       "name": "Trihexyphenidyl Hydrochloride",
       "commonNames": [
+        "Trihexyphenidyl",
+        "Trihexyphenidyl HCl",
         "盐酸苯海索",
         "苯海索",
-        "Trihexyphenidyl HCl"
+        "Artane",
+        "苯海索盐酸盐"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d4d473e-4f84-43e7-bb17-49e8dc1e97fd",
-      "summary": "抗胆碱药，用于帕金森综合征及部分药物引起的锥体外系症状。口服片剂；所引说明书规格为每片盐酸苯海索 2 mg 或 5 mg。",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
+      "summary": "The hydrochloride salt of trihexyphenidyl, a centrally acting anticholinergic.",
       "isApproved": true,
       "categories": [
         "neurology",
@@ -77372,10 +77058,7 @@
       ],
       "roas": [
         {
-          "name": "oral",
-          "dose": {
-            "units": "mg"
-          }
+          "name": "Oral"
         }
       ],
       "clinicalInfo": {
@@ -77383,64 +77066,142 @@
           "N04AA01"
         ],
         "drugClass": [
-          "抗胆碱药"
+          "Anticholinergic antiparkinsonian"
         ],
         "indications": [
-          "帕金森综合征的辅助治疗",
-          "药物引起的锥体外系症状"
+          "Adjunctive treatment of parkinsonism and control of extrapyramidal reactions from certain medicines."
         ],
         "contraindications": [
-          "对本品或辅料过敏",
-          "窄角型青光眼"
+          "The cited US oral solution label lists hypersensitivity to ingredients and narrow-angle glaucoma as contraindications."
         ],
         "majorWarnings": [
-          "可引起口干、视物模糊、便秘、尿潴留及认知障碍。",
-          "减少出汗可导致高热；避免突然停药。",
-          "可能加重迟发性运动障碍。"
+          "May cause dry mouth, constipation, urinary retention, blurred vision or confusion. May raise intraocular pressure or worsen tardive dyskinesia."
         ],
         "majorInteractions": [
-          "酒精及其他中枢抑制药可增加镇静。",
-          "与单胺氧化酶抑制剂或三环类抗抑郁药合用，抗胆碱作用可能增强。"
+          "When combined with levodopa, the label notes that dose adjustment may be needed based on symptoms and adverse effects."
         ],
         "monitoring": [
-          "眼压、视力变化",
-          "排尿、排便、出汗和体温",
-          "意识、记忆及不自主运动"
+          "The tablet label calls for gonioscopy and periodic intraocular pressure monitoring. Follow urinary and bowel function and mental status."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed: Trihexyphenidyl Hydrochloride tablets",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d4d473e-4f84-43e7-bb17-49e8dc1e97fd",
+            "title": "DailyMed · Trihexyphenidyl hydrochloride tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-11-05",
-            "evidenceLevel": "REGULATORY_LABEL",
-            "labelSection": "Indications; Contraindications; Warnings; Precautions; Adverse reactions; How supplied"
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           },
           {
-            "title": "WHO ATC/DDD: N04AA01 trihexyphenidyl",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04AA01",
-            "sourceType": "classification",
-            "accessedDate": "2026-11-05",
-            "evidenceLevel": "REFERENCE_DATABASE"
+            "title": "Lee et al. · Trihexyphenidyl pharmacokinetics",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/7658345/",
+            "sourceType": "human-study",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "DailyMed · Trihexyphenidyl hydrochloride oral solution",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e8e2ac3b-80dc-4449-9365-2586d6d57e10&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
           }
         ]
       },
       "sourceRefs": [
         {
-          "title": "DailyMed: Trihexyphenidyl Hydrochloride tablets",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4d4d473e-4f84-43e7-bb17-49e8dc1e97fd",
+          "title": "DailyMed · Trihexyphenidyl hydrochloride tablets",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-11-05",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "labelSection": "Indications; Contraindications; Warnings; Precautions; Adverse reactions; How supplied"
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         },
         {
-          "title": "WHO ATC/DDD: N04AA01 trihexyphenidyl",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N04AA01",
-          "sourceType": "classification",
-          "accessedDate": "2026-11-05",
-          "evidenceLevel": "REFERENCE_DATABASE"
+          "title": "Lee et al. · Trihexyphenidyl pharmacokinetics",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7658345/",
+          "sourceType": "human-study",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "HUMAN_STUDY"
+        },
+        {
+          "title": "DailyMed · Trihexyphenidyl hydrochloride oral solution",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e8e2ac3b-80dc-4449-9365-2586d6d57e10&type=display",
+          "sourceType": "regulatory-label",
+          "accessedDate": "2026-11-06",
+          "evidenceLevel": "REGULATORY_LABEL"
         }
+      ],
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid"
+      ],
+      "interactions": null,
+      "tdm": null,
+      "displayName": "Trihexyphenidyl hydrochloride",
+      "timeCourse": [
+        {
+          "route": "Oral",
+          "formulation": "Tablet",
+          "notes": [
+            "Time to peak plasma concentration after one dose."
+          ],
+          "sourceRefs": [
+            {
+              "title": "Lee et al. · Trihexyphenidyl pharmacokinetics",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/7658345/",
+              "sourceType": "human-study",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "HUMAN_STUDY"
+            }
+          ],
+          "tmax": {
+            "min": 1.32,
+            "max": 1.32,
+            "unit": "h",
+            "basis": "Plasma radioimmunoassay mean in eight healthy men after one oral 4 mg dose"
+          }
+        }
+      ],
+      "doseUseReferences": [
+        {
+          "indication": "Idiopathic parkinsonism",
+          "population": "Adults",
+          "route": "Oral",
+          "formulation": "Tablet",
+          "amountText": "First day may use 1 mg",
+          "scheduleText": "Orally, with later titration based on tolerance and response",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL 13, 2026-07-23",
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Trihexyphenidyl hydrochloride tablets",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
+          "ranges": [
+            {
+              "min": 1,
+              "max": 1,
+              "unit": "mg",
+              "basis": "daily-total",
+              "rangeKind": "initial"
+            }
+          ]
+        }
+      ],
+      "endocrineInfo": null,
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
       ]
     },
     {

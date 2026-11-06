@@ -7230,6 +7230,2522 @@
           }
         }
       }
+    },
+    "pw:ef222562fa3e551554df": {
+      "fields": {
+        "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+        "commonNames": [
+          "NOMAC",
+          "Lutényl",
+          "Lutenyl",
+          "醋酸诺美孕酮"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "prescription-medicine",
+          "hrt-progestogens"
+        ],
+        "roas": [
+          {
+            "name": "Oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "ANSM · Lutényl 5 mg",
+            "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "Zoely SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ],
+        "searchTerms": [
+          "Nomegestrol"
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "醋酸诺美孕酮",
+          "summary": "单成分口服合成孕激素。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03DB04"
+            ],
+            "drugClass": [
+              "孕激素"
+            ],
+            "indications": [
+              "其他干预不合适时，用于绝经前孕激素不足相关的部分月经问题，或绝经后与雌激素组成周期治疗。"
+            ],
+            "contraindications": [
+              "脑膜瘤或其病史、已知或疑似乳腺癌、雌激素依赖性肿瘤、原因不明的生殖道出血、未治疗的子宫内膜增生、血栓或血栓倾向、近期或活动性动脉血栓性疾病、肝功能仍异常的肝病、卟啉病或过敏。"
+            ],
+            "majorWarnings": [
+              "累积暴露和治疗时间增加会提高脑膜瘤风险。"
+            ],
+            "majorInteractions": [
+              "部分抗癫痫药、利福平等酶诱导剂可能降低孕激素效应。"
+            ],
+            "monitoring": [
+              "定期复核继续用药的必要性，按法国说明书评估脑膜瘤风险和磁共振检查。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "ANSM · Lutényl 5 mg",
+                "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              },
+              {
+                "title": "Zoely SmPC",
+                "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "药代数据来自法国说明书。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "ANSM · Lutényl 5 mg",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 2,
+                "max": 2,
+                "unit": "h",
+                "basis": "口服后"
+              },
+              "eliminationHalfLife": {
+                "min": 40,
+                "max": 40,
+                "unit": "h",
+                "basis": "说明书所载约值"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "绝经前与孕激素不足相关的月经问题",
+              "population": "绝经前女性",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "通常 5 mg",
+              "scheduleText": "周期第 16 至 25 天每日口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2025-12-22",
+              "sourceRefs": [
+                {
+                  "title": "ANSM · Lutényl 5 mg",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 5,
+                  "max": 5,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "孕激素"
+            ],
+            "mechanisms": [
+              "激活孕激素受体。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "ANSM · Lutényl 5 mg",
+                "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        },
+        "en": {
+          "displayName": "Nomegestrol acetate",
+          "summary": "A single-ingredient oral synthetic progestogen.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03DB04"
+            ],
+            "drugClass": [
+              "Progestogen"
+            ],
+            "indications": [
+              "When other options are unsuitable, selected premenopausal menstrual disorders related to progesterone deficiency or cyclic therapy with an estrogen after menopause."
+            ],
+            "contraindications": [
+              "Meningioma or history of it, known or suspected breast cancer, estrogen-dependent tumors, unexplained genital bleeding, untreated endometrial hyperplasia, venous thrombosis or thrombophilia, active or recent arterial thromboembolism, liver disease with unresolved abnormalities, porphyria or hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Meningioma risk increases with cumulative exposure and duration."
+            ],
+            "majorInteractions": [
+              "Enzyme inducers such as rifampicin and certain antiseizure drugs may reduce the progestogen effect."
+            ],
+            "monitoring": [
+              "Periodically reassess need for therapy and follow the French label for meningioma risk assessment and MRI."
+            ],
+            "sourceRefs": [
+              {
+                "title": "ANSM · Lutényl 5 mg",
+                "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              },
+              {
+                "title": "Zoely SmPC",
+                "url": "https://www.medicines.org.uk/emc/product/3038/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics from the French label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "ANSM · Lutényl 5 mg",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 2,
+                "max": 2,
+                "unit": "h",
+                "basis": "After an oral dose"
+              },
+              "eliminationHalfLife": {
+                "min": 40,
+                "max": 40,
+                "unit": "h",
+                "basis": "Approximate label value"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Premenopausal menstrual disorders related to progesterone deficiency",
+              "population": "Premenopausal women",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Usually 5 mg",
+              "scheduleText": "Orally daily on cycle days 16 through 25",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2025-12-22",
+              "sourceRefs": [
+                {
+                  "title": "ANSM · Lutényl 5 mg",
+                  "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 5,
+                  "max": 5,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "Progestogen"
+            ],
+            "mechanisms": [
+              "Activates progesterone receptors."
+            ],
+            "sourceRefs": [
+              {
+                "title": "ANSM · Lutényl 5 mg",
+                "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63408595/extrait",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:98ab6b0f8f3207ab787c": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+        "commonNames": [
+          "Estradiol oral tablet",
+          "Oral E2",
+          "口服雌二醇",
+          "E2 oral"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "prescription-medicine",
+          "hrt-estrogens"
+        ],
+        "roas": [
+          {
+            "name": "Oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Estradiol tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "口服雌二醇",
+          "summary": "供吞服的雌二醇片剂。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03CA03"
+            ],
+            "drugClass": [
+              "雌激素"
+            ],
+            "indications": [
+              "缓解绝经相关血管舒缩症状、治疗外阴及阴道萎缩和某些低雌激素状态。",
+              "该美国说明书也包括特定肿瘤的姑息治疗与适当人群的骨质疏松预防。"
+            ],
+            "contraindications": [
+              "妊娠、原因不明的生殖道出血、雌激素依赖性肿瘤、既往或活动性静脉血栓、近期动脉血栓事件、肝病或过敏。已知、疑似或既往乳腺癌也属禁忌，特定转移性乳腺癌的姑息治疗除外。"
+            ],
+            "majorWarnings": [
+              "全身雌激素可增加血栓和卒中风险。有子宫时，单用雌激素可增加子宫内膜癌风险。"
+            ],
+            "majorInteractions": [
+              "CYP3A4 诱导剂或抑制剂可能改变雌激素暴露。"
+            ],
+            "monitoring": [
+              "评估异常出血，定期复核用药。合用甲状腺激素替代治疗时检查甲状腺功能。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Estradiol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "吞服后经历肝脏首过代谢，雌二醇与雌酮可相互转化。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Estradiol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "绝经相关血管舒缩症状或外阴阴道萎缩",
+              "population": "绝经后女性",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始 1–2 mg",
+              "scheduleText": "每日口服，说明书建议按周期给药",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-06",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Estradiol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1,
+                  "max": 2,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "initial"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "雌激素"
+            ],
+            "mechanisms": [
+              "通过雌激素受体发挥作用。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Estradiol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        },
+        "en": {
+          "displayName": "Oral estradiol",
+          "summary": "Estradiol tablets for swallowing.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03CA03"
+            ],
+            "drugClass": [
+              "Estrogen"
+            ],
+            "indications": [
+              "Menopausal vasomotor symptoms, vulvovaginal atrophy and certain hypoestrogenic states.",
+              "The US label also includes selected palliative oncology indications and osteoporosis prevention in appropriate patients."
+            ],
+            "contraindications": [
+              "Pregnancy, unexplained genital bleeding, estrogen-dependent tumors, current or past venous thrombosis, recent arterial thrombosis, liver disease or hypersensitivity. Known, suspected or previous breast cancer is also contraindicated except for selected metastatic palliative use."
+            ],
+            "majorWarnings": [
+              "Systemic estrogen may increase thromboembolism and stroke risk. Unopposed estrogen raises endometrial cancer risk in people with a uterus."
+            ],
+            "majorInteractions": [
+              "CYP3A4 inducers or inhibitors may alter estrogen exposure."
+            ],
+            "monitoring": [
+              "Evaluate abnormal bleeding and reassess therapy periodically. Check thyroid function in patients taking thyroid replacement."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Estradiol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Swallowed estradiol undergoes hepatic first-pass metabolism and interconverts with estrone."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Estradiol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Menopausal vasomotor symptoms or vulvovaginal atrophy",
+              "population": "Postmenopausal women",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initial 1–2 mg",
+              "scheduleText": "Orally once daily with cyclic administration per label",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-06",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Estradiol tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1,
+                  "max": 2,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "initial"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "Estrogen"
+            ],
+            "mechanisms": [
+              "Acts through estrogen receptors."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Estradiol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:3e8d9ced68e3d18c0218": {
+      "fields": {
+        "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+        "commonNames": [
+          "Progynova",
+          "Estradiol valerate tablet",
+          "Oral EV",
+          "口服戊酸雌二醇"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "prescription-medicine",
+          "hrt-estrogens"
+        ],
+        "roas": [
+          {
+            "name": "Oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "Progynova 2 mg SmPC",
+            "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "口服戊酸雌二醇",
+          "summary": "戊酸雌二醇是雌二醇的酯。口服剂量按戊酸雌二醇计。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03CA03"
+            ],
+            "drugClass": [
+              "雌激素"
+            ],
+            "indications": [
+              "绝经后雌激素缺乏症状。",
+              "骨折风险较高且其他获批药物不适合时，用于绝经后骨质疏松预防。"
+            ],
+            "contraindications": [
+              "乳腺癌或雌激素依赖性恶性肿瘤、原因不明的生殖道出血、未治疗的子宫内膜增生、静脉血栓或血栓倾向、活动性或近期动脉血栓性疾病、肝功能仍异常的肝病、卟啉病或过敏。"
+            ],
+            "majorWarnings": [
+              "治疗前评估血栓与乳腺癌风险。保留子宫者需评估内膜保护。"
+            ],
+            "majorInteractions": [
+              "卡马西平、利福平、圣约翰草等酶诱导剂可降低雌激素暴露。"
+            ],
+            "monitoring": [
+              "定期复核获益和风险，评估治疗后持续或新发的异常出血。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "Progynova 2 mg SmPC",
+                "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "约 6–8 小时可出现第二个峰。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Progynova 2 mg SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 0.5,
+                "max": 3,
+                "unit": "h",
+                "basis": "吞服后血浆雌二醇首次达峰"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "绝经后雌激素缺乏症状",
+              "population": "绝经后女性",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "起始 1 mg 戊酸雌二醇",
+              "scheduleText": "每日连续口服",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-09-07",
+              "sourceRefs": [
+                {
+                  "title": "Progynova 2 mg SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1,
+                  "max": 1,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "initial"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "雌激素"
+            ],
+            "mechanisms": [
+              "经水解生成雌二醇。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "Progynova 2 mg SmPC",
+                "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        },
+        "en": {
+          "displayName": "Oral estradiol valerate",
+          "summary": "Estradiol valerate is an estradiol ester. Oral strength is expressed as estradiol valerate.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03CA03"
+            ],
+            "drugClass": [
+              "Estrogen"
+            ],
+            "indications": [
+              "Symptoms of estrogen deficiency after menopause.",
+              "Postmenopausal osteoporosis prevention in patients at high fracture risk when other approved medicines are unsuitable."
+            ],
+            "contraindications": [
+              "Breast cancer or estrogen-dependent malignancy, unexplained genital bleeding, untreated endometrial hyperplasia, venous thromboembolism or thrombophilia, active or recent arterial thromboembolic disease, liver disease with unresolved abnormalities, porphyria or hypersensitivity."
+            ],
+            "majorWarnings": [
+              "Assess thrombotic and breast cancer risks before therapy. Evaluate endometrial protection in patients with a uterus."
+            ],
+            "majorInteractions": [
+              "Enzyme inducers such as carbamazepine, rifampicin and St John’s wort may reduce estrogen exposure."
+            ],
+            "monitoring": [
+              "Periodically reassess benefits and risks, and investigate persistent or new abnormal bleeding."
+            ],
+            "sourceRefs": [
+              {
+                "title": "Progynova 2 mg SmPC",
+                "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "A second peak may occur around 6–8 hours."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Progynova 2 mg SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 0.5,
+                "max": 3,
+                "unit": "h",
+                "basis": "First plasma estradiol peak after swallowing"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Postmenopausal estrogen deficiency symptoms",
+              "population": "Postmenopausal women",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "Initial 1 mg estradiol valerate",
+              "scheduleText": "Orally once daily, continuously",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2026-09-07",
+              "sourceRefs": [
+                {
+                  "title": "Progynova 2 mg SmPC",
+                  "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1,
+                  "max": 1,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "initial"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "Estrogen"
+            ],
+            "mechanisms": [
+              "Hydrolyzed to estradiol."
+            ],
+            "sourceRefs": [
+              {
+                "title": "Progynova 2 mg SmPC",
+                "url": "https://www.medicines.org.uk/emc/product/1417/smpc",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:4202d238dd1a07149f19": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+        "commonNames": [
+          "Sublingual Estradiol",
+          "Buccal Estradiol",
+          "舌下雌二醇",
+          "颊黏膜雌二醇",
+          "颊含雌二醇",
+          "含服雌二醇",
+          "Sublingual E2",
+          "Buccal E2"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "prescription-medicine",
+          "hrt-estrogens"
+        ],
+        "roas": [
+          {
+            "name": "Sublingual"
+          },
+          {
+            "name": "Buccal"
+          }
+        ],
+        "recordingUnits": {
+          "SUBLINGUAL": "mg",
+          "BUCCAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Estradiol tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "Doll et al. · Sublingual and oral estradiol",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+            "sourceType": "human-study",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "Gass et al. · Buccal estradiol tablets",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+            "sourceType": "human-study",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "HUMAN_STUDY"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "舌下／颊黏膜雌二醇",
+          "summary": "此条目记录经舌下或颊黏膜给药的雌二醇。两种途径有各自的研究资料。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03CA03"
+            ],
+            "drugClass": [
+              "雌激素"
+            ],
+            "indications": [
+              "舌下雌二醇用于跨性别女性的单次给药药代研究。",
+              "特定颊片在绝经后潮热的短期试验中研究。"
+            ],
+            "contraindications": [
+              "全身雌激素的禁忌包括妊娠、血栓、原因不明的生殖道出血、雌激素依赖性肿瘤、肝病或过敏。具体限制依实际产品。"
+            ],
+            "majorWarnings": [
+              "血栓和卒中是全身雌激素的重要风险。"
+            ],
+            "majorInteractions": [
+              "口服片说明书中 CYP3A4 诱导剂或抑制剂可能改变全身暴露，含服制剂的相互作用幅度未定。"
+            ],
+            "monitoring": [
+              "按用药目的评估全身雌激素风险和异常出血。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Estradiol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              },
+              {
+                "title": "Doll et al. · Sublingual and oral estradiol",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+                "sourceType": "human-study",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "HUMAN_STUDY"
+              },
+              {
+                "title": "Gass et al. · Buccal estradiol tablets",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+                "sourceType": "human-study",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "HUMAN_STUDY"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Sublingual",
+              "formulation": "舌下雌二醇",
+              "notes": [
+                "采样持续 8 小时。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Doll et al. · Sublingual and oral estradiol",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+                  "sourceType": "human-study",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "HUMAN_STUDY"
+                }
+              ],
+              "tmax": {
+                "min": 1,
+                "max": 1,
+                "unit": "h",
+                "basis": "10 名跨性别女性单次 1 mg，LC–MS/MS 采样峰值"
+              }
+            },
+            {
+              "route": "Buccal",
+              "formulation": "试验用颊片",
+              "notes": [
+                "潮热试验观察 28 天，摘要未报告单次给药的达峰或半衰期。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Gass et al. · Buccal estradiol tablets",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+                  "sourceType": "human-study",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "HUMAN_STUDY"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "绝经后潮热随机试验",
+              "population": "99 名绝经后女性参与分组",
+              "route": "Buccal",
+              "formulation": "试验用 17β-雌二醇颊片",
+              "amountText": "试验分组片剂强度 0.05、0.1、0.2 或 0.4 mg，另有安慰剂组",
+              "scheduleText": "给药观察期 28 天，摘要未报告给药频次",
+              "sourceType": "human-study",
+              "evidenceLevel": "HUMAN_STUDY",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2004, PMID 15474758",
+              "sourceRefs": [
+                {
+                  "title": "Gass et al. · Buccal estradiol tablets",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+                  "sourceType": "human-study",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "HUMAN_STUDY"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 0.05,
+                  "max": 0.4,
+                  "unit": "mg",
+                  "basis": "tablet-strength",
+                  "rangeKind": "study-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "雌激素"
+            ],
+            "mechanisms": [
+              "通过雌激素受体发挥作用。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Estradiol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        },
+        "en": {
+          "displayName": "Sublingual / buccal estradiol",
+          "summary": "This entry records estradiol administered sublingually or buccally. Each route has separate study evidence.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03CA03"
+            ],
+            "drugClass": [
+              "Estrogen"
+            ],
+            "indications": [
+              "Sublingual estradiol has been studied in a single-dose pharmacokinetic trial in transgender women.",
+              "Specific buccal tablets were studied in a short-term postmenopausal hot-flush trial."
+            ],
+            "contraindications": [
+              "Systemic estrogen contraindications include pregnancy, thrombosis, unexplained genital bleeding, estrogen-dependent tumors, liver disease or hypersensitivity. Consult the specific product restrictions."
+            ],
+            "majorWarnings": [
+              "Thrombosis and stroke are important systemic estrogen risks."
+            ],
+            "majorInteractions": [
+              "The oral tablet label reports that CYP3A4 inducers or inhibitors can alter systemic exposure. The magnitude with mucosal products is uncertain."
+            ],
+            "monitoring": [
+              "Assess systemic estrogen risks and abnormal bleeding as appropriate for the indication."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Estradiol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              },
+              {
+                "title": "Doll et al. · Sublingual and oral estradiol",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+                "sourceType": "human-study",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "HUMAN_STUDY"
+              },
+              {
+                "title": "Gass et al. · Buccal estradiol tablets",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+                "sourceType": "human-study",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "HUMAN_STUDY"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Sublingual",
+              "formulation": "Sublingual estradiol",
+              "notes": [
+                "Sampling continued for 8 hours."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Doll et al. · Sublingual and oral estradiol",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/34781041/",
+                  "sourceType": "human-study",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "HUMAN_STUDY"
+                }
+              ],
+              "tmax": {
+                "min": 1,
+                "max": 1,
+                "unit": "h",
+                "basis": "Observed LC–MS/MS sampling peak after one 1 mg dose in 10 transgender women"
+              }
+            },
+            {
+              "route": "Buccal",
+              "formulation": "Investigational buccal tablet",
+              "notes": [
+                "The hot-flush trial lasted 28 days. Its abstract reports neither single-dose time to peak nor half-life."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Gass et al. · Buccal estradiol tablets",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+                  "sourceType": "human-study",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "HUMAN_STUDY"
+                }
+              ]
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Randomized trial of postmenopausal hot flushes",
+              "population": "99 postmenopausal women randomized",
+              "route": "Buccal",
+              "formulation": "Investigational 17β-estradiol buccal tablet",
+              "amountText": "Trial tablet strengths of 0.05, 0.1, 0.2 or 0.4 mg, plus placebo",
+              "scheduleText": "28-day treatment period; the abstract does not specify dose frequency",
+              "sourceType": "human-study",
+              "evidenceLevel": "HUMAN_STUDY",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "2004, PMID 15474758",
+              "sourceRefs": [
+                {
+                  "title": "Gass et al. · Buccal estradiol tablets",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/15474758/",
+                  "sourceType": "human-study",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "HUMAN_STUDY"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 0.05,
+                  "max": 0.4,
+                  "unit": "mg",
+                  "basis": "tablet-strength",
+                  "rangeKind": "study-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "Estrogen"
+            ],
+            "mechanisms": [
+              "Acts through estrogen receptors."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Estradiol tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=41f7a56c-4ce3-4cc6-803e-1ff662efef90",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:dbb4ffb9b2d269d66f4a": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+        "commonNames": [
+          "Leuprolide",
+          "Leuprorelin",
+          "Leuprorelin acetate",
+          "Lupron Depot-Ped",
+          "醋酸亮丙瑞林",
+          "亮丙瑞林"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "prescription-medicine",
+          "hrt-gnrh",
+          "gnrh-agonist"
+        ],
+        "roas": [
+          {
+            "name": "Intramuscular"
+          }
+        ],
+        "recordingUnits": {
+          "INTRAMUSCULAR": "mg"
+        },
+        "formulationIds": [
+          "form:depot-injection"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Lupron Depot-Ped",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "醋酸亮丙瑞林",
+          "summary": "醋酸亮丙瑞林的肌内缓释制剂有不同规格和给药间隔。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "L02AE02"
+            ],
+            "drugClass": [
+              "GnRH 激动剂"
+            ],
+            "indications": [
+              "中枢性性早熟"
+            ],
+            "contraindications": [
+              "妊娠，或对 GnRH、GnRH 激动剂或制剂成分过敏。"
+            ],
+            "majorWarnings": [
+              "初期可出现激素短暂升高。也有精神症状、惊厥、严重皮肤反应和儿童颅内压升高的报告。"
+            ],
+            "majorInteractions": [
+              "该说明书未报告正式药代相互作用研究。使用可能降低惊厥阈值的合并用药时需关注惊厥风险。"
+            ],
+            "monitoring": [
+              "按制剂说明书检查 LH 或性激素，随访身高和骨龄。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Lupron Depot-Ped",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Intramuscular",
+              "formulation": "7.5 mg 月制剂",
+              "notes": [
+                "此达峰时间来自成人使用月制剂的数据。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Lupron Depot-Ped",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 4,
+                "max": 4,
+                "unit": "h",
+                "basis": "成人单次肌内注射平均约值，检测含主要无活性代谢物"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "中枢性性早熟",
+              "population": "按美国儿科说明书治疗的儿童",
+              "route": "Intramuscular",
+              "formulation": "45 mg 肌内缓释制剂",
+              "amountText": "每次 45 mg 醋酸亮丙瑞林",
+              "scheduleText": "每 24 周肌内注射一次",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 97, 2025-11-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Lupron Depot-Ped",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 45,
+                  "max": 45,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "GnRH 激动剂"
+            ],
+            "mechanisms": [
+              "持续用药可降低垂体对 GnRH 的反应，减少促性腺激素分泌。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Lupron Depot-Ped",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        },
+        "en": {
+          "displayName": "Leuprolide acetate",
+          "summary": "Intramuscular leuprolide acetate depots come in distinct strengths and administration intervals.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "L02AE02"
+            ],
+            "drugClass": [
+              "GnRH agonist"
+            ],
+            "indications": [
+              "Central precocious puberty"
+            ],
+            "contraindications": [
+              "Pregnancy or hypersensitivity to GnRH, GnRH agonists or formulation ingredients."
+            ],
+            "majorWarnings": [
+              "Hormones can rise transiently at initiation. Psychiatric symptoms, convulsions, severe skin reactions and intracranial hypertension in children have also been reported."
+            ],
+            "majorInteractions": [
+              "The label reports no formal pharmacokinetic interaction studies. Consider seizure risk with concomitant medicines that may lower seizure threshold."
+            ],
+            "monitoring": [
+              "Check LH or sex steroids per the product label and follow height and bone age."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Lupron Depot-Ped",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Intramuscular",
+              "formulation": "7.5 mg monthly depot",
+              "notes": [
+                "Peak timing is from adults receiving the monthly depot."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Lupron Depot-Ped",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 4,
+                "max": 4,
+                "unit": "h",
+                "basis": "Approximate mean after one adult IM dose. Assay also detected the major inactive metabolite."
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Central precocious puberty",
+              "population": "Children treated according to the US pediatric label",
+              "route": "Intramuscular",
+              "formulation": "45 mg intramuscular depot",
+              "amountText": "45 mg leuprolide acetate per injection",
+              "scheduleText": "Intramuscularly once every 24 weeks",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 97, 2025-11-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Lupron Depot-Ped",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 45,
+                  "max": 45,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "GnRH agonist"
+            ],
+            "mechanisms": [
+              "Continued exposure downregulates the pituitary response to GnRH and reduces gonadotropin secretion."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Lupron Depot-Ped",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e99f47d2-da10-3127-ecb3-e5d942ae6e81",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:703896cd10db9b99691b": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+        "commonNames": [
+          "Triptorelin pamoate",
+          "Triptodur",
+          "曲普瑞林"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "prescription-medicine",
+          "hrt-gnrh",
+          "gnrh-agonist"
+        ],
+        "roas": [
+          {
+            "name": "Intramuscular"
+          }
+        ],
+        "recordingUnits": {
+          "INTRAMUSCULAR": "mg"
+        },
+        "formulationIds": [
+          "form:depot-injection"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Triptodur",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "曲普瑞林",
+          "summary": "所引产品为双羟萘酸曲普瑞林缓释注射剂，标示强度按曲普瑞林计。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "L02AE04"
+            ],
+            "drugClass": [
+              "GnRH 激动剂"
+            ],
+            "indications": [
+              "中枢性性早熟"
+            ],
+            "contraindications": [
+              "妊娠，或对 GnRH、GnRH 激动剂或制剂成分过敏。"
+            ],
+            "majorWarnings": [
+              "初期可出现激素短暂升高。也有精神症状、惊厥、严重皮肤反应和儿童颅内压升高的报告。"
+            ],
+            "majorInteractions": [
+              "说明书提醒谨慎合用可升高泌乳素的药物。"
+            ],
+            "monitoring": [
+              "按制剂说明书检查 LH 或性激素，随访身高和骨龄。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Triptodur",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Intramuscular",
+              "formulation": "22.5 mg 肌内缓释制剂",
+              "notes": [
+                "峰值时间来自该 24 周制剂的儿科数据。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Triptodur",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 4,
+                "max": 4,
+                "unit": "h",
+                "basis": "2–9 岁性早熟儿童肌内注射后"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "中枢性性早熟",
+              "population": "2 岁及以上儿童",
+              "route": "Intramuscular",
+              "formulation": "双羟萘酸盐缓释注射剂",
+              "amountText": "22.5 mg 曲普瑞林，相当于约 31 mg 双羟萘酸曲普瑞林",
+              "scheduleText": "每 24 周肌内注射一次",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 16, 2025-09-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Triptodur",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 22.5,
+                  "max": 22.5,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "GnRH 激动剂"
+            ],
+            "mechanisms": [
+              "持续用药可降低垂体对 GnRH 的反应，减少促性腺激素分泌。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Triptodur",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        },
+        "en": {
+          "displayName": "Triptorelin",
+          "summary": "The cited product is a triptorelin pamoate depot with labeled strength expressed as triptorelin.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "L02AE04"
+            ],
+            "drugClass": [
+              "GnRH agonist"
+            ],
+            "indications": [
+              "Central precocious puberty"
+            ],
+            "contraindications": [
+              "Pregnancy or hypersensitivity to GnRH, GnRH agonists or formulation ingredients."
+            ],
+            "majorWarnings": [
+              "Hormones can rise transiently at initiation. Psychiatric symptoms, convulsions, severe skin reactions and intracranial hypertension in children have also been reported."
+            ],
+            "majorInteractions": [
+              "The label cautions about concomitant use of drugs that raise prolactin."
+            ],
+            "monitoring": [
+              "Check LH or sex steroids per the product label and follow height and bone age."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Triptodur",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Intramuscular",
+              "formulation": "22.5 mg IM depot",
+              "notes": [
+                "Peak timing is from the pediatric study of this 24-week depot."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Triptodur",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 4,
+                "max": 4,
+                "unit": "h",
+                "basis": "After IM dosing in children aged 2–9 with precocious puberty"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Central precocious puberty",
+              "population": "Children aged 2 years and older",
+              "route": "Intramuscular",
+              "formulation": "Pamoate depot injection",
+              "amountText": "22.5 mg triptorelin, equivalent to about 31 mg triptorelin pamoate",
+              "scheduleText": "Intramuscularly once every 24 weeks",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 16, 2025-09-14",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Triptodur",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 22.5,
+                  "max": 22.5,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "GnRH agonist"
+            ],
+            "mechanisms": [
+              "Continued exposure downregulates the pituitary response to GnRH and reduces gonadotropin secretion."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Triptodur",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f41380e7-b830-432d-a5f5-a872932f107e",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:7c9c5f3a613e4a41f027": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+        "commonNames": [
+          "LNG",
+          "Plan B",
+          "Plan B One-Step",
+          "Levonorgestrel oral",
+          "左炔诺孕酮"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "prescription-medicine",
+          "hrt-progestogens"
+        ],
+        "roas": [
+          {
+            "name": "Oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Plan B One-Step Drug Facts",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "DailyMed · Plan B One-Step prescribing information",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "左炔诺孕酮",
+          "summary": "合成孕激素。此处引用 1.5 mg 单成分口服紧急避孕片的资料。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03AD01"
+            ],
+            "drugClass": [
+              "孕激素"
+            ],
+            "indications": [
+              "无保护性交或避孕失败后的紧急避孕。"
+            ],
+            "contraindications": [
+              "已妊娠或对左炔诺孕酮及产品成分过敏时不使用该产品。"
+            ],
+            "majorWarnings": [
+              "可能出现月经改变。使用后出现明显下腹痛或妊娠时，需要评估异位妊娠。"
+            ],
+            "majorInteractions": [
+              "CYP3A4 诱导剂可能降低紧急避孕效果。"
+            ],
+            "monitoring": [
+              "若预期月经推迟超过一周，评估妊娠。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Plan B One-Step Drug Facts",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              },
+              {
+                "title": "DailyMed · Plan B One-Step prescribing information",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "药代数据为所引美国说明书中的口服片数据。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Plan B One-Step prescribing information",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 1,
+                "max": 4,
+                "unit": "h",
+                "basis": "健康女性单次 1.5 mg，范围，中位 1.7 小时"
+              },
+              "eliminationHalfLife": {
+                "min": 27.5,
+                "max": 27.5,
+                "unit": "h",
+                "basis": "单次 1.5 mg 后均值"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "无保护性交或避孕失败后的紧急避孕。",
+              "population": "美国非处方说明书适用人群",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "单次 1.5 mg",
+              "scheduleText": "在无保护性交或避孕失败后 72 小时内尽早服用",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "Drug Facts, set 6ce6b40e",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Plan B One-Step Drug Facts",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1.5,
+                  "max": 1.5,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "孕激素"
+            ],
+            "mechanisms": [
+              "主要通过抑制或延迟排卵发挥紧急避孕作用。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Plan B One-Step Drug Facts",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        },
+        "en": {
+          "displayName": "Levonorgestrel",
+          "summary": "A synthetic progestogen. These details describe the single-ingredient 1.5 mg oral emergency contraceptive.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03AD01"
+            ],
+            "drugClass": [
+              "Progestogen"
+            ],
+            "indications": [
+              "Emergency contraception after unprotected intercourse or contraceptive failure."
+            ],
+            "contraindications": [
+              "The product should not be used in established pregnancy or with hypersensitivity to levonorgestrel or product ingredients."
+            ],
+            "majorWarnings": [
+              "Menstrual changes may occur. Evaluate for ectopic pregnancy if significant lower abdominal pain or pregnancy occurs after use."
+            ],
+            "majorInteractions": [
+              "CYP3A4 inducers may reduce emergency contraceptive effectiveness."
+            ],
+            "monitoring": [
+              "Evaluate for pregnancy if expected menses are delayed by more than a week."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Plan B One-Step Drug Facts",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              },
+              {
+                "title": "DailyMed · Plan B One-Step prescribing information",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Pharmacokinetics are for the oral tablet in the cited US label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Plan B One-Step prescribing information",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d0bbb668-cc24-436b-9144-673a28b81f7d",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 1,
+                "max": 4,
+                "unit": "h",
+                "basis": "Single 1.5 mg in healthy women. Range, median 1.7 hours."
+              },
+              "eliminationHalfLife": {
+                "min": 27.5,
+                "max": 27.5,
+                "unit": "h",
+                "basis": "Mean after one 1.5 mg dose"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Emergency contraception after unprotected intercourse or contraceptive failure.",
+              "population": "Population covered by the US OTC label",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "One 1.5 mg dose",
+              "scheduleText": "Take as soon as possible within 72 hours of unprotected sex or contraceptive failure",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "Drug Facts, set 6ce6b40e",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Plan B One-Step Drug Facts",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1.5,
+                  "max": 1.5,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "Progestogen"
+            ],
+            "mechanisms": [
+              "Acts primarily by inhibiting or delaying ovulation."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Plan B One-Step Drug Facts",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6ce6b40e-14ac-47bd-a648-ddf9e452e559",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:fdf9fb3e4a4c60000669": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+        "commonNames": [
+          "Progesterone",
+          "Natural progesterone",
+          "天然黄体酮",
+          "P4",
+          "Micronized P4",
+          "Prometrium",
+          "微粒化黄体酮",
+          "黄体酮胶囊"
+        ],
+        "categories": [
+          "endocrine",
+          "hrt-related",
+          "prescription-medicine",
+          "hrt-progestogens"
+        ],
+        "roas": [
+          {
+            "name": "Oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Micronized progesterone capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "微粒化黄体酮",
+          "summary": "将黄体酮微粒化制成口服胶囊。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03DA04"
+            ],
+            "drugClass": [
+              "孕激素"
+            ],
+            "indications": [
+              "保留子宫且使用结合雌激素的绝经后女性，预防子宫内膜增生。",
+              "继发性闭经。"
+            ],
+            "contraindications": [
+              "原因不明的生殖道出血、已知或疑似乳腺癌、血栓病史或活动性血栓、肝病、已知或疑似妊娠、对制剂成分过敏。所引胶囊含花生油。"
+            ],
+            "majorWarnings": [
+              "可能嗜睡或头晕。和雌激素合用时应评估血栓等风险。"
+            ],
+            "majorInteractions": [
+              "体外资料提示 CYP3A4 抑制剂可增加暴露，临床影响程度不明。"
+            ],
+            "monitoring": [
+              "评估异常出血、嗜睡或眩晕，定期复核合并雌激素的适用性。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Micronized progesterone capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "口服微粒化胶囊",
+              "notes": [
+                "该说明书报告服药后约 3 小时内达峰。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Micronized progesterone capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 1.5,
+                "max": 1.5,
+                "unit": "h",
+                "basis": "绝经后女性连续服 100 mg，第 5 天平均值"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "子宫内膜增生预防",
+              "population": "保留子宫并使用结合雌激素的绝经后女性",
+              "route": "Oral",
+              "formulation": "口服微粒化胶囊",
+              "amountText": "200 mg",
+              "scheduleText": "每 28 天周期内连续 12 天睡前服用",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 1, 2025-12-17",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Micronized progesterone capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 200,
+                  "max": 200,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "孕激素"
+            ],
+            "mechanisms": [
+              "黄体酮受体激动作用。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Micronized progesterone capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        },
+        "en": {
+          "displayName": "Micronized progesterone",
+          "summary": "Oral capsules containing micronized progesterone.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "G03DA04"
+            ],
+            "drugClass": [
+              "Progestogen"
+            ],
+            "indications": [
+              "Prevention of endometrial hyperplasia in postmenopausal women with a uterus taking conjugated estrogens.",
+              "Secondary amenorrhea."
+            ],
+            "contraindications": [
+              "Unexplained genital bleeding, known or suspected breast cancer, active or prior thrombosis, liver disease, known or suspected pregnancy or hypersensitivity. The cited capsules contain peanut oil."
+            ],
+            "majorWarnings": [
+              "May cause drowsiness or dizziness. Assess risks including thrombosis when combined with estrogen."
+            ],
+            "majorInteractions": [
+              "In vitro evidence suggests CYP3A4 inhibitors may increase exposure. Clinical magnitude is unknown."
+            ],
+            "monitoring": [
+              "Evaluate abnormal bleeding, drowsiness or dizziness, and periodically reassess combined estrogen therapy."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Micronized progesterone capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Oral micronized capsule",
+              "notes": [
+                "The label reports peaks within approximately three hours."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Micronized progesterone capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "tmax": {
+                "min": 1.5,
+                "max": 1.5,
+                "unit": "h",
+                "basis": "Day 5 mean after repeated 100 mg in postmenopausal women"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Prevention of endometrial hyperplasia",
+              "population": "Postmenopausal women with a uterus taking conjugated estrogens",
+              "route": "Oral",
+              "formulation": "Oral micronized capsule",
+              "amountText": "200 mg",
+              "scheduleText": "At bedtime for 12 consecutive days of each 28-day cycle",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 1, 2025-12-17",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Micronized progesterone capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 200,
+                  "max": 200,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": {
+            "hormoneClass": [
+              "Progestogen"
+            ],
+            "mechanisms": [
+              "Progesterone receptor agonism."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Micronized progesterone capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=462ae686-7264-4852-e063-6394a90aae98",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pw:db3a77d67f9fec2d3d30": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
+        "commonNames": [
+          "Trihexyphenidyl",
+          "Trihexyphenidyl HCl",
+          "盐酸苯海索",
+          "苯海索",
+          "Artane",
+          "苯海索盐酸盐"
+        ],
+        "categories": [
+          "neurology",
+          "antiparkinsonian",
+          "anticholinergic",
+          "prescription-medicine"
+        ],
+        "roas": [
+          {
+            "name": "Oral"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Trihexyphenidyl hydrochloride tablets",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          },
+          {
+            "title": "Lee et al. · Trihexyphenidyl pharmacokinetics",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/7658345/",
+            "sourceType": "human-study",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "HUMAN_STUDY"
+          },
+          {
+            "title": "DailyMed · Trihexyphenidyl hydrochloride oral solution",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e8e2ac3b-80dc-4449-9365-2586d6d57e10&type=display",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "盐酸苯海索",
+          "summary": "苯海索的盐酸盐，一种中枢抗胆碱药。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N04AA01"
+            ],
+            "drugClass": [
+              "抗胆碱类抗帕金森药"
+            ],
+            "indications": [
+              "辅助治疗帕金森综合征及控制特定药物诱发的锥体外系反应。"
+            ],
+            "contraindications": [
+              "所引美国口服液说明书将对成分过敏及窄角型青光眼列为禁忌。"
+            ],
+            "majorWarnings": [
+              "可能引起口干、便秘、尿潴留、视物模糊或认知混乱。可升高眼压，也可能加重迟发性运动障碍。"
+            ],
+            "majorInteractions": [
+              "与左旋多巴合用时，说明书提示可能需依据症状和不良反应调整剂量。"
+            ],
+            "monitoring": [
+              "片剂说明书建议眼科房角检查和定期监测眼压。随访排尿、排便及精神状态。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Trihexyphenidyl hydrochloride tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              },
+              {
+                "title": "Lee et al. · Trihexyphenidyl pharmacokinetics",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/7658345/",
+                "sourceType": "human-study",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "HUMAN_STUDY"
+              },
+              {
+                "title": "DailyMed · Trihexyphenidyl hydrochloride oral solution",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e8e2ac3b-80dc-4449-9365-2586d6d57e10&type=display",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "片剂",
+              "notes": [
+                "单次给药的血浆达峰时间。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Lee et al. · Trihexyphenidyl pharmacokinetics",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/7658345/",
+                  "sourceType": "human-study",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "HUMAN_STUDY"
+                }
+              ],
+              "tmax": {
+                "min": 1.32,
+                "max": 1.32,
+                "unit": "h",
+                "basis": "8 名健康男性单次口服 4 mg，血浆放射免疫法均值"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "特发性帕金森综合征",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "片剂",
+              "amountText": "首日可用 1 mg",
+              "scheduleText": "口服，后续根据耐受和疗效逐步调整",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 13, 2026-07-23",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Trihexyphenidyl hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1,
+                  "max": 1,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "initial"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Trihexyphenidyl hydrochloride",
+          "summary": "The hydrochloride salt of trihexyphenidyl, a centrally acting anticholinergic.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "N04AA01"
+            ],
+            "drugClass": [
+              "Anticholinergic antiparkinsonian"
+            ],
+            "indications": [
+              "Adjunctive treatment of parkinsonism and control of extrapyramidal reactions from certain medicines."
+            ],
+            "contraindications": [
+              "The cited US oral solution label lists hypersensitivity to ingredients and narrow-angle glaucoma as contraindications."
+            ],
+            "majorWarnings": [
+              "May cause dry mouth, constipation, urinary retention, blurred vision or confusion. May raise intraocular pressure or worsen tardive dyskinesia."
+            ],
+            "majorInteractions": [
+              "When combined with levodopa, the label notes that dose adjustment may be needed based on symptoms and adverse effects."
+            ],
+            "monitoring": [
+              "The tablet label calls for gonioscopy and periodic intraocular pressure monitoring. Follow urinary and bowel function and mental status."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Trihexyphenidyl hydrochloride tablets",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              },
+              {
+                "title": "Lee et al. · Trihexyphenidyl pharmacokinetics",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/7658345/",
+                "sourceType": "human-study",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "HUMAN_STUDY"
+              },
+              {
+                "title": "DailyMed · Trihexyphenidyl hydrochloride oral solution",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=e8e2ac3b-80dc-4449-9365-2586d6d57e10&type=display",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Tablet",
+              "notes": [
+                "Time to peak plasma concentration after one dose."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "Lee et al. · Trihexyphenidyl pharmacokinetics",
+                  "url": "https://pubmed.ncbi.nlm.nih.gov/7658345/",
+                  "sourceType": "human-study",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "HUMAN_STUDY"
+                }
+              ],
+              "tmax": {
+                "min": 1.32,
+                "max": 1.32,
+                "unit": "h",
+                "basis": "Plasma radioimmunoassay mean in eight healthy men after one oral 4 mg dose"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Idiopathic parkinsonism",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Tablet",
+              "amountText": "First day may use 1 mg",
+              "scheduleText": "Orally, with later titration based on tolerance and response",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL 13, 2026-07-23",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Trihexyphenidyl hydrochloride tablets",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c25ea809-5bdf-4917-97f1-610059fbd0b7",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 1,
+                  "max": 1,
+                  "unit": "mg",
+                  "basis": "daily-total",
+                  "rangeKind": "initial"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
     }
   }
 }
