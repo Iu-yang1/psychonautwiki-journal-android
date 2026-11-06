@@ -70843,6 +70843,235 @@
           "endocrineInfo": null
         }
       }
+    },
+    "pw:26357835a96bd2133897": {
+      "fields": {
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+        "commonNames": [
+          "Nicardipine",
+          "尼卡地平",
+          "Cardene",
+          "盐酸尼卡地平"
+        ],
+        "categories": [
+          "cardiovascular",
+          "prescription-medicine",
+          "atc-c08"
+        ],
+        "roas": [
+          {
+            "name": "ORAL"
+          }
+        ],
+        "recordingUnits": {
+          "ORAL": "mg"
+        },
+        "formulationIds": [
+          "form:oral-solid",
+          "form:capsule"
+        ],
+        "interactions": null,
+        "tdm": null,
+        "sourceRefs": [
+          {
+            "title": "DailyMed · Nicardipine hydrochloride capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+            "sourceType": "regulatory-label",
+            "accessedDate": "2026-11-06",
+            "evidenceLevel": "REGULATORY_LABEL"
+          }
+        ]
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "尼卡地平",
+          "summary": "所引制剂为盐酸尼卡地平口服胶囊；静脉与口服制剂不能直接等量互换。",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C08CA04"
+            ],
+            "drugClass": [
+              "二氢吡啶类钙通道阻滞剂"
+            ],
+            "indications": [
+              "慢性稳定型心绞痛和高血压，可与其他抗心绞痛或降压药合用。"
+            ],
+            "contraindications": [
+              "对尼卡地平过敏；重度主动脉瓣狭窄。"
+            ],
+            "majorWarnings": [
+              "血压谷峰波动较大，可发生低血压、反射性心动过速、水肿和心绞痛加重；需个体化滴定。"
+            ],
+            "majorInteractions": [
+              "CYP3A4 抑制剂可能升高暴露，诱导药可能降低暴露；与其他降压药、β 受体阻滞剂和硝酸酯合用可叠加心血管作用。"
+            ],
+            "monitoring": [
+              "监测血压、心率、心绞痛、水肿和肝功能；增量前等待稳态并核对口服制剂说明。"
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Nicardipine hydrochloride capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "胶囊",
+              "notes": [
+                "所引说明书的药代资料。"
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Nicardipine hydrochloride capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 2,
+                "max": 4,
+                "unit": "h",
+                "basis": "口服给药的消除半衰期范围"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "心绞痛或高血压",
+              "population": "成人",
+              "route": "Oral",
+              "formulation": "胶囊",
+              "amountText": "起始每次 20 mg",
+              "scheduleText": "每日三次；常用每次 20–40 mg，按疗效和耐受调整",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL version 1, 2026-07-24",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Nicardipine hydrochloride capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 40,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        },
+        "en": {
+          "displayName": "Nicardipine",
+          "summary": "The cited product is oral nicardipine hydrochloride capsules; intravenous and oral products are not directly interchangeable.",
+          "clinicalInfo": {
+            "atcCodes": [
+              "C08CA04"
+            ],
+            "drugClass": [
+              "Dihydropyridine calcium-channel blocker"
+            ],
+            "indications": [
+              "Chronic stable angina and hypertension, alone or with other antianginal or antihypertensive drugs."
+            ],
+            "contraindications": [
+              "Hypersensitivity to nicardipine and advanced aortic stenosis."
+            ],
+            "majorWarnings": [
+              "Blood-pressure effect fluctuates substantially between doses; hypotension, reflex tachycardia, edema and worsening angina can occur."
+            ],
+            "majorInteractions": [
+              "CYP3A4 inhibitors may raise exposure and inducers may lower it; other antihypertensives, beta blockers and nitrates may add cardiovascular effects."
+            ],
+            "monitoring": [
+              "Monitor blood pressure, heart rate, angina, edema and liver function; wait for steady state before titration and use oral-product guidance."
+            ],
+            "sourceRefs": [
+              {
+                "title": "DailyMed · Nicardipine hydrochloride capsules",
+                "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+                "sourceType": "regulatory-label",
+                "accessedDate": "2026-11-06",
+                "evidenceLevel": "REGULATORY_LABEL"
+              }
+            ]
+          },
+          "timeCourse": [
+            {
+              "route": "Oral",
+              "formulation": "Capsule",
+              "notes": [
+                "Pharmacokinetics from the cited label."
+              ],
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Nicardipine hydrochloride capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "eliminationHalfLife": {
+                "min": 2,
+                "max": 4,
+                "unit": "h",
+                "basis": "Elimination half-life range after oral dosing"
+              }
+            }
+          ],
+          "doseUseReferences": [
+            {
+              "indication": "Angina or hypertension",
+              "population": "Adults",
+              "route": "Oral",
+              "formulation": "Capsule",
+              "amountText": "Initial 20 mg per dose",
+              "scheduleText": "Three times daily; usual 20 to 40 mg per dose, adjusted to response",
+              "sourceType": "regulatory-label",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "scheduleReviewStatus": "reviewed",
+              "scheduleReviewedDate": "2026-11-06",
+              "reviewedLabelMatch": "SPL version 1, 2026-07-24",
+              "sourceRefs": [
+                {
+                  "title": "DailyMed · Nicardipine hydrochloride capsules",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL"
+                }
+              ],
+              "ranges": [
+                {
+                  "min": 20,
+                  "max": 40,
+                  "unit": "mg",
+                  "basis": "per-dose",
+                  "rangeKind": "label-regimen"
+                }
+              ]
+            }
+          ],
+          "endocrineInfo": null
+        }
+      }
     }
   }
 }

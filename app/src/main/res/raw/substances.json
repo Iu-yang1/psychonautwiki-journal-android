@@ -39873,9 +39873,10 @@
       "commonNames": [
         "Nicardipine",
         "尼卡地平",
-        "C08CA04"
+        "Cardene",
+        "盐酸尼卡地平"
       ],
-      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicardipine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
       "isApproved": true,
       "crossTolerances": [],
       "toxicities": [
@@ -39887,116 +39888,64 @@
         "prescription-medicine",
         "atc-c08"
       ],
-      "summary": "尼卡地平属于C08 钙通道阻滞剂。本条目用于 ATC 分类、药代/药效时间进程、相互作用和监测要点的学习索引，不构成医疗建议、处方建议或剂量调整建议。",
+      "summary": "The cited product is oral nicardipine hydrochloride capsules; intravenous and oral products are not directly interchangeable.",
       "clinicalInfo": {
         "atcCodes": [
           "C08CA04"
         ],
         "drugClass": [
-          "C08 钙通道阻滞剂",
-          "二氢吡啶类钙通道阻滞剂",
-          "Calcium channel blockers"
+          "Dihydropyridine calcium-channel blocker"
         ],
         "indications": [
-          "Indications depend on approved local labeling and clinical context."
+          "Chronic stable angina and hypertension, alone or with other antianginal or antihypertensive drugs."
         ],
-        "contraindications": [],
+        "contraindications": [
+          "Hypersensitivity to nicardipine and advanced aortic stenosis."
+        ],
         "majorWarnings": [
-          "严重不良反应风险与适应证、剂量、器官功能、合并用药和个体易感性有关。",
-          "本资料仅用于学习索引，不能用于自行用药或调整剂量。",
-          "公开人体药代资料有限，相关数值仅作资料索引，不应用于临床推断。"
+          "Blood-pressure effect fluctuates substantially between doses; hypotension, reflex tachycardia, edema and worsening angina can occur."
         ],
         "majorInteractions": [
-          "与同类药或影响血压、心率、凝血、肾功能、电解质、CYP/P-gp 转运的药物合用时需查阅说明书。"
+          "CYP3A4 inhibitors may raise exposure and inducers may lower it; other antihypertensives, beta blockers and nitrates may add cardiovascular effects."
         ],
         "monitoring": [
-          "适应证相关疗效指标",
-          "血压/心率或症状",
-          "肝肾功能、电解质或凝血指标，按药物类别和说明书选择"
+          "Monitor blood pressure, heart rate, angina, edema and liver function; wait for steady state before titration and use oral-product guidance."
         ],
         "sourceRefs": [
           {
-            "title": "DailyMed Nicardipine label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicardipine",
+            "title": "DailyMed · Nicardipine hydrochloride capsules",
+            "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
             "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23",
+            "accessedDate": "2026-11-06",
             "evidenceLevel": "REGULATORY_LABEL"
-          },
-          {
-            "title": "WHO ATC/DDD Index: C08CA04",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA04",
-            "sourceType": "terminology",
-            "accessedDate": "2026-06-23",
-            "evidenceLevel": "TERMINOLOGY"
           }
         ]
       },
       "timeCourse": [
         {
-          "route": "oral",
-          "formulation": "capsule/injection",
-          "tmax": {
-            "min": 0.5,
-            "max": 2,
-            "unit": "h",
-            "basis": "plasma concentration"
-          },
-          "durationOfAction": {
-            "min": 4,
-            "max": 8,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
+          "route": "Oral",
+          "formulation": "Capsule",
+          "notes": [
+            "Pharmacokinetics from the cited label."
+          ],
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Nicardipine hydrochloride capsules",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
           "eliminationHalfLife": {
             "min": 2,
             "max": 4,
             "unit": "h",
-            "basis": "label pharmacokinetics"
-          },
-          "notes": [
-            "Tmax、药效峰值、持续时间和半衰期不是同一概念；曲线仅用于学习索引。",
-            "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。"
-          ],
-          "sourceRefs": [
-            {
-              "title": "DailyMed Nicardipine label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicardipine",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23",
-              "evidenceLevel": "REGULATORY_LABEL"
-            },
-            {
-              "title": "WHO ATC/DDD Index: C08CA04",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA04",
-              "sourceType": "terminology",
-              "accessedDate": "2026-06-23",
-              "evidenceLevel": "TERMINOLOGY"
-            }
-          ]
+            "basis": "Elimination half-life range after oral dosing"
+          }
         }
       ],
-      "tdm": {
-        "isRoutinelyMonitored": false,
-        "monitoringType": "not routinely monitored by plasma concentration",
-        "reason": "临床通常按症状、血压/心率、实验室安全性指标或目标指标监测，而不是常规血药浓度。",
-        "pharmacokineticParametersAvailable": true,
-        "sourceRefs": [
-          {
-            "title": "DailyMed Nicardipine label search",
-            "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicardipine",
-            "sourceType": "regulatory-label",
-            "accessedDate": "2026-06-23",
-            "evidenceLevel": "REGULATORY_LABEL"
-          },
-          {
-            "title": "WHO ATC/DDD Index: C08CA04",
-            "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA04",
-            "sourceType": "terminology",
-            "accessedDate": "2026-06-23",
-            "evidenceLevel": "TERMINOLOGY"
-          }
-        ]
-      },
+      "tdm": null,
       "roas": [
         {
           "name": "ORAL"
@@ -40004,72 +39953,67 @@
       ],
       "doseUseReferences": [
         {
-          "indication": "Indications depend on approved local labeling and clinical context.",
-          "population": "Adults or source-specific population; verify cited source",
-          "route": "oral",
-          "formulation": "capsule/injection",
-          "amountText": "20-120 mg legacy reference span",
-          "scheduleText": "The cited label contains multiple or context-specific schedules: twice daily, three times daily. Dosing is also individualized or titrated in the cited section. Verify the exact indication and treatment phase.",
+          "indication": "Angina or hypertension",
+          "population": "Adults",
+          "route": "Oral",
+          "formulation": "Capsule",
+          "amountText": "Initial 20 mg per dose",
+          "scheduleText": "Three times daily; usual 20 to 40 mg per dose, adjusted to response",
+          "sourceType": "regulatory-label",
+          "evidenceLevel": "REGULATORY_LABEL",
+          "scheduleReviewStatus": "reviewed",
+          "scheduleReviewedDate": "2026-11-06",
+          "reviewedLabelMatch": "SPL version 1, 2026-07-24",
+          "sourceRefs": [
+            {
+              "title": "DailyMed · Nicardipine hydrochloride capsules",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            }
+          ],
           "ranges": [
             {
               "min": 20,
-              "max": 120,
+              "max": 40,
               "unit": "mg",
               "basis": "per-dose",
-              "frequency": "source specific",
-              "rangeKind": "protocol-range",
-              "label": "Migrated clinical reference span",
-              "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-              "components": []
+              "rangeKind": "label-regimen"
             }
-          ],
-          "sourceType": "regulatory-label",
-          "evidenceLevel": "REGULATORY_LABEL",
-          "note": "This span was migrated from the former clinical use of roas.dose thresholds. The previous Light/Common/Strong/Heavy labels have been removed. Verify the indication-, formulation-, organ-function-, and monitoring-specific regimen in the cited source. This is a label- or literature-reported regimen reference, not a dosing recommendation. It must not be used for self-medication or dose adjustment.",
-          "sourceRefs": [
-            {
-              "title": "DailyMed Nicardipine label search",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicardipine",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-06-23",
-              "labelSection": "Dosage and Administration",
-              "note": "Dose-use frequency reviewed against the cited regulatory label or official label dataset on 2026-06-24.",
-              "evidenceLevel": "REGULATORY_LABEL"
-            },
-            {
-              "title": "WHO ATC/DDD Index: C08CA04",
-              "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA04",
-              "sourceType": "terminology",
-              "accessedDate": "2026-06-23",
-              "evidenceLevel": "TERMINOLOGY"
-            }
-          ],
-          "reviewedLabelMatch": "Nicardipine",
-          "scheduleReviewStatus": "reviewed",
-          "scheduleReviewedDate": "2026-06-24"
+          ]
         }
       ],
       "sourceRefs": [
         {
-          "title": "DailyMed Nicardipine label search",
-          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Nicardipine",
+          "title": "DailyMed · Nicardipine hydrochloride capsules",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
           "sourceType": "regulatory-label",
-          "accessedDate": "2026-06-23",
+          "accessedDate": "2026-11-06",
           "evidenceLevel": "REGULATORY_LABEL"
-        },
-        {
-          "title": "WHO ATC/DDD Index: C08CA04",
-          "url": "https://atcddd.fhi.no/atc_ddd_index/?code=C08CA04",
-          "sourceType": "terminology",
-          "accessedDate": "2026-06-23",
-          "evidenceLevel": "TERMINOLOGY"
         }
       ],
       "id": "pw:26357835a96bd2133897",
+      "recordingUnits": {
+        "ORAL": "mg"
+      },
+      "formulationIds": [
+        "form:oral-solid",
+        "form:capsule"
+      ],
+      "interactions": null,
+      "displayName": "Nicardipine",
+      "endocrineInfo": null,
       "searchTerms": [
         "ATC-C08",
         "C08 钙通道阻滞剂",
         "二氢吡啶类钙通道阻滞剂"
+      ],
+      "reviewedFields": [
+        "commonNames",
+        "categories",
+        "roas",
+        "interactions"
       ]
     },
     {

@@ -39971,53 +39971,134 @@
       "batch": "cardiovascular-06",
       "fields": {
         "identity": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "commonNames": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "categories": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "roas": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "summary": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "clinicalInfo.indications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "clinicalInfo.contraindications": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "clinicalInfo.majorWarnings": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "clinicalInfo.majorInteractions": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "clinicalInfo.monitoring": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "doseUseReferences": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "timeCourse": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "sourceRefs": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "translation": {
-          "status": "pending"
+          "status": "verified",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ]
         },
         "interactions": {
-          "status": "pending"
+          "status": "not_applicable",
+          "reviewedDate": "2026-11-06",
+          "sourceIds": [
+            "spl-3227c1e1d8cfc10cc905"
+          ],
+          "reason": "相互作用由临床资料字段表达。"
         }
       },
-      "sources": [],
-      "searches": [],
+      "sources": [
+        {
+          "id": "spl-3227c1e1d8cfc10cc905",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1",
+          "title": "DailyMed · Nicardipine hydrochloride capsules",
+          "region": "US",
+          "version": "SPL version 1, 2026-07-24",
+          "accessedDate": "2026-11-06",
+          "sourceType": "regulatory-label",
+          "sha256": "4f3b747f85d527006f93a30329d7180a2ff1ff81469ef3531a051c799a183866"
+        }
+      ],
+      "searches": [
+        {
+          "date": "2026-11-06",
+          "query": "Nicardipine primary label, formulation and identity",
+          "result": "按所列原始资料核对制剂、成分、用量、时间及适用人群。",
+          "sourceUrls": [
+            "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=575c5dab-e832-192a-e063-6294a90a34a1"
+          ]
+        }
+      ],
       "aliasDecisions": []
     },
     "pw:3df3214210d154828f29": {
