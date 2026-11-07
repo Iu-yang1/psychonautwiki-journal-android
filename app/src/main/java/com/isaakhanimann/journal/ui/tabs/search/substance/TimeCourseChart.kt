@@ -47,13 +47,16 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.isaakhanimann.journal.R
+import com.isaakhanimann.journal.data.substances.classes.EFFECT_TIMELINE_NOT_RECOMMENDED
 import com.isaakhanimann.journal.data.substances.classes.TimeCourse
 import com.isaakhanimann.journal.data.substances.classes.TimeValue
-import com.isaakhanimann.journal.data.substances.classes.endpointHours
+import com.isaakhanimann.journal.data.substances.classes.pkPeakHours
 import com.isaakhanimann.journal.data.substances.classes.representativeHours
+import com.isaakhanimann.journal.data.substances.classes.timelineEndHours
 import com.isaakhanimann.journal.ui.utils.localizedClinicalRouteText
 import kotlin.math.ceil
 import kotlin.math.max
+import kotlin.math.min
 
 @Composable
 fun TimeCourseChart(timeCourse: TimeCourse) {
@@ -225,7 +228,7 @@ private fun TimePill(label: String, value: TimeValue?) {
     }
 }
 
-private data class TimeCourseChartModel(
+internal data class TimeCourseChartModel(
     val onsetStartHour: Float,
     val riseControlHour: Float,
     val peakHour: Float,
@@ -253,19 +256,17 @@ private data class TimeCourseChartModel(
     }
 }
 
-private fun TimeCourse.toChartModel(): TimeCourseChartModel? {
+internal fun TimeCourse.toChartModel(): TimeCourseChartModel? {
+    if (effectTimelineStatus == EFFECT_TIMELINE_NOT_RECOMMENDED) return null
     val representativeOnset = onset?.representativeHours()
     val onsetStart = representativeOnset ?: 0f
     val onsetEnd = representativeOnset ?: onsetStart
-    val durationEnd = durationOfAction?.endpointHours()
-    val washoutEnd = washout?.endpointHours()
-    val chartEndCandidate = durationEnd ?: washoutEnd ?: pkEstimatedEndHours() ?: return null
-    val peak = peakEffect?.representativeHours()
-        ?: tmax?.representativeHours()
-        ?: peakWindow?.representativeHours()
-        ?: timeToSteadyState?.representativeHours()
-        ?: defaultPkPeakHours()
-        ?: onsetEnd + ((chartEndCandidate - onsetEnd).coerceAtLeast(0.5f) * 0.25f)
+    val chartEndCandidate = timelineEndHours() ?: return null
+    val minPhase = min(0.1f, chartEndCandidate * 0.05f).coerceAtLeast(1f / 60f)
+    val peak = (
+        pkPeakHours()
+            ?: onsetEnd + ((chartEndCandidate - onsetEnd).coerceAtLeast(0.5f) * 0.25f)
+        ).coerceAtLeast(onsetEnd + minPhase)
     val end = max(chartEndCandidate, peak + 0.5f)
     val roundedEnd = max(0.25f, ceil(end * 2f) / 2f)
     return TimeCourseChartModel(
@@ -275,34 +276,6 @@ private fun TimeCourse.toChartModel(): TimeCourseChartModel? {
         fallControlHour = (peak + (roundedEnd - peak) * 0.45f).coerceIn(0f, roundedEnd),
         endHour = roundedEnd
     )
-}
-
-private fun TimeCourse.pkEstimatedEndHours(): Float? {
-    if (effectTimelineStatus != "pk-estimated") return null
-    val halfLife = eliminationHalfLife?.representativeHours()
-        ?: effectiveHalfLife?.representativeHours()
-        ?: return null
-    val peak = peakEffect?.representativeHours()
-        ?: tmax?.representativeHours()
-        ?: peakWindow?.representativeHours()
-        ?: timeToSteadyState?.representativeHours()
-        ?: defaultPkPeakHours()
-        ?: 0.25f
-    return peak + halfLife * PK_HALF_LIVES_TO_LOW_LEVEL
-}
-
-private fun TimeCourse.defaultPkPeakHours(): Float? {
-    if (effectTimelineStatus != "pk-estimated") return null
-    val routeText = route.trim().lowercase().replace("_", " ")
-    val formulationText = formulation?.lowercase().orEmpty()
-    return when {
-        depotRelease || "depot" in formulationText -> 24f
-        "intravenous" in routeText || routeText == "iv" -> 0.25f
-        "intranasal" in routeText || "nasal" in routeText -> 0.5f
-        "injection" in formulationText -> 0.5f
-        "oral" in routeText -> 1f
-        else -> 0.5f
-    }
 }
 
 private fun Float.toAxisLabel(): String {
@@ -333,5 +306,3 @@ private fun Double.toReadableString(): String {
         toString()
     }
 }
-
-private const val PK_HALF_LIVES_TO_LOW_LEVEL = 5f

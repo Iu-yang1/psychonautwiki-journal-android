@@ -1957,7 +1957,15 @@
                 "max": 53,
                 "unit": "day",
                 "basis": "缓释后的终末半衰期中位数"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 28,
+                "max": 28,
+                "unit": "day",
+                "basis": "每月维持给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "28 天窗口表示每月维持给药间隔，不是单次给药后的药效持续时间。"
             }
           ],
           "doseUseReferences": [
@@ -2115,7 +2123,15 @@
                 "max": 53,
                 "unit": "day",
                 "basis": "Median terminal half-life after depot administration"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 28,
+                "max": 28,
+                "unit": "day",
+                "basis": "Monthly maintenance dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "The 28-day window is the monthly maintenance interval, not a single-dose effect duration."
             }
           ],
           "doseUseReferences": [
@@ -2338,7 +2354,15 @@
                 "max": 4,
                 "unit": "day",
                 "basis": "每日给药"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "每日给药间隔；仅用于确定曲线横轴。"
             }
           ],
           "doseUseReferences": [
@@ -2471,7 +2495,15 @@
                 "max": 4,
                 "unit": "day",
                 "basis": "Daily administration"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Daily dosing interval; plot range only."
             }
           ],
           "doseUseReferences": [
@@ -2987,7 +3019,15 @@
                 "max": 10,
                 "unit": "day",
                 "basis": "约值"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "每日给药间隔；仅用于确定曲线横轴。"
             }
           ],
           "doseUseReferences": [
@@ -3114,7 +3154,15 @@
                 "max": 10,
                 "unit": "day",
                 "basis": "Approximate"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Daily dosing interval; plot range only."
             }
           ],
           "doseUseReferences": [
@@ -3290,7 +3338,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "戈舍瑞林植入剂持续释放，所引资料没有可用于单次峰值曲线的 Tmax 或半衰期，因此不绘制时间轴。"
             }
           ],
           "doseUseReferences": [
@@ -3408,7 +3458,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "The goserelin implant releases continuously; the cited source has no single-dose Tmax or half-life for a peak-and-decay curve, so no timeline is drawn."
             }
           ],
           "doseUseReferences": [
@@ -3571,7 +3623,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "组氨瑞林植入剂持续释放，所引资料没有可用于单次峰值曲线的 Tmax 或半衰期，因此不绘制时间轴。"
             }
           ],
           "doseUseReferences": [
@@ -3684,7 +3738,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "The histrelin implant releases continuously; the cited source has no single-dose Tmax or half-life for a peak-and-decay curve, so no timeline is drawn."
             }
           ],
           "doseUseReferences": [
@@ -3863,7 +3919,10 @@
             {
               "route": "transdermal",
               "formulation": "0.1% 大腿用凝胶",
-              "notes": [],
+              "notes": [
+                "Tmax 为 0.1% 凝胶第 14 天各剂量中位峰值范围；12 天是达稳态时间，不是单次峰值。",
+                "24 小时曲线表示每日涂抹窗口，不是临床效应终点。"
+              ],
               "sourceRefs": [
                 {
                   "title": "Estradiol gel 0.1% US label",
@@ -3873,6 +3932,12 @@
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
               ],
+              "tmax": {
+                "min": 8,
+                "max": 16,
+                "unit": "h",
+                "basis": "0.1% 凝胶第 14 天：0.25/0.5/1.0 g 剂量的中位 Tmax 分别为 16/10/8 h；个体范围 0–72 h"
+              },
               "eliminationHalfLife": {
                 "min": 10,
                 "max": 10,
@@ -3884,7 +3949,15 @@
                 "max": 12,
                 "unit": "day",
                 "basis": "所引产品每日涂抹"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "每日给药间隔，仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "用血浆浓度时程作可视化的近似曲线。"
             }
           ],
           "doseUseReferences": [
@@ -4029,7 +4102,10 @@
             {
               "route": "transdermal",
               "formulation": "0.1% thigh-applied gel",
-              "notes": [],
+              "notes": [
+                "Tmax is the day-14 median across the cited 0.1% gel doses; day 12 is time to steady state, not a single-dose peak.",
+                "The 24-hour plot is a daily-application window, not a clinical-effect endpoint."
+              ],
               "sourceRefs": [
                 {
                   "title": "Estradiol gel 0.1% US label",
@@ -4039,6 +4115,12 @@
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
               ],
+              "tmax": {
+                "min": 8,
+                "max": 16,
+                "unit": "h",
+                "basis": "Day 14 median Tmax was 16/10/8 h for 0.25/0.5/1.0 g doses; individual range 0–72 h"
+              },
               "eliminationHalfLife": {
                 "min": 10,
                 "max": 10,
@@ -4050,7 +4132,15 @@
                 "max": 12,
                 "unit": "day",
                 "basis": "Daily application of cited product"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Once-daily dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Approximate visualization of the plasma concentration time course."
             }
           ],
           "doseUseReferences": [
@@ -5246,7 +5336,9 @@
             {
               "route": "oral",
               "formulation": "Fylrevy 14.2 mg 单方片",
-              "notes": [],
+              "notes": [
+                "0.5 小时是稳态下的 Tmax；6–8 天是达稳态时间，二者不是同一概念。"
+              ],
               "sourceRefs": [
                 {
                   "title": "EMA Fylrevy product information",
@@ -5273,7 +5365,15 @@
                 "max": 24,
                 "unit": "h",
                 "basis": "终末相约值"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "每日给药间隔；仅用于确定曲线横轴。6–8 天为达稳态时间，不是峰值时间。"
             }
           ],
           "doseUseReferences": [
@@ -5409,7 +5509,9 @@
             {
               "route": "oral",
               "formulation": "Fylrevy 14.2 mg tablet",
-              "notes": [],
+              "notes": [
+                "The 0.5-hour value is Tmax at steady state; the 6–8 days to steady state is a different quantity."
+              ],
               "sourceRefs": [
                 {
                   "title": "EMA Fylrevy product information",
@@ -5436,7 +5538,15 @@
                 "max": 24,
                 "unit": "h",
                 "basis": "Approximate terminal phase"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Daily dosing interval; plot range only. The 6–8 days to steady state is not a peak time."
             }
           ],
           "doseUseReferences": [
@@ -5633,7 +5743,8 @@
               "route": "oral",
               "formulation": "雌二醇口服片剂",
               "notes": [
-                "口服雌二醇经首过代谢，和经皮制剂的暴露过程不同。"
+                "口服雌二醇经首过代谢，和经皮制剂的暴露过程不同。",
+                "24 小时曲线表示每日给药窗口，不是临床效应终点。"
               ],
               "sourceRefs": [
                 {
@@ -5642,8 +5753,36 @@
                   "sourceType": "regulatory-label",
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
+                },
+                {
+                  "title": "DailyMed Activella label",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "12.3 Pharmacokinetics"
                 }
-              ]
+              ],
+              "tmax": {
+                "min": 5,
+                "max": 8,
+                "unit": "h",
+                "basis": "Activella 说明书：口服后 5–8 h 达峰；表 3 中位 6 h（范围 0.5–16 h）"
+              },
+              "eliminationHalfLife": {
+                "min": 12,
+                "max": 14,
+                "unit": "h",
+                "basis": "Activella 说明书：单次给药 12–14 h"
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "每日给药间隔，仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "用血浆浓度时程作可视化的近似曲线。"
             }
           ],
           "doseUseReferences": [
@@ -5751,7 +5890,8 @@
               "route": "oral",
               "formulation": "Estradiol oral tablets",
               "notes": [
-                "Oral estradiol undergoes first-pass metabolism. Transdermal exposure differs."
+                "Oral estradiol undergoes first-pass metabolism. Transdermal exposure differs.",
+                "The 24-hour plot is a daily-dosing window, not a clinical-effect endpoint."
               ],
               "sourceRefs": [
                 {
@@ -5760,8 +5900,36 @@
                   "sourceType": "regulatory-label",
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
+                },
+                {
+                  "title": "DailyMed Activella label",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "12.3 Pharmacokinetics"
                 }
-              ]
+              ],
+              "tmax": {
+                "min": 5,
+                "max": 8,
+                "unit": "h",
+                "basis": "Activella label: peak plasma estradiol within 5–8 h; table median 6 h (range 0.5–16 h)"
+              },
+              "eliminationHalfLife": {
+                "min": 12,
+                "max": 14,
+                "unit": "h",
+                "basis": "Activella label: 12–14 h after a single dose"
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Once-daily dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Approximate visualization of the plasma concentration time course."
             }
           ],
           "doseUseReferences": [
@@ -7608,7 +7776,8 @@
               "route": "Oral",
               "formulation": "片剂",
               "notes": [
-                "吞服后经历肝脏首过代谢，雌二醇与雌酮可相互转化。"
+                "吞服后经历肝脏首过代谢，雌二醇与雌酮可相互转化。",
+                "Tmax 与半衰期取自所引口服复方单次给药；24 小时仅表示每日给药窗口。"
               ],
               "sourceRefs": [
                 {
@@ -7617,8 +7786,36 @@
                   "sourceType": "regulatory-label",
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
+                },
+                {
+                  "title": "DailyMed Activella label",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "12.3 Pharmacokinetics"
                 }
-              ]
+              ],
+              "tmax": {
+                "min": 5,
+                "max": 8,
+                "unit": "h",
+                "basis": "Activella 说明书：口服后 5–8 h 达峰；表 3 中位 6 h（范围 0.5–16 h）"
+              },
+              "eliminationHalfLife": {
+                "min": 12,
+                "max": 14,
+                "unit": "h",
+                "basis": "Activella 说明书：单次给药 12–14 h"
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "每日给药间隔，仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "用血浆浓度时程作可视化的近似曲线。"
             }
           ],
           "doseUseReferences": [
@@ -7713,7 +7910,8 @@
               "route": "Oral",
               "formulation": "Tablet",
               "notes": [
-                "Swallowed estradiol undergoes hepatic first-pass metabolism and interconverts with estrone."
+                "Swallowed estradiol undergoes hepatic first-pass metabolism and interconverts with estrone.",
+                "Tmax and half-life come from single-dose data for the cited oral combination product; the 24-hour window is daily dosing."
               ],
               "sourceRefs": [
                 {
@@ -7722,8 +7920,36 @@
                   "sourceType": "regulatory-label",
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
+                },
+                {
+                  "title": "DailyMed Activella label",
+                  "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+                  "sourceType": "regulatory-label",
+                  "accessedDate": "2026-11-06",
+                  "evidenceLevel": "REGULATORY_LABEL",
+                  "labelSection": "12.3 Pharmacokinetics"
                 }
-              ]
+              ],
+              "tmax": {
+                "min": 5,
+                "max": 8,
+                "unit": "h",
+                "basis": "Activella label: peak plasma estradiol within 5–8 h; table median 6 h (range 0.5–16 h)"
+              },
+              "eliminationHalfLife": {
+                "min": 12,
+                "max": 14,
+                "unit": "h",
+                "basis": "Activella label: 12–14 h after a single dose"
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Once-daily dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Approximate visualization of the plasma concentration time course."
             }
           ],
           "doseUseReferences": [
@@ -7859,7 +8085,8 @@
               "route": "Oral",
               "formulation": "片剂",
               "notes": [
-                "约 6–8 小时可出现第二个峰。"
+                "约 6–8 小时可出现第二个峰。",
+                "27 小时是说明书的排泄半衰期，不等同于通用血浆终末半衰期；24 小时仅表示每日给药窗口。"
               ],
               "sourceRefs": [
                 {
@@ -7875,7 +8102,21 @@
                 "max": 3,
                 "unit": "h",
                 "basis": "吞服后血浆雌二醇首次达峰"
-              }
+              },
+              "eliminationHalfLife": {
+                "min": 27,
+                "max": 27,
+                "unit": "h",
+                "basis": "说明书报告的排泄半衰期"
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "每日给药间隔，仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "用血浆浓度时程作可视化的近似曲线。"
             }
           ],
           "doseUseReferences": [
@@ -7970,7 +8211,8 @@
               "route": "Oral",
               "formulation": "Tablet",
               "notes": [
-                "A second peak may occur around 6–8 hours."
+                "A second peak may occur around 6–8 hours.",
+                "The 27-hour value is an excretion half-life, not a universal plasma terminal half-life; the 24-hour window is daily dosing."
               ],
               "sourceRefs": [
                 {
@@ -7986,7 +8228,21 @@
                 "max": 3,
                 "unit": "h",
                 "basis": "First plasma estradiol peak after swallowing"
-              }
+              },
+              "eliminationHalfLife": {
+                "min": 27,
+                "max": 27,
+                "unit": "h",
+                "basis": "Excretion half-life reported in the SmPC"
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Once-daily dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Approximate visualization of the plasma concentration time course."
             }
           ],
           "doseUseReferences": [
@@ -8174,7 +8430,9 @@
                 "max": 1,
                 "unit": "h",
                 "basis": "10 名跨性别女性单次 1 mg，LC–MS/MS 采样峰值"
-              }
+              },
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "所引研究只采样 8 小时，不能支持可靠的消除半衰期或效果时间轴。"
             },
             {
               "route": "Buccal",
@@ -8190,7 +8448,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "HUMAN_STUDY"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "所引颊片研究未报告单次给药的达峰或半衰期。"
             }
           ],
           "doseUseReferences": [
@@ -8315,7 +8575,9 @@
                 "max": 1,
                 "unit": "h",
                 "basis": "Observed LC–MS/MS sampling peak after one 1 mg dose in 10 transgender women"
-              }
+              },
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "The cited study sampled only 8 hours, which cannot support a reliable terminal half-life or effect timeline."
             },
             {
               "route": "Buccal",
@@ -8331,7 +8593,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "HUMAN_STUDY"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "The cited buccal-tablet study reports neither single-dose time to peak nor half-life."
             }
           ],
           "doseUseReferences": [
@@ -15475,7 +15739,15 @@
                 "max": 120,
                 "unit": "h",
                 "basis": "每日给药约 4–5 天达到稳态"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "每日给药间隔；仅用于确定曲线横轴。"
             }
           ],
           "doseUseReferences": [
@@ -15569,7 +15841,15 @@
                 "max": 120,
                 "unit": "h",
                 "basis": "Steady state after about 4–5 days of daily dosing"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Daily dosing interval; plot range only."
             }
           ],
           "doseUseReferences": [
@@ -25676,7 +25956,15 @@
                 "max": 120,
                 "unit": "h",
                 "basis": "口服约 5 天达到稳态"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "每日给药间隔；仅用于确定曲线横轴。"
             }
           ],
           "doseUseReferences": [
@@ -25770,7 +26058,15 @@
                 "max": 120,
                 "unit": "h",
                 "basis": "Steady state after about five days of oral dosing"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Daily dosing interval; plot range only."
             }
           ],
           "doseUseReferences": [
@@ -37810,7 +38106,15 @@
                 "max": 168,
                 "unit": "h",
                 "basis": "约 4–7 天"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 7,
+                "max": 7,
+                "unit": "day",
+                "basis": "每周给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "7 天窗口表示每周给药间隔，不是单次给药后的药效持续时间。"
             }
           ],
           "doseUseReferences": [
@@ -37904,7 +38208,15 @@
                 "max": 168,
                 "unit": "h",
                 "basis": "About four to seven days"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 7,
+                "max": 7,
+                "unit": "day",
+                "basis": "Weekly dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "The 7-day window is the weekly dosing interval, not a single-dose effect duration."
             }
           ],
           "doseUseReferences": [
@@ -44600,7 +44912,9 @@
                 "max": 142,
                 "unit": "day",
                 "basis": "母药跨个体范围，单位天"
-              }
+              },
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "胺碘酮终末半衰期为 15–142 天，且负荷剂量与组织蓄积使单次给药曲线失真，因此不绘制时间轴。"
             }
           ],
           "doseUseReferences": [
@@ -44694,7 +45008,9 @@
                 "max": 142,
                 "unit": "day",
                 "basis": "Parent-drug range across patients, in days"
-              }
+              },
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "Amiodarone's terminal half-life is 15–142 days, and loading-dose tissue accumulation makes a single-dose curve misleading, so no timeline is drawn."
             }
           ],
           "doseUseReferences": [
@@ -46429,7 +46745,15 @@
                 "max": 192,
                 "unit": "h",
                 "basis": "每日一次给药后约 7–8 天"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "每日给药间隔；仅用于确定曲线横轴。"
             }
           ],
           "doseUseReferences": [
@@ -46523,7 +46847,15 @@
                 "max": 192,
                 "unit": "h",
                 "basis": "About seven to eight days of once-daily dosing"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Daily dosing interval; plot range only."
             }
           ],
           "doseUseReferences": [
@@ -47754,7 +48086,15 @@
                 "max": 20,
                 "unit": "day",
                 "basis": "每两周给药的稳态表观中位范围，合用他汀可改变数值"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 14,
+                "max": 14,
+                "unit": "day",
+                "basis": "每两周给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "每 2 周给药间隔；仅用于确定曲线横轴。每月方案使用更长间隔。"
             }
           ],
           "doseUseReferences": [
@@ -47848,7 +48188,15 @@
                 "max": 20,
                 "unit": "day",
                 "basis": "Median apparent steady-state range with two-week dosing, altered by statin coadministration"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 14,
+                "max": 14,
+                "unit": "day",
+                "basis": "Two-week dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Every-two-week dosing interval; plot range only. Monthly regimens use a longer interval."
             }
           ],
           "doseUseReferences": [
@@ -52036,7 +52384,16 @@
               }
             ]
           },
-          "timeCourse": [],
+          "timeCourse": [
+            {
+              "route": "ORAL",
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "考来烯胺不被全身吸收，没有可用的血浆浓度或药效时间轴。",
+              "notes": [
+                "考来烯胺不被全身吸收，没有可用的血浆浓度或药效时间轴。"
+              ]
+            }
+          ],
           "doseUseReferences": [
             {
               "indication": "高胆固醇血症",
@@ -52107,7 +52464,16 @@
               }
             ]
           },
-          "timeCourse": [],
+          "timeCourse": [
+            {
+              "route": "ORAL",
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "Cholestyramine is not systemically absorbed, so a plasma-concentration or effect timeline cannot be derived.",
+              "notes": [
+                "Cholestyramine is not systemically absorbed, so a plasma-concentration or effect timeline cannot be derived."
+              ]
+            }
+          ],
           "doseUseReferences": [
             {
               "indication": "Hypercholesterolemia",
@@ -56912,7 +57278,16 @@
               }
             ]
           },
-          "timeCourse": [],
+          "timeCourse": [
+            {
+              "route": "ORAL",
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "考来维仑不被全身吸收，没有可用的血浆浓度或药效时间轴。",
+              "notes": [
+                "考来维仑不被全身吸收，没有可用的血浆浓度或药效时间轴。"
+              ]
+            }
+          ],
           "doseUseReferences": [
             {
               "indication": "原发性高胆固醇血症",
@@ -56983,7 +57358,16 @@
               }
             ]
           },
-          "timeCourse": [],
+          "timeCourse": [
+            {
+              "route": "ORAL",
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "Colesevelam is not systemically absorbed, so a plasma-concentration or effect timeline cannot be derived.",
+              "notes": [
+                "Colesevelam is not systemically absorbed, so a plasma-concentration or effect timeline cannot be derived."
+              ]
+            }
+          ],
           "doseUseReferences": [
             {
               "indication": "Primary hypercholesterolemia",
@@ -57575,7 +57959,15 @@
                 "max": 8,
                 "unit": "day",
                 "basis": "平均消除半衰期，单位天"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "每日维持给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "24 小时窗口表示每日维持给药间隔，不代表单次负荷剂量后的药效时程。"
             }
           ],
           "doseUseReferences": [
@@ -57669,7 +58061,15 @@
                 "max": 8,
                 "unit": "day",
                 "basis": "Mean elimination half-life in days"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Daily maintenance dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "The 24-hour window is the daily maintenance interval, not the effect time course after a loading dose."
             }
           ],
           "doseUseReferences": [
@@ -59533,7 +59933,15 @@
                 "max": 17,
                 "unit": "day",
                 "basis": "按给药方案，单位天"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 14,
+                "max": 14,
+                "unit": "day",
+                "basis": "每两周给药间隔；仅用于确定曲线横轴"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "每 2 周给药间隔；仅用于确定曲线横轴。每月方案使用更长间隔。"
             }
           ],
           "doseUseReferences": [
@@ -59627,7 +60035,15 @@
                 "max": 17,
                 "unit": "day",
                 "basis": "Across dosing regimens, in days"
-              }
+              },
+              "effectTimelineWindow": {
+                "min": 14,
+                "max": 14,
+                "unit": "day",
+                "basis": "Two-week dosing interval; plot range only"
+              },
+              "effectTimelineStatus": "pk-estimated",
+              "effectTimelineNote": "Every-two-week dosing interval; plot range only. Monthly regimens use a longer interval."
             }
           ],
           "doseUseReferences": [
@@ -73839,8 +74255,8 @@
               "notes": [
                 "Procainamide and active metabolite NAPA interpretation depends on renal function, acetylator status, ECG/QRS/QT, dose timing, and infusion context."
               ],
-              "effectTimelineStatus": "pk-estimated",
-              "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "普鲁卡因胺静脉给药通常为负荷后持续输注，稳态浓度不是单次峰值曲线，因此不绘制静脉时间轴。",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Procainamide",
@@ -74013,8 +74429,8 @@
               "notes": [
                 "Procainamide and active metabolite NAPA interpretation depends on renal function, acetylator status, ECG/QRS/QT, dose timing, and infusion context."
               ],
-              "effectTimelineStatus": "pk-estimated",
-              "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "Intravenous procainamide is usually given as a loading dose followed by continuous infusion; steady-state infusion is not a single-dose peak curve, so no IV timeline is drawn.",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Procainamide",
@@ -75772,7 +76188,7 @@
                 "Antianginal response and QT effects are pharmacodynamic outcomes distinct from plasma Tmax."
               ],
               "effectTimelineStatus": "pk-estimated",
-              "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+              "effectTimelineNote": "每日两次给药间隔；仅用于确定曲线横轴。",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Ranolazine",
@@ -75781,7 +76197,13 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineWindow": {
+                "min": 12,
+                "max": 12,
+                "unit": "h",
+                "basis": "给药间隔；仅用于确定曲线横轴"
+              }
             }
           ],
           "doseUseReferences": [
@@ -75890,7 +76312,7 @@
                 "Antianginal response and QT effects are pharmacodynamic outcomes distinct from plasma Tmax."
               ],
               "effectTimelineStatus": "pk-estimated",
-              "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+              "effectTimelineNote": "Twice-daily dosing interval; plot range only.",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Ranolazine",
@@ -75899,7 +76321,13 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineWindow": {
+                "min": 12,
+                "max": 12,
+                "unit": "h",
+                "basis": "Dosing interval; plot range only"
+              }
             }
           ],
           "doseUseReferences": [
@@ -78497,12 +78925,6 @@
                 "unit": "min",
                 "basis": "clinical effect"
               },
-              "durationOfAction": {
-                "min": 1,
-                "max": 10,
-                "unit": "min",
-                "basis": "clinical effect"
-              },
               "eliminationHalfLife": {
                 "min": 2,
                 "max": 2,
@@ -78521,7 +78943,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "硝普钠静脉给药为按血压滴定的持续输注，稳态输注不是单次峰值曲线，因此不绘制静脉时间轴。"
             }
           ],
           "doseUseReferences": [
@@ -78611,12 +79035,6 @@
                 "unit": "min",
                 "basis": "clinical effect"
               },
-              "durationOfAction": {
-                "min": 1,
-                "max": 10,
-                "unit": "min",
-                "basis": "clinical effect"
-              },
               "eliminationHalfLife": {
                 "min": 2,
                 "max": 2,
@@ -78635,7 +79053,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "Sodium nitroprusside is given as a continuous, blood-pressure-titrated intravenous infusion; steady-state infusion is not a single-peak curve, so no intravenous timeline is drawn."
             }
           ],
           "doseUseReferences": [
@@ -78838,7 +79258,7 @@
                 "Steady-state is reached after about 5 to 6 doses when administered twice daily."
               ],
               "effectTimelineStatus": "pk-estimated",
-              "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+              "effectTimelineNote": "以每日两次维持方案表示的绘图窗口；说明书还包含每日三次等其他方案。",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Sotalol",
@@ -78847,7 +79267,13 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineWindow": {
+                "min": 12,
+                "max": 12,
+                "unit": "h",
+                "basis": "给药间隔；仅用于确定曲线横轴"
+              }
             }
           ],
           "doseUseReferences": [
@@ -78964,7 +79390,7 @@
                 "Steady-state is reached after about 5 to 6 doses when administered twice daily."
               ],
               "effectTimelineStatus": "pk-estimated",
-              "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+              "effectTimelineNote": "Twice-daily maintenance interval shown as the plot window; the label also lists other schedules.",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Sotalol",
@@ -78973,7 +79399,13 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineWindow": {
+                "min": 12,
+                "max": 12,
+                "unit": "h",
+                "basis": "Dosing interval; plot range only"
+              }
             }
           ],
           "doseUseReferences": [
@@ -79930,14 +80362,7 @@
                 "Long terminal half-life supports a long concentration tail; clinical response is monitored by blood pressure."
               ],
               "effectTimelineStatus": "available",
-              "effectTimelineNote": "DailyMed reports onset within 3 hours and maintenance of once-daily antihypertensive effect through the full 24-hour dosing interval.",
-              "durationOfAction": {
-                "min": 24,
-                "max": 24,
-                "unit": "h",
-                "basis": "sourced pharmacodynamic duration or formulation coverage",
-                "note": "DailyMed reports onset within 3 hours and maintenance of once-daily antihypertensive effect through the full 24-hour dosing interval."
-              },
+              "effectTimelineNote": "替米沙坦为每日一次给药，24 小时是说明书给药间隔/谷浓度覆盖，不是测得的单次药效持续时间，因此仅作为绘图窗口显示。",
               "onset": {
                 "min": 3,
                 "max": 3,
@@ -79953,7 +80378,13 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing or formulation interval; plot range only"
+              }
             }
           ],
           "doseUseReferences": [
@@ -80058,14 +80489,7 @@
                 "Long terminal half-life supports a long concentration tail; clinical response is monitored by blood pressure."
               ],
               "effectTimelineStatus": "available",
-              "effectTimelineNote": "DailyMed reports onset within 3 hours and maintenance of once-daily antihypertensive effect through the full 24-hour dosing interval.",
-              "durationOfAction": {
-                "min": 24,
-                "max": 24,
-                "unit": "h",
-                "basis": "sourced pharmacodynamic duration or formulation coverage",
-                "note": "DailyMed reports onset within 3 hours and maintenance of once-daily antihypertensive effect through the full 24-hour dosing interval."
-              },
+              "effectTimelineNote": "Telmisartan is dosed once daily; 24 hours is the labeled dosing interval and trough coverage, not a measured single-dose effect duration, so it is shown as the plot window only.",
               "onset": {
                 "min": 3,
                 "max": 3,
@@ -80081,7 +80505,13 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing or formulation interval; plot range only"
+              }
             }
           ],
           "doseUseReferences": [
@@ -81108,25 +81538,14 @@
               "formulation": "tablet/capsule",
               "notes": [
                 "产品专论报告血浆峰值浓度约在给药后 2 小时出现，终末消除半衰期为 4-5 天。",
-                "抗血小板作用不可逆；停药后多数患者出血时间和血小板功能约在 1 周内恢复。"
+                "抗血小板作用不可逆；停药后多数患者出血时间和血小板功能约在 1 周内恢复。",
+                "未绘制时间轴：抗血小板作用需按重复给药和停药后的恢复过程解释。"
               ],
               "tmax": {
                 "min": 2,
                 "max": 2,
                 "unit": "h",
                 "basis": "label pharmacokinetics"
-              },
-              "peakEffect": {
-                "min": 8,
-                "max": 11,
-                "unit": "day",
-                "basis": "pharmacodynamic effect"
-              },
-              "durationOfAction": {
-                "min": 5,
-                "max": 10,
-                "unit": "day",
-                "basis": "pharmacodynamic effect"
               },
               "eliminationHalfLife": {
                 "min": 96,
@@ -81148,7 +81567,9 @@
                 "max": 14,
                 "unit": "day",
                 "basis": "steady state reported after about 14 days at 250 mg twice daily"
-              }
+              },
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "噻氯匹定的抗血小板作用不可逆且随重复给药累积，单次给药的峰值与持续时间互相矛盾，不能据此绘制可靠时间轴。"
             }
           ],
           "doseUseReferences": [
@@ -81233,25 +81654,14 @@
               "formulation": "tablet/capsule",
               "notes": [
                 "The product monograph reports peak plasma concentrations at about 2 hours and a terminal elimination half-life of 4-5 days.",
-                "The antiplatelet effect is irreversible; bleeding time and platelet function return to normal within about one week after stopping in most patients."
+                "The antiplatelet effect is irreversible; bleeding time and platelet function return to normal within about one week after stopping in most patients.",
+                "No timeline is drawn: the antiplatelet effect must be interpreted with repeated dosing and post-discontinuation recovery."
               ],
               "tmax": {
                 "min": 2,
                 "max": 2,
                 "unit": "h",
                 "basis": "label pharmacokinetics"
-              },
-              "peakEffect": {
-                "min": 8,
-                "max": 11,
-                "unit": "day",
-                "basis": "pharmacodynamic effect"
-              },
-              "durationOfAction": {
-                "min": 5,
-                "max": 10,
-                "unit": "day",
-                "basis": "pharmacodynamic effect"
               },
               "eliminationHalfLife": {
                 "min": 96,
@@ -81273,7 +81683,9 @@
                 "max": 14,
                 "unit": "day",
                 "basis": "steady state reported after about 14 days at 250 mg twice daily"
-              }
+              },
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "Ticlopidine's antiplatelet effect is irreversible and cumulative; its single-dose peak and duration values conflict, so a reliable timeline is not drawn."
             }
           ],
           "doseUseReferences": [
@@ -81709,12 +82121,6 @@
                 "unit": "min",
                 "basis": "clinical effect"
               },
-              "durationOfAction": {
-                "min": 4,
-                "max": 8,
-                "unit": "h",
-                "basis": "clinical effect"
-              },
               "eliminationHalfLife": {
                 "min": 2,
                 "max": 2,
@@ -81733,7 +82139,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "替罗非班静脉给药为先负荷后持续输注，稳态血小板抑制不是单次峰值曲线，因此不绘制静脉时间轴。"
             }
           ],
           "doseUseReferences": [
@@ -81829,12 +82237,6 @@
                 "unit": "min",
                 "basis": "clinical effect"
               },
-              "durationOfAction": {
-                "min": 4,
-                "max": 8,
-                "unit": "h",
-                "basis": "clinical effect"
-              },
               "eliminationHalfLife": {
                 "min": 2,
                 "max": 2,
@@ -81853,7 +82255,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "Tirofiban is given as an intravenous bolus followed by a continuous infusion; steady-state platelet inhibition is not a single-peak curve, so no intravenous timeline is drawn."
             }
           ],
           "doseUseReferences": [
@@ -82900,8 +83304,8 @@
               "notes": [
                 "This time course represents continuous SC/IV Remodulin and must not be applied to inhaled or oral treprostinil formulations."
               ],
-              "effectTimelineStatus": "pk-estimated",
-              "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "曲前列尼尔持续皮下或静脉输注，稳态浓度不是单次峰值曲线，因此不绘制时间轴。",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Treprostinil",
@@ -83007,8 +83411,8 @@
               "notes": [
                 "This time course represents continuous SC/IV Remodulin and must not be applied to inhaled or oral treprostinil formulations."
               ],
-              "effectTimelineStatus": "pk-estimated",
-              "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "Continuous subcutaneous or intravenous treprostinil produces steady-state concentrations rather than a single-dose peak, so no timeline is drawn.",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Treprostinil",
@@ -84193,14 +84597,7 @@
                 "Extended-release verapamil has formulation-specific absorption and should not be collapsed with immediate-release entries."
               ],
               "effectTimelineStatus": "available",
-              "effectTimelineNote": "Extended-release verapamil is a once-daily controlled-release formulation; this encodes formulation coverage and should not be collapsed with immediate-release verapamil.",
-              "durationOfAction": {
-                "min": 24,
-                "max": 24,
-                "unit": "h",
-                "basis": "formulation pharmacodynamic coverage",
-                "note": "Extended-release verapamil is a once-daily controlled-release formulation; this encodes formulation coverage and should not be collapsed with immediate-release verapamil."
-              },
+              "effectTimelineNote": "维拉帕米缓释剂为每日一次控释制剂，24 小时是给药/制剂覆盖窗口，不是测得的单次药效持续时间，因此仅作为绘图窗口显示。",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Verapamil",
@@ -84209,7 +84606,13 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing or formulation interval; plot range only"
+              }
             }
           ],
           "doseUseReferences": [
@@ -84354,14 +84757,7 @@
                 "Extended-release verapamil has formulation-specific absorption and should not be collapsed with immediate-release entries."
               ],
               "effectTimelineStatus": "available",
-              "effectTimelineNote": "Extended-release verapamil is a once-daily controlled-release formulation; this encodes formulation coverage and should not be collapsed with immediate-release verapamil.",
-              "durationOfAction": {
-                "min": 24,
-                "max": 24,
-                "unit": "h",
-                "basis": "formulation pharmacodynamic coverage",
-                "note": "Extended-release verapamil is a once-daily controlled-release formulation; this encodes formulation coverage and should not be collapsed with immediate-release verapamil."
-              },
+              "effectTimelineNote": "Extended-release verapamil is a once-daily controlled-release formulation; 24 hours is the dosing/formulation coverage window, not a measured single-dose effect duration, so it is shown as the plot window only.",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Verapamil",
@@ -84370,7 +84766,13 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing or formulation interval; plot range only"
+              }
             }
           ],
           "doseUseReferences": [
@@ -84536,7 +84938,7 @@
                 "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。"
               ],
               "effectTimelineStatus": "pk-estimated",
-              "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+              "effectTimelineNote": "每日维持给药间隔；仅用于确定曲线横轴。",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Vericiguat",
@@ -84545,7 +84947,13 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "给药间隔；仅用于确定曲线横轴"
+              }
             }
           ],
           "doseUseReferences": [
@@ -84654,7 +85062,7 @@
                 "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。"
               ],
               "effectTimelineStatus": "pk-estimated",
-              "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+              "effectTimelineNote": "Daily maintenance dosing interval; plot range only.",
               "sourceRefs": [
                 {
                   "title": "DailyMed · Vericiguat",
@@ -84663,7 +85071,13 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineWindow": {
+                "min": 24,
+                "max": 24,
+                "unit": "h",
+                "basis": "Dosing interval; plot range only"
+              }
             }
           ],
           "doseUseReferences": [
@@ -84818,12 +85232,6 @@
                 "unit": "h",
                 "basis": "label pharmacokinetics"
               },
-              "durationOfAction": {
-                "min": 14,
-                "max": 28,
-                "unit": "day",
-                "basis": "pharmacodynamic effect"
-              },
               "eliminationHalfLife": {
                 "min": 5,
                 "max": 13,
@@ -84844,7 +85252,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "沃拉帕沙的血小板抑制作用随重复给药累积，停药后仍可持续约 4 周，单次给药曲线不能代表其药效时程。"
             }
           ],
           "doseUseReferences": [
@@ -84940,12 +85350,6 @@
                 "unit": "h",
                 "basis": "label pharmacokinetics"
               },
-              "durationOfAction": {
-                "min": 14,
-                "max": 28,
-                "unit": "day",
-                "basis": "pharmacodynamic effect"
-              },
               "eliminationHalfLife": {
                 "min": 5,
                 "max": 13,
@@ -84966,7 +85370,9 @@
                   "accessedDate": "2026-11-06",
                   "evidenceLevel": "REGULATORY_LABEL"
                 }
-              ]
+              ],
+              "effectTimelineStatus": "not-recommended",
+              "effectTimelineNote": "Vorapaxar's platelet inhibition accumulates with repeated dosing and persists for about four weeks after discontinuation; a single-dose curve does not represent its effect time course."
             }
           ],
           "doseUseReferences": [

@@ -72,8 +72,10 @@ def has_number(time_value: object) -> bool:
 
 
 def has_reliable_timeline_end(time_course: dict) -> bool:
-    return has_number(time_course.get("durationOfAction")) or has_number(
-        time_course.get("washout")
+    return (
+        has_number(time_course.get("durationOfAction"))
+        or has_number(time_course.get("washout"))
+        or has_number(time_course.get("effectTimelineWindow"))
     )
 
 

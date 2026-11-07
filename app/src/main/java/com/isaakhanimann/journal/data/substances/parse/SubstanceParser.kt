@@ -205,6 +205,7 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
                     formulation = jsonTimeCourse.getOptionalString("formulation"),
                     effectTimelineStatus = jsonTimeCourse.getOptionalString("effectTimelineStatus"),
                     effectTimelineNote = jsonTimeCourse.getOptionalString("effectTimelineNote"),
+                    effectTimelineWindow = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("effectTimelineWindow")),
                     onset = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("onset")),
                     tmax = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("tmax")),
                     peakEffect = parseTimeValue(jsonTimeCourse.getOptionalJSONObject("peakEffect")),

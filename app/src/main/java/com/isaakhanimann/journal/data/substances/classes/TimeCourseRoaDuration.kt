@@ -58,7 +58,8 @@ fun TimeCourse.matchingAdministrationRoutes(): Set<AdministrationRoute> {
 }
 
 internal fun TimeCourse.toRoaDurationForTimeline(): RoaDuration? {
-    var totalEnd = totalEndHours() ?: return null
+    if (effectTimelineStatus == EFFECT_TIMELINE_NOT_RECOMMENDED) return null
+    var totalEnd = timelineEndHours() ?: return null
     val onsetEnd = (onset?.representativeHours() ?: estimateOnsetHours(totalEnd))
         .coerceAtLeast(0f)
     var peakAt = pkPeakHours() ?: estimatePeakHours(onsetEnd, totalEnd)
@@ -84,11 +85,13 @@ internal fun TimeCourse.toRoaDurationForTimeline(): RoaDuration? {
     )
 }
 
-private fun TimeCourse.totalEndHours(): Float? {
+internal fun TimeCourse.timelineEndHours(): Float? {
+    if (effectTimelineStatus == EFFECT_TIMELINE_NOT_RECOMMENDED) return null
     val clinicalEnd = durationOfAction?.endpointHours()
     val washoutEnd = washout?.endpointHours()
+    val modeledWindowEnd = effectTimelineWindow?.endpointHours()
     val pkEnd = if (effectTimelineStatus == "pk-estimated") pkEstimatedEndHours() else null
-    return clinicalEnd ?: washoutEnd ?: pkEnd
+    return clinicalEnd ?: washoutEnd ?: modeledWindowEnd ?: pkEnd
 }
 
 private fun TimeCourse.pkEstimatedEndHours(): Float? {
@@ -99,11 +102,10 @@ private fun TimeCourse.pkEstimatedEndHours(): Float? {
     return peak + halfLife * PK_HALF_LIVES_TO_LOW_LEVEL
 }
 
-private fun TimeCourse.pkPeakHours(): Float? {
+internal fun TimeCourse.pkPeakHours(): Float? {
     return peakEffect?.representativeHours()
         ?: tmax?.representativeHours()
         ?: peakWindow?.representativeHours()
-        ?: timeToSteadyState?.representativeHours()
         ?: if (effectTimelineStatus == "pk-estimated") defaultPkPeakHours() else null
 }
 
@@ -142,6 +144,7 @@ private fun AdministrationRoute.normalizedRouteText(): String = name.lowercase()
 private fun TimeCourse.normalizedRouteText(): String = route.trim().lowercase().replace("_", " ")
 
 private const val PK_HALF_LIVES_TO_LOW_LEVEL = 5f
+internal const val EFFECT_TIMELINE_NOT_RECOMMENDED = "not-recommended"
 
 private val routeAliases = mapOf(
     AdministrationRoute.ORAL to setOf("oral", "po", "by mouth"),

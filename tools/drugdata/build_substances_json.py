@@ -166,8 +166,10 @@ def has_numeric_time(value: object) -> bool:
 
 
 def has_numeric_duration(time_course: dict) -> bool:
-    return has_numeric_time(time_course.get("durationOfAction")) or has_numeric_time(
-        time_course.get("washout")
+    return (
+        has_numeric_time(time_course.get("durationOfAction"))
+        or has_numeric_time(time_course.get("washout"))
+        or has_numeric_time(time_course.get("effectTimelineWindow"))
     )
 
 
@@ -204,6 +206,7 @@ TIMELINE_TIME_FIELDS = {
     "tmax",
     "onset",
     "peakEffect",
+    "effectTimelineWindow",
     "durationOfAction",
     "washout",
     "timeToSteadyState",
@@ -212,6 +215,7 @@ TIMELINE_TIME_FIELDS = {
 }
 
 TIMELINE_END_FIELDS = {
+    "effectTimelineWindow",
     "durationOfAction",
     "washout",
     "eliminationHalfLife",
@@ -236,7 +240,8 @@ def merge_timeline_field(target: dict, field_name: str, raw_value: object) -> No
     if target_field in {"notes", "sourceRefs"}:
         target[target_field] = append_unique(target.get(target_field, []), value)
     elif target_field == "effectTimelineStatus":
-        if target.get(target_field) is None or value == "available":
+        existing = str(target.get(target_field) or "").strip().lower()
+        if not existing or existing == "source-needed":
             target[target_field] = value
     elif target_field in TIMELINE_END_FIELDS:
         if not has_numeric_time(target.get(target_field)):
@@ -268,34 +273,25 @@ def apply_timeline_patch(
             merge_timeline_field(target, field_name, raw_value)
 
 
-def clone_timeline_for_route(template: dict, route: str) -> dict:
-    cloned = {
+def missing_route_timeline(item: dict, route: str) -> dict:
+    entry = {
         "route": route,
-        "effectTimelineStatus": "pk-estimated",
-        "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+        "effectTimelineStatus": "not-recommended",
+        "effectTimelineNote": (
+            "No route-specific pharmacokinetic or clinical-effect timeline is "
+            "available; values from another administration route are not copied."
+        ),
         "notes": [
-            "Approximate route-level timeline for visualization; not a dosing recommendation."
+            "No route-specific timeline was found; another route's values are not used."
         ],
     }
-    for field_name in ("eliminationHalfLife", "effectiveHalfLife", "tmax"):
-        if template.get(field_name) is not None:
-            cloned[field_name] = deepcopy(template.get(field_name))
-    if template.get("sourceRefs"):
-        cloned["sourceRefs"] = deepcopy(template.get("sourceRefs"))
-    return cloned
+    source_refs = item.get("sourceRefs", [])
+    if source_refs:
+        entry["sourceRefs"] = deepcopy(source_refs[:2])
+    return entry
 
 
 def infer_route_timelines(item: dict, time_courses: list[dict]) -> None:
-    template = next(
-        (
-            time_course
-            for time_course in time_courses
-            if has_numeric_half_life(time_course)
-        ),
-        None,
-    )
-    if template is None:
-        return
     for roa in item.get("roas", []):
         roa_name = normalize_route(roa.get("name"))
         route = next(
@@ -310,11 +306,13 @@ def infer_route_timelines(item: dict, time_courses: list[dict]) -> None:
             continue
         if any(route_matches(tc.get("route"), route) for tc in time_courses):
             continue
-        time_courses.append(clone_timeline_for_route(template, route))
+        time_courses.append(missing_route_timeline(item, route))
 
 
 def mark_pk_estimates(time_courses: list[dict]) -> None:
     for time_course in time_courses:
+        if time_course.get("effectTimelineStatus") == "not-recommended":
+            continue
         if (
             not has_numeric_duration(time_course)
             and has_numeric_half_life(time_course)
@@ -380,6 +378,7 @@ def validate_timeline_coverage(items: list[dict]) -> list[str]:
             ]
             if any(
                 has_numeric_duration(time_course)
+                or time_course.get("effectTimelineStatus") == "not-recommended"
                 or (
                     time_course.get("effectTimelineStatus") == "pk-estimated"
                     and has_numeric_half_life(time_course)

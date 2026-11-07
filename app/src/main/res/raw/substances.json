@@ -15699,23 +15699,11 @@
         },
         {
           "route": "SUBLINGUAL",
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "No route-specific pharmacokinetic or clinical-effect timeline is available; values from another administration route are not copied.",
           "notes": [
-            "Approximate route-level timeline for visualization; not a dosing recommendation."
+            "No route-specific timeline was found; another route's values are not used."
           ],
-          "eliminationHalfLife": {
-            "min": 2,
-            "max": 3,
-            "unit": "h",
-            "basis": "Unchanged drug after a single 10–40 mg dose"
-          },
-          "tmax": {
-            "min": 0.6666666666666666,
-            "max": 1.5,
-            "unit": "h",
-            "basis": "40–90 minutes after one oral 20 mg dose"
-          },
           "sourceRefs": [
             {
               "title": "DailyMed · Buspirone hydrochloride tablets",
@@ -44405,19 +44393,13 @@
             "basis": "Effective plasma half-life of about 12 hours with repeated dosing"
           },
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 24,
             "max": 24,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
-          "peakEffect": {
-            "min": 6,
-            "max": 6,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Antihypertensive coverage from once-daily labeling."
+          "effectTimelineNote": "Once-daily dosing interval shown as the plot window; not an effect duration."
         }
       ],
       "tdm": null,
@@ -44576,19 +44558,13 @@
             "basis": "Parent about two hours and active metabolite about six to nine hours"
           },
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 24,
             "max": 24,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
-          "peakEffect": {
-            "min": 3,
-            "max": 6,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Trough antihypertensive coverage from once-daily labeling."
+          "effectTimelineNote": "Once-daily dosing interval shown as the plot window; not an effect duration."
         }
       ],
       "tdm": null,
@@ -44979,8 +44955,8 @@
           "notes": [
             "Procainamide and active metabolite NAPA interpretation depends on renal function, acetylator status, ECG/QRS/QT, dose timing, and infusion context."
           ],
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Intravenous procainamide is usually given as a loading dose followed by continuous infusion; steady-state infusion is not a single-dose peak curve, so no IV timeline is drawn.",
           "sourceRefs": [
             {
               "title": "DailyMed · Procainamide",
@@ -45352,22 +45328,16 @@
             "unit": "day",
             "basis": "Parent-drug range across patients, in days"
           },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Amiodarone's terminal half-life is 15–142 days, and loading-dose tissue accumulation makes a single-dose curve misleading, so no timeline is drawn."
         },
         {
           "route": "INTRAVENOUS",
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "No route-specific pharmacokinetic or clinical-effect timeline is available; values from another administration route are not copied.",
           "notes": [
-            "Approximate route-level timeline for visualization; not a dosing recommendation."
+            "No route-specific timeline was found; another route's values are not used."
           ],
-          "eliminationHalfLife": {
-            "min": 15,
-            "max": 142,
-            "unit": "day",
-            "basis": "Parent-drug range across patients, in days"
-          },
           "sourceRefs": [
             {
               "title": "DailyMed · Amiodarone hydrochloride tablets",
@@ -46274,7 +46244,7 @@
             "Steady-state is reached after about 5 to 6 doses when administered twice daily."
           ],
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+          "effectTimelineNote": "Twice-daily maintenance interval shown as the plot window; the label also lists other schedules.",
           "sourceRefs": [
             {
               "title": "DailyMed · Sotalol",
@@ -46283,7 +46253,13 @@
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
             }
-          ]
+          ],
+          "effectTimelineWindow": {
+            "min": 12,
+            "max": 12,
+            "unit": "h",
+            "basis": "Dosing interval; plot range only"
+          }
         }
       ],
       "tdm": {
@@ -47618,8 +47594,14 @@
             "unit": "day",
             "basis": "Mean elimination half-life in days"
           },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Daily maintenance dosing interval; plot range only"
+          },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "The 24-hour window is the daily maintenance interval, not the effect time course after a loading dose."
         }
       ],
       "tdm": null,
@@ -48527,7 +48509,7 @@
             "具体数值需按制剂、适应证、人群、肝肾功能、合并用药和当地批准说明书复核。"
           ],
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+          "effectTimelineNote": "Daily maintenance dosing interval; plot range only.",
           "sourceRefs": [
             {
               "title": "DailyMed · Vericiguat",
@@ -48536,7 +48518,13 @@
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
             }
-          ]
+          ],
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Dosing interval; plot range only"
+          }
         }
       ],
       "tdm": {
@@ -49826,12 +49814,6 @@
             "unit": "min",
             "basis": "clinical effect"
           },
-          "durationOfAction": {
-            "min": 1,
-            "max": 10,
-            "unit": "min",
-            "basis": "clinical effect"
-          },
           "eliminationHalfLife": {
             "min": 2,
             "max": 2,
@@ -49850,7 +49832,9 @@
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
             }
-          ]
+          ],
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Sodium nitroprusside is given as a continuous, blood-pressure-titrated intravenous infusion; steady-state infusion is not a single-peak curve, so no intravenous timeline is drawn."
         }
       ],
       "tdm": {
@@ -56485,6 +56469,14 @@
             "unit": "h",
             "basis": "About seven to eight days of once-daily dosing"
           },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Dosing interval; plot range only"
+          },
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Daily dosing interval; plot range only.",
           "eliminationHalfLife": {
             "min": 24,
             "max": 40,
@@ -56496,9 +56488,7 @@
             "max": 3,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "tdm": null,
@@ -56914,8 +56904,14 @@
             "unit": "day",
             "basis": "Across dosing regimens, in days"
           },
+          "effectTimelineWindow": {
+            "min": 14,
+            "max": 14,
+            "unit": "day",
+            "basis": "Two-week dosing interval; plot range only"
+          },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Every-two-week dosing interval; plot range only. Monthly regimens use a longer interval."
         }
       ],
       "tdm": null,
@@ -57062,8 +57058,14 @@
             "unit": "day",
             "basis": "Median apparent steady-state range with two-week dosing, altered by statin coadministration"
           },
+          "effectTimelineWindow": {
+            "min": 14,
+            "max": 14,
+            "unit": "day",
+            "basis": "Two-week dosing interval; plot range only"
+          },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Every-two-week dosing interval; plot range only. Monthly regimens use a longer interval."
         }
       ],
       "tdm": null,
@@ -57792,29 +57794,11 @@
       "timeCourse": [
         {
           "route": "ORAL",
-          "sourceRefs": [
-            {
-              "title": "DailyMed · Cholestyramine powder for oral suspension",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=430ac07e-8524-4dec-a599-b7ebc56d9563",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-11-06",
-              "evidenceLevel": "REGULATORY_LABEL"
-            }
-          ],
-          "effectTimelineStatus": "available",
-          "durationOfAction": {
-            "min": 24,
-            "max": 24,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "tmax": {
-            "min": 1,
-            "max": 2,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Cholestyramine is not systemically absorbed, so a plasma-concentration or effect timeline cannot be derived.",
+          "notes": [
+            "Cholestyramine is not systemically absorbed, so a plasma-concentration or effect timeline cannot be derived."
+          ]
         }
       ],
       "tdm": null,
@@ -57942,29 +57926,11 @@
       "timeCourse": [
         {
           "route": "ORAL",
-          "sourceRefs": [
-            {
-              "title": "DailyMed · Welchol tablets",
-              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a06d3b2-7229-4398-baba-5d0a72f63821",
-              "sourceType": "regulatory-label",
-              "accessedDate": "2026-11-06",
-              "evidenceLevel": "REGULATORY_LABEL"
-            }
-          ],
-          "effectTimelineStatus": "available",
-          "durationOfAction": {
-            "min": 24,
-            "max": 24,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "tmax": {
-            "min": 2,
-            "max": 4,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Colesevelam is not systemically absorbed, so a plasma-concentration or effect timeline cannot be derived.",
+          "notes": [
+            "Colesevelam is not systemically absorbed, so a plasma-concentration or effect timeline cannot be derived."
+          ]
         }
       ],
       "tdm": null,
@@ -58614,17 +58580,11 @@
         },
         {
           "route": "INTRAVENOUS",
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "No route-specific pharmacokinetic or clinical-effect timeline is available; values from another administration route are not copied.",
           "notes": [
-            "Approximate route-level timeline for visualization; not a dosing recommendation."
+            "No route-specific timeline was found; another route's values are not used."
           ],
-          "eliminationHalfLife": {
-            "min": 1.5,
-            "max": 1.5,
-            "unit": "h",
-            "basis": "About 1.5 hours IV, with substantial dose and individual variation"
-          },
           "sourceRefs": [
             {
               "title": "DailyMed · Heparin sodium injection",
@@ -59220,25 +59180,14 @@
           "formulation": "tablet/capsule",
           "notes": [
             "The product monograph reports peak plasma concentrations at about 2 hours and a terminal elimination half-life of 4-5 days.",
-            "The antiplatelet effect is irreversible; bleeding time and platelet function return to normal within about one week after stopping in most patients."
+            "The antiplatelet effect is irreversible; bleeding time and platelet function return to normal within about one week after stopping in most patients.",
+            "No timeline is drawn: the antiplatelet effect must be interpreted with repeated dosing and post-discontinuation recovery."
           ],
           "tmax": {
             "min": 2,
             "max": 2,
             "unit": "h",
             "basis": "label pharmacokinetics"
-          },
-          "peakEffect": {
-            "min": 8,
-            "max": 11,
-            "unit": "day",
-            "basis": "pharmacodynamic effect"
-          },
-          "durationOfAction": {
-            "min": 5,
-            "max": 10,
-            "unit": "day",
-            "basis": "pharmacodynamic effect"
           },
           "eliminationHalfLife": {
             "min": 96,
@@ -59260,7 +59209,9 @@
             "max": 14,
             "unit": "day",
             "basis": "steady state reported after about 14 days at 250 mg twice daily"
-          }
+          },
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Ticlopidine's antiplatelet effect is irreversible and cumulative; its single-dose peak and duration values conflict, so a reliable timeline is not drawn."
         }
       ],
       "tdm": {
@@ -59581,12 +59532,6 @@
             "unit": "min",
             "basis": "clinical effect"
           },
-          "durationOfAction": {
-            "min": 4,
-            "max": 8,
-            "unit": "h",
-            "basis": "clinical effect"
-          },
           "eliminationHalfLife": {
             "min": 2,
             "max": 2,
@@ -59605,7 +59550,9 @@
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
             }
-          ]
+          ],
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Tirofiban is given as an intravenous bolus followed by a continuous infusion; steady-state platelet inhibition is not a single-peak curve, so no intravenous timeline is drawn."
         }
       ],
       "tdm": {
@@ -60857,12 +60804,6 @@
             "unit": "h",
             "basis": "label pharmacokinetics"
           },
-          "durationOfAction": {
-            "min": 14,
-            "max": 28,
-            "unit": "day",
-            "basis": "pharmacodynamic effect"
-          },
           "eliminationHalfLife": {
             "min": 5,
             "max": 13,
@@ -60883,7 +60824,9 @@
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
             }
-          ]
+          ],
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Vorapaxar's platelet inhibition accumulates with repeated dosing and persists for about four weeks after discontinuation; a single-dose curve does not represent its effect time course."
         }
       ],
       "tdm": {
@@ -62115,25 +62058,19 @@
             "basis": "Terminal range"
           },
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 12,
             "max": 12,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
+          "effectTimelineNote": "Twice-daily dosing interval shown as the plot window; not an effect duration.",
           "tmax": {
             "min": 1,
             "max": 2,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "peakEffect": {
-            "min": 1,
-            "max": 2,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Twice-daily label coverage."
+          }
         }
       ],
       "tdm": null,
@@ -62757,17 +62694,11 @@
         },
         {
           "route": "INTRAVENOUS",
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "No route-specific pharmacokinetic or clinical-effect timeline is available; values from another administration route are not copied.",
           "notes": [
-            "Approximate route-level timeline for visualization; not a dosing recommendation."
+            "No route-specific timeline was found; another route's values are not used."
           ],
-          "eliminationHalfLife": {
-            "min": 36,
-            "max": 48,
-            "unit": "h",
-            "basis": "About 1.5–2 days in adults with normal renal function"
-          },
           "sourceRefs": [
             {
               "title": "DailyMed · Digoxin tablets",
@@ -63264,25 +63195,19 @@
             "basis": "Terminal elimination half-life reported by the label"
           },
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 24,
             "max": 24,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
+          "effectTimelineNote": "Once-daily dosing interval shown as the plot window; not an effect duration.",
           "tmax": {
             "min": 1,
             "max": 3,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "peakEffect": {
-            "min": 3,
-            "max": 6,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "tdm": null,
@@ -63439,19 +63364,13 @@
             "basis": "Terminal elimination half-life about 11 to 15 hours"
           },
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 24,
             "max": 24,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
-          "peakEffect": {
-            "min": 3,
-            "max": 6,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Once-daily dosing interval shown as the plot window; not an effect duration."
         }
       ],
       "tdm": null,
@@ -63606,14 +63525,7 @@
             "Long terminal half-life supports a long concentration tail; clinical response is monitored by blood pressure."
           ],
           "effectTimelineStatus": "available",
-          "effectTimelineNote": "DailyMed reports onset within 3 hours and maintenance of once-daily antihypertensive effect through the full 24-hour dosing interval.",
-          "durationOfAction": {
-            "min": 24,
-            "max": 24,
-            "unit": "h",
-            "basis": "sourced pharmacodynamic duration or formulation coverage",
-            "note": "DailyMed reports onset within 3 hours and maintenance of once-daily antihypertensive effect through the full 24-hour dosing interval."
-          },
+          "effectTimelineNote": "Telmisartan is dosed once daily; 24 hours is the labeled dosing interval and trough coverage, not a measured single-dose effect duration, so it is shown as the plot window only.",
           "onset": {
             "min": 3,
             "max": 3,
@@ -63629,7 +63541,13 @@
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
             }
-          ]
+          ],
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Dosing or formulation interval; plot range only"
+          }
         }
       ],
       "tdm": {
@@ -64265,17 +64183,11 @@
         },
         {
           "route": "INTRAVENOUS",
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "No route-specific pharmacokinetic or clinical-effect timeline is available; values from another administration route are not copied.",
           "notes": [
-            "Approximate route-level timeline for visualization; not a dosing recommendation."
+            "No route-specific timeline was found; another route's values are not used."
           ],
-          "eliminationHalfLife": {
-            "min": 1,
-            "max": 1.5,
-            "unit": "h",
-            "basis": "Adult oral or parenteral range"
-          },
           "sourceRefs": [
             {
               "title": "DailyMed · Bumetanide tablets",
@@ -64594,15 +64506,15 @@
             "min": 2,
             "max": 4,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Label-reported clinical duration"
           },
+          "effectTimelineNote": "Label-reported clinical duration; not derived from half-life.",
           "tmax": {
             "min": 0.5,
             "max": 1,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         },
         {
           "route": "INTRAVENOUS",
@@ -64620,15 +64532,15 @@
             "min": 2,
             "max": 6,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Label-reported clinical duration"
           },
+          "effectTimelineNote": "Label-reported clinical duration; not derived from half-life.",
           "tmax": {
             "min": 0.1,
             "max": 0.3,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "tdm": null,
@@ -64945,17 +64857,11 @@
         },
         {
           "route": "SUBLINGUAL",
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "No route-specific pharmacokinetic or clinical-effect timeline is available; values from another administration route are not copied.",
           "notes": [
-            "Approximate route-level timeline for visualization; not a dosing recommendation."
+            "No route-specific timeline was found; another route's values are not used."
           ],
-          "eliminationHalfLife": {
-            "min": 1,
-            "max": 5,
-            "unit": "h",
-            "basis": "Parent about one hour and active 5-mononitrate metabolite about five hours"
-          },
           "sourceRefs": [
             {
               "title": "DailyMed · Isosorbide dinitrate tablets",
@@ -66489,7 +66395,7 @@
             "Antianginal response and QT effects are pharmacodynamic outcomes distinct from plasma Tmax."
           ],
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+          "effectTimelineNote": "Twice-daily dosing interval; plot range only.",
           "sourceRefs": [
             {
               "title": "DailyMed · Ranolazine",
@@ -66498,7 +66404,13 @@
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
             }
-          ]
+          ],
+          "effectTimelineWindow": {
+            "min": 12,
+            "max": 12,
+            "unit": "h",
+            "basis": "Dosing interval; plot range only"
+          }
         }
       ],
       "tdm": {
@@ -66853,43 +66765,38 @@
             }
           ],
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 12,
             "max": 14,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
+          "effectTimelineNote": "Nitroglycerin patches are recommended for 12-14 hours of daily wear; this is an application/dosing window, not a measured single-dose effect duration, so it is shown as the plot window only.",
           "tmax": {
             "min": 2,
             "max": 4,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         },
         {
           "route": "INTRAVENOUS",
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "No route-specific pharmacokinetic or clinical-effect timeline is available; values from another administration route are not copied.",
           "notes": [
-            "Approximate route-level timeline for visualization; not a dosing recommendation."
+            "No route-specific timeline was found; another route's values are not used."
           ],
-          "eliminationHalfLife": {
-            "min": 2,
-            "max": 3,
-            "unit": "min",
-            "basis": "Mean parent-drug elimination half-life; plasma concentration does not represent antianginal duration"
-          },
-          "tmax": {
-            "min": 6,
-            "max": 7,
-            "unit": "min",
-            "basis": "Mean peak plasma concentration about six to seven minutes after sublingual dosing"
-          },
           "sourceRefs": [
             {
               "title": "DailyMed · Nitroglycerin sublingual tablets",
               "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fc297c0a-a412-40be-8414-4bf9906fd300",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL"
+            },
+            {
+              "title": "DailyMed · Nitroglycerin transdermal systems",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e98a2692-1cb9-4994-98d8-1d8d9ef1a256",
               "sourceType": "regulatory-label",
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
@@ -67092,19 +66999,19 @@
             "basis": "Plasma elimination range"
           },
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 24,
             "max": 24,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
+          "effectTimelineNote": "Once-daily dosing interval shown as the plot window; not an effect duration.",
           "tmax": {
             "min": 1,
             "max": 4,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "tdm": null,
@@ -67392,15 +67299,9 @@
             "min": 8,
             "max": 12,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Label-reported clinical duration"
           },
-          "peakEffect": {
-            "min": 2,
-            "max": 4,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Label-reported clinical duration; not derived from half-life."
         },
         {
           "route": "INTRAVENOUS",
@@ -67418,15 +67319,15 @@
             "min": 2,
             "max": 6,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Label-reported clinical duration"
           },
+          "effectTimelineNote": "Label-reported clinical duration; not derived from half-life.",
           "tmax": {
             "min": 0.1,
             "max": 0.3,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "tdm": null,
@@ -67581,25 +67482,19 @@
             "basis": "Effective accumulation half-life of active enalaprilat after repeated dosing"
           },
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 24,
             "max": 24,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
+          "effectTimelineNote": "Once-daily dosing interval shown as the plot window; not an effect duration.",
           "tmax": {
             "min": 1,
             "max": 2,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "peakEffect": {
-            "min": 4,
-            "max": 6,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "tdm": null,
@@ -68007,14 +67902,7 @@
             "Extended-release verapamil has formulation-specific absorption and should not be collapsed with immediate-release entries."
           ],
           "effectTimelineStatus": "available",
-          "effectTimelineNote": "Extended-release verapamil is a once-daily controlled-release formulation; this encodes formulation coverage and should not be collapsed with immediate-release verapamil.",
-          "durationOfAction": {
-            "min": 24,
-            "max": 24,
-            "unit": "h",
-            "basis": "formulation pharmacodynamic coverage",
-            "note": "Extended-release verapamil is a once-daily controlled-release formulation; this encodes formulation coverage and should not be collapsed with immediate-release verapamil."
-          },
+          "effectTimelineNote": "Extended-release verapamil is a once-daily controlled-release formulation; 24 hours is the dosing/formulation coverage window, not a measured single-dose effect duration, so it is shown as the plot window only.",
           "sourceRefs": [
             {
               "title": "DailyMed · Verapamil",
@@ -68023,7 +67911,13 @@
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
             }
-          ]
+          ],
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Dosing or formulation interval; plot range only"
+          }
         }
       ],
       "tdm": {
@@ -68208,21 +68102,15 @@
             "min": 6,
             "max": 8,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Label-reported clinical duration"
           },
+          "effectTimelineNote": "Label-reported immediate-release clinical duration.",
           "tmax": {
             "min": 0.5,
             "max": 2,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "peakEffect": {
-            "min": 1,
-            "max": 3,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Immediate-release capsule coverage."
+          }
         }
       ],
       "tdm": null,
@@ -69345,17 +69233,11 @@
         },
         {
           "route": "INTRAMUSCULAR",
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "No route-specific pharmacokinetic or clinical-effect timeline is available; values from another administration route are not copied.",
           "notes": [
-            "Approximate route-level timeline for visualization; not a dosing recommendation."
+            "No route-specific timeline was found; another route's values are not used."
           ],
-          "eliminationHalfLife": {
-            "min": 2,
-            "max": 2,
-            "unit": "h",
-            "basis": "Approximate terminal half-life"
-          },
           "sourceRefs": [
             {
               "title": "DailyMed: Furosemide tablets (US)",
@@ -69364,6 +69246,14 @@
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL",
               "labelSection": "Clinical Pharmacology; Contraindications; Precautions; Dosage"
+            },
+            {
+              "title": "DailyMed: Furosemide injection (US)",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=aaced7a8-c3d7-4d66-8c07-aa407b8b3f35",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "1–7; 12.1–12.3"
             }
           ]
         }
@@ -70773,21 +70663,15 @@
             "min": 6,
             "max": 6,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Label-reported clinical duration"
           },
+          "effectTimelineNote": "Label-reported clinical duration; not derived from half-life.",
           "tmax": {
             "min": 1,
             "max": 2,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "peakEffect": {
-            "min": 3,
-            "max": 4,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "tdm": null,
@@ -72048,8 +71932,8 @@
           "notes": [
             "This time course represents continuous SC/IV Remodulin and must not be applied to inhaled or oral treprostinil formulations."
           ],
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic curve estimated from peak/steady-state timing and elimination half-life.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "Continuous subcutaneous or intravenous treprostinil produces steady-state concentrations rather than a single-dose peak, so no timeline is drawn.",
           "sourceRefs": [
             {
               "title": "DailyMed · Treprostinil",
@@ -73688,7 +73572,9 @@
         {
           "route": "oral",
           "formulation": "Fylrevy 14.2 mg tablet",
-          "notes": [],
+          "notes": [
+            "The 0.5-hour value is Tmax at steady state; the 6–8 days to steady state is a different quantity."
+          ],
           "sourceRefs": [
             {
               "title": "EMA Fylrevy product information",
@@ -73716,8 +73602,14 @@
             "unit": "h",
             "basis": "Approximate terminal phase"
           },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Dosing interval; plot range only"
+          },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Daily dosing interval; plot range only. The 6–8 days to steady state is not a peak time."
         }
       ],
       "doseUseReferences": [
@@ -73952,7 +73844,8 @@
           "route": "oral",
           "formulation": "Estradiol oral tablets",
           "notes": [
-            "Oral estradiol undergoes first-pass metabolism. Transdermal exposure differs."
+            "Oral estradiol undergoes first-pass metabolism. Transdermal exposure differs.",
+            "The 24-hour plot is a daily-dosing window, not a clinical-effect endpoint."
           ],
           "sourceRefs": [
             {
@@ -73961,22 +73854,36 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
+            },
+            {
+              "title": "DailyMed Activella label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
             }
           ],
-          "eliminationHalfLife": {
-            "min": 13,
-            "max": 17,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
           "tmax": {
-            "min": 4,
+            "min": 5,
             "max": 8,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Activella label: peak plasma estradiol within 5–8 h; table median 6 h (range 0.5–16 h)"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": 14,
+            "unit": "h",
+            "basis": "Activella label: 12–14 h after a single dose"
+          },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Once-daily dosing interval; plot range only"
           },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Approximate visualization of the plasma concentration time course."
         }
       ],
       "doseUseReferences": [
@@ -74195,25 +74102,19 @@
             }
           ],
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 21,
             "max": 28,
             "unit": "day",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
+          "effectTimelineNote": "Injection interval shown as the plot window; not an effect duration.",
           "tmax": {
             "min": 2,
             "max": 5,
             "unit": "day",
             "basis": "approximate published pharmacokinetics"
-          },
-          "peakEffect": {
-            "min": 3,
-            "max": 7,
-            "unit": "day",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "doseUseReferences": [
@@ -74620,7 +74521,10 @@
         {
           "route": "transdermal",
           "formulation": "0.1% thigh-applied gel",
-          "notes": [],
+          "notes": [
+            "Tmax is the day-14 median across the cited 0.1% gel doses; day 12 is time to steady state, not a single-dose peak.",
+            "The 24-hour plot is a daily-application window, not a clinical-effect endpoint."
+          ],
           "sourceRefs": [
             {
               "title": "Estradiol gel 0.1% US label",
@@ -74630,6 +74534,12 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
+          "tmax": {
+            "min": 8,
+            "max": 16,
+            "unit": "h",
+            "basis": "Day 14 median Tmax was 16/10/8 h for 0.25/0.5/1.0 g doses; individual range 0–72 h"
+          },
           "eliminationHalfLife": {
             "min": 10,
             "max": 10,
@@ -74642,8 +74552,14 @@
             "unit": "day",
             "basis": "Daily application of cited product"
           },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Once-daily dosing interval; plot range only"
+          },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Approximate visualization of the plasma concentration time course."
         }
       ],
       "doseUseReferences": [
@@ -74899,19 +74815,19 @@
             }
           ],
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 7,
             "max": 7,
             "unit": "day",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
+          "effectTimelineNote": "Patch wear interval shown as the plot window; not an effect duration.",
           "tmax": {
             "min": 1,
             "max": 1,
             "unit": "day",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "doseUseReferences": [
@@ -75115,19 +75031,19 @@
             "basis": "Approximate with daily application"
           },
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 24,
             "max": 24,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
+          "effectTimelineNote": "Daily application interval shown as the plot window; not an effect duration.",
           "tmax": {
             "min": 6,
             "max": 10,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "doseUseReferences": [
@@ -75329,25 +75245,19 @@
             }
           ],
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 28,
             "max": 28,
             "unit": "day",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
+          "effectTimelineNote": "Injection interval shown as the plot window; not an effect duration.",
           "tmax": {
             "min": 1,
             "max": 2,
             "unit": "day",
             "basis": "approximate published pharmacokinetics"
-          },
-          "peakEffect": {
-            "min": 3,
-            "max": 7,
-            "unit": "day",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "doseUseReferences": [
@@ -75750,7 +75660,8 @@
           "route": "Oral",
           "formulation": "Tablet",
           "notes": [
-            "Swallowed estradiol undergoes hepatic first-pass metabolism and interconverts with estrone."
+            "Swallowed estradiol undergoes hepatic first-pass metabolism and interconverts with estrone.",
+            "Tmax and half-life come from single-dose data for the cited oral combination product; the 24-hour window is daily dosing."
           ],
           "sourceRefs": [
             {
@@ -75759,22 +75670,36 @@
               "sourceType": "regulatory-label",
               "accessedDate": "2026-11-06",
               "evidenceLevel": "REGULATORY_LABEL"
+            },
+            {
+              "title": "DailyMed Activella label",
+              "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d4b0c1dd-aae9-4ca2-958c-71dbe5d0fab0",
+              "sourceType": "regulatory-label",
+              "accessedDate": "2026-11-06",
+              "evidenceLevel": "REGULATORY_LABEL",
+              "labelSection": "12.3 Pharmacokinetics"
             }
           ],
-          "eliminationHalfLife": {
-            "min": 13,
-            "max": 17,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
           "tmax": {
-            "min": 4,
+            "min": 5,
             "max": 8,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Activella label: peak plasma estradiol within 5–8 h; table median 6 h (range 0.5–16 h)"
+          },
+          "eliminationHalfLife": {
+            "min": 12,
+            "max": 14,
+            "unit": "h",
+            "basis": "Activella label: 12–14 h after a single dose"
+          },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Once-daily dosing interval; plot range only"
           },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Approximate visualization of the plasma concentration time course."
         }
       ],
       "doseUseReferences": [
@@ -75965,7 +75890,8 @@
           "route": "Oral",
           "formulation": "Tablet",
           "notes": [
-            "A second peak may occur around 6–8 hours."
+            "A second peak may occur around 6–8 hours.",
+            "The 27-hour value is an excretion half-life, not a universal plasma terminal half-life; the 24-hour window is daily dosing."
           ],
           "sourceRefs": [
             {
@@ -75983,13 +75909,19 @@
             "basis": "First plasma estradiol peak after swallowing"
           },
           "eliminationHalfLife": {
-            "min": 13,
-            "max": 17,
+            "min": 27,
+            "max": 27,
             "unit": "h",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Excretion half-life reported in the SmPC"
+          },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Once-daily dosing interval; plot range only"
           },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Approximate visualization of the plasma concentration time course."
         }
       ],
       "doseUseReferences": [
@@ -76215,14 +76147,8 @@
             "unit": "h",
             "basis": "Observed LC–MS/MS sampling peak after one 1 mg dose in 10 transgender women"
           },
-          "eliminationHalfLife": {
-            "min": 13,
-            "max": 17,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "The cited study sampled only 8 hours, which cannot support a reliable terminal half-life or effect timeline."
         },
         {
           "route": "Buccal",
@@ -76239,20 +76165,8 @@
               "evidenceLevel": "HUMAN_STUDY"
             }
           ],
-          "eliminationHalfLife": {
-            "min": 13,
-            "max": 17,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "tmax": {
-            "min": 1,
-            "max": 3,
-            "unit": "h",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "The cited buccal-tablet study reports neither single-dose time to peak nor half-life."
         }
       ],
       "doseUseReferences": [
@@ -76731,13 +76645,13 @@
             "basis": "Approximate mean after one adult IM dose. Assay also detected the major inactive metabolite."
           },
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 28,
             "max": 28,
             "unit": "day",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Monthly depot interval shown as the plot window; not an effect duration."
         }
       ],
       "doseUseReferences": [
@@ -76944,14 +76858,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "available",
-          "durationOfAction": {
-            "min": 365,
-            "max": 365,
-            "unit": "day",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "The histrelin implant releases continuously; the cited source has no single-dose Tmax or half-life for a peak-and-decay curve, so no timeline is drawn."
         }
       ],
       "doseUseReferences": [
@@ -77165,14 +77073,8 @@
               "evidenceLevel": "REGULATORY_LABEL"
             }
           ],
-          "effectTimelineStatus": "available",
-          "durationOfAction": {
-            "min": 28,
-            "max": 28,
-            "unit": "day",
-            "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "The goserelin implant releases continuously; the cited source has no single-dose Tmax or half-life for a peak-and-decay curve, so no timeline is drawn."
         }
       ],
       "doseUseReferences": [
@@ -77385,13 +77287,13 @@
             "basis": "After IM dosing in children aged 2–9 with precocious puberty"
           },
           "effectTimelineStatus": "available",
-          "durationOfAction": {
+          "effectTimelineWindow": {
             "min": 168,
             "max": 168,
             "unit": "day",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Dosing or application interval; plot range only"
           },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "24-week depot interval shown as the plot window; not an effect duration."
         }
       ],
       "doseUseReferences": [
@@ -77609,8 +77511,14 @@
             "unit": "day",
             "basis": "Median terminal half-life after depot administration"
           },
+          "effectTimelineWindow": {
+            "min": 28,
+            "max": 28,
+            "unit": "day",
+            "basis": "Monthly maintenance dosing interval; plot range only"
+          },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "The 28-day window is the monthly maintenance interval, not a single-dose effect duration."
         }
       ],
       "doseUseReferences": [
@@ -78134,8 +78042,14 @@
             "unit": "day",
             "basis": "Daily administration"
           },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Dosing interval; plot range only"
+          },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Daily dosing interval; plot range only."
         }
       ],
       "doseUseReferences": [
@@ -78360,8 +78274,14 @@
             "unit": "day",
             "basis": "Approximate"
           },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Dosing interval; plot range only"
+          },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "Daily dosing interval; plot range only."
         }
       ],
       "doseUseReferences": [
@@ -82448,23 +82368,11 @@
         },
         {
           "route": "ORAL",
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate route-level timeline inferred from the same substance's pharmacokinetics.",
+          "effectTimelineStatus": "not-recommended",
+          "effectTimelineNote": "No route-specific pharmacokinetic or clinical-effect timeline is available; values from another administration route are not copied.",
           "notes": [
-            "Approximate route-level timeline for visualization; not a dosing recommendation."
+            "No route-specific timeline was found; another route's values are not used."
           ],
-          "eliminationHalfLife": {
-            "min": 24,
-            "max": 24,
-            "unit": "h",
-            "basis": "Approximate terminal elimination"
-          },
-          "tmax": {
-            "min": 0.5,
-            "max": 1.5,
-            "unit": "h",
-            "basis": "Sublingual administration"
-          },
           "sourceRefs": [
             {
               "title": "DailyMed · Asenapine sublingual tablets",
@@ -83458,8 +83366,14 @@
             "unit": "h",
             "basis": "About four to seven days"
           },
+          "effectTimelineWindow": {
+            "min": 7,
+            "max": 7,
+            "unit": "day",
+            "basis": "Weekly dosing interval; plot range only"
+          },
           "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          "effectTimelineNote": "The 7-day window is the weekly dosing interval, not a single-dose effect duration."
         }
       ],
       "tdm": null,
@@ -84160,6 +84074,14 @@
             "unit": "h",
             "basis": "Steady state after about five days of oral dosing"
           },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Dosing interval; plot range only"
+          },
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Daily dosing interval; plot range only.",
           "eliminationHalfLife": {
             "min": 18,
             "max": 18,
@@ -84171,9 +84093,7 @@
             "max": 2,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "tdm": null,
@@ -85422,6 +85342,14 @@
             "unit": "h",
             "basis": "Steady state after about 4–5 days of daily dosing"
           },
+          "effectTimelineWindow": {
+            "min": 24,
+            "max": 24,
+            "unit": "h",
+            "basis": "Dosing interval; plot range only"
+          },
+          "effectTimelineStatus": "pk-estimated",
+          "effectTimelineNote": "Daily dosing interval; plot range only.",
           "eliminationHalfLife": {
             "min": 10,
             "max": 12,
@@ -85433,9 +85361,7 @@
             "max": 8,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineStatus": "pk-estimated",
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "tdm": null,
@@ -94493,15 +94419,15 @@
             "min": 14,
             "max": 14,
             "unit": "day",
-            "basis": "approximate published pharmacokinetics"
+            "basis": "Label-reported clinical duration after discontinuation"
           },
+          "effectTimelineNote": "Label-reported clinical duration after discontinuation.",
           "tmax": {
             "min": 6,
             "max": 12,
             "unit": "h",
             "basis": "approximate published pharmacokinetics"
-          },
-          "effectTimelineNote": "Approximate pharmacokinetic timeline for effect visualization."
+          }
         }
       ],
       "tdm": null,

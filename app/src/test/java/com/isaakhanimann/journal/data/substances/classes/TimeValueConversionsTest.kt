@@ -21,6 +21,7 @@ package com.isaakhanimann.journal.data.substances.classes
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class TimeValueConversionsTest {
@@ -76,5 +77,60 @@ class TimeValueConversionsTest {
 
         assertNotNull(duration)
         assertEquals(61f, duration?.total?.min)
+    }
+
+    @Test
+    fun steadyStateTimeIsNotUsedAsThePeakTime() {
+        val duration = TimeCourse(
+            route = "transdermal",
+            effectTimelineStatus = "pk-estimated",
+            timeToSteadyState = TimeValue(min = 12.0, max = 12.0, unit = "day"),
+            eliminationHalfLife = TimeValue(min = 10.0, max = 10.0, unit = "h")
+        ).toRoaDurationForTimeline()
+
+        assertNotNull(duration)
+        assertTrue((duration?.total?.max ?: 0f) < 100f)
+    }
+
+    @Test
+    fun notRecommendedTimelineDoesNotProduceADuration() {
+        val duration = TimeCourse(
+            route = "sublingual",
+            effectTimelineStatus = EFFECT_TIMELINE_NOT_RECOMMENDED,
+            tmax = TimeValue(min = 1.0, max = 1.0, unit = "h"),
+            durationOfAction = TimeValue(min = 24.0, max = 24.0, unit = "h")
+        ).toRoaDurationForTimeline()
+
+        assertNull(duration)
+    }
+
+    @Test
+    fun explicitTimelineWindowSetsTheModeledEnd() {
+        val duration = TimeCourse(
+            route = "oral",
+            effectTimelineStatus = "pk-estimated",
+            tmax = TimeValue(min = 6.0, max = 6.0, unit = "h"),
+            eliminationHalfLife = TimeValue(min = 13.0, max = 13.0, unit = "h"),
+            effectTimelineWindow = TimeValue(min = 24.0, max = 24.0, unit = "h")
+        ).toRoaDurationForTimeline()
+
+        assertNotNull(duration)
+        assertEquals(24f, duration?.total?.max)
+    }
+
+    @Test
+    fun onsetLaterThanTmaxStillProducesAPositiveComeup() {
+        val duration = TimeCourse(
+            route = "oral",
+            effectTimelineStatus = "available",
+            onset = TimeValue(min = 3.0, max = 3.0, unit = "h"),
+            tmax = TimeValue(min = 0.5, max = 1.0, unit = "h"),
+            effectTimelineWindow = TimeValue(min = 24.0, max = 24.0, unit = "h")
+        ).toRoaDurationForTimeline()
+
+        assertNotNull(duration)
+        assertEquals(3f, duration?.onset?.max)
+        assertTrue("comeup must not be negative", (duration?.comeup?.min ?: 0f) > 0f)
+        assertTrue("peak plateau must not be negative", (duration?.peak?.min ?: 0f) > 0f)
     }
 }
