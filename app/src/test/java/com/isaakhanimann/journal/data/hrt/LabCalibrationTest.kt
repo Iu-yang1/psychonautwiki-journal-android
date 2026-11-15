@@ -36,4 +36,31 @@ class LabCalibrationTest {
         val censored = service.calculate(log.copy(labs = listOf(lab.copy(comparison = "<")), settings = listOf(ctx.setting())), HormoneChartRequest(), 24 * 3600000L)
         assertEquals(1.0, censored.calibration.getValue("history").scale, 0.0)
     }
+
+    @Test fun individualBaselineIsAddedOnceAndSubtractedBeforeAmplitudeCalibration() {
+        val model = HormoneEvent("1", profile.medicationId, profile.route, 0.0, 1.0, profileId = profile.id)
+        val predicted = HormoneSimulationEngine().simulate(listOf(model), listOf(profile.parameters()), 4.0, 4.1, 24.0, 2).samples.first().pgMl
+        val lab = HrtLab("lab", null, "E2", 4 * 3600000L, 12 + 2 * predicted, "pg/mL")
+        val settings = listOf(HormoneModelOptions(12.0).setting(null), LabDoseContext("lab", 4.0, 1, 0, true).setting())
+        val fitted = HormoneChartService(catalog).calculate(log.copy(labs = listOf(lab), settings = settings), HormoneChartRequest(), 24 * 3600000L)
+        val fit = fitted.calibration.getValue("history")
+        assertEquals(2.0, fit.scale, 1e-10)
+        assertEquals(12.0, fitted.history.first().pgMl, 1e-10)
+        assertEquals(0.0, fit.meanAbsoluteErrorPgMl!!, 1e-10)
+    }
+
+    @Test fun calibrationPhaseFiltersOlderLabsAndReportsForwardError() {
+        val model = HormoneEvent("1", profile.medicationId, profile.route, 0.0, 1.0, profileId = profile.id)
+        val labs = listOf(2, 4, 8).map { hour ->
+            val predicted = HormoneSimulationEngine().simulate(listOf(model), listOf(profile.parameters()),
+                hour.toDouble(), hour + .1, 24.0, 2).samples.first().pgMl
+            HrtLab("lab$hour", null, "E2", hour * 3600000L, (if (hour == 2) 9 else 2) * predicted, "pg/mL")
+        }
+        val settings = labs.map { LabDoseContext(it.id, it.time / 3600000.0, 1, 0, true).setting() } +
+            HormoneModelOptions(calibrationStartMillis = 3 * 3600000L).setting(null)
+        val fitted = LabCalibration.fit(log.copy(labs = labs, settings = settings), null, "E2", listOf(model), listOf(profile.parameters()), 24 * 3600000L)
+        assertEquals(listOf("lab4", "lab8"), fitted.labIds)
+        assertEquals(2.0, fitted.scale, 1e-10)
+        assertEquals(0.0, fitted.forwardValidationErrorPgMl!!, 1e-10)
+    }
 }

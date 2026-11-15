@@ -46,6 +46,7 @@ fun HormoneSimulationPanel(parent: HrtViewModel, consumer: String?, onOpenRecord
     var analyteId by remember { mutableStateOf(saved.analyteId) }
     var analyteMenu by remember { mutableStateOf(false) }
     var optionsOpen by remember { mutableStateOf(false) }
+    var modelEditorOpen by remember(consumer) { mutableStateOf(false) }
     var gelReference by remember { mutableStateOf(saved.gelReference) }
     var bridgeValerate by remember { mutableStateOf(saved.bridgeValerate) }
     var forecastDays by remember { mutableIntStateOf(saved.forecastDays) }
@@ -55,6 +56,7 @@ fun HormoneSimulationPanel(parent: HrtViewModel, consumer: String?, onOpenRecord
     val records by parent.events.collectAsState()
     val links by parent.links.collectAsState()
     val settings by parent.settings.collectAsState()
+    val labs by parent.labs.collectAsState()
     LaunchedEffect(consumer, historyDays, forecastDays, analyteId, gelReference, bridgeValerate, unit) {
         if (analyteId != "E2" && unit == "pmol/L" || analyteId == "E2" && unit == "ng/mL") unit = "pg/mL"
         chartPreferences.save(HormoneChartOptions(historyDays, forecastDays, analyteId, unit, gelReference, bridgeValerate))
@@ -104,6 +106,7 @@ fun HormoneSimulationPanel(parent: HrtViewModel, consumer: String?, onOpenRecord
             Text("单位")
             Row { (if (analyteId == "E2") listOf("pg/mL", "pmol/L") else listOf("pg/mL", "ng/mL")).forEach { label -> FilterChip(unit == label, { unit = label }, label = { Text(label) }) } }
             if (analyteId == "E2") {
+                TextButton({ modelEditorOpen = true; optionsOpen = false }) { Text("模型参数与睾酮情景") }
                 Row { Checkbox(bridgeValerate, { bridgeValerate = it }); Text("含服戊酸雌二醇估算") }
                 Text("凝胶参考")
                 listOf("compare" to "比较两种凝胶参考", "estrogel" to "EstroGel上臂资料情景", "divigel" to "Divigel上大腿资料情景", "confirmed" to "仅使用逐条明确的信息").forEach { (key, label) ->
@@ -112,6 +115,18 @@ fun HormoneSimulationPanel(parent: HrtViewModel, consumer: String?, onOpenRecord
             }
         }
     }, confirmButton = { TextButton({ optionsOpen = false }) { Text("完成") } })
+    if (modelEditorOpen) HormoneModelEditor(
+        HormoneModelOptions.read(settings, consumer),
+        labs.filter { it.consumer == consumer },
+        onSave = { options ->
+            parent.run {
+                options.validate()
+                parent.repo.dao.save(options.setting(consumer))
+                modelEditorOpen = false
+            }
+        },
+        onClose = { modelEditorOpen = false },
+    )
     editId?.let { id ->
         val record = records.singleOrNull { it.id == id && it.consumerName == consumer }
         val link = links.singleOrNull { it.ingestionId == id }
@@ -127,15 +142,20 @@ fun HormoneSimulationSummary(data: HormoneChartData, unit: String, catalog: Horm
     var otherHrtOpen by remember { mutableStateOf(false) }
     var detailsMenu by remember { mutableStateOf(false) }
     var timelineOpen by remember { mutableStateOf(false) }
+    var antiandrogensOpen by remember { mutableStateOf(false) }
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         if (data.history.isEmpty() && data.gelScenarios.isEmpty()) Text("暂无可纳入 ${data.request.analyteId} 模型的历史用药记录")
         if (data.history.isNotEmpty() || data.forecast.isNotEmpty() || data.measured.isNotEmpty() || data.gelScenarios.isNotEmpty()) HormoneChart(data, unit)
+        if (data.request.analyteId == "E2" && (data.testosteroneScenarios.isNotEmpty() || data.measuredTestosterone.isNotEmpty())) TestosteroneChart(data)
         Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
             TextButton({ otherHrtOpen = true }) { Text("已识别 ${data.recognizedHrt.size} 条") }
             Spacer(Modifier.weight(1f))
             Box {
                 IconButton({ detailsMenu = true }) { Icon(Icons.Outlined.MoreVert, "曲线详情") }
                 DropdownMenu(detailsMenu, { detailsMenu = false }) {
+                    DropdownMenuItem(text = { Text("模型来源与校准") }, onClick = { detailsMenu = false; sourcesOpen = true })
+                    if (data.request.analyteId == "E2") DropdownMenuItem(text = { Text("抗雄记录纳入详情（${data.antiandrogenRecords.count { it.reason == null }}/${data.antiandrogenRecords.size}）") },
+                        onClick = { detailsMenu = false; antiandrogensOpen = true })
                     DropdownMenuItem(text = { Text("查看未纳入项（${data.excluded.size}）") }, onClick = { detailsMenu = false; excludedOpen = true })
                     DropdownMenuItem(text = { Text("数值表") }, onClick = { detailsMenu = false; tableOpen = true })
                     DropdownMenuItem(text = { Text("原始剂量时间线") }, onClick = { detailsMenu = false; timelineOpen = true })
@@ -148,7 +168,23 @@ fun HormoneSimulationSummary(data: HormoneChartData, unit: String, catalog: Horm
         Column(Modifier.heightIn(max = 420.dp).verticalScroll(rememberScrollState())) { HormoneDoseTimeline(data) }
     }, confirmButton = { TextButton({ timelineOpen = false }) { Text("关闭") } })
     if (excludedOpen) HormoneExclusions(data.excluded, { excludedOpen = false }) { id -> onEdit(id); excludedOpen = false }
-    if (sourcesOpen) HormoneSources(catalog, data.profileIds, data.assumptions) { sourcesOpen = false }
+    if (sourcesOpen) HormoneSources(catalog, data.profileIds, data.assumptions, data.calibration) { sourcesOpen = false }
+    if (antiandrogensOpen) AlertDialog(onDismissRequest = { antiandrogensOpen = false }, title = { Text("抗雄记录纳入详情") }, text = {
+        Column {
+            Text("全部历史CPA/螺内酯记录；范围外记录仍参与残留计算。未来只延续实际记录残留。")
+            if (data.antiandrogenRecords.isEmpty()) Text("暂无已关联药物身份的CPA/螺内酯记录")
+            LazyColumn(Modifier.heightIn(max = 380.dp)) {
+                data.antiandrogenRecords.forEach { record -> item(key = record.id) {
+                    Column(Modifier.padding(vertical = 8.dp)) {
+                        Text("${record.name} · ${modelTime(record.timeMillis / 3600000.0)}")
+                        record.doseMg?.let { Text("${"%.6g".format(it)} mg") }
+                        Text(record.reason ?: "已纳入总 T 情景；包含历史残留")
+                        TextButton({ antiandrogensOpen = false; onEdit(record.id.toInt()) }) { Text("查看或补全记录") }
+                    }
+                } }
+            }
+        }
+    }, confirmButton = { TextButton({ antiandrogensOpen = false }) { Text("关闭") } })
     if (tableOpen) HormoneValueTable(data, unit) { tableOpen = false }
     if (otherHrtOpen) AlertDialog(onDismissRequest = { otherHrtOpen = false }, title = { Text("已识别的 HRT 用药") }, text = {
         Column {
@@ -327,7 +363,7 @@ fun hormoneReason(reason: String): String = when {
         "missing_chemical_mass" -> "不能确定所选药物的质量"
         "unknown_dose_basis" -> "剂量口径未知，请重新补全"
         "dose_out_of_range" -> "数值超出模型计算范围"
-        "unsupported_lab_unit" -> "化验单位不能与 E2 曲线换算"
+        "unsupported_lab_unit" -> "化验单位不能与当前指标换算"
         "forecast_event_limit" -> "计划过于密集，请缩短未来显示范围"
         "invalid_plan", "invalid_plan_route" -> "计划配置无效，请编辑修复"
         else -> "未纳入：$reason"
@@ -360,7 +396,7 @@ private fun HormoneExclusions(items: List<HormoneExclusion>, onClose: () -> Unit
 }
 
 @Composable
-private fun HormoneSources(catalog: HormoneReferenceCatalog, used: Set<String>, assumptions: Set<String>, onClose: () -> Unit) {
+private fun HormoneSources(catalog: HormoneReferenceCatalog, used: Set<String>, assumptions: Set<String>, calibration: Map<String, LabAmplitudeFit>, onClose: () -> Unit) {
     val uri = LocalUriHandler.current
     val context = LocalContext.current
     var notice by remember { mutableStateOf<String?>(null) }
@@ -368,7 +404,12 @@ private fun HormoneSources(catalog: HormoneReferenceCatalog, used: Set<String>, 
     AlertDialog(onDismissRequest = onClose, title = { Text("研究参考与支持范围") }, text = {
         Column(Modifier.heightIn(max = 450.dp).verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text("版本 ${catalog.version} · 数值和研究锚点核对，不等同个体临床验证。")
-            Text("采用线性叠加和剂量缩放；不推断内源分泌、抗雄抑制或个人清除率。研究基线不会自动加到个人曲线。")
+            Text("E2 使用线性叠加及个人基线、幅度校准。睾酮情景使用手动参数的延迟反馈模型。")
+            calibration.forEach { (name, fit) ->
+                Text("$name · E2 基线 ${"%.4g".format(fit.baselinePgMl)} pg/mL · 幅度 ${"%.4g".format(fit.scale)} 倍 · ${fit.labIds.size} 项校准")
+                fit.meanAbsoluteErrorPgMl?.let { Text("拟合平均绝对误差 ${"%.4g".format(it)} pg/mL") }
+                fit.forwardValidationErrorPgMl?.let { Text("按时间留出平均绝对误差 ${"%.4g".format(it)} pg/mL") }
+            }
             assumptions.forEach { Text(it) }
             catalog.models.forEach { profile ->
                 Text("${if (profile.id in used) "当前使用 · " else ""}${profile.name}", style = MaterialTheme.typography.titleSmall)

@@ -30,8 +30,65 @@ and stated-anchor agreement; they do not establish clinical validity.
 EE/E4/CEE components are separate analytes; they are never summed into an E2 curve or
 converted to “E2 potency”. Laboratory overlays must match the selected analyte. CEE
 component curves are not a complete mixture/activity model. Antiestrogens, progestogens
-and GnRH drugs remain recognized records without fabricated E2 contributions or
-predicted testosterone suppression.
+and GnRH drugs remain recognized records. Their individual pharmacodynamic effects
+require additional parameterization.
+
+## Interactive model settings
+
+Chart sampling adds event onset, lag, peak neighborhoods, characteristic time scales
+and patch removal to the display grid for every administration family.
+The original fixed-grid simulation API remains available for numerical comparisons.
+
+Each consumer can specify an E2 baseline and a calibration phase start. The fitted
+amplitude minimizes squared residuals after subtracting that baseline. The baseline
+is added once to the final curve. Calibration uses eligible labs in the selected
+phase, and the fitted amplitude applies from that phase start. The diagnostics show
+fit MAE and forward validation MAE obtained by fitting only strictly earlier labs.
+Unseparated baselines embedded in published reference anchors remain a limitation.
+
+The optional total-testosterone scenario uses explicit user-entered parameters,
+with concentrations in ng/dL and time constants in hours:
+
+```
+dE_effect/dt = (E2 - E_effect) / tau_E
+T_target = T_floor + (T_unsuppressed - T_floor) / (1 + E_effect / EC50) * R_CPA * R_spiro
+dT/dt = (T_target - T) / tau_T
+```
+
+The starting T and timestamp can be copied from the latest exact T lab. Effective
+E2 is warmed up from earlier recorded exposure, looking back up to eight feedback
+time constants. Each gel reference drives its
+own T scenario, including future estrogen plans. Integration uses linear E2
+interpolation and exponential updates with steps no longer than 0.25 h.
+The T parameters are scenario inputs without fitted population defaults. Gonadal
+feedback, SHBG and free T remain outside this model.
+Measured T points preserve their comparison operators and use an independent axis.
+
+Historical oral CPA and spironolactone records use linked ingredient identities and
+the existing event product snapshot/dose-basis conversions. All earlier actual doses
+contribute residual exposure, including doses preceding the display window or T anchor.
+Other consumers, future actual records, unsupported routes and unresolved doses are
+excluded with an explicit reason in the antiandrogen record details. The T anchor
+remains exactly the specified starting value. Future antiandrogen exposure currently
+contains only residual actual doses; antiandrogen plans are not projected.
+
+The exposure proxy for each drug uses `k = ln(2)/halfLifeHours`,
+`A(t) = sum(doseMg * exp(-k * ageHours))`, and `D(t) = 24 * k * A(t)` in equivalent
+mg/day. It assumes instantaneous oral input, is not a plasma concentration, and does
+not model absorption or metabolite formation. Each drug has separately entered
+`D50` and `Smax`: `R = 1 - Smax * D / (D50 + D)`.
+The multiplicative combination above is a scenario assumption, not a clinically
+validated drug interaction or individualized response model.
+
+CPA's 43.9-hour terminal half-life is documented in the
+[50mg tablet SmPC](https://www.medicines.org.uk/emc/product/15996/smpc), section 5.2.
+For spironolactone the editor suggests the active metabolite canrenone's 16.5 hours
+as a residual proxy rather than the parent's 1.4 hours; the
+[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b76a904-6c99-485a-a05f-13a36c5f720c)
+also reports TMS 13.8 hours and HTMS 15 hours. These values do not establish effective
+antiandrogen half-lives or suppression strength. D50 and Smax have no fabricated
+defaults. In particular receptor antagonism does not imply lower serum total T;
+spironolactone can use Smax = 0. The model does not output receptor blockade or free T.
 
 Unconfirmed vehicles, SC injection, buccal formulations, other application sites and
 unreviewed patch types are not silently substituted. They remain recognized records
@@ -90,7 +147,8 @@ but is not a dedicated single-dose EV sublingual PK validation. When enabled, th
 administered EV mass ×272.38/356.50 supplies parent E2 mass to the existing sublingual
 E2 reference time response. This hypothesis is not a seventeenth validated profile,
 and does not turn the journal entry into free E2. It is visibly labeled and can be
-disabled. No pharmacodynamic suppression or dose recommendation is inferred.
+disabled. The bridge itself provides no validated pharmacodynamic suppression
+relationship or dose recommendation.
 
 When legacy gel records already state active E2 mg, the chart uses that mass directly.
 Missing vehicle/site information can be compared under two named published study
@@ -111,8 +169,8 @@ their actual sampling time, using only prior actual doses. A non-negative one-pa
 least-squares amplitude is calculated: sum(predicted*observed)/sum(predicted²). The
 published reference parameters themselves remain unchanged. This is not Bayesian
 individual PK estimation and does not identify absorption, clearance or endogenous
-baseline from a single point. T measurements remain measurements; no T suppression
-model is inferred. No dose recommendation is generated.
+baseline from a single point. T measurements remain independent measurements; they
+do not automatically fit the optional manual T scenario. No dose recommendation is generated.
 
 Other patients, future samples, censored results, unconvertible units, missing dosing
 context or intervals inconsistent with the actual dose timestamps are excluded from
@@ -120,4 +178,45 @@ this amplitude fit. Each reference scenario is fitted separately. Changing or de
 labs/doses recalculates the fit. Raw assay values and recorded doses are not rewritten.
 Sampling-time sensitivity is discussed in the primary simulation study
 https://pmc.ncbi.nlm.nih.gov/articles/PMC7063976/ ; its results are not asserted to
-validate an estradiol patient model. Calibration diagnostics are internal, not UI text.
+validate an estradiol patient model. The source dialog reports calibration diagnostics.
+
+## Optional manual testosterone scenario
+
+The chart can add a separate total-testosterone scenario in ng/dL (nmol/L measurements
+are converted using 0.0347). This is an exploratory model with explicitly entered
+parameters, not a clinically validated prediction or dose calculator. The initial T,
+unsuppressed level, floor, E2 EC50 and two response time constants must be supplied.
+E2 measurements remain independent calibration observations; T observations are not
+silently used to estimate suppression parameters.
+
+The model uses `dE_effect/dt = (E2 - E_effect)/effectHours` and
+`dT/dt = (T_target - T)/responseHours`, with
+`T_target = floor + (unsuppressed-floor)/(1+E_effect/EC50) * R_CPA * R_spiro`.
+The E2 effect compartment is propagated analytically for each linear input segment;
+the T response uses exponential midpoint integration with a step no greater than
+15 minutes or one eighth of the shortest configured time scale. Integration splits
+at every included antiandrogen dose time, even with a coarse E2 input grid. The
+E2 compartment warms up for up to eight effect time constants before the T anchor,
+while preserving the entered initial T exactly.
+
+All linked oral CPA and spironolactone records for the selected consumer are read,
+including records before the visible window or T anchor. Product snapshots and
+explicit dose bases resolve ingredient mass. Missing units, incompatible routes,
+future actual records and missing drug parameters have visible exclusion reasons.
+Each drug uses `A = sum(doseMg * exp(-k*ageHours))`, `k = ln(2)/halfLifeHours`,
+`D = 24*k*A`, and `R = 1 - Smax*D/(D50+D)`. D is a dose-exposure proxy with
+instantaneous absorption, not a plasma concentration or measured daily intake.
+D50 and Smax are manual scenario parameters; no clinical values are invented.
+Spironolactone receptor blockade does not imply reduced total T: Smax can be zero.
+The multiplicative combination is an explicit, unvalidated modeling assumption.
+Future estrogen plans are included; future antiandrogen plans are not projected.
+Only the residual exposure of recorded antiandrogen doses continues into the forecast.
+
+A manually supplied E2 baseline is subtracted before amplitude fitting and added
+once afterward. A calibration phase start limits eligible labs and scaling to that
+phase. Both sides of its time boundary are sampled to avoid interpolating the new
+scale into earlier exposure. Training MAE and chronological forward-validation MAE
+describe calibration error, not prediction intervals or clinical validation. Study
+anchors may themselves contain unseparated endogenous baseline. Reference PK kernels
+and coefficients are unchanged; event-aware plotting adds onset, peak, characteristic
+time-scale and patch-removal samples to the regular grid.

@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
 import com.isaakhanimann.journal.ui.tabs.hrt.HormoneSimulationSummary
+import com.isaakhanimann.journal.ui.tabs.hrt.HormoneModelEditor
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
@@ -75,5 +76,66 @@ class HormoneChartUiTest {
         compose.onNodeWithContentDescription("历史模型实线、未来计划虚线、独立化验点；可点按查看时点").assertExists()
         compose.onNodeWithText("凝胶参考").assertDoesNotExist()
         compose.onNodeWithText("暂无可纳入 E2 模型的历史用药记录").assertDoesNotExist()
+    }
+
+    @Test fun testosteroneScenarioIsShownAlongsideE2WithSeparateUnits() {
+        val chart = data().copy(testosteroneScenarios = listOf(TestosteroneScenario("e2", "E2",
+            listOf(TestosteroneSample(0.0, 500.0), TestosteroneSample(24.0, 400.0)),
+            listOf(TestosteroneSample(24.0, 400.0), TestosteroneSample(48.0, 300.0)))))
+        compose.setContent { MaterialTheme { Column(Modifier.verticalScroll(rememberScrollState())) {
+            HormoneSimulationSummary(chart, "pg/mL", catalog, {}, {})
+        } } }
+        compose.onNodeWithContentDescription("历史模型实线、未来计划虚线、独立化验点；可点按查看时点").assertExists()
+        compose.onNodeWithText("总睾酮 · 参数情景").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("ng/dL", substring = false).performClick()
+        compose.onNodeWithText("nmol/L", substring = false).assertExists()
+        compose.onNodeWithContentDescription("总睾酮情景曲线和独立化验点，可点按查看数值").assertExists()
+    }
+
+    @Test fun modelEditorPreservesExactAnchorTimesWhenSavingExistingParameters() {
+        var saved: HormoneModelOptions? = null
+        val options = HormoneModelOptions(12.0, 12345L, TestosteroneOptions(12345L, 500.0,
+            500.0, 20.0, 100.0, 24.0, 168.0))
+        compose.setContent { MaterialTheme { HormoneModelEditor(options, emptyList(), { saved = it }, {}) } }
+        compose.onNodeWithText("保存").performClick()
+        compose.runOnIdle { assertEquals(options, saved) }
+    }
+
+    @Test fun modelEditorReportsInvalidBaselineWithoutSaving() {
+        var saved = false
+        compose.setContent { MaterialTheme { HormoneModelEditor(HormoneModelOptions(), emptyList(), { saved = true }, {}) } }
+        compose.onNodeWithText("个人 E2 基线（pg/mL）").performTextReplacement("-1")
+        compose.onNodeWithText("保存").performClick()
+        compose.onNodeWithText("E2 基线应为非负数").performScrollTo().assertIsDisplayed()
+        compose.runOnIdle { assertFalse(saved) }
+    }
+
+    @Test fun modelEditorPersistsDrugSpecificParametersAfterEditingOtherFields() {
+        var saved: HormoneModelOptions? = null
+        val config = TestosteroneOptions(12345L, 500.0, 500.0, 20.0, 100.0, 24.0, 168.0,
+            AntiandrogenOptions(43.9, 10.0, .9), AntiandrogenOptions(16.5, 100.0, 0.0))
+        compose.setContent { MaterialTheme {
+            HormoneModelEditor(HormoneModelOptions(testosterone = config), emptyList(), { saved = it }, {})
+        } }
+        compose.onNodeWithText("CPA 总 T 最大抑制比例（0–1）").performScrollTo().performTextReplacement("0.8")
+        compose.onNodeWithText("个人 E2 基线（pg/mL）").performScrollTo().performTextReplacement("12")
+        compose.onNodeWithText("保存").performClick()
+        compose.runOnIdle {
+            assertEquals(config.copy(cyproterone = config.cyproterone!!.copy(maximumSuppression = .8)), saved?.testosterone)
+            assertEquals(12.0, saved!!.baselineE2PgMl, 0.0)
+        }
+    }
+
+    @Test fun antiandrogenDetailsShowIncludedAndUnresolvedHistoricalRecords() {
+        val chart = data().copy(antiandrogenRecords = listOf(
+            AntiandrogenRecord("7", "CPA", -1000, 12.5, null),
+            AntiandrogenRecord("8", "螺内酯", 0, null, "需要补充药品规格")))
+        compose.setContent { MaterialTheme { Column(Modifier.verticalScroll(rememberScrollState())) {
+            HormoneSimulationSummary(chart, "pg/mL", catalog, {}, {})
+        } } }
+        compose.onNodeWithContentDescription("曲线详情").performScrollTo().performClick()
+        compose.onNodeWithText("抗雄记录纳入详情（1/2）").performClick()
+        compose.onNodeWithText("已纳入总 T 情景；包含历史残留").assertIsDisplayed()
+        compose.onNodeWithText("需要补充药品规格").assertIsDisplayed()
     }
 }

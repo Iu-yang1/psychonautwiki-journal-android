@@ -6,6 +6,7 @@ data class GelStudyScenario(val id: String, val label: String, val history: List
 object GelStudyScenarios {
     fun calculate(data: HormoneJournalData, request: HormoneChartRequest, excluded: Map<String, String>, from: Double, now: Double, through: Double, catalog: HormoneReferenceCatalog, checkActive: () -> Unit, confirmedEvents: List<HormoneEvent> = emptyList()): List<GelStudyScenario> {
         if (request.analyteId != "E2" || request.gelReference == "confirmed") return emptyList()
+        val calibrationTimes = HormoneModelOptions.read(data.settings, request.consumer).calibrationTimes()
         val medications = data.substances.associateBy { it.id }
         val links = data.links.associateBy { it.ingestionId }
         val details = data.details.associateBy { it.ingestionId }
@@ -46,9 +47,8 @@ object GelStudyScenarios {
             }
             if (events.isEmpty()) return@mapNotNull null
             val engine = HormoneSimulationEngine()
-            val fastTimes = confirmedEvents.filter { it.route == HormoneRoute.SUBLINGUAL && it.timeHours in (from - 24)..now }.flatMap { event -> listOf(.1, .25, .5, .75, 1.0, 1.5, 2.0, 3.0, 4.0, 8.0, 12.0).map { event.timeHours + it } }.distinct().take(5000)
-            val history = engine.simulate(confirmedEvents + events, parameters, from, now, now, points = 601, additionalTimes = fastTimes, checkActive = checkActive)
-            val forecast = if (through > now) engine.simulate(confirmedEvents + events, parameters, now, through, now, points = 301, checkActive = checkActive).samples else emptyList()
+            val history = engine.simulate(confirmedEvents + events, parameters, from, now, now, points = 601, additionalTimes = calibrationTimes, includeEventTimes = true, checkActive = checkActive)
+            val forecast = if (through > now) engine.simulate(confirmedEvents + events, parameters, now, through, now, points = 301, additionalTimes = calibrationTimes, includeEventTimes = true, checkActive = checkActive).samples else emptyList()
             GelStudyScenario(target, if (target.contains("gel006")) "EstroGel上臂资料情景" else "Divigel上大腿资料情景", history.samples, forecast,
                 events.map { it.id }, events.mapNotNull { it.profileId }.toSet(), confirmedEvents + events)
         }

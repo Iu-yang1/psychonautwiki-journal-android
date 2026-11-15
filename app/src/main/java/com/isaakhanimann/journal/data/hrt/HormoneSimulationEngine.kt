@@ -25,7 +25,7 @@ data class HormoneSample(val timeHours: Double, val pgMl: Double)
 data class SimulationResult(val samples: List<HormoneSample>, val included: List<String>, val excluded: Map<String, String>)
 
 class HormoneSimulationEngine {
-    fun simulate(events: List<HormoneEvent>, parameters: List<HormoneParameters>, from: Double, to: Double, now: Double, points: Int = 501, includePlanned: Boolean = false, additionalTimes: List<Double> = emptyList(), checkActive: () -> Unit = {}): SimulationResult {
+    fun simulate(events: List<HormoneEvent>, parameters: List<HormoneParameters>, from: Double, to: Double, now: Double, points: Int = 501, includePlanned: Boolean = false, additionalTimes: List<Double> = emptyList(), includeEventTimes: Boolean = false, checkActive: () -> Unit = {}): SimulationResult {
         require(from.isFinite() && to.isFinite() && now.isFinite() && from < to && points in 2..10000)
         require((to - from).isFinite()) { "Invalid model time span" }
         require(events.map { it.id }.distinct().size == events.size) { "Duplicate model event ID" }
@@ -46,7 +46,12 @@ class HormoneSimulationEngine {
             if (reason != null) { excluded[event.id] = reason; null } else event to requireNotNull(p)
         }
         if (eligible.isEmpty()) return SimulationResult(emptyList(), emptyList(), excluded)
-        val times = ((0 until points).map { from + (to - from) * it / (points - 1) } + additionalTimes.filter { it.isFinite() && it in from..to }).distinct().sorted()
+        val eventTimes = if (includeEventTimes) eligible.flatMap { (event, profile) ->
+            checkActive()
+            sampleTimes(event, profile)
+        } else emptyList()
+        val times = ((0 until points).map { from + (to - from) * it / (points - 1) } +
+            (additionalTimes + eventTimes).filter { it.isFinite() && it in from..to }).distinct().sorted()
         val samples = times.map { t ->
             checkActive()
             val level = eligible.sumOf { (event, p) -> concentration(t, event, p) }
@@ -54,6 +59,26 @@ class HormoneSimulationEngine {
             HormoneSample(t, level.coerceAtLeast(0.0))
         }
         return SimulationResult(samples, eligible.map { it.first.id }, excluded)
+    }
+
+    private fun sampleTimes(event: HormoneEvent, profile: HormoneParameters): List<Double> {
+        val start = event.timeHours + profile.lagHours
+        val rates = listOfNotNull(profile.absorptionPerHour, profile.eliminationPerHour,
+            profile.transferPerHour, profile.fastEliminationPerHour, profile.swallowedAbsorptionPerHour)
+        val horizon = 32.0 / rates.min()
+        var left = 0.0
+        var right = min(horizon, event.endHours?.minus(event.timeHours) ?: horizon)
+        repeat(64) {
+            val first = left + (right - left) / 3
+            val second = right - (right - left) / 3
+            if (concentration(start + first, event, profile) < concentration(start + second, event, profile)) left = first
+            else right = second
+        }
+        val peak = (left + right) / 2
+        val offsets = listOf(0.0, .1, .25, .5, 1.0, 2.0, 4.0, 8.0, 12.0) +
+            rates.flatMap { rate -> listOf(.25 / rate, 1.0 / rate, 2.0 / rate, 4.0 / rate) } +
+            listOf(peak * .8, peak, peak * 1.2)
+        return offsets.map { start + it } + listOfNotNull(event.endHours?.plus(profile.lagHours))
     }
 
     private fun valid(p: HormoneParameters): Boolean {

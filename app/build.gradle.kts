@@ -26,8 +26,8 @@ android {
         applicationId = "com.huanli233.journal.open"
         minSdk = 26
         targetSdk = 36
-        versionCode = 85
-        versionName = "11.18.7"
+        versionCode = 86
+        versionName = "11.18.8"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

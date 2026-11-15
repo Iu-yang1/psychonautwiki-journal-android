@@ -23,12 +23,18 @@ data class HormoneChartData(
     val gelScenarios: List<GelStudyScenario> = emptyList(), val doseRecords: List<HormoneContextRecord> = emptyList(),
     val extrapolatedRecordIds: Set<String> = emptySet(),
     val calibration: Map<String, LabAmplitudeFit> = emptyMap(),
+    val testosteroneScenarios: List<TestosteroneScenario> = emptyList(),
+    val measuredTestosterone: List<NormalizedLab> = emptyList(),
+    val antiandrogenRecords: List<AntiandrogenRecord> = emptyList(),
 )
 
 /** Read-only projection. No DAO or mutation-capable repository enters this service. */
 class HormoneChartService(private val catalog: HormoneReferenceCatalog) {
     fun calculate(data: HormoneJournalData, request: HormoneChartRequest, nowMillis: Long, checkActive: () -> Unit = {}): HormoneChartData {
         request.validate()
+        val modelOptions = HormoneModelOptions.read(data.settings, request.consumer)
+        val antiandrogens = if (request.analyteId == "E2") AntiandrogenHistory.read(data, request.consumer, nowMillis, modelOptions.testosterone)
+            else AntiandrogenHistory(emptyList(), emptyList())
         val now = nowMillis / 3600000.0
         val from = now - request.historyDays * 24
         val through = now + request.forecastDays * 24
@@ -110,13 +116,10 @@ class HormoneChartService(private val catalog: HormoneReferenceCatalog) {
         if (projected.isNotEmpty()) assumptions += "未来虚线假设按所选计划执行；不表示已服药，也不扣减库存。"
         if (projected.isNotEmpty() && modeledActual.isEmpty()) assumptions += "暂无可纳入的历史用药，未来情景不包含未知的历史残留。"
         val parameters = catalog.models.map { it.parameters() }
-        val fastOffsets = listOf(0.1, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 3.0, 4.0, 8.0, 12.0)
-        val additionalTimes = if (request.analyteId in setOf("EE", "E4") || bridge.isNotEmpty()) (modeledActual + projected)
-            .filter { it.timeHours in (from - 24)..through }.flatMap { event -> fastOffsets.map { event.timeHours + it } }.distinct().take(5000) else emptyList()
         val engine = HormoneSimulationEngine()
-        val history = engine.simulate(modeledActual, parameters, from, now, now, points = 601, additionalTimes = additionalTimes, checkActive = checkActive)
+        val history = engine.simulate(modeledActual, parameters, from, now, now, points = 601, additionalTimes = modelOptions.calibrationTimes(), includeEventTimes = true, checkActive = checkActive)
         val forecast = if (request.forecastDays > 0) engine.simulate(modeledActual + projected, parameters, now, through, now,
-            points = 301, includePlanned = true, additionalTimes = additionalTimes, checkActive = checkActive) else null
+            points = 301, includePlanned = true, additionalTimes = modelOptions.calibrationTimes(), includeEventTimes = true, checkActive = checkActive) else null
         (history.excluded + forecast?.excluded.orEmpty()).forEach { (id, reason) ->
             if (excluded.none { it.id == id }) {
                 val original = records[id]
@@ -141,17 +144,51 @@ class HormoneChartService(private val catalog: HormoneReferenceCatalog) {
         val admitted = history.included.toSet()
         val forecastAdmitted = forecast?.included.orEmpty().toSet()
         val fit = LabCalibration.fit(data, request.consumer, request.analyteId, modeledActual, parameters, nowMillis)
-        fun scaled(samples: List<HormoneSample>, factor: Double) = samples.map { it.copy(pgMl = it.pgMl * factor) }.also { require(it.all { sample -> sample.pgMl.isFinite() }) }
+        fun scaled(samples: List<HormoneSample>, calibration: LabAmplitudeFit, begin: Double = from, end: Double = now): List<HormoneSample> {
+            val input = samples.ifEmpty {
+                if (calibration.baselinePgMl > 0 && begin < end)
+                    listOf(HormoneSample(begin, 0.0), HormoneSample(end, 0.0))
+                else emptyList()
+            }
+            return modelOptions.calibrate(input, calibration)
+        }
         val fits = mutableMapOf("history" to fit)
         val fittedScenarios = scenarios.map { scenario ->
             val result = LabCalibration.fit(data, request.consumer, request.analyteId, scenario.modelEvents, parameters, nowMillis)
             fits[scenario.id] = result
-            scenario.copy(history = scaled(scenario.history, result.scale), forecast = scaled(scenario.forecast, result.scale))
+            val future = if (request.forecastDays > 0) engine.simulate(scenario.modelEvents + projected, parameters,
+                now, through, now, points = 301, includePlanned = true, additionalTimes = modelOptions.calibrationTimes(), includeEventTimes = true, checkActive = checkActive).samples else emptyList()
+            scenario.copy(history = scaled(scenario.history, result), forecast = scaled(future, result, now, through))
         }
-        return HormoneChartData(request, from, now, through, scaled(history.samples, fit.scale), scaled(forecast?.samples.orEmpty(), fit.scale), measured,
+        val testosterone = TestosteroneProjection.calculate(request, modelOptions, scenarios, modeledActual, projected,
+            parameters, fit, fits, from, now, through, checkActive, antiandrogens.doses)
+        val testosteroneLabs = if (request.analyteId == "E2") data.labs.filter {
+            it.consumer == request.consumer && it.time / 3600000.0 in from..through &&
+                LabTrends.analyteKey(it.analyte) == "总睾酮"
+        }.mapNotNull { lab ->
+            if (lab.time > nowMillis) {
+                excluded += HormoneExclusion("lab:${lab.id}", lab.analyte, lab.time, "future_lab_record")
+                return@mapNotNull null
+            }
+            val point = runCatching { LabTrends.normalize(lab) }.getOrNull()
+            if (point == null || point.unit != "ng/dL") {
+                excluded += HormoneExclusion("lab:${lab.id}", lab.analyte, lab.time, "unsupported_lab_unit")
+                null
+            } else point
+        }
+            .sortedBy { it.original.time } else emptyList()
+        if (testosterone.isNotEmpty()) {
+            assumptions += "睾酮情景使用手动参数，尚无自动个体拟合；E2反馈使用起算前至多8个反馈时间常数预热，起算总T保持输入值。性腺状态和LH/FSH尚未单独建模。"
+            assumptions += "CPA/螺内酯按实际记录逐次累积一阶衰减暴露，包含显示范围和起算时间之前的残留；它是口服吸收瞬时近似的剂量暴露代理，不是血药浓度。两药抑制比例分别配置，乘积作用于可抑制的总T部分；该组合公式未经临床验证。"
+            assumptions += "螺内酯受体阻断不等于血清总T下降；最大总T抑制比例可设为0。半衰期只控制残留，不能据此推断抑制强度。未来仅延续实际抗雄记录的残留，未自动补充未来抗雄计划。"
+            if (antiandrogens.records.any { it.reason == null && data.records.any { record -> record.id.toString() == it.id && record.isDoseAnEstimate } })
+                assumptions += "抗雄估计用量按记录中心值纳入，未生成置信区间。"
+        }
+        return HormoneChartData(request, from, now, through, scaled(history.samples, fit), scaled(forecast?.samples.orEmpty(), fit, now, through), measured,
             history.included, projected.filter { it.id in forecastAdmitted }.map { it.id }, excluded,
             ((modeledActual.filter { it.id in admitted } + projected.filter { it.id in forecastAdmitted }).mapNotNull { it.profileId } + scenarios.flatMap { it.profileIds }).toSet(), assumptions,
             recognizedHrt.map { record -> record.copy(modelReason = if (record.id.toString() in bridgeIds) "sublingual_valerate_bridge" else if (record.id.toString() in scenarioIds) "gel_study_scenario" else excluded.firstOrNull { it.id == record.id.toString() }?.reason ?: record.modelReason) }.sortedByDescending { it.time },
-            fittedScenarios, recognizedHrt.filter { record -> record.inVisibleRange && catalog.models.any { it.acceptsMedication(links[record.id]?.medicationId.orEmpty()) && it.analyteId == request.analyteId } }, bridgeIds, fits)
+            fittedScenarios, recognizedHrt.filter { record -> record.inVisibleRange && catalog.models.any { it.acceptsMedication(links[record.id]?.medicationId.orEmpty()) && it.analyteId == request.analyteId } }, bridgeIds, fits,
+            testosterone, testosteroneLabs, antiandrogens.records)
     }
 }
