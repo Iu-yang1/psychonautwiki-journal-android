@@ -56,7 +56,6 @@ fun HormoneSimulationPanel(parent: HrtViewModel, consumer: String?, onOpenRecord
     val records by parent.events.collectAsState()
     val links by parent.links.collectAsState()
     val settings by parent.settings.collectAsState()
-    val labs by parent.labs.collectAsState()
     LaunchedEffect(consumer, historyDays, forecastDays, analyteId, gelReference, bridgeValerate, unit) {
         if (analyteId != "E2" && unit == "pmol/L" || analyteId == "E2" && unit == "ng/mL") unit = "pg/mL"
         chartPreferences.save(HormoneChartOptions(historyDays, forecastDays, analyteId, unit, gelReference, bridgeValerate))
@@ -106,7 +105,7 @@ fun HormoneSimulationPanel(parent: HrtViewModel, consumer: String?, onOpenRecord
             Text("单位")
             Row { (if (analyteId == "E2") listOf("pg/mL", "pmol/L") else listOf("pg/mL", "ng/mL")).forEach { label -> FilterChip(unit == label, { unit = label }, label = { Text(label) }) } }
             if (analyteId == "E2") {
-                TextButton({ modelEditorOpen = true; optionsOpen = false }) { Text("曲线设置与研究参考") }
+                TextButton({ modelEditorOpen = true; optionsOpen = false }) { Text("E2 校准设置（可选）") }
                 Row { Checkbox(bridgeValerate, { bridgeValerate = it }); Text("含服戊酸雌二醇估算") }
                 Text("凝胶参考")
                 listOf("compare" to "比较两种凝胶参考", "estrogel" to "EstroGel上臂资料情景", "divigel" to "Divigel上大腿资料情景", "confirmed" to "仅使用逐条明确的信息").forEach { (key, label) ->
@@ -141,11 +140,9 @@ fun HormoneSimulationSummary(data: HormoneChartData, unit: String, catalog: Horm
     var otherHrtOpen by remember { mutableStateOf(false) }
     var detailsMenu by remember { mutableStateOf(false) }
     var timelineOpen by remember { mutableStateOf(false) }
-    var antiandrogensOpen by remember { mutableStateOf(false) }
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         if (data.history.isEmpty() && data.gelScenarios.isEmpty()) Text("暂无可纳入 ${data.request.analyteId} 模型的历史用药记录")
         if (data.history.isNotEmpty() || data.forecast.isNotEmpty() || data.measured.isNotEmpty() || data.gelScenarios.isNotEmpty()) HormoneChart(data, unit)
-        if (data.request.analyteId == "E2" && (data.testosteroneScenarios.isNotEmpty() || data.measuredTestosterone.isNotEmpty() || data.testosteroneReferenceNotes.isNotEmpty())) TestosteroneChart(data)
         Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
             TextButton({ otherHrtOpen = true }) { Text("已识别 ${data.recognizedHrt.size} 条") }
             Spacer(Modifier.weight(1f))
@@ -153,8 +150,6 @@ fun HormoneSimulationSummary(data: HormoneChartData, unit: String, catalog: Horm
                 IconButton({ detailsMenu = true }) { Icon(Icons.Outlined.MoreVert, "曲线详情") }
                 DropdownMenu(detailsMenu, { detailsMenu = false }) {
                     DropdownMenuItem(text = { Text("模型来源与校准") }, onClick = { detailsMenu = false; sourcesOpen = true })
-                    if (data.request.analyteId == "E2") DropdownMenuItem(text = { Text("抗雄记录纳入详情（${data.antiandrogenRecords.count { it.reason == null }}/${data.antiandrogenRecords.size}）") },
-                        onClick = { detailsMenu = false; antiandrogensOpen = true })
                     DropdownMenuItem(text = { Text("查看未纳入项（${data.excluded.size}）") }, onClick = { detailsMenu = false; excludedOpen = true })
                     DropdownMenuItem(text = { Text("数值表") }, onClick = { detailsMenu = false; tableOpen = true })
                     DropdownMenuItem(text = { Text("原始剂量时间线") }, onClick = { detailsMenu = false; timelineOpen = true })
@@ -168,26 +163,6 @@ fun HormoneSimulationSummary(data: HormoneChartData, unit: String, catalog: Horm
     }, confirmButton = { TextButton({ timelineOpen = false }) { Text("关闭") } })
     if (excludedOpen) HormoneExclusions(data.excluded, { excludedOpen = false }) { id -> onEdit(id); excludedOpen = false }
     if (sourcesOpen) HormoneSources(catalog, data.profileIds, data.assumptions, data.calibration) { sourcesOpen = false }
-    if (antiandrogensOpen) AlertDialog(onDismissRequest = { antiandrogensOpen = false }, title = { Text("抗雄记录纳入详情") }, text = {
-        Column {
-            Text("全部历史 CPA／螺内酯记录；范围外记录仍参与研究对照及残留代理计算。残留不等于血药浓度或总 T 抑制量。")
-            data.antiandrogenResiduals.forEach { residual ->
-                Text("${residual.drug.label}：${residual.recordCount} 条 · 记录总量 ${"%.6g".format(residual.totalRecordedMg)} mg · 当前残留代理 ${"%.6g".format(residual.remainingDoseProxyMg)} mg（半衰期 ${residual.halfLifeHours} 小时）",
-                    style = MaterialTheme.typography.bodySmall)
-            }
-            if (data.antiandrogenRecords.isEmpty()) Text("暂无已关联药物身份的CPA/螺内酯记录")
-            LazyColumn(Modifier.heightIn(max = 380.dp)) {
-                data.antiandrogenRecords.forEach { record -> item(key = record.id) {
-                    Column(Modifier.padding(vertical = 8.dp)) {
-                        Text("${record.name} · ${modelTime(record.timeMillis / 3600000.0)}")
-                        record.doseMg?.let { Text("${"%.6g".format(it)} mg") }
-                        Text(record.reason ?: "已纳入历史对照与残留代理")
-                        TextButton({ antiandrogensOpen = false; onEdit(record.id.toInt()) }) { Text("查看或补全记录") }
-                    }
-                } }
-            }
-        }
-    }, confirmButton = { TextButton({ antiandrogensOpen = false }) { Text("关闭") } })
     if (tableOpen) HormoneValueTable(data, unit) { tableOpen = false }
     if (otherHrtOpen) AlertDialog(onDismissRequest = { otherHrtOpen = false }, title = { Text("已识别的 HRT 用药") }, text = {
         Column {
@@ -407,7 +382,7 @@ private fun HormoneSources(catalog: HormoneReferenceCatalog, used: Set<String>, 
     AlertDialog(onDismissRequest = onClose, title = { Text("研究参考与支持范围") }, text = {
         Column(Modifier.heightIn(max = 450.dp).verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text("版本 ${catalog.version} · 数值和研究锚点核对，不等同个体临床验证。")
-            Text("E2 使用线性叠加及个人基线、幅度校准。总睾酮使用原始研究的组均值参考；无需填写药理参数，个人化验独立显示。")
+            Text("E2 使用线性叠加及个人基线、幅度校准。")
             calibration.forEach { (name, fit) ->
                 Text("$name · E2 基线 ${"%.4g".format(fit.baselinePgMl)} pg/mL · 幅度 ${"%.4g".format(fit.scale)} 倍 · ${fit.labIds.size} 项校准")
                 fit.meanAbsoluteErrorPgMl?.let { Text("拟合平均绝对误差 ${"%.4g".format(it)} pg/mL") }

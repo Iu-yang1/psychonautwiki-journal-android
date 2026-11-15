@@ -50,16 +50,16 @@ class HormoneChartServiceTest {
     @Test fun pausedPlansCannotCreateFutureCurveEvents() {
         val chart = service.calculate(data(plans = listOf(plan.copy(paused = true))), HormoneChartRequest(forecastDays = 3), now)
         assertTrue(chart.includedPlanned.isEmpty())
-        assertTrue(chart.forecast.isNotEmpty()) // Existing doses still have a hypothetical decay tail.
+        assertTrue(chart.forecast.isNotEmpty())
     }
 
     @Test fun measuredPointsKeepComparisonAreIndependentAndCannotFitTheModel() {
-        val a = HrtLab("a", null, "E2", now-1000, 367.1, "pmol/L", "<")
-        val other = a.copy(id = "other", consumer = "person B", value = 999.0)
-        val future = a.copy(id = "future", time = now+1000)
-        val unknown = a.copy(id = "unknown", unit = "arbitrary unit")
+        val lab = HrtLab("a", null, "E2", now-1000, 367.1, "pmol/L", "<")
+        val other = lab.copy(id = "other", consumer = "person B", value = 999.0)
+        val future = lab.copy(id = "future", time = now+1000)
+        val unknown = lab.copy(id = "unknown", unit = "arbitrary unit")
         val base = service.calculate(data(), HormoneChartRequest(), now)
-        val with = service.calculate(data(labs = listOf(a, other, future, unknown)), HormoneChartRequest(), now)
+        val with = service.calculate(data(labs = listOf(lab, other, future, unknown)), HormoneChartRequest(), now)
         assertEquals(base.history, with.history)
         assertEquals(listOf("a"), with.measured.map { it.original.id })
         assertEquals("<", with.measured.single().original.comparison)
@@ -95,122 +95,76 @@ class HormoneChartServiceTest {
         assertTrue(chart.assumptions.any { it.contains("估计值") && it.contains("置信区间") })
     }
 
-    @Test fun testosteroneUsesOwnUnitsAndConsumerAndKeepsHistoryWhenForecastChanges() {
-        val lab = HrtLab("t", null, "testosterone", now - 1000, 3.47, "nmol/L")
-        val cpa = record.copy(id = 2, dose = 12.5)
-        val cpaId = substances.single { it.identity?.ingredientId == AntiandrogenDrug.CPA.ingredientId }.id
-        val journal = data(labs = listOf(lab, lab.copy(id = "other", consumer = "person B"),
-            lab.copy(id = "future", time = now + 1000), lab.copy(id = "wrong", unit = "pg/mL"))).let {
-                it.copy(records = it.records + cpa, links = it.links + MedicationLink(cpa.id, cpaId, "identified", cpa.substanceName))
-            }
-        val without = service.calculate(journal, HormoneChartRequest(historyDays = 7, forecastDays = 0), now)
-        val with = service.calculate(journal, HormoneChartRequest(historyDays = 7, forecastDays = 3), now)
-        assertEquals(without.testosteroneScenarios.single().history, with.testosteroneScenarios.single().history)
-        val scenario = with.testosteroneScenarios.single()
-        assertEquals(scenario.history.last(), scenario.forecast.first())
-        assertEquals(listOf("t"), with.measuredTestosterone.map { it.original.id })
-        assertEquals(100.0, with.measuredTestosterone.single().value, 1e-9)
-        assertEquals("cpa-2025", scenario.referenceId)
-        assertTrue(with.testosteroneReferenceNotes.any { it.contains("不代表个人预测") })
-        assertTrue(journal.settings.isEmpty())
+    @Test fun testosteroneLabsRemainUnmodifiedAndCannotAffectE2() {
+        val labs = listOf(
+            HrtLab("t", null, "testosterone", now - 1000, 3.47, "nmol/L"),
+            HrtLab("other", "person B", "testosterone", now - 1000, 999.0, "ng/dL"))
+        val journal = data(labs = labs)
+        val baseline = service.calculate(data(), HormoneChartRequest(), now)
+        val chart = service.calculate(journal, HormoneChartRequest(), now)
+        assertEquals(baseline, chart)
+        assertEquals(labs, journal.labs)
+        val normalized = LabTrends.normalize(journal.labs.first())
+        assertEquals(100.0, normalized.value, 1e-9)
+        assertEquals("ng/dL", normalized.unit)
     }
 
-    @Test fun gelForecastPlansDoNotChangePublishedTestosteroneReferenceMeans() {
+    @Test fun gelForecastRetainsContinuityAndIncludesFutureEstrogenPlans() {
         val gel = catalog.models.single { it.id == "e2-gel006-reference-v1" }
         val gelRecord = record.copy(substanceName = "Estradiol Gel", administrationRoute = AdministrationRoute.TRANSDERMAL)
-        val cpa = record.copy(id = 2, dose = 12.5)
-        val cpaId = substances.single { it.identity?.ingredientId == AntiandrogenDrug.CPA.ingredientId }.id
-        val journal = HormoneJournalData(listOf(gelRecord, cpa), listOf(MedicationLink(1, gel.medicationId, "identified", gelRecord.substanceName),
-            MedicationLink(cpa.id, cpaId, "identified", cpa.substanceName)),
+        val journal = HormoneJournalData(listOf(gelRecord),
+            listOf(MedicationLink(1, gel.medicationId, "identified", gelRecord.substanceName)),
             emptyList(), emptyList(), listOf(plan), substances = substances)
         val chart = service.calculate(journal, HormoneChartRequest(historyDays = 1), now)
         val noPlans = service.calculate(journal.copy(plans = emptyList()), HormoneChartRequest(historyDays = 1), now)
         assertEquals(2, chart.gelScenarios.size)
-        assertEquals(listOf("cpa-2025"), chart.testosteroneScenarios.map { it.referenceId })
-        assertEquals(chart.testosteroneScenarios, noPlans.testosteroneScenarios)
         chart.gelScenarios.forEach { scenario ->
             val decay = noPlans.gelScenarios.single { it.id == scenario.id }
+            assertEquals(scenario.history, decay.history)
             assertEquals(scenario.history.last().pgMl, scenario.forecast.first().pgMl, 1e-8)
             assertTrue(scenario.forecast.last().pgMl > decay.forecast.last().pgMl)
         }
     }
 
-    @Test fun historicalAntiandrogensIncludeOldResidualsNormalizeUnitsAndIsolateConsumers() {
-        val cpaId = substances.single { it.identity?.ingredientId == AntiandrogenDrug.CPA.ingredientId }.id
-        val spiroId = substances.single { it.identity?.ingredientId == AntiandrogenDrug.SPIRONOLACTONE.ingredientId }.id
-        val old = record.copy(id = 11, time = Instant.ofEpochMilli(now - 96 * 3600000L), dose = 50000.0, units = "mcg")
+    @Test fun historicalAntiandrogensRemainStoredAndCpaRemainsRecognizedWithoutChangingE2() {
+        val cpaId = substances.single { it.identity?.ingredientId == "ingredient:cyproterone-acetate" }.id
+        val spiroId = substances.single { it.identity?.ingredientId == "ingredient:spironolactone" }.id
+        val old = record.copy(id = 11, time = Instant.ofEpochMilli(now - 96 * 3600000L),
+            dose = 50000.0, units = "mcg")
         val tablet = record.copy(id = 12, dose = .5, units = "片")
-        val other = old.copy(id = 13, consumerName = "other", dose = 10000.0, units = "mg")
-        val missing = tablet.copy(id = 14)
-        val future = old.copy(id = 15, time = Instant.ofEpochMilli(now + 3600000))
-        val wrongRoute = old.copy(id = 16, administrationRoute = AdministrationRoute.TRANSDERMAL)
-        val product = MedicationProduct("spiro", spiroId, "25mg tablet", "tablet", "tablet", 25.0)
-        val e2 = record.copy(id = 17, time = old.time.minusSeconds(3600))
-        val journal = HormoneJournalData(listOf(old, tablet, other, missing, future, wrongRoute, e2),
-            listOf(old, other, future, wrongRoute).map { MedicationLink(it.id, cpaId, "identified", it.substanceName) } +
-                listOf(tablet, missing).map { MedicationLink(it.id, spiroId, "identified", it.substanceName) } +
-                MedicationLink(e2.id, oral.medicationId, "identified", e2.substanceName),
-            emptyList(), listOf(EventProductSnapshot(product, now).setting(tablet.id)),
-            emptyList(), substances = substances)
-        val chart = service.calculate(journal, HormoneChartRequest(historyDays = 1, forecastDays = 1), now)
-        assertEquals(setOf("11", "12"), chart.antiandrogenRecords.filter { it.reason == null }.map { it.id }.toSet())
-        assertEquals(50.0, chart.antiandrogenRecords.single { it.id == "11" }.doseMg!!, 0.0)
-        assertEquals(12.5, chart.antiandrogenRecords.single { it.id == "12" }.doseMg!!, 0.0)
-        assertFalse(chart.antiandrogenRecords.any { it.id == "13" })
-        assertTrue(chart.antiandrogenRecords.single { it.id == "14" }.reason!!.contains("规格"))
-        assertTrue(chart.antiandrogenRecords.single { it.id == "15" }.reason!!.contains("未来"))
-        assertTrue(chart.antiandrogenRecords.single { it.id == "16" }.reason!!.contains("途径"))
-        val without = service.calculate(journal.copy(records = journal.records.filter { it.id != old.id }),
-            HormoneChartRequest(historyDays = 1, forecastDays = 1), now)
-        assertEquals(setOf("cpa-2025", "spiro-2025"), chart.testosteroneScenarios.map { it.referenceId }.toSet())
-        assertEquals(listOf("spiro-2025"), without.testosteroneScenarios.map { it.referenceId })
-        val cpaReference = chart.testosteroneScenarios.single { it.referenceId == "cpa-2025" }
-        assertEquals(old.time.toEpochMilli() / 3600000.0, cpaReference.referenceStartHours!!, 0.0)
-        assertEquals(cpaReference.history.last(), cpaReference.forecast.first())
-        assertTrue(chart.antiandrogenResiduals.single { it.drug == AntiandrogenDrug.CPA }.remainingDoseProxyMg > 0)
-        val shorter = service.calculate(journal, HormoneChartRequest(historyDays = 1, forecastDays = 0), now)
-        assertEquals(shorter.testosteroneScenarios.map { it.history }, chart.testosteroneScenarios.map { it.history })
-        assertEquals(journal.records, listOf(old, tablet, other, missing, future, wrongRoute, e2))
+        val other = old.copy(id = 13, consumerName = "other")
+        val future = old.copy(id = 14, time = Instant.ofEpochMilli(now + 3600000))
+        val base = data()
+        val records = listOf(old, tablet, other, future)
+        val journal = base.copy(records = base.records + records, links = base.links +
+            records.map { MedicationLink(it.id, if (it.id == tablet.id) spiroId else cpaId, "identified", it.substanceName) })
+        val chart = service.calculate(journal, HormoneChartRequest(historyDays = 1), now)
+        val baseline = service.calculate(base, HormoneChartRequest(historyDays = 1), now)
+        assertEquals(baseline.history, chart.history)
+        assertEquals(baseline.forecast, chart.forecast)
+        assertEquals(baseline.assumptions, chart.assumptions)
+        assertEquals(setOf(1, 11), chart.recognizedHrt.map { it.id }.toSet())
+        val cpa = chart.recognizedHrt.single { it.id == old.id }
+        assertFalse(cpa.inVisibleRange)
+        assertEquals("non_e2_record", cpa.modelReason)
+        assertEquals(old.dose, cpa.dose)
+        assertEquals("mcg", cpa.unit)
+        assertEquals(tablet, journal.records.single { it.id == tablet.id })
+        assertEquals(spiroId, journal.links.single { it.ingestionId == tablet.id }.medicationId)
+        assertEquals(base.records + records, journal.records)
+        assertTrue(journal.settings.isEmpty())
     }
 
-    @Test fun antiandrogenHistoryNeedsNoUserSuppliedSuppressionParameters() {
-        val cpaId = substances.single { it.identity?.ingredientId == AntiandrogenDrug.CPA.ingredientId }.id
-        val journal = data(plans = emptyList()).copy(links = listOf(MedicationLink(record.id, cpaId, "identified", record.substanceName)))
-        val chart = service.calculate(journal, HormoneChartRequest(), now)
-        assertNull(chart.antiandrogenRecords.single().reason)
-        assertEquals(1, chart.antiandrogenResiduals.single().recordCount)
-        assertTrue(chart.testosteroneScenarios.isEmpty())
-        assertTrue(chart.testosteroneReferenceNotes.last().contains("E2"))
-    }
-
-    @Test fun referenceToggleKeepsActualLabsAndAllHistoricalAntiandrogensAvailable() {
-        val cpaId = substances.single { it.identity?.ingredientId == AntiandrogenDrug.CPA.ingredientId }.id
-        val cpa = record.copy(id = 2, dose = 12.5)
-        val lab = HrtLab("t", null, "testosterone", now - 1000, 100.0, "ng/dL")
-        val journal = data(labs = listOf(lab)).let { it.copy(records = it.records + cpa,
-            links = it.links + MedicationLink(cpa.id, cpaId, "identified", cpa.substanceName)) }
-        val automatic = service.calculate(journal, HormoneChartRequest(), now)
-        val disabled = service.calculate(journal.copy(settings = listOf(HormoneModelOptions(showTestosteroneReference = false).setting(null))),
-            HormoneChartRequest(), now)
-        assertTrue(automatic.testosteroneScenarios.isNotEmpty())
-        assertTrue(disabled.testosteroneScenarios.isEmpty())
-        assertEquals(automatic.measuredTestosterone, disabled.measuredTestosterone)
-        assertEquals(automatic.antiandrogenRecords, disabled.antiandrogenRecords)
-        assertEquals(automatic.antiandrogenResiduals, disabled.antiandrogenResiduals)
-    }
-
-    @Test fun literatureContextDoesNotSubstituteSublingualValerateForFreeEstradiol() {
-        val evId = substances.single { it.identity?.chemicalFormId == "chemical:estradiol-valerate" &&
-            it.identity.formulationId == "form:oral-solid" }.id
-        val other = record.copy(id = 3, consumerName = "other")
-        val future = record.copy(id = 4, time = Instant.ofEpochMilli(now + 1))
-        val sl = record.copy(administrationRoute = AdministrationRoute.SUBLINGUAL)
-        val journal = data(records = listOf(sl, other, future))
-        val free = TestosteroneReferences.estrogenHistory(journal, null, now)
-        assertEquals(listOf("1"), free.map { it.id })
-        assertEquals(HormoneRoute.SUBLINGUAL, free.single().route)
-        val valerate = journal.copy(links = listOf(MedicationLink(1, evId, "identified", sl.substanceName)))
-        assertTrue(TestosteroneReferences.estrogenHistory(valerate, null, now).isEmpty())
+    @Test fun legacyTestosteroneSettingsLeaveTheE2ChartUnchanged() {
+        val options = HormoneModelOptions(12.0, now - 24 * 3600000L)
+        val legacy = options.setting(null).let {
+            it.copy(payload = it.payload.dropLast(1) +
+                ""","testosterone":{"ec50PgMl":0.0},"showTestosteroneReference":true}""")
+        }
+        val expected = service.calculate(data(settings = listOf(options.setting(null))), HormoneChartRequest(), now)
+        val journal = data(settings = listOf(legacy))
+        assertEquals(expected, service.calculate(journal, HormoneChartRequest(), now))
+        assertEquals(listOf(legacy), journal.settings)
     }
 
     @Test fun explicitE2BaselineRemainsVisibleWithoutModeledDosesAndDoesNotAffectOtherAnalytes() {

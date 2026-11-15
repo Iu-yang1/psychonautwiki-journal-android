@@ -23,11 +23,6 @@ data class HormoneChartData(
     val gelScenarios: List<GelStudyScenario> = emptyList(), val doseRecords: List<HormoneContextRecord> = emptyList(),
     val extrapolatedRecordIds: Set<String> = emptySet(),
     val calibration: Map<String, LabAmplitudeFit> = emptyMap(),
-    val testosteroneScenarios: List<TestosteroneScenario> = emptyList(),
-    val measuredTestosterone: List<NormalizedLab> = emptyList(),
-    val antiandrogenRecords: List<AntiandrogenRecord> = emptyList(),
-    val testosteroneReferenceNotes: List<String> = emptyList(),
-    val antiandrogenResiduals: List<AntiandrogenResidual> = emptyList(),
 )
 
 /** Read-only projection. No DAO or mutation-capable repository enters this service. */
@@ -35,8 +30,6 @@ class HormoneChartService(private val catalog: HormoneReferenceCatalog) {
     fun calculate(data: HormoneJournalData, request: HormoneChartRequest, nowMillis: Long, checkActive: () -> Unit = {}): HormoneChartData {
         request.validate()
         val modelOptions = HormoneModelOptions.read(data.settings, request.consumer)
-        val antiandrogens = if (request.analyteId == "E2") AntiandrogenHistory.read(data, request.consumer, nowMillis)
-            else AntiandrogenHistory(emptyList(), emptyList())
         val now = nowMillis / 3600000.0
         val from = now - request.historyDays * 24
         val through = now + request.forecastDays * 24
@@ -162,34 +155,10 @@ class HormoneChartService(private val catalog: HormoneReferenceCatalog) {
                 now, through, now, points = 301, includePlanned = true, additionalTimes = modelOptions.calibrationTimes(), includeEventTimes = true, checkActive = checkActive).samples else emptyList()
             scenario.copy(history = scaled(scenario.history, result), forecast = scaled(future, result, now, through))
         }
-        val testosterone = if (request.analyteId == "E2" && modelOptions.showTestosteroneReference) {
-            TestosteroneReferences.calculate(
-                TestosteroneReferences.estrogenHistory(data, request.consumer, nowMillis),
-                antiandrogens.doses, from, now, through, checkActive)
-        } else TestosteroneReferenceResult(emptyList(), emptyList(), TestosteroneReferences.residuals(antiandrogens.doses, now))
-        val testosteroneLabs = if (request.analyteId == "E2") data.labs.filter {
-            it.consumer == request.consumer && it.time / 3600000.0 in from..through &&
-                LabTrends.analyteKey(it.analyte) == "总睾酮"
-        }.mapNotNull { lab ->
-            if (lab.time > nowMillis) {
-                excluded += HormoneExclusion("lab:${lab.id}", lab.analyte, lab.time, "future_lab_record")
-                return@mapNotNull null
-            }
-            val point = runCatching { LabTrends.normalize(lab) }.getOrNull()
-            if (point == null || point.unit != "ng/dL") {
-                excluded += HormoneExclusion("lab:${lab.id}", lab.analyte, lab.time, "unsupported_lab_unit")
-                null
-            } else point
-        }
-            .sortedBy { it.original.time } else emptyList()
-        assumptions += testosterone.notes
-        if (antiandrogens.records.any { it.reason == null && data.records.any { record -> record.id.toString() == it.id && record.isDoseAnEstimate } })
-            assumptions += "抗雄估计用量按记录中心值纳入，未生成置信区间。"
         return HormoneChartData(request, from, now, through, scaled(history.samples, fit), scaled(forecast?.samples.orEmpty(), fit, now, through), measured,
             history.included, projected.filter { it.id in forecastAdmitted }.map { it.id }, excluded,
             ((modeledActual.filter { it.id in admitted } + projected.filter { it.id in forecastAdmitted }).mapNotNull { it.profileId } + scenarios.flatMap { it.profileIds }).toSet(), assumptions,
             recognizedHrt.map { record -> record.copy(modelReason = if (record.id.toString() in bridgeIds) "sublingual_valerate_bridge" else if (record.id.toString() in scenarioIds) "gel_study_scenario" else excluded.firstOrNull { it.id == record.id.toString() }?.reason ?: record.modelReason) }.sortedByDescending { it.time },
-            fittedScenarios, recognizedHrt.filter { record -> record.inVisibleRange && catalog.models.any { it.acceptsMedication(links[record.id]?.medicationId.orEmpty()) && it.analyteId == request.analyteId } }, bridgeIds, fits,
-            testosterone.scenarios, testosteroneLabs, antiandrogens.records, testosterone.notes, testosterone.residuals)
+            fittedScenarios, recognizedHrt.filter { record -> record.inVisibleRange && catalog.models.any { it.acceptsMedication(links[record.id]?.medicationId.orEmpty()) && it.analyteId == request.analyteId } }, bridgeIds, fits)
     }
 }

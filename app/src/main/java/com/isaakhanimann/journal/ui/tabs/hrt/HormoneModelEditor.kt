@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
@@ -47,32 +46,18 @@ fun HormoneModelEditor(
 ) {
     var baseline by remember { mutableStateOf(options.baselineE2PgMl.toString()) }
     var calibrationStart by remember { mutableStateOf(options.calibrationStartMillis?.let(::formatModelDate).orEmpty()) }
-    var enabled by remember { mutableStateOf(options.showTestosteroneReference) }
-    var advanced by remember { mutableStateOf(false) }
-    var sourcesOpen by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf<String?>(null) }
     Dialog(onDismissRequest = onClose, properties = DialogProperties(usePlatformDefaultWidth = false)) {
         Surface(modifier = Modifier.padding(horizontal = 16.dp).widthIn(max = 560.dp), shape = MaterialTheme.shapes.extraLarge) {
             Column(Modifier.fillMaxWidth().heightIn(max = 640.dp).padding(24.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                Text("曲线设置", style = MaterialTheme.typography.headlineSmall)
+                Text("E2 校准设置", style = MaterialTheme.typography.headlineSmall)
                 Column(Modifier.fillMaxWidth().weight(1f, fill = false).verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Row {
-                        Checkbox(enabled, { enabled = it })
-                        Text("显示总睾酮文献参考")
-                    }
-                    Text("参考值已从原始研究内置，无需填写药理参数。自动读取当前用户的 E2、CPA／螺内酯历史及总睾酮化验。")
-                    Text("参考线显示研究组均值，与个人实测点分开。历史用药用于对齐研究起点和选择对照，不把研究均值当作个人预测。", style = MaterialTheme.typography.bodySmall)
-                    if (options.testosterone != null) Text("旧版手填的总 T 参数已停用，仍保留在备份中。当前参考线使用下方可查证的研究数据。", style = MaterialTheme.typography.bodySmall)
-                    TextButton({ sourcesOpen = true }) { Text("查看研究数据与来源") }
-                    TextButton({ advanced = !advanced }) { Text(if (advanced) "收起 E2 校准设置" else "E2 校准设置（可选）") }
-                    if (advanced) {
-                        Text("仅影响 E2 校准。已有设置会保留；使用总睾酮参考无需修改。", style = MaterialTheme.typography.bodySmall)
-                        OutlinedTextField(baseline, { baseline = it }, label = { Text("个人 E2 基线（pg/mL）") }, singleLine = true,
-                            supportingText = { Text("默认 0 表示不额外添加基线，不代表实测 E2 为 0。") })
-                        OutlinedTextField(calibrationStart, { calibrationStart = it }, label = { Text("本阶段校准起点（可留空）") },
-                            placeholder = { Text("2026-11-15 08:00") }, singleLine = true)
-                        Text("填写本地时间。校准只使用此后明确选用的化验，较早曲线保留研究幅度。", style = MaterialTheme.typography.bodySmall)
-                    }
+                    Text("以下为可选的个人 E2 校准设置。保留默认值即可使用原有参考曲线。", style = MaterialTheme.typography.bodySmall)
+                    OutlinedTextField(baseline, { baseline = it }, label = { Text("个人 E2 基线（pg/mL）") }, singleLine = true,
+                        supportingText = { Text("默认 0 表示不额外添加基线，不代表实测 E2 为 0。") })
+                    OutlinedTextField(calibrationStart, { calibrationStart = it }, label = { Text("本阶段校准起点（可留空）") },
+                        placeholder = { Text("2026-11-15 08:00") }, singleLine = true)
+                    Text("填写本地时间。校准只使用此后明确选用的化验，较早曲线保留研究幅度。", style = MaterialTheme.typography.bodySmall)
                     error?.let { Text(it, color = MaterialTheme.colorScheme.error) }
                 }
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
@@ -83,8 +68,7 @@ fun HormoneModelEditor(
                                 options.calibrationStartMillis
                             } else calibrationStart.takeIf { it.isNotBlank() }?.let(::parseModelDate)
                             val value = baseline.trim().toDoubleOrNull() ?: throw IllegalArgumentException("请填写有效的 E2 基线")
-                            val result = options.copy(baselineE2PgMl = value, calibrationStartMillis = cutoff,
-                                showTestosteroneReference = enabled)
+                            val result = options.copy(baselineE2PgMl = value, calibrationStartMillis = cutoff)
                             result.validate()
                             onSave(result)
                         } catch (exception: IllegalArgumentException) {
@@ -97,5 +81,4 @@ fun HormoneModelEditor(
             }
         }
     }
-    if (sourcesOpen) TestosteroneReferenceSources { sourcesOpen = false }
 }
