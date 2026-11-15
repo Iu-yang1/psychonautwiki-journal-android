@@ -17,7 +17,7 @@ data class AntiandrogenDose(val id: String, val drug: AntiandrogenDrug, val time
 data class AntiandrogenRecord(val id: String, val name: String, val timeMillis: Long, val doseMg: Double?, val reason: String?)
 data class AntiandrogenHistory(val doses: List<AntiandrogenDose>, val records: List<AntiandrogenRecord>) {
     companion object {
-        fun read(data: HormoneJournalData, consumer: String?, nowMillis: Long, config: TestosteroneOptions?): AntiandrogenHistory {
+        fun read(data: HormoneJournalData, consumer: String?, nowMillis: Long): AntiandrogenHistory {
             val links = data.links.associateBy { it.ingestionId }
             val substances = data.substances.associateBy { it.id }
             val details = data.details.associateBy { it.ingestionId }
@@ -37,7 +37,6 @@ data class AntiandrogenHistory(val doses: List<AntiandrogenDose>, val records: L
                     basisText != null && basis == null -> "未知剂量口径"
                     resolved.missing != null -> resolved.missing
                     mass == null || !mass.isFinite() || mass <= 0 -> "需要明确有效成分质量"
-                    config == null || drug.options(config) == null -> "需填写${drug.label}总 T 情景参数"
                     else -> null
                 }
                 if (reason == null) doses += AntiandrogenDose(record.id.toString(), drug, record.time.toEpochMilli() / 3600000.0, requireNotNull(mass))

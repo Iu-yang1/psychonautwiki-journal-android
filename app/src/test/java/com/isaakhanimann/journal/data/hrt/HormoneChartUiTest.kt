@@ -86,44 +86,61 @@ class HormoneChartUiTest {
             HormoneSimulationSummary(chart, "pg/mL", catalog, {}, {})
         } } }
         compose.onNodeWithContentDescription("历史模型实线、未来计划虚线、独立化验点；可点按查看时点").assertExists()
-        compose.onNodeWithText("总睾酮 · 参数情景").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("总睾酮 · 文献参考与实测").performScrollTo().assertIsDisplayed()
         compose.onNodeWithText("ng/dL", substring = false).performClick()
         compose.onNodeWithText("nmol/L", substring = false).assertExists()
-        compose.onNodeWithContentDescription("总睾酮情景曲线和独立化验点，可点按查看数值").assertExists()
+        compose.onNodeWithContentDescription("总睾酮文献参考线和独立化验点，可点按查看数值").assertExists()
     }
 
     @Test fun modelEditorPreservesExactAnchorTimesWhenSavingExistingParameters() {
         var saved: HormoneModelOptions? = null
         val options = HormoneModelOptions(12.0, 12345L, TestosteroneOptions(12345L, 500.0,
             500.0, 20.0, 100.0, 24.0, 168.0))
-        compose.setContent { MaterialTheme { HormoneModelEditor(options, emptyList(), { saved = it }, {}) } }
+        compose.setContent { MaterialTheme { HormoneModelEditor(options, { saved = it }, {}) } }
         compose.onNodeWithText("保存").performClick()
         compose.runOnIdle { assertEquals(options, saved) }
     }
 
     @Test fun modelEditorReportsInvalidBaselineWithoutSaving() {
         var saved = false
-        compose.setContent { MaterialTheme { HormoneModelEditor(HormoneModelOptions(), emptyList(), { saved = true }, {}) } }
+        compose.setContent { MaterialTheme { HormoneModelEditor(HormoneModelOptions(), { saved = true }, {}) } }
+        compose.onNodeWithText("E2 校准设置（可选）").performClick()
         compose.onNodeWithText("个人 E2 基线（pg/mL）").performTextReplacement("-1")
         compose.onNodeWithText("保存").performClick()
         compose.onNodeWithText("E2 基线应为非负数").performScrollTo().assertIsDisplayed()
         compose.runOnIdle { assertFalse(saved) }
     }
 
-    @Test fun modelEditorPersistsDrugSpecificParametersAfterEditingOtherFields() {
+    @Test fun modelEditorPreservesLegacySettingsWithoutRequestingAnyTestosteroneParameters() {
         var saved: HormoneModelOptions? = null
         val config = TestosteroneOptions(12345L, 500.0, 500.0, 20.0, 100.0, 24.0, 168.0,
             AntiandrogenOptions(43.9, 10.0, .9), AntiandrogenOptions(16.5, 100.0, 0.0))
         compose.setContent { MaterialTheme {
-            HormoneModelEditor(HormoneModelOptions(testosterone = config), emptyList(), { saved = it }, {})
+            HormoneModelEditor(HormoneModelOptions(testosterone = config), { saved = it }, {})
         } }
-        compose.onNodeWithText("CPA 总 T 最大抑制比例（0–1）").performScrollTo().performTextReplacement("0.8")
+        compose.onNodeWithText("E2 半最大抑制浓度（pg/mL）").assertDoesNotExist()
+        compose.onNodeWithText("总 T 响应时间常数（小时）").assertDoesNotExist()
+        compose.onNodeWithText("CPA 总 T 最大抑制比例（0–1）").assertDoesNotExist()
+        compose.onNodeWithText("E2 校准设置（可选）").performClick()
         compose.onNodeWithText("个人 E2 基线（pg/mL）").performScrollTo().performTextReplacement("12")
         compose.onNodeWithText("保存").performClick()
         compose.runOnIdle {
-            assertEquals(config.copy(cyproterone = config.cyproterone!!.copy(maximumSuppression = .8)), saved?.testosterone)
+            assertEquals(config, saved?.testosterone)
             assertEquals(12.0, saved!!.baselineE2PgMl, 0.0)
+            assertTrue(saved!!.showTestosteroneReference)
         }
+    }
+
+    @Test fun defaultEditorSavesWithoutNumericalInputAndOpensPublishedReferenceData() {
+        var saved: HormoneModelOptions? = null
+        compose.setContent { MaterialTheme { HormoneModelEditor(HormoneModelOptions(), { saved = it }, {}) } }
+        compose.onAllNodes(hasSetTextAction()).assertCountEquals(0)
+        compose.onNodeWithText("查看研究数据与来源").performClick()
+        compose.onNodeWithText("总睾酮研究参考").assertIsDisplayed()
+        compose.onNodeWithText("0 月：17.3 nmol/L；3 月：0.81 nmol/L；6 月：1.48 nmol/L").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("关闭").performClick()
+        compose.onNodeWithText("保存").performClick()
+        compose.runOnIdle { assertEquals(HormoneModelOptions(), saved) }
     }
 
     @Test fun antiandrogenDetailsShowIncludedAndUnresolvedHistoricalRecords() {
@@ -135,7 +152,7 @@ class HormoneChartUiTest {
         } } }
         compose.onNodeWithContentDescription("曲线详情").performScrollTo().performClick()
         compose.onNodeWithText("抗雄记录纳入详情（1/2）").performClick()
-        compose.onNodeWithText("已纳入总 T 情景；包含历史残留").assertIsDisplayed()
+        compose.onNodeWithText("已纳入历史对照与残留代理").assertIsDisplayed()
         compose.onNodeWithText("需要补充药品规格").assertIsDisplayed()
     }
 }

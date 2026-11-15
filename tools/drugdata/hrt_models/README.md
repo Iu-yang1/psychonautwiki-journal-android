@@ -46,49 +46,17 @@ phase, and the fitted amplitude applies from that phase start. The diagnostics s
 fit MAE and forward validation MAE obtained by fitting only strictly earlier labs.
 Unseparated baselines embedded in published reference anchors remain a limitation.
 
-The optional total-testosterone scenario uses explicit user-entered parameters,
-with concentrations in ng/dL and time constants in hours:
+Total-testosterone references are enabled by default and require no numerical
+pharmacology inputs. The settings dialog shows a reference toggle and primary-source
+data; optional E2 calibration controls are collapsed separately. Legacy manual T
+settings remain readable and are preserved on save and backup, but the chart service
+no longer applies their uncalibrated coefficients. The legacy numerical engine
+remains available for reproducing analytical comparisons.
 
-```
-dE_effect/dt = (E2 - E_effect) / tau_E
-T_target = T_floor + (T_unsuppressed - T_floor) / (1 + E_effect / EC50) * R_CPA * R_spiro
-dT/dt = (T_target - T) / tau_T
-```
-
-The starting T and timestamp can be copied from the latest exact T lab. Effective
-E2 is warmed up from earlier recorded exposure, looking back up to eight feedback
-time constants. Each gel reference drives its
-own T scenario, including future estrogen plans. Integration uses linear E2
-interpolation and exponential updates with steps no longer than 0.25 h.
-The T parameters are scenario inputs without fitted population defaults. Gonadal
-feedback, SHBG and free T remain outside this model.
-Measured T points preserve their comparison operators and use an independent axis.
-
-Historical oral CPA and spironolactone records use linked ingredient identities and
-the existing event product snapshot/dose-basis conversions. All earlier actual doses
-contribute residual exposure, including doses preceding the display window or T anchor.
-Other consumers, future actual records, unsupported routes and unresolved doses are
-excluded with an explicit reason in the antiandrogen record details. The T anchor
-remains exactly the specified starting value. Future antiandrogen exposure currently
-contains only residual actual doses; antiandrogen plans are not projected.
-
-The exposure proxy for each drug uses `k = ln(2)/halfLifeHours`,
-`A(t) = sum(doseMg * exp(-k * ageHours))`, and `D(t) = 24 * k * A(t)` in equivalent
-mg/day. It assumes instantaneous oral input, is not a plasma concentration, and does
-not model absorption or metabolite formation. Each drug has separately entered
-`D50` and `Smax`: `R = 1 - Smax * D / (D50 + D)`.
-The multiplicative combination above is a scenario assumption, not a clinically
-validated drug interaction or individualized response model.
-
-CPA's 43.9-hour terminal half-life is documented in the
-[50mg tablet SmPC](https://www.medicines.org.uk/emc/product/15996/smpc), section 5.2.
-For spironolactone the editor suggests the active metabolite canrenone's 16.5 hours
-as a residual proxy rather than the parent's 1.4 hours; the
-[DailyMed label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b76a904-6c99-485a-a05f-13a36c5f720c)
-also reports TMS 13.8 hours and HTMS 15 hours. These values do not establish effective
-antiandrogen half-lives or suppression strength. D50 and Smax have no fabricated
-defaults. In particular receptor antagonism does not imply lower serum total T;
-spironolactone can use Smax = 0. The model does not output receptor blockade or free T.
+The reference catalog, source tables, regimen details, randomized group sizes and
+original concentration units are in `TestosteroneReferences.kt`. See the total-T
+reference section below for the evidence and alignment contract. Measured T points
+preserve comparison operators and remain independent of the literature curves.
 
 Unconfirmed vehicles, SC injection, buccal formulations, other application sites and
 unreviewed patch types are not silently substituted. They remain recognized records
@@ -170,7 +138,7 @@ least-squares amplitude is calculated: sum(predicted*observed)/sum(predicted²).
 published reference parameters themselves remain unchanged. This is not Bayesian
 individual PK estimation and does not identify absorption, clearance or endogenous
 baseline from a single point. T measurements remain independent measurements; they
-do not automatically fit the optional manual T scenario. No dose recommendation is generated.
+do not scale or fit the total-T literature means. No dose recommendation is generated.
 
 Other patients, future samples, censored results, unconvertible units, missing dosing
 context or intervals inconsistent with the actual dose timestamps are excluded from
@@ -180,37 +148,69 @@ Sampling-time sensitivity is discussed in the primary simulation study
 https://pmc.ncbi.nlm.nih.gov/articles/PMC7063976/ ; its results are not asserted to
 validate an estradiol patient model. The source dialog reports calibration diagnostics.
 
-## Optional manual testosterone scenario
+## Automatic total-testosterone literature references
 
-The chart can add a separate total-testosterone scenario in ng/dL (nmol/L measurements
-are converted using 0.0347). This is an exploratory model with explicitly entered
-parameters, not a clinically validated prediction or dose calculator. The initial T,
-unsuppressed level, floor, E2 EC50 and two response time constants must be supplied.
-E2 measurements remain independent calibration observations; T observations are not
-silently used to estimate suppression parameters.
+Primary tables checked on 2026-11-15:
 
-The model uses `dE_effect/dt = (E2 - E_effect)/effectHours` and
-`dT/dt = (T_target - T)/responseHours`, with
-`T_target = floor + (unsuppressed-floor)/(1+E_effect/EC50) * R_CPA * R_spiro`.
-The E2 effect compartment is propagated analytically for each linear input segment;
-the T response uses exponential midpoint integration with a step no greater than
-15 minutes or one eighth of the shortest configured time scale. Integration splits
-at every included antiandrogen dose time, even with a coarse E2 input grid. The
-E2 compartment warms up for up to eight effect time constants before the T anchor,
-while preserving the entered initial T exactly.
+| Study and table | Randomized arm | n | Baseline mean | Interim mean | Six-month mean |
+| --- | --- | --- | --- | --- | --- |
+| [CPA/spiro randomized trial, Table 2](https://pmc.ncbi.nlm.nih.gov/articles/PMC12086416/) | E2 + CPA 12.5 mg/day | 32 | 17.30 nmol/L | 0.81 nmol/L at 3 months | 1.48 nmol/L |
+| Same | E2 + spironolactone 100 mg/day | 31 | 17.02 nmol/L | 6.75 nmol/L at 3 months | 4.15 nmol/L |
+| [TREAT, Table 3](https://pmc.ncbi.nlm.nih.gov/articles/PMC11220669/) | E2 patch + spironolactone | 12 | 498.6 ng/dL | 62.7 ng/dL at 1 month | 29.4 ng/dL |
+| Same | Once-daily sublingual E2 + spironolactone | 13 | 481.3 ng/dL | 278.5 ng/dL at 1 month | 108.1 ng/dL |
+| Same | Twice-daily sublingual E2 + spironolactone | 14 | 505.3 ng/dL | 313.8 ng/dL at 1 month | 121.7 ng/dL |
 
-All linked oral CPA and spironolactone records for the selected consumer are read,
-including records before the visible window or T anchor. Product snapshots and
-explicit dose bases resolve ingredient mass. Missing units, incompatible routes,
-future actual records and missing drug parameters have visible exclusion reasons.
-Each drug uses `A = sum(doseMg * exp(-k*ageHours))`, `k = ln(2)/halfLifeHours`,
-`D = 24*k*A`, and `R = 1 - Smax*D/(D50+D)`. D is a dose-exposure proxy with
-instantaneous absorption, not a plasma concentration or measured daily intake.
-D50 and Smax are manual scenario parameters; no clinical values are invented.
-Spironolactone receptor blockade does not imply reduced total T: Smax can be zero.
-The multiplicative combination is an explicit, unvalidated modeling assumption.
-Future estrogen plans are included; future antiandrogen plans are not projected.
-Only the residual exposure of recorded antiandrogen doses continues into the forecast.
+Both trials enrolled adults initiating feminizing therapy. The first trial titrated
+oral EV (starting at 4 mg/day) or transdermal E2; its T results combine tablets, gel
+and patches. They are not route-specific estimates. TREAT titrated both drugs monthly:
+sublingual free E2 started at a total 2 mg/day and patches at 100 micrograms/day;
+spironolactone started at 50 mg/day. Mean E2 doses reported were 6.2 mg/day for
+both sublingual arms and 170 micrograms/day for patches; corresponding mean
+spironolactone doses were 129, 115 and 81 mg/day. These are study regimens, not
+individual dose recommendations. Values use Table 2 of the first trial (means,
+not Table 1 medians) and Table 3 of TREAT (including its reported patch baseline
+498.6, not the different 498.1 in Table 2).
+
+All selected-consumer actual E2 records with supported ingredient/form/route
+identities provide treatment context, independently of PK-profile selection or
+gel-reference settings. Oral free E2/EV, free-E2 gel/patch, and sublingual free E2
+can select relevant arms. Injection and sublingual EV are not substituted for
+these study regimens. Both sublingual frequency arms are shown as comparisons:
+a single recorded dose does not establish daily frequency. Dose magnitude does
+not rescale study means.
+
+The later of the first compatible E2 record and first valid dose of the study's
+antiandrogen aligns month zero. This uses history before the visible window; it
+is not an inferred date of actual treatment initiation. Follow-up dates use UTC
+calendar-month arithmetic. The lines connect the reported means linearly only
+within the six-month follow-up. No half-life, EC50 or physiological response
+speed is derived from these sparse points. The CPA increase between months three
+and six is retained. SD/SE values are not individual prediction intervals.
+
+These are hypothetical continuing-study-regimen references, not reconstructions
+of changing personal treatment. Gaps, stopping, switching, mixed routes and prior
+therapy cannot be resolved from these group means. Records for both antiandrogens
+select separate comparisons, not a combined suppression formula. Estrogen plans,
+E2 calibration and personal T labs do not alter the published T means. Future
+dashed sections continue the study reference within follow-up, without claiming
+that the patient's plans were included or that future doses were taken.
+
+All linked oral CPA and spironolactone records are still read and normalized from
+historical product snapshots/dose bases, including records before the display
+window. Other consumers, future actual records, unsupported routes and unresolved
+doses have explicit exclusions. Missing manual suppression settings no longer
+exclude a valid record.
+
+The details show counts, total recorded dose and current residual dose proxy
+`sum(doseMg * exp(-ln(2)*ageHours/halfLifeHours))` separately for each drug.
+CPA's 43.9-hour terminal half-life comes from the
+[Androcur SmPC, 5.2](https://www.medicines.org.uk/emc/product/15996/smpc).
+Canrenone's 16.5-hour half-life comes from the
+[spironolactone label, 12.3](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8b76a904-6c99-485a-a05f-13a36c5f720c).
+Instantaneous absorption and use of a metabolite half-life on recorded parent
+doses are approximations. This proxy is neither a measured remaining mass nor
+a plasma concentration, and never supplies a T suppression factor. Receptor
+blockade is not equated with reduced serum total T.
 
 A manually supplied E2 baseline is subtracted before amplitude fitting and added
 once afterward. A calibration phase start limits eligible labs and scaling to that

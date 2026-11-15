@@ -25,6 +25,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import com.isaakhanimann.journal.data.hrt.HormoneChartData
 import com.isaakhanimann.journal.data.hrt.TestosteroneSample
+import com.isaakhanimann.journal.data.hrt.TestosteroneReferences
 import java.time.Instant
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
@@ -38,6 +39,7 @@ private fun testosteroneTime(hours: Double): String = DateTimeFormatter.ofPatter
 fun TestosteroneChart(data: HormoneChartData) {
     var molar by remember { mutableStateOf(false) }
     var selected by remember(data, molar) { mutableStateOf<TestosteroneHit?>(null) }
+    var sourcesOpen by remember { mutableStateOf(false) }
     val factor = if (molar) .0347 else 1.0
     val unit = if (molar) "nmol/L" else "ng/dL"
     val colors = listOf(MaterialTheme.colorScheme.tertiary, MaterialTheme.colorScheme.secondary)
@@ -48,17 +50,25 @@ fun TestosteroneChart(data: HormoneChartData) {
         data.measuredTestosterone.maxOfOrNull { it.value } ?: 0.0)
     val span = data.throughHours - data.fromHours
     Row {
-        Text(if (data.testosteroneScenarios.isEmpty()) "总睾酮 · 实测" else "总睾酮 · 参数情景", style = MaterialTheme.typography.titleSmall)
+        Text(when {
+            data.testosteroneScenarios.isNotEmpty() -> "总睾酮 · 文献参考与实测"
+            data.measuredTestosterone.isNotEmpty() -> "总睾酮 · 实测"
+            else -> "总睾酮 · 文献参考"
+        }, style = MaterialTheme.typography.titleSmall)
         Spacer(Modifier.weight(1f))
         TextButton({ molar = !molar }) { Text(unit) }
     }
-    Text("0 – ${"%.4g".format(top * factor)} $unit", style = MaterialTheme.typography.labelSmall)
-    if (data.testosteroneScenarios.isNotEmpty()) {
-        Text("E2 延迟反馈 · 纳入 ${data.antiandrogenRecords.count { it.reason == null }} 条历史CPA/螺内酯 · 手动参数情景，未经个体预测验证",
-            style = MaterialTheme.typography.bodySmall)
+    if (data.testosteroneReferenceNotes.isNotEmpty()) {
+        Text("内置研究组均值 · 未经个人预测验证 · 个人化验独立显示", style = MaterialTheme.typography.bodySmall)
+        Text("连线仅为随访点之间的参考；未来虚线假设持续研究方案，不随个人剂量或计划改变。", style = MaterialTheme.typography.bodySmall)
+        if (data.testosteroneScenarios.isEmpty()) Text(data.testosteroneReferenceNotes.last(), style = MaterialTheme.typography.bodySmall)
     }
+    TextButton({ sourcesOpen = true }) { Text("查看研究数据与来源") }
+    if (sourcesOpen) TestosteroneReferenceSources { sourcesOpen = false }
+    if (data.testosteroneScenarios.isEmpty() && data.measuredTestosterone.isEmpty()) return
+    Text("0 – ${"%.4g".format(top * factor)} $unit", style = MaterialTheme.typography.labelSmall)
     Canvas(Modifier.fillMaxWidth().height(200.dp)
-        .semantics { contentDescription = "总睾酮情景曲线和独立化验点，可点按查看数值" }
+        .semantics { contentDescription = "总睾酮文献参考线和独立化验点，可点按查看数值" }
         .pointerInput(data, molar) {
             detectTapGestures { tap ->
                 val inset = 10.dp.toPx()
@@ -115,8 +125,16 @@ fun TestosteroneChart(data: HormoneChartData) {
         Spacer(Modifier.weight(1f))
         Text(testosteroneTime(data.throughHours), style = MaterialTheme.typography.labelSmall)
     }
-    if (data.testosteroneScenarios.size > 1) data.testosteroneScenarios.forEachIndexed { index, scenario ->
+    data.testosteroneScenarios.forEachIndexed { index, scenario ->
         Text(scenario.label, color = colors[index % colors.size], style = MaterialTheme.typography.labelSmall)
+        scenario.referenceId?.let { id ->
+            val reference = TestosteroneReferences.studies.single { it.id == id }
+            Text("${reference.table} · n=${reference.participants} · 组均值",
+                style = MaterialTheme.typography.labelSmall)
+        }
+        scenario.referenceStartHours?.let { start ->
+            Text("按首条 E2／抗雄记录对齐：${testosteroneTime(start)}", style = MaterialTheme.typography.labelSmall)
+        }
     }
     selected?.let {
         Text("${testosteroneTime(it.time)} · ${it.label} ${"%.6g".format(it.value * factor)} $unit")

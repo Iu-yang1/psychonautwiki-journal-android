@@ -9,6 +9,7 @@ data class HormoneModelOptions(
     val baselineE2PgMl: Double = 0.0,
     val calibrationStartMillis: Long? = null,
     val testosterone: TestosteroneOptions? = null,
+    val showTestosteroneReference: Boolean = true,
 ) {
     fun validate() {
         require(baselineE2PgMl.isFinite() && baselineE2PgMl >= 0) { "E2 基线应为非负数" }

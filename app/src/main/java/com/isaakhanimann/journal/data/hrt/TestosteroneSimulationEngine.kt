@@ -12,6 +12,8 @@ data class TestosteroneScenario(
     val label: String,
     val history: List<TestosteroneSample>,
     val forecast: List<TestosteroneSample>,
+    val referenceId: String? = null,
+    val referenceStartHours: Double? = null,
 )
 
 class TestosteroneSimulationEngine {
